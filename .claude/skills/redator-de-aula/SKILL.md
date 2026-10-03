@@ -127,6 +127,8 @@ maior. Se você marcou 4ª, contou semitons em vez de notas."
 - Ritmo e dinâmica: cada evento aceita `dinamica` ("pp" a "ff", vale até a próxima), `acento` (tempo forte,
   pulso) e `ligada` (une ao evento seguinte, com as mesmas notas). Percepção de ritmo, compasso ou dinâmica
   não leva `intervalo`; nesse caso confira a resposta à mão.
+- Articulação: `staccato` (nota curta), `expressao` ("inicio"/"fim", ligadura de legato) e `forquilha`
+  ("crescendo"/"diminuendo" começa; "fim" termina numa nota que traz a `dinamica` de chegada).
   O campo `intervalo` reduz intervalos compostos (Dó4–Mi5 vira "3M"); se o texto fala de 10ª, diga
   "10ª maior (3ª maior composta)".
 - Referências: músicas brasileiras conhecidas de qualquer estilo (cantigas de roda, folclore, samba,

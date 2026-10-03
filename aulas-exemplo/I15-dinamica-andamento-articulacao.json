@@ -1,0 +1,1359 @@
+{
+  "codigo": "I15",
+  "titulo": "Dinâmica, andamento e articulação",
+  "nivel": "iniciante",
+  "resumo_curto": "Os sinais que dizem como tocar: força, velocidade, articulação das notas e repetições.",
+  "prerequisitos": [
+    "Figuras rítmicas (I04)",
+    "Pulso e compasso simples (I05)"
+  ],
+  "objetivos": [
+    "Ler **pp a ff** e as forquilhas de **crescendo** e **diminuendo**",
+    "Entender o **andamento** em BPM e alguns termos italianos",
+    "Diferenciar **staccato**, **legato** e **acento**",
+    "Ler **sinais de repetição**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Qual propriedade do som é o forte e o fraco?\n2. O que é o pulso de uma música?\n3. Para que serve a ligadura entre duas notas iguais?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. A intensidade.\n2. A batida constante que dá vontade de bater o pé.\n3. Para somar as durações num som só.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Ouça antes de qualquer nome",
+            "legenda": "A mesma escala duas vezes. O que mudou no jeito de tocar?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "expressao": "inicio"
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "expressao": "fim"
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Na primeira vez, as notas saíram **curtas e separadas**; na segunda, **ligadas**, uma emendando na outra. As notas e o ritmo são os mesmos: mudou a **articulação**. Junto com a **dinâmica** (a força) e o **andamento** (a velocidade), ela diz **como** tocar o que está escrito.\n\nAo final, você vai ler e ouvir os principais sinais de dinâmica, andamento, articulação e repetição."
+        }
+      ]
+    },
+    {
+      "titulo": "Dinâmica",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Os sinais de **dinâmica** ficam sob a pauta e usam palavras italianas:"
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Do mais fraco ao mais forte.",
+          "cabecalho": [
+            "Sinal",
+            "Nome",
+            "Significado"
+          ],
+          "linhas": [
+            [
+              "pp",
+              "pianissimo",
+              "muito fraco"
+            ],
+            [
+              "p",
+              "piano",
+              "fraco"
+            ],
+            [
+              "mp",
+              "mezzo piano",
+              "meio fraco"
+            ],
+            [
+              "mf",
+              "mezzo forte",
+              "meio forte"
+            ],
+            [
+              "f",
+              "forte",
+              "forte"
+            ],
+            [
+              "ff",
+              "fortissimo",
+              "muito forte"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-p-f",
+            "titulo": "Brilha, brilha: piano e depois forte",
+            "legenda": "A mesma frase, primeiro fraca (p), depois forte (f).",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "Bri-",
+                "dinamica": "p"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "bri-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "es-"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "tre-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "li-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "nha"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "Bri-",
+                "dinamica": "f"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "bri-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "es-"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "tre-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "li-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "nha"
+              }
+            ],
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A **forquilha** que abre (<) pede **crescendo**, ficar mais forte aos poucos. A que fecha (>) pede **diminuendo**, ficar mais fraco aos poucos."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-crescendo",
+            "titulo": "Crescendo de p a f",
+            "legenda": "A escala sobe e a força cresce nota a nota.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "dinamica": "p",
+                "forquilha": "crescendo"
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "dinamica": "f",
+                "forquilha": "fim"
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-diminuendo",
+            "titulo": "Diminuendo de f a p",
+            "legenda": "A escala desce e a força diminui.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "dinamica": "f",
+                "forquilha": "diminuendo"
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "dinamica": "p",
+                "forquilha": "fim"
+              }
+            ],
+            "andamento": 80
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Andamento",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "**Andamento** é a velocidade do pulso, medida em **BPM** (batidas por minuto). 60 BPM é uma batida por segundo; 120 BPM, duas por segundo. Na partitura, aparece como ♩ = 60, ou com termos italianos."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-60",
+            "titulo": "Brilha, brilha a 60 BPM",
+            "legenda": "Uma batida por segundo: calmo.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "Bri-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "bri-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "es-"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "tre-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "li-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "nha"
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-120",
+            "titulo": "Brilha, brilha a 120 BPM",
+            "legenda": "Duas batidas por segundo: a mesma melodia, com o dobro da velocidade.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "Bri-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "bri-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "es-"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "tre-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "li-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "nha"
+              }
+            ],
+            "andamento": 120
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Alguns termos de andamento, com valores aproximados.",
+          "cabecalho": [
+            "Termo",
+            "Caráter",
+            "Cerca de"
+          ],
+          "linhas": [
+            [
+              "Largo",
+              "bem lento",
+              "40 a 60 BPM"
+            ],
+            [
+              "Adagio",
+              "lento",
+              "66 a 76 BPM"
+            ],
+            [
+              "Andante",
+              "andando",
+              "76 a 108 BPM"
+            ],
+            [
+              "Moderato",
+              "moderado",
+              "108 a 120 BPM"
+            ],
+            [
+              "Allegro",
+              "rápido",
+              "120 a 168 BPM"
+            ],
+            [
+              "Presto",
+              "muito rápido",
+              "acima de 168 BPM"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Articulação",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **articulação** diz como cada nota começa e termina:\n\n- **Staccato** (ponto sobre ou sob a nota): nota curta, destacada da próxima.\n- **Legato** (curva sobre um grupo de notas, a **ligadura de expressão**): notas emendadas, sem espaço entre elas. Ela liga notas **diferentes**; a ligadura de duração liga notas iguais.\n- **Acento** (>): a nota soa mais forte que as vizinhas."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-staccato",
+            "titulo": "Staccato",
+            "legenda": "Cada nota curta, com um pequeno silêncio depois.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "staccato": true
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              }
+            ],
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-legato",
+            "titulo": "Legato",
+            "legenda": "As mesmas notas, agora emendadas.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "expressao": "inicio"
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "expressao": "fim"
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              }
+            ],
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-acento",
+            "titulo": "Acento",
+            "legenda": "Só as notas com > se destacam.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              }
+            ],
+            "andamento": 88
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Sinais de repetição",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Para não reescrever trechos iguais, a partitura usa sinais de repetição:"
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Os sinais de repetição mais comuns.",
+          "cabecalho": [
+            "Sinal",
+            "O que fazer"
+          ],
+          "linhas": [
+            [
+              "Ritornello (barras com dois pontos)",
+              "Repetir o trecho entre as barras"
+            ],
+            [
+              "Casa 1 e casa 2",
+              "Na primeira vez toque a casa 1; ao repetir, pule para a casa 2"
+            ],
+            [
+              "D.C. (Da Capo)",
+              "Voltar ao início"
+            ],
+            [
+              "D.S. (Dal Segno)",
+              "Voltar ao sinal 𝄋"
+            ],
+            [
+              "Fine",
+              "Fim, depois de um D.C. ou D.S."
+            ],
+            [
+              "Coda (𝄌)",
+              "Pular para o trecho final marcado"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo para ler uma indicação",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como ler um trecho marcado **Andante, p, < até f, staccato**, com o motivo de cada passo.\n\n1. **Andamento**: Andante, um pulso de passo tranquilo, por volta de 90 BPM.\n2. **Dinâmica inicial**: p, começa fraco.\n3. **Forquilha**: < até f, a força cresce aos poucos até forte.\n4. **Articulação**: pontos nas notas, cada uma curta e separada."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-indicacao",
+            "titulo": "Andante, p, crescendo até f, staccato",
+            "legenda": "Notas curtas que começam fracas e crescem até forte.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "staccato": true,
+                "dinamica": "p",
+                "forquilha": "crescendo"
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "staccato": true,
+                "dinamica": "f",
+                "forquilha": "fim"
+              }
+            ],
+            "andamento": 90
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** crescendo muda a velocidade da música?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Não. Crescendo muda só a **intensidade**. Acelerar é outra indicação, de andamento (como *accelerando*). É comum, mas é um erro, apressar o pulso ao crescer.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. Um trecho **Allegro, ff, legato**: andamento, dinâmica e articulação são...?\n\nE agora dois passos são seus: **Adagio, mf, diminuendo até p**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Allegro, ff, legato: rápido, muito forte e com as notas emendadas.\n\nAdagio, mf, diminuendo até p: lento, começando meio forte e enfraquecendo aos poucos até fraco.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega leu **p** sob a pauta e disse:\n\n> \"p quer dizer piano: é para tocar no piano.\"\n\nOnde está o erro, por que está errado e o que p quer dizer?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "**Piano**, em italiano, quer dizer **fraco**, suave. O sinal **p** é de dinâmica e vale para qualquer instrumento, inclusive o violão e a voz. O nome do instrumento vem justamente daí: o pianoforte tocava piano (fraco) e forte.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que significa **f** sob a pauta?",
+      "opcoes": [
+        "forte",
+        "fraco",
+        "fim",
+        "rápido"
+      ],
+      "correta": 0,
+      "explicacao": "**f** é *forte*. Fraco é **p** (piano). Andamento rápido se indica com termos como Allegro.",
+      "conceito": "sinais-de-dinamica"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A força aumenta ou diminui ao longo da escala?",
+      "exemplo": {
+        "id": "exe-diminuendo",
+        "titulo": "Escala",
+        "legenda": "Diminuendo: de f a p.",
+        "eventos": [
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "dinamica": "f",
+            "forquilha": "diminuendo"
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1,
+            "dinamica": "p",
+            "forquilha": "fim"
+          }
+        ],
+        "andamento": 80
+      },
+      "opcoes": [
+        "aumenta (crescendo)",
+        "diminui (diminuendo)"
+      ],
+      "correta": 1,
+      "explicacao": "Começa forte e termina fraca: **diminuendo**. Repare que a velocidade não mudou.",
+      "conceito": "crescendo-diminuendo"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. As notas estão em staccato ou em legato?",
+      "exemplo": {
+        "id": "exe-staccato",
+        "titulo": "Melodia",
+        "legenda": "Staccato: notas curtas e separadas.",
+        "eventos": [
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1,
+            "staccato": true
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1,
+            "staccato": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "staccato": true
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1,
+            "staccato": true
+          }
+        ],
+        "andamento": 88
+      },
+      "opcoes": [
+        "staccato",
+        "legato"
+      ],
+      "correta": 0,
+      "explicacao": "Cada nota soa curta, com silêncio antes da próxima: **staccato**.",
+      "conceito": "staccato-legato"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma música marcada **♩ = 120** tem quantas batidas por segundo?",
+      "opcoes": [
+        "2",
+        "1",
+        "120"
+      ],
+      "correta": 0,
+      "explicacao": "120 batidas por **minuto** são **2 por segundo** (120 ÷ 60). ♩ = 60 seria uma por segundo.",
+      "conceito": "andamento-bpm"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a ordem do mais fraco para o mais forte?",
+      "opcoes": [
+        "pp, p, mp, mf, f, ff",
+        "p, pp, mf, mp, f, ff",
+        "ff, f, mf, mp, p, pp"
+      ],
+      "correta": 0,
+      "explicacao": "**pp, p, mp, mf, f, ff**. O *mezzo* (meio) fica entre p e f: mp é meio fraco, mf é meio forte.",
+      "conceito": "sinais-de-dinamica"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça as duas versões. A segunda está mais rápida ou mais lenta?",
+      "exemplo": {
+        "id": "exe-andamento",
+        "titulo": "Duas versões",
+        "legenda": "A segunda vez, duas vezes mais rápida.",
+        "eventos": [
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [],
+            "duracao": 0.5
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "mais rápida",
+        "mais lenta"
+      ],
+      "correta": 0,
+      "explicacao": "As mesmas notas, com metade da duração: a segunda versão é **mais rápida**.",
+      "conceito": "andamento-bpm"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que indica **D.C.** (Da Capo)?",
+      "opcoes": [
+        "Voltar ao início",
+        "Pular para o fim",
+        "Tocar mais forte"
+      ],
+      "correta": 0,
+      "explicacao": "**Da Capo** quer dizer \"do começo\": volta-se ao início, em geral até a palavra Fine.",
+      "conceito": "sinais-de-repeticao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A **forquilha que abre** (<) pede:",
+      "opcoes": [
+        "crescendo",
+        "diminuendo",
+        "acelerar"
+      ],
+      "correta": 0,
+      "explicacao": "A forquilha que abre pede **crescendo**, ficar mais forte aos poucos. Ela não mexe no andamento.",
+      "conceito": "crescendo-diminuendo"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Que notas se destacam?",
+      "exemplo": {
+        "id": "exe-acento",
+        "titulo": "Notas repetidas",
+        "legenda": "Acentos na 1ª e na 5ª nota.",
+        "eventos": [
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 0.5,
+            "acento": true
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 0.5,
+            "acento": true
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 0.5
+          }
+        ],
+        "andamento": 88
+      },
+      "opcoes": [
+        "a 1ª e a 5ª",
+        "a 2ª e a 6ª",
+        "todas iguais"
+      ],
+      "correta": 0,
+      "explicacao": "O **acento** (>) cai na 1ª e na 5ª nota: elas soam mais fortes que as vizinhas.",
+      "conceito": "acento"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a diferença entre a ligadura de **expressão** e a ligadura de **duração**?",
+      "opcoes": [
+        "A de expressão liga notas diferentes; a de duração liga notas iguais",
+        "Nenhuma, são a mesma coisa",
+        "A de expressão só aparece em acordes"
+      ],
+      "correta": 0,
+      "explicacao": "A ligadura de **expressão** (legato) emenda notas **diferentes**. A de **duração** une duas notas **iguais** num som só.",
+      "conceito": "staccato-legato"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na primeira vez você toca a casa 1. Ao repetir, o que faz?",
+      "opcoes": [
+        "Pula a casa 1 e toca a casa 2",
+        "Toca as duas casas",
+        "Para na casa 1"
+      ],
+      "correta": 0,
+      "explicacao": "Na repetição, **pula-se a casa 1** e toca-se a **casa 2**.",
+      "conceito": "sinais-de-repeticao"
+    }
+  ],
+  "resumo": [
+    "Dinâmica: **pp, p, mp, mf, f, ff**; < é crescendo e > é diminuendo.",
+    "Andamento em **BPM**: 60 é uma batida por segundo. Largo, Adagio, Andante, Moderato, Allegro, Presto.",
+    "**Staccato** separa, **legato** emenda, **acento** destaca.",
+    "Ritornello repete; casa 1 e casa 2 mudam o final; **D.C.** volta ao início; **Fine** marca o fim.",
+    "Crescer não é acelerar: dinâmica e andamento são indicações diferentes."
+  ],
+  "pergunta_para_chat": "Me mostre indicações de dinâmica, andamento e articulação, uma de cada vez, para eu dizer como tocar, e me dê uma dica antes de mostrar a resposta."
+}

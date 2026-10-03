@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Escala maior</title>
+<title>Campo harmônico maior (tríades)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
@@ -520,7 +520,7 @@ tbody tr:last-child td { border-bottom: 0; }
 <body>
 <header class="barra">
   <div class="barra-interna">
-    <p class="barra-aula"><span class="selo">I07</span> Escala maior</p>
+    <p class="barra-aula"><span class="selo">I14</span> Campo harmônico maior (tríades)</p>
     <div class="controles">
       <div class="timbre" role="group" aria-label="Instrumento">
         <button type="button" id="timbre-piano" data-timbre="piano" aria-pressed="true">Piano</button>
@@ -538,32 +538,33 @@ tbody tr:last-child td { border-bottom: 0; }
 <main class="aula">
   <section class="abertura">
     <p class="rotulo">Teoria musical · Iniciante</p>
-    <h1>Escala maior</h1>
-    <p class="chamada">A fórmula de tons e semitons da escala maior, os nomes dos graus e como montar a escala a partir de qualquer nota.</p>
+    <h1>Campo harmônico maior (tríades)</h1>
+    <p class="chamada">As sete tríades que nascem da escala maior, a numeração romana e os acordes principais I, IV e V.</p>
     <div class="ficha">
       <div>
         <h2 class="rotulo">Você vai aprender</h2>
         <ul>
-          <li>Reconhecer a fórmula <strong>T–T–S–T–T–T–S</strong></li>
-          <li>Numerar os <strong>graus</strong> da escala e conhecer o nome de cada um</li>
-          <li>Montar a escala maior a partir de <strong>qualquer nota</strong>, usando cada letra uma vez</li>
-          <li>Ouvir a <strong>sensível</strong> pedindo a tônica</li>
+          <li>Montar a tríade de cada grau da escala maior</li>
+          <li>Reconhecer o padrão <strong>maior, menor, menor, maior, maior, menor, diminuto</strong></li>
+          <li>Usar a <strong>numeração romana</strong></li>
+          <li>Reconhecer <strong>I, IV e V</strong> e a progressão I–IV–V–I</li>
         </ul>
       </div>
       <div>
         <h2 class="rotulo">Antes, é bom saber</h2>
         <ul>
-          <li>Nomes das notas (I02)</li>
-          <li>Tom e semitom (I06)</li>
+          <li>Escala maior (I07)</li>
+          <li>Tríades (I12)</li>
+          <li>Cifragem popular (I13)</li>
         </ul>
       </div>
     </div>
     <nav class="indice" aria-label="Seções da aula">
       <ol>
         <li><a href="#secao-1">Antes de começar</a></li>
-        <li><a href="#secao-2">A fórmula da escala maior</a></li>
-        <li><a href="#secao-3">Graus e seus nomes</a></li>
-        <li><a href="#secao-4">Montando a escala em outra nota</a></li>
+        <li><a href="#secao-2">Uma tríade em cada grau</a></li>
+        <li><a href="#secao-3">Os acordes principais</a></li>
+        <li><a href="#secao-4">Em outras tonalidades</a></li>
         <li><a href="#secao-5">Cuidado com este erro</a></li>
         <li><a href="#exercicios">Exercícios</a></li>
         <li><a href="#resumo">Resumo</a></li>
@@ -575,14 +576,14 @@ tbody tr:last-child td { border-bottom: 0; }
     <h2><span class="num">1</span>Antes de começar</h2>
     <div class="prosa"><p>Responda de cabeça, sem consultar nada. Depois confira.</p>
 <ol>
-<li>Quantos semitons cabem em um tom?</li>
-<li>Quais duplas de notas naturais vizinhas ficam a só um semitom?</li>
-<li>Que nota fica um semitom acima de Fá?</li>
+<li>Quais são as notas de Dó maior?</li>
+<li>Como se forma uma tríade?</li>
+<li>Que cifra tem a tríade Ré, Fá, Lá?</li>
 </ol></div>
     <details class="resposta"><summary>Conferir as respostas</summary><div class="prosa"><ol>
-<li>Dois semitons.</li>
-<li>Mi–Fá e Si–Dó.</li>
-<li>Fá♯, que também se chama Sol♭.</li>
+<li>Dó, Ré, Mi, Fá, Sol, Lá, Si.</li>
+<li>Empilhando duas 3ªs: fundamental, terça e quinta.</li>
+<li>Dm: Ré–Fá é 3ª menor, e Ré–Lá é 5ª justa.</li>
 </ol></div></details>
     <figure class="exemplo" data-exemplo="ex-abertura">
       <div class="exemplo-topo">
@@ -590,155 +591,90 @@ tbody tr:last-child td { border-bottom: 0; }
         <button type="button" class="tocar" data-tocar="ex-abertura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
       <div class="partitura" data-partitura="ex-abertura"></div>
-      <figcaption>As duas sequências usam só notas naturais. Qual delas soa como se chegasse em casa na última nota?</figcaption>
+      <figcaption>Quatro acordes. O último soa como chegada? Qual deles mais "pede" a volta?</figcaption>
     </figure>
-    <div class="prosa"><p>A primeira sequência é a <strong>escala de Dó maior</strong>. A segunda tem as mesmas notas, começando em Ré, e soa diferente porque os tons e semitons caem em outros lugares.</p>
-<p>Ao final, você vai montar a escala maior a partir de qualquer nota e dar nome a cada nota dela.</p></div>
+    <div class="prosa"><p>Os quatro acordes, <strong>C, F, G e C</strong>, usam só notas da escala de Dó maior. O G é o que mais pede a volta ao C. Os acordes que se formam com as notas de uma escala são o <strong>campo harmônico</strong> dela.</p>
+<p>Ao final, você vai montar o campo harmônico de qualquer tonalidade maior e numerar os acordes.</p></div>
   </section>
   <section class="secao" id="secao-2">
-    <h2><span class="num">2</span>A fórmula da escala maior</h2>
-    <div class="prosa"><p><strong>Escala</strong> é uma sequência de notas em ordem, da mais grave para a mais aguda. A escala maior tem sete notas diferentes, e a oitava nota repete a primeira, uma oitava acima.</p>
-<p>O que faz uma escala ser <strong>maior</strong> é a ordem das distâncias entre as notas:</p>
-<p><strong>tom – tom – semitom – tom – tom – tom – semitom</strong>, ou <strong>T–T–S–T–T–T–S</strong>.</p></div>
+    <h2><span class="num">2</span>Uma tríade em cada grau</h2>
+    <div class="prosa"><p>Sobre cada nota da escala, empilhe duas 3ªs usando <strong>só notas da escala</strong>. Em Dó maior, a partir de Ré sai Ré, Fá, Lá; a partir de Si sai Si, Ré, Fá. Cada grau ganha a sua tríade.</p></div>
+    <figure class="exemplo" data-exemplo="ex-campo-do">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">As tríades de Dó maior, grau por grau</p>
+        <button type="button" class="tocar" data-tocar="ex-campo-do"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-campo-do"></div>
+      <figcaption>Ouça a qualidade mudar: maior, menor, menor, maior, maior, menor, diminuta, e o Dó de novo.</figcaption>
+    </figure>
     <figure class="tabela">
       <div class="tabela-rolagem">
         <table>
-          <thead><tr><th scope="col">Passo</th><th scope="col">Notas</th><th scope="col">Distância</th></tr></thead>
+          <thead><tr><th scope="col">Grau</th><th scope="col">Notas</th><th scope="col">Tipo</th><th scope="col">Cifra</th></tr></thead>
           <tbody>
-            <tr><td>1º</td><td>Dó–Ré</td><td>tom</td></tr>
-            <tr><td>2º</td><td>Ré–Mi</td><td>tom</td></tr>
-            <tr><td>3º</td><td>Mi–Fá</td><td>semitom</td></tr>
-            <tr><td>4º</td><td>Fá–Sol</td><td>tom</td></tr>
-            <tr><td>5º</td><td>Sol–Lá</td><td>tom</td></tr>
-            <tr><td>6º</td><td>Lá–Si</td><td>tom</td></tr>
-            <tr><td>7º</td><td>Si–Dó</td><td>semitom</td></tr>
+            <tr><td>I</td><td>Dó, Mi, Sol</td><td>maior</td><td>C</td></tr>
+            <tr><td>ii</td><td>Ré, Fá, Lá</td><td>menor</td><td>Dm</td></tr>
+            <tr><td>iii</td><td>Mi, Sol, Si</td><td>menor</td><td>Em</td></tr>
+            <tr><td>IV</td><td>Fá, Lá, Dó</td><td>maior</td><td>F</td></tr>
+            <tr><td>V</td><td>Sol, Si, Ré</td><td>maior</td><td>G</td></tr>
+            <tr><td>vi</td><td>Lá, Dó, Mi</td><td>menor</td><td>Am</td></tr>
+            <tr><td>vii°</td><td>Si, Ré, Fá</td><td>diminuta</td><td>B°</td></tr>
           </tbody>
         </table>
       </div>
-      <figcaption>A escala de Dó maior, passo a passo. Os semitons caem entre a 3ª e a 4ª nota e entre a 7ª e a 8ª.</figcaption>
+      <figcaption>O campo harmônico de Dó maior.</figcaption>
     </figure>
-    <figure class="bloco-teclado">
-      <div class="teclado-rolagem"><div class="teclado" data-teclado="t-1-2"></div></div>
-      <figcaption>
-        <span>Escala de Dó maior: no piano, só teclas brancas.</span>
-        <span class="acoes-instrumento">
-          <button type="button" class="tocar pequeno" data-tocar-teclado="t-1-2"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir as notas</span></button>
-          <button type="button" class="secundario" data-montar-acorde="t-1-2" aria-pressed="false">Montar acorde</button>
-          <button type="button" class="tocar pequeno" data-tocar-acorde="t-1-2" hidden><span class="icone" aria-hidden="true"></span><span class="texto">Tocar juntas</span></button>
-        </span>
-      </figcaption>
-    </figure>
-    <figure class="exemplo" data-exemplo="ex-escala-do">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">Escala de Dó maior</p>
-        <button type="button" class="tocar" data-tocar="ex-escala-do"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      </div>
-      <div class="partitura" data-partitura="ex-escala-do"></div>
-      <figcaption>Ouça os dois passos curtos: Mi–Fá, no meio, e Si–Dó, no fim.</figcaption>
-    </figure>
-    <div class="prosa"><p>A cantiga <em>Dó, ré, mi, fá</em> canta o nome das próprias notas e sobe pelo começo da escala de Dó maior.</p></div>
-    <figure class="exemplo" data-exemplo="ex-do-re-mi-fa">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">Dó, ré, mi, fá</p>
-        <button type="button" class="tocar" data-tocar="ex-do-re-mi-fa"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      </div>
-      <div class="partitura" data-partitura="ex-do-re-mi-fa"></div>
-      <figcaption>A melodia sobe pelas quatro primeiras notas da escala: dois tons e um semitom.</figcaption>
-    </figure>
+    <div class="prosa"><p>O padrão é o mesmo em <strong>qualquer</strong> tonalidade maior: <strong>maior, menor, menor, maior, maior, menor, diminuto</strong>. Na <strong>numeração romana</strong>, os maiores ganham algarismos maiúsculos (I, IV, V), os menores, minúsculos (ii, iii, vi), e o diminuto leva ° (vii°).</p></div>
   </section>
   <section class="secao" id="secao-3">
-    <h2><span class="num">3</span>Graus e seus nomes</h2>
-    <div class="prosa"><p>Cada nota da escala é um <strong>grau</strong>, numerado de 1 a 7 a partir da primeira. Em Dó maior, Dó é o 1º grau, Ré é o 2º, Mi é o 3º, e assim por diante. Cada grau também tem um nome, que diz o papel dele na escala.</p></div>
-    <figure class="tabela">
-      <div class="tabela-rolagem">
-        <table>
-          <thead><tr><th scope="col">Grau</th><th scope="col">Nome</th><th scope="col">Em Dó maior</th></tr></thead>
-          <tbody>
-            <tr><td>1º</td><td>tônica</td><td>Dó</td></tr>
-            <tr><td>2º</td><td>supertônica</td><td>Ré</td></tr>
-            <tr><td>3º</td><td>mediante</td><td>Mi</td></tr>
-            <tr><td>4º</td><td>subdominante</td><td>Fá</td></tr>
-            <tr><td>5º</td><td>dominante</td><td>Sol</td></tr>
-            <tr><td>6º</td><td>superdominante</td><td>Lá</td></tr>
-            <tr><td>7º</td><td>sensível</td><td>Si</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <figcaption>Os graus da escala maior, com o exemplo de Dó maior.</figcaption>
-    </figure>
-    <div class="prosa"><p>A <strong>tônica</strong> é a nota de repouso, a que dá nome à escala. A <strong>sensível</strong> fica só um semitom abaixo dela e soa como se pedisse para subir.</p></div>
-    <figure class="exemplo" data-exemplo="ex-sensivel">
+    <h2><span class="num">3</span>Os acordes principais</h2>
+    <div class="prosa"><p>Três graus carregam a maior parte das músicas simples:</p>
+<ul>
+<li><strong>I</strong>, a <strong>tônica</strong>: o acorde de repouso.</li>
+<li><strong>IV</strong>, a <strong>subdominante</strong>: afasta da tônica.</li>
+<li><strong>V</strong>, a <strong>dominante</strong>: cria tensão e pede a volta ao I.</li>
+</ul>
+<p>Com I, IV e V dá para acompanhar muitas cantigas e canções populares.</p></div>
+    <figure class="exemplo" data-exemplo="ex-i-iv-v-i">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">A sensível pede a tônica</p>
-        <button type="button" class="tocar" data-tocar="ex-sensivel"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">I–IV–V–I em Dó maior</p>
+        <button type="button" class="tocar" data-tocar="ex-i-iv-v-i"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-sensivel"></div>
-      <figcaption>A escala para no Si e espera. Repare como o Dó do fim soa como um alívio.</figcaption>
+      <div class="partitura" data-partitura="ex-i-iv-v-i"></div>
+      <figcaption>C, F, G, C: saída, afastamento, tensão e chegada.</figcaption>
     </figure>
-    <div class="prosa"><p>O começo de <em>Pirulito que bate bate</em>, em Dó maior, usa o 3º, o 4º e o 5º graus: Mi, Fá e Sol.</p></div>
-    <figure class="exemplo" data-exemplo="ex-pirulito">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">Pirulito que bate bate</p>
-        <button type="button" class="tocar" data-tocar="ex-pirulito"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      </div>
-      <div class="partitura" data-partitura="ex-pirulito"></div>
-      <figcaption>"Pi-ru-li": mediante, subdominante e dominante. Depois a melodia volta pelo mesmo caminho.</figcaption>
-    </figure>
+    <div class="prosa"><p>Para acompanhar uma melodia, escolhe-se o acorde que contém a nota que está soando. No começo de <em>Marcha soldado</em> em Dó maior, Sol, Mi e Dó são as três notas de <strong>C</strong>, o I grau.</p></div>
   </section>
   <section class="secao" id="secao-4">
-    <h2><span class="num">4</span>Montando a escala em outra nota</h2>
-    <div class="prosa"><p>A fórmula serve para qualquer tônica. Veja a escala de <strong>Sol maior</strong>, com o motivo de cada passo.</p>
+    <h2><span class="num">4</span>Em outras tonalidades</h2>
+    <div class="prosa"><p>Veja como montar o campo harmônico de <strong>Sol maior</strong>, com o motivo de cada passo.</p>
 <ol>
-<li><strong>Escreva as sete letras em ordem</strong>, a partir da tônica, cada uma uma vez: Sol, Lá, Si, Dó, Ré, Mi, Fá, Sol.</li>
-<li><strong>Confira cada passo com a fórmula</strong>: Sol–Lá tom, Lá–Si tom, Si–Dó semitom, Dó–Ré tom, Ré–Mi tom. Tudo certo até aqui.</li>
-<li><strong>Ajuste com acidentes</strong>: Mi–Fá é um semitom, mas a fórmula pede um tom. Sobe-se o Fá: <strong>Fá♯</strong>. Com isso, Fá♯–Sol fica um semitom, como a fórmula pede no fim.</li>
-</ol>
-<p>Sol maior: <strong>Sol, Lá, Si, Dó, Ré, Mi, Fá♯, Sol</strong>.</p></div>
-    <figure class="bloco-teclado">
-      <div class="teclado-rolagem"><div class="teclado" data-teclado="t-3-1"></div></div>
-      <figcaption>
-        <span>Escala de Sol maior: o Fá♯ entra no lugar do Fá.</span>
-        <span class="acoes-instrumento">
-          <button type="button" class="tocar pequeno" data-tocar-teclado="t-3-1"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir as notas</span></button>
-          <button type="button" class="secundario" data-montar-acorde="t-3-1" aria-pressed="false">Montar acorde</button>
-          <button type="button" class="tocar pequeno" data-tocar-acorde="t-3-1" hidden><span class="icone" aria-hidden="true"></span><span class="texto">Tocar juntas</span></button>
-        </span>
-      </figcaption>
-    </figure>
-    <figure class="exemplo" data-exemplo="ex-escala-sol">
+<li><strong>Escala</strong>: Sol, Lá, Si, Dó, Ré, Mi, Fá♯.</li>
+<li><strong>Padrão</strong>: maior, menor, menor, maior, maior, menor, diminuto.</li>
+<li><strong>Cifras</strong>: G, Am, Bm, C, D, Em, F♯°.</li>
+<li><strong>Confira o vii°</strong>: Fá♯, Lá, Dó tem 3ª menor e 5ª diminuta. É diminuto mesmo.</li>
+</ol></div>
+    <figure class="exemplo" data-exemplo="ex-campo-sol">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Escala de Sol maior</p>
-        <button type="button" class="tocar" data-tocar="ex-escala-sol"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Campo harmônico de Sol maior</p>
+        <button type="button" class="tocar" data-tocar="ex-campo-sol"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-escala-sol"></div>
-      <figcaption>O mesmo desenho da escala de Dó maior, começando em Sol. O Fá♯ mantém o semitom no fim.</figcaption>
+      <div class="partitura" data-partitura="ex-campo-sol"></div>
+      <figcaption>O mesmo padrão de qualidades, agora a partir de Sol.</figcaption>
     </figure>
-    <div class="prosa"><p><strong>Pense antes de abrir a resposta:</strong> Fá♯ e Sol♭ soam igual. Por que a escala usa Fá♯, e não Sol♭?</p></div>
-    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Porque cada letra aparece <strong>uma vez</strong>. Com Sol♭, a escala teria dois Sol e nenhum Fá: Sol, Lá, Si, Dó, Ré, Mi, Sol♭, Sol.</p></div></details>
-    <div class="prosa"><p>Agora o último passo é seu. <strong>Ré maior</strong>:</p>
-<ol>
-<li>Letras: Ré, Mi, Fá, Sol, Lá, Si, Dó, Ré.</li>
-<li>Ré–Mi tom; Mi–Fá é semitom, mas precisa ser tom, então <strong>Fá♯</strong>; Fá♯–Sol semitom; Sol–Lá tom; Lá–Si tom; Si–Dó é semitom, mas precisa ser tom, então <strong>Dó♯</strong>; Dó♯–Ré semitom.</li>
-<li>Quais são as notas da escala?</li>
-</ol>
-<p>E agora dois passos são seus. <strong>Fá maior</strong>: escreva as letras, confira cada passo e diga qual nota precisa de acidente.</p></div>
-    <details class="resposta"><summary>Ver as respostas</summary><div class="prosa"><p>Ré maior: <strong>Ré, Mi, Fá♯, Sol, Lá, Si, Dó♯, Ré</strong>.</p>
-<p>Fá maior: letras Fá, Sol, Lá, Si, Dó, Ré, Mi, Fá. Fá–Sol tom, Sol–Lá tom, e Lá–Si seria tom, mas a fórmula pede semitom: o Si desce para <strong>Si♭</strong>. Si♭–Dó fica um tom, e o resto confere. Fá maior: <strong>Fá, Sol, Lá, Si♭, Dó, Ré, Mi, Fá</strong>.</p></div></details>
-    <figure class="exemplo" data-exemplo="ex-escala-fa">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">Escala de Fá maior</p>
-        <button type="button" class="tocar" data-tocar="ex-escala-fa"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      </div>
-      <div class="partitura" data-partitura="ex-escala-fa"></div>
-      <figcaption>O 4º grau é Si♭: ouça o semitom curto entre Lá e Si♭.</figcaption>
-    </figure>
+    <div class="prosa"><p><strong>Pense antes de abrir a resposta:</strong> por que o padrão de qualidades é igual em todas as tonalidades maiores?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Porque toda escala maior tem a mesma fórmula, T–T–S–T–T–T–S. As 3ªs empilhadas sobre cada grau medem sempre os mesmos semitons, então as qualidades se repetem.</p></div></details>
+    <div class="prosa"><p>Agora o último passo é seu. <strong>Fá maior</strong>: escala Fá, Sol, Lá, Si♭, Dó, Ré, Mi; padrão maior, menor, menor, maior, maior, menor, diminuto. Quais são as cifras?</p>
+<p>E agora dois passos são seus: o campo harmônico de <strong>Ré maior</strong>.</p></div>
+    <details class="resposta"><summary>Ver as respostas</summary><div class="prosa"><p>Fá maior: <strong>F, Gm, Am, B♭, C, Dm, E°</strong>.</p>
+<p>Ré maior: escala Ré, Mi, Fá♯, Sol, Lá, Si, Dó♯. Cifras: <strong>D, Em, F♯m, G, A, Bm, C♯°</strong>.</p></div></details>
   </section>
   <section class="secao" id="secao-5">
     <h2><span class="num">5</span>Cuidado com este erro</h2>
-    <div class="prosa"><p>Uma colega escreveu a escala de Fá maior assim:</p>
-<p>&gt; Fá, Sol, Lá, <strong>Lá♯</strong>, Dó, Ré, Mi, Fá</p>
-<p>Tocada, ela soa certa. Onde está o erro, por que está errado e como fica a escrita correta?</p></div>
-    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Ela repetiu a letra <strong>Lá</strong> e pulou a letra <strong>Si</strong>. Lá♯ e Si♭ soam igual, mas a escala usa cada letra uma vez. O certo é <strong>Fá, Sol, Lá, Si♭, Dó, Ré, Mi, Fá</strong>.</p></div></details>
+    <div class="prosa"><p>Uma colega montou o campo de Ré maior assim:</p>
+<p>&gt; "D, Em, Fm, G, A, Bm, C°"</p>
+<p>Onde está o erro, por que está errado e qual é o certo?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Ela usou as notas naturais e esqueceu a <strong>armadura de Ré maior</strong> (Fá♯ e Dó♯). O iii grau é <strong>F♯m</strong> (Fá♯, Lá, Dó♯) e o vii° é <strong>C♯°</strong> (Dó♯, Mi, Sol). As tríades do campo usam só notas da escala.</p></div></details>
   </section>
 
   <section class="secao exercicios" id="exercicios">
@@ -746,169 +682,158 @@ tbody tr:last-child td { border-bottom: 0; }
     <p class="placar" id="placar" aria-live="polite">Responda para ver seus acertos.</p>
     <article class="exercicio" data-exercicio="0" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 1 · Múltipla escolha</p>
-      <div class="enunciado"><p>Qual é a fórmula da escala maior?</p></div>
+      <div class="enunciado"><p>Qual é a tríade do <strong>vi grau</strong> de Dó maior?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">T–T–S–T–T–T–S</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">T–S–T–T–T–S–T</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">T–T–T–S–T–T–S</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">T–T–S–T–T–S–T</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Am</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">A</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Em</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">G</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Em Dó maior, os semitons caem em Mi–Fá (3º passo) e Si–Dó (7º passo): T–T–S–T–T–T–S. Quem marca T–S–T–T–T–S–T contou as notas brancas a partir de Ré, e não a partir da tônica Dó.</p></div>
+        <div class="explicacao"><p>Dó, Ré, Mi, Fá, Sol, <strong>Lá</strong>: o 6º grau. Lá, Dó, Mi tem 3ª menor: <strong>Am</strong>. Quem marca A usou Dó♯, que não está em Dó maior.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="1" data-tipo="teclado">
       <p class="rotulo">Exercício 2 · Toque a nota</p>
-      <div class="enunciado"><p>Na escala de Sol maior, Mi5 é o 6º grau e está marcado. Clique na <strong>próxima nota da escala</strong>.</p></div>
+      <div class="enunciado"><p>Em Ré maior, Ré4 está marcado. Clique na <strong>fundamental do IV grau</strong>.</p></div>
       <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="1"></div></div>
       <div class="acoes-teclado">
         <button type="button" class="tocar pequeno" data-tocar-base="1"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
       </div>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Do 6º para o 7º grau a fórmula pede um tom. Mi–Fá é só um semitom, então a nota é <strong>Fá♯</strong>. Se clicou em Fá, esqueceu de conferir o passo com a fórmula.</p></div>
+        <div class="explicacao"><p>Ré, Mi, Fá♯, <strong>Sol</strong>: o 4º grau. O IV de Ré maior é <strong>G</strong>.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="2" data-tipo="percepcao">
       <p class="rotulo">Exercício 3 · Percepção</p>
-      <div class="enunciado"><p>Ouça o passo do 7º para o 8º grau de uma escala maior. É um tom ou um semitom?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-si-do"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-si-do" hidden>
-        <div class="partitura" data-partitura="exe-si-do"></div>
-        <figcaption>Si–Dó em Dó maior: um semitom.</figcaption>
+      <div class="enunciado"><p>Ouça a tríade. Ela é maior ou menor?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-em"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-em" hidden>
+        <div class="partitura" data-partitura="exe-em"></div>
+        <figcaption>Em: Mi, Sol, Si, menor.</figcaption>
       </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">tom</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">semitom</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">3ª maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">3ª menor</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Em toda escala maior, a sensível fica <strong>um semitom</strong> abaixo da tônica. É esse passo curto que faz a tônica soar como chegada.</p></div>
+        <div class="explicacao"><p>Mi–Sol tem 3 semitons: terça menor, acorde <strong>Em</strong>, o iii grau de Dó maior.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="3" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 4 · Múltipla escolha</p>
-      <div class="enunciado"><p>Como se chama o <strong>5º grau</strong> da escala maior?</p></div>
+      <div class="enunciado"><p>Qual é o padrão de qualidades do campo harmônico maior?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">dominante</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">subdominante</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">mediante</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">sensível</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">maior, menor, menor, maior, maior, menor, diminuto</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">maior, maior, menor, maior, menor, menor, diminuto</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">menor, maior, maior, menor, menor, maior, diminuto</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>O 5º grau é a <strong>dominante</strong> (Sol, em Dó maior). A subdominante é o 4º grau, a mediante é o 3º e a sensível é o 7º.</p></div>
+        <div class="explicacao"><p>I maior, ii e iii menores, IV e V maiores, vi menor, vii° diminuto. Vale para toda tonalidade maior.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="4" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 5 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quais são as notas da escala de <strong>Ré maior</strong>?</p></div>
+      <div class="enunciado"><p>Em <strong>Sol maior</strong>, qual é o acorde de <strong>V grau</strong>?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">Ré, Mi, Fá♯, Sol, Lá, Si, Dó♯, Ré</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">Ré, Mi, Fá, Sol, Lá, Si, Dó, Ré</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">Ré, Mi, Fá♯, Sol, Lá, Si, Dó, Ré</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">Ré, Mi, Sol♭, Sol, Lá, Si, Dó♯, Ré</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">D</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Dm</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">C</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">G</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>A fórmula pede tom entre o 2º e o 3º grau (Mi–Fá♯) e entre o 6º e o 7º (Si–Dó♯). Só com notas naturais os semitons caem no lugar errado; com Sol♭ a letra Sol se repete e Fá some.</p></div>
+        <div class="explicacao"><p>Sol, Lá, Si, Dó, <strong>Ré</strong>: o 5º grau. O V é maior: <strong>D</strong> (Ré, Fá♯, Lá).</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="5" data-tipo="teclado">
-      <p class="rotulo">Exercício 6 · Toque a nota</p>
-      <div class="enunciado"><p>Fá4 está marcado. Na escala de Fá maior, clique na <strong>4ª nota</strong>.</p></div>
-      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="5"></div></div>
+    <article class="exercicio" data-exercicio="5" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 6 · Múltipla escolha</p>
+      <div class="enunciado"><p>Na numeração romana, o que indica <strong>ii</strong> em minúsculas?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">Que o acorde do 2º grau é menor</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Que o acorde é pequeno, de duas notas</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Que é o 2º acorde da música</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Minúsculas indicam acorde <strong>menor</strong>; maiúsculas, maior. O ii de Dó maior é Dm.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="6" data-tipo="teclado">
+      <p class="rotulo">Exercício 7 · Toque a nota</p>
+      <div class="enunciado"><p>Em Lá maior, Lá4 está marcado. Clique na <strong>fundamental do V grau</strong>.</p></div>
+      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="6"></div></div>
       <div class="acoes-teclado">
-        <button type="button" class="tocar pequeno" data-tocar-base="5"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
+        <button type="button" class="tocar pequeno" data-tocar-base="6"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
       </div>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Fá, Sol, Lá, <strong>Si♭</strong>. Do 3º para o 4º grau a fórmula pede um semitom, e Lá–Si seria um tom. Se clicou em Si, manteve a nota natural sem conferir o passo.</p></div>
-      </div>
-    </article>
-    <article class="exercicio" data-exercicio="6" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 7 · Múltipla escolha</p>
-      <div class="enunciado"><p>Em qualquer escala maior, quantos semitons há do <strong>3º para o 4º grau</strong>?</p></div>
-      <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">1 semitom</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2 semitons</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">3 semitons</button></li>
-      </ol>
-      <div class="retorno" hidden>
-        <p class="veredito"></p>
-        <div class="explicacao"><p>A fórmula é T–T–<strong>S</strong>–T–T–T–S: o terceiro passo, do 3º para o 4º grau, é um semitom. Em Dó maior é Mi–Fá. Se marcou 2, pensou num tom.</p></div>
+        <div class="explicacao"><p>Lá, Si, Dó♯, Ré, <strong>Mi</strong>: o 5º grau. O V de Lá maior é <strong>E</strong>.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="7" data-tipo="percepcao">
       <p class="rotulo">Exercício 8 · Percepção</p>
-      <div class="enunciado"><p>Ouça o passo do 1º para o 2º grau de Sol maior. É um tom ou um semitom?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-sol-la"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-sol-la" hidden>
-        <div class="partitura" data-partitura="exe-sol-la"></div>
-        <figcaption>Sol–Lá: um tom.</figcaption>
+      <div class="enunciado"><p>Ouça os quatro acordes. Qual é o último?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-progressao"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-progressao" hidden>
+        <div class="partitura" data-partitura="exe-progressao"></div>
+        <figcaption>C, F, G e de novo C: o I volta no fim.</figcaption>
       </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">tom</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">semitom</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">o I (volta ao repouso)</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">o V (fica em suspenso)</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Sol–Lá é <strong>um tom</strong>, como pede o primeiro passo da fórmula. Compare com o passo do 7º para o 8º grau, que é bem mais curto.</p></div>
+        <div class="explicacao"><p>A progressão termina no <strong>I</strong>: soa como chegada. Se terminasse no V, ficaria pedindo continuação.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="8" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 9 · Múltipla escolha</p>
-      <div class="enunciado"><p>Em Dó maior, que grau é <strong>Lá</strong>?</p></div>
+      <div class="enunciado"><p>Quais são as tríades do campo harmônico de <strong>Fá maior</strong>?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">5º grau</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">6º grau</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">7º grau</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">4º grau</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">F, Gm, Am, B♭, C, Dm, E°</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">F, Gm, Am, B, C, Dm, E°</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">F, G, Am, B♭, C, Dm, Em</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Dó, Ré, Mi, Fá, Sol, <strong>Lá</strong>: sexta nota, 6º grau, a superdominante. Se marcou 5º, deixou de contar a tônica como 1º grau.</p></div>
+        <div class="explicacao"><p>A escala de Fá maior tem Si♭, então o IV é <strong>B♭</strong>. O padrão maior, menor, menor, maior, maior, menor, diminuto dá F, Gm, Am, B♭, C, Dm, E°.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="9" data-tipo="teclado">
-      <p class="rotulo">Exercício 10 · Toque a nota</p>
-      <div class="enunciado"><p>Ré4 está marcado. Clique na <strong>sensível</strong> de Ré maior.</p></div>
-      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="9"></div></div>
-      <div class="acoes-teclado">
-        <button type="button" class="tocar pequeno" data-tocar-base="9"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
-      </div>
-      <div class="retorno" hidden>
-        <p class="veredito"></p>
-        <div class="explicacao"><p>A sensível é o 7º grau, um semitom abaixo da tônica: em Ré maior é <strong>Dó♯</strong>. Dó natural ficaria a um tom de Ré e não pediria a tônica do mesmo jeito.</p></div>
-      </div>
-    </article>
-    <article class="exercicio" data-exercicio="10" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 11 · Múltipla escolha</p>
-      <div class="enunciado"><p>Qual escala maior tem <strong>um único sustenido, Fá♯</strong>?</p></div>
+    <article class="exercicio" data-exercicio="9" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 10 · Múltipla escolha</p>
+      <div class="enunciado"><p>Qual grau do campo harmônico maior é <strong>diminuto</strong>?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">Sol maior</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">Ré maior</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">Fá maior</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">Dó maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">vii°</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">ii</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">iii</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">vi</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Sol maior é Sol, Lá, Si, Dó, Ré, Mi, Fá♯, Sol: só o Fá muda. Ré maior tem também o Dó♯, Fá maior tem Si♭ e Dó maior não tem nenhum acidente.</p></div>
+        <div class="explicacao"><p>Só o <strong>vii°</strong>: em Dó maior, Si, Ré, Fá, com 3ª menor e 5ª diminuta. ii, iii e vi são menores.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="11" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 12 · Múltipla escolha</p>
-      <div class="enunciado"><p>Qual nome vem <strong>antes</strong> da dominante na ordem dos graus?</p></div>
+    <article class="exercicio" data-exercicio="10" data-tipo="percepcao">
+      <p class="rotulo">Exercício 11 · Percepção</p>
+      <div class="enunciado"><p>Ouça a tríade. Ela é maior ou menor?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-f"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-f" hidden>
+        <div class="partitura" data-partitura="exe-f"></div>
+        <figcaption>F: Fá, Lá, Dó, maior.</figcaption>
+      </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">subdominante</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">superdominante</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">supertônica</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">sensível</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">3ª maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">3ª menor</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>A subdominante é o 4º grau, logo antes da dominante (5º). "Sub" quer dizer abaixo; a superdominante, o 6º grau, fica logo acima.</p></div>
+        <div class="explicacao"><p>Fá–Lá tem 4 semitons: terça maior, acorde <strong>F</strong>, o IV grau de Dó maior.</p></div>
       </div>
     </article>
   </section>
@@ -916,26 +841,25 @@ tbody tr:last-child td { border-bottom: 0; }
   <section class="secao" id="resumo">
     <h2><span class="num">7</span>Resumo</h2>
     <ul class="resumo">
-      <li>A escala maior segue a fórmula <strong>T–T–S–T–T–T–S</strong>; os semitons ficam entre o 3º e o 4º grau e entre o 7º e o 8º.</li>
-      <li>Os graus são <strong>tônica, supertônica, mediante, subdominante, dominante, superdominante e sensível</strong>.</li>
-      <li>Para montar a escala, escreva as sete letras em ordem e ajuste com ♯ ou ♭ até cada passo bater com a fórmula.</li>
-      <li>Cada letra aparece uma vez: em Fá maior é Si♭, e não Lá♯.</li>
-      <li>Sol maior tem Fá♯; Ré maior tem Fá♯ e Dó♯; Fá maior tem Si♭.</li>
-      <li>A <strong>sensível</strong> fica um semitom abaixo da tônica e soa como se pedisse para chegar nela.</li>
+      <li>O <strong>campo harmônico</strong> são as tríades formadas só com notas da escala, uma em cada grau.</li>
+      <li>Padrão em toda tonalidade maior: <strong>I, ii, iii, IV, V, vi, vii°</strong>.</li>
+      <li>Em Dó maior: C, Dm, Em, F, G, Am, B°.</li>
+      <li><strong>I</strong> tônica (repouso), <strong>IV</strong> subdominante (afasta), <strong>V</strong> dominante (tensão que pede o I).</li>
+      <li>Use a armadura: em Ré maior o iii é F♯m e o vii° é C♯°.</li>
     </ul>
     <div class="para-o-chat">
       <p class="rotulo">Leve para o chat do professor</p>
-      <p id="pergunta-chat">Me peça para montar escalas maiores a partir de notas diferentes, uma de cada vez, e me dê uma dica sobre o passo que eu errar antes de mostrar a escala.</p>
+      <p id="pergunta-chat">Me peça campos harmônicos de tonalidades maiores, um de cada vez, e me dê uma dica antes de mostrar a resposta.</p>
       <button type="button" id="copiar-pergunta" class="secundario">Copiar pergunta</button>
     </div>
   </section>
 </main>
 
 <footer class="rodape">
-  <p>Aula I07 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
+  <p>Aula I14 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
 </footer>
 
-<script type="application/json" id="dados-aula">{"codigo": "I07", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura": {"id": "ex-abertura", "titulo": "Ouça antes de qualquer nome", "legenda": "As duas sequências usam só notas naturais. Qual delas soa como se chegasse em casa na última nota?", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC/2 D/2 E/2 F/2 G/2 A/2 B/2 c/2 | z4 | D/2 E/2 F/2 G/2 A/2 B/2 c/2 d/2 | z4 |]\n", "andamento": 80, "eventos": [{"midis": [60], "duracao": 0.5}, {"midis": [62], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [69], "duracao": 0.5}, {"midis": [71], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [], "duracao": 4.0}, {"midis": [62], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [69], "duracao": 0.5}, {"midis": [71], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [74], "duracao": 0.5}, {"midis": [], "duracao": 4.0}]}, "ex-escala-do": {"id": "ex-escala-do", "titulo": "Escala de Dó maior", "legenda": "Ouça os dois passos curtos: Mi–Fá, no meio, e Si–Dó, no fim.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC D E F | G A B c |]\n", "andamento": 80, "eventos": [{"midis": [60], "duracao": 1.0}, {"midis": [62], "duracao": 1.0}, {"midis": [64], "duracao": 1.0}, {"midis": [65], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [71], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}]}, "ex-do-re-mi-fa": {"id": "ex-do-re-mi-fa", "titulo": "Dó, ré, mi, fá", "legenda": "A melodia sobe pelas quatro primeiras notas da escala: dois tons e um semitom.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nC/2 D/2 E/2 F/2 | F F | C/2 D/2 C/2 D/2 | D D |]\nw:Dó, ré, mi, fá, fá, fá, Dó, ré, dó, ré, ré, ré\n", "andamento": 100, "eventos": [{"midis": [60], "duracao": 0.5}, {"midis": [62], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [65], "duracao": 1.0}, {"midis": [65], "duracao": 1.0}, {"midis": [60], "duracao": 0.5}, {"midis": [62], "duracao": 0.5}, {"midis": [60], "duracao": 0.5}, {"midis": [62], "duracao": 0.5}, {"midis": [62], "duracao": 1.0}, {"midis": [62], "duracao": 1.0}]}, "ex-sensivel": {"id": "ex-sensivel", "titulo": "A sensível pede a tônica", "legenda": "A escala para no Si e espera. Repare como o Dó do fim soa como um alívio.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC D E F | G A B2 | z4 | c4 |]\n", "andamento": 80, "eventos": [{"midis": [60], "duracao": 1.0}, {"midis": [62], "duracao": 1.0}, {"midis": [64], "duracao": 1.0}, {"midis": [65], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [71], "duracao": 2.0}, {"midis": [], "duracao": 4.0}, {"midis": [72], "duracao": 4.0}]}, "ex-pirulito": {"id": "ex-pirulito", "titulo": "Pirulito que bate bate", "legenda": "\"Pi-ru-li\": mediante, subdominante e dominante. Depois a melodia volta pelo mesmo caminho.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nE/2 F/2 | G/2 G/4 G/4 F/2 E/2 |]\nw:Pi-ru-li-to que ba-te\n", "andamento": 88, "eventos": [{"midis": [64], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.25}, {"midis": [67], "duracao": 0.25}, {"midis": [65], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}]}, "ex-escala-sol": {"id": "ex-escala-sol", "titulo": "Escala de Sol maior", "legenda": "O mesmo desenho da escala de Dó maior, começando em Sol. O Fá♯ mantém o semitom no fim.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nG A B c | d e ^f g |]\n", "andamento": 80, "eventos": [{"midis": [67], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [71], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [74], "duracao": 1.0}, {"midis": [76], "duracao": 1.0}, {"midis": [78], "duracao": 1.0}, {"midis": [79], "duracao": 1.0}]}, "ex-escala-fa": {"id": "ex-escala-fa", "titulo": "Escala de Fá maior", "legenda": "O 4º grau é Si♭: ouça o semitom curto entre Lá e Si♭.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nF G A _B | c d e f |]\n", "andamento": 80, "eventos": [{"midis": [65], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [70], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [74], "duracao": 1.0}, {"midis": [76], "duracao": 1.0}, {"midis": [77], "duracao": 1.0}]}, "exe-si-do": {"id": "exe-si-do", "titulo": "7º para 8º grau", "legenda": "Si–Dó em Dó maior: um semitom.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nB2 c2 |]\n", "andamento": 66, "eventos": [{"midis": [71], "duracao": 2.0}, {"midis": [72], "duracao": 2.0}]}, "exe-sol-la": {"id": "exe-sol-la", "titulo": "1º para 2º grau", "legenda": "Sol–Lá: um tom.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nG2 A2 |]\n", "andamento": 66, "eventos": [{"midis": [67], "duracao": 2.0}, {"midis": [69], "duracao": 2.0}]}}, "teclados": {"t-1-2": {"de": 60, "ate": 72, "destaque": [{"midi": 60, "nome": "Dó"}, {"midi": 62, "nome": "Ré"}, {"midi": 64, "nome": "Mi"}, {"midi": 65, "nome": "Fá"}, {"midi": 67, "nome": "Sol"}, {"midi": 69, "nome": "Lá"}, {"midi": 71, "nome": "Si"}, {"midi": 72, "nome": "Dó"}]}, "t-3-1": {"de": 64, "ate": 81, "destaque": [{"midi": 67, "nome": "Sol"}, {"midi": 69, "nome": "Lá"}, {"midi": 71, "nome": "Si"}, {"midi": 72, "nome": "Dó"}, {"midi": 74, "nome": "Ré"}, {"midi": 76, "nome": "Mi"}, {"midi": 78, "nome": "Fá♯"}, {"midi": 79, "nome": "Sol"}]}}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "formula-escala-maior", "correta": 0}, {"indice": 1, "tipo": "teclado", "conceito": "construir-escala-maior", "base": 76, "alvo": 78, "alvo_nome": "Fá♯", "intervalo_nome": "2ª maior", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 76, "nome": "Mi"}]}}, {"indice": 2, "tipo": "percepcao", "conceito": "tom-e-semitom", "exemplo": "exe-si-do", "correta": 1}, {"indice": 3, "tipo": "multipla_escolha", "conceito": "nomes-dos-graus", "correta": 0}, {"indice": 4, "tipo": "multipla_escolha", "conceito": "construir-escala-maior", "correta": 0}, {"indice": 5, "tipo": "teclado", "conceito": "construir-escala-maior", "base": 65, "alvo": 70, "alvo_nome": "Si♭", "intervalo_nome": "4ª justa", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 65, "nome": "Fá"}]}}, {"indice": 6, "tipo": "multipla_escolha", "conceito": "formula-escala-maior", "correta": 0}, {"indice": 7, "tipo": "percepcao", "conceito": "tom-e-semitom", "exemplo": "exe-sol-la", "correta": 0}, {"indice": 8, "tipo": "multipla_escolha", "conceito": "graus-da-escala", "correta": 1}, {"indice": 9, "tipo": "teclado", "conceito": "nomes-dos-graus", "base": 62, "alvo": 73, "alvo_nome": "Dó♯", "intervalo_nome": "7ª maior", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 62, "nome": "Ré"}]}}, {"indice": 10, "tipo": "multipla_escolha", "conceito": "construir-escala-maior", "correta": 0}, {"indice": 11, "tipo": "multipla_escolha", "conceito": "nomes-dos-graus", "correta": 0}]}</script>
+<script type="application/json" id="dados-aula">{"codigo": "I14", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura": {"id": "ex-abertura", "titulo": "Ouça antes de qualquer nome", "legenda": "Quatro acordes. O último soa como chegada? Qual deles mais \"pede\" a volta?", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEG]2 [FAc]2 | [GBd]2 [CEG]2 |]\n", "andamento": 60, "eventos": [{"midis": [60, 64, 67], "duracao": 2.0}, {"midis": [65, 69, 72], "duracao": 2.0}, {"midis": [67, 71, 74], "duracao": 2.0}, {"midis": [60, 64, 67], "duracao": 2.0}]}, "ex-campo-do": {"id": "ex-campo-do", "titulo": "As tríades de Dó maior, grau por grau", "legenda": "Ouça a qualidade mudar: maior, menor, menor, maior, maior, menor, diminuta, e o Dó de novo.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEG] [DFA] [EGB] [FAc] | [GBd] [Ace] [Bdf] [ceg] |]\n", "andamento": 60, "eventos": [{"midis": [60, 64, 67], "duracao": 1.0}, {"midis": [62, 65, 69], "duracao": 1.0}, {"midis": [64, 67, 71], "duracao": 1.0}, {"midis": [65, 69, 72], "duracao": 1.0}, {"midis": [67, 71, 74], "duracao": 1.0}, {"midis": [69, 72, 76], "duracao": 1.0}, {"midis": [71, 74, 77], "duracao": 1.0}, {"midis": [72, 76, 79], "duracao": 1.0}]}, "ex-i-iv-v-i": {"id": "ex-i-iv-v-i", "titulo": "I–IV–V–I em Dó maior", "legenda": "C, F, G, C: saída, afastamento, tensão e chegada.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEG]2 [FAc]2 | [GBd]2 [CEG]2 |]\n", "andamento": 66, "eventos": [{"midis": [60, 64, 67], "duracao": 2.0}, {"midis": [65, 69, 72], "duracao": 2.0}, {"midis": [67, 71, 74], "duracao": 2.0}, {"midis": [60, 64, 67], "duracao": 2.0}]}, "ex-campo-sol": {"id": "ex-campo-sol", "titulo": "Campo harmônico de Sol maior", "legenda": "O mesmo padrão de qualidades, agora a partir de Sol.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[GBd] [Ace] [Bd^f] [ceg] | [d^fa] [egb] [^fac'] [gbd'] |]\n", "andamento": 60, "eventos": [{"midis": [67, 71, 74], "duracao": 1.0}, {"midis": [69, 72, 76], "duracao": 1.0}, {"midis": [71, 74, 78], "duracao": 1.0}, {"midis": [72, 76, 79], "duracao": 1.0}, {"midis": [74, 78, 81], "duracao": 1.0}, {"midis": [76, 79, 83], "duracao": 1.0}, {"midis": [78, 81, 84], "duracao": 1.0}, {"midis": [79, 83, 86], "duracao": 1.0}]}, "exe-em": {"id": "exe-em", "titulo": "Tríade", "legenda": "Em: Mi, Sol, Si, menor.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[EGB]4 |]\n", "andamento": 60, "eventos": [{"midis": [64, 67, 71], "duracao": 4.0}]}, "exe-progressao": {"id": "exe-progressao", "titulo": "Progressão", "legenda": "C, F, G e de novo C: o I volta no fim.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEG]2 [FAc]2 | [GBd]2 [CEG]2 |]\n", "andamento": 66, "eventos": [{"midis": [60, 64, 67], "duracao": 2.0}, {"midis": [65, 69, 72], "duracao": 2.0}, {"midis": [67, 71, 74], "duracao": 2.0}, {"midis": [60, 64, 67], "duracao": 2.0}]}, "exe-f": {"id": "exe-f", "titulo": "Tríade", "legenda": "F: Fá, Lá, Dó, maior.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[FAc]4 |]\n", "andamento": 60, "eventos": [{"midis": [65, 69, 72], "duracao": 4.0}]}}, "teclados": {}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "triades-da-escala", "correta": 0}, {"indice": 1, "tipo": "teclado", "conceito": "acordes-principais", "base": 62, "alvo": 67, "alvo_nome": "Sol", "intervalo_nome": "4ª justa", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 62, "nome": "Ré"}]}}, {"indice": 2, "tipo": "percepcao", "conceito": "percepcao-maior-menor", "exemplo": "exe-em", "correta": 1}, {"indice": 3, "tipo": "multipla_escolha", "conceito": "padrao-do-campo", "correta": 0}, {"indice": 4, "tipo": "multipla_escolha", "conceito": "campo-em-outras-tonalidades", "correta": 0}, {"indice": 5, "tipo": "multipla_escolha", "conceito": "numeracao-romana", "correta": 0}, {"indice": 6, "tipo": "teclado", "conceito": "acordes-principais", "base": 69, "alvo": 76, "alvo_nome": "Mi", "intervalo_nome": "5ª justa", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 69, "nome": "Lá"}]}}, {"indice": 7, "tipo": "percepcao", "conceito": "acordes-principais", "exemplo": "exe-progressao", "correta": 0}, {"indice": 8, "tipo": "multipla_escolha", "conceito": "campo-em-outras-tonalidades", "correta": 0}, {"indice": 9, "tipo": "multipla_escolha", "conceito": "padrao-do-campo", "correta": 0}, {"indice": 10, "tipo": "percepcao", "conceito": "percepcao-maior-menor", "exemplo": "exe-f", "correta": 0}]}</script>
 <script src="https://cdn.jsdelivr.net/npm/abcjs@6.7.1/dist/abcjs-basic-min.js"></script>
 <script>
 /* Aula interativa: partitura (abcjs), som sintetizado no navegador (piano ou violão),

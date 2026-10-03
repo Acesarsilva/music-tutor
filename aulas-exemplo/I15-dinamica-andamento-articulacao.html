@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Escala maior</title>
+<title>Dinâmica, andamento e articulação</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
@@ -520,7 +520,7 @@ tbody tr:last-child td { border-bottom: 0; }
 <body>
 <header class="barra">
   <div class="barra-interna">
-    <p class="barra-aula"><span class="selo">I07</span> Escala maior</p>
+    <p class="barra-aula"><span class="selo">I15</span> Dinâmica, andamento e articulação</p>
     <div class="controles">
       <div class="timbre" role="group" aria-label="Instrumento">
         <button type="button" id="timbre-piano" data-timbre="piano" aria-pressed="true">Piano</button>
@@ -538,33 +538,35 @@ tbody tr:last-child td { border-bottom: 0; }
 <main class="aula">
   <section class="abertura">
     <p class="rotulo">Teoria musical · Iniciante</p>
-    <h1>Escala maior</h1>
-    <p class="chamada">A fórmula de tons e semitons da escala maior, os nomes dos graus e como montar a escala a partir de qualquer nota.</p>
+    <h1>Dinâmica, andamento e articulação</h1>
+    <p class="chamada">Os sinais que dizem como tocar: força, velocidade, articulação das notas e repetições.</p>
     <div class="ficha">
       <div>
         <h2 class="rotulo">Você vai aprender</h2>
         <ul>
-          <li>Reconhecer a fórmula <strong>T–T–S–T–T–T–S</strong></li>
-          <li>Numerar os <strong>graus</strong> da escala e conhecer o nome de cada um</li>
-          <li>Montar a escala maior a partir de <strong>qualquer nota</strong>, usando cada letra uma vez</li>
-          <li>Ouvir a <strong>sensível</strong> pedindo a tônica</li>
+          <li>Ler <strong>pp a ff</strong> e as forquilhas de <strong>crescendo</strong> e <strong>diminuendo</strong></li>
+          <li>Entender o <strong>andamento</strong> em BPM e alguns termos italianos</li>
+          <li>Diferenciar <strong>staccato</strong>, <strong>legato</strong> e <strong>acento</strong></li>
+          <li>Ler <strong>sinais de repetição</strong></li>
         </ul>
       </div>
       <div>
         <h2 class="rotulo">Antes, é bom saber</h2>
         <ul>
-          <li>Nomes das notas (I02)</li>
-          <li>Tom e semitom (I06)</li>
+          <li>Figuras rítmicas (I04)</li>
+          <li>Pulso e compasso simples (I05)</li>
         </ul>
       </div>
     </div>
     <nav class="indice" aria-label="Seções da aula">
       <ol>
         <li><a href="#secao-1">Antes de começar</a></li>
-        <li><a href="#secao-2">A fórmula da escala maior</a></li>
-        <li><a href="#secao-3">Graus e seus nomes</a></li>
-        <li><a href="#secao-4">Montando a escala em outra nota</a></li>
-        <li><a href="#secao-5">Cuidado com este erro</a></li>
+        <li><a href="#secao-2">Dinâmica</a></li>
+        <li><a href="#secao-3">Andamento</a></li>
+        <li><a href="#secao-4">Articulação</a></li>
+        <li><a href="#secao-5">Sinais de repetição</a></li>
+        <li><a href="#secao-6">Passo a passo para ler uma indicação</a></li>
+        <li><a href="#secao-7">Cuidado com este erro</a></li>
         <li><a href="#exercicios">Exercícios</a></li>
         <li><a href="#resumo">Resumo</a></li>
       </ol>
@@ -575,14 +577,14 @@ tbody tr:last-child td { border-bottom: 0; }
     <h2><span class="num">1</span>Antes de começar</h2>
     <div class="prosa"><p>Responda de cabeça, sem consultar nada. Depois confira.</p>
 <ol>
-<li>Quantos semitons cabem em um tom?</li>
-<li>Quais duplas de notas naturais vizinhas ficam a só um semitom?</li>
-<li>Que nota fica um semitom acima de Fá?</li>
+<li>Qual propriedade do som é o forte e o fraco?</li>
+<li>O que é o pulso de uma música?</li>
+<li>Para que serve a ligadura entre duas notas iguais?</li>
 </ol></div>
     <details class="resposta"><summary>Conferir as respostas</summary><div class="prosa"><ol>
-<li>Dois semitons.</li>
-<li>Mi–Fá e Si–Dó.</li>
-<li>Fá♯, que também se chama Sol♭.</li>
+<li>A intensidade.</li>
+<li>A batida constante que dá vontade de bater o pé.</li>
+<li>Para somar as durações num som só.</li>
 </ol></div></details>
     <figure class="exemplo" data-exemplo="ex-abertura">
       <div class="exemplo-topo">
@@ -590,352 +592,365 @@ tbody tr:last-child td { border-bottom: 0; }
         <button type="button" class="tocar" data-tocar="ex-abertura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
       <div class="partitura" data-partitura="ex-abertura"></div>
-      <figcaption>As duas sequências usam só notas naturais. Qual delas soa como se chegasse em casa na última nota?</figcaption>
+      <figcaption>A mesma escala duas vezes. O que mudou no jeito de tocar?</figcaption>
     </figure>
-    <div class="prosa"><p>A primeira sequência é a <strong>escala de Dó maior</strong>. A segunda tem as mesmas notas, começando em Ré, e soa diferente porque os tons e semitons caem em outros lugares.</p>
-<p>Ao final, você vai montar a escala maior a partir de qualquer nota e dar nome a cada nota dela.</p></div>
+    <div class="prosa"><p>Na primeira vez, as notas saíram <strong>curtas e separadas</strong>; na segunda, <strong>ligadas</strong>, uma emendando na outra. As notas e o ritmo são os mesmos: mudou a <strong>articulação</strong>. Junto com a <strong>dinâmica</strong> (a força) e o <strong>andamento</strong> (a velocidade), ela diz <strong>como</strong> tocar o que está escrito.</p>
+<p>Ao final, você vai ler e ouvir os principais sinais de dinâmica, andamento, articulação e repetição.</p></div>
   </section>
   <section class="secao" id="secao-2">
-    <h2><span class="num">2</span>A fórmula da escala maior</h2>
-    <div class="prosa"><p><strong>Escala</strong> é uma sequência de notas em ordem, da mais grave para a mais aguda. A escala maior tem sete notas diferentes, e a oitava nota repete a primeira, uma oitava acima.</p>
-<p>O que faz uma escala ser <strong>maior</strong> é a ordem das distâncias entre as notas:</p>
-<p><strong>tom – tom – semitom – tom – tom – tom – semitom</strong>, ou <strong>T–T–S–T–T–T–S</strong>.</p></div>
+    <h2><span class="num">2</span>Dinâmica</h2>
+    <div class="prosa"><p>Os sinais de <strong>dinâmica</strong> ficam sob a pauta e usam palavras italianas:</p></div>
     <figure class="tabela">
       <div class="tabela-rolagem">
         <table>
-          <thead><tr><th scope="col">Passo</th><th scope="col">Notas</th><th scope="col">Distância</th></tr></thead>
+          <thead><tr><th scope="col">Sinal</th><th scope="col">Nome</th><th scope="col">Significado</th></tr></thead>
           <tbody>
-            <tr><td>1º</td><td>Dó–Ré</td><td>tom</td></tr>
-            <tr><td>2º</td><td>Ré–Mi</td><td>tom</td></tr>
-            <tr><td>3º</td><td>Mi–Fá</td><td>semitom</td></tr>
-            <tr><td>4º</td><td>Fá–Sol</td><td>tom</td></tr>
-            <tr><td>5º</td><td>Sol–Lá</td><td>tom</td></tr>
-            <tr><td>6º</td><td>Lá–Si</td><td>tom</td></tr>
-            <tr><td>7º</td><td>Si–Dó</td><td>semitom</td></tr>
+            <tr><td>pp</td><td>pianissimo</td><td>muito fraco</td></tr>
+            <tr><td>p</td><td>piano</td><td>fraco</td></tr>
+            <tr><td>mp</td><td>mezzo piano</td><td>meio fraco</td></tr>
+            <tr><td>mf</td><td>mezzo forte</td><td>meio forte</td></tr>
+            <tr><td>f</td><td>forte</td><td>forte</td></tr>
+            <tr><td>ff</td><td>fortissimo</td><td>muito forte</td></tr>
           </tbody>
         </table>
       </div>
-      <figcaption>A escala de Dó maior, passo a passo. Os semitons caem entre a 3ª e a 4ª nota e entre a 7ª e a 8ª.</figcaption>
+      <figcaption>Do mais fraco ao mais forte.</figcaption>
     </figure>
-    <figure class="bloco-teclado">
-      <div class="teclado-rolagem"><div class="teclado" data-teclado="t-1-2"></div></div>
-      <figcaption>
-        <span>Escala de Dó maior: no piano, só teclas brancas.</span>
-        <span class="acoes-instrumento">
-          <button type="button" class="tocar pequeno" data-tocar-teclado="t-1-2"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir as notas</span></button>
-          <button type="button" class="secundario" data-montar-acorde="t-1-2" aria-pressed="false">Montar acorde</button>
-          <button type="button" class="tocar pequeno" data-tocar-acorde="t-1-2" hidden><span class="icone" aria-hidden="true"></span><span class="texto">Tocar juntas</span></button>
-        </span>
-      </figcaption>
-    </figure>
-    <figure class="exemplo" data-exemplo="ex-escala-do">
+    <figure class="exemplo" data-exemplo="ex-p-f">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Escala de Dó maior</p>
-        <button type="button" class="tocar" data-tocar="ex-escala-do"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Brilha, brilha: piano e depois forte</p>
+        <button type="button" class="tocar" data-tocar="ex-p-f"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-escala-do"></div>
-      <figcaption>Ouça os dois passos curtos: Mi–Fá, no meio, e Si–Dó, no fim.</figcaption>
+      <div class="partitura" data-partitura="ex-p-f"></div>
+      <figcaption>A mesma frase, primeiro fraca (p), depois forte (f).</figcaption>
     </figure>
-    <div class="prosa"><p>A cantiga <em>Dó, ré, mi, fá</em> canta o nome das próprias notas e sobe pelo começo da escala de Dó maior.</p></div>
-    <figure class="exemplo" data-exemplo="ex-do-re-mi-fa">
+    <div class="prosa"><p>A <strong>forquilha</strong> que abre (&lt;) pede <strong>crescendo</strong>, ficar mais forte aos poucos. A que fecha (&gt;) pede <strong>diminuendo</strong>, ficar mais fraco aos poucos.</p></div>
+    <figure class="exemplo" data-exemplo="ex-crescendo">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Dó, ré, mi, fá</p>
-        <button type="button" class="tocar" data-tocar="ex-do-re-mi-fa"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Crescendo de p a f</p>
+        <button type="button" class="tocar" data-tocar="ex-crescendo"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-do-re-mi-fa"></div>
-      <figcaption>A melodia sobe pelas quatro primeiras notas da escala: dois tons e um semitom.</figcaption>
+      <div class="partitura" data-partitura="ex-crescendo"></div>
+      <figcaption>A escala sobe e a força cresce nota a nota.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-diminuendo">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Diminuendo de f a p</p>
+        <button type="button" class="tocar" data-tocar="ex-diminuendo"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-diminuendo"></div>
+      <figcaption>A escala desce e a força diminui.</figcaption>
     </figure>
   </section>
   <section class="secao" id="secao-3">
-    <h2><span class="num">3</span>Graus e seus nomes</h2>
-    <div class="prosa"><p>Cada nota da escala é um <strong>grau</strong>, numerado de 1 a 7 a partir da primeira. Em Dó maior, Dó é o 1º grau, Ré é o 2º, Mi é o 3º, e assim por diante. Cada grau também tem um nome, que diz o papel dele na escala.</p></div>
+    <h2><span class="num">3</span>Andamento</h2>
+    <div class="prosa"><p><strong>Andamento</strong> é a velocidade do pulso, medida em <strong>BPM</strong> (batidas por minuto). 60 BPM é uma batida por segundo; 120 BPM, duas por segundo. Na partitura, aparece como ♩ = 60, ou com termos italianos.</p></div>
+    <figure class="exemplo" data-exemplo="ex-60">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Brilha, brilha a 60 BPM</p>
+        <button type="button" class="tocar" data-tocar="ex-60"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-60"></div>
+      <figcaption>Uma batida por segundo: calmo.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-120">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Brilha, brilha a 120 BPM</p>
+        <button type="button" class="tocar" data-tocar="ex-120"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-120"></div>
+      <figcaption>Duas batidas por segundo: a mesma melodia, com o dobro da velocidade.</figcaption>
+    </figure>
     <figure class="tabela">
       <div class="tabela-rolagem">
         <table>
-          <thead><tr><th scope="col">Grau</th><th scope="col">Nome</th><th scope="col">Em Dó maior</th></tr></thead>
+          <thead><tr><th scope="col">Termo</th><th scope="col">Caráter</th><th scope="col">Cerca de</th></tr></thead>
           <tbody>
-            <tr><td>1º</td><td>tônica</td><td>Dó</td></tr>
-            <tr><td>2º</td><td>supertônica</td><td>Ré</td></tr>
-            <tr><td>3º</td><td>mediante</td><td>Mi</td></tr>
-            <tr><td>4º</td><td>subdominante</td><td>Fá</td></tr>
-            <tr><td>5º</td><td>dominante</td><td>Sol</td></tr>
-            <tr><td>6º</td><td>superdominante</td><td>Lá</td></tr>
-            <tr><td>7º</td><td>sensível</td><td>Si</td></tr>
+            <tr><td>Largo</td><td>bem lento</td><td>40 a 60 BPM</td></tr>
+            <tr><td>Adagio</td><td>lento</td><td>66 a 76 BPM</td></tr>
+            <tr><td>Andante</td><td>andando</td><td>76 a 108 BPM</td></tr>
+            <tr><td>Moderato</td><td>moderado</td><td>108 a 120 BPM</td></tr>
+            <tr><td>Allegro</td><td>rápido</td><td>120 a 168 BPM</td></tr>
+            <tr><td>Presto</td><td>muito rápido</td><td>acima de 168 BPM</td></tr>
           </tbody>
         </table>
       </div>
-      <figcaption>Os graus da escala maior, com o exemplo de Dó maior.</figcaption>
-    </figure>
-    <div class="prosa"><p>A <strong>tônica</strong> é a nota de repouso, a que dá nome à escala. A <strong>sensível</strong> fica só um semitom abaixo dela e soa como se pedisse para subir.</p></div>
-    <figure class="exemplo" data-exemplo="ex-sensivel">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">A sensível pede a tônica</p>
-        <button type="button" class="tocar" data-tocar="ex-sensivel"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      </div>
-      <div class="partitura" data-partitura="ex-sensivel"></div>
-      <figcaption>A escala para no Si e espera. Repare como o Dó do fim soa como um alívio.</figcaption>
-    </figure>
-    <div class="prosa"><p>O começo de <em>Pirulito que bate bate</em>, em Dó maior, usa o 3º, o 4º e o 5º graus: Mi, Fá e Sol.</p></div>
-    <figure class="exemplo" data-exemplo="ex-pirulito">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">Pirulito que bate bate</p>
-        <button type="button" class="tocar" data-tocar="ex-pirulito"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      </div>
-      <div class="partitura" data-partitura="ex-pirulito"></div>
-      <figcaption>"Pi-ru-li": mediante, subdominante e dominante. Depois a melodia volta pelo mesmo caminho.</figcaption>
+      <figcaption>Alguns termos de andamento, com valores aproximados.</figcaption>
     </figure>
   </section>
   <section class="secao" id="secao-4">
-    <h2><span class="num">4</span>Montando a escala em outra nota</h2>
-    <div class="prosa"><p>A fórmula serve para qualquer tônica. Veja a escala de <strong>Sol maior</strong>, com o motivo de cada passo.</p>
-<ol>
-<li><strong>Escreva as sete letras em ordem</strong>, a partir da tônica, cada uma uma vez: Sol, Lá, Si, Dó, Ré, Mi, Fá, Sol.</li>
-<li><strong>Confira cada passo com a fórmula</strong>: Sol–Lá tom, Lá–Si tom, Si–Dó semitom, Dó–Ré tom, Ré–Mi tom. Tudo certo até aqui.</li>
-<li><strong>Ajuste com acidentes</strong>: Mi–Fá é um semitom, mas a fórmula pede um tom. Sobe-se o Fá: <strong>Fá♯</strong>. Com isso, Fá♯–Sol fica um semitom, como a fórmula pede no fim.</li>
-</ol>
-<p>Sol maior: <strong>Sol, Lá, Si, Dó, Ré, Mi, Fá♯, Sol</strong>.</p></div>
-    <figure class="bloco-teclado">
-      <div class="teclado-rolagem"><div class="teclado" data-teclado="t-3-1"></div></div>
-      <figcaption>
-        <span>Escala de Sol maior: o Fá♯ entra no lugar do Fá.</span>
-        <span class="acoes-instrumento">
-          <button type="button" class="tocar pequeno" data-tocar-teclado="t-3-1"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir as notas</span></button>
-          <button type="button" class="secundario" data-montar-acorde="t-3-1" aria-pressed="false">Montar acorde</button>
-          <button type="button" class="tocar pequeno" data-tocar-acorde="t-3-1" hidden><span class="icone" aria-hidden="true"></span><span class="texto">Tocar juntas</span></button>
-        </span>
-      </figcaption>
-    </figure>
-    <figure class="exemplo" data-exemplo="ex-escala-sol">
+    <h2><span class="num">4</span>Articulação</h2>
+    <div class="prosa"><p>A <strong>articulação</strong> diz como cada nota começa e termina:</p>
+<ul>
+<li><strong>Staccato</strong> (ponto sobre ou sob a nota): nota curta, destacada da próxima.</li>
+<li><strong>Legato</strong> (curva sobre um grupo de notas, a <strong>ligadura de expressão</strong>): notas emendadas, sem espaço entre elas. Ela liga notas <strong>diferentes</strong>; a ligadura de duração liga notas iguais.</li>
+<li><strong>Acento</strong> (&gt;): a nota soa mais forte que as vizinhas.</li>
+</ul></div>
+    <figure class="exemplo" data-exemplo="ex-staccato">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Escala de Sol maior</p>
-        <button type="button" class="tocar" data-tocar="ex-escala-sol"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Staccato</p>
+        <button type="button" class="tocar" data-tocar="ex-staccato"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-escala-sol"></div>
-      <figcaption>O mesmo desenho da escala de Dó maior, começando em Sol. O Fá♯ mantém o semitom no fim.</figcaption>
+      <div class="partitura" data-partitura="ex-staccato"></div>
+      <figcaption>Cada nota curta, com um pequeno silêncio depois.</figcaption>
     </figure>
-    <div class="prosa"><p><strong>Pense antes de abrir a resposta:</strong> Fá♯ e Sol♭ soam igual. Por que a escala usa Fá♯, e não Sol♭?</p></div>
-    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Porque cada letra aparece <strong>uma vez</strong>. Com Sol♭, a escala teria dois Sol e nenhum Fá: Sol, Lá, Si, Dó, Ré, Mi, Sol♭, Sol.</p></div></details>
-    <div class="prosa"><p>Agora o último passo é seu. <strong>Ré maior</strong>:</p>
-<ol>
-<li>Letras: Ré, Mi, Fá, Sol, Lá, Si, Dó, Ré.</li>
-<li>Ré–Mi tom; Mi–Fá é semitom, mas precisa ser tom, então <strong>Fá♯</strong>; Fá♯–Sol semitom; Sol–Lá tom; Lá–Si tom; Si–Dó é semitom, mas precisa ser tom, então <strong>Dó♯</strong>; Dó♯–Ré semitom.</li>
-<li>Quais são as notas da escala?</li>
-</ol>
-<p>E agora dois passos são seus. <strong>Fá maior</strong>: escreva as letras, confira cada passo e diga qual nota precisa de acidente.</p></div>
-    <details class="resposta"><summary>Ver as respostas</summary><div class="prosa"><p>Ré maior: <strong>Ré, Mi, Fá♯, Sol, Lá, Si, Dó♯, Ré</strong>.</p>
-<p>Fá maior: letras Fá, Sol, Lá, Si, Dó, Ré, Mi, Fá. Fá–Sol tom, Sol–Lá tom, e Lá–Si seria tom, mas a fórmula pede semitom: o Si desce para <strong>Si♭</strong>. Si♭–Dó fica um tom, e o resto confere. Fá maior: <strong>Fá, Sol, Lá, Si♭, Dó, Ré, Mi, Fá</strong>.</p></div></details>
-    <figure class="exemplo" data-exemplo="ex-escala-fa">
+    <figure class="exemplo" data-exemplo="ex-legato">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Escala de Fá maior</p>
-        <button type="button" class="tocar" data-tocar="ex-escala-fa"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Legato</p>
+        <button type="button" class="tocar" data-tocar="ex-legato"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-escala-fa"></div>
-      <figcaption>O 4º grau é Si♭: ouça o semitom curto entre Lá e Si♭.</figcaption>
+      <div class="partitura" data-partitura="ex-legato"></div>
+      <figcaption>As mesmas notas, agora emendadas.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-acento">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Acento</p>
+        <button type="button" class="tocar" data-tocar="ex-acento"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-acento"></div>
+      <figcaption>Só as notas com &gt; se destacam.</figcaption>
     </figure>
   </section>
   <section class="secao" id="secao-5">
-    <h2><span class="num">5</span>Cuidado com este erro</h2>
-    <div class="prosa"><p>Uma colega escreveu a escala de Fá maior assim:</p>
-<p>&gt; Fá, Sol, Lá, <strong>Lá♯</strong>, Dó, Ré, Mi, Fá</p>
-<p>Tocada, ela soa certa. Onde está o erro, por que está errado e como fica a escrita correta?</p></div>
-    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Ela repetiu a letra <strong>Lá</strong> e pulou a letra <strong>Si</strong>. Lá♯ e Si♭ soam igual, mas a escala usa cada letra uma vez. O certo é <strong>Fá, Sol, Lá, Si♭, Dó, Ré, Mi, Fá</strong>.</p></div></details>
+    <h2><span class="num">5</span>Sinais de repetição</h2>
+    <div class="prosa"><p>Para não reescrever trechos iguais, a partitura usa sinais de repetição:</p></div>
+    <figure class="tabela">
+      <div class="tabela-rolagem">
+        <table>
+          <thead><tr><th scope="col">Sinal</th><th scope="col">O que fazer</th></tr></thead>
+          <tbody>
+            <tr><td>Ritornello (barras com dois pontos)</td><td>Repetir o trecho entre as barras</td></tr>
+            <tr><td>Casa 1 e casa 2</td><td>Na primeira vez toque a casa 1; ao repetir, pule para a casa 2</td></tr>
+            <tr><td>D.C. (Da Capo)</td><td>Voltar ao início</td></tr>
+            <tr><td>D.S. (Dal Segno)</td><td>Voltar ao sinal 𝄋</td></tr>
+            <tr><td>Fine</td><td>Fim, depois de um D.C. ou D.S.</td></tr>
+            <tr><td>Coda (𝄌)</td><td>Pular para o trecho final marcado</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <figcaption>Os sinais de repetição mais comuns.</figcaption>
+    </figure>
+  </section>
+  <section class="secao" id="secao-6">
+    <h2><span class="num">6</span>Passo a passo para ler uma indicação</h2>
+    <div class="prosa"><p>Veja como ler um trecho marcado <strong>Andante, p, &lt; até f, staccato</strong>, com o motivo de cada passo.</p>
+<ol>
+<li><strong>Andamento</strong>: Andante, um pulso de passo tranquilo, por volta de 90 BPM.</li>
+<li><strong>Dinâmica inicial</strong>: p, começa fraco.</li>
+<li><strong>Forquilha</strong>: &lt; até f, a força cresce aos poucos até forte.</li>
+<li><strong>Articulação</strong>: pontos nas notas, cada uma curta e separada.</li>
+</ol></div>
+    <figure class="exemplo" data-exemplo="ex-indicacao">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Andante, p, crescendo até f, staccato</p>
+        <button type="button" class="tocar" data-tocar="ex-indicacao"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-indicacao"></div>
+      <figcaption>Notas curtas que começam fracas e crescem até forte.</figcaption>
+    </figure>
+    <div class="prosa"><p><strong>Pense antes de abrir a resposta:</strong> crescendo muda a velocidade da música?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Não. Crescendo muda só a <strong>intensidade</strong>. Acelerar é outra indicação, de andamento (como <em>accelerando</em>). É comum, mas é um erro, apressar o pulso ao crescer.</p></div></details>
+    <div class="prosa"><p>Agora o último passo é seu. Um trecho <strong>Allegro, ff, legato</strong>: andamento, dinâmica e articulação são...?</p>
+<p>E agora dois passos são seus: <strong>Adagio, mf, diminuendo até p</strong>.</p></div>
+    <details class="resposta"><summary>Ver as respostas</summary><div class="prosa"><p>Allegro, ff, legato: rápido, muito forte e com as notas emendadas.</p>
+<p>Adagio, mf, diminuendo até p: lento, começando meio forte e enfraquecendo aos poucos até fraco.</p></div></details>
+  </section>
+  <section class="secao" id="secao-7">
+    <h2><span class="num">7</span>Cuidado com este erro</h2>
+    <div class="prosa"><p>Um colega leu <strong>p</strong> sob a pauta e disse:</p>
+<p>&gt; "p quer dizer piano: é para tocar no piano."</p>
+<p>Onde está o erro, por que está errado e o que p quer dizer?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p><strong>Piano</strong>, em italiano, quer dizer <strong>fraco</strong>, suave. O sinal <strong>p</strong> é de dinâmica e vale para qualquer instrumento, inclusive o violão e a voz. O nome do instrumento vem justamente daí: o pianoforte tocava piano (fraco) e forte.</p></div></details>
   </section>
 
   <section class="secao exercicios" id="exercicios">
-    <h2><span class="num">6</span>Exercícios</h2>
+    <h2><span class="num">8</span>Exercícios</h2>
     <p class="placar" id="placar" aria-live="polite">Responda para ver seus acertos.</p>
     <article class="exercicio" data-exercicio="0" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 1 · Múltipla escolha</p>
-      <div class="enunciado"><p>Qual é a fórmula da escala maior?</p></div>
+      <div class="enunciado"><p>O que significa <strong>f</strong> sob a pauta?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">T–T–S–T–T–T–S</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">T–S–T–T–T–S–T</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">T–T–T–S–T–T–S</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">T–T–S–T–T–S–T</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">forte</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">fraco</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">fim</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">rápido</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Em Dó maior, os semitons caem em Mi–Fá (3º passo) e Si–Dó (7º passo): T–T–S–T–T–T–S. Quem marca T–S–T–T–T–S–T contou as notas brancas a partir de Ré, e não a partir da tônica Dó.</p></div>
+        <div class="explicacao"><p><strong>f</strong> é <em>forte</em>. Fraco é <strong>p</strong> (piano). Andamento rápido se indica com termos como Allegro.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="1" data-tipo="teclado">
-      <p class="rotulo">Exercício 2 · Toque a nota</p>
-      <div class="enunciado"><p>Na escala de Sol maior, Mi5 é o 6º grau e está marcado. Clique na <strong>próxima nota da escala</strong>.</p></div>
-      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="1"></div></div>
-      <div class="acoes-teclado">
-        <button type="button" class="tocar pequeno" data-tocar-base="1"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
-      </div>
+    <article class="exercicio" data-exercicio="1" data-tipo="percepcao">
+      <p class="rotulo">Exercício 2 · Percepção</p>
+      <div class="enunciado"><p>Ouça. A força aumenta ou diminui ao longo da escala?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-diminuendo"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-diminuendo" hidden>
+        <div class="partitura" data-partitura="exe-diminuendo"></div>
+        <figcaption>Diminuendo: de f a p.</figcaption>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">aumenta (crescendo)</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">diminui (diminuendo)</button></li>
+      </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Do 6º para o 7º grau a fórmula pede um tom. Mi–Fá é só um semitom, então a nota é <strong>Fá♯</strong>. Se clicou em Fá, esqueceu de conferir o passo com a fórmula.</p></div>
+        <div class="explicacao"><p>Começa forte e termina fraca: <strong>diminuendo</strong>. Repare que a velocidade não mudou.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="2" data-tipo="percepcao">
       <p class="rotulo">Exercício 3 · Percepção</p>
-      <div class="enunciado"><p>Ouça o passo do 7º para o 8º grau de uma escala maior. É um tom ou um semitom?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-si-do"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-si-do" hidden>
-        <div class="partitura" data-partitura="exe-si-do"></div>
-        <figcaption>Si–Dó em Dó maior: um semitom.</figcaption>
+      <div class="enunciado"><p>Ouça. As notas estão em staccato ou em legato?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-staccato"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-staccato" hidden>
+        <div class="partitura" data-partitura="exe-staccato"></div>
+        <figcaption>Staccato: notas curtas e separadas.</figcaption>
       </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">tom</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">semitom</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">staccato</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">legato</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Em toda escala maior, a sensível fica <strong>um semitom</strong> abaixo da tônica. É esse passo curto que faz a tônica soar como chegada.</p></div>
+        <div class="explicacao"><p>Cada nota soa curta, com silêncio antes da próxima: <strong>staccato</strong>.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="3" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 4 · Múltipla escolha</p>
-      <div class="enunciado"><p>Como se chama o <strong>5º grau</strong> da escala maior?</p></div>
+      <div class="enunciado"><p>Uma música marcada <strong>♩ = 120</strong> tem quantas batidas por segundo?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">dominante</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">subdominante</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">mediante</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">sensível</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">2</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">1</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">120</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>O 5º grau é a <strong>dominante</strong> (Sol, em Dó maior). A subdominante é o 4º grau, a mediante é o 3º e a sensível é o 7º.</p></div>
+        <div class="explicacao"><p>120 batidas por <strong>minuto</strong> são <strong>2 por segundo</strong> (120 ÷ 60). ♩ = 60 seria uma por segundo.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="4" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 5 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quais são as notas da escala de <strong>Ré maior</strong>?</p></div>
+      <div class="enunciado"><p>Qual é a ordem do mais fraco para o mais forte?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">Ré, Mi, Fá♯, Sol, Lá, Si, Dó♯, Ré</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">Ré, Mi, Fá, Sol, Lá, Si, Dó, Ré</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">Ré, Mi, Fá♯, Sol, Lá, Si, Dó, Ré</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">Ré, Mi, Sol♭, Sol, Lá, Si, Dó♯, Ré</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">pp, p, mp, mf, f, ff</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">p, pp, mf, mp, f, ff</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">ff, f, mf, mp, p, pp</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>A fórmula pede tom entre o 2º e o 3º grau (Mi–Fá♯) e entre o 6º e o 7º (Si–Dó♯). Só com notas naturais os semitons caem no lugar errado; com Sol♭ a letra Sol se repete e Fá some.</p></div>
+        <div class="explicacao"><p><strong>pp, p, mp, mf, f, ff</strong>. O <em>mezzo</em> (meio) fica entre p e f: mp é meio fraco, mf é meio forte.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="5" data-tipo="teclado">
-      <p class="rotulo">Exercício 6 · Toque a nota</p>
-      <div class="enunciado"><p>Fá4 está marcado. Na escala de Fá maior, clique na <strong>4ª nota</strong>.</p></div>
-      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="5"></div></div>
-      <div class="acoes-teclado">
-        <button type="button" class="tocar pequeno" data-tocar-base="5"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
-      </div>
+    <article class="exercicio" data-exercicio="5" data-tipo="percepcao">
+      <p class="rotulo">Exercício 6 · Percepção</p>
+      <div class="enunciado"><p>Ouça as duas versões. A segunda está mais rápida ou mais lenta?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-andamento"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-andamento" hidden>
+        <div class="partitura" data-partitura="exe-andamento"></div>
+        <figcaption>A segunda vez, duas vezes mais rápida.</figcaption>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">mais rápida</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">mais lenta</button></li>
+      </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Fá, Sol, Lá, <strong>Si♭</strong>. Do 3º para o 4º grau a fórmula pede um semitom, e Lá–Si seria um tom. Se clicou em Si, manteve a nota natural sem conferir o passo.</p></div>
+        <div class="explicacao"><p>As mesmas notas, com metade da duração: a segunda versão é <strong>mais rápida</strong>.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="6" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 7 · Múltipla escolha</p>
-      <div class="enunciado"><p>Em qualquer escala maior, quantos semitons há do <strong>3º para o 4º grau</strong>?</p></div>
+      <div class="enunciado"><p>O que indica <strong>D.C.</strong> (Da Capo)?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">1 semitom</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2 semitons</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">3 semitons</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Voltar ao início</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Pular para o fim</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Tocar mais forte</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>A fórmula é T–T–<strong>S</strong>–T–T–T–S: o terceiro passo, do 3º para o 4º grau, é um semitom. Em Dó maior é Mi–Fá. Se marcou 2, pensou num tom.</p></div>
+        <div class="explicacao"><p><strong>Da Capo</strong> quer dizer "do começo": volta-se ao início, em geral até a palavra Fine.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="7" data-tipo="percepcao">
-      <p class="rotulo">Exercício 8 · Percepção</p>
-      <div class="enunciado"><p>Ouça o passo do 1º para o 2º grau de Sol maior. É um tom ou um semitom?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-sol-la"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-sol-la" hidden>
-        <div class="partitura" data-partitura="exe-sol-la"></div>
-        <figcaption>Sol–Lá: um tom.</figcaption>
+    <article class="exercicio" data-exercicio="7" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 8 · Múltipla escolha</p>
+      <div class="enunciado"><p>A <strong>forquilha que abre</strong> (&lt;) pede:</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">crescendo</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">diminuendo</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">acelerar</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>A forquilha que abre pede <strong>crescendo</strong>, ficar mais forte aos poucos. Ela não mexe no andamento.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="8" data-tipo="percepcao">
+      <p class="rotulo">Exercício 9 · Percepção</p>
+      <div class="enunciado"><p>Ouça. Que notas se destacam?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-acento"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-acento" hidden>
+        <div class="partitura" data-partitura="exe-acento"></div>
+        <figcaption>Acentos na 1ª e na 5ª nota.</figcaption>
       </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">tom</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">semitom</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">a 1ª e a 5ª</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">a 2ª e a 6ª</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">todas iguais</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Sol–Lá é <strong>um tom</strong>, como pede o primeiro passo da fórmula. Compare com o passo do 7º para o 8º grau, que é bem mais curto.</p></div>
+        <div class="explicacao"><p>O <strong>acento</strong> (&gt;) cai na 1ª e na 5ª nota: elas soam mais fortes que as vizinhas.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="8" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 9 · Múltipla escolha</p>
-      <div class="enunciado"><p>Em Dó maior, que grau é <strong>Lá</strong>?</p></div>
+    <article class="exercicio" data-exercicio="9" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 10 · Múltipla escolha</p>
+      <div class="enunciado"><p>Qual é a diferença entre a ligadura de <strong>expressão</strong> e a ligadura de <strong>duração</strong>?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">5º grau</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">6º grau</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">7º grau</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">4º grau</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">A de expressão liga notas diferentes; a de duração liga notas iguais</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Nenhuma, são a mesma coisa</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">A de expressão só aparece em acordes</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Dó, Ré, Mi, Fá, Sol, <strong>Lá</strong>: sexta nota, 6º grau, a superdominante. Se marcou 5º, deixou de contar a tônica como 1º grau.</p></div>
-      </div>
-    </article>
-    <article class="exercicio" data-exercicio="9" data-tipo="teclado">
-      <p class="rotulo">Exercício 10 · Toque a nota</p>
-      <div class="enunciado"><p>Ré4 está marcado. Clique na <strong>sensível</strong> de Ré maior.</p></div>
-      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="9"></div></div>
-      <div class="acoes-teclado">
-        <button type="button" class="tocar pequeno" data-tocar-base="9"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
-      </div>
-      <div class="retorno" hidden>
-        <p class="veredito"></p>
-        <div class="explicacao"><p>A sensível é o 7º grau, um semitom abaixo da tônica: em Ré maior é <strong>Dó♯</strong>. Dó natural ficaria a um tom de Ré e não pediria a tônica do mesmo jeito.</p></div>
+        <div class="explicacao"><p>A ligadura de <strong>expressão</strong> (legato) emenda notas <strong>diferentes</strong>. A de <strong>duração</strong> une duas notas <strong>iguais</strong> num som só.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="10" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 11 · Múltipla escolha</p>
-      <div class="enunciado"><p>Qual escala maior tem <strong>um único sustenido, Fá♯</strong>?</p></div>
+      <div class="enunciado"><p>Na primeira vez você toca a casa 1. Ao repetir, o que faz?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">Sol maior</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">Ré maior</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">Fá maior</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">Dó maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Pula a casa 1 e toca a casa 2</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Toca as duas casas</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Para na casa 1</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Sol maior é Sol, Lá, Si, Dó, Ré, Mi, Fá♯, Sol: só o Fá muda. Ré maior tem também o Dó♯, Fá maior tem Si♭ e Dó maior não tem nenhum acidente.</p></div>
-      </div>
-    </article>
-    <article class="exercicio" data-exercicio="11" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 12 · Múltipla escolha</p>
-      <div class="enunciado"><p>Qual nome vem <strong>antes</strong> da dominante na ordem dos graus?</p></div>
-      <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">subdominante</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">superdominante</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">supertônica</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">sensível</button></li>
-      </ol>
-      <div class="retorno" hidden>
-        <p class="veredito"></p>
-        <div class="explicacao"><p>A subdominante é o 4º grau, logo antes da dominante (5º). "Sub" quer dizer abaixo; a superdominante, o 6º grau, fica logo acima.</p></div>
+        <div class="explicacao"><p>Na repetição, <strong>pula-se a casa 1</strong> e toca-se a <strong>casa 2</strong>.</p></div>
       </div>
     </article>
   </section>
 
   <section class="secao" id="resumo">
-    <h2><span class="num">7</span>Resumo</h2>
+    <h2><span class="num">9</span>Resumo</h2>
     <ul class="resumo">
-      <li>A escala maior segue a fórmula <strong>T–T–S–T–T–T–S</strong>; os semitons ficam entre o 3º e o 4º grau e entre o 7º e o 8º.</li>
-      <li>Os graus são <strong>tônica, supertônica, mediante, subdominante, dominante, superdominante e sensível</strong>.</li>
-      <li>Para montar a escala, escreva as sete letras em ordem e ajuste com ♯ ou ♭ até cada passo bater com a fórmula.</li>
-      <li>Cada letra aparece uma vez: em Fá maior é Si♭, e não Lá♯.</li>
-      <li>Sol maior tem Fá♯; Ré maior tem Fá♯ e Dó♯; Fá maior tem Si♭.</li>
-      <li>A <strong>sensível</strong> fica um semitom abaixo da tônica e soa como se pedisse para chegar nela.</li>
+      <li>Dinâmica: <strong>pp, p, mp, mf, f, ff</strong>; &lt; é crescendo e &gt; é diminuendo.</li>
+      <li>Andamento em <strong>BPM</strong>: 60 é uma batida por segundo. Largo, Adagio, Andante, Moderato, Allegro, Presto.</li>
+      <li><strong>Staccato</strong> separa, <strong>legato</strong> emenda, <strong>acento</strong> destaca.</li>
+      <li>Ritornello repete; casa 1 e casa 2 mudam o final; <strong>D.C.</strong> volta ao início; <strong>Fine</strong> marca o fim.</li>
+      <li>Crescer não é acelerar: dinâmica e andamento são indicações diferentes.</li>
     </ul>
     <div class="para-o-chat">
       <p class="rotulo">Leve para o chat do professor</p>
-      <p id="pergunta-chat">Me peça para montar escalas maiores a partir de notas diferentes, uma de cada vez, e me dê uma dica sobre o passo que eu errar antes de mostrar a escala.</p>
+      <p id="pergunta-chat">Me mostre indicações de dinâmica, andamento e articulação, uma de cada vez, para eu dizer como tocar, e me dê uma dica antes de mostrar a resposta.</p>
       <button type="button" id="copiar-pergunta" class="secundario">Copiar pergunta</button>
     </div>
   </section>
 </main>
 
 <footer class="rodape">
-  <p>Aula I07 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
+  <p>Aula I15 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
 </footer>
 
-<script type="application/json" id="dados-aula">{"codigo": "I07", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura": {"id": "ex-abertura", "titulo": "Ouça antes de qualquer nome", "legenda": "As duas sequências usam só notas naturais. Qual delas soa como se chegasse em casa na última nota?", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC/2 D/2 E/2 F/2 G/2 A/2 B/2 c/2 | z4 | D/2 E/2 F/2 G/2 A/2 B/2 c/2 d/2 | z4 |]\n", "andamento": 80, "eventos": [{"midis": [60], "duracao": 0.5}, {"midis": [62], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [69], "duracao": 0.5}, {"midis": [71], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [], "duracao": 4.0}, {"midis": [62], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [69], "duracao": 0.5}, {"midis": [71], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [74], "duracao": 0.5}, {"midis": [], "duracao": 4.0}]}, "ex-escala-do": {"id": "ex-escala-do", "titulo": "Escala de Dó maior", "legenda": "Ouça os dois passos curtos: Mi–Fá, no meio, e Si–Dó, no fim.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC D E F | G A B c |]\n", "andamento": 80, "eventos": [{"midis": [60], "duracao": 1.0}, {"midis": [62], "duracao": 1.0}, {"midis": [64], "duracao": 1.0}, {"midis": [65], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [71], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}]}, "ex-do-re-mi-fa": {"id": "ex-do-re-mi-fa", "titulo": "Dó, ré, mi, fá", "legenda": "A melodia sobe pelas quatro primeiras notas da escala: dois tons e um semitom.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nC/2 D/2 E/2 F/2 | F F | C/2 D/2 C/2 D/2 | D D |]\nw:Dó, ré, mi, fá, fá, fá, Dó, ré, dó, ré, ré, ré\n", "andamento": 100, "eventos": [{"midis": [60], "duracao": 0.5}, {"midis": [62], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [65], "duracao": 1.0}, {"midis": [65], "duracao": 1.0}, {"midis": [60], "duracao": 0.5}, {"midis": [62], "duracao": 0.5}, {"midis": [60], "duracao": 0.5}, {"midis": [62], "duracao": 0.5}, {"midis": [62], "duracao": 1.0}, {"midis": [62], "duracao": 1.0}]}, "ex-sensivel": {"id": "ex-sensivel", "titulo": "A sensível pede a tônica", "legenda": "A escala para no Si e espera. Repare como o Dó do fim soa como um alívio.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC D E F | G A B2 | z4 | c4 |]\n", "andamento": 80, "eventos": [{"midis": [60], "duracao": 1.0}, {"midis": [62], "duracao": 1.0}, {"midis": [64], "duracao": 1.0}, {"midis": [65], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [71], "duracao": 2.0}, {"midis": [], "duracao": 4.0}, {"midis": [72], "duracao": 4.0}]}, "ex-pirulito": {"id": "ex-pirulito", "titulo": "Pirulito que bate bate", "legenda": "\"Pi-ru-li\": mediante, subdominante e dominante. Depois a melodia volta pelo mesmo caminho.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nE/2 F/2 | G/2 G/4 G/4 F/2 E/2 |]\nw:Pi-ru-li-to que ba-te\n", "andamento": 88, "eventos": [{"midis": [64], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.25}, {"midis": [67], "duracao": 0.25}, {"midis": [65], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}]}, "ex-escala-sol": {"id": "ex-escala-sol", "titulo": "Escala de Sol maior", "legenda": "O mesmo desenho da escala de Dó maior, começando em Sol. O Fá♯ mantém o semitom no fim.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nG A B c | d e ^f g |]\n", "andamento": 80, "eventos": [{"midis": [67], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [71], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [74], "duracao": 1.0}, {"midis": [76], "duracao": 1.0}, {"midis": [78], "duracao": 1.0}, {"midis": [79], "duracao": 1.0}]}, "ex-escala-fa": {"id": "ex-escala-fa", "titulo": "Escala de Fá maior", "legenda": "O 4º grau é Si♭: ouça o semitom curto entre Lá e Si♭.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nF G A _B | c d e f |]\n", "andamento": 80, "eventos": [{"midis": [65], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [70], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [74], "duracao": 1.0}, {"midis": [76], "duracao": 1.0}, {"midis": [77], "duracao": 1.0}]}, "exe-si-do": {"id": "exe-si-do", "titulo": "7º para 8º grau", "legenda": "Si–Dó em Dó maior: um semitom.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nB2 c2 |]\n", "andamento": 66, "eventos": [{"midis": [71], "duracao": 2.0}, {"midis": [72], "duracao": 2.0}]}, "exe-sol-la": {"id": "exe-sol-la", "titulo": "1º para 2º grau", "legenda": "Sol–Lá: um tom.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nG2 A2 |]\n", "andamento": 66, "eventos": [{"midis": [67], "duracao": 2.0}, {"midis": [69], "duracao": 2.0}]}}, "teclados": {"t-1-2": {"de": 60, "ate": 72, "destaque": [{"midi": 60, "nome": "Dó"}, {"midi": 62, "nome": "Ré"}, {"midi": 64, "nome": "Mi"}, {"midi": 65, "nome": "Fá"}, {"midi": 67, "nome": "Sol"}, {"midi": 69, "nome": "Lá"}, {"midi": 71, "nome": "Si"}, {"midi": 72, "nome": "Dó"}]}, "t-3-1": {"de": 64, "ate": 81, "destaque": [{"midi": 67, "nome": "Sol"}, {"midi": 69, "nome": "Lá"}, {"midi": 71, "nome": "Si"}, {"midi": 72, "nome": "Dó"}, {"midi": 74, "nome": "Ré"}, {"midi": 76, "nome": "Mi"}, {"midi": 78, "nome": "Fá♯"}, {"midi": 79, "nome": "Sol"}]}}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "formula-escala-maior", "correta": 0}, {"indice": 1, "tipo": "teclado", "conceito": "construir-escala-maior", "base": 76, "alvo": 78, "alvo_nome": "Fá♯", "intervalo_nome": "2ª maior", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 76, "nome": "Mi"}]}}, {"indice": 2, "tipo": "percepcao", "conceito": "tom-e-semitom", "exemplo": "exe-si-do", "correta": 1}, {"indice": 3, "tipo": "multipla_escolha", "conceito": "nomes-dos-graus", "correta": 0}, {"indice": 4, "tipo": "multipla_escolha", "conceito": "construir-escala-maior", "correta": 0}, {"indice": 5, "tipo": "teclado", "conceito": "construir-escala-maior", "base": 65, "alvo": 70, "alvo_nome": "Si♭", "intervalo_nome": "4ª justa", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 65, "nome": "Fá"}]}}, {"indice": 6, "tipo": "multipla_escolha", "conceito": "formula-escala-maior", "correta": 0}, {"indice": 7, "tipo": "percepcao", "conceito": "tom-e-semitom", "exemplo": "exe-sol-la", "correta": 0}, {"indice": 8, "tipo": "multipla_escolha", "conceito": "graus-da-escala", "correta": 1}, {"indice": 9, "tipo": "teclado", "conceito": "nomes-dos-graus", "base": 62, "alvo": 73, "alvo_nome": "Dó♯", "intervalo_nome": "7ª maior", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 62, "nome": "Ré"}]}}, {"indice": 10, "tipo": "multipla_escolha", "conceito": "construir-escala-maior", "correta": 0}, {"indice": 11, "tipo": "multipla_escolha", "conceito": "nomes-dos-graus", "correta": 0}]}</script>
+<script type="application/json" id="dados-aula">{"codigo": "I15", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura": {"id": "ex-abertura", "titulo": "Ouça antes de qualquer nome", "legenda": "A mesma escala duas vezes. O que mudou no jeito de tocar?", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n.C/2 .D/2 .E/2 .F/2 .G/2 .A/2 .B/2 .c/2 | (C/2 D/2 E/2 F/2 G/2 A/2 B/2 c/2) |]\n", "andamento": 72, "eventos": [{"midis": [60], "duracao": 0.5, "staccato": true}, {"midis": [62], "duracao": 0.5, "staccato": true}, {"midis": [64], "duracao": 0.5, "staccato": true}, {"midis": [65], "duracao": 0.5, "staccato": true}, {"midis": [67], "duracao": 0.5, "staccato": true}, {"midis": [69], "duracao": 0.5, "staccato": true}, {"midis": [71], "duracao": 0.5, "staccato": true}, {"midis": [72], "duracao": 0.5, "staccato": true}, {"midis": [60], "duracao": 0.5}, {"midis": [62], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [69], "duracao": 0.5}, {"midis": [71], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}]}, "ex-p-f": {"id": "ex-p-f", "titulo": "Brilha, brilha: piano e depois forte", "legenda": "A mesma frase, primeiro fraca (p), depois forte (f).", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n!p!C C G G | A A G G | !f!C C G G | A A G G |]\nw:Bri-lha, bri-lha, es-tre-li-nha Bri-lha, bri-lha, es-tre-li-nha\n", "andamento": 96, "eventos": [{"midis": [60], "duracao": 1.0, "intensidade": 0.38}, {"midis": [60], "duracao": 1.0, "intensidade": 0.38}, {"midis": [67], "duracao": 1.0, "intensidade": 0.38}, {"midis": [67], "duracao": 1.0, "intensidade": 0.38}, {"midis": [69], "duracao": 1.0, "intensidade": 0.38}, {"midis": [69], "duracao": 1.0, "intensidade": 0.38}, {"midis": [67], "duracao": 1.0, "intensidade": 0.38}, {"midis": [67], "duracao": 1.0, "intensidade": 0.38}, {"midis": [60], "duracao": 1.0, "intensidade": 0.82}, {"midis": [60], "duracao": 1.0, "intensidade": 0.82}, {"midis": [67], "duracao": 1.0, "intensidade": 0.82}, {"midis": [67], "duracao": 1.0, "intensidade": 0.82}, {"midis": [69], "duracao": 1.0, "intensidade": 0.82}, {"midis": [69], "duracao": 1.0, "intensidade": 0.82}, {"midis": [67], "duracao": 1.0, "intensidade": 0.82}, {"midis": [67], "duracao": 1.0, "intensidade": 0.82}]}, "ex-crescendo": {"id": "ex-crescendo", "titulo": "Crescendo de p a f", "legenda": "A escala sobe e a força cresce nota a nota.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n!p!!<(!C D E F | G A B !<)!!f!c |]\n", "andamento": 80, "eventos": [{"midis": [60], "duracao": 1.0, "intensidade": 0.38}, {"midis": [62], "duracao": 1.0, "intensidade": 0.44}, {"midis": [64], "duracao": 1.0, "intensidade": 0.51}, {"midis": [65], "duracao": 1.0, "intensidade": 0.57}, {"midis": [67], "duracao": 1.0, "intensidade": 0.63}, {"midis": [69], "duracao": 1.0, "intensidade": 0.69}, {"midis": [71], "duracao": 1.0, "intensidade": 0.76}, {"midis": [72], "duracao": 1.0, "intensidade": 0.82}]}, "ex-diminuendo": {"id": "ex-diminuendo", "titulo": "Diminuendo de f a p", "legenda": "A escala desce e a força diminui.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n!f!!>(!c B A G | F E D !>)!!p!C |]\n", "andamento": 80, "eventos": [{"midis": [72], "duracao": 1.0, "intensidade": 0.82}, {"midis": [71], "duracao": 1.0, "intensidade": 0.76}, {"midis": [69], "duracao": 1.0, "intensidade": 0.69}, {"midis": [67], "duracao": 1.0, "intensidade": 0.63}, {"midis": [65], "duracao": 1.0, "intensidade": 0.57}, {"midis": [64], "duracao": 1.0, "intensidade": 0.51}, {"midis": [62], "duracao": 1.0, "intensidade": 0.44}, {"midis": [60], "duracao": 1.0, "intensidade": 0.38}]}, "ex-60": {"id": "ex-60", "titulo": "Brilha, brilha a 60 BPM", "legenda": "Uma batida por segundo: calmo.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC C G G | A A G G |]\nw:Bri-lha, bri-lha, es-tre-li-nha\n", "andamento": 60, "eventos": [{"midis": [60], "duracao": 1.0}, {"midis": [60], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}]}, "ex-120": {"id": "ex-120", "titulo": "Brilha, brilha a 120 BPM", "legenda": "Duas batidas por segundo: a mesma melodia, com o dobro da velocidade.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC C G G | A A G G |]\nw:Bri-lha, bri-lha, es-tre-li-nha\n", "andamento": 120, "eventos": [{"midis": [60], "duracao": 1.0}, {"midis": [60], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}]}, "ex-staccato": {"id": "ex-staccato", "titulo": "Staccato", "legenda": "Cada nota curta, com um pequeno silêncio depois.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n.C .E .G .c | .G .E .C z |]\n", "andamento": 88, "eventos": [{"midis": [60], "duracao": 1.0, "staccato": true}, {"midis": [64], "duracao": 1.0, "staccato": true}, {"midis": [67], "duracao": 1.0, "staccato": true}, {"midis": [72], "duracao": 1.0, "staccato": true}, {"midis": [67], "duracao": 1.0, "staccato": true}, {"midis": [64], "duracao": 1.0, "staccato": true}, {"midis": [60], "duracao": 1.0, "staccato": true}, {"midis": [], "duracao": 1.0}]}, "ex-legato": {"id": "ex-legato", "titulo": "Legato", "legenda": "As mesmas notas, agora emendadas.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n(C E G c | G E C) z |]\n", "andamento": 88, "eventos": [{"midis": [60], "duracao": 1.0}, {"midis": [64], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [64], "duracao": 1.0}, {"midis": [60], "duracao": 1.0}, {"midis": [], "duracao": 1.0}]}, "ex-acento": {"id": "ex-acento", "titulo": "Acento", "legenda": "Só as notas com > se destacam.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n!>!G/2 G/2 G/2 !>!G/2 G/2 G/2 !>!G/2 G/2 |]\n", "andamento": 88, "eventos": [{"midis": [67], "duracao": 0.5, "intensidade": 0.91}, {"midis": [67], "duracao": 0.5, "intensidade": 0.66}, {"midis": [67], "duracao": 0.5, "intensidade": 0.66}, {"midis": [67], "duracao": 0.5, "intensidade": 0.91}, {"midis": [67], "duracao": 0.5, "intensidade": 0.66}, {"midis": [67], "duracao": 0.5, "intensidade": 0.66}, {"midis": [67], "duracao": 0.5, "intensidade": 0.91}, {"midis": [67], "duracao": 0.5, "intensidade": 0.66}]}, "ex-indicacao": {"id": "ex-indicacao", "titulo": "Andante, p, crescendo até f, staccato", "legenda": "Notas curtas que começam fracas e crescem até forte.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n!p!!<(!.C .D .E .F | .G .A .B !<)!!f!.c |]\n", "andamento": 90, "eventos": [{"midis": [60], "duracao": 1.0, "staccato": true, "intensidade": 0.38}, {"midis": [62], "duracao": 1.0, "staccato": true, "intensidade": 0.44}, {"midis": [64], "duracao": 1.0, "staccato": true, "intensidade": 0.51}, {"midis": [65], "duracao": 1.0, "staccato": true, "intensidade": 0.57}, {"midis": [67], "duracao": 1.0, "staccato": true, "intensidade": 0.63}, {"midis": [69], "duracao": 1.0, "staccato": true, "intensidade": 0.69}, {"midis": [71], "duracao": 1.0, "staccato": true, "intensidade": 0.76}, {"midis": [72], "duracao": 1.0, "staccato": true, "intensidade": 0.82}]}, "exe-diminuendo": {"id": "exe-diminuendo", "titulo": "Escala", "legenda": "Diminuendo: de f a p.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n!f!!>(!c B A G | F E D !>)!!p!C |]\n", "andamento": 80, "eventos": [{"midis": [72], "duracao": 1.0, "intensidade": 0.82}, {"midis": [71], "duracao": 1.0, "intensidade": 0.76}, {"midis": [69], "duracao": 1.0, "intensidade": 0.69}, {"midis": [67], "duracao": 1.0, "intensidade": 0.63}, {"midis": [65], "duracao": 1.0, "intensidade": 0.57}, {"midis": [64], "duracao": 1.0, "intensidade": 0.51}, {"midis": [62], "duracao": 1.0, "intensidade": 0.44}, {"midis": [60], "duracao": 1.0, "intensidade": 0.38}]}, "exe-staccato": {"id": "exe-staccato", "titulo": "Melodia", "legenda": "Staccato: notas curtas e separadas.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n.E .G .c .G |]\n", "andamento": 88, "eventos": [{"midis": [64], "duracao": 1.0, "staccato": true}, {"midis": [67], "duracao": 1.0, "staccato": true}, {"midis": [72], "duracao": 1.0, "staccato": true}, {"midis": [67], "duracao": 1.0, "staccato": true}]}, "exe-andamento": {"id": "exe-andamento", "titulo": "Duas versões", "legenda": "A segunda vez, duas vezes mais rápida.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nG E E z | G/2 E/2 E/2 z/2 G/2 E/2 E/2 z/2 |]\n", "andamento": 72, "eventos": [{"midis": [67], "duracao": 1.0}, {"midis": [64], "duracao": 1.0}, {"midis": [64], "duracao": 1.0}, {"midis": [], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [], "duracao": 0.5}]}, "exe-acento": {"id": "exe-acento", "titulo": "Notas repetidas", "legenda": "Acentos na 1ª e na 5ª nota.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n!>!d/2 d/2 d/2 d/2 !>!d/2 d/2 d/2 d/2 |]\n", "andamento": 88, "eventos": [{"midis": [74], "duracao": 0.5, "intensidade": 0.91}, {"midis": [74], "duracao": 0.5, "intensidade": 0.66}, {"midis": [74], "duracao": 0.5, "intensidade": 0.66}, {"midis": [74], "duracao": 0.5, "intensidade": 0.66}, {"midis": [74], "duracao": 0.5, "intensidade": 0.91}, {"midis": [74], "duracao": 0.5, "intensidade": 0.66}, {"midis": [74], "duracao": 0.5, "intensidade": 0.66}, {"midis": [74], "duracao": 0.5, "intensidade": 0.66}]}}, "teclados": {}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "sinais-de-dinamica", "correta": 0}, {"indice": 1, "tipo": "percepcao", "conceito": "crescendo-diminuendo", "exemplo": "exe-diminuendo", "correta": 1}, {"indice": 2, "tipo": "percepcao", "conceito": "staccato-legato", "exemplo": "exe-staccato", "correta": 0}, {"indice": 3, "tipo": "multipla_escolha", "conceito": "andamento-bpm", "correta": 0}, {"indice": 4, "tipo": "multipla_escolha", "conceito": "sinais-de-dinamica", "correta": 0}, {"indice": 5, "tipo": "percepcao", "conceito": "andamento-bpm", "exemplo": "exe-andamento", "correta": 0}, {"indice": 6, "tipo": "multipla_escolha", "conceito": "sinais-de-repeticao", "correta": 0}, {"indice": 7, "tipo": "multipla_escolha", "conceito": "crescendo-diminuendo", "correta": 0}, {"indice": 8, "tipo": "percepcao", "conceito": "acento", "exemplo": "exe-acento", "correta": 0}, {"indice": 9, "tipo": "multipla_escolha", "conceito": "staccato-legato", "correta": 0}, {"indice": 10, "tipo": "multipla_escolha", "conceito": "sinais-de-repeticao", "correta": 0}]}</script>
 <script src="https://cdn.jsdelivr.net/npm/abcjs@6.7.1/dist/abcjs-basic-min.js"></script>
 <script>
 /* Aula interativa: partitura (abcjs), som sintetizado no navegador (piano ou violão),

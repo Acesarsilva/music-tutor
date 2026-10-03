@@ -23,6 +23,14 @@ class Evento(BaseModel):
     ligada: bool = Field(
         False, description="Ligadura com o evento seguinte, que precisa ter as mesmas notas: as duas durações soam como uma só."
     )
+    staccato: bool = Field(False, description="Staccato (ponto sobre a nota): soa bem curta, separada da seguinte.")
+    expressao: Optional[Literal["inicio", "fim"]] = Field(
+        None, description="Ligadura de expressão (legato): começa nesta nota ou termina nela."
+    )
+    forquilha: Optional[Literal["crescendo", "diminuendo", "fim"]] = Field(
+        None,
+        description='Forquilha de crescendo ou diminuendo que começa nesta nota; "fim" a encerra numa nota que traz a dinâmica de chegada.',
+    )
 
 
 class IntervaloAfirmado(BaseModel):

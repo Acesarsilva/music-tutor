@@ -1,0 +1,33 @@
+codigo: I13
+titulo: Cifragem popular
+nivel: iniciante
+assunto: teoria
+prerequisitos:
+  - I02  # Notas musicais
+  - I12  # Tríades
+objetivos:
+  - Ler a letra da cifra como a fundamental do acorde
+  - Ler os sufixos de tríades (m, °, +) e de tétrades comuns (7, 7M, m7, m7(b5))
+  - Entender o baixo trocado (C/E) e as notas acrescentadas mais comuns (9, sus4)
+  - Montar no teclado ou no violão as notas de uma cifra
+conceitos:
+  - letra-e-fundamental
+  - cifra-de-triade
+  - setima-menor
+  - setima-maior
+  - meio-diminuto
+  - baixo-trocado
+  - notas-acrescentadas
+fora_do_escopo:
+  - Formação completa de tétrades e suas inversões (módulos intermediários)
+  - Tensões além de 9 e sus4 (módulos intermediários)
+  - Campo harmônico (módulo I14)
+exemplos_semente:
+  - "C, Cm, C7 e C7M lado a lado"
+  - "G7: Sol, Si, Ré, Fá"
+  - "F#m7(b5): Fá♯, Lá, Dó, Mi"
+  - "C/E: Dó maior com Mi no baixo"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

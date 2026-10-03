@@ -1,0 +1,30 @@
+codigo: I15
+titulo: Dinâmica, andamento e articulação
+nivel: iniciante
+assunto: teoria
+prerequisitos:
+  - I04  # Figuras rítmicas
+  - I05  # Pulso e compasso simples
+objetivos:
+  - Ler os sinais de dinâmica (pp, p, mp, mf, f, ff) e as forquilhas de crescendo e diminuendo
+  - Entender o andamento em BPM e alguns termos de andamento
+  - Diferenciar staccato, legato e acento
+  - Ler sinais de repetição (ritornello, casas 1 e 2, D.C., Fine)
+conceitos:
+  - sinais-de-dinamica
+  - crescendo-diminuendo
+  - andamento-bpm
+  - staccato-legato
+  - acento
+  - sinais-de-repeticao
+fora_do_escopo:
+  - Ornamentos (trinado, mordente)
+  - Termos de expressão além dos mais comuns
+exemplos_semente:
+  - "A mesma frase em p e em f"
+  - "Crescendo de p a f"
+  - "Brilha, brilha a 60 e a 120 BPM"
+  - "Staccato e legato na mesma escala"
+exercicios:
+  - multipla_escolha
+  - percepcao

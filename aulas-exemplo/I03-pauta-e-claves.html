@@ -1084,6 +1084,7 @@ tbody tr:last-child td { border-bottom: 0; }
         var soa = dur;
         for (var k = idx; eventos[k].ligada && k + 1 < eventos.length; k++) soa += eventos[k + 1].duracao * spb;
         var intensidade = ev.intensidade != null ? ev.intensidade * (ev.midis.length > 1 ? 0.8 : 1) : (ev.midis.length > 1 ? 0.62 : 0.8);
+        if (ev.staccato) soa = Math.min(soa, 0.4 * dur);
         if (!continua) ev.midis.forEach(function (m) { nota(m + oitava, t, soa * 0.95, timbre, intensidade); });
         var atraso = (t - c.currentTime) * 1000;
         timers.push(setTimeout(function () { if (aoPasso) aoPasso(idx); }, Math.max(0, atraso)));

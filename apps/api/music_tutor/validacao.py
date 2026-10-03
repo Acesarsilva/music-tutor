@@ -102,6 +102,18 @@ def _compilar_exemplo(ex: Exemplo, onde: str, r: Resultado) -> None:
                 if teoria.midi(afirmado.de) not in presentes or teoria.midi(afirmado.para) not in presentes:
                     r.erros.append(f"{onde}.intervalo: as notas {afirmado.de} e {afirmado.para} não estão no exemplo")
 
+    aberta = False
+    for k, ev in enumerate(ex.eventos):
+        if ev.expressao == "inicio":
+            aberta = True
+        elif ev.expressao == "fim":
+            if not aberta:
+                r.erros.append(f"{onde}.eventos[{k}]: ligadura de expressão termina sem ter começado")
+            aberta = False
+        if ev.forquilha == "fim" and not ev.dinamica:
+            r.erros.append(f"{onde}.eventos[{k}]: a forquilha termina numa nota sem dinâmica de chegada")
+    if aberta:
+        r.erros.append(f"{onde}: ligadura de expressão sem fim")
     for k, ev in enumerate(ex.eventos):
         if ev.ligada:
             seguinte = ex.eventos[k + 1] if k + 1 < len(ex.eventos) else None
@@ -131,11 +143,26 @@ def _eventos_para_audio(midis: list[list[int]], eventos) -> list[dict]:
         item = {"midis": m, "duracao": ev.duracao}
         nivel = ev.dinamica or nivel
         if usa:
-            base = _INTENSIDADE[nivel or "mf"]
-            item["intensidade"] = round(min(1.0, base + (0.25 if ev.acento else 0)), 2)
+            item["nivel"] = _INTENSIDADE[nivel or "mf"]
         if ev.ligada:
             item["ligada"] = True
+        if ev.staccato:
+            item["staccato"] = True
         saida.append(item)
+    # Forquilha: a intensidade vai mudando nota a nota até a dinâmica de chegada.
+    inicio = None
+    for k, ev in enumerate(eventos):
+        if ev.forquilha in ("crescendo", "diminuendo"):
+            inicio = k
+        elif ev.forquilha == "fim" and inicio is not None and usa:
+            a, b, passos = saida[inicio]["nivel"], saida[k]["nivel"], k - inicio
+            for j in range(1, passos):
+                saida[inicio + j]["nivel"] = a + (b - a) * j / passos
+            inicio = None
+    for item, ev in zip(saida, eventos):
+        nivel = item.pop("nivel", None)
+        if nivel is not None:
+            item["intensidade"] = round(min(1.0, nivel + (0.25 if ev.acento else 0)), 2)
     return saida
 
 

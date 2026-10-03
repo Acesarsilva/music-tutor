@@ -206,6 +206,7 @@ def eventos_para_abc(
     corpo: list[str] = []
     estado: dict[tuple[str, int], str] = {}
     restante = Fraction(anacruse).limit_denominator(64) if anacruse else tempos_por_compasso
+    forquilha_aberta = None
     for ev in eventos:
         dur = Fraction(ev["duracao"]).limit_denominator(64)
         if dur > restante:
@@ -214,19 +215,37 @@ def eventos_para_abc(
             )
         notas = ev["notas"]
         sufixo = _duracao_abc(dur)
-        decoracao = (f"!{ev['dinamica']}!" if ev.get("dinamica") else "") + ("!>!" if ev.get("acento") else "")
+        decoracao = ""
+        forquilha = ev.get("forquilha")
+        if forquilha == "fim":
+            if forquilha_aberta is None:
+                raise ErroTeoria("forquilha encerrada sem ter começado")
+            decoracao += "!<)!" if forquilha_aberta == "crescendo" else "!>)!"
+            forquilha_aberta = None
+        decoracao += (f"!{ev['dinamica']}!" if ev.get("dinamica") else "") + ("!>!" if ev.get("acento") else "")
+        if forquilha in ("crescendo", "diminuendo"):
+            if forquilha_aberta is not None:
+                raise ErroTeoria("uma forquilha começou antes de a anterior terminar")
+            decoracao += "!<(!" if forquilha == "crescendo" else "!>(!"
+            forquilha_aberta = forquilha
+        if ev.get("staccato") and notas:
+            decoracao += "."
+        abre = "(" if ev.get("expressao") == "inicio" else ""
+        fecha = ")" if ev.get("expressao") == "fim" else ""
         liga = "-" if ev.get("ligada") and notas else ""
         if not notas:
             corpo.append(decoracao + "z" + sufixo)
         elif len(notas) == 1:
-            corpo.append(decoracao + _nota_abc(notas[0], estado, da_armadura) + sufixo + liga)
+            corpo.append(abre + decoracao + _nota_abc(notas[0], estado, da_armadura) + sufixo + liga + fecha)
         else:
-            corpo.append(decoracao + "[" + "".join(_nota_abc(n, estado, da_armadura) for n in notas) + "]" + sufixo + liga)
+            corpo.append(abre + decoracao + "[" + "".join(_nota_abc(n, estado, da_armadura) for n in notas) + "]" + sufixo + liga + fecha)
         restante -= dur
         if restante == 0:
             corpo.append("|")
             estado = {}
             restante = tempos_por_compasso
+    if forquilha_aberta is not None:
+        raise ErroTeoria("forquilha sem fim: marque forquilha=\"fim\" na nota de chegada")
     if corpo and corpo[-1] == "|":
         corpo[-1] = "|]"
     else:

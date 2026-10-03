@@ -1,0 +1,32 @@
+codigo: I14
+titulo: Campo harmônico maior (tríades)
+nivel: iniciante
+assunto: teoria
+prerequisitos:
+  - I07  # Escala maior
+  - I12  # Tríades
+  - I13  # Cifragem popular
+objetivos:
+  - Montar a tríade de cada grau da escala maior usando só notas da escala
+  - Reconhecer o padrão maior, menor, menor, maior, maior, menor, diminuto
+  - Usar a numeração romana (I, ii, iii, IV, V, vi, vii°)
+  - Reconhecer os acordes principais I, IV e V e a progressão I–IV–V–I
+conceitos:
+  - triades-da-escala
+  - padrao-do-campo
+  - numeracao-romana
+  - acordes-principais
+  - campo-em-outras-tonalidades
+  - percepcao-maior-menor
+fora_do_escopo:
+  - Campo harmônico com tétrades (módulo intermediário)
+  - Campo harmônico menor (módulo intermediário)
+  - Funções harmônicas além de tônica, subdominante e dominante
+exemplos_semente:
+  - "As sete tríades de Dó maior: C, Dm, Em, F, G, Am, B°"
+  - "Progressão C–F–G–C"
+  - "Campo harmônico de Sol maior"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

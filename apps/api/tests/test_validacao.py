@@ -104,3 +104,23 @@ def test_acento_se_destaca_das_vizinhas(aula_piloto):
         {"notas": ["C5"], "duracao": 1, "acento": True}, {"notas": ["C5"], "duracao": 1},
     ])
     assert [e["intensidade"] for e in r.exemplos["ex-teste"]["eventos"]] == [0.91, 0.66]
+
+
+def test_forquilha_interpola_e_staccato_passa_para_o_audio(aula_piloto):
+    r = _aula_com_exemplo(aula_piloto, [
+        {"notas": ["C4"], "duracao": 1, "dinamica": "p", "forquilha": "crescendo", "staccato": True},
+        {"notas": ["D4"], "duracao": 1, "expressao": "inicio"}, {"notas": ["E4"], "duracao": 1, "expressao": "fim"},
+        {"notas": ["F4"], "duracao": 1, "dinamica": "f", "forquilha": "fim"},
+    ])
+    assert r.ok, r.erros
+    eventos = r.exemplos["ex-teste"]["eventos"]
+    assert [e["intensidade"] for e in eventos] == [0.38, 0.53, 0.67, 0.82]
+    assert eventos[0]["staccato"] and "!p!!<(!.C" in r.exemplos["ex-teste"]["abc"]
+
+
+def test_forquilha_sem_dinamica_de_chegada(aula_piloto):
+    r = _aula_com_exemplo(aula_piloto, [
+        {"notas": ["C4"], "duracao": 2, "dinamica": "p", "forquilha": "crescendo"},
+        {"notas": ["D4"], "duracao": 2, "forquilha": "fim"},
+    ])
+    assert any("dinâmica de chegada" in e for e in r.erros)
