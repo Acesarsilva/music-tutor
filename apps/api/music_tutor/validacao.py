@@ -70,7 +70,7 @@ def _compilar_exemplo(ex: Exemplo, onde: str, r: Resultado) -> None:
     eventos = [ev.model_dump() for ev in ex.eventos]
     try:
         abc = teoria.eventos_para_abc(
-            eventos, compasso=ex.compasso, anacruse=ex.anacruse, clave=ex.clave
+            eventos, compasso=ex.compasso, anacruse=ex.anacruse, clave=ex.clave, armadura=ex.armadura
         )
     except teoria.ErroTeoria as e:
         r.erros.append(f"{onde}: {e}")
@@ -125,6 +125,10 @@ def _checar_opcoes(opcoes: list[str], correta: int, onde: str, r: Resultado) -> 
     return True
 
 
+# Nomes que as aulas anteriores à I08 usam antes de o aluno aprender os nomes dos intervalos.
+_APELIDOS = {"2m": ("semitom",), "2M": ("tom",)}
+
+
 def _checar_resposta_intervalo(ex: Exemplo, opcoes: list[str], correta: int, onde: str, r: Resultado) -> None:
     if ex.intervalo is None:
         return
@@ -132,7 +136,8 @@ def _checar_resposta_intervalo(ex: Exemplo, opcoes: list[str], correta: int, ond
         nome = teoria.nome_intervalo_pt(ex.intervalo.codigo)
     except teoria.ErroTeoria:
         return  # já reportado no exemplo
-    if _normalizar(opcoes[correta]) != _normalizar(nome):
+    aceitos = {_normalizar(nome), *_APELIDOS.get(ex.intervalo.codigo, ())}
+    if _normalizar(opcoes[correta]) not in aceitos:
         r.erros.append(f"{onde}: a opção correta deveria ser {nome!r}, mas é {opcoes[correta]!r}")
 
 

@@ -120,6 +120,10 @@ maior. Se você marcou 4ª, contou semitons em vez de notas."
 - Texto: dó-ré-mi (Dó, Ré♯, Si♭), com ♯ e ♭ de verdade. Cifras (C, Dm, G7) só para acordes.
   Oitava quando importa: Dó4 é o Dó central.
 - Dados: notação científica ASCII ("C4", "F#4", "Bb3"); códigos de intervalo "3M", "5J", "2m", de 1 a 8.
+- Armadura: o `exemplo` aceita `armadura` com a tônica maior ("G", "D", "F", "Bb"). As notas dos eventos
+  continuam com o acidente real ("F#4" em Sol maior); a partitura omite o que a armadura já diz.
+- Aulas anteriores à I08 ainda não dão nome aos intervalos: em `percepcao`, a opção correta pode ser
+  "semitom" (2m) ou "tom" (2M). Em `teclado`, "1A" pede a mesma nota com ♯ ou ♭ (Fá→Fá♯, Si→Si♭ abaixo).
   O campo `intervalo` reduz intervalos compostos (Dó4–Mi5 vira "3M"); se o texto fala de 10ª, diga
   "10ª maior (3ª maior composta)".
 - Referências: músicas brasileiras conhecidas de qualquer estilo (cantigas de roda, folclore, samba,

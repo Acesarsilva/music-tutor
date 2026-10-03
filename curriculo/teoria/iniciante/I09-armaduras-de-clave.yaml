@@ -1,0 +1,32 @@
+codigo: I09
+titulo: Armaduras de clave (maiores)
+nivel: iniciante
+assunto: teoria
+prerequisitos:
+  - I06  # Tom e semitom
+  - I07  # Escala maior
+objetivos:
+  - Entender o que é a armadura de clave e até onde vale cada acidente dela
+  - Saber a ordem dos sustenidos e a ordem dos bemóis
+  - Descobrir a tonalidade maior de uma armadura com sustenidos ou com bemóis
+  - Ligar a armadura às notas da escala maior
+conceitos:
+  - armadura-de-clave
+  - ordem-dos-sustenidos
+  - ordem-dos-bemois
+  - tonalidade-pelos-sustenidos
+  - tonalidade-pelos-bemois
+  - armadura-na-partitura
+  - relacao-escala-armadura
+fora_do_escopo:
+  - Círculo de quintas (módulo I10)
+  - Tonalidades menores e relativas (módulo I11)
+  - Mudança de armadura no meio da música
+exemplos_semente:
+  - "A mesma melodia com acidentes ao lado das notas e com armadura"
+  - "Peixe vivo em Ré maior (Fá♯ e Dó♯ na armadura)"
+  - "Pirulito que bate bate em Fá maior (Si♭ na armadura)"
+  - "Último sustenido + um semitom = tônica; penúltimo bemol = tônica"
+exercicios:
+  - multipla_escolha
+  - teclado

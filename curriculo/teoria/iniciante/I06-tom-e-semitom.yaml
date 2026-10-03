@@ -1,0 +1,37 @@
+codigo: I06
+titulo: Tom e semitom
+nivel: iniciante
+assunto: teoria
+prerequisitos:
+  - I02  # Notas musicais
+  - I03  # Pauta e claves
+objetivos:
+  - Reconhecer o semitom como a menor distância entre duas notas, no teclado e no braço do violão
+  - Entender o tom como a soma de dois semitons
+  - Saber que Mi–Fá e Si–Dó são os únicos semitons entre notas naturais vizinhas
+  - Usar sustenido, bemol e bequadro para subir, descer e cancelar alterações
+  - Entender a enarmonia (Dó♯ e Ré♭ são o mesmo som com nomes diferentes)
+  - Começar a distinguir tom e semitom de ouvido
+conceitos:
+  - semitom
+  - tom
+  - semitons-naturais
+  - sustenido
+  - bemol
+  - bequadro
+  - enarmonia
+  - percepcao-tom-semitom
+fora_do_escopo:
+  - Dobrado sustenido e dobrado bemol (no máximo uma menção)
+  - Nomes dos intervalos, como 2ª maior e 2ª menor (módulo I08)
+  - Escalas (módulo I07)
+  - Armaduras de clave (módulo I09)
+exemplos_semente:
+  - "Mi4–Fá4 e Si4–Dó5: semitons sem tecla preta no meio"
+  - "Dó4–Ré4: um tom, com Dó♯/Ré♭ no meio"
+  - "Começo de Pirulito que bate bate: Mi–Fá (semitom), Fá–Sol (tom)"
+  - "Fá♯4 e Sol♭4: mesmo som, nomes diferentes"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

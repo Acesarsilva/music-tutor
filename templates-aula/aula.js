@@ -579,7 +579,7 @@
       pintar(registro.atual, elemento);
       Som.tocarEventos([{ midis: [exe.base], duracao: 1 }, { midis: [midiTecla], duracao: 1 }, { midis: [exe.base, midiTecla], duracao: 2 }], 90);
       mostrarRetorno(artigo, resposta.certo, resposta.certo
-        ? "Isso mesmo: " + exe.alvo_nome + " forma uma " + exe.intervalo_nome + "."
+        ? "Isso mesmo: a nota é " + exe.alvo_nome + "."
         : "Ainda não. A nota certa é " + exe.alvo_nome + ", marcada em verde.");
       return false;
     }, function (instrumento) { pintar(instrumento, null); });

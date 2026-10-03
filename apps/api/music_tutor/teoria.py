@@ -128,11 +128,36 @@ def _duracao_abc(beats: Fraction) -> str:
     return f"{beats.numerator}/{beats.denominator}"
 
 
-def _nota_abc(nota: str, estado_compasso: dict[tuple[str, int], str]) -> str:
+# Armaduras de clave aceitas (tonalidades maiores, até 7 acidentes) e as notas que cada uma altera.
+_ORDEM_SUSTENIDOS = "FCGDAEB"
+_ORDEM_BEMOIS = "BEADGCF"
+_ARMADURAS = {
+    **{t: n for n, t in enumerate(["C", "G", "D", "A", "E", "B", "F#", "C#"])},
+    **{t: -n for n, t in enumerate(["C", "F", "Bb", "Eb", "Ab", "Db", "Gb", "Cb"])},
+}
+
+
+def acidentes_da_armadura(armadura: str) -> dict[str, str]:
+    """"D" -> {"F": "#", "C": "#"}; "Bb" -> {"B": "b", "E": "b"}."""
+    if armadura not in _ARMADURAS:
+        raise ErroTeoria(f"armadura inválida: {armadura!r} (use a tônica maior, ex.: G, D, F, Bb, F#)")
+    n = _ARMADURAS[armadura]
+    if n >= 0:
+        return {letra: "#" for letra in _ORDEM_SUSTENIDOS[:n]}
+    return {letra: "b" for letra in _ORDEM_BEMOIS[:-n]}
+
+
+def _nota_abc(
+    nota: str, estado_compasso: dict[tuple[str, int], str], da_armadura: dict[str, str] | None = None
+) -> str:
     letra, acidente, oitava = _partes(nota)
     chave = (letra, oitava)
-    atual = estado_compasso.get(chave, "")
-    if acidente == atual:
+    da_armadura = da_armadura or {}
+    atual = estado_compasso.get(chave, da_armadura.get(letra, ""))
+    if acidente == atual and chave not in estado_compasso:
+        # A armadura (ou a ausência dela) já dá o acidente certo.
+        prefixo = ""
+    elif acidente == atual:
         # Acidente já vale no compasso; repete por clareza quando houver acidente.
         prefixo = _ACIDENTES_ABC[acidente]
     elif acidente == "":
@@ -154,6 +179,7 @@ def eventos_para_abc(
     clave: str = "sol",
     titulo: str | None = None,
     andamento: int | None = None,
+    armadura: str = "C",
 ) -> str:
     """Converte eventos {"notas": [...], "duracao": tempos} em ABC.
 
@@ -174,7 +200,8 @@ def eventos_para_abc(
     linhas += [f"M:{compasso}", "L:1/4"]
     if andamento:
         linhas.append(f"Q:1/4={andamento}")
-    linhas.append("K:C clef=bass" if clave == "fa" else "K:C")
+    da_armadura = acidentes_da_armadura(armadura)
+    linhas.append(f"K:{armadura} clef=bass" if clave == "fa" else f"K:{armadura}")
 
     corpo: list[str] = []
     estado: dict[tuple[str, int], str] = {}
@@ -190,9 +217,9 @@ def eventos_para_abc(
         if not notas:
             corpo.append("z" + sufixo)
         elif len(notas) == 1:
-            corpo.append(_nota_abc(notas[0], estado) + sufixo)
+            corpo.append(_nota_abc(notas[0], estado, da_armadura) + sufixo)
         else:
-            corpo.append("[" + "".join(_nota_abc(n, estado) for n in notas) + "]" + sufixo)
+            corpo.append("[" + "".join(_nota_abc(n, estado, da_armadura) for n in notas) + "]" + sufixo)
         restante -= dur
         if restante == 0:
             corpo.append("|")
