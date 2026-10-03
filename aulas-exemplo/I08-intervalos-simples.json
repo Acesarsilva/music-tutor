@@ -30,11 +30,25 @@
             "titulo": "Intervalo melódico ascendente",
             "legenda": "Primeiro Dó, depois Mi: a melodia sobe.",
             "eventos": [
-              {"notas": ["C4"], "duracao": 2},
-              {"notas": ["E4"], "duracao": 2}
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2
+              }
             ],
             "andamento": 72,
-            "intervalo": {"de": "C4", "para": "E4", "codigo": "3M"}
+            "intervalo": {
+              "de": "C4",
+              "para": "E4",
+              "codigo": "3M"
+            }
           }
         },
         {
@@ -44,11 +58,25 @@
             "titulo": "Intervalo melódico descendente",
             "legenda": "Primeiro Mi, depois Dó: a melodia desce. As notas são as mesmas do exemplo anterior.",
             "eventos": [
-              {"notas": ["E4"], "duracao": 2},
-              {"notas": ["C4"], "duracao": 2}
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2
+              }
             ],
             "andamento": 72,
-            "intervalo": {"de": "E4", "para": "C4", "codigo": "3M"}
+            "intervalo": {
+              "de": "E4",
+              "para": "C4",
+              "codigo": "3M"
+            }
           }
         },
         {
@@ -58,10 +86,20 @@
             "titulo": "Intervalo harmônico",
             "legenda": "Dó e Mi ao mesmo tempo. Na partitura, as notas ficam empilhadas.",
             "eventos": [
-              {"notas": ["C4", "E4"], "duracao": 4}
+              {
+                "notas": [
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 4
+              }
             ],
             "andamento": 72,
-            "intervalo": {"de": "C4", "para": "E4", "codigo": "3M"}
+            "intervalo": {
+              "de": "C4",
+              "para": "E4",
+              "codigo": "3M"
+            }
           }
         },
         {
@@ -80,22 +118,58 @@
         {
           "tipo": "teclado",
           "legenda": "Dó, Ré, Mi: três nomes, uma 3ª.",
-          "destaque": ["C4", "D4", "E4"],
+          "destaque": [
+            "C4",
+            "D4",
+            "E4"
+          ],
           "de": "C4",
           "ate": "B4"
         },
         {
           "tipo": "tabela",
           "legenda": "Os nomes dos intervalos simples, que são os que cabem dentro de uma oitava. Duas notas iguais formam um **uníssono**.",
-          "cabecalho": ["Número", "Nome", "Exemplo a partir de Dó"],
+          "cabecalho": [
+            "Número",
+            "Nome",
+            "Exemplo a partir de Dó"
+          ],
           "linhas": [
-            ["2ª", "segunda", "Dó–Ré"],
-            ["3ª", "terça", "Dó–Mi"],
-            ["4ª", "quarta", "Dó–Fá"],
-            ["5ª", "quinta", "Dó–Sol"],
-            ["6ª", "sexta", "Dó–Lá"],
-            ["7ª", "sétima", "Dó–Si"],
-            ["8ª", "oitava", "Dó–Dó (o próximo Dó, mais agudo)"]
+            [
+              "2ª",
+              "segunda",
+              "Dó–Ré"
+            ],
+            [
+              "3ª",
+              "terça",
+              "Dó–Mi"
+            ],
+            [
+              "4ª",
+              "quarta",
+              "Dó–Fá"
+            ],
+            [
+              "5ª",
+              "quinta",
+              "Dó–Sol"
+            ],
+            [
+              "6ª",
+              "sexta",
+              "Dó–Lá"
+            ],
+            [
+              "7ª",
+              "sétima",
+              "Dó–Si"
+            ],
+            [
+              "8ª",
+              "oitava",
+              "Dó–Dó (o próximo Dó, mais agudo)"
+            ]
           ]
         },
         {
@@ -105,13 +179,55 @@
             "titulo": "De Dó até cada nota da escala",
             "legenda": "Dó fica embaixo e a nota de cima sobe: 2ª, 3ª, 4ª, 5ª, 6ª, 7ª e 8ª.",
             "eventos": [
-              {"notas": ["C4", "D4"], "duracao": 1},
-              {"notas": ["C4", "E4"], "duracao": 1},
-              {"notas": ["C4", "F4"], "duracao": 1},
-              {"notas": ["C4", "G4"], "duracao": 1},
-              {"notas": ["C4", "A4"], "duracao": 1},
-              {"notas": ["C4", "B4"], "duracao": 1},
-              {"notas": ["C4", "C5"], "duracao": 2}
+              {
+                "notas": [
+                  "C4",
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "C5"
+                ],
+                "duracao": 2
+              }
             ],
             "andamento": 60
           }
@@ -123,7 +239,7 @@
       "blocos": [
         {
           "tipo": "texto",
-          "markdown": "O número sozinho não basta. Dó–Mi e Ré–Fá são as duas uma 3ª, mas não soam iguais. De Dó a Mi há **4 semitons**; de Ré a Fá há só **3**.\n\nO **semitom** é a menor distância entre duas teclas vizinhas do piano, sejam brancas ou pretas. Contando semitons, descobrimos a **qualidade** do intervalo:\n\n- **Justos**: uníssono, 4ª, 5ª e 8ª.\n- **Maiores ou menores**: 2ª, 3ª, 6ª e 7ª. O menor tem um semitom a menos que o maior."
+          "markdown": "O número sozinho não basta. Dó–Mi e Ré–Fá são as duas uma 3ª, mas não soam iguais. De Dó a Mi há **4 semitons**; de Ré a Fá há só **3**.\n\nO **semitom** é a menor distância entre duas notas: no piano, duas teclas vizinhas, sejam brancas ou pretas; no violão, duas casas vizinhas na mesma corda. Contando semitons, descobrimos a **qualidade** do intervalo:\n\n- **Justos**: uníssono, 4ª, 5ª e 8ª.\n- **Maiores ou menores**: 2ª, 3ª, 6ª e 7ª. O menor tem um semitom a menos que o maior."
         },
         {
           "tipo": "exemplo",
@@ -132,12 +248,32 @@
             "titulo": "3ª maior: Dó–Mi (4 semitons)",
             "legenda": "Um som aberto e luminoso.",
             "eventos": [
-              {"notas": ["C4"], "duracao": 1},
-              {"notas": ["E4"], "duracao": 1},
-              {"notas": ["C4", "E4"], "duracao": 2}
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 2
+              }
             ],
             "andamento": 72,
-            "intervalo": {"de": "C4", "para": "E4", "codigo": "3M"}
+            "intervalo": {
+              "de": "C4",
+              "para": "E4",
+              "codigo": "3M"
+            }
           }
         },
         {
@@ -147,38 +283,113 @@
             "titulo": "3ª menor: Ré–Fá (3 semitons)",
             "legenda": "Um som mais escuro e fechado. Ouça os dois exemplos em seguida para comparar.",
             "eventos": [
-              {"notas": ["D4"], "duracao": 1},
-              {"notas": ["F4"], "duracao": 1},
-              {"notas": ["D4", "F4"], "duracao": 2}
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 2
+              }
             ],
             "andamento": 72,
-            "intervalo": {"de": "D4", "para": "F4", "codigo": "3m"}
+            "intervalo": {
+              "de": "D4",
+              "para": "F4",
+              "codigo": "3m"
+            }
           }
         },
         {
           "tipo": "teclado",
           "legenda": "De Ré a Fá: Ré–Ré♯, Ré♯–Mi, Mi–Fá. São três semitons.",
-          "destaque": ["D4", "F4"],
+          "destaque": [
+            "D4",
+            "F4"
+          ],
           "de": "C4",
           "ate": "B4"
         },
         {
           "tipo": "tabela",
           "legenda": "Cada qualidade medida a partir de Dó. O intervalo de 6 semitons aparece na dica abaixo.",
-          "cabecalho": ["Intervalo", "Semitons", "A partir de Dó"],
+          "cabecalho": [
+            "Intervalo",
+            "Semitons",
+            "A partir de Dó"
+          ],
           "linhas": [
-            ["uníssono", "0", "Dó–Dó (a mesma nota)"],
-            ["2ª menor", "1", "Dó–Ré♭"],
-            ["2ª maior", "2", "Dó–Ré"],
-            ["3ª menor", "3", "Dó–Mi♭"],
-            ["3ª maior", "4", "Dó–Mi"],
-            ["4ª justa", "5", "Dó–Fá"],
-            ["5ª justa", "7", "Dó–Sol"],
-            ["6ª menor", "8", "Dó–Lá♭"],
-            ["6ª maior", "9", "Dó–Lá"],
-            ["7ª menor", "10", "Dó–Si♭"],
-            ["7ª maior", "11", "Dó–Si"],
-            ["8ª justa", "12", "Dó–Dó (uma oitava acima)"]
+            [
+              "uníssono",
+              "0",
+              "Dó–Dó (a mesma nota)"
+            ],
+            [
+              "2ª menor",
+              "1",
+              "Dó–Ré♭"
+            ],
+            [
+              "2ª maior",
+              "2",
+              "Dó–Ré"
+            ],
+            [
+              "3ª menor",
+              "3",
+              "Dó–Mi♭"
+            ],
+            [
+              "3ª maior",
+              "4",
+              "Dó–Mi"
+            ],
+            [
+              "4ª justa",
+              "5",
+              "Dó–Fá"
+            ],
+            [
+              "5ª justa",
+              "7",
+              "Dó–Sol"
+            ],
+            [
+              "6ª menor",
+              "8",
+              "Dó–Lá♭"
+            ],
+            [
+              "6ª maior",
+              "9",
+              "Dó–Lá"
+            ],
+            [
+              "7ª menor",
+              "10",
+              "Dó–Si♭"
+            ],
+            [
+              "7ª maior",
+              "11",
+              "Dó–Si"
+            ],
+            [
+              "8ª justa",
+              "12",
+              "Dó–Dó (uma oitava acima)"
+            ]
           ]
         },
         {
@@ -197,7 +408,16 @@
         {
           "tipo": "teclado",
           "legenda": "Escala de Dó maior: cada nota forma um intervalo maior ou justo com Dó.",
-          "destaque": ["C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5"],
+          "destaque": [
+            "C4",
+            "D4",
+            "E4",
+            "F4",
+            "G4",
+            "A4",
+            "B4",
+            "C5"
+          ],
           "de": "C4",
           "ate": "C5"
         },
@@ -208,14 +428,54 @@
             "titulo": "Escala de Dó maior",
             "legenda": "Da tônica Dó4 até Dó5.",
             "eventos": [
-              {"notas": ["C4"], "duracao": 1},
-              {"notas": ["D4"], "duracao": 1},
-              {"notas": ["E4"], "duracao": 1},
-              {"notas": ["F4"], "duracao": 1},
-              {"notas": ["G4"], "duracao": 1},
-              {"notas": ["A4"], "duracao": 1},
-              {"notas": ["B4"], "duracao": 1},
-              {"notas": ["C5"], "duracao": 1}
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              }
             ],
             "andamento": 84
           }
@@ -231,8 +491,20 @@
             "titulo": "Ré–Fá♯ e depois Ré–Fá",
             "legenda": "Primeiro a 3ª maior (Ré–Fá♯), depois a 3ª menor (Ré–Fá). Só a nota de cima muda, um semitom.",
             "eventos": [
-              {"notas": ["D4", "F#4"], "duracao": 2},
-              {"notas": ["D4", "F4"], "duracao": 2}
+              {
+                "notas": [
+                  "D4",
+                  "F#4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 2
+              }
             ],
             "andamento": 66
           }
@@ -244,7 +516,67 @@
       "blocos": [
         {
           "tipo": "texto",
-          "markdown": "Um jeito prático de reconhecer intervalos de ouvido é ligar cada um ao começo de uma música conhecida. Cante mentalmente a melodia e preste atenção nas duas primeiras notas **diferentes**."
+          "markdown": "Um jeito prático de reconhecer intervalos de ouvido é ligar cada um ao começo de uma música conhecida. Cante mentalmente a melodia e preste atenção nas duas primeiras notas **diferentes**.\n\nOs exemplos abaixo são cantigas e melodias em domínio público. A partitura mostra só o começo de cada uma, com ritmo simplificado."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-pirulito",
+            "titulo": "2ª menor: Pirulito que bate bate",
+            "legenda": "\"Pi-**ru**-li-to\": de \"Pi\" para \"ru\" a melodia sobe só um semitom, uma 2ª menor.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              }
+            ],
+            "compasso": "2/4",
+            "anacruse": 0,
+            "andamento": 88,
+            "intervalo": {
+              "de": "E4",
+              "para": "F4",
+              "codigo": "2m"
+            }
+          }
         },
         {
           "tipo": "exemplo",
@@ -253,51 +585,233 @@
             "titulo": "2ª maior: Parabéns a você",
             "legenda": "\"Pa-ra-**béns**\": as duas primeiras sílabas repetem a nota, e \"béns\" sobe uma 2ª maior.",
             "eventos": [
-              {"notas": ["G4"], "duracao": 0.75},
-              {"notas": ["G4"], "duracao": 0.25},
-              {"notas": ["A4"], "duracao": 1},
-              {"notas": ["G4"], "duracao": 1},
-              {"notas": ["C5"], "duracao": 1},
-              {"notas": ["B4"], "duracao": 2}
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.75
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 2
+              }
             ],
             "compasso": "3/4",
             "anacruse": 1,
             "andamento": 96,
-            "intervalo": {"de": "G4", "para": "A4", "codigo": "2M"}
+            "intervalo": {
+              "de": "G4",
+              "para": "A4",
+              "codigo": "2M"
+            }
           }
         },
         {
           "tipo": "exemplo",
           "exemplo": {
-            "id": "ex-saints",
-            "titulo": "3ª maior: When the Saints Go Marching In",
-            "legenda": "\"Oh, **when** the saints\": de \"Oh\" para \"when\" a melodia sobe uma 3ª maior.",
+            "id": "ex-peixe-vivo",
+            "titulo": "3ª menor: Peixe vivo",
+            "legenda": "\"Co-**mo** po-de o pei-xe vi-vo\": de \"Co\" para \"mo\" a melodia sobe uma 3ª menor.",
             "eventos": [
-              {"notas": ["C4"], "duracao": 1},
-              {"notas": ["E4"], "duracao": 1},
-              {"notas": ["F4"], "duracao": 1},
-              {"notas": ["G4"], "duracao": 4}
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              }
             ],
-            "anacruse": 3,
-            "andamento": 120,
-            "intervalo": {"de": "C4", "para": "E4", "codigo": "3M"}
+            "compasso": "2/4",
+            "anacruse": 0,
+            "andamento": 88,
+            "intervalo": {
+              "de": "E4",
+              "para": "G4",
+              "codigo": "3m"
+            }
           }
         },
         {
           "tipo": "exemplo",
           "exemplo": {
-            "id": "ex-marcha-nupcial",
-            "titulo": "4ª justa: Marcha nupcial (Wagner)",
-            "legenda": "\"Lá **vem** a noiva\": de \"Lá\" para \"vem\" a melodia sobe uma 4ª justa.",
+            "id": "ex-marcha-soldado",
+            "titulo": "3ª menor e 3ª maior descendo: Marcha soldado",
+            "legenda": "\"Mar-cha **sol**-**da**-do\": de \"cha\" para \"sol\" a melodia desce uma 3ª menor; de \"sol\" para \"da\", desce mais uma 3ª, agora maior.",
             "eventos": [
-              {"notas": ["G4"], "duracao": 1},
-              {"notas": ["C5"], "duracao": 0.75},
-              {"notas": ["C5"], "duracao": 0.25},
-              {"notas": ["C5"], "duracao": 2}
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              }
             ],
-            "anacruse": 1,
-            "andamento": 72,
-            "intervalo": {"de": "G4", "para": "C5", "codigo": "4J"}
+            "compasso": "2/4",
+            "anacruse": 0,
+            "andamento": 88,
+            "intervalo": {
+              "de": "G4",
+              "para": "E4",
+              "codigo": "3m"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ciranda",
+            "titulo": "4ª justa: Ciranda, cirandinha",
+            "legenda": "\"Ci-**ran**-da, ci-ran-di-nha\": de \"Ci\" para \"ran\" a melodia sobe uma 4ª justa.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              }
+            ],
+            "compasso": "2/4",
+            "anacruse": 0.5,
+            "andamento": 88,
+            "intervalo": {
+              "de": "D4",
+              "para": "G4",
+              "codigo": "4J"
+            }
           }
         },
         {
@@ -305,39 +819,180 @@
           "exemplo": {
             "id": "ex-brilha-brilha",
             "titulo": "5ª justa: Brilha, brilha, estrelinha",
-            "legenda": "\"Bri-lha, **bri**-lha\": do segundo para o terceiro som a melodia sobe uma 5ª justa.",
+            "legenda": "\"Bri-lha, **bri**-lha\": do segundo para o terceiro som a melodia sobe uma 5ª justa. A melodia é francesa, mas a versão em português é cantada em todo o Brasil.",
             "eventos": [
-              {"notas": ["C4"], "duracao": 1},
-              {"notas": ["C4"], "duracao": 1},
-              {"notas": ["G4"], "duracao": 1},
-              {"notas": ["G4"], "duracao": 1},
-              {"notas": ["A4"], "duracao": 1},
-              {"notas": ["A4"], "duracao": 1},
-              {"notas": ["G4"], "duracao": 2}
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2
+              }
             ],
             "andamento": 96,
-            "intervalo": {"de": "C4", "para": "G4", "codigo": "5J"}
+            "intervalo": {
+              "de": "C4",
+              "para": "G4",
+              "codigo": "5J"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-cravo",
+            "titulo": "6ª menor: O cravo brigou com a rosa",
+            "legenda": "\"O cra-vo **bri**-gou\": a melodia desce uma 3ª menor em \"vo\" e depois salta uma 6ª menor para cima, em \"bri\".",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              }
+            ],
+            "compasso": "2/4",
+            "anacruse": 0,
+            "andamento": 88,
+            "intervalo": {
+              "de": "E4",
+              "para": "C5",
+              "codigo": "6m"
+            }
           }
         },
         {
           "tipo": "tabela",
-          "legenda": "Referências para treinar o ouvido. Todas sobem, exceto Garota de Ipanema, que desce.",
-          "cabecalho": ["Intervalo", "Música", "Onde ouvir"],
+          "legenda": "Referências brasileiras para treinar o ouvido. ↑ a melodia sobe, ↓ a melodia desce. A sílaba em negrito é onde a segunda nota do intervalo cai.",
+          "cabecalho": [
+            "Intervalo",
+            "Música",
+            "Onde ouvir"
+          ],
           "linhas": [
-            ["2ª menor", "Tema de *Tubarão* (John Williams)", "as duas notas que se alternam no grave"],
-            ["2ª maior", "*Parabéns a você*", "\"Pa-ra-**béns**\""],
-            ["3ª menor", "*Garota de Ipanema* (Tom Jobim), descendente", "\"**O**-lha que coisa\""],
-            ["3ª maior", "*When the Saints Go Marching In*", "\"Oh, **when**\""],
-            ["4ª justa", "Marcha nupcial (Wagner)", "\"Lá **vem** a noiva\""],
-            ["5ª justa", "*Brilha, brilha, estrelinha*", "\"Bri-lha, **bri**-lha\""],
-            ["6ª maior", "*My Bonnie Lies over the Ocean*", "\"My **Bon**-nie\""],
-            ["7ª menor", "*Somewhere* (West Side Story)", "\"There's **a** place\""],
-            ["8ª justa", "*Over the Rainbow*", "\"**Some**-where\""]
+            [
+              "2ª menor ↑",
+              "*Pirulito que bate bate* (cantiga)",
+              "\"Pi-**ru**-li-to\""
+            ],
+            [
+              "2ª maior ↑",
+              "*Parabéns a você*; *Asa Branca* (Luiz Gonzaga e Humberto Teixeira)",
+              "\"Pa-ra-**béns**\"; \"Quan-**do** o-lhei\""
+            ],
+            [
+              "2ª maior ↓",
+              "*Atirei o pau no gato*; *Cai, cai, balão* (cantigas)",
+              "\"A-**ti**-rei\"; \"Cai, cai, **ba**-lão\""
+            ],
+            [
+              "3ª menor ↑",
+              "*Peixe vivo* (cantiga mineira)",
+              "\"Co-**mo** po-de\""
+            ],
+            [
+              "3ª menor ↓",
+              "*Marcha soldado* (cantiga); *Mamãe eu quero* (Jararaca e Vicente Paiva)",
+              "\"Mar-cha **sol**-da-do\"; \"Ma-mãe eu **que**-ro\""
+            ],
+            [
+              "3ª maior ↑",
+              "*Sambalelê* (cantiga)",
+              "\"Sam-ba-**le**-lê\""
+            ],
+            [
+              "3ª maior ↓",
+              "*Trem das onze* (Adoniran Barbosa)",
+              "\"Não po-**sso** fi-car\""
+            ],
+            [
+              "4ª justa ↑",
+              "*Ciranda, cirandinha*; *Hino Nacional Brasileiro*; *Se essa rua fosse minha*",
+              "\"Ci-**ran**-da\"; \"Ou-**vi**-ram do I-pi-ran-ga\"; \"Se es-**sa** ru-a\""
+            ],
+            [
+              "5ª justa ↑",
+              "*Brilha, brilha, estrelinha*",
+              "\"Bri-lha, **bri**-lha\""
+            ],
+            [
+              "6ª menor ↑",
+              "*O cravo brigou com a rosa* (cantiga)",
+              "\"O cra-vo **bri**-gou\""
+            ],
+            [
+              "6ª maior ↑",
+              "*Marina* (Dorival Caymmi)",
+              "\"Ma-**ri**-na\""
+            ]
           ]
         },
         {
           "tipo": "dica",
-          "markdown": "A 6ª menor e a 7ª maior aparecem pouco no começo de músicas conhecidas. Para elas, o melhor treino é comparar com a vizinha: a 6ª menor soa como uma 6ª maior mais escura, e a 7ª maior soa como uma oitava que \"não chegou\"."
+          "markdown": "Para as 7ªs, a 8ª e o trítono, não confirmamos uma música brasileira conhecida que comece com eles. Treine por comparação: a 8ª é a mesma nota, mais aguda; a 7ª maior soa como uma oitava que \"não chegou\"; a 7ª menor fica um semitom abaixo dela."
         }
       ]
     }
@@ -346,11 +1001,19 @@
     {
       "tipo": "multipla_escolha",
       "enunciado": "Quantos semitons tem uma **3ª maior**?",
-      "opcoes": ["2 semitons", "3 semitons", "4 semitons", "5 semitons"],
+      "opcoes": [
+        "2 semitons",
+        "3 semitons",
+        "4 semitons",
+        "5 semitons"
+      ],
       "correta": 2,
       "explicacao": "A 3ª maior tem 4 semitons, como Dó–Mi (Dó, Dó♯, Ré, Ré♯, Mi). A 3ª menor tem um semitom a menos: 3.",
       "conceito": "semitons",
-      "verificacao": {"tipo": "semitons", "intervalo": "3M"}
+      "verificacao": {
+        "tipo": "semitons",
+        "intervalo": "3M"
+      }
     },
     {
       "tipo": "multipla_escolha",
@@ -360,13 +1023,32 @@
         "titulo": "Ré e Fá",
         "legenda": "Ré–Fá, 3ª menor.",
         "eventos": [
-          {"notas": ["D4"], "duracao": 2},
-          {"notas": ["F4"], "duracao": 2}
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 2
+          }
         ],
         "andamento": 72,
-        "intervalo": {"de": "D4", "para": "F4", "codigo": "3m"}
+        "intervalo": {
+          "de": "D4",
+          "para": "F4",
+          "codigo": "3m"
+        }
       },
-      "opcoes": ["2ª maior", "3ª menor", "3ª maior", "4ª justa"],
+      "opcoes": [
+        "2ª maior",
+        "3ª menor",
+        "3ª maior",
+        "4ª justa"
+      ],
       "correta": 1,
       "explicacao": "Ré, Mi, Fá: três nomes, então é uma 3ª. De Ré a Fá há 3 semitons, então é **menor**.",
       "conceito": "qualidade-maior-menor"
@@ -379,12 +1061,27 @@
         "titulo": "Mi e Si juntos",
         "legenda": "Mi–Si, 5ª justa.",
         "eventos": [
-          {"notas": ["E4", "B4"], "duracao": 4}
+          {
+            "notas": [
+              "E4",
+              "B4"
+            ],
+            "duracao": 4
+          }
         ],
         "andamento": 72,
-        "intervalo": {"de": "E4", "para": "B4", "codigo": "5J"}
+        "intervalo": {
+          "de": "E4",
+          "para": "B4",
+          "codigo": "5J"
+        }
       },
-      "opcoes": ["4ª justa", "5ª justa", "6ª menor", "6ª maior"],
+      "opcoes": [
+        "4ª justa",
+        "5ª justa",
+        "6ª menor",
+        "6ª maior"
+      ],
       "correta": 1,
       "explicacao": "Mi, Fá, Sol, Lá, Si: cinco nomes, uma 5ª. Na escala de Mi maior a 5ª nota é Si, então a 5ª é **justa** (7 semitons).",
       "conceito": "qualidade-justa"
@@ -392,7 +1089,12 @@
     {
       "tipo": "multipla_escolha",
       "enunciado": "Qual destes intervalos pode ser **justo**?",
-      "opcoes": ["2ª", "3ª", "5ª", "7ª"],
+      "opcoes": [
+        "2ª",
+        "3ª",
+        "5ª",
+        "7ª"
+      ],
       "correta": 2,
       "explicacao": "Só o uníssono, a 4ª, a 5ª e a 8ª são justos. A 2ª, a 3ª, a 6ª e a 7ª são maiores ou menores.",
       "conceito": "qualidade-justa"
@@ -400,14 +1102,18 @@
     {
       "tipo": "multipla_escolha",
       "enunciado": "Mi–Fá e Si–Dó são dois intervalos sem tecla preta no meio. Que intervalo eles formam?",
-      "opcoes": ["2ª menor (1 semitom)", "2ª maior (2 semitons)", "3ª menor (3 semitons)"],
+      "opcoes": [
+        "2ª menor (1 semitom)",
+        "2ª maior (2 semitons)",
+        "3ª menor (3 semitons)"
+      ],
       "correta": 0,
-      "explicacao": "Mi e Fá são vizinhas no teclado, assim como Si e Dó. A distância é de um semitom, então formam uma **2ª menor**. As outras duplas de notas naturais vizinhas (Dó–Ré, Ré–Mi, Fá–Sol, Sol–Lá, Lá–Si) são 2ª maiores.",
+      "explicacao": "Mi e Fá são vizinhas no teclado (e casas vizinhas no violão), assim como Si e Dó. A distância é de um semitom, então formam uma **2ª menor**. As outras duplas de notas naturais vizinhas (Dó–Ré, Ré–Mi, Fá–Sol, Sol–Lá, Lá–Si) são 2ª maiores.",
       "conceito": "semitons"
     },
     {
       "tipo": "teclado",
-      "enunciado": "Ré4 está marcado no teclado. Clique na nota que forma uma **5ª justa acima** de Ré.",
+      "enunciado": "Ré4 está marcado. Clique na nota que forma uma **5ª justa acima** de Ré.",
       "nota_base": "D4",
       "intervalo": "5J",
       "direcao": "acima",
@@ -457,13 +1163,32 @@
         "titulo": "Intervalo para identificar",
         "legenda": "Dó–Sol, 5ª justa.",
         "eventos": [
-          {"notas": ["C4"], "duracao": 2},
-          {"notas": ["G4"], "duracao": 2}
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2
+          }
         ],
         "andamento": 72,
-        "intervalo": {"de": "C4", "para": "G4", "codigo": "5J"}
+        "intervalo": {
+          "de": "C4",
+          "para": "G4",
+          "codigo": "5J"
+        }
       },
-      "opcoes": ["3ª maior", "4ª justa", "5ª justa", "8ª justa"],
+      "opcoes": [
+        "3ª maior",
+        "4ª justa",
+        "5ª justa",
+        "8ª justa"
+      ],
       "correta": 2,
       "explicacao": "É uma 5ª justa, o mesmo salto de \"Bri-lha, **bri**-lha\".",
       "conceito": "percepcao-de-intervalos"
@@ -476,12 +1201,25 @@
         "titulo": "Intervalo para identificar",
         "legenda": "Lá–Dó, 3ª menor.",
         "eventos": [
-          {"notas": ["A4", "C5"], "duracao": 4}
+          {
+            "notas": [
+              "A4",
+              "C5"
+            ],
+            "duracao": 4
+          }
         ],
         "andamento": 72,
-        "intervalo": {"de": "A4", "para": "C5", "codigo": "3m"}
+        "intervalo": {
+          "de": "A4",
+          "para": "C5",
+          "codigo": "3m"
+        }
       },
-      "opcoes": ["3ª maior", "3ª menor"],
+      "opcoes": [
+        "3ª maior",
+        "3ª menor"
+      ],
       "correta": 1,
       "explicacao": "Lá–Dó tem 3 semitons: 3ª menor. Repare no som mais escuro, comparado com Dó–Mi.",
       "conceito": "percepcao-de-intervalos"
@@ -494,13 +1232,32 @@
         "titulo": "Intervalo para identificar",
         "legenda": "Sol–Dó, 4ª justa.",
         "eventos": [
-          {"notas": ["G4"], "duracao": 2},
-          {"notas": ["C5"], "duracao": 2}
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 2
+          }
         ],
         "andamento": 72,
-        "intervalo": {"de": "G4", "para": "C5", "codigo": "4J"}
+        "intervalo": {
+          "de": "G4",
+          "para": "C5",
+          "codigo": "4J"
+        }
       },
-      "opcoes": ["3ª maior", "4ª justa", "5ª justa", "6ª maior"],
+      "opcoes": [
+        "3ª maior",
+        "4ª justa",
+        "5ª justa",
+        "6ª maior"
+      ],
       "correta": 1,
       "explicacao": "É uma 4ª justa, como \"Lá **vem** a noiva\" na Marcha nupcial.",
       "conceito": "percepcao-de-intervalos"
@@ -513,13 +1270,32 @@
         "titulo": "Intervalo para identificar",
         "legenda": "Dó4–Dó5, 8ª justa.",
         "eventos": [
-          {"notas": ["C4"], "duracao": 2},
-          {"notas": ["C5"], "duracao": 2}
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 2
+          }
         ],
         "andamento": 72,
-        "intervalo": {"de": "C4", "para": "C5", "codigo": "8J"}
+        "intervalo": {
+          "de": "C4",
+          "para": "C5",
+          "codigo": "8J"
+        }
       },
-      "opcoes": ["5ª justa", "6ª maior", "7ª maior", "8ª justa"],
+      "opcoes": [
+        "5ª justa",
+        "6ª maior",
+        "7ª maior",
+        "8ª justa"
+      ],
       "correta": 3,
       "explicacao": "É a mesma nota, uma oitava acima: 8ª justa, como \"**Some**-where\" em *Over the Rainbow*.",
       "conceito": "percepcao-de-intervalos"

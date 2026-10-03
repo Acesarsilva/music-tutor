@@ -21,6 +21,7 @@ apps/api/            backend Python: teoria, validação, gerador e CLI
 curriculo/teoria/    um YAML por módulo do currículo
 templates-aula/      template HTML, CSS e JavaScript das aulas
 aulas-exemplo/       aula piloto I08 (JSON validado e HTML gerado)
+.claude/skills/      skills do Claude para escrever, revisar e dar aulas (CC BY-SA 4.0)
 ```
 
 ## Rodando
