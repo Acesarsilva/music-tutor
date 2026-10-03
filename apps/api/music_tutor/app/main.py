@@ -141,7 +141,7 @@ def painel(conn: Connection = Depends(db.conexao)) -> dict:
     fracos = conn.execute(
         """
         select conceito, dominio, acertos, erros from public.concept_mastery
-        where user_id = auth.uid() order by dominio, erros desc limit 5
+        where user_id = auth.uid() and dominio < 70 order by dominio, erros desc limit 5
         """
     ).fetchall()
     return {"perfil": perfil, "modulos": modulos, "revisoes": revisoes, "conceitos_fracos": fracos, "hoje": date.today()}

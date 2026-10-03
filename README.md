@@ -3,7 +3,8 @@
 Professor de teoria musical com aulas interativas em HTML, geradas e validadas por um agente.
 
 O plano completo do projeto está no documento "Plano: Agente Professor de Teoria Musical".
-Este repositório começa pela peça central: o gerador de aulas.
+O repositório tem o gerador de aulas e o app: site com login por convite, painel e aulas, e a API que registra
+o progresso de cada aluno.
 
 ## Como uma aula é feita
 
@@ -17,7 +18,9 @@ Este repositório começa pela peça central: o gerador de aulas.
 ## Estrutura
 
 ```
-apps/api/            backend Python: teoria, validação, gerador e CLI
+apps/web/            site Next.js: login, convite, painel do aluno, aula, perfil e administração
+apps/api/            backend Python: API do app (music_tutor/app), teoria, validação, gerador e CLI
+supabase/            migrações do banco (tabelas, RLS e funções de progresso)
 curriculo/teoria/    um YAML por módulo do currículo
 templates-aula/      template HTML, CSS e JavaScript das aulas
 aulas-exemplo/       aula piloto I08 (JSON validado e HTML gerado)
@@ -48,6 +51,57 @@ Exemplo de `perfil.json`:
 ```json
 {"nivel": "iniciante", "timbre": "violao", "pontos_fracos": ["qualidade-maior-menor"]}
 ```
+
+## O app
+
+```
+navegador ── login (Supabase Auth) ──> token
+    │
+    └── site Next.js ── token ──> API FastAPI ── RLS como o aluno ──> Postgres do Supabase
+                                     └── monta a aula no timbre do aluno e corrige as respostas
+```
+
+- **Login**: só por convite. O administrador convida pelo site (página Alunos), o aluno recebe o e-mail, cria a
+  senha em `/definir-senha`, aceita os termos e escolhe piano ou violão.
+- **Aulas**: a API monta o HTML da aula e o site mostra num iframe isolado (`sandbox="allow-scripts"`). A aula
+  avisa o site por `postMessage` quando o aluno responde ou troca de instrumento; o site manda para a API, que
+  **corrige no servidor** e grava a resposta.
+- **Progresso**: cada resposta atualiza o domínio do conceito e do módulo (média móvel de 0 a 100) e agenda a
+  revisão (1, 3, 7, 14 e 30 dias; um erro volta para 1 dia). O painel mostra a trilha, as revisões do dia e os
+  pontos para reforçar.
+- **Segurança**: toda tabela tem RLS. A API conversa com o banco no papel `authenticated`, com as claims do token,
+  então vale o mesmo isolamento do Supabase. O aluno só lê os próprios dados e não grava progresso direto: as
+  escritas passam pelas funções `registrar_resposta`, `marcar_modulo` e `consumir_cota`.
+- **LGPD**: termos aceitos no primeiro acesso, e na página Perfil o aluno baixa os dados e exclui a conta.
+
+### Rodando o app localmente
+
+```bash
+# API (precisa de um Postgres com as migrações; veja supabase/testes/supabase_simulado.sql)
+cd apps/api
+cp .env.exemplo .env   # e preencha
+uvicorn music_tutor.app.main:app --reload
+
+# testes da API e do RLS num Postgres local
+TEST_DATABASE_URL=postgresql://postgres@localhost:5432/postgres pytest
+
+# site
+cd apps/web
+cp .env.exemplo .env.local   # e preencha
+npm install && npm run dev
+```
+
+### Publicando
+
+1. **Supabase**: crie o projeto (região São Paulo), rode `supabase/migrations/*.sql` no SQL Editor (ou
+   `supabase db push`) e depois `DATABASE_URL=... python -m music_tutor sincronizar-curriculo`.
+   Em Authentication, desligue "Allow new users to sign up", defina a Site URL como o endereço do site e
+   adicione `<site>/definir-senha` às Redirect URLs.
+2. **API** no Render ou Fly.io: imagem de `apps/api/Dockerfile` (contexto na raiz do repositório), com as
+   variáveis de `apps/api/.env.exemplo`.
+3. **Site** na Vercel: Root Directory `apps/web`, com as variáveis de `apps/web/.env.exemplo`.
+4. **Primeiro administrador**: convide a si mesmo pelo painel do Supabase e rode
+   `update public.profiles set papel = 'admin' where id = (select id from auth.users where email = '<seu e-mail>');`
 
 ## Convenções
 
