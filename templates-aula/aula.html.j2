@@ -20,7 +20,7 @@
   <div class="barra-interna">
     <p class="barra-aula"><span class="selo">{{ aula.codigo }}</span> {{ aula.titulo }}</p>
     <div class="controles">
-      <div class="timbre" role="group" aria-label="Timbre">
+      <div class="timbre" role="group" aria-label="Instrumento">
         <button type="button" id="timbre-piano" data-timbre="piano" aria-pressed="{{ 'true' if timbre == 'piano' else 'false' }}">Piano</button>
         <button type="button" id="timbre-violao" data-timbre="violao" aria-pressed="{{ 'true' if timbre == 'violao' else 'false' }}">Violão</button>
       </div>
@@ -79,6 +79,8 @@
     <div class="prosa">{{ bloco.markdown | md | safe }}</div>
     {% elif bloco.tipo == "dica" %}
     <aside class="dica"><p class="rotulo">Dica</p>{{ bloco.markdown | md | safe }}</aside>
+    {% elif bloco.tipo == "resposta" %}
+    <details class="resposta"><summary>{{ bloco.rotulo }}</summary><div class="prosa">{{ bloco.markdown | md | safe }}</div></details>
     {% elif bloco.tipo == "exemplo" %}
     {% set ex = bloco.exemplo %}
     <figure class="exemplo" data-exemplo="{{ ex.id }}">
@@ -108,7 +110,11 @@
       <div class="teclado-rolagem"><div class="teclado" data-teclado="t-{{ i }}-{{ j }}"></div></div>
       <figcaption>
         <span>{{ bloco.legenda | md_linha | safe }}</span>
-        <button type="button" class="tocar pequeno" data-tocar-teclado="t-{{ i }}-{{ j }}"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir as notas</span></button>
+        <span class="acoes-instrumento">
+          <button type="button" class="tocar pequeno" data-tocar-teclado="t-{{ i }}-{{ j }}"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir as notas</span></button>
+          <button type="button" class="secundario" data-montar-acorde="t-{{ i }}-{{ j }}" aria-pressed="false">Montar acorde</button>
+          <button type="button" class="tocar pequeno" data-tocar-acorde="t-{{ i }}-{{ j }}" hidden><span class="icone" aria-hidden="true"></span><span class="texto">Tocar juntas</span></button>
+        </span>
       </figcaption>
     </figure>
     {% endif %}
@@ -122,7 +128,7 @@
     {% for exe in aula.exercicios %}
     {% set k = loop.index0 %}
     <article class="exercicio" data-exercicio="{{ k }}" data-tipo="{{ exe.tipo }}">
-      <p class="rotulo">Exercício {{ loop.index }} · {% if exe.tipo == "multipla_escolha" %}Múltipla escolha{% elif exe.tipo == "percepcao" %}Percepção{% else %}Teclado{% endif %}</p>
+      <p class="rotulo">Exercício {{ loop.index }} · {% if exe.tipo == "multipla_escolha" %}Múltipla escolha{% elif exe.tipo == "percepcao" %}Percepção{% else %}Toque a nota{% endif %}</p>
       <div class="enunciado">{{ exe.enunciado | md | safe }}</div>
       {% if exe.tipo == "percepcao" %}
       <button type="button" class="tocar" data-tocar="{{ exe.exemplo.id }}"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>

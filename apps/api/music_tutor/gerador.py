@@ -27,8 +27,12 @@ Como escrever:
 - Nomes de notas em dó-ré-mi no texto (Dó, Ré, Mi, Fá♯, Si♭). Cifras (C, Dm, G7) só para acordes.
 - Nos campos de notas dos exemplos use notação científica ASCII: "C4", "F#4", "Bb3". Dó4 é o Dó central.
 - Cada conceito novo vem com um exemplo sonoro curto. Prefira exemplos de 1 a 4 compassos.
-- Repertório variado (MPB, pop, jazz, erudito, folclore). Exemplos tocados devem usar só melodias em
-  domínio público ou trechos curtos de poucas notas; em tabelas, cite a música e o trecho.
+- Use músicas brasileiras conhecidas como referência, de qualquer estilo (cantigas de roda, folclore, samba,
+  choro, bossa nova, MPB, forró, sertanejo, pop). Exemplos tocados devem usar só melodias em domínio público
+  (cantigas, folclore, hinos antigos) ou trechos curtos de poucas notas; em tabelas, cite a música e o trecho.
+- Em melodias cantadas, preencha "silaba" em cada nota ("Ci-", "ran-", "da"); a letra aparece sob a partitura.
+  O ritmo segue a letra: sílaba tônica no tempo forte, anacruse quando a frase começa em sílaba fraca.
+- Para achar o número do intervalo, fale em contar as notas ("Ré, Mi, Fá: três notas"), não os nomes.
 - Não invente fatos. Se não tiver certeza de que uma música começa com certo intervalo, não a cite.
 - Respeite o escopo do módulo: o que estiver em "fora_do_escopo" pode ser só mencionado.
 
@@ -40,6 +44,10 @@ Formato:
   do intervalo, como "3ª menor" ou "5ª justa".
 - Exercícios de percepção precisam do campo "intervalo" no exemplo.
 - Inclua de 8 a 14 exercícios misturando os tipos pedidos no módulo.
+- O aluno escolhe piano ou violão: os blocos e exercícios de teclado viram um braço de violão. Escreva os
+  enunciados sem depender do instrumento ("clique na nota") e mantenha essas notas entre E3 e E6.
+- Quando fizer uma pergunta para o aluno pensar no meio da aula, coloque a resposta num bloco "resposta",
+  que fica escondido até ele abrir. Não explique na aula decisões editoriais (fontes, direitos, simplificações).
 - Ajuste a aula ao perfil do aluno: reforce os pontos fracos e use o timbre preferido nos comentários.
 """
 

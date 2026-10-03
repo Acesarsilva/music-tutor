@@ -142,15 +142,16 @@
     }
 
     // eventos: [{midis: [..], duracao: tempos}]
+    // As notas chegam como estão escritas. O violão soa uma oitava abaixo da escrita.
     function tocarEventos(eventos, andamento, aoPasso, aoFim) {
       var c = contexto();
-      var timbre = estado.timbre;
-      eventos.forEach(function (ev) { ev.midis.forEach(function (m) { buffer(m, timbre); }); });
+      var timbre = estado.timbre, oitava = timbre === "violao" ? -12 : 0;
+      eventos.forEach(function (ev) { ev.midis.forEach(function (m) { buffer(m + oitava, timbre); }); });
       var spb = 60 / (andamento * estado.fatorAndamento);
       var inicio = c.currentTime + 0.08, t = inicio, timers = [];
       eventos.forEach(function (ev, idx) {
         var dur = ev.duracao * spb;
-        ev.midis.forEach(function (m) { nota(m, t, dur * 0.95, timbre, ev.midis.length > 1 ? 0.62 : 0.8); });
+        ev.midis.forEach(function (m) { nota(m + oitava, t, dur * 0.95, timbre, ev.midis.length > 1 ? 0.62 : 0.8); });
         var atraso = (t - c.currentTime) * 1000;
         timers.push(setTimeout(function () { if (aoPasso) aoPasso(idx); }, Math.max(0, atraso)));
         t += dur;
@@ -159,7 +160,14 @@
       return { cancelar: function () { timers.forEach(clearTimeout); parar(); if (aoFim) aoFim(); } };
     }
 
-    return { contexto: contexto, tocarEventos: tocarEventos, parar: parar };
+    // Acorde: no piano as notas saem juntas; no violão, um rasgueado rápido da grave para a aguda.
+    function tocarAcorde(midis, espaco) {
+      var c = contexto(), timbre = estado.timbre, oitava = timbre === "violao" ? -12 : 0;
+      var inicio = c.currentTime + 0.05, intensidade = Math.max(0.35, 0.8 - 0.07 * midis.length);
+      midis.forEach(function (m, i) { nota(m + oitava, inicio + i * espaco, 2.2, timbre, intensidade); });
+    }
+
+    return { contexto: contexto, tocarEventos: tocarEventos, tocarAcorde: tocarAcorde, parar: parar };
   })();
 
   /* ------------------------------------------------------------ Partituras */
@@ -242,19 +250,47 @@
     }
     var botaoTeclado = evento.target.closest("[data-tocar-teclado]");
     if (botaoTeclado) {
-      var t = teclados[botaoTeclado.getAttribute("data-tocar-teclado")];
-      var midis = t.dados.destaque.map(function (d) { return d.midi; }).sort(function (a, b) { return a - b; });
+      var t = instrumentos[botaoTeclado.getAttribute("data-tocar-teclado")];
+      var midis = t.info.destaque.map(function (d) { return d.midi; }).sort(function (a, b) { return a - b; });
       var eventos = midis.map(function (m) { return { midis: [m], duracao: 1 }; });
       if (midis.length > 1) eventos.push({ midis: midis, duracao: 2 });
       tocarComBotao(botaoTeclado, eventos, 80, function (idx) {
-        t.marcarSoando(idx < 0 ? [] : eventos[idx].midis);
+        t.atual.marcarSoando(idx < 0 ? [] : eventos[idx].midis);
       });
     }
   });
 
-  /* ------------------------------------------------------------ Teclado */
+  /* ------------------------------------------------------------ Instrumentos interativos
+     Cada teclado da aula vira um braço de violão quando o aluno escolhe "Violão" na barra.
+     Os dois expõem a mesma interface: elemento(midi), marcarSoando(midis). */
   var BRANCAS = { 0: "Dó", 2: "Ré", 4: "Mi", 5: "Fá", 7: "Sol", 9: "Lá", 11: "Si" };
-  var teclados = {};
+  var instrumentos = {};
+
+  function tocarNota(midi, elemento) {
+    Som.tocarEventos([{ midis: [midi], duracao: 1 }], 90);
+    elemento.classList.add("soando");
+    setTimeout(function () { elemento.classList.remove("soando"); }, 350);
+  }
+
+  // A nota soa no instante em que o dedo ou o mouse encosta (pointerdown), então vários dedos tocam
+  // várias notas juntas. Enter e espaço no teclado do computador chegam como clique sem ponteiro.
+  function ouvirToques(el, seletor, aoClicar) {
+    function acionar(alvo) {
+      var midi = Number(alvo.dataset.midi);
+      if (aoClicar && aoClicar(midi, alvo) === false) return;
+      tocarNota(midi, alvo);
+    }
+    el.onpointerdown = function (evento) {
+      var alvo = evento.target.closest(seletor);
+      if (!alvo || evento.button > 0) return;
+      evento.preventDefault();
+      acionar(alvo);
+    };
+    el.onclick = function (evento) {
+      var alvo = evento.target.closest(seletor);
+      if (alvo && evento.detail === 0) acionar(alvo);
+    };
+  }
 
   function criarTeclado(el, info, aoClicar) {
     var larguraBranca = 34, larguraPreta = 22, x = 0, teclas = {};
@@ -288,22 +324,184 @@
       tecla.querySelector(".nome").textContent = d.nome;
       tecla.setAttribute("aria-label", d.nome + " (destacada)");
     });
-    el.addEventListener("click", function (evento) {
-      var tecla = evento.target.closest(".tecla");
-      if (!tecla) return;
-      var midiTecla = Number(tecla.dataset.midi);
-      if (aoClicar && aoClicar(midiTecla, tecla) === false) return;
-      Som.tocarEventos([{ midis: [midiTecla], duracao: 1 }], 90);
-      tecla.classList.add("soando");
-      setTimeout(function () { tecla.classList.remove("soando"); }, 350);
-    });
+    ouvirToques(el, ".tecla", aoClicar);
     return {
-      dados: info,
-      teclas: teclas,
+      elemento: function (m) { return teclas[m] || null; },
       marcarSoando: function (midis) {
         Object.keys(teclas).forEach(function (k) { teclas[k].classList.toggle("soando", midis.indexOf(Number(k)) >= 0); });
       }
     };
+  }
+
+  // Afinação padrão, da 1ª corda (Mi aguda) à 6ª (Mi grave), em altura real (MIDI).
+  var CORDAS = [
+    { som: 64, nome: "Mi" }, { som: 59, nome: "Si" }, { som: 55, nome: "Sol" },
+    { som: 50, nome: "Ré" }, { som: 45, nome: "Lá" }, { som: 40, nome: "Mi" }
+  ];
+  var CASAS = 12, MARCADORES = [3, 5, 7, 9, 12];
+
+  // A partitura de violão é escrita uma oitava acima do som real: Dó4 escrito é a 3ª casa da 5ª corda.
+  function posicoesDe(escrito) {
+    var real = escrito - 12, lista = [];
+    CORDAS.forEach(function (c, corda) {
+      var casa = real - c.som;
+      if (casa >= 0 && casa <= CASAS) lista.push({ corda: corda, casa: casa });
+    });
+    return lista;
+  }
+
+  // Escolhe uma posição por nota, o mais perto possível umas das outras e em cordas diferentes,
+  // como a mão faria. Com poucas notas a busca exaustiva é instantânea.
+  function digitar(midis, ancoras) {
+    ancoras = ancoras || [];
+    var opcoes = midis.map(posicoesDe), melhor = null, menor = Infinity;
+    function custo(escolha) {
+      var todas = ancoras.concat(escolha), casas = todas.map(function (p) { return p.casa; });
+      var abertura = Math.max.apply(null, casas) - Math.min.apply(null, casas);
+      var mesmaCorda = 0;
+      for (var a = 0; a < todas.length; a++) for (var b = a + 1; b < todas.length; b++) if (todas[a].corda === todas[b].corda) mesmaCorda++;
+      var altura = escolha.reduce(function (s, p) { return s + p.casa; }, 0);
+      return abertura * 3 + mesmaCorda * 6 + altura * 0.25;
+    }
+    (function buscar(i, escolha) {
+      if (i === opcoes.length) {
+        var c = custo(escolha);
+        if (c < menor) { menor = c; melhor = escolha.slice(); }
+        return;
+      }
+      if (!opcoes[i].length) { escolha.push(null); buscar(i + 1, escolha); escolha.pop(); return; }
+      opcoes[i].forEach(function (p) { escolha.push(p); buscar(i + 1, escolha); escolha.pop(); });
+    })(0, []);
+    return melhor || [];
+  }
+
+  function larguraCasa(n) { return n === 0 ? 40 : Math.max(38, Math.round(62 * Math.pow(2, -(n - 1) / 12))); }
+
+  function criarBraco(el, info, aoClicar) {
+    var celulas = {}, colunas = ["2.6rem"];
+    for (var n = 0; n <= CASAS; n++) colunas.push(larguraCasa(n) + "px");
+    el.style.gridTemplateColumns = colunas.join(" ");
+
+    CORDAS.forEach(function (c, corda) {
+      var rotulo = document.createElement("span");
+      rotulo.className = "corda-nome";
+      rotulo.innerHTML = "<small>" + (corda + 1) + "ª</small> " + c.nome;
+      el.appendChild(rotulo);
+      for (var casa = 0; casa <= CASAS; casa++) {
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "casa" + (casa === 0 ? " solta" : "");
+        b.style.setProperty("--espessura", (1 + corda * 0.45) + "px");
+        b.dataset.midi = c.som + casa + 12;
+        b.dataset.corda = corda;
+        b.setAttribute("aria-label", (corda + 1) + "ª corda, " + (casa === 0 ? "solta" : "casa " + casa));
+        var nome = document.createElement("span");
+        nome.className = "nome";
+        b.appendChild(nome);
+        el.appendChild(b);
+        celulas[corda + ":" + casa] = b;
+      }
+    });
+    el.appendChild(document.createElement("span"));
+    for (var k = 0; k <= CASAS; k++) {
+      var numero = document.createElement("span");
+      numero.className = "numero-casa" + (MARCADORES.indexOf(k) >= 0 ? " marcador" : "");
+      numero.textContent = k === 0 ? "" : k;
+      el.appendChild(numero);
+    }
+
+    // Posição fixa de cada nota destacada; outras notas (a resposta de um exercício) ficam perto delas.
+    var fixas = {}, ancoras = [];
+    var midisDestaque = info.destaque.map(function (d) { return d.midi; });
+    digitar(midisDestaque).forEach(function (p, i) {
+      if (!p) return;
+      var cel = celulas[p.corda + ":" + p.casa];
+      fixas[midisDestaque[i]] = cel;
+      ancoras.push(p);
+      cel.classList.add("destaque");
+      cel.querySelector(".nome").textContent = info.destaque[i].nome;
+      cel.setAttribute("aria-label", cel.getAttribute("aria-label") + ": " + info.destaque[i].nome + " (destacada)");
+    });
+
+    function elemento(m) {
+      if (!fixas[m]) {
+        var p = digitar([m], ancoras)[0];
+        fixas[m] = p ? celulas[p.corda + ":" + p.casa] : null;
+      }
+      return fixas[m];
+    }
+
+    ouvirToques(el, ".casa", aoClicar);
+    return {
+      elemento: elemento,
+      marcarSoando: function (midis) {
+        el.querySelectorAll(".casa.soando").forEach(function (c) { c.classList.remove("soando"); });
+        midis.forEach(function (m) { var c = elemento(m); if (c) c.classList.add("soando"); });
+      }
+    };
+  }
+
+  // Monta (ou remonta, ao trocar o instrumento) um teclado ou braço e reaplica o estado do exercício.
+  function montarInstrumento(registro) {
+    var el = registro.el, violao = estado.timbre === "violao";
+    registro.acorde = [];
+    el.innerHTML = "";
+    el.removeAttribute("style");
+    el.className = violao ? "braco" : "teclado";
+    registro.atual = (violao ? criarBraco : criarTeclado)(el, registro.info, registro.aoClicar);
+    if (registro.depois) registro.depois(registro.atual);
+  }
+
+  function registrarInstrumento(id, el, info, aoClicar, depois) {
+    var registro = { el: el, info: info, aoClicar: aoClicar, depois: depois, acorde: [], montando: false };
+    instrumentos[id] = registro;
+    montarInstrumento(registro);
+    return registro;
+  }
+
+  // Modo "montar acorde": cada toque marca ou desmarca a nota, e "Tocar juntas" soa tudo de uma vez.
+  // No violão vale uma nota por corda, como na mão: marcar outra casa na mesma corda troca a nota.
+  function alternarNoAcorde(registro, midi, elemento) {
+    var acorde = registro.acorde, i = acorde.indexOf(elemento);
+    if (i >= 0) { acorde.splice(i, 1); elemento.classList.remove("escolhida"); return false; }
+    if (elemento.dataset.corda !== undefined) {
+      acorde.slice().forEach(function (outro) {
+        if (outro.dataset.corda === elemento.dataset.corda) { acorde.splice(acorde.indexOf(outro), 1); outro.classList.remove("escolhida"); }
+      });
+    }
+    acorde.push(elemento);
+    elemento.classList.add("escolhida");
+    return true;
+  }
+
+  function tocarAcorde(registro) {
+    var midis = registro.acorde.map(function (e) { return Number(e.dataset.midi); }).sort(function (a, b) { return a - b; });
+    if (!midis.length) return;
+    Som.tocarAcorde(midis, estado.timbre === "violao" ? 0.035 : 0);
+    registro.acorde.forEach(function (e) { e.classList.add("soando"); setTimeout(function () { e.classList.remove("soando"); }, 600); });
+  }
+
+  function prepararMontagem(id) {
+    var registro = instrumentos[id];
+    var botao = document.querySelector('[data-montar-acorde="' + id + '"]');
+    var tocar = document.querySelector('[data-tocar-acorde="' + id + '"]');
+    if (!registro || !botao || !tocar) return;
+    var original = registro.aoClicar;
+    registro.aoClicar = function (midi, elemento) {
+      if (!registro.montando) return original ? original(midi, elemento) : true;
+      return alternarNoAcorde(registro, midi, elemento);
+    };
+    montarInstrumento(registro);
+    botao.addEventListener("click", function () {
+      registro.montando = !registro.montando;
+      botao.setAttribute("aria-pressed", String(registro.montando));
+      tocar.hidden = !registro.montando;
+      if (!registro.montando) {
+        registro.acorde.forEach(function (e) { e.classList.remove("escolhida"); });
+        registro.acorde = [];
+      }
+    });
+    tocar.addEventListener("click", function () { tocarAcorde(registro); });
   }
 
   /* ------------------------------------------------------------ Exercícios */
@@ -346,37 +544,49 @@
 
   function prepararTecladoExercicio(artigo, exe) {
     var el = artigo.querySelector("[data-teclado-exercicio]");
-    var respondido = false;
-    var teclado = criarTeclado(el, exe.teclado, function (midiTecla, tecla) {
-      if (respondido || midiTecla === exe.base) return true;
-      respondido = true;
-      var certo = midiTecla === exe.alvo;
-      tecla.classList.add(certo ? "acertou" : "errou");
-      if (certo) tecla.querySelector(".nome").textContent = exe.alvo_nome;
-      if (!certo) {
-        var alvo = teclado.teclas[exe.alvo];
-        if (alvo) { alvo.classList.add("acertou"); alvo.querySelector(".nome").textContent = exe.alvo_nome; }
+    var resposta = null;
+
+    // Pinta a resposta. No violão a mesma nota existe em várias casas: vale qualquer uma.
+    function pintar(instrumento, clicado) {
+      var base = instrumento.elemento(exe.base);
+      if (base) base.classList.add("base");
+      if (!resposta) return;
+      var alvo = instrumento.elemento(exe.alvo);
+      if (resposta.certo) {
+        var escolhida = clicado || alvo;
+        if (escolhida) { escolhida.classList.add("acertou"); escolhida.querySelector(".nome").textContent = exe.alvo_nome; }
+        return;
       }
+      var errada = clicado || instrumento.elemento(resposta.midi);
+      if (errada) errada.classList.add("errou");
+      if (alvo) { alvo.classList.add("acertou"); alvo.querySelector(".nome").textContent = exe.alvo_nome; }
+    }
+
+    var registro = registrarInstrumento("exercicio-" + exe.indice, el, exe.teclado, function (midiTecla, elemento) {
+      if (resposta || midiTecla === exe.base) return true;
+      resposta = { midi: midiTecla, certo: midiTecla === exe.alvo };
+      pintar(registro.atual, elemento);
       Som.tocarEventos([{ midis: [exe.base], duracao: 1 }, { midis: [midiTecla], duracao: 1 }, { midis: [exe.base, midiTecla], duracao: 2 }], 90);
-      mostrarRetorno(artigo, certo, certo
+      mostrarRetorno(artigo, resposta.certo, resposta.certo
         ? "Isso mesmo: " + exe.alvo_nome + " forma uma " + exe.intervalo_nome + "."
         : "Ainda não. A nota certa é " + exe.alvo_nome + ", marcada em verde.");
       return false;
-    });
-    var base = teclado.teclas[exe.base];
-    if (base) { base.classList.add("base"); }
+    }, function (instrumento) { pintar(instrumento, null); });
     artigo.querySelector("[data-tocar-base]").addEventListener("click", function () {
       Som.tocarEventos([{ midis: [exe.base], duracao: 1.5 }], 80);
     });
   }
 
   /* ------------------------------------------------------------ Controles */
+  // O instrumento escolhido define o som e o que aparece nos blocos interativos (teclado ou braço).
   function aplicarTimbre(timbre) {
+    var mudou = estado.timbre !== timbre;
     estado.timbre = timbre;
     guardar("music-tutor:timbre", timbre);
     document.querySelectorAll("[data-timbre]").forEach(function (b) {
       b.setAttribute("aria-pressed", String(b.dataset.timbre === timbre));
     });
+    if (mudou) Object.keys(instrumentos).forEach(function (id) { montarInstrumento(instrumentos[id]); });
   }
 
   document.querySelectorAll("[data-timbre]").forEach(function (b) {
@@ -414,7 +624,8 @@
   desenharPartituras();
   document.querySelectorAll("[data-teclado]").forEach(function (el) {
     var id = el.getAttribute("data-teclado");
-    teclados[id] = criarTeclado(el, dados.teclados[id]);
+    registrarInstrumento(id, el, dados.teclados[id]);
+    prepararMontagem(id);
   });
   dados.exercicios.forEach(function (exe) {
     var artigo = document.querySelector('[data-exercicio="' + exe.indice + '"]');

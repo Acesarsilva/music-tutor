@@ -158,6 +158,7 @@ def eventos_para_abc(
     """Converte eventos {"notas": [...], "duracao": tempos} em ABC.
 
     Uma lista vazia de notas é pausa; várias notas formam um acorde (intervalo harmônico).
+    Eventos com "silaba" geram a linha de letra (w:) sob as notas.
     Barras de compasso são inseridas automaticamente; uma nota que atravessa a barra
     é aceita só quando cabe no compasso (não fazemos ligaduras automáticas).
     """
@@ -201,7 +202,24 @@ def eventos_para_abc(
         corpo[-1] = "|]"
     else:
         corpo.append("|]")
-    return "\n".join(linhas) + "\n" + " ".join(corpo) + "\n"
+    abc = "\n".join(linhas) + "\n" + " ".join(corpo) + "\n"
+    letra = _letra_abc(eventos)
+    if letra:
+        abc += f"w:{letra}\n"
+    return abc
+
+
+def _letra_abc(eventos: list[dict]) -> str:
+    """Linha w: do ABC: uma sílaba por nota (pausas não levam sílaba); "*" pula a nota e "~" junta duas palavras na mesma nota."""
+    if not any(ev.get("silaba") for ev in eventos):
+        return ""
+    letra = ""
+    for ev in eventos:
+        if not ev["notas"]:
+            continue
+        silaba = re.sub(r"[\s_*|\\]", "", ev.get("silaba") or "") or "*"
+        letra += silaba if silaba.endswith("-") else silaba + " "
+    return letra.strip()
 
 
 def alturas_do_abc(abc: str) -> list[list[int]]:

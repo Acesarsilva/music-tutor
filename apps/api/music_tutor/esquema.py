@@ -12,6 +12,10 @@ class Evento(BaseModel):
         description='Notas tocadas juntas, em notação científica ASCII ("C4", "F#4", "Bb3"). Lista vazia = pausa.'
     )
     duracao: float = Field(description="Duração em tempos, semínima = 1 (0.5 = colcheia, 2 = mínima).")
+    silaba: Optional[str] = Field(
+        None,
+        description='Sílaba da letra cantada nesta nota, mostrada sob a partitura. Termine com "-" quando a palavra continua ("Ci-", "ran-", "da").',
+    )
 
 
 class IntervaloAfirmado(BaseModel):
@@ -44,6 +48,14 @@ class BlocoDica(BaseModel):
     markdown: str
 
 
+class BlocoResposta(BaseModel):
+    """Resposta escondida até o aluno abrir: use depois de uma pergunta para ele pensar antes."""
+
+    tipo: Literal["resposta"]
+    markdown: str
+    rotulo: str = Field("Ver resposta", description="Texto do botão que abre a resposta.")
+
+
 class BlocoExemplo(BaseModel):
     tipo: Literal["exemplo"]
     exemplo: Exemplo
@@ -65,7 +77,7 @@ class BlocoTeclado(BaseModel):
 
 
 Bloco = Annotated[
-    Union[BlocoTexto, BlocoDica, BlocoExemplo, BlocoTabela, BlocoTeclado],
+    Union[BlocoTexto, BlocoDica, BlocoResposta, BlocoExemplo, BlocoTabela, BlocoTeclado],
     Field(discriminator="tipo"),
 ]
 
