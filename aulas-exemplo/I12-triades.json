@@ -1,0 +1,726 @@
+{
+  "codigo": "I12",
+  "titulo": "Tríades",
+  "nivel": "iniciante",
+  "resumo_curto": "Como três notas empilhadas em 3ªs formam acordes maiores, menores, diminutos e aumentados.",
+  "prerequisitos": [
+    "Escala maior (I07)",
+    "Intervalos simples (I08)"
+  ],
+  "objetivos": [
+    "Entender a tríade como **fundamental, terça e quinta**",
+    "Montar e classificar tríades **maiores, menores, diminutas e aumentadas**",
+    "Ler as cifras básicas: **C, Cm, C°, C+**",
+    "Distinguir de ouvido a tríade maior da menor pela terça"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quantos semitons tem uma 3ª maior? E uma 3ª menor?\n2. Quantos semitons tem uma 5ª justa?\n3. Na escala de Dó maior, quais são o 1º, o 3º e o 5º graus?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. A 3ª maior tem 4 semitons; a 3ª menor, 3.\n2. Sete.\n3. Dó, Mi e Sol.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Ouça antes de qualquer nome",
+            "legenda": "Dois blocos de três notas. Qual soa mais escuro? Só uma nota mudou.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Cada bloco é uma **tríade**, um acorde de três notas. A primeira é **maior**; a segunda, **menor**. A nota que mudou foi a do meio, Mi para Mi♭.\n\nAo final, você monta e classifica qualquer tríade maior, menor, diminuta ou aumentada."
+        }
+      ]
+    },
+    {
+      "titulo": "Três notas empilhadas em 3ªs",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Uma tríade empilha duas 3ªs. As três notas têm nome:\n\n- **Fundamental**: a nota de baixo, que dá nome ao acorde.\n- **Terça**: uma 3ª acima da fundamental.\n- **Quinta**: uma 5ª acima da fundamental.\n\nPelas letras, a tríade pula uma nota sim, outra não: Dó (Ré) Mi (Fá) Sol."
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Dó, Mi e Sol: fundamental, terça e quinta do acorde de Dó maior.",
+          "destaque": [
+            "C4",
+            "E4",
+            "G4"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-do-arpejo",
+            "titulo": "Dó maior, nota por nota e junto",
+            "legenda": "Primeiro as notas uma a uma, de baixo para cima; depois as três juntas.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Tríade maior",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **tríade maior** tem **3ª maior** (4 semitons) da fundamental à terça e **5ª justa** (7 semitons) da fundamental à quinta. Na cifra, escreve-se só a letra da fundamental: **C** é Dó maior, **G** é Sol maior."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-do-maior",
+            "titulo": "C: Dó–Mi–Sol",
+            "legenda": "Um som aberto e estável.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "C4",
+              "para": "E4",
+              "codigo": "3M"
+            }
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Muita melodia anda pelas notas de um acorde. *Ciranda, cirandinha* sobe pelas notas de Sol maior, e *Marcha soldado* desce pelas de Dó maior."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ciranda",
+            "titulo": "Ciranda, cirandinha",
+            "legenda": "\"ran-da, ci-ran-di-nha\": Sol, Si, Ré, as três notas de G.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5,
+                "silaba": "Ci-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ran-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "da,"
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ci-"
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ran-"
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5,
+                "silaba": "di-"
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1,
+                "silaba": "nha"
+              },
+              {
+                "notas": [],
+                "duracao": 0.5
+              }
+            ],
+            "compasso": "2/4",
+            "anacruse": 0.5,
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-marcha-soldado",
+            "titulo": "Marcha soldado",
+            "legenda": "\"Mar-cha sol-da-do\": Sol, Mi, Dó, as notas de C, de cima para baixo.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "Mar-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "cha"
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "silaba": "sol-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "da-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "do"
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 88
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Tríade menor",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **tríade menor** tem **3ª menor** (3 semitons) e a mesma **5ª justa**. Só a terça desce um semitom. Na cifra, acrescenta-se **m**: **Cm** é Dó menor, **Am** é Lá menor."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-do-menor",
+            "titulo": "Cm: Dó–Mi♭–Sol",
+            "legenda": "Um som mais escuro. Ouça logo depois de C para comparar.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "C4",
+              "para": "Eb4",
+              "codigo": "3m"
+            }
+          }
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Dó, Mi♭ e Sol: a terça desceu um semitom.",
+          "destaque": [
+            "C4",
+            "Eb4",
+            "G4"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        }
+      ]
+    },
+    {
+      "titulo": "Tríades diminuta e aumentada",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Mudando a quinta, surgem mais dois tipos:\n\n- **Diminuta**: 3ª menor e **5ª diminuta** (6 semitons), duas 3ªs menores empilhadas. Si–Ré–Fá. Cifra **B°** ou **Bdim**.\n- **Aumentada**: 3ª maior e **5ª aumentada** (8 semitons), duas 3ªs maiores empilhadas. Dó–Mi–Sol♯. Cifra **C+** ou **Caug**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-si-diminuta",
+            "titulo": "B°: Si–Ré–Fá",
+            "legenda": "Um som tenso, que parece querer ir para outro acorde.",
+            "eventos": [
+              {
+                "notas": [
+                  "B3",
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "B3",
+              "para": "F4",
+              "codigo": "5d"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-do-aumentada",
+            "titulo": "C+: Dó–Mi–Sol♯",
+            "legenda": "Um som suspenso, sem repouso.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G#4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "C4",
+              "para": "G#4",
+              "codigo": "5A"
+            }
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Os quatro tipos de tríade a partir da fundamental.",
+          "cabecalho": [
+            "Tipo",
+            "Terça",
+            "Quinta",
+            "Exemplo",
+            "Cifra"
+          ],
+          "linhas": [
+            [
+              "maior",
+              "3ª maior (4)",
+              "5ª justa (7)",
+              "Dó–Mi–Sol",
+              "C"
+            ],
+            [
+              "menor",
+              "3ª menor (3)",
+              "5ª justa (7)",
+              "Dó–Mi♭–Sol",
+              "Cm"
+            ],
+            [
+              "diminuta",
+              "3ª menor (3)",
+              "5ª diminuta (6)",
+              "Si–Ré–Fá",
+              "B°"
+            ],
+            [
+              "aumentada",
+              "3ª maior (4)",
+              "5ª aumentada (8)",
+              "Dó–Mi–Sol♯",
+              "C+"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo para classificar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como classificar **Ré–Fá–Lá**, com o motivo de cada passo.\n\n1. **Confira as 3ªs**: Ré (Mi) Fá (Sol) Lá, uma letra sim, outra não. É uma tríade com fundamental Ré.\n2. **Terça**: Ré–Fá tem 3 semitons, **3ª menor**.\n3. **Quinta**: Ré–Lá tem 7 semitons, **5ª justa**.\n4. **Tipo**: 3ª menor com 5ª justa é **menor**. A cifra é **Dm**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-re-menor",
+            "titulo": "Dm: Ré–Fá–Lá",
+            "legenda": "Compare com C, do começo da aula: o mesmo desenho, com a terça menor.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 72,
+            "intervalo": {
+              "de": "D4",
+              "para": "F4",
+              "codigo": "3m"
+            }
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** se a terça já é menor, por que conferir a quinta no passo 3?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque a tríade **diminuta** também tem 3ª menor. Só a quinta separa as duas: 5ª justa na menor, 5ª diminuta na diminuta.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **Fá–Lá–Dó**:\n\n1. Fá (Sol) Lá (Si) Dó: uma tríade com fundamental Fá.\n2. Fá–Lá: 4 semitons, 3ª maior.\n3. Fá–Dó: 7 semitons, 5ª justa.\n4. Qual é o tipo e a cifra?\n\nE agora dois passos são seus. **Mi–Sol♯–Si**: meça a terça e a quinta e diga o tipo."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Fá–Lá–Dó: 3ª maior com 5ª justa, tríade **maior**, cifra **F**.\n\nMi–Sol♯–Si: Mi–Sol♯ tem 4 semitons (3ª maior) e Mi–Si tem 7 (5ª justa). Tríade **maior**, cifra **E**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega classificou **Mi–Sol–Si** assim:\n\n> \"Só tem notas naturais, como Dó–Mi–Sol. Então é uma tríade maior.\"\n\nOnde está o erro, por que está errado e qual é a resposta certa?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ele julgou pelas notas naturais, sem medir a terça. Mi–Sol tem **3 semitons**, uma 3ª menor, e Mi–Si tem 7, uma 5ª justa. É uma tríade **menor**, **Em**. Com notas naturais saem tríades maiores (C, F, G), menores (Dm, Em, Am) e uma diminuta (B°).",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Ouça e olhe a partitura. Que tipo de tríade é esta?",
+      "opcoes": [
+        "maior",
+        "menor",
+        "diminuta",
+        "aumentada"
+      ],
+      "correta": 0,
+      "explicacao": "Ré–Fá♯ tem 4 semitons (3ª maior) e Ré–Lá tem 7 (5ª justa): tríade **maior**, D. Se marcou menor, esqueceu o ♯ do Fá.",
+      "conceito": "triade-maior",
+      "exemplo": {
+        "id": "exe-re-maior",
+        "titulo": "Três notas juntas",
+        "legenda": "Ouça as três notas juntas e meça a terça e a quinta.",
+        "eventos": [
+          {
+            "notas": [
+              "D4",
+              "F#4",
+              "A4"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 66
+      }
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Ré4 está marcado. Clique na **terça** de Ré menor (Dm).",
+      "nota_base": "D4",
+      "intervalo": "3m",
+      "direcao": "acima",
+      "explicacao": "Ré menor tem 3ª menor, 3 semitons: **Fá**. Fá♯ seria a terça de Ré maior.",
+      "conceito": "triade-menor",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a tríade. A terça, da nota mais grave até a do meio, é maior ou menor?",
+      "exemplo": {
+        "id": "exe-la-menor",
+        "titulo": "Tríade",
+        "legenda": "Am: Lá–Dó–Mi, terça menor.",
+        "eventos": [
+          {
+            "notas": [
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 66,
+        "intervalo": {
+          "de": "A4",
+          "para": "C5",
+          "codigo": "3m"
+        }
+      },
+      "opcoes": [
+        "3ª maior",
+        "3ª menor"
+      ],
+      "correta": 1,
+      "explicacao": "Lá–Dó tem 3 semitons, **3ª menor**: é o acorde de Lá menor, Am. O som escuro vem dessa terça.",
+      "conceito": "percepcao-maior-menor"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais notas formam a tríade de **Sol maior** (G)?",
+      "opcoes": [
+        "Sol–Si–Ré",
+        "Sol–Si♭–Ré",
+        "Sol–Lá–Si",
+        "Sol–Si–Ré♯"
+      ],
+      "correta": 0,
+      "explicacao": "Sol–Si tem 4 semitons e Sol–Ré tem 7: **Sol–Si–Ré**. Com Si♭ seria Gm; com Ré♯, G+. Sol–Lá–Si são notas vizinhas, não 3ªs empilhadas.",
+      "conceito": "estrutura-da-triade"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Si4 está marcado. Clique na **quinta** de Si diminuta (B°).",
+      "nota_base": "B4",
+      "intervalo": "5d",
+      "direcao": "acima",
+      "explicacao": "A diminuta tem 5ª diminuta, 6 semitons: **Fá**. Fá♯ daria a 5ª justa, e o acorde seria Bm.",
+      "conceito": "triade-diminuta",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma tríade com **3ª menor** e **5ª diminuta** é:",
+      "opcoes": [
+        "diminuta",
+        "menor",
+        "aumentada"
+      ],
+      "correta": 0,
+      "explicacao": "Duas 3ªs menores empilhadas formam a tríade **diminuta**, como Si–Ré–Fá. A menor tem 5ª justa; a aumentada tem 3ª maior.",
+      "conceito": "triade-diminuta"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a tríade. A terça é maior ou menor?",
+      "exemplo": {
+        "id": "exe-fa-maior",
+        "titulo": "Tríade",
+        "legenda": "F: Fá–Lá–Dó, terça maior.",
+        "eventos": [
+          {
+            "notas": [
+              "F4",
+              "A4",
+              "C5"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 66,
+        "intervalo": {
+          "de": "F4",
+          "para": "A4",
+          "codigo": "3M"
+        }
+      },
+      "opcoes": [
+        "3ª maior",
+        "3ª menor"
+      ],
+      "correta": 0,
+      "explicacao": "Fá–Lá tem 4 semitons, **3ª maior**: acorde de Fá maior, F. Compare com Am, que soa mais escuro.",
+      "conceito": "percepcao-maior-menor"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a cifra de **Lá menor**?",
+      "opcoes": [
+        "Am",
+        "A",
+        "A°",
+        "A+"
+      ],
+      "correta": 0,
+      "explicacao": "Tríade menor leva **m** depois da letra: **Am**. A sozinho é Lá maior; ° indica diminuta e +, aumentada.",
+      "conceito": "cifra-da-triade"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Dó4 está marcado. Clique na **quinta** de Dó aumentada (C+).",
+      "nota_base": "C4",
+      "intervalo": "5A",
+      "direcao": "acima",
+      "explicacao": "A aumentada tem 5ª aumentada, 8 semitons: **Sol♯**. Sol natural é a 5ª justa de C.",
+      "conceito": "triade-aumentada",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A melodia de *Marcha soldado* começa com Sol, Sol, Mi, Dó, Dó. Ela desce pelas notas de qual tríade?",
+      "opcoes": [
+        "Dó maior",
+        "Mi menor",
+        "Sol maior",
+        "Dó menor"
+      ],
+      "correta": 0,
+      "explicacao": "Dó–Mi–Sol: fundamental Dó, terça maior Mi, quinta justa Sol. É **Dó maior**, C, de cima para baixo. A melodia começa em Sol, mas a fundamental é a nota de baixo da pilha de 3ªs.",
+      "conceito": "estrutura-da-triade"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos semitons tem a quinta de uma tríade **aumentada**?",
+      "opcoes": [
+        "8 semitons",
+        "7 semitons",
+        "6 semitons"
+      ],
+      "correta": 0,
+      "explicacao": "A 5ª aumentada tem **8 semitons**, um a mais que a justa (7). Com 6, a quinta é diminuta.",
+      "conceito": "triade-aumentada",
+      "verificacao": {
+        "tipo": "semitons",
+        "intervalo": "5A"
+      }
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "**Mi–Sol–Si** é uma tríade:",
+      "opcoes": [
+        "menor",
+        "maior",
+        "diminuta"
+      ],
+      "correta": 0,
+      "explicacao": "Mi–Sol tem 3 semitons (3ª menor) e Mi–Si tem 7 (5ª justa): tríade **menor**, Em. Só ter notas naturais não faz um acorde ser maior.",
+      "conceito": "triade-menor"
+    }
+  ],
+  "resumo": [
+    "Uma **tríade** empilha duas 3ªs: **fundamental**, **terça** e **quinta**.",
+    "**Maior**: 3ª maior + 5ª justa (C). **Menor**: 3ª menor + 5ª justa (Cm).",
+    "**Diminuta**: 3ª menor + 5ª diminuta (B°). **Aumentada**: 3ª maior + 5ª aumentada (C+).",
+    "Para classificar, meça a terça **e** a quinta a partir da fundamental.",
+    "Melodias andam por acordes: *Ciranda, cirandinha* sobe por G; *Marcha soldado* desce por C."
+  ],
+  "pergunta_para_chat": "Me dê tríades, uma de cada vez, para eu classificar como maior, menor, diminuta ou aumentada, e me dê uma dica antes de mostrar a resposta."
+}

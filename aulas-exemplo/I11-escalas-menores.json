@@ -1,0 +1,963 @@
+{
+  "codigo": "I11",
+  "titulo": "Escalas menores",
+  "nivel": "iniciante",
+  "resumo_curto": "As três formas da escala menor, a relativa que divide a armadura com cada maior e a diferença entre relativas e homônimas.",
+  "prerequisitos": [
+    "Escala maior (I07)",
+    "Intervalos simples (I08)",
+    "Armaduras de clave (I09)"
+  ],
+  "objetivos": [
+    "Reconhecer a **escala menor natural** e a fórmula T–S–T–T–S–T–T",
+    "Achar a **relativa menor** de uma tonalidade maior",
+    "Montar as escalas menores **harmônica** e **melódica**",
+    "Diferenciar tonalidades **relativas** e **homônimas**",
+    "Distinguir de ouvido a 3ª maior da 3ª menor a partir da tônica"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Qual é a fórmula da escala maior?\n2. Quais são as notas de Dó maior?\n3. Lá–Dó é uma 3ª maior ou menor?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. T–T–S–T–T–T–S.\n2. Dó, Ré, Mi, Fá, Sol, Lá, Si.\n3. Menor: 3 semitons.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Ouça antes de qualquer nome",
+            "legenda": "As duas escalas usam só notas naturais. A segunda começa e termina em Lá. Qual delas soa mais escura?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 0.5
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A segunda é a **escala de Lá menor**. Ela tem as mesmas notas de Dó maior, mas a tônica é Lá, e a nota três graus acima dela forma uma 3ª **menor**. É essa 3ª que deixa o som mais escuro.\n\nAo final, você vai montar as três formas da escala menor e achar a menor que divide a armadura com cada tonalidade maior."
+        }
+      ]
+    },
+    {
+      "titulo": "A escala menor natural",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **escala menor natural** segue a fórmula **T–S–T–T–S–T–T**. Os semitons caem entre o 2º e o 3º grau e entre o 5º e o 6º."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Lá menor natural, passo a passo.",
+          "cabecalho": [
+            "Passo",
+            "Notas",
+            "Distância"
+          ],
+          "linhas": [
+            [
+              "1º",
+              "Lá–Si",
+              "tom"
+            ],
+            [
+              "2º",
+              "Si–Dó",
+              "semitom"
+            ],
+            [
+              "3º",
+              "Dó–Ré",
+              "tom"
+            ],
+            [
+              "4º",
+              "Ré–Mi",
+              "tom"
+            ],
+            [
+              "5º",
+              "Mi–Fá",
+              "semitom"
+            ],
+            [
+              "6º",
+              "Fá–Sol",
+              "tom"
+            ],
+            [
+              "7º",
+              "Sol–Lá",
+              "tom"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-la-menor",
+            "titulo": "Escala de Lá menor natural",
+            "legenda": "Ouça o semitom logo no começo, entre Si e Dó: ele faz a 3ª da escala ser menor.",
+            "eventos": [
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Lá menor natural: no piano, só teclas brancas, de Lá a Lá.",
+          "destaque": [
+            "A4",
+            "B4",
+            "C5",
+            "D5",
+            "E5",
+            "F5",
+            "G5",
+            "A5"
+          ],
+          "de": "F4",
+          "ate": "B5"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O que define a escala como menor é a 3ª entre a tônica e o 3º grau: **3ª menor** (3 semitons). Na escala maior, essa 3ª é maior (4 semitons)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-terca-menor",
+            "titulo": "Tônica e 3º grau de Lá menor",
+            "legenda": "Lá e Dó juntos: a 3ª menor, o som que dá cor à escala.",
+            "eventos": [
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "A4",
+              "para": "C5",
+              "codigo": "3m"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Relativas: a mesma armadura",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Lá menor e Dó maior usam as mesmas notas e a **mesma armadura**, sem acidentes. Por isso Lá menor é a **relativa menor** de Dó maior.\n\nPara achar a relativa menor de qualquer tonalidade maior, há dois caminhos que dão no mesmo:\n\n- pegue o **6º grau** da escala maior (Dó, Ré, Mi, Fá, Sol, **Lá**);\n- ou desça uma **3ª menor** a partir da tônica maior (Dó–Lá: 3 semitons para baixo)."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Algumas tonalidades maiores e suas relativas menores.",
+          "cabecalho": [
+            "Maior",
+            "Relativa menor",
+            "Armadura"
+          ],
+          "linhas": [
+            [
+              "Dó maior",
+              "Lá menor",
+              "nenhum acidente"
+            ],
+            [
+              "Sol maior",
+              "Mi menor",
+              "Fá♯"
+            ],
+            [
+              "Ré maior",
+              "Si menor",
+              "Fá♯ Dó♯"
+            ],
+            [
+              "Fá maior",
+              "Ré menor",
+              "Si♭"
+            ],
+            [
+              "Si♭ maior",
+              "Sol menor",
+              "Si♭ Mi♭"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-mi-menor",
+            "titulo": "Escala de Mi menor natural, com armadura",
+            "legenda": "A armadura de Sol maior, com Fá♯, mas a escala começa e termina em Mi.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 80,
+            "armadura": "G"
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "No círculo de quintas, cada menor fica ao lado da maior que tem a mesma armadura: Lá menor junto de Dó maior, Mi menor junto de Sol maior."
+        }
+      ]
+    },
+    {
+      "titulo": "A escala menor harmônica",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na menor natural, o 7º grau fica **um tom** abaixo da tônica (Sol–Lá) e não pede a tônica como a sensível da escala maior. A **escala menor harmônica** resolve isso: **sobe o 7º grau** um semitom.\n\nLá menor harmônica: Lá, Si, Dó, Ré, Mi, Fá, **Sol♯**, Lá."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-la-harmonica",
+            "titulo": "Escala de Lá menor harmônica",
+            "legenda": "Ouça o salto largo entre Fá e Sol♯ e como o Sol♯ empurra para o Lá do fim.",
+            "eventos": [
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Entre Fá e Sol♯ ficam **3 semitons**, um tom e meio. Esse passo é uma 2ª aumentada e dá à escala harmônica o seu som característico."
+        }
+      ]
+    },
+    {
+      "titulo": "A escala menor melódica",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **escala menor melódica** suaviza esse salto: na subida, eleva o **6º e o 7º graus**; na descida, volta à menor natural.\n\n- Subindo: Lá, Si, Dó, Ré, Mi, **Fá♯**, **Sol♯**, Lá.\n- Descendo: Lá, Sol, Fá, Mi, Ré, Dó, Si, Lá."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-la-melodica",
+            "titulo": "Escala de Lá menor melódica, subindo e descendo",
+            "legenda": "Na subida, Fá♯ e Sol♯ deixam o caminho liso até o Lá; na descida, voltam Sol e Fá naturais.",
+            "eventos": [
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 88
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Homônimas: a mesma tônica",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Tonalidades **homônimas** têm a **mesma tônica** e modos diferentes, como Dó maior e Dó menor. Elas não dividem a armadura: Dó maior não tem acidentes, e Dó menor tem três bemóis (Si♭, Mi♭, Lá♭), a mesma armadura de Mi♭ maior, a relativa dela."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-do-maior-menor",
+            "titulo": "Dó maior e depois Dó menor natural",
+            "legenda": "A mesma tônica. Na segunda escala, o 3º, o 6º e o 7º graus descem um semitom.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Ab4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como achar a relativa menor de **Ré maior** e montar a forma harmônica, com o motivo de cada passo.\n\n1. **Relativa**: o 6º grau de Ré maior (Ré, Mi, Fá♯, Sol, Lá, **Si**) é Si. A relativa é **Si menor**.\n2. **Armadura**: a mesma de Ré maior, Fá♯ e Dó♯.\n3. **Menor natural**: Si, Dó♯, Ré, Mi, Fá♯, Sol, Lá, Si.\n4. **Harmônica**: sobe o 7º grau, Lá → **Lá♯**. Si menor harmônica: Si, Dó♯, Ré, Mi, Fá♯, Sol, Lá♯, Si."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** Lá♯ e Si♭ soam igual. Por que a escala usa Lá♯?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque cada letra aparece uma vez. Com Si♭, a escala teria dois Si (Si♭ e a tônica Si) e nenhum Lá.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **Mi menor harmônica**:\n\n1. Mi menor é a relativa de Sol maior.\n2. Natural: Mi, Fá♯, Sol, Lá, Si, Dó, Ré, Mi.\n3. Qual nota muda na harmônica?\n\nE agora dois passos são seus. Ache a relativa menor de **Fá maior** e monte a forma harmônica dela."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Mi menor harmônica: o 7º grau sobe, Ré → **Ré♯**.\n\nFá maior: Fá, Sol, Lá, Si♭, Dó, **Ré**. A relativa é **Ré menor**, com Si♭. Natural: Ré, Mi, Fá, Sol, Lá, Si♭, Dó, Ré. Harmônica: Dó → **Dó♯**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Uma colega disse:\n\n> \"A relativa menor de Sol maior é Sol menor, porque as duas começam em Sol.\"\n\nOnde está o erro, por que está errado e qual é a resposta certa?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ela confundiu **relativa** com **homônima**. Sol maior e Sol menor são homônimas: mesma tônica, armaduras diferentes. A relativa divide a armadura e fica no 6º grau: Sol, Lá, Si, Dó, Ré, **Mi**. A relativa menor de Sol maior é **Mi menor**.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a **relativa menor** de Dó maior?",
+      "opcoes": [
+        "Lá menor",
+        "Dó menor",
+        "Mi menor",
+        "Ré menor"
+      ],
+      "correta": 0,
+      "explicacao": "A relativa fica no 6º grau: Dó, Ré, Mi, Fá, Sol, **Lá**. Lá menor e Dó maior dividem a armadura sem acidentes. Dó menor é a homônima, não a relativa.",
+      "conceito": "relativa-menor"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Mi4 está marcado. Clique no **3º grau** de Mi menor.",
+      "nota_base": "E4",
+      "intervalo": "3m",
+      "direcao": "acima",
+      "explicacao": "Mi menor: Mi, Fá♯, **Sol**. A 3ª menor tem 3 semitons. Sol♯ formaria a 3ª maior, de Mi maior.",
+      "conceito": "escala-menor-natural",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a tônica e o 3º grau juntos. A 3ª é maior ou menor?",
+      "exemplo": {
+        "id": "exe-re-fa",
+        "titulo": "Tônica e 3º grau",
+        "legenda": "Ré–Fá: 3ª menor, escala menor.",
+        "eventos": [
+          {
+            "notas": [
+              "D4",
+              "F4"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 66,
+        "intervalo": {
+          "de": "D4",
+          "para": "F4",
+          "codigo": "3m"
+        }
+      },
+      "opcoes": [
+        "3ª maior",
+        "3ª menor"
+      ],
+      "correta": 1,
+      "explicacao": "Ré–Fá tem 3 semitons: **3ª menor**, o som escuro das escalas menores. A 3ª maior, de Ré–Fá♯, soa mais aberta.",
+      "conceito": "percepcao-maior-menor"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a fórmula da **escala menor natural**?",
+      "opcoes": [
+        "T–S–T–T–S–T–T",
+        "T–T–S–T–T–T–S",
+        "T–S–T–T–T–S–T"
+      ],
+      "correta": 0,
+      "explicacao": "Em Lá menor: Lá–Si T, Si–Dó S, Dó–Ré T, Ré–Mi T, Mi–Fá S, Fá–Sol T, Sol–Lá T. A segunda opção é a da escala maior.",
+      "conceito": "escala-menor-natural"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na escala de **Lá menor harmônica**, qual nota muda em relação à natural?",
+      "opcoes": [
+        "Sol vira Sol♯",
+        "Fá vira Fá♯",
+        "Dó vira Dó♯",
+        "Si vira Si♭"
+      ],
+      "correta": 0,
+      "explicacao": "A harmônica sobe só o **7º grau**: Sol → Sol♯. O Fá♯ entra também na melódica, subindo; o Dó♯ deixaria a 3ª maior e a escala viraria Lá maior.",
+      "conceito": "escala-menor-harmonica"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Lá4 está marcado. Clique na **sensível** de Lá menor harmônica, acima de Lá.",
+      "nota_base": "A4",
+      "intervalo": "7M",
+      "direcao": "acima",
+      "explicacao": "Na harmônica, o 7º grau sobe e vira sensível: **Sol♯**, um semitom abaixo de Lá. Sol natural é o 7º grau da menor natural.",
+      "conceito": "escala-menor-harmonica",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Mi menor tem a mesma armadura de qual tonalidade maior?",
+      "opcoes": [
+        "Sol maior",
+        "Mi maior",
+        "Dó maior",
+        "Ré maior"
+      ],
+      "correta": 0,
+      "explicacao": "Mi menor é a relativa de **Sol maior** e divide com ela o Fá♯. Mi maior, a homônima, tem quatro sustenidos.",
+      "conceito": "armadura-da-menor"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a tônica e depois o 3º grau. A 3ª é maior ou menor?",
+      "exemplo": {
+        "id": "exe-mi-sol-sustenido",
+        "titulo": "Tônica e 3º grau",
+        "legenda": "Mi–Sol♯: 3ª maior, escala maior.",
+        "eventos": [
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "G#4"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 66,
+        "intervalo": {
+          "de": "E4",
+          "para": "G#4",
+          "codigo": "3M"
+        }
+      },
+      "opcoes": [
+        "3ª maior",
+        "3ª menor"
+      ],
+      "correta": 0,
+      "explicacao": "Mi–Sol♯ tem 4 semitons: **3ª maior**. Esta tônica é de Mi maior. Em Mi menor, a 3ª seria Mi–Sol.",
+      "conceito": "percepcao-maior-menor"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A escala menor melódica, **descendo**, usa:",
+      "opcoes": [
+        "As notas da menor natural",
+        "O 6º e o 7º graus elevados",
+        "Só o 7º grau elevado"
+      ],
+      "correta": 0,
+      "explicacao": "Na descida, a melódica volta à **menor natural**: Lá, Sol, Fá, Mi, Ré, Dó, Si, Lá. O 6º e o 7º graus elevados são da subida; só o 7º elevado é a harmônica.",
+      "conceito": "escala-menor-melodica"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Dó maior e Dó menor são tonalidades:",
+      "opcoes": [
+        "homônimas",
+        "relativas",
+        "vizinhas"
+      ],
+      "correta": 0,
+      "explicacao": "Mesma tônica, modos diferentes: **homônimas**. Relativas dividem a armadura, como Dó maior e Lá menor; vizinhas ficam lado a lado no círculo de quintas.",
+      "conceito": "homonimas"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Ré4 está marcado. Clique no **6º grau** de Ré menor natural.",
+      "nota_base": "D4",
+      "intervalo": "6m",
+      "direcao": "acima",
+      "explicacao": "Ré menor tem a armadura de Fá maior, com Si♭: Ré, Mi, Fá, Sol, Lá, **Si♭**. Si natural seria o 6º grau da forma melódica, subindo.",
+      "conceito": "escala-menor-natural",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na menor harmônica, quantos semitons há entre o 6º e o 7º graus?",
+      "opcoes": [
+        "3 semitons",
+        "2 semitons",
+        "1 semitom"
+      ],
+      "correta": 0,
+      "explicacao": "Em Lá menor harmônica: Fá→Fá♯→Sol→Sol♯, **3 semitons**, um tom e meio. É uma 2ª aumentada, o salto característico da escala.",
+      "conceito": "escala-menor-harmonica",
+      "verificacao": {
+        "tipo": "semitons",
+        "intervalo": "2A"
+      }
+    }
+  ],
+  "resumo": [
+    "A **menor natural** segue T–S–T–T–S–T–T; a 3ª da tônica é **menor**.",
+    "A **relativa menor** fica no 6º grau da maior (ou uma 3ª menor abaixo) e usa a mesma armadura: Dó maior e Lá menor.",
+    "A **harmônica** sobe o 7º grau, que vira sensível; entre o 6º e o 7º fica um tom e meio.",
+    "A **melódica** sobe o 6º e o 7º graus na subida e volta à natural na descida.",
+    "**Homônimas** têm a mesma tônica e armaduras diferentes: Dó maior e Dó menor."
+  ],
+  "pergunta_para_chat": "Me peça para achar relativas menores e montar escalas menores nas três formas, uma de cada vez, e me dê uma dica antes de mostrar a resposta."
+}
