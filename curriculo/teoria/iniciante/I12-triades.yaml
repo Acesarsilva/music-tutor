@@ -1,0 +1,34 @@
+codigo: I12
+titulo: Tríades
+nivel: iniciante
+assunto: teoria
+prerequisitos:
+  - I08  # Intervalos simples
+  - I07  # Escala maior
+objetivos:
+  - Entender a tríade como três notas empilhadas em 3ªs (fundamental, terça e quinta)
+  - Montar e classificar tríades maiores, menores, diminutas e aumentadas
+  - Ler as cifras básicas de cada tipo (C, Cm, C°, C+)
+  - Distinguir de ouvido a tríade maior da menor pela terça
+conceitos:
+  - estrutura-da-triade
+  - triade-maior
+  - triade-menor
+  - triade-diminuta
+  - triade-aumentada
+  - cifra-da-triade
+  - percepcao-maior-menor
+fora_do_escopo:
+  - Inversões de acordes (módulo M04)
+  - Tétrades e sétimas (módulos intermediários)
+  - Cifragem completa (módulo I13)
+  - Campo harmônico (módulo I14)
+exemplos_semente:
+  - "C (Dó–Mi–Sol) e Cm (Dó–Mi♭–Sol): só a terça muda"
+  - "Ciranda, cirandinha: a melodia sobe pelo arpejo de Sol maior"
+  - "Marcha soldado: a melodia desce pelo arpejo de Dó maior"
+  - "B° (Si–Ré–Fá) e C+ (Dó–Mi–Sol♯)"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

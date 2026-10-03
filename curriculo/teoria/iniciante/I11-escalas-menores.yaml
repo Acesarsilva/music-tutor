@@ -1,0 +1,35 @@
+codigo: I11
+titulo: Escalas menores
+nivel: iniciante
+assunto: teoria
+prerequisitos:
+  - I07  # Escala maior
+  - I08  # Intervalos simples
+  - I09  # Armaduras de clave (maiores)
+objetivos:
+  - Reconhecer a escala menor natural e a fórmula T–S–T–T–S–T–T
+  - Achar a relativa menor de uma tonalidade maior e entender que as duas dividem a armadura
+  - Montar as escalas menores harmônica e melódica a partir da natural
+  - Diferenciar tonalidades relativas e homônimas
+  - Distinguir de ouvido a 3ª maior da 3ª menor a partir da tônica
+conceitos:
+  - escala-menor-natural
+  - relativa-menor
+  - escala-menor-harmonica
+  - escala-menor-melodica
+  - homonimas
+  - armadura-da-menor
+  - percepcao-maior-menor
+fora_do_escopo:
+  - Modos gregos (módulo intermediário)
+  - Campo harmônico menor
+  - Círculo de quintas das menores além de uma menção
+exemplos_semente:
+  - "Lá menor natural: as mesmas notas de Dó maior, a partir de Lá"
+  - "Lá menor harmônica com Sol♯ e o salto de tom e meio Fá–Sol♯"
+  - "Lá menor melódica: Fá♯ e Sol♯ subindo, naturais descendo"
+  - "Dó maior e Dó menor (homônimas) lado a lado"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

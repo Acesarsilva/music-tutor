@@ -1,0 +1,32 @@
+codigo: I10
+titulo: Círculo de quintas (introdução)
+nivel: iniciante
+assunto: teoria
+prerequisitos:
+  - I08  # Intervalos simples
+  - I09  # Armaduras de clave (maiores)
+objetivos:
+  - Montar o círculo de quintas das tonalidades maiores, subindo 5ªs justas a partir de Dó
+  - Saber que cada passo no sentido horário acrescenta um sustenido e no anti-horário, um bemol
+  - Reconhecer as tonalidades vizinhas de uma tonalidade maior
+  - Achar o acidente novo de cada passo (sensível ao subir, 4º grau ao descer)
+conceitos:
+  - quinta-justa
+  - sentido-horario
+  - sentido-anti-horario
+  - tonalidades-vizinhas
+  - acidente-novo
+  - enarmonia-no-circulo
+fora_do_escopo:
+  - Tonalidades menores no círculo (módulo I11)
+  - Modulação e progressões pelo círculo (módulos intermediários)
+  - Intervalos aumentados e diminutos além de Si–Fá
+exemplos_semente:
+  - "Dó, Sol, Ré, Lá, Mi, Si: cada nota uma 5ª justa acima da anterior"
+  - "Escalas de Dó maior e Sol maior: só o Fá muda"
+  - "Brilha, brilha, estrelinha: o salto de 5ª justa"
+  - "Si–Fá♯ é 5ª justa; Si–Fá é 5ª diminuta"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado
