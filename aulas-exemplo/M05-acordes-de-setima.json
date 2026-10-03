@@ -1,0 +1,732 @@
+{
+  "codigo": "M05",
+  "titulo": "Acordes de sétima",
+  "nivel": "intermediario",
+  "resumo_curto": "As tétrades 7M, 7, m7, m(7M), m7(b5) e °, suas cifras e inversões.",
+  "prerequisitos": [
+    "Tríades (I12)",
+    "Cifragem popular (I13)",
+    "Inversões de tríades (M04)"
+  ],
+  "objetivos": [
+    "Montar uma **tétrade** somando uma 7ª à tríade",
+    "Formar e cifrar **7M, 7, m7, m(7M), m7(b5) e °**",
+    "Distinguir **7ª maior, menor e diminuta**",
+    "Reconhecer as **inversões** de tétrades, inclusive a 3ª"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Que notas formam C? E Cm?\n2. Quantos semitons têm a 7ª maior e a 7ª menor?\n3. Na cifra C/E, que nota fica no baixo?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. C: Dó, Mi, Sol. Cm: Dó, Mi♭, Sol.\n2. 7ª maior: 11. 7ª menor: 10.\n3. Mi.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Uma nota a mais",
+            "legenda": "Primeiro a tríade de Dó; depois, a mesma tríade com uma nota no alto, duas vezes. Qual das duas versões soa mais suave? Qual pede para ir a outro acorde?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A nota acrescentada é a **7ª**: Si no primeiro caso (**C7M**, suave) e Si♭ no segundo (**C7**, que pede movimento). Tríade com 7ª é uma **tétrade**, ou **acorde de sétima**.\n\nAo final, você vai montar e cifrar os seis tipos mais comuns de tétrade e reconhecer as inversões."
+        }
+      ]
+    },
+    {
+      "titulo": "Tríade + 7ª",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Uma tétrade são quatro notas empilhadas em 3ªs: **fundamental, 3ª, 5ª e 7ª**. O tipo depende de duas escolhas: a **tríade** de baixo (maior, menor ou diminuta) e a **7ª** de cima, contada a partir da fundamental:\n\n- **7ª maior**: 11 semitons (um semitom abaixo da oitava);\n- **7ª menor**: 10 semitons (um tom abaixo da oitava);\n- **7ª diminuta**: 9 semitons."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Os seis tipos comuns de tétrade.",
+          "cabecalho": [
+            "Cifra",
+            "Tríade",
+            "7ª",
+            "Exemplo"
+          ],
+          "linhas": [
+            [
+              "C7M",
+              "maior",
+              "maior",
+              "Dó, Mi, Sol, Si"
+            ],
+            [
+              "C7",
+              "maior",
+              "menor",
+              "Dó, Mi, Sol, Si♭"
+            ],
+            [
+              "Cm7",
+              "menor",
+              "menor",
+              "Dó, Mi♭, Sol, Si♭"
+            ],
+            [
+              "Cm(7M)",
+              "menor",
+              "maior",
+              "Dó, Mi♭, Sol, Si"
+            ],
+            [
+              "Bm7(b5)",
+              "diminuta",
+              "menor",
+              "Si, Ré, Fá, Lá"
+            ],
+            [
+              "B°",
+              "diminuta",
+              "diminuta",
+              "Si, Ré, Fá, Lá♭"
+            ]
+          ]
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Na cifra brasileira, a 7ª maior aparece como **7M** (às vezes **maj7** ou **Δ**). O número 7 sozinho é sempre a 7ª **menor**."
+        }
+      ]
+    },
+    {
+      "titulo": "Com tríade maior: 7M e 7",
+      "blocos": [
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-c7m",
+            "titulo": "C7M",
+            "legenda": "Dó, Mi, Sol, Si: tríade maior com 7ª maior. Suave e estável.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60,
+            "intervalo": {
+              "de": "C4",
+              "para": "B4",
+              "codigo": "7M"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-c7",
+            "titulo": "C7",
+            "legenda": "Dó, Mi, Sol, Si♭: tríade maior com 7ª menor. É o acorde de **sétima da dominante**, tenso.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60,
+            "intervalo": {
+              "de": "C4",
+              "para": "Bb4",
+              "codigo": "7m"
+            }
+          }
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "C7: Dó, Mi, Sol e Si♭. No braço, as quatro notas na ordem, da grave para a aguda.",
+          "destaque": [
+            "C4",
+            "E4",
+            "G4",
+            "Bb4"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O C7 é tenso porque entre a 3ª (Mi) e a 7ª (Si♭) há um **trítono**, que você estudou na aula de intervalos aumentados e diminutos."
+        }
+      ]
+    },
+    {
+      "titulo": "Com tríade menor: m7 e m(7M)",
+      "blocos": [
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-cm7",
+            "titulo": "Cm7",
+            "legenda": "Dó, Mi♭, Sol, Si♭: tríade menor com 7ª menor. Macio, muito usado na bossa nova.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60,
+            "intervalo": {
+              "de": "C4",
+              "para": "Bb4",
+              "codigo": "7m"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-cm7m",
+            "titulo": "Cm(7M)",
+            "legenda": "Dó, Mi♭, Sol, Si: tríade menor com 7ª maior. Um som misterioso, de suspense.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60,
+            "intervalo": {
+              "de": "C4",
+              "para": "B4",
+              "codigo": "7M"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Com tríade diminuta: m7(b5) e °",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A tríade diminuta (3ª menor e 5ª diminuta) aceita dois tipos de 7ª. Com 7ª menor, é o **meio-diminuto**, cifrado **m7(b5)**. Com 7ª diminuta, é o **diminuto**, cifrado **°** (ou dim): todas as notas ficam a uma 3ª menor uma da outra."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-bm7b5",
+            "titulo": "Bm7(b5)",
+            "legenda": "Si, Ré, Fá, Lá: meio-diminuto. Escuro, mas ainda macio.",
+            "eventos": [
+              {
+                "notas": [
+                  "B3",
+                  "D4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60,
+            "intervalo": {
+              "de": "B3",
+              "para": "A4",
+              "codigo": "7m"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-bdim",
+            "titulo": "B°",
+            "legenda": "Si, Ré, Fá, Lá♭: diminuto. Três 3ªs menores empilhadas, um som suspenso e instável.",
+            "eventos": [
+              {
+                "notas": [
+                  "B3",
+                  "D4",
+                  "F4",
+                  "Ab4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60,
+            "intervalo": {
+              "de": "B3",
+              "para": "Ab4",
+              "codigo": "7d"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: que acorde é Ré–Fá–Lá–Dó?",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja o caminho completo, com o motivo de cada passo.\n\n1. **Classifique a tríade**: Ré–Fá é 3ª menor e Ré–Lá é 5ª justa. Tríade **menor**.\n2. **Meça a 7ª a partir da fundamental**: Ré–Dó tem 10 semitons, **7ª menor**.\n3. **Junte**: tríade menor + 7ª menor = **Dm7**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-dm7",
+            "titulo": "Dm7",
+            "legenda": "Ré, Fá, Lá, Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60,
+            "intervalo": {
+              "de": "D4",
+              "para": "C5",
+              "codigo": "7m"
+            }
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que medir a 7ª a partir de Ré, e não a partir de Lá, a nota logo abaixo do Dó?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque a cifra descreve cada nota pela distância até a **fundamental**. Lá–Dó é só a 3ª entre a 5ª e a 7ª; o que decide o tipo de 7ª é Ré–Dó.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **Sol–Si–Ré–Fá**: tríade maior; Sol–Fá tem 10 semitons, 7ª menor. Qual é a cifra?\n\nE agora dois passos são seus: **Fá–Lá–Dó–Mi**. Classifique a tríade e a 7ª."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Sol–Si–Ré–Fá: maior + 7ª menor = **G7**.\n\nFá–Lá–Dó–Mi: Fá–Lá 3ª maior e Fá–Dó 5ª justa, tríade maior; Fá–Mi tem 11 semitons, 7ª maior. **F7M**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Inversões de tétrades",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Como as tríades, as tétrades podem ter qualquer nota no baixo. Com quatro notas, há uma inversão a mais:\n\n- **estado fundamental**: fundamental no baixo (C7);\n- **1ª inversão**: 3ª no baixo (C7/E);\n- **2ª inversão**: 5ª no baixo (C7/G);\n- **3ª inversão**: **7ª no baixo** (C7/B♭)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-inversoes-c7",
+            "titulo": "C7 nas quatro posições",
+            "legenda": "As mesmas quatro notas; ouça a nota mais grave subir de posição em posição.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "Bb4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G4",
+                  "Bb4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Bb3",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "A 3ª inversão é comum com o baixo descendo: C, C7/B♭, F/A, por exemplo, faz o baixo andar Dó, Si♭, Lá."
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega montou o C7 assim:\n\n> \"A 7ª de Dó é Si, então C7 é Dó, Mi, Sol, Si.\"\n\nOnde está o erro, por que está errado e qual é o acorde certo?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Dó–Si é a 7ª **maior**, e o 7 sozinho na cifra indica 7ª **menor**. Dó, Mi, Sol, Si é **C7M**. O C7 leva **Si♭**: Dó, Mi, Sol, Si♭.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que acorde é este?",
+      "opcoes": [
+        "C7",
+        "C7M",
+        "Cm7",
+        "C°"
+      ],
+      "correta": 0,
+      "explicacao": "Dó–Mi–Sol é tríade maior, e Dó–Si♭ é 7ª menor: **C7**. Quem marcou C7M trocou a 7ª menor pela maior.",
+      "conceito": "tipos-de-tetrade",
+      "exemplo": {
+        "id": "exe-c7",
+        "titulo": "Acorde",
+        "legenda": "Dó, Mi, Sol, Si♭",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "Bb4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      }
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Qual destes dois é o acorde **7M**?",
+      "exemplo": {
+        "id": "exe-7m-7",
+        "titulo": "Dois acordes",
+        "legenda": "O primeiro é C7M (com Si); o segundo é C7 (com Si♭).",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "Bb4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "O primeiro, mais suave",
+        "O segundo, mais tenso"
+      ],
+      "correta": 0,
+      "explicacao": "O **7M** soa suave e parado; o **7**, com o trítono entre Mi e Si♭, pede para andar. Aqui o 7M veio primeiro.",
+      "conceito": "percepcao-tetrades"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Dó4 está marcado. Clique na **7ª do C7**, uma 7ª menor acima.",
+      "nota_base": "C4",
+      "intervalo": "7m",
+      "direcao": "acima",
+      "explicacao": "A 7ª menor de Dó, com 10 semitons, é **Si♭**. Se você clicou em Si, montou o C7M.",
+      "conceito": "setima-maior-menor-diminuta",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos semitons tem a **7ª maior**?",
+      "opcoes": [
+        "11 semitons",
+        "10 semitons",
+        "12 semitons",
+        "9 semitons"
+      ],
+      "correta": 0,
+      "explicacao": "A 7ª maior fica um semitom abaixo da oitava: 12 − 1 = **11**. 10 é a 7ª menor e 9 a diminuta.",
+      "conceito": "setima-maior-menor-diminuta",
+      "verificacao": {
+        "tipo": "semitons",
+        "intervalo": "7M"
+      }
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma tríade **menor** com **7ª menor** se cifra como:",
+      "opcoes": [
+        "m7",
+        "m(7M)",
+        "7",
+        "m7(b5)"
+      ],
+      "correta": 0,
+      "explicacao": "Menor + 7ª menor = **m7**, como Dm7. m(7M) teria 7ª maior; m7(b5) teria a 5ª diminuta.",
+      "conceito": "cifra-de-tetrade"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que acorde é este?",
+      "opcoes": [
+        "Bm7(b5)",
+        "B°",
+        "Bm7",
+        "D7"
+      ],
+      "correta": 0,
+      "explicacao": "Si–Ré–Fá é tríade diminuta (Fá é a 5ª diminuta de Si), e Si–Lá é 7ª menor: **meio-diminuto, Bm7(b5)**. B° teria Lá♭; Bm7 teria Fá♯.",
+      "conceito": "tipos-de-tetrade",
+      "exemplo": {
+        "id": "exe-bm7b5",
+        "titulo": "Acorde",
+        "legenda": "Si, Ré, Fá, Lá",
+        "eventos": [
+          {
+            "notas": [
+              "B3",
+              "D4",
+              "F4",
+              "A4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      }
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais são as notas de **G7**?",
+      "opcoes": [
+        "Sol, Si, Ré, Fá",
+        "Sol, Si, Ré, Fá♯",
+        "Sol, Si♭, Ré, Fá",
+        "Sol, Si, Ré, Mi"
+      ],
+      "correta": 0,
+      "explicacao": "Tríade de Sol maior (Sol, Si, Ré) + 7ª menor (Fá, 10 semitons acima de Sol). Fá♯ seria o G7M.",
+      "conceito": "cifra-de-tetrade"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Qual dos dois é o **diminuto** (°)?",
+      "exemplo": {
+        "id": "exe-m7b5-dim",
+        "titulo": "Dois acordes",
+        "legenda": "O primeiro é Bm7(b5); o segundo, B°.",
+        "eventos": [
+          {
+            "notas": [
+              "B3",
+              "D4",
+              "F4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "B3",
+              "D4",
+              "F4",
+              "Ab4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "O segundo",
+        "O primeiro"
+      ],
+      "correta": 0,
+      "explicacao": "Só a nota de cima mudou: Lá no meio-diminuto, Lá♭ no **diminuto**, que soa mais apertado e instável. Ele veio em segundo.",
+      "conceito": "percepcao-tetrades"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na **3ª inversão** de uma tétrade, que nota fica no baixo?",
+      "opcoes": [
+        "A 7ª",
+        "A 5ª",
+        "A 3ª",
+        "A fundamental"
+      ],
+      "correta": 0,
+      "explicacao": "1ª inversão: 3ª no baixo; 2ª: 5ª; **3ª inversão: 7ª no baixo**. Só tétrades têm a 3ª inversão.",
+      "conceito": "inversao-de-tetrade"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Si3 está marcado. Clique na **7ª do B°**, uma 7ª diminuta acima.",
+      "nota_base": "B3",
+      "intervalo": "7d",
+      "direcao": "acima",
+      "explicacao": "A 7ª diminuta tem 9 semitons: de Si, **Lá♭**. Ela fica uma 3ª menor acima do Fá, como todas as outras notas do diminuto.",
+      "conceito": "setima-maior-menor-diminuta",
+      "de": "E3",
+      "ate": "E5"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que acorde é este?",
+      "opcoes": [
+        "C7/E",
+        "Em7",
+        "C7M/E",
+        "E°"
+      ],
+      "correta": 0,
+      "explicacao": "Empilhando em 3ªs, Dó–Mi–Sol–Si♭: **C7**. O baixo é Mi, a 3ª: 1ª inversão, **C7/E**. Quem marcou Em tomou o baixo pela fundamental.",
+      "conceito": "inversao-de-tetrade",
+      "exemplo": {
+        "id": "exe-c7-e",
+        "titulo": "Acorde",
+        "legenda": "Mi, Sol, Si♭, Dó",
+        "eventos": [
+          {
+            "notas": [
+              "E4",
+              "G4",
+              "Bb4",
+              "C5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      }
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma tétrade são:",
+      "opcoes": [
+        "Quatro notas empilhadas em 3ªs",
+        "Três notas e um baixo qualquer",
+        "Quatro notas vizinhas da escala",
+        "Uma tríade tocada duas vezes"
+      ],
+      "correta": 0,
+      "explicacao": "Fundamental, 3ª, 5ª e 7ª: **quatro notas em 3ªs**. A tríade tem três dessas notas; a 7ª é a quarta.",
+      "conceito": "estrutura-da-tetrade"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que acorde é **Dó, Mi♭, Sol, Si**?",
+      "opcoes": [
+        "Cm(7M)",
+        "Cm7",
+        "C7M",
+        "C7"
+      ],
+      "correta": 0,
+      "explicacao": "Tríade menor (Mi♭) com 7ª maior (Si, 11 semitons acima de Dó): **Cm(7M)**. Com Si♭ seria Cm7.",
+      "conceito": "cifra-de-tetrade"
+    }
+  ],
+  "resumo": [
+    "**Tétrade** = tríade + 7ª: fundamental, 3ª, 5ª e 7ª empilhadas em 3ªs.",
+    "7ª maior tem 11 semitons, 7ª menor 10 e 7ª diminuta 9.",
+    "Maior + 7M = **7M**; maior + 7m = **7**; menor + 7m = **m7**; menor + 7M = **m(7M)**.",
+    "Diminuta + 7m = **m7(b5)** (meio-diminuto); diminuta + 7d = **°** (diminuto).",
+    "Com 4 notas há **3 inversões**; na 3ª, a 7ª fica no baixo (C7/B♭)."
+  ],
+  "pergunta_para_chat": "Me dê cifras de tétrades, uma de cada vez, para eu dizer as quatro notas, e me corrija se eu errar a 7ª."
+}

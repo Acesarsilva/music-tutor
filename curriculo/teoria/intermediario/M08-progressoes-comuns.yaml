@@ -1,0 +1,33 @@
+codigo: M08
+titulo: Progressões comuns
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - M06  # Campo harmônico com tétrades
+  - M07  # Funções harmônicas
+objetivos:
+  - Reconhecer e tocar em qualquer tom as progressões I–IV–V, IIm7–V7–I e I–VIm–IV–V
+  - Montar o IIm7(b5)–V7–Im do tom menor
+  - Usar o turnaround I–VIm7–IIm7–V7 para voltar ao início de uma seção
+  - Conhecer a forma do blues de 12 compassos
+  - Reconhecer de ouvido as progressões mais comuns
+conceitos:
+  - i-iv-v
+  - ii-v-i
+  - i-vi-iv-v
+  - turnaround
+  - blues-12-compassos
+  - percepcao-progressao
+fora_do_escopo:
+  - Dominantes secundárias (módulo M14)
+  - Substituição tritonal e rearmonização (módulo A04)
+  - Variações do blues (blues menor, blues com ii–V)
+exemplos_semente:
+  - "C, F, G, C: I–IV–V–I"
+  - "Dm7, G7, C7M e Bm7(b5), E7, Am"
+  - "C, Am, F, G"
+  - "C7M, Am7, Dm7, G7: o turnaround"
+  - "Blues em Dó: C7, F7, G7"
+exercicios:
+  - multipla_escolha
+  - percepcao

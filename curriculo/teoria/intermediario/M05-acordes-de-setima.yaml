@@ -1,0 +1,33 @@
+codigo: M05
+titulo: Acordes de sétima
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - I12  # Tríades
+  - I13  # Cifragem popular
+  - M04  # Inversões de tríades
+objetivos:
+  - Montar uma tétrade somando uma 7ª à tríade
+  - Formar e cifrar os seis tipos comuns de tétrade (7M, 7, m7, m7(b5), °, m(7M))
+  - Distinguir 7ª maior, menor e diminuta pelos semitons
+  - Reconhecer as inversões de tétrades, inclusive a 3ª inversão (7ª no baixo)
+  - Diferenciar de ouvido 7M e 7, e m7 e m7(b5)
+conceitos:
+  - estrutura-da-tetrade
+  - tipos-de-tetrade
+  - setima-maior-menor-diminuta
+  - cifra-de-tetrade
+  - inversao-de-tetrade
+  - percepcao-tetrades
+fora_do_escopo:
+  - Tensões 9, 11 e 13 em detalhe (módulo A01)
+  - Função de cada tétrade no campo harmônico (módulos M06 e M07)
+  - Acordes alterados (módulo A02)
+exemplos_semente:
+  - "C7M, C7, Cm7 e Cm(7M): a tríade e a 7ª mudam"
+  - "Bm7(b5) e B°: só a 7ª muda"
+  - "C7 e suas inversões: C7/E, C7/G, C7/B♭"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado
