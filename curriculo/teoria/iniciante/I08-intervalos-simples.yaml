@@ -1,0 +1,36 @@
+codigo: I08
+titulo: Intervalos simples
+nivel: iniciante
+assunto: teoria
+prerequisitos:
+  - I02  # Notas musicais
+  - I06  # Tom e semitom
+  - I07  # Escala maior
+objetivos:
+  - Entender o que é um intervalo e a diferença entre intervalo melódico e harmônico
+  - Encontrar o número de um intervalo contando os nomes das notas
+  - Classificar intervalos simples (2ª a 8ª) como justos, maiores ou menores contando semitons
+  - Usar a escala maior como referência para reconhecer intervalos
+  - Começar a reconhecer intervalos de ouvido com músicas conhecidas
+conceitos:
+  - intervalo-melodico
+  - intervalo-harmonico
+  - numero-do-intervalo
+  - semitons
+  - qualidade-justa
+  - qualidade-maior-menor
+  - intervalos-da-escala-maior
+  - percepcao-de-intervalos
+fora_do_escopo:
+  - Intervalos aumentados e diminutos além de uma menção ao trítono (módulo M02)
+  - Inversão de intervalos (módulo M02)
+  - Intervalos compostos (módulo M03)
+exemplos_semente:
+  - "Dó4 para Mi4, melódico e harmônico (3ª maior)"
+  - "Ré4 para Fá4 (3ª menor), comparado com Dó4 para Mi4"
+  - "Todos os intervalos a partir de Dó4 até Dó5"
+  - "Começos de músicas de domínio público: Brilha, brilha estrelinha (5ª justa), Marcha nupcial de Wagner (4ª justa), When the Saints (3ª maior)"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

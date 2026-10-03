@@ -1,0 +1,536 @@
+{
+  "codigo": "I08",
+  "titulo": "Intervalos simples",
+  "nivel": "iniciante",
+  "resumo_curto": "Como medir a distância entre duas notas, dar nome a ela e começar a reconhecê-la de ouvido.",
+  "prerequisitos": [
+    "Nomes das notas e onde ficam no teclado (I02)",
+    "Tom e semitom (I06)",
+    "Escala maior (I07)"
+  ],
+  "objetivos": [
+    "Diferenciar intervalo **melódico** de intervalo **harmônico**",
+    "Achar o **número** do intervalo contando os nomes das notas",
+    "Classificar intervalos como **justos, maiores ou menores** contando semitons",
+    "Usar a escala maior como régua para reconhecer intervalos",
+    "Ligar cada intervalo ao começo de uma música conhecida"
+  ],
+  "secoes": [
+    {
+      "titulo": "O que é um intervalo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "**Intervalo** é a distância de altura entre duas notas. É com intervalos que se constroem melodias, acordes e escalas, então eles são a base de quase tudo que vem depois na teoria.\n\nQuando as duas notas soam uma depois da outra, o intervalo é **melódico**. Ele pode ser **ascendente** (a segunda nota é mais aguda) ou **descendente** (a segunda nota é mais grave). Quando as duas notas soam ao mesmo tempo, o intervalo é **harmônico**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-do-mi-melodico",
+            "titulo": "Intervalo melódico ascendente",
+            "legenda": "Primeiro Dó, depois Mi: a melodia sobe.",
+            "eventos": [
+              {"notas": ["C4"], "duracao": 2},
+              {"notas": ["E4"], "duracao": 2}
+            ],
+            "andamento": 72,
+            "intervalo": {"de": "C4", "para": "E4", "codigo": "3M"}
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-mi-do-descendente",
+            "titulo": "Intervalo melódico descendente",
+            "legenda": "Primeiro Mi, depois Dó: a melodia desce. As notas são as mesmas do exemplo anterior.",
+            "eventos": [
+              {"notas": ["E4"], "duracao": 2},
+              {"notas": ["C4"], "duracao": 2}
+            ],
+            "andamento": 72,
+            "intervalo": {"de": "E4", "para": "C4", "codigo": "3M"}
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-do-mi-harmonico",
+            "titulo": "Intervalo harmônico",
+            "legenda": "Dó e Mi ao mesmo tempo. Na partitura, as notas ficam empilhadas.",
+            "eventos": [
+              {"notas": ["C4", "E4"], "duracao": 4}
+            ],
+            "andamento": 72,
+            "intervalo": {"de": "C4", "para": "E4", "codigo": "3M"}
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Nesta aula, o número depois do nome indica a oitava: **Dó4** é o Dó central do piano, e **Dó5** é o Dó seguinte, mais agudo."
+        }
+      ]
+    },
+    {
+      "titulo": "O número do intervalo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Para achar o número, conte os **nomes** das notas da mais grave até a mais aguda, **incluindo as duas pontas**.\n\n- De Dó a Mi: Dó, Ré, Mi. São 3 nomes, então é uma **3ª** (terça).\n- De Dó a Sol: Dó, Ré, Mi, Fá, Sol. São 5 nomes, então é uma **5ª** (quinta).\n\nOs acidentes não mudam o número. Dó–Mi e Dó–Mi♭ são as duas uma 3ª, porque a nota de cima continua se chamando Mi."
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Dó, Ré, Mi: três nomes, uma 3ª.",
+          "destaque": ["C4", "D4", "E4"],
+          "de": "C4",
+          "ate": "B4"
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Os nomes dos intervalos simples, que são os que cabem dentro de uma oitava. Duas notas iguais formam um **uníssono**.",
+          "cabecalho": ["Número", "Nome", "Exemplo a partir de Dó"],
+          "linhas": [
+            ["2ª", "segunda", "Dó–Ré"],
+            ["3ª", "terça", "Dó–Mi"],
+            ["4ª", "quarta", "Dó–Fá"],
+            ["5ª", "quinta", "Dó–Sol"],
+            ["6ª", "sexta", "Dó–Lá"],
+            ["7ª", "sétima", "Dó–Si"],
+            ["8ª", "oitava", "Dó–Dó (o próximo Dó, mais agudo)"]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-escada-de-do",
+            "titulo": "De Dó até cada nota da escala",
+            "legenda": "Dó fica embaixo e a nota de cima sobe: 2ª, 3ª, 4ª, 5ª, 6ª, 7ª e 8ª.",
+            "eventos": [
+              {"notas": ["C4", "D4"], "duracao": 1},
+              {"notas": ["C4", "E4"], "duracao": 1},
+              {"notas": ["C4", "F4"], "duracao": 1},
+              {"notas": ["C4", "G4"], "duracao": 1},
+              {"notas": ["C4", "A4"], "duracao": 1},
+              {"notas": ["C4", "B4"], "duracao": 1},
+              {"notas": ["C4", "C5"], "duracao": 2}
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Semitons e qualidade",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O número sozinho não basta. Dó–Mi e Ré–Fá são as duas uma 3ª, mas não soam iguais. De Dó a Mi há **4 semitons**; de Ré a Fá há só **3**.\n\nO **semitom** é a menor distância entre duas teclas vizinhas do piano, sejam brancas ou pretas. Contando semitons, descobrimos a **qualidade** do intervalo:\n\n- **Justos**: uníssono, 4ª, 5ª e 8ª.\n- **Maiores ou menores**: 2ª, 3ª, 6ª e 7ª. O menor tem um semitom a menos que o maior."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-3M-do-mi",
+            "titulo": "3ª maior: Dó–Mi (4 semitons)",
+            "legenda": "Um som aberto e luminoso.",
+            "eventos": [
+              {"notas": ["C4"], "duracao": 1},
+              {"notas": ["E4"], "duracao": 1},
+              {"notas": ["C4", "E4"], "duracao": 2}
+            ],
+            "andamento": 72,
+            "intervalo": {"de": "C4", "para": "E4", "codigo": "3M"}
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-3m-re-fa",
+            "titulo": "3ª menor: Ré–Fá (3 semitons)",
+            "legenda": "Um som mais escuro e fechado. Ouça os dois exemplos em seguida para comparar.",
+            "eventos": [
+              {"notas": ["D4"], "duracao": 1},
+              {"notas": ["F4"], "duracao": 1},
+              {"notas": ["D4", "F4"], "duracao": 2}
+            ],
+            "andamento": 72,
+            "intervalo": {"de": "D4", "para": "F4", "codigo": "3m"}
+          }
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "De Ré a Fá: Ré–Ré♯, Ré♯–Mi, Mi–Fá. São três semitons.",
+          "destaque": ["D4", "F4"],
+          "de": "C4",
+          "ate": "B4"
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Cada qualidade medida a partir de Dó. O intervalo de 6 semitons aparece na dica abaixo.",
+          "cabecalho": ["Intervalo", "Semitons", "A partir de Dó"],
+          "linhas": [
+            ["uníssono", "0", "Dó–Dó (a mesma nota)"],
+            ["2ª menor", "1", "Dó–Ré♭"],
+            ["2ª maior", "2", "Dó–Ré"],
+            ["3ª menor", "3", "Dó–Mi♭"],
+            ["3ª maior", "4", "Dó–Mi"],
+            ["4ª justa", "5", "Dó–Fá"],
+            ["5ª justa", "7", "Dó–Sol"],
+            ["6ª menor", "8", "Dó–Lá♭"],
+            ["6ª maior", "9", "Dó–Lá"],
+            ["7ª menor", "10", "Dó–Si♭"],
+            ["7ª maior", "11", "Dó–Si"],
+            ["8ª justa", "12", "Dó–Dó (uma oitava acima)"]
+          ]
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Com 6 semitons existe o **trítono**, como Dó–Fá♯ ou Dó–Sol♭. Ele se chama 4ª aumentada ou 5ª diminuta, conforme a escrita, e é estudado com calma no módulo M02."
+        }
+      ]
+    },
+    {
+      "titulo": "A escala maior como régua",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na escala maior, todas as notas formam intervalos **maiores ou justos** com a primeira nota, a tônica. Em Dó maior: Dó–Ré é 2ª maior, Dó–Mi é 3ª maior, Dó–Fá é 4ª justa, Dó–Sol é 5ª justa, Dó–Lá é 6ª maior, Dó–Si é 7ª maior e Dó–Dó é 8ª justa.\n\nIsso vira um atalho para classificar qualquer intervalo:\n\n1. Imagine a escala maior da nota de baixo.\n2. Se a nota de cima está nessa escala, o intervalo é **maior** (2ª, 3ª, 6ª, 7ª) ou **justo** (4ª, 5ª, 8ª).\n3. Se a nota de cima está um semitom abaixo da nota da escala, o intervalo maior vira **menor**."
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Escala de Dó maior: cada nota forma um intervalo maior ou justo com Dó.",
+          "destaque": ["C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5"],
+          "de": "C4",
+          "ate": "C5"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-escala-do-maior",
+            "titulo": "Escala de Dó maior",
+            "legenda": "Da tônica Dó4 até Dó5.",
+            "eventos": [
+              {"notas": ["C4"], "duracao": 1},
+              {"notas": ["D4"], "duracao": 1},
+              {"notas": ["E4"], "duracao": 1},
+              {"notas": ["F4"], "duracao": 1},
+              {"notas": ["G4"], "duracao": 1},
+              {"notas": ["A4"], "duracao": 1},
+              {"notas": ["B4"], "duracao": 1},
+              {"notas": ["C5"], "duracao": 1}
+            ],
+            "andamento": 84
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Veja o atalho funcionando com Ré–Fá. Na escala de Ré maior, a 3ª nota é **Fá♯**. Fá está um semitom abaixo de Fá♯, então Ré–Fá é uma **3ª menor**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-re-fa-sustenido-fa",
+            "titulo": "Ré–Fá♯ e depois Ré–Fá",
+            "legenda": "Primeiro a 3ª maior (Ré–Fá♯), depois a 3ª menor (Ré–Fá). Só a nota de cima muda, um semitom.",
+            "eventos": [
+              {"notas": ["D4", "F#4"], "duracao": 2},
+              {"notas": ["D4", "F4"], "duracao": 2}
+            ],
+            "andamento": 66
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Intervalos que você já conhece",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um jeito prático de reconhecer intervalos de ouvido é ligar cada um ao começo de uma música conhecida. Cante mentalmente a melodia e preste atenção nas duas primeiras notas **diferentes**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-parabens",
+            "titulo": "2ª maior: Parabéns a você",
+            "legenda": "\"Pa-ra-**béns**\": as duas primeiras sílabas repetem a nota, e \"béns\" sobe uma 2ª maior.",
+            "eventos": [
+              {"notas": ["G4"], "duracao": 0.75},
+              {"notas": ["G4"], "duracao": 0.25},
+              {"notas": ["A4"], "duracao": 1},
+              {"notas": ["G4"], "duracao": 1},
+              {"notas": ["C5"], "duracao": 1},
+              {"notas": ["B4"], "duracao": 2}
+            ],
+            "compasso": "3/4",
+            "anacruse": 1,
+            "andamento": 96,
+            "intervalo": {"de": "G4", "para": "A4", "codigo": "2M"}
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-saints",
+            "titulo": "3ª maior: When the Saints Go Marching In",
+            "legenda": "\"Oh, **when** the saints\": de \"Oh\" para \"when\" a melodia sobe uma 3ª maior.",
+            "eventos": [
+              {"notas": ["C4"], "duracao": 1},
+              {"notas": ["E4"], "duracao": 1},
+              {"notas": ["F4"], "duracao": 1},
+              {"notas": ["G4"], "duracao": 4}
+            ],
+            "anacruse": 3,
+            "andamento": 120,
+            "intervalo": {"de": "C4", "para": "E4", "codigo": "3M"}
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-marcha-nupcial",
+            "titulo": "4ª justa: Marcha nupcial (Wagner)",
+            "legenda": "\"Lá **vem** a noiva\": de \"Lá\" para \"vem\" a melodia sobe uma 4ª justa.",
+            "eventos": [
+              {"notas": ["G4"], "duracao": 1},
+              {"notas": ["C5"], "duracao": 0.75},
+              {"notas": ["C5"], "duracao": 0.25},
+              {"notas": ["C5"], "duracao": 2}
+            ],
+            "anacruse": 1,
+            "andamento": 72,
+            "intervalo": {"de": "G4", "para": "C5", "codigo": "4J"}
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-brilha-brilha",
+            "titulo": "5ª justa: Brilha, brilha, estrelinha",
+            "legenda": "\"Bri-lha, **bri**-lha\": do segundo para o terceiro som a melodia sobe uma 5ª justa.",
+            "eventos": [
+              {"notas": ["C4"], "duracao": 1},
+              {"notas": ["C4"], "duracao": 1},
+              {"notas": ["G4"], "duracao": 1},
+              {"notas": ["G4"], "duracao": 1},
+              {"notas": ["A4"], "duracao": 1},
+              {"notas": ["A4"], "duracao": 1},
+              {"notas": ["G4"], "duracao": 2}
+            ],
+            "andamento": 96,
+            "intervalo": {"de": "C4", "para": "G4", "codigo": "5J"}
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Referências para treinar o ouvido. Todas sobem, exceto Garota de Ipanema, que desce.",
+          "cabecalho": ["Intervalo", "Música", "Onde ouvir"],
+          "linhas": [
+            ["2ª menor", "Tema de *Tubarão* (John Williams)", "as duas notas que se alternam no grave"],
+            ["2ª maior", "*Parabéns a você*", "\"Pa-ra-**béns**\""],
+            ["3ª menor", "*Garota de Ipanema* (Tom Jobim), descendente", "\"**O**-lha que coisa\""],
+            ["3ª maior", "*When the Saints Go Marching In*", "\"Oh, **when**\""],
+            ["4ª justa", "Marcha nupcial (Wagner)", "\"Lá **vem** a noiva\""],
+            ["5ª justa", "*Brilha, brilha, estrelinha*", "\"Bri-lha, **bri**-lha\""],
+            ["6ª maior", "*My Bonnie Lies over the Ocean*", "\"My **Bon**-nie\""],
+            ["7ª menor", "*Somewhere* (West Side Story)", "\"There's **a** place\""],
+            ["8ª justa", "*Over the Rainbow*", "\"**Some**-where\""]
+          ]
+        },
+        {
+          "tipo": "dica",
+          "markdown": "A 6ª menor e a 7ª maior aparecem pouco no começo de músicas conhecidas. Para elas, o melhor treino é comparar com a vizinha: a 6ª menor soa como uma 6ª maior mais escura, e a 7ª maior soa como uma oitava que \"não chegou\"."
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos semitons tem uma **3ª maior**?",
+      "opcoes": ["2 semitons", "3 semitons", "4 semitons", "5 semitons"],
+      "correta": 2,
+      "explicacao": "A 3ª maior tem 4 semitons, como Dó–Mi (Dó, Dó♯, Ré, Ré♯, Mi). A 3ª menor tem um semitom a menos: 3.",
+      "conceito": "semitons",
+      "verificacao": {"tipo": "semitons", "intervalo": "3M"}
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Ouça e olhe a partitura. Qual é este intervalo?",
+      "exemplo": {
+        "id": "ex-q-re-fa",
+        "titulo": "Ré e Fá",
+        "legenda": "Ré–Fá, 3ª menor.",
+        "eventos": [
+          {"notas": ["D4"], "duracao": 2},
+          {"notas": ["F4"], "duracao": 2}
+        ],
+        "andamento": 72,
+        "intervalo": {"de": "D4", "para": "F4", "codigo": "3m"}
+      },
+      "opcoes": ["2ª maior", "3ª menor", "3ª maior", "4ª justa"],
+      "correta": 1,
+      "explicacao": "Ré, Mi, Fá: três nomes, então é uma 3ª. De Ré a Fá há 3 semitons, então é **menor**.",
+      "conceito": "qualidade-maior-menor"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "E este intervalo harmônico?",
+      "exemplo": {
+        "id": "ex-q-mi-si",
+        "titulo": "Mi e Si juntos",
+        "legenda": "Mi–Si, 5ª justa.",
+        "eventos": [
+          {"notas": ["E4", "B4"], "duracao": 4}
+        ],
+        "andamento": 72,
+        "intervalo": {"de": "E4", "para": "B4", "codigo": "5J"}
+      },
+      "opcoes": ["4ª justa", "5ª justa", "6ª menor", "6ª maior"],
+      "correta": 1,
+      "explicacao": "Mi, Fá, Sol, Lá, Si: cinco nomes, uma 5ª. Na escala de Mi maior a 5ª nota é Si, então a 5ª é **justa** (7 semitons).",
+      "conceito": "qualidade-justa"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual destes intervalos pode ser **justo**?",
+      "opcoes": ["2ª", "3ª", "5ª", "7ª"],
+      "correta": 2,
+      "explicacao": "Só o uníssono, a 4ª, a 5ª e a 8ª são justos. A 2ª, a 3ª, a 6ª e a 7ª são maiores ou menores.",
+      "conceito": "qualidade-justa"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Mi–Fá e Si–Dó são dois intervalos sem tecla preta no meio. Que intervalo eles formam?",
+      "opcoes": ["2ª menor (1 semitom)", "2ª maior (2 semitons)", "3ª menor (3 semitons)"],
+      "correta": 0,
+      "explicacao": "Mi e Fá são vizinhas no teclado, assim como Si e Dó. A distância é de um semitom, então formam uma **2ª menor**. As outras duplas de notas naturais vizinhas (Dó–Ré, Ré–Mi, Fá–Sol, Sol–Lá, Lá–Si) são 2ª maiores.",
+      "conceito": "semitons"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Ré4 está marcado no teclado. Clique na nota que forma uma **5ª justa acima** de Ré.",
+      "nota_base": "D4",
+      "intervalo": "5J",
+      "direcao": "acima",
+      "explicacao": "Ré, Mi, Fá, Sol, Lá: cinco nomes, uma 5ª. De Ré a Lá há 7 semitons, então a 5ª é justa.",
+      "conceito": "qualidade-justa",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Fá4 está marcado. Clique na nota que forma uma **3ª maior acima** de Fá.",
+      "nota_base": "F4",
+      "intervalo": "3M",
+      "direcao": "acima",
+      "explicacao": "Fá, Sol, Lá: três nomes, uma 3ª. De Fá a Lá há 4 semitons, então é maior.",
+      "conceito": "qualidade-maior-menor",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Mi4 está marcado. Clique na nota que forma uma **2ª menor acima** de Mi.",
+      "nota_base": "E4",
+      "intervalo": "2m",
+      "direcao": "acima",
+      "explicacao": "Entre Mi e Fá não existe tecla preta: as duas já são vizinhas, a um semitom de distância. Por isso Mi–Fá é uma 2ª menor.",
+      "conceito": "semitons",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Lá4 está marcado. Clique na nota que forma uma **3ª menor acima** de Lá.",
+      "nota_base": "A4",
+      "intervalo": "3m",
+      "direcao": "acima",
+      "explicacao": "Lá, Si, Dó: três nomes, uma 3ª. De Lá a Dó há 3 semitons, então é menor. Na escala de Lá maior a 3ª seria Dó♯.",
+      "conceito": "qualidade-maior-menor",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça sem olhar a partitura. Que intervalo melódico é este?",
+      "exemplo": {
+        "id": "ex-p-5J",
+        "titulo": "Intervalo para identificar",
+        "legenda": "Dó–Sol, 5ª justa.",
+        "eventos": [
+          {"notas": ["C4"], "duracao": 2},
+          {"notas": ["G4"], "duracao": 2}
+        ],
+        "andamento": 72,
+        "intervalo": {"de": "C4", "para": "G4", "codigo": "5J"}
+      },
+      "opcoes": ["3ª maior", "4ª justa", "5ª justa", "8ª justa"],
+      "correta": 2,
+      "explicacao": "É uma 5ª justa, o mesmo salto de \"Bri-lha, **bri**-lha\".",
+      "conceito": "percepcao-de-intervalos"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça o intervalo harmônico. É uma 3ª maior ou uma 3ª menor?",
+      "exemplo": {
+        "id": "ex-p-3m",
+        "titulo": "Intervalo para identificar",
+        "legenda": "Lá–Dó, 3ª menor.",
+        "eventos": [
+          {"notas": ["A4", "C5"], "duracao": 4}
+        ],
+        "andamento": 72,
+        "intervalo": {"de": "A4", "para": "C5", "codigo": "3m"}
+      },
+      "opcoes": ["3ª maior", "3ª menor"],
+      "correta": 1,
+      "explicacao": "Lá–Dó tem 3 semitons: 3ª menor. Repare no som mais escuro, comparado com Dó–Mi.",
+      "conceito": "percepcao-de-intervalos"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Que intervalo melódico é este?",
+      "exemplo": {
+        "id": "ex-p-4J",
+        "titulo": "Intervalo para identificar",
+        "legenda": "Sol–Dó, 4ª justa.",
+        "eventos": [
+          {"notas": ["G4"], "duracao": 2},
+          {"notas": ["C5"], "duracao": 2}
+        ],
+        "andamento": 72,
+        "intervalo": {"de": "G4", "para": "C5", "codigo": "4J"}
+      },
+      "opcoes": ["3ª maior", "4ª justa", "5ª justa", "6ª maior"],
+      "correta": 1,
+      "explicacao": "É uma 4ª justa, como \"Lá **vem** a noiva\" na Marcha nupcial.",
+      "conceito": "percepcao-de-intervalos"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "E este, bem mais largo?",
+      "exemplo": {
+        "id": "ex-p-8J",
+        "titulo": "Intervalo para identificar",
+        "legenda": "Dó4–Dó5, 8ª justa.",
+        "eventos": [
+          {"notas": ["C4"], "duracao": 2},
+          {"notas": ["C5"], "duracao": 2}
+        ],
+        "andamento": 72,
+        "intervalo": {"de": "C4", "para": "C5", "codigo": "8J"}
+      },
+      "opcoes": ["5ª justa", "6ª maior", "7ª maior", "8ª justa"],
+      "correta": 3,
+      "explicacao": "É a mesma nota, uma oitava acima: 8ª justa, como \"**Some**-where\" em *Over the Rainbow*.",
+      "conceito": "percepcao-de-intervalos"
+    }
+  ],
+  "resumo": [
+    "Intervalo é a distância entre duas notas: **melódico** quando soam uma depois da outra, **harmônico** quando soam juntas.",
+    "O **número** vem da contagem dos nomes das notas, incluindo as duas pontas.",
+    "A **qualidade** vem da contagem de semitons: uníssono, 4ª, 5ª e 8ª são justos; 2ª, 3ª, 6ª e 7ª são maiores ou menores.",
+    "Na escala maior, todos os intervalos a partir da tônica são maiores ou justos. Um semitom abaixo, o maior vira menor.",
+    "Ligar intervalos a músicas conhecidas ajuda a reconhecê-los de ouvido."
+  ],
+  "pergunta_para_chat": "Me faça 5 perguntas sobre intervalos simples, começando por 3ª maiores e menores, e me corrija a cada resposta."
+}
