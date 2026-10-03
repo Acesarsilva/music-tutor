@@ -505,6 +505,15 @@
   }
 
   /* ------------------------------------------------------------ Exercícios */
+  // Dentro do app a aula roda num iframe isolado: as respostas e a troca de instrumento vão para a
+  // página do app, que as registra no progresso do aluno. Aberta sozinha, a aula não envia nada.
+  function avisarApp(mensagem) {
+    if (window.parent === window) return;
+    mensagem.origem = "music-tutor-aula";
+    mensagem.codigo = dados.codigo;
+    window.parent.postMessage(mensagem, "*");
+  }
+
   var placar = { respondidos: 0, acertos: 0, total: dados.exercicios.length };
 
   function atualizarPlacar() {
@@ -537,6 +546,7 @@
           if (Number(b.dataset.opcao) === exe.correta) b.classList.add("certa");
         });
         if (!certo) botao.classList.add("errada");
+        avisarApp({ tipo: "resposta", indice: exe.indice, opcao: escolhida });
         mostrarRetorno(artigo, certo, certo ? "Isso mesmo." : "Ainda não. A resposta certa está marcada em verde.");
       });
     });
@@ -565,6 +575,7 @@
     var registro = registrarInstrumento("exercicio-" + exe.indice, el, exe.teclado, function (midiTecla, elemento) {
       if (resposta || midiTecla === exe.base) return true;
       resposta = { midi: midiTecla, certo: midiTecla === exe.alvo };
+      avisarApp({ tipo: "resposta", indice: exe.indice, midi: midiTecla });
       pintar(registro.atual, elemento);
       Som.tocarEventos([{ midis: [exe.base], duracao: 1 }, { midis: [midiTecla], duracao: 1 }, { midis: [exe.base, midiTecla], duracao: 2 }], 90);
       mostrarRetorno(artigo, resposta.certo, resposta.certo
@@ -592,6 +603,7 @@
   document.querySelectorAll("[data-timbre]").forEach(function (b) {
     b.addEventListener("click", function () {
       aplicarTimbre(b.dataset.timbre);
+      avisarApp({ tipo: "timbre", timbre: b.dataset.timbre });
       Som.tocarEventos([{ midis: [60, 64, 67], duracao: 1.5 }], 80);
     });
   });
