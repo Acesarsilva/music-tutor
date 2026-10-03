@@ -124,6 +124,9 @@ maior. Se você marcou 4ª, contou semitons em vez de notas."
   continuam com o acidente real ("F#4" em Sol maior); a partitura omite o que a armadura já diz.
 - Aulas anteriores à I08 ainda não dão nome aos intervalos: em `percepcao`, a opção correta pode ser
   "semitom" (2m) ou "tom" (2M). Em `teclado`, "1A" pede a mesma nota com ♯ ou ♭ (Fá→Fá♯, Si→Si♭ abaixo).
+- Ritmo e dinâmica: cada evento aceita `dinamica` ("pp" a "ff", vale até a próxima), `acento` (tempo forte,
+  pulso) e `ligada` (une ao evento seguinte, com as mesmas notas). Percepção de ritmo, compasso ou dinâmica
+  não leva `intervalo`; nesse caso confira a resposta à mão.
   O campo `intervalo` reduz intervalos compostos (Dó4–Mi5 vira "3M"); se o texto fala de 10ª, diga
   "10ª maior (3ª maior composta)".
 - Referências: músicas brasileiras conhecidas de qualquer estilo (cantigas de roda, folclore, samba,

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Escalas menores</title>
+<title>Pulso e compasso simples</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
@@ -520,7 +520,7 @@ tbody tr:last-child td { border-bottom: 0; }
 <body>
 <header class="barra">
   <div class="barra-interna">
-    <p class="barra-aula"><span class="selo">I11</span> Escalas menores</p>
+    <p class="barra-aula"><span class="selo">I05</span> Pulso e compasso simples</p>
     <div class="controles">
       <div class="timbre" role="group" aria-label="Instrumento">
         <button type="button" id="timbre-piano" data-timbre="piano" aria-pressed="true">Piano</button>
@@ -538,38 +538,33 @@ tbody tr:last-child td { border-bottom: 0; }
 <main class="aula">
   <section class="abertura">
     <p class="rotulo">Teoria musical · Iniciante</p>
-    <h1>Escalas menores</h1>
-    <p class="chamada">As três formas da escala menor, a relativa que divide a armadura com cada maior e a diferença entre relativas e homônimas.</p>
+    <h1>Pulso e compasso simples</h1>
+    <p class="chamada">O pulso, os tempos fortes e fracos, as fórmulas 2/4, 3/4 e 4/4 e a anacruse.</p>
     <div class="ficha">
       <div>
         <h2 class="rotulo">Você vai aprender</h2>
         <ul>
-          <li>Reconhecer a <strong>escala menor natural</strong> e a fórmula T–S–T–T–S–T–T</li>
-          <li>Achar a <strong>relativa menor</strong> de uma tonalidade maior</li>
-          <li>Montar as escalas menores <strong>harmônica</strong> e <strong>melódica</strong></li>
-          <li>Diferenciar tonalidades <strong>relativas</strong> e <strong>homônimas</strong></li>
-          <li>Distinguir de ouvido a 3ª maior da 3ª menor a partir da tônica</li>
+          <li>Sentir o <strong>pulso</strong> e diferenciar <strong>tempo forte</strong> de fraco</li>
+          <li>Ler as fórmulas <strong>2/4, 3/4 e 4/4</strong> e as barras de compasso</li>
+          <li>Reconhecer de ouvido compassos <strong>binários, ternários e quaternários</strong></li>
+          <li>Entender a <strong>anacruse</strong></li>
         </ul>
       </div>
       <div>
         <h2 class="rotulo">Antes, é bom saber</h2>
         <ul>
-          <li>Escala maior (I07)</li>
-          <li>Intervalos simples (I08)</li>
-          <li>Armaduras de clave (I09)</li>
+          <li>Figuras rítmicas (I04)</li>
         </ul>
       </div>
     </div>
     <nav class="indice" aria-label="Seções da aula">
       <ol>
         <li><a href="#secao-1">Antes de começar</a></li>
-        <li><a href="#secao-2">A escala menor natural</a></li>
-        <li><a href="#secao-3">Relativas: a mesma armadura</a></li>
-        <li><a href="#secao-4">A escala menor harmônica</a></li>
-        <li><a href="#secao-5">A escala menor melódica</a></li>
-        <li><a href="#secao-6">Homônimas: a mesma tônica</a></li>
-        <li><a href="#secao-7">Passo a passo</a></li>
-        <li><a href="#secao-8">Cuidado com este erro</a></li>
+        <li><a href="#secao-2">Pulso e tempo forte</a></li>
+        <li><a href="#secao-3">Fórmula de compasso e barras</a></li>
+        <li><a href="#secao-4">Anacruse</a></li>
+        <li><a href="#secao-5">Passo a passo para conferir um compasso</a></li>
+        <li><a href="#secao-6">Cuidado com este erro</a></li>
         <li><a href="#exercicios">Exercícios</a></li>
         <li><a href="#resumo">Resumo</a></li>
       </ol>
@@ -580,14 +575,14 @@ tbody tr:last-child td { border-bottom: 0; }
     <h2><span class="num">1</span>Antes de começar</h2>
     <div class="prosa"><p>Responda de cabeça, sem consultar nada. Depois confira.</p>
 <ol>
-<li>Qual é a fórmula da escala maior?</li>
-<li>Quais são as notas de Dó maior?</li>
-<li>Lá–Dó é uma 3ª maior ou menor?</li>
+<li>Quantos tempos vale a semínima? E a mínima?</li>
+<li>Quantas colcheias cabem numa semínima?</li>
+<li>Quanto vale a semínima pontuada?</li>
 </ol></div>
     <details class="resposta"><summary>Conferir as respostas</summary><div class="prosa"><ol>
-<li>T–T–S–T–T–T–S.</li>
-<li>Dó, Ré, Mi, Fá, Sol, Lá, Si.</li>
-<li>Menor: 3 semitons.</li>
+<li>Um tempo; dois tempos.</li>
+<li>Duas.</li>
+<li>Um tempo e meio.</li>
 </ol></div></details>
     <figure class="exemplo" data-exemplo="ex-abertura">
       <div class="exemplo-topo">
@@ -595,355 +590,330 @@ tbody tr:last-child td { border-bottom: 0; }
         <button type="button" class="tocar" data-tocar="ex-abertura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
       <div class="partitura" data-partitura="ex-abertura"></div>
-      <figcaption>As duas escalas usam só notas naturais. A segunda começa e termina em Lá. Qual delas soa mais escura?</figcaption>
+      <figcaption>Bata o pé junto com os sons. Alguns soam mais fortes: de quantos em quantos?</figcaption>
     </figure>
-    <div class="prosa"><p>A segunda é a <strong>escala de Lá menor</strong>. Ela tem as mesmas notas de Dó maior, mas a tônica é Lá, e a nota três graus acima dela forma uma 3ª <strong>menor</strong>. É essa 3ª que deixa o som mais escuro.</p>
-<p>Ao final, você vai montar as três formas da escala menor e achar a menor que divide a armadura com cada tonalidade maior.</p></div>
+    <div class="prosa"><p>As batidas regulares que você acompanhou com o pé são o <strong>pulso</strong>. O som mais forte, a cada três, é o <strong>tempo forte</strong>, e os grupos de três formam <strong>compassos</strong>.</p>
+<p>Ao final, você vai ler fórmulas de compasso e reconhecer de ouvido se uma música vai de dois em dois, de três em três ou de quatro em quatro.</p></div>
   </section>
   <section class="secao" id="secao-2">
-    <h2><span class="num">2</span>A escala menor natural</h2>
-    <div class="prosa"><p>A <strong>escala menor natural</strong> segue a fórmula <strong>T–S–T–T–S–T–T</strong>. Os semitons caem entre o 2º e o 3º grau e entre o 5º e o 6º.</p></div>
-    <figure class="tabela">
-      <div class="tabela-rolagem">
-        <table>
-          <thead><tr><th scope="col">Passo</th><th scope="col">Notas</th><th scope="col">Distância</th></tr></thead>
-          <tbody>
-            <tr><td>1º</td><td>Lá–Si</td><td>tom</td></tr>
-            <tr><td>2º</td><td>Si–Dó</td><td>semitom</td></tr>
-            <tr><td>3º</td><td>Dó–Ré</td><td>tom</td></tr>
-            <tr><td>4º</td><td>Ré–Mi</td><td>tom</td></tr>
-            <tr><td>5º</td><td>Mi–Fá</td><td>semitom</td></tr>
-            <tr><td>6º</td><td>Fá–Sol</td><td>tom</td></tr>
-            <tr><td>7º</td><td>Sol–Lá</td><td>tom</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <figcaption>Lá menor natural, passo a passo.</figcaption>
-    </figure>
-    <figure class="exemplo" data-exemplo="ex-la-menor">
+    <h2><span class="num">2</span>Pulso e tempo forte</h2>
+    <div class="prosa"><p>O <strong>pulso</strong> é a batida constante que você sente numa música, aquela que faz a gente bater o pé ou bater palmas. Os pulsos se agrupam: um deles soa mais forte, o <strong>tempo forte</strong>, e os outros são <strong>fracos</strong>.</p></div>
+    <figure class="exemplo" data-exemplo="ex-binario">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Escala de Lá menor natural</p>
-        <button type="button" class="tocar" data-tocar="ex-la-menor"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">De dois em dois</p>
+        <button type="button" class="tocar" data-tocar="ex-binario"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-la-menor"></div>
-      <figcaption>Ouça o semitom logo no começo, entre Si e Dó: ele faz a 3ª da escala ser menor.</figcaption>
+      <div class="partitura" data-partitura="ex-binario"></div>
+      <figcaption>Forte, fraco, forte, fraco: como passos de uma marcha.</figcaption>
     </figure>
-    <figure class="bloco-teclado">
-      <div class="teclado-rolagem"><div class="teclado" data-teclado="t-1-3"></div></div>
-      <figcaption>
-        <span>Lá menor natural: no piano, só teclas brancas, de Lá a Lá.</span>
-        <span class="acoes-instrumento">
-          <button type="button" class="tocar pequeno" data-tocar-teclado="t-1-3"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir as notas</span></button>
-          <button type="button" class="secundario" data-montar-acorde="t-1-3" aria-pressed="false">Montar acorde</button>
-          <button type="button" class="tocar pequeno" data-tocar-acorde="t-1-3" hidden><span class="icone" aria-hidden="true"></span><span class="texto">Tocar juntas</span></button>
-        </span>
-      </figcaption>
-    </figure>
-    <div class="prosa"><p>O que define a escala como menor é a 3ª entre a tônica e o 3º grau: <strong>3ª menor</strong> (3 semitons). Na escala maior, essa 3ª é maior (4 semitons).</p></div>
-    <figure class="exemplo" data-exemplo="ex-terca-menor">
+    <figure class="exemplo" data-exemplo="ex-ternario">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Tônica e 3º grau de Lá menor</p>
-        <button type="button" class="tocar" data-tocar="ex-terca-menor"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">De três em três</p>
+        <button type="button" class="tocar" data-tocar="ex-ternario"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-terca-menor"></div>
-      <figcaption>Lá e Dó juntos: a 3ª menor, o som que dá cor à escala.</figcaption>
+      <div class="partitura" data-partitura="ex-ternario"></div>
+      <figcaption>Forte, fraco, fraco: como uma valsa.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-quaternario">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">De quatro em quatro</p>
+        <button type="button" class="tocar" data-tocar="ex-quaternario"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-quaternario"></div>
+      <figcaption>O acento volta a cada quatro tempos. O terceiro tempo, meio-forte, tem um apoio mais leve que o primeiro.</figcaption>
     </figure>
   </section>
   <section class="secao" id="secao-3">
-    <h2><span class="num">3</span>Relativas: a mesma armadura</h2>
-    <div class="prosa"><p>Lá menor e Dó maior usam as mesmas notas e a <strong>mesma armadura</strong>, sem acidentes. Por isso Lá menor é a <strong>relativa menor</strong> de Dó maior.</p>
-<p>Para achar a relativa menor de qualquer tonalidade maior, há dois caminhos que dão no mesmo:</p>
+    <h2><span class="num">3</span>Fórmula de compasso e barras</h2>
+    <div class="prosa"><p>A <strong>fórmula de compasso</strong>, no começo da pauta, tem dois números:</p>
 <ul>
-<li>pegue o <strong>6º grau</strong> da escala maior (Dó, Ré, Mi, Fá, Sol, <strong>Lá</strong>);</li>
-<li>ou desça uma <strong>3ª menor</strong> a partir da tônica maior (Dó–Lá: 3 semitons para baixo).</li>
-</ul></div>
+<li>o de <strong>cima</strong> diz <strong>quantos tempos</strong> tem cada compasso;</li>
+<li>o de <strong>baixo</strong> diz <strong>qual figura vale um tempo</strong>. O 4 embaixo quer dizer semínima.</li>
+</ul>
+<p>Assim, <strong>2/4</strong> tem 2 semínimas por compasso, <strong>3/4</strong> tem 3 e <strong>4/4</strong> tem 4. As <strong>barras de compasso</strong> separam um compasso do outro, e a <strong>barra final</strong>, mais grossa, fecha a música.</p></div>
     <figure class="tabela">
       <div class="tabela-rolagem">
         <table>
-          <thead><tr><th scope="col">Maior</th><th scope="col">Relativa menor</th><th scope="col">Armadura</th></tr></thead>
+          <thead><tr><th scope="col">Fórmula</th><th scope="col">Tempos</th><th scope="col">Nome</th><th scope="col">Acentos</th></tr></thead>
           <tbody>
-            <tr><td>Dó maior</td><td>Lá menor</td><td>nenhum acidente</td></tr>
-            <tr><td>Sol maior</td><td>Mi menor</td><td>Fá♯</td></tr>
-            <tr><td>Ré maior</td><td>Si menor</td><td>Fá♯ Dó♯</td></tr>
-            <tr><td>Fá maior</td><td>Ré menor</td><td>Si♭</td></tr>
-            <tr><td>Si♭ maior</td><td>Sol menor</td><td>Si♭ Mi♭</td></tr>
+            <tr><td>2/4</td><td>2</td><td>binário</td><td>forte, fraco</td></tr>
+            <tr><td>3/4</td><td>3</td><td>ternário</td><td>forte, fraco, fraco</td></tr>
+            <tr><td>4/4</td><td>4</td><td>quaternário</td><td>forte, fraco, meio-forte, fraco</td></tr>
           </tbody>
         </table>
       </div>
-      <figcaption>Algumas tonalidades maiores e suas relativas menores.</figcaption>
+      <figcaption>Os três compassos simples mais comuns.</figcaption>
     </figure>
-    <figure class="exemplo" data-exemplo="ex-mi-menor">
+    <figure class="exemplo" data-exemplo="ex-marcha-soldado">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Escala de Mi menor natural, com armadura</p>
-        <button type="button" class="tocar" data-tocar="ex-mi-menor"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Marcha soldado, em 2/4</p>
+        <button type="button" class="tocar" data-tocar="ex-marcha-soldado"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-mi-menor"></div>
-      <figcaption>A armadura de Sol maior, com Fá♯, mas a escala começa e termina em Mi.</figcaption>
+      <div class="partitura" data-partitura="ex-marcha-soldado"></div>
+      <figcaption>Uma marcha: o tempo forte cai em "Mar" e em "da".</figcaption>
     </figure>
-    <aside class="dica"><p class="rotulo">Dica</p><p>No círculo de quintas, cada menor fica ao lado da maior que tem a mesma armadura: Lá menor junto de Dó maior, Mi menor junto de Sol maior.</p></aside>
+    <figure class="exemplo" data-exemplo="ex-brilha">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Brilha, brilha, estrelinha, em 4/4</p>
+        <button type="button" class="tocar" data-tocar="ex-brilha"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-brilha"></div>
+      <figcaption>O tempo forte cai em "Bri" e em "es", a cada quatro tempos.</figcaption>
+    </figure>
   </section>
   <section class="secao" id="secao-4">
-    <h2><span class="num">4</span>A escala menor harmônica</h2>
-    <div class="prosa"><p>Na menor natural, o 7º grau fica <strong>um tom</strong> abaixo da tônica (Sol–Lá) e não pede a tônica como a sensível da escala maior. A <strong>escala menor harmônica</strong> resolve isso: <strong>sobe o 7º grau</strong> um semitom.</p>
-<p>Lá menor harmônica: Lá, Si, Dó, Ré, Mi, Fá, <strong>Sol♯</strong>, Lá.</p></div>
-    <figure class="exemplo" data-exemplo="ex-la-harmonica">
+    <h2><span class="num">4</span>Anacruse</h2>
+    <div class="prosa"><p>Nem toda música começa no tempo forte. Quando a primeira nota vem <strong>antes</strong> do primeiro tempo forte, ela se chama <strong>anacruse</strong>. Em <em>O cravo brigou com a rosa</em>, o "O" vem sozinho, e o primeiro tempo forte cai em "cra".</p></div>
+    <figure class="exemplo" data-exemplo="ex-cravo">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Escala de Lá menor harmônica</p>
-        <button type="button" class="tocar" data-tocar="ex-la-harmonica"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">O cravo brigou com a rosa, em 3/4</p>
+        <button type="button" class="tocar" data-tocar="ex-cravo"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-la-harmonica"></div>
-      <figcaption>Ouça o salto largo entre Fá e Sol♯ e como o Sol♯ empurra para o Lá do fim.</figcaption>
+      <div class="partitura" data-partitura="ex-cravo"></div>
+      <figcaption>"O" é a anacruse; o tempo forte cai em "cra" e depois em "gou".</figcaption>
     </figure>
-    <div class="prosa"><p>Entre Fá e Sol♯ ficam <strong>3 semitons</strong>, um tom e meio. Esse passo é uma 2ª aumentada e dá à escala harmônica o seu som característico.</p></div>
   </section>
   <section class="secao" id="secao-5">
-    <h2><span class="num">5</span>A escala menor melódica</h2>
-    <div class="prosa"><p>A <strong>escala menor melódica</strong> suaviza esse salto: na subida, eleva o <strong>6º e o 7º graus</strong>; na descida, volta à menor natural.</p>
-<ul>
-<li>Subindo: Lá, Si, Dó, Ré, Mi, <strong>Fá♯</strong>, <strong>Sol♯</strong>, Lá.</li>
-<li>Descendo: Lá, Sol, Fá, Mi, Ré, Dó, Si, Lá.</li>
-</ul></div>
-    <figure class="exemplo" data-exemplo="ex-la-melodica">
+    <h2><span class="num">5</span>Passo a passo para conferir um compasso</h2>
+    <div class="prosa"><p>Veja como conferir se um compasso <strong>3/4</strong> com <strong>mínima + semínima</strong> está completo, com o motivo de cada passo.</p>
+<ol>
+<li><strong>Leia a fórmula</strong>: 3 em cima, 3 tempos; 4 embaixo, a semínima vale um tempo.</li>
+<li><strong>Some as figuras</strong>: mínima 2 + semínima 1 = 3.</li>
+<li><strong>Compare</strong>: 3 tempos para um compasso de 3. Está completo.</li>
+</ol></div>
+    <figure class="exemplo" data-exemplo="ex-confere">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Escala de Lá menor melódica, subindo e descendo</p>
-        <button type="button" class="tocar" data-tocar="ex-la-melodica"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Mínima e semínima em 3/4</p>
+        <button type="button" class="tocar" data-tocar="ex-confere"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-la-melodica"></div>
-      <figcaption>Na subida, Fá♯ e Sol♯ deixam o caminho liso até o Lá; na descida, voltam Sol e Fá naturais.</figcaption>
+      <div class="partitura" data-partitura="ex-confere"></div>
+      <figcaption>Forte na mínima, fraco na semínima.</figcaption>
     </figure>
+    <div class="prosa"><p><strong>Pense antes de abrir a resposta:</strong> a mesma mínima com semínima caberia num compasso 2/4?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Não. 2/4 tem 2 tempos, e mínima + semínima somam 3. Sobraria um tempo, que teria de ir para o compasso seguinte.</p></div></details>
+    <div class="prosa"><p>Agora o último passo é seu. Compasso <strong>4/4</strong> com <strong>mínima + duas colcheias</strong>: 2 + ½ + ½ = 3. Está completo?</p>
+<p>E agora dois passos são seus: compasso <strong>2/4</strong> com <strong>semínima pontuada + colcheia</strong>.</p></div>
+    <details class="resposta"><summary>Ver as respostas</summary><div class="prosa"><p>4/4 com 3 tempos: <strong>falta 1 tempo</strong>, por exemplo uma semínima ou uma pausa de semínima.</p>
+<p>2/4: 1½ + ½ = 2. <strong>Completo.</strong></p></div></details>
   </section>
   <section class="secao" id="secao-6">
-    <h2><span class="num">6</span>Homônimas: a mesma tônica</h2>
-    <div class="prosa"><p>Tonalidades <strong>homônimas</strong> têm a <strong>mesma tônica</strong> e modos diferentes, como Dó maior e Dó menor. Elas não dividem a armadura: Dó maior não tem acidentes, e Dó menor tem três bemóis (Si♭, Mi♭, Lá♭), a mesma armadura de Mi♭ maior, a relativa dela.</p></div>
-    <figure class="exemplo" data-exemplo="ex-do-maior-menor">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">Dó maior e depois Dó menor natural</p>
-        <button type="button" class="tocar" data-tocar="ex-do-maior-menor"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      </div>
-      <div class="partitura" data-partitura="ex-do-maior-menor"></div>
-      <figcaption>A mesma tônica. Na segunda escala, o 3º, o 6º e o 7º graus descem um semitom.</figcaption>
-    </figure>
-  </section>
-  <section class="secao" id="secao-7">
-    <h2><span class="num">7</span>Passo a passo</h2>
-    <div class="prosa"><p>Veja como achar a relativa menor de <strong>Ré maior</strong> e montar a forma harmônica, com o motivo de cada passo.</p>
-<ol>
-<li><strong>Relativa</strong>: o 6º grau de Ré maior (Ré, Mi, Fá♯, Sol, Lá, <strong>Si</strong>) é Si. A relativa é <strong>Si menor</strong>.</li>
-<li><strong>Armadura</strong>: a mesma de Ré maior, Fá♯ e Dó♯.</li>
-<li><strong>Menor natural</strong>: Si, Dó♯, Ré, Mi, Fá♯, Sol, Lá, Si.</li>
-<li><strong>Harmônica</strong>: sobe o 7º grau, Lá → <strong>Lá♯</strong>. Si menor harmônica: Si, Dó♯, Ré, Mi, Fá♯, Sol, Lá♯, Si.</li>
-</ol></div>
-    <div class="prosa"><p><strong>Pense antes de abrir a resposta:</strong> Lá♯ e Si♭ soam igual. Por que a escala usa Lá♯?</p></div>
-    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Porque cada letra aparece uma vez. Com Si♭, a escala teria dois Si (Si♭ e a tônica Si) e nenhum Lá.</p></div></details>
-    <div class="prosa"><p>Agora o último passo é seu. <strong>Mi menor harmônica</strong>:</p>
-<ol>
-<li>Mi menor é a relativa de Sol maior.</li>
-<li>Natural: Mi, Fá♯, Sol, Lá, Si, Dó, Ré, Mi.</li>
-<li>Qual nota muda na harmônica?</li>
-</ol>
-<p>E agora dois passos são seus. Ache a relativa menor de <strong>Fá maior</strong> e monte a forma harmônica dela.</p></div>
-    <details class="resposta"><summary>Ver as respostas</summary><div class="prosa"><p>Mi menor harmônica: o 7º grau sobe, Ré → <strong>Ré♯</strong>.</p>
-<p>Fá maior: Fá, Sol, Lá, Si♭, Dó, <strong>Ré</strong>. A relativa é <strong>Ré menor</strong>, com Si♭. Natural: Ré, Mi, Fá, Sol, Lá, Si♭, Dó, Ré. Harmônica: Dó → <strong>Dó♯</strong>.</p></div></details>
-  </section>
-  <section class="secao" id="secao-8">
-    <h2><span class="num">8</span>Cuidado com este erro</h2>
-    <div class="prosa"><p>Uma colega disse:</p>
-<p>&gt; "A relativa menor de Sol maior é Sol menor, porque as duas começam em Sol."</p>
-<p>Onde está o erro, por que está errado e qual é a resposta certa?</p></div>
-    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Ela confundiu <strong>relativa</strong> com <strong>homônima</strong>. Sol maior e Sol menor são homônimas: mesma tônica, armaduras diferentes. A relativa divide a armadura e fica no 6º grau: Sol, Lá, Si, Dó, Ré, <strong>Mi</strong>. A relativa menor de Sol maior é <strong>Mi menor</strong>.</p></div></details>
+    <h2><span class="num">6</span>Cuidado com este erro</h2>
+    <div class="prosa"><p>Um colega leu a fórmula 3/4 assim:</p>
+<p>&gt; "3/4 quer dizer três quartos de tempo por compasso."</p>
+<p>Onde está o erro, por que está errado e o que a fórmula diz?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>A fórmula de compasso não é uma fração de tempo. O <strong>3</strong> diz que cada compasso tem <strong>3 tempos</strong>, e o <strong>4</strong> diz que a <strong>semínima</strong> vale um tempo. 3/4 é um compasso de três semínimas.</p></div></details>
   </section>
 
   <section class="secao exercicios" id="exercicios">
-    <h2><span class="num">9</span>Exercícios</h2>
+    <h2><span class="num">7</span>Exercícios</h2>
     <p class="placar" id="placar" aria-live="polite">Responda para ver seus acertos.</p>
     <article class="exercicio" data-exercicio="0" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 1 · Múltipla escolha</p>
-      <div class="enunciado"><p>Qual é a <strong>relativa menor</strong> de Dó maior?</p></div>
+      <div class="enunciado"><p>Na fórmula <strong>3/4</strong>, o que o número de <strong>cima</strong> diz?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">Lá menor</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">Dó menor</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">Mi menor</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">Ré menor</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Quantos tempos tem cada compasso</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Quantos compassos tem a música</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">A duração de cada tempo</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>A relativa fica no 6º grau: Dó, Ré, Mi, Fá, Sol, <strong>Lá</strong>. Lá menor e Dó maior dividem a armadura sem acidentes. Dó menor é a homônima, não a relativa.</p></div>
+        <div class="explicacao"><p>O número de cima conta os <strong>tempos do compasso</strong>: 3. A figura que vale um tempo vem no número de baixo.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="1" data-tipo="teclado">
-      <p class="rotulo">Exercício 2 · Toque a nota</p>
-      <div class="enunciado"><p>Mi4 está marcado. Clique no <strong>3º grau</strong> de Mi menor.</p></div>
-      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="1"></div></div>
-      <div class="acoes-teclado">
-        <button type="button" class="tocar pequeno" data-tocar-base="1"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
-      </div>
-      <div class="retorno" hidden>
-        <p class="veredito"></p>
-        <div class="explicacao"><p>Mi menor: Mi, Fá♯, <strong>Sol</strong>. A 3ª menor tem 3 semitons. Sol♯ formaria a 3ª maior, de Mi maior.</p></div>
-      </div>
-    </article>
-    <article class="exercicio" data-exercicio="2" data-tipo="percepcao">
-      <p class="rotulo">Exercício 3 · Percepção</p>
-      <div class="enunciado"><p>Ouça a tônica e o 3º grau juntos. A 3ª é maior ou menor?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-re-fa"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-re-fa" hidden>
-        <div class="partitura" data-partitura="exe-re-fa"></div>
-        <figcaption>Ré–Fá: 3ª menor, escala menor.</figcaption>
+    <article class="exercicio" data-exercicio="1" data-tipo="percepcao">
+      <p class="rotulo">Exercício 2 · Percepção</p>
+      <div class="enunciado"><p>Ouça e acompanhe o pulso. O tempo forte volta de quantos em quantos tempos?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-ternario"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-ternario" hidden>
+        <div class="partitura" data-partitura="exe-ternario"></div>
+        <figcaption>De três em três: compasso ternário.</figcaption>
       </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">3ª maior</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">3ª menor</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">binário (de 2 em 2)</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">ternário (de 3 em 3)</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">quaternário (de 4 em 4)</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Ré–Fá tem 3 semitons: <strong>3ª menor</strong>, o som escuro das escalas menores. A 3ª maior, de Ré–Fá♯, soa mais aberta.</p></div>
+        <div class="explicacao"><p>O som forte volta a cada <strong>três</strong> pulsos: forte, fraco, fraco. É um compasso ternário, como 3/4.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="3" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 4 · Múltipla escolha</p>
-      <div class="enunciado"><p>Qual é a fórmula da <strong>escala menor natural</strong>?</p></div>
+    <article class="exercicio" data-exercicio="2" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 3 · Múltipla escolha</p>
+      <div class="enunciado"><p>Olhe a partitura. Quantos tempos tem cada compasso?</p></div>
+      <figure class="exemplo" data-exemplo="exe-marcha">
+        <div class="exemplo-topo">
+          <p class="exemplo-titulo">Uma cantiga</p>
+          <button type="button" class="tocar" data-tocar="exe-marcha"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        </div>
+        <div class="partitura" data-partitura="exe-marcha"></div>
+      </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">T–S–T–T–S–T–T</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">T–T–S–T–T–T–S</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">T–S–T–T–T–S–T</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">2 tempos</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">4 tempos</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">3 tempos</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Em Lá menor: Lá–Si T, Si–Dó S, Dó–Ré T, Ré–Mi T, Mi–Fá S, Fá–Sol T, Sol–Lá T. A segunda opção é a da escala maior.</p></div>
+        <div class="explicacao"><p>A fórmula é <strong>2/4</strong>: dois tempos de semínima por compasso. Confira somando: semínima + duas colcheias = 2.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="3" data-tipo="percepcao">
+      <p class="rotulo">Exercício 4 · Percepção</p>
+      <div class="enunciado"><p>Ouça. O tempo forte volta de quantos em quantos tempos?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-binario"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-binario" hidden>
+        <div class="partitura" data-partitura="exe-binario"></div>
+        <figcaption>De dois em dois: compasso binário.</figcaption>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">binário (de 2 em 2)</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">ternário (de 3 em 3)</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">quaternário (de 4 em 4)</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Forte, fraco, forte, fraco: o acento volta a cada <strong>dois</strong> pulsos, como numa marcha.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="4" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 5 · Múltipla escolha</p>
-      <div class="enunciado"><p>Na escala de <strong>Lá menor harmônica</strong>, qual nota muda em relação à natural?</p></div>
+      <div class="enunciado"><p>Num compasso <strong>4/4</strong>, quais tempos têm apoio?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">Sol vira Sol♯</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">Fá vira Fá♯</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">Dó vira Dó♯</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">Si vira Si♭</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">O 1º (forte) e o 3º (meio-forte)</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">O 2º e o 4º</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Todos têm a mesma força</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>A harmônica sobe só o <strong>7º grau</strong>: Sol → Sol♯. O Fá♯ entra também na melódica, subindo; o Dó♯ deixaria a 3ª maior e a escala viraria Lá maior.</p></div>
+        <div class="explicacao"><p>No quaternário, o <strong>1º tempo é forte</strong> e o <strong>3º é meio-forte</strong>; o 2º e o 4º são fracos.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="5" data-tipo="teclado">
-      <p class="rotulo">Exercício 6 · Toque a nota</p>
-      <div class="enunciado"><p>Lá4 está marcado. Clique na <strong>sensível</strong> de Lá menor harmônica, acima de Lá.</p></div>
-      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="5"></div></div>
-      <div class="acoes-teclado">
-        <button type="button" class="tocar pequeno" data-tocar-base="5"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
-      </div>
+    <article class="exercicio" data-exercicio="5" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 6 · Múltipla escolha</p>
+      <div class="enunciado"><p>O que é <strong>anacruse</strong>?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">Nota que vem antes do primeiro tempo forte</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">O último compasso da música</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Uma pausa no tempo forte</button></li>
+      </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Na harmônica, o 7º grau sobe e vira sensível: <strong>Sol♯</strong>, um semitom abaixo de Lá. Sol natural é o 7º grau da menor natural.</p></div>
+        <div class="explicacao"><p>Anacruse é a nota (ou o grupo de notas) <strong>antes do primeiro tempo forte</strong>, como o "O" de <em>O cravo brigou com a rosa</em>.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="6" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 7 · Múltipla escolha</p>
-      <div class="enunciado"><p>Mi menor tem a mesma armadura de qual tonalidade maior?</p></div>
+      <div class="enunciado"><p>Quantas <strong>semínimas</strong> cabem num compasso <strong>3/4</strong>?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">Sol maior</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">Mi maior</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">Dó maior</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">Ré maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">3</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">4</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">6</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Mi menor é a relativa de <strong>Sol maior</strong> e divide com ela o Fá♯. Mi maior, a homônima, tem quatro sustenidos.</p></div>
+        <div class="explicacao"><p>O 3 de cima diz três tempos, e o 4 de baixo diz que a semínima vale um tempo: <strong>3 semínimas</strong>.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="7" data-tipo="percepcao">
       <p class="rotulo">Exercício 8 · Percepção</p>
-      <div class="enunciado"><p>Ouça a tônica e depois o 3º grau. A 3ª é maior ou menor?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-mi-sol-sustenido"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-mi-sol-sustenido" hidden>
-        <div class="partitura" data-partitura="exe-mi-sol-sustenido"></div>
-        <figcaption>Mi–Sol♯: 3ª maior, escala maior.</figcaption>
+      <div class="enunciado"><p>Ouça <em>O cravo brigou com a rosa</em>. Em qual sílaba cai o primeiro <strong>tempo forte</strong>?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-cravo"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-cravo" hidden>
+        <div class="partitura" data-partitura="exe-cravo"></div>
+        <figcaption>"O" é anacruse; o tempo forte cai em "cra".</figcaption>
       </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">3ª maior</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">3ª menor</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">"cra"</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">"O"</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">"vo"</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Mi–Sol♯ tem 4 semitons: <strong>3ª maior</strong>. Esta tônica é de Mi maior. Em Mi menor, a 3ª seria Mi–Sol.</p></div>
+        <div class="explicacao"><p>A música começa com o "O" em anacruse. O primeiro tempo forte é <strong>"cra"</strong>, onde começa o primeiro compasso completo.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="8" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 9 · Múltipla escolha</p>
-      <div class="enunciado"><p>A escala menor melódica, <strong>descendo</strong>, usa:</p></div>
+      <div class="enunciado"><p>Para que serve a <strong>barra de compasso</strong>?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">As notas da menor natural</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">O 6º e o 7º graus elevados</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">Só o 7º grau elevado</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Separar um compasso do outro</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Indicar o tempo forte com mais volume</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Mudar a clave</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Na descida, a melódica volta à <strong>menor natural</strong>: Lá, Sol, Fá, Mi, Ré, Dó, Si, Lá. O 6º e o 7º graus elevados são da subida; só o 7º elevado é a harmônica.</p></div>
+        <div class="explicacao"><p>A barra <strong>separa os compassos</strong>; logo depois dela vem o tempo forte. A barra final, mais grossa, fecha a música.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="9" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 10 · Múltipla escolha</p>
-      <div class="enunciado"><p>Dó maior e Dó menor são tonalidades:</p></div>
+      <div class="enunciado"><p>Um compasso <strong>4/4</strong> tem uma mínima e uma semínima. Quanto falta para completar?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">homônimas</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">relativas</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">vizinhas</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">1 tempo</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">2 tempos</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Nada</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Mesma tônica, modos diferentes: <strong>homônimas</strong>. Relativas dividem a armadura, como Dó maior e Lá menor; vizinhas ficam lado a lado no círculo de quintas.</p></div>
+        <div class="explicacao"><p>Mínima (2) + semínima (1) = 3. Num compasso de 4 tempos, falta <strong>1 tempo</strong>.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="10" data-tipo="teclado">
-      <p class="rotulo">Exercício 11 · Toque a nota</p>
-      <div class="enunciado"><p>Ré4 está marcado. Clique no <strong>6º grau</strong> de Ré menor natural.</p></div>
-      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="10"></div></div>
-      <div class="acoes-teclado">
-        <button type="button" class="tocar pequeno" data-tocar-base="10"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
-      </div>
+    <article class="exercicio" data-exercicio="10" data-tipo="percepcao">
+      <p class="rotulo">Exercício 11 · Percepção</p>
+      <div class="enunciado"><p>Ouça. O tempo forte volta de quantos em quantos tempos?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-quaternario"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-quaternario" hidden>
+        <div class="partitura" data-partitura="exe-quaternario"></div>
+        <figcaption>De quatro em quatro: compasso quaternário.</figcaption>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">binário (de 2 em 2)</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">ternário (de 3 em 3)</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">quaternário (de 4 em 4)</button></li>
+      </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Ré menor tem a armadura de Fá maior, com Si♭: Ré, Mi, Fá, Sol, Lá, <strong>Si♭</strong>. Si natural seria o 6º grau da forma melódica, subindo.</p></div>
+        <div class="explicacao"><p>O acento volta a cada <strong>quatro</strong> pulsos: compasso quaternário, como 4/4. Quem ouviu de 2 em 2 contou só metade do grupo.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="11" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 12 · Múltipla escolha</p>
-      <div class="enunciado"><p>Na menor harmônica, quantos semitons há entre o 6º e o 7º graus?</p></div>
+      <div class="enunciado"><p>O que é o <strong>pulso</strong> de uma música?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">3 semitons</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2 semitons</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">1 semitom</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">A batida constante que dá vontade de bater o pé</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">A nota mais aguda da melodia</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">O volume da música</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Em Lá menor harmônica: Fá→Fá♯→Sol→Sol♯, <strong>3 semitons</strong>, um tom e meio. É uma 2ª aumentada, o salto característico da escala.</p></div>
+        <div class="explicacao"><p>Pulso é a <strong>batida regular</strong> por trás da música. Altura e volume são outras propriedades do som.</p></div>
       </div>
     </article>
   </section>
 
   <section class="secao" id="resumo">
-    <h2><span class="num">10</span>Resumo</h2>
+    <h2><span class="num">8</span>Resumo</h2>
     <ul class="resumo">
-      <li>A <strong>menor natural</strong> segue T–S–T–T–S–T–T; a 3ª da tônica é <strong>menor</strong>.</li>
-      <li>A <strong>relativa menor</strong> fica no 6º grau da maior (ou uma 3ª menor abaixo) e usa a mesma armadura: Dó maior e Lá menor.</li>
-      <li>A <strong>harmônica</strong> sobe o 7º grau, que vira sensível; entre o 6º e o 7º fica um tom e meio.</li>
-      <li>A <strong>melódica</strong> sobe o 6º e o 7º graus na subida e volta à natural na descida.</li>
-      <li><strong>Homônimas</strong> têm a mesma tônica e armaduras diferentes: Dó maior e Dó menor.</li>
+      <li>O <strong>pulso</strong> é a batida constante da música; os pulsos se agrupam a partir do <strong>tempo forte</strong>.</li>
+      <li>Na fórmula, o número de cima conta os tempos, e o de baixo diz a figura que vale um tempo (4 = semínima).</li>
+      <li><strong>2/4</strong> binário (forte, fraco), <strong>3/4</strong> ternário (forte, fraco, fraco), <strong>4/4</strong> quaternário (forte, fraco, meio-forte, fraco).</li>
+      <li>As <strong>barras</strong> separam os compassos; o tempo forte vem logo depois de cada barra.</li>
+      <li><strong>Anacruse</strong> é a nota antes do primeiro tempo forte, como o "O" de <em>O cravo brigou com a rosa</em>.</li>
     </ul>
     <div class="para-o-chat">
       <p class="rotulo">Leve para o chat do professor</p>
-      <p id="pergunta-chat">Me peça para achar relativas menores e montar escalas menores nas três formas, uma de cada vez, e me dê uma dica antes de mostrar a resposta.</p>
+      <p id="pergunta-chat">Me cite cantigas e ritmos, um de cada vez, para eu dizer se o compasso é binário, ternário ou quaternário, e me dê uma dica antes de mostrar a resposta.</p>
       <button type="button" id="copiar-pergunta" class="secundario">Copiar pergunta</button>
     </div>
   </section>
 </main>
 
 <footer class="rodape">
-  <p>Aula I11 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
+  <p>Aula I05 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
 </footer>
 
-<script type="application/json" id="dados-aula">{"codigo": "I11", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura": {"id": "ex-abertura", "titulo": "Ouça antes de qualquer nome", "legenda": "As duas escalas usam só notas naturais. A segunda começa e termina em Lá. Qual delas soa mais escura?", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC/2 D/2 E/2 F/2 G/2 A/2 B/2 c/2 | A/2 B/2 c/2 d/2 e/2 f/2 g/2 a/2 |]\n", "andamento": 72, "eventos": [{"midis": [60], "duracao": 0.5}, {"midis": [62], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [69], "duracao": 0.5}, {"midis": [71], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [69], "duracao": 0.5}, {"midis": [71], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [74], "duracao": 0.5}, {"midis": [76], "duracao": 0.5}, {"midis": [77], "duracao": 0.5}, {"midis": [79], "duracao": 0.5}, {"midis": [81], "duracao": 0.5}]}, "ex-la-menor": {"id": "ex-la-menor", "titulo": "Escala de Lá menor natural", "legenda": "Ouça o semitom logo no começo, entre Si e Dó: ele faz a 3ª da escala ser menor.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nA B c d | e f g a |]\n", "andamento": 80, "eventos": [{"midis": [69], "duracao": 1.0}, {"midis": [71], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [74], "duracao": 1.0}, {"midis": [76], "duracao": 1.0}, {"midis": [77], "duracao": 1.0}, {"midis": [79], "duracao": 1.0}, {"midis": [81], "duracao": 1.0}]}, "ex-terca-menor": {"id": "ex-terca-menor", "titulo": "Tônica e 3º grau de Lá menor", "legenda": "Lá e Dó juntos: a 3ª menor, o som que dá cor à escala.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nA2 c2 | [Ac]4 |]\n", "andamento": 66, "eventos": [{"midis": [69], "duracao": 2.0}, {"midis": [72], "duracao": 2.0}, {"midis": [69, 72], "duracao": 4.0}]}, "ex-mi-menor": {"id": "ex-mi-menor", "titulo": "Escala de Mi menor natural, com armadura", "legenda": "A armadura de Sol maior, com Fá♯, mas a escala começa e termina em Mi.", "abc": "X:1\nM:4/4\nL:1/4\nK:G\nE F G A | B c d e |]\n", "andamento": 80, "eventos": [{"midis": [64], "duracao": 1.0}, {"midis": [66], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [71], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [74], "duracao": 1.0}, {"midis": [76], "duracao": 1.0}]}, "ex-la-harmonica": {"id": "ex-la-harmonica", "titulo": "Escala de Lá menor harmônica", "legenda": "Ouça o salto largo entre Fá e Sol♯ e como o Sol♯ empurra para o Lá do fim.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nA B c d | e f ^g a |]\n", "andamento": 80, "eventos": [{"midis": [69], "duracao": 1.0}, {"midis": [71], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [74], "duracao": 1.0}, {"midis": [76], "duracao": 1.0}, {"midis": [77], "duracao": 1.0}, {"midis": [80], "duracao": 1.0}, {"midis": [81], "duracao": 1.0}]}, "ex-la-melodica": {"id": "ex-la-melodica", "titulo": "Escala de Lá menor melódica, subindo e descendo", "legenda": "Na subida, Fá♯ e Sol♯ deixam o caminho liso até o Lá; na descida, voltam Sol e Fá naturais.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nA B c d | e ^f ^g a | g f e d | c B A2 |]\n", "andamento": 88, "eventos": [{"midis": [69], "duracao": 1.0}, {"midis": [71], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [74], "duracao": 1.0}, {"midis": [76], "duracao": 1.0}, {"midis": [78], "duracao": 1.0}, {"midis": [80], "duracao": 1.0}, {"midis": [81], "duracao": 1.0}, {"midis": [79], "duracao": 1.0}, {"midis": [77], "duracao": 1.0}, {"midis": [76], "duracao": 1.0}, {"midis": [74], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [71], "duracao": 1.0}, {"midis": [69], "duracao": 2.0}]}, "ex-do-maior-menor": {"id": "ex-do-maior-menor", "titulo": "Dó maior e depois Dó menor natural", "legenda": "A mesma tônica. Na segunda escala, o 3º, o 6º e o 7º graus descem um semitom.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC/2 D/2 E/2 F/2 G/2 A/2 B/2 c/2 | C/2 D/2 _E/2 F/2 G/2 _A/2 _B/2 c/2 |]\n", "andamento": 72, "eventos": [{"midis": [60], "duracao": 0.5}, {"midis": [62], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [69], "duracao": 0.5}, {"midis": [71], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [60], "duracao": 0.5}, {"midis": [62], "duracao": 0.5}, {"midis": [63], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [68], "duracao": 0.5}, {"midis": [70], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}]}, "exe-re-fa": {"id": "exe-re-fa", "titulo": "Tônica e 3º grau", "legenda": "Ré–Fá: 3ª menor, escala menor.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[DF]4 |]\n", "andamento": 66, "eventos": [{"midis": [62, 65], "duracao": 4.0}]}, "exe-mi-sol-sustenido": {"id": "exe-mi-sol-sustenido", "titulo": "Tônica e 3º grau", "legenda": "Mi–Sol♯: 3ª maior, escala maior.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nE2 ^G2 |]\n", "andamento": 66, "eventos": [{"midis": [64], "duracao": 2.0}, {"midis": [68], "duracao": 2.0}]}}, "teclados": {"t-1-3": {"de": 65, "ate": 83, "destaque": [{"midi": 69, "nome": "Lá"}, {"midi": 71, "nome": "Si"}, {"midi": 72, "nome": "Dó"}, {"midi": 74, "nome": "Ré"}, {"midi": 76, "nome": "Mi"}, {"midi": 77, "nome": "Fá"}, {"midi": 79, "nome": "Sol"}, {"midi": 81, "nome": "Lá"}]}}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "relativa-menor", "correta": 0}, {"indice": 1, "tipo": "teclado", "conceito": "escala-menor-natural", "base": 64, "alvo": 67, "alvo_nome": "Sol", "intervalo_nome": "3ª menor", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 64, "nome": "Mi"}]}}, {"indice": 2, "tipo": "percepcao", "conceito": "percepcao-maior-menor", "exemplo": "exe-re-fa", "correta": 1}, {"indice": 3, "tipo": "multipla_escolha", "conceito": "escala-menor-natural", "correta": 0}, {"indice": 4, "tipo": "multipla_escolha", "conceito": "escala-menor-harmonica", "correta": 0}, {"indice": 5, "tipo": "teclado", "conceito": "escala-menor-harmonica", "base": 69, "alvo": 80, "alvo_nome": "Sol♯", "intervalo_nome": "7ª maior", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 69, "nome": "Lá"}]}}, {"indice": 6, "tipo": "multipla_escolha", "conceito": "armadura-da-menor", "correta": 0}, {"indice": 7, "tipo": "percepcao", "conceito": "percepcao-maior-menor", "exemplo": "exe-mi-sol-sustenido", "correta": 0}, {"indice": 8, "tipo": "multipla_escolha", "conceito": "escala-menor-melodica", "correta": 0}, {"indice": 9, "tipo": "multipla_escolha", "conceito": "homonimas", "correta": 0}, {"indice": 10, "tipo": "teclado", "conceito": "escala-menor-natural", "base": 62, "alvo": 70, "alvo_nome": "Si♭", "intervalo_nome": "6ª menor", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 62, "nome": "Ré"}]}}, {"indice": 11, "tipo": "multipla_escolha", "conceito": "escala-menor-harmonica", "correta": 0}]}</script>
+<script type="application/json" id="dados-aula">{"codigo": "I05", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura": {"id": "ex-abertura", "titulo": "Ouça antes de qualquer nome", "legenda": "Bata o pé junto com os sons. Alguns soam mais fortes: de quantos em quantos?", "abc": "X:1\nM:3/4\nL:1/4\nK:C\n!>!c c c | !>!c c c | !>!c c c | !>!c c c |]\n", "andamento": 96, "eventos": [{"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}]}, "ex-binario": {"id": "ex-binario", "titulo": "De dois em dois", "legenda": "Forte, fraco, forte, fraco: como passos de uma marcha.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\n!>!c c | !>!c c | !>!c c | !>!c c |]\n", "andamento": 100, "eventos": [{"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}]}, "ex-ternario": {"id": "ex-ternario", "titulo": "De três em três", "legenda": "Forte, fraco, fraco: como uma valsa.", "abc": "X:1\nM:3/4\nL:1/4\nK:C\n!>!c c c | !>!c c c | !>!c c c | !>!c c c |]\n", "andamento": 100, "eventos": [{"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}]}, "ex-quaternario": {"id": "ex-quaternario", "titulo": "De quatro em quatro", "legenda": "O acento volta a cada quatro tempos. O terceiro tempo, meio-forte, tem um apoio mais leve que o primeiro.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n!>!c c c c | !>!c c c c | !>!c c c c |]\n", "andamento": 100, "eventos": [{"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}]}, "ex-marcha-soldado": {"id": "ex-marcha-soldado", "titulo": "Marcha soldado, em 2/4", "legenda": "Uma marcha: o tempo forte cai em \"Mar\" e em \"da\".", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nG G/2 E/2 | C C |]\nw:Mar-cha sol-da-do\n", "andamento": 88, "eventos": [{"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [60], "duracao": 1.0}, {"midis": [60], "duracao": 1.0}]}, "ex-brilha": {"id": "ex-brilha", "titulo": "Brilha, brilha, estrelinha, em 4/4", "legenda": "O tempo forte cai em \"Bri\" e em \"es\", a cada quatro tempos.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC C G G | A A G G |]\nw:Bri-lha, bri-lha, es-tre-li-nha\n", "andamento": 96, "eventos": [{"midis": [60], "duracao": 1.0}, {"midis": [60], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}]}, "ex-cravo": {"id": "ex-cravo", "titulo": "O cravo brigou com a rosa, em 3/4", "legenda": "\"O\" é a anacruse; o tempo forte cai em \"cra\" e depois em \"gou\".", "abc": "X:1\nM:3/4\nL:1/4\nK:C\nG | G E c | B2 z |]\nw:O cra-vo bri-gou\n", "andamento": 88, "eventos": [{"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [64], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [71], "duracao": 2.0}, {"midis": [], "duracao": 1.0}]}, "ex-confere": {"id": "ex-confere", "titulo": "Mínima e semínima em 3/4", "legenda": "Forte na mínima, fraco na semínima.", "abc": "X:1\nM:3/4\nL:1/4\nK:C\n!>!e2 e | !>!e2 e |]\n", "andamento": 96, "eventos": [{"midis": [76], "duracao": 2.0, "intensidade": 0.91}, {"midis": [76], "duracao": 1.0, "intensidade": 0.66}, {"midis": [76], "duracao": 2.0, "intensidade": 0.91}, {"midis": [76], "duracao": 1.0, "intensidade": 0.66}]}, "exe-ternario": {"id": "exe-ternario", "titulo": "Pulso", "legenda": "De três em três: compasso ternário.", "abc": "X:1\nM:3/4\nL:1/4\nK:C\n!>!c c c | !>!c c c | !>!c c c | !>!c c c |]\n", "andamento": 100, "eventos": [{"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}]}, "exe-marcha": {"id": "exe-marcha", "titulo": "Uma cantiga", "legenda": "Marcha soldado, em 2/4.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nG G/2 E/2 | C C |]\nw:Mar-cha sol-da-do\n", "andamento": 88, "eventos": [{"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [60], "duracao": 1.0}, {"midis": [60], "duracao": 1.0}]}, "exe-binario": {"id": "exe-binario", "titulo": "Pulso", "legenda": "De dois em dois: compasso binário.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\n!>!c c | !>!c c | !>!c c | !>!c c |]\n", "andamento": 100, "eventos": [{"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}]}, "exe-cravo": {"id": "exe-cravo", "titulo": "O cravo brigou com a rosa", "legenda": "\"O\" é anacruse; o tempo forte cai em \"cra\".", "abc": "X:1\nM:3/4\nL:1/4\nK:C\nG | G E c | B2 z |]\nw:O cra-vo bri-gou\n", "andamento": 88, "eventos": [{"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [64], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [71], "duracao": 2.0}, {"midis": [], "duracao": 1.0}]}, "exe-quaternario": {"id": "exe-quaternario", "titulo": "Pulso", "legenda": "De quatro em quatro: compasso quaternário.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n!>!c c c c | !>!c c c c | !>!c c c c |]\n", "andamento": 100, "eventos": [{"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}]}}, "teclados": {}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "formula-de-compasso", "correta": 0}, {"indice": 1, "tipo": "percepcao", "conceito": "binario-ternario-quaternario", "exemplo": "exe-ternario", "correta": 1}, {"indice": 2, "tipo": "multipla_escolha", "conceito": "formula-de-compasso", "exemplo": "exe-marcha", "correta": 0}, {"indice": 3, "tipo": "percepcao", "conceito": "binario-ternario-quaternario", "exemplo": "exe-binario", "correta": 0}, {"indice": 4, "tipo": "multipla_escolha", "conceito": "tempo-forte", "correta": 0}, {"indice": 5, "tipo": "multipla_escolha", "conceito": "anacruse", "correta": 0}, {"indice": 6, "tipo": "multipla_escolha", "conceito": "formula-de-compasso", "correta": 0}, {"indice": 7, "tipo": "percepcao", "conceito": "anacruse", "exemplo": "exe-cravo", "correta": 0}, {"indice": 8, "tipo": "multipla_escolha", "conceito": "barras-de-compasso", "correta": 0}, {"indice": 9, "tipo": "multipla_escolha", "conceito": "formula-de-compasso", "correta": 0}, {"indice": 10, "tipo": "percepcao", "conceito": "binario-ternario-quaternario", "exemplo": "exe-quaternario", "correta": 2}, {"indice": 11, "tipo": "multipla_escolha", "conceito": "pulso", "correta": 0}]}</script>
 <script src="https://cdn.jsdelivr.net/npm/abcjs@6.7.1/dist/abcjs-basic-min.js"></script>
 <script>
 /* Aula interativa: partitura (abcjs), som sintetizado no navegador (piano ou violão),

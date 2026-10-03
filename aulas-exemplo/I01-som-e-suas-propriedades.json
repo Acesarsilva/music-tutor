@@ -53,10 +53,14 @@
                 "duracao": 0.5
               },
               {
+                "notas": [],
+                "duracao": 1.5
+              },
+              {
                 "notas": [
                   "E4"
                 ],
-                "duracao": 3.5
+                "duracao": 2
               },
               {
                 "notas": [
