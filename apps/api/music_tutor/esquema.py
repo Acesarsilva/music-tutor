@@ -11,7 +11,7 @@ class Evento(BaseModel):
     notas: list[str] = Field(
         description='Notas tocadas juntas, em notação científica ASCII ("C4", "F#4", "Bb3"). Lista vazia = pausa.'
     )
-    duracao: float = Field(description="Duração em tempos, semínima = 1 (0.5 = colcheia, 2 = mínima).")
+    duracao: float = Field(description="Duração em tempos, semínima = 1 (0.5 = colcheia, 2 = mínima, 1/3 = colcheia de tercina).")
     silaba: Optional[str] = Field(
         None,
         description='Sílaba da letra cantada nesta nota, mostrada sob a partitura. Termine com "-" quando a palavra continua ("Ci-", "ran-", "da").',

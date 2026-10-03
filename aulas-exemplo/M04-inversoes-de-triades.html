@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Figuras rítmicas</title>
+<title>Inversões de tríades</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
@@ -520,7 +520,7 @@ tbody tr:last-child td { border-bottom: 0; }
 <body>
 <header class="barra">
   <div class="barra-interna">
-    <p class="barra-aula"><span class="selo">I04</span> Figuras rítmicas</p>
+    <p class="barra-aula"><span class="selo">M04</span> Inversões de tríades</p>
     <div class="controles">
       <div class="timbre" role="group" aria-label="Instrumento">
         <button type="button" id="timbre-piano" data-timbre="piano" aria-pressed="true">Piano</button>
@@ -537,34 +537,34 @@ tbody tr:last-child td { border-bottom: 0; }
 
 <main class="aula">
   <section class="abertura">
-    <p class="rotulo">Teoria musical · Iniciante</p>
-    <h1>Figuras rítmicas</h1>
-    <p class="chamada">Semibreve, mínima, semínima, colcheia e semicolcheia, as pausas, o ponto de aumento e a ligadura.</p>
+    <p class="rotulo">Teoria musical · Intermediário</p>
+    <h1>Inversões de tríades</h1>
+    <p class="chamada">Estado fundamental, 1ª e 2ª inversão, como achar a fundamental e as cifras com baixo (C/E).</p>
     <div class="ficha">
       <div>
         <h2 class="rotulo">Você vai aprender</h2>
         <ul>
-          <li>Reconhecer <strong>semibreve, mínima, semínima, colcheia e semicolcheia</strong></li>
-          <li>Reconhecer as <strong>pausas</strong></li>
-          <li>Usar o <strong>ponto de aumento</strong> e a <strong>ligadura</strong></li>
-          <li>Ler o ritmo de cantigas somando as figuras</li>
+          <li>Diferenciar <strong>fundamental</strong> de <strong>baixo</strong></li>
+          <li>Reconhecer <strong>estado fundamental, 1ª e 2ª inversão</strong></li>
+          <li>Achar a fundamental de uma tríade invertida</li>
+          <li>Ler e escrever cifras com <strong>baixo invertido</strong> (C/E, G/B)</li>
         </ul>
       </div>
       <div>
         <h2 class="rotulo">Antes, é bom saber</h2>
         <ul>
-          <li>Pauta e claves (I03)</li>
+          <li>Tríades (I12)</li>
+          <li>Cifragem popular (I13)</li>
         </ul>
       </div>
     </div>
     <nav class="indice" aria-label="Seções da aula">
       <ol>
         <li><a href="#secao-1">Antes de começar</a></li>
-        <li><a href="#secao-2">As cinco figuras</a></li>
-        <li><a href="#secao-3">Pausas</a></li>
-        <li><a href="#secao-4">Ponto de aumento e ligadura</a></li>
-        <li><a href="#secao-5">Passo a passo para somar um ritmo</a></li>
-        <li><a href="#secao-6">Cuidado com este erro</a></li>
+        <li><a href="#secao-2">Fundamental e baixo</a></li>
+        <li><a href="#secao-3">Cifra com baixo invertido</a></li>
+        <li><a href="#secao-4">Passo a passo: que acorde é Mi–Sol–Dó?</a></li>
+        <li><a href="#secao-5">Cuidado com este erro</a></li>
         <li><a href="#exercicios">Exercícios</a></li>
         <li><a href="#resumo">Resumo</a></li>
       </ol>
@@ -575,332 +575,356 @@ tbody tr:last-child td { border-bottom: 0; }
     <h2><span class="num">1</span>Antes de começar</h2>
     <div class="prosa"><p>Responda de cabeça, sem consultar nada. Depois confira.</p>
 <ol>
-<li>Que propriedade do som diz se ele é curto ou longo?</li>
-<li>Na clave de sol, que nota fica na 2ª linha?</li>
-<li>O silêncio faz parte do ritmo?</li>
+<li>Que notas formam o acorde C? E o Am?</li>
+<li>Numa tríade, que intervalo há entre a fundamental e a 3ª? E entre a fundamental e a 5ª?</li>
+<li>O que a cifra <strong>G</strong> indica?</li>
 </ol></div>
     <details class="resposta"><summary>Conferir as respostas</summary><div class="prosa"><ol>
-<li>A duração.</li>
-<li>Sol4.</li>
-<li>Sim: ele também tem duração e conta no ritmo.</li>
+<li>C: Dó, Mi, Sol. Am: Lá, Dó, Mi.</li>
+<li>Uma 3ª (maior ou menor) e uma 5ª (justa, na maior e na menor).</li>
+<li>Acorde de Sol maior: Sol, Si, Ré.</li>
 </ol></div></details>
     <figure class="exemplo" data-exemplo="ex-abertura">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Ouça antes de qualquer nome</p>
+        <p class="exemplo-titulo">As mesmas três notas</p>
         <button type="button" class="tocar" data-tocar="ex-abertura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
       <div class="partitura" data-partitura="ex-abertura"></div>
-      <figcaption>Os quatro compassos têm o mesmo tamanho. O que acontece com os sons de um compasso para o outro?</figcaption>
+      <figcaption>Os três acordes usam só Dó, Mi e Sol. O que muda de um para o outro? Qual soa mais firme, mais "em casa"?</figcaption>
     </figure>
-    <div class="prosa"><p>Em cada compasso, os sons ficam com <strong>metade</strong> da duração do compasso anterior, e cabem o dobro deles. Cada duração tem um desenho próprio, uma <strong>figura rítmica</strong>.</p>
-<p>Ao final, você vai ler o ritmo de uma cantiga somando as figuras.</p></div>
+    <div class="prosa"><p>Os três são o acorde <strong>C</strong>. O que muda é a nota que fica <strong>embaixo</strong>. Quando a fundamental Dó está no baixo, o acorde soa mais firme; com outra nota embaixo, ele está <strong>invertido</strong>.</p>
+<p>Ao final, você vai reconhecer a posição de qualquer tríade, achar a fundamental e ler cifras como C/E.</p></div>
   </section>
   <section class="secao" id="secao-2">
-    <h2><span class="num">2</span>As cinco figuras</h2>
-    <div class="prosa"><p>Contando a <strong>semínima</strong> como <strong>1 tempo</strong>, como nos compassos 2/4, 3/4 e 4/4, cada figura vale assim:</p></div>
+    <h2><span class="num">2</span>Fundamental e baixo</h2>
+    <div class="prosa"><p>Duas palavras que parecem iguais, mas não são:</p>
+<ul>
+<li>a <strong>fundamental</strong> é a nota que dá <strong>nome</strong> ao acorde (o Dó do C);</li>
+<li>o <strong>baixo</strong> é a nota <strong>mais grave</strong> que soa.</li>
+</ul>
+<p>Quando as duas coincidem, o acorde está em <strong>estado fundamental</strong>. Quando não, a nota do baixo diz qual é a inversão.</p></div>
     <figure class="tabela">
       <div class="tabela-rolagem">
         <table>
-          <thead><tr><th scope="col">Figura</th><th scope="col">Tempos</th><th scope="col">Equivale a</th></tr></thead>
+          <thead><tr><th scope="col">Posição</th><th scope="col">Nota no baixo</th><th scope="col">C</th><th scope="col">Am</th></tr></thead>
           <tbody>
-            <tr><td>semibreve</td><td>4</td><td>2 mínimas</td></tr>
-            <tr><td>mínima</td><td>2</td><td>2 semínimas</td></tr>
-            <tr><td>semínima</td><td>1</td><td>2 colcheias</td></tr>
-            <tr><td>colcheia</td><td>½</td><td>2 semicolcheias</td></tr>
-            <tr><td>semicolcheia</td><td>¼</td><td>–</td></tr>
+            <tr><td>Estado fundamental</td><td>fundamental</td><td>Dó–Mi–Sol</td><td>Lá–Dó–Mi</td></tr>
+            <tr><td>1ª inversão</td><td>3ª</td><td>Mi–Sol–Dó</td><td>Dó–Mi–Lá</td></tr>
+            <tr><td>2ª inversão</td><td>5ª</td><td>Sol–Dó–Mi</td><td>Mi–Lá–Dó</td></tr>
           </tbody>
         </table>
       </div>
-      <figcaption>As figuras e quanto cada uma dura. Cada figura vale metade da anterior.</figcaption>
+      <figcaption>As três posições de uma tríade.</figcaption>
     </figure>
-    <figure class="exemplo" data-exemplo="ex-semicolcheias">
+    <figure class="exemplo" data-exemplo="ex-fundamental">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Semínimas, colcheias e semicolcheias</p>
-        <button type="button" class="tocar" data-tocar="ex-semicolcheias"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">C em estado fundamental</p>
+        <button type="button" class="tocar" data-tocar="ex-fundamental"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-semicolcheias"></div>
-      <figcaption>Um tempo de cada vez: uma semínima, duas colcheias, quatro semicolcheias, e de novo a semínima.</figcaption>
+      <div class="partitura" data-partitura="ex-fundamental"></div>
+      <figcaption>Dó no baixo: a fundamental está embaixo.</figcaption>
     </figure>
-    <div class="prosa"><p>A cantiga <em>Marcha soldado</em> começa com semínima, duas colcheias e duas semínimas.</p></div>
-    <figure class="exemplo" data-exemplo="ex-marcha-soldado">
+    <figure class="exemplo" data-exemplo="ex-primeira">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Marcha soldado</p>
-        <button type="button" class="tocar" data-tocar="ex-marcha-soldado"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">C na 1ª inversão</p>
+        <button type="button" class="tocar" data-tocar="ex-primeira"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-marcha-soldado"></div>
-      <figcaption>"Mar" dura um tempo; "cha sol" dividem o tempo seguinte; "da" e "do" voltam a durar um tempo cada.</figcaption>
+      <div class="partitura" data-partitura="ex-primeira"></div>
+      <figcaption>Mi no baixo: a 3ª está embaixo. Soa um pouco mais leve.</figcaption>
     </figure>
-    <div class="prosa"><p>Em <em>Pirulito que bate bate</em>, "to que" são duas <strong>semicolcheias</strong>: cabem no tempo de uma colcheia.</p></div>
-    <figure class="exemplo" data-exemplo="ex-pirulito">
+    <figure class="exemplo" data-exemplo="ex-segunda">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Pirulito que bate bate</p>
-        <button type="button" class="tocar" data-tocar="ex-pirulito"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">C na 2ª inversão</p>
+        <button type="button" class="tocar" data-tocar="ex-segunda"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-pirulito"></div>
-      <figcaption>Ouça "li-to-que": as duas últimas sílabas passam rápido, em semicolcheias.</figcaption>
+      <div class="partitura" data-partitura="ex-segunda"></div>
+      <figcaption>Sol no baixo: a 5ª está embaixo. Soa como se ainda fosse andar.</figcaption>
     </figure>
+    <figure class="bloco-teclado">
+      <div class="teclado-rolagem"><div class="teclado" data-teclado="t-1-5"></div></div>
+      <figcaption>
+        <span>C na 1ª inversão: Mi embaixo, depois Sol e Dó. No braço, Mi na corda mais grave tocada.</span>
+        <span class="acoes-instrumento">
+          <button type="button" class="tocar pequeno" data-tocar-teclado="t-1-5"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir as notas</span></button>
+          <button type="button" class="secundario" data-montar-acorde="t-1-5" aria-pressed="false">Montar acorde</button>
+          <button type="button" class="tocar pequeno" data-tocar-acorde="t-1-5" hidden><span class="icone" aria-hidden="true"></span><span class="texto">Tocar juntas</span></button>
+        </span>
+      </figcaption>
+    </figure>
+    <aside class="dica"><p class="rotulo">Dica</p><p>Na harmonia tradicional, a 1ª inversão se chama <strong>acorde de sexta</strong> e a 2ª, <strong>acorde de quarta e sexta</strong>, pelos intervalos que as notas formam com o baixo.</p></aside>
   </section>
   <section class="secao" id="secao-3">
-    <h2><span class="num">3</span>Pausas</h2>
-    <div class="prosa"><p>Cada figura tem uma <strong>pausa</strong> do mesmo valor, um silêncio medido: pausa de semibreve (4 tempos), de mínima (2), de semínima (1), de colcheia (½) e de semicolcheia (¼).</p></div>
-    <figure class="exemplo" data-exemplo="ex-pausas">
+    <h2><span class="num">3</span>Cifra com baixo invertido</h2>
+    <div class="prosa"><p>Na cifra popular, a barra indica o baixo: <strong>C/E</strong> é o acorde C com <strong>Mi no baixo</strong>. Antes da barra vem o acorde; depois, a nota mais grave.</p>
+<ul>
+<li><strong>C/E</strong>: C na 1ª inversão (Mi é a 3ª de Dó).</li>
+<li><strong>C/G</strong>: C na 2ª inversão (Sol é a 5ª de Dó).</li>
+<li><strong>Am/C</strong>: Am na 1ª inversão (Dó é a 3ª de Lá).</li>
+</ul></div>
+    <div class="prosa"><p>Uma das razões para inverter é fazer o baixo andar por notas vizinhas. Ouça a linha <strong>C, G/B, Am, C/G, F</strong>: o baixo desce Dó, Si, Lá, Sol, Fá, um grau por vez.</p></div>
+    <figure class="exemplo" data-exemplo="ex-baixo-descendo">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Sons e pausas</p>
-        <button type="button" class="tocar" data-tocar="ex-pausas"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">C, G/B, Am, C/G, F</p>
+        <button type="button" class="tocar" data-tocar="ex-baixo-descendo"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-pausas"></div>
-      <figcaption>Som, silêncio, som, silêncio: as pausas têm a duração exata das figuras.</figcaption>
+      <div class="partitura" data-partitura="ex-baixo-descendo"></div>
+      <figcaption>Siga só a nota mais grave: ela desce a escala, nota por nota.</figcaption>
     </figure>
   </section>
   <section class="secao" id="secao-4">
-    <h2><span class="num">4</span>Ponto de aumento e ligadura</h2>
-    <div class="prosa"><p>O <strong>ponto de aumento</strong>, depois da nota, soma <strong>metade</strong> do valor dela:</p>
-<ul>
-<li>semínima pontuada: 1 + ½ = <strong>1½ tempo</strong>;</li>
-<li>mínima pontuada: 2 + 1 = <strong>3 tempos</strong>.</li>
-</ul></div>
-    <figure class="exemplo" data-exemplo="ex-ponto">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">Semínima pontuada e colcheia</p>
-        <button type="button" class="tocar" data-tocar="ex-ponto"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      </div>
-      <div class="partitura" data-partitura="ex-ponto"></div>
-      <figcaption>O som longo e o curto, repetidos: longo-curto, longo-curto.</figcaption>
-    </figure>
-    <div class="prosa"><p>A <strong>ligadura</strong> é uma curva que une duas notas <strong>da mesma altura</strong>: elas soam como um som só, com a soma das durações. Ela serve, por exemplo, para atravessar a barra de compasso.</p></div>
-    <figure class="exemplo" data-exemplo="ex-ligadura">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">Ligadura entre compassos</p>
-        <button type="button" class="tocar" data-tocar="ex-ligadura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      </div>
-      <div class="partitura" data-partitura="ex-ligadura"></div>
-      <figcaption>O último Mi do primeiro compasso continua no segundo: um som só, de três tempos.</figcaption>
-    </figure>
+    <h2><span class="num">4</span>Passo a passo: que acorde é Mi–Sol–Dó?</h2>
+    <div class="prosa"><p>Veja o caminho completo, com o motivo de cada passo.</p>
+<ol>
+<li><strong>Empilhe em 3ªs</strong>: reorganize as notas até cada uma ficar uma 3ª acima da outra: Dó–Mi–Sol.</li>
+<li><strong>Ache a fundamental</strong>: é a nota de baixo da pilha, <strong>Dó</strong>. Dó–Mi é 3ª maior: acorde <strong>C</strong>.</li>
+<li><strong>Olhe o baixo real</strong>: o mais grave é Mi, a 3ª. É a <strong>1ª inversão</strong>, cifra <strong>C/E</strong>.</li>
+</ol></div>
+    <div class="prosa"><p><strong>Pense antes de abrir a resposta:</strong> por que não basta olhar a nota mais grave para saber o nome do acorde?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Porque a nota mais grave só é a fundamental no estado fundamental. Numa inversão, o baixo é a 3ª ou a 5ª, e o nome vem da fundamental, que você acha empilhando em 3ªs.</p></div></details>
+    <div class="prosa"><p>Agora o último passo é seu. <strong>Lá–Ré–Fá♯</strong>: em 3ªs, Ré–Fá♯–Lá, acorde <strong>D</strong>. O baixo é Lá. Qual é a inversão e a cifra?</p>
+<p>E agora dois passos são seus: <strong>Si–Ré–Sol</strong>. Empilhe e ache a fundamental.</p></div>
+    <details class="resposta"><summary>Ver as respostas</summary><div class="prosa"><p>Lá–Ré–Fá♯: Lá é a 5ª de Ré, <strong>2ª inversão</strong>, cifra <strong>D/A</strong>.</p>
+<p>Si–Ré–Sol: em 3ªs, Sol–Si–Ré, acorde <strong>G</strong>. O baixo Si é a 3ª: <strong>1ª inversão</strong>, <strong>G/B</strong>.</p></div></details>
   </section>
   <section class="secao" id="secao-5">
-    <h2><span class="num">5</span>Passo a passo para somar um ritmo</h2>
-    <div class="prosa"><p>Veja como somar os tempos de <strong>mínima + semínima + duas colcheias</strong>, com o motivo de cada passo.</p>
-<ol>
-<li><strong>Dê o valor de cada figura</strong>: mínima 2, semínima 1, colcheias ½ e ½.</li>
-<li><strong>Junte as metades</strong>: duas colcheias valem um tempo, como uma semínima.</li>
-<li><strong>Some</strong>: 2 + 1 + 1 = <strong>4 tempos</strong>.</li>
-</ol></div>
-    <figure class="exemplo" data-exemplo="ex-soma">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">Mínima, semínima e duas colcheias</p>
-        <button type="button" class="tocar" data-tocar="ex-soma"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      </div>
-      <div class="partitura" data-partitura="ex-soma"></div>
-      <figcaption>Quatro tempos ao todo.</figcaption>
-    </figure>
-    <div class="prosa"><p><strong>Pense antes de abrir a resposta:</strong> por que juntar as colcheias aos pares antes de somar?</p></div>
-    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Porque duas colcheias ocupam exatamente um tempo. Pensar em pares evita somar frações e mostra onde cada tempo começa.</p></div></details>
-    <div class="prosa"><p>Agora o último passo é seu. <strong>Semínima pontuada + colcheia + mínima</strong>: 1½ + ½ + 2. Quanto dá?</p>
-<p>E agora dois passos são seus: <strong>semibreve + mínima pontuada + semínima</strong>.</p></div>
-    <details class="resposta"><summary>Ver as respostas</summary><div class="prosa"><p>1½ + ½ + 2 = <strong>4 tempos</strong>. O ponto da semínima e a colcheia completam um tempo juntos.</p>
-<p>4 + 3 + 1 = <strong>8 tempos</strong>.</p></div></details>
-  </section>
-  <section class="secao" id="secao-6">
-    <h2><span class="num">6</span>Cuidado com este erro</h2>
-    <div class="prosa"><p>Uma colega calculou:</p>
-<p>&gt; "A mínima vale 2 tempos. O ponto soma mais 1, então a mínima pontuada vale 3. Do mesmo jeito, a semínima pontuada vale 1 + 1 = 2 tempos."</p>
-<p>Qual passo está errado, por que e qual é o valor certo?</p></div>
-    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>O ponto não soma sempre 1 tempo: ele soma <strong>metade do valor da nota</strong>. Na mínima, metade é 1, por isso deu certo. Na semínima, metade é ½: a semínima pontuada vale <strong>1½ tempo</strong>.</p></div></details>
+    <h2><span class="num">5</span>Cuidado com este erro</h2>
+    <div class="prosa"><p>Um colega leu o acorde Mi–Sol–Dó (de baixo para cima) assim:</p>
+<p>&gt; "A nota mais grave é Mi, e Mi–Sol é uma 3ª menor. Então é o acorde Em."</p>
+<p>Onde está o erro, por que está errado e qual é o acorde?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Ele tomou o <strong>baixo</strong> pela <strong>fundamental</strong>. Em seria Mi–Sol–<strong>Si</strong>; aqui a terceira nota é Dó. Empilhando em 3ªs, Dó–Mi–Sol: é <strong>C</strong> com Mi no baixo, <strong>C/E</strong>.</p></div></details>
   </section>
 
   <section class="secao exercicios" id="exercicios">
-    <h2><span class="num">7</span>Exercícios</h2>
+    <h2><span class="num">6</span>Exercícios</h2>
     <p class="placar" id="placar" aria-live="polite">Responda para ver seus acertos.</p>
     <article class="exercicio" data-exercicio="0" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 1 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quantos tempos vale a <strong>mínima</strong>?</p></div>
-      <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">2 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">1 tempo</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">4 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">½ tempo</button></li>
-      </ol>
-      <div class="retorno" hidden>
-        <p class="veredito"></p>
-        <div class="explicacao"><p>A mínima vale <strong>2 tempos</strong>, metade da semibreve (4) e o dobro da semínima (1).</p></div>
-      </div>
-    </article>
-    <article class="exercicio" data-exercicio="1" data-tipo="percepcao">
-      <p class="rotulo">Exercício 2 · Percepção</p>
-      <div class="enunciado"><p>Ouça. As notas do segundo grupo duram metade ou o dobro das do primeiro?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-metade"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-metade" hidden>
-        <div class="partitura" data-partitura="exe-metade"></div>
-        <figcaption>Semínimas, depois colcheias: metade da duração.</figcaption>
-      </figure>
-      <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">metade</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">o dobro</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">o mesmo tempo</button></li>
-      </ol>
-      <div class="retorno" hidden>
-        <p class="veredito"></p>
-        <div class="explicacao"><p>No segundo grupo cabem oito notas no espaço de quatro: cada uma dura <strong>metade</strong>. São colcheias depois de semínimas.</p></div>
-      </div>
-    </article>
-    <article class="exercicio" data-exercicio="2" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 3 · Múltipla escolha</p>
-      <div class="enunciado"><p>Olhe a partitura e ouça. Quantos tempos somam as notas?</p></div>
-      <figure class="exemplo" data-exemplo="exe-soma">
+      <div class="enunciado"><p>Que acorde é este, e em que posição?</p></div>
+      <figure class="exemplo" data-exemplo="exe-c-e">
         <div class="exemplo-topo">
-          <p class="exemplo-titulo">Um compasso</p>
-          <button type="button" class="tocar" data-tocar="exe-soma"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+          <p class="exemplo-titulo">Acorde</p>
+          <button type="button" class="tocar" data-tocar="exe-c-e"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
         </div>
-        <div class="partitura" data-partitura="exe-soma"></div>
+        <div class="partitura" data-partitura="exe-c-e"></div>
       </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">4 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">3 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">5 tempos</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">C/E, 1ª inversão</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Em, estado fundamental</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">C, estado fundamental</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">C/G, 2ª inversão</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Mínima (2) + semínima (1) + duas colcheias (½ + ½) = <strong>4 tempos</strong>. Quem soma 5 contou cada colcheia como um tempo.</p></div>
+        <div class="explicacao"><p>Empilhando em 3ªs, Dó–Mi–Sol: acorde C. O baixo é Mi, a 3ª: <strong>1ª inversão, C/E</strong>. Quem marcou Em tomou o baixo pela fundamental.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="1" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 2 · Múltipla escolha</p>
+      <div class="enunciado"><p>Na <strong>2ª inversão</strong>, que nota da tríade fica no baixo?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">A 5ª</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">A 3ª</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">A fundamental</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>1ª inversão, a 3ª no baixo; <strong>2ª inversão, a 5ª</strong>. A fundamental no baixo é o estado fundamental.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="2" data-tipo="teclado">
+      <p class="rotulo">Exercício 3 · Toque a nota</p>
+      <div class="enunciado"><p>Dó4 está marcado: é a fundamental de C. Clique na nota que vai no <strong>baixo de C/E</strong>, uma 3ª maior acima.</p></div>
+      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="2"></div></div>
+      <div class="acoes-teclado">
+        <button type="button" class="tocar pequeno" data-tocar-base="2"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
+      </div>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>C/E tem <strong>Mi</strong> no baixo: a 3ª do acorde, 4 semitons acima de Dó.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="3" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 4 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quantas <strong>semicolcheias</strong> cabem numa semínima?</p></div>
+      <div class="enunciado"><p>O que significa a cifra <strong>G/B</strong>?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">4</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">8</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Sol maior com Si no baixo</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Sol maior e Si maior juntos</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Si maior com Sol no baixo</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Sol maior com 7ª</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Semínima = 2 colcheias = <strong>4 semicolcheias</strong>. Se marcou 2, pensou nas colcheias.</p></div>
+        <div class="explicacao"><p>Antes da barra vem o acorde (G); depois, a nota do baixo (Si). Si é a 3ª de Sol: <strong>1ª inversão</strong>.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="4" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 5 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quanto vale a <strong>semínima pontuada</strong>?</p></div>
-      <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">1 tempo e meio</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">1 tempo</button></li>
-      </ol>
-      <div class="retorno" hidden>
-        <p class="veredito"></p>
-        <div class="explicacao"><p>O ponto soma metade do valor: 1 + ½ = <strong>1½ tempo</strong>. Quem marca 2 somou um tempo inteiro.</p></div>
-      </div>
-    </article>
-    <article class="exercicio" data-exercicio="5" data-tipo="percepcao">
-      <p class="rotulo">Exercício 6 · Percepção</p>
-      <div class="enunciado"><p>Ouça o começo de <em>Marcha soldado</em>. Que figuras formam "Mar-cha sol-"?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-marcha"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-marcha" hidden>
-        <div class="partitura" data-partitura="exe-marcha"></div>
-        <figcaption>Semínima, colcheia, colcheia.</figcaption>
+    <article class="exercicio" data-exercicio="4" data-tipo="percepcao">
+      <p class="rotulo">Exercício 5 · Percepção</p>
+      <div class="enunciado"><p>Ouça e siga a nota mais grave. O que ela faz?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-baixo"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-baixo" hidden>
+        <div class="partitura" data-partitura="exe-baixo"></div>
+        <figcaption>C, G/B, Am, C/G, F: o baixo desce Dó, Si, Lá, Sol, Fá.</figcaption>
       </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">semínima, colcheia, colcheia</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">três semínimas</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">colcheia, colcheia, semínima</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Desce nota a nota</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Sobe nota a nota</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Fica sempre na mesma nota</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>"Mar" dura um tempo inteiro, e "cha sol" dividem o tempo seguinte: <strong>semínima e duas colcheias</strong>.</p></div>
+        <div class="explicacao"><p>O baixo <strong>desce</strong> a escala: Dó, Si, Lá, Sol, Fá. As inversões G/B e C/G existem justamente para ele poder andar assim.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="5" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 6 · Múltipla escolha</p>
+      <div class="enunciado"><p>Este acorde de Sol maior está em que posição?</p></div>
+      <figure class="exemplo" data-exemplo="exe-g-d">
+        <div class="exemplo-topo">
+          <p class="exemplo-titulo">Acorde de Sol maior</p>
+          <button type="button" class="tocar" data-tocar="exe-g-d"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        </div>
+        <div class="partitura" data-partitura="exe-g-d"></div>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">2ª inversão</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">1ª inversão</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Estado fundamental</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Ré–Sol–Si: o baixo Ré é a 5ª de Sol, então é a <strong>2ª inversão</strong>, G/D.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="6" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 7 · Múltipla escolha</p>
-      <div class="enunciado"><p>A <strong>pausa de semínima</strong> vale:</p></div>
+      <div class="enunciado"><p>Qual é a cifra de <strong>Mi–Lá–Dó♯</strong> (Mi no baixo)?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">1 tempo de silêncio</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">meio tempo de silêncio</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">2 tempos de silêncio</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">A/E</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">E</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">C♯m</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">A/C♯</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Cada pausa tem o valor da figura do mesmo nome: <strong>1 tempo</strong>. Meio tempo é a pausa de colcheia.</p></div>
+        <div class="explicacao"><p>Em 3ªs, Lá–Dó♯–Mi: acorde <strong>A</strong>. O baixo Mi é a 5ª: <strong>A/E</strong>. A/C♯ teria Dó♯ no baixo.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="7" data-tipo="percepcao">
-      <p class="rotulo">Exercício 8 · Percepção</p>
-      <div class="enunciado"><p>Ouça. Você escuta dois sons ou um som só?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-ligadura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-ligadura" hidden>
-        <div class="partitura" data-partitura="exe-ligadura"></div>
-        <figcaption>Uma ligadura: um som só, de quatro tempos.</figcaption>
-      </figure>
-      <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">um som só</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">dois sons</button></li>
-      </ol>
+    <article class="exercicio" data-exercicio="7" data-tipo="teclado">
+      <p class="rotulo">Exercício 8 · Toque a nota</p>
+      <div class="enunciado"><p>Lá3 está marcado: é a fundamental de Am. Clique na nota que vai no <strong>baixo de Am/E</strong>, uma 5ª justa acima.</p></div>
+      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="7"></div></div>
+      <div class="acoes-teclado">
+        <button type="button" class="tocar pequeno" data-tocar-base="7"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
+      </div>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>As duas notas estão ligadas: soam como <strong>um som só</strong>, com 2 + 2 = 4 tempos.</p></div>
+        <div class="explicacao"><p>Am/E tem <strong>Mi</strong> no baixo: a 5ª de Lá. É a 2ª inversão de Am.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="8" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 9 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quantas <strong>colcheias</strong> valem uma mínima?</p></div>
+      <div class="enunciado"><p>Na 1ª inversão de <strong>C</strong> (Mi–Sol–Dó), que intervalos as notas de cima formam com o baixo?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">4</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">8</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">3ª menor e 6ª menor</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">3ª maior e 5ª justa</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">4ª justa e 6ª maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">3ª maior e 6ª maior</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Mínima = 2 semínimas = <strong>4 colcheias</strong>. Se marcou 8, contou semicolcheias.</p></div>
+        <div class="explicacao"><p>Mi–Sol é 3ª menor (3 semitons) e Mi–Dó é 6ª menor (8 semitons). 3ª maior e 5ª justa são do estado fundamental; 4ª e 6ª, da 2ª inversão.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="9" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 10 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quanto vale a <strong>mínima pontuada</strong>?</p></div>
+      <div class="enunciado"><p>Quais notas formam <strong>Am/C</strong>, de baixo para cima?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">3 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2 tempos e meio</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">4 tempos</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Dó, Mi, Lá</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Lá, Dó, Mi</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Dó, Mi, Sol</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Dó, Mi♭, Lá</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>O ponto soma metade da mínima: 2 + 1 = <strong>3 tempos</strong>.</p></div>
+        <div class="explicacao"><p>Am é Lá–Dó–Mi; com Dó no baixo, fica <strong>Dó–Mi–Lá</strong>. Lá, Dó, Mi seria o estado fundamental; Dó, Mi, Sol é o acorde C.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="10" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 11 · Múltipla escolha</p>
-      <div class="enunciado"><p>Qual figura vale <strong>4 tempos</strong>?</p></div>
+    <article class="exercicio" data-exercicio="10" data-tipo="percepcao">
+      <p class="rotulo">Exercício 11 · Percepção</p>
+      <div class="enunciado"><p>Ouça dois acordes de C. Em qual deles a 5ª (Sol) está no baixo?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-posicoes"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-posicoes" hidden>
+        <div class="partitura" data-partitura="exe-posicoes"></div>
+        <figcaption>O primeiro está em estado fundamental; o segundo, na 2ª inversão.</figcaption>
+      </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">semibreve</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">mínima</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">semínima</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">colcheia</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">No segundo</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">No primeiro</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>A <strong>semibreve</strong> vale 4 tempos, a maior das cinco. A mínima vale 2.</p></div>
+        <div class="explicacao"><p>O segundo começa mais grave, em Sol: <strong>2ª inversão</strong>, C/G. No primeiro, o baixo é o próprio Dó.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="11" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 12 · Múltipla escolha</p>
+      <div class="enunciado"><p>Num acorde em <strong>estado fundamental</strong>, qual nota fica no baixo?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">A fundamental</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">A 3ª</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">A 5ª</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">A nota mais aguda da melodia</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Estado fundamental quer dizer <strong>fundamental no baixo</strong>, como Dó–Mi–Sol para C.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="12" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 13 · Múltipla escolha</p>
+      <div class="enunciado"><p>Que acorde é este?</p></div>
+      <figure class="exemplo" data-exemplo="exe-g-d2">
+        <div class="exemplo-topo">
+          <p class="exemplo-titulo">Acorde</p>
+          <button type="button" class="tocar" data-tocar="exe-g-d2"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        </div>
+        <div class="partitura" data-partitura="exe-g-d2"></div>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">G/D</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Bm/D</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">D</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">G/B</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Em 3ªs, Sol–Si–Ré: acorde G. O baixo é Ré, a 5ª: <strong>G/D</strong>. G/B teria Si no baixo; D seria Ré–Fá♯–Lá.</p></div>
       </div>
     </article>
   </section>
 
   <section class="secao" id="resumo">
-    <h2><span class="num">8</span>Resumo</h2>
+    <h2><span class="num">7</span>Resumo</h2>
     <ul class="resumo">
-      <li>Com a semínima valendo 1 tempo: semibreve 4, mínima 2, semínima 1, colcheia ½, semicolcheia ¼.</li>
-      <li>Cada figura vale <strong>metade</strong> da anterior.</li>
-      <li>Cada figura tem uma <strong>pausa</strong> com o mesmo valor.</li>
-      <li>O <strong>ponto</strong> soma metade do valor da nota: semínima pontuada vale 1½.</li>
-      <li>A <strong>ligadura</strong> une duas notas da mesma altura num som só.</li>
+      <li>A <strong>fundamental</strong> dá nome ao acorde; o <strong>baixo</strong> é a nota mais grave.</li>
+      <li>Fundamental no baixo: <strong>estado fundamental</strong>. 3ª no baixo: <strong>1ª inversão</strong>. 5ª no baixo: <strong>2ª inversão</strong>.</li>
+      <li>Para achar a fundamental, <strong>empilhe as notas em 3ªs</strong>; a de baixo da pilha dá o nome.</li>
+      <li>Na cifra, a barra indica o baixo: <strong>C/E</strong> é C com Mi no baixo.</li>
+      <li>Inversões deixam o baixo andar por graus vizinhos, como em C, G/B, Am, C/G, F.</li>
     </ul>
     <div class="para-o-chat">
       <p class="rotulo">Leve para o chat do professor</p>
-      <p id="pergunta-chat">Me dê ritmos curtos, um de cada vez, para eu somar os tempos, e me dê uma dica antes de mostrar a resposta.</p>
+      <p id="pergunta-chat">Me dê tríades escritas de baixo para cima, uma de cada vez, para eu dizer a cifra com baixo e a inversão, e me corrija se eu confundir baixo com fundamental.</p>
       <button type="button" id="copiar-pergunta" class="secundario">Copiar pergunta</button>
     </div>
   </section>
 </main>
 
 <footer class="rodape">
-  <p>Aula I04 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
+  <p>Aula M04 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
 </footer>
 
-<script type="application/json" id="dados-aula">{"codigo": "I04", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura": {"id": "ex-abertura", "titulo": "Ouça antes de qualquer nome", "legenda": "Os quatro compassos têm o mesmo tamanho. O que acontece com os sons de um compasso para o outro?", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nG4 | G2 G2 | G G G G | G/2G/2 G/2G/2 G/2G/2 G/2G/2 |]\n", "andamento": 72, "eventos": [{"midis": [67], "duracao": 4.0}, {"midis": [67], "duracao": 2.0}, {"midis": [67], "duracao": 2.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}]}, "ex-semicolcheias": {"id": "ex-semicolcheias", "titulo": "Semínimas, colcheias e semicolcheias", "legenda": "Um tempo de cada vez: uma semínima, duas colcheias, quatro semicolcheias, e de novo a semínima.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nc c/2c/2 c/4c/4c/4c/4 c |]\n", "andamento": 72, "eventos": [{"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 1.0}]}, "ex-marcha-soldado": {"id": "ex-marcha-soldado", "titulo": "Marcha soldado", "legenda": "\"Mar\" dura um tempo; \"cha sol\" dividem o tempo seguinte; \"da\" e \"do\" voltam a durar um tempo cada.", "abc": "X:1\nM:2/4\nL:1/4\n%%stretchlast 1\nK:C\nG G/2E/2 | C C |]\nw:Mar-cha sol-da-do\n", "andamento": 88, "eventos": [{"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [60], "duracao": 1.0}, {"midis": [60], "duracao": 1.0}]}, "ex-pirulito": {"id": "ex-pirulito", "titulo": "Pirulito que bate bate", "legenda": "Ouça \"li-to-que\": as duas últimas sílabas passam rápido, em semicolcheias.", "abc": "X:1\nM:2/4\nL:1/4\n%%stretchlast 1\nK:C\nE/2F/2 | G/2G/4G/4 F/2E/2 |]\nw:Pi-ru-li-to que ba-te\n", "andamento": 88, "eventos": [{"midis": [64], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.25}, {"midis": [67], "duracao": 0.25}, {"midis": [65], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}]}, "ex-pausas": {"id": "ex-pausas", "titulo": "Sons e pausas", "legenda": "Som, silêncio, som, silêncio: as pausas têm a duração exata das figuras.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nd z d2 | z2 d/2 z/2 d |]\n", "andamento": 72, "eventos": [{"midis": [74], "duracao": 1.0}, {"midis": [], "duracao": 1.0}, {"midis": [74], "duracao": 2.0}, {"midis": [], "duracao": 2.0}, {"midis": [74], "duracao": 0.5}, {"midis": [], "duracao": 0.5}, {"midis": [74], "duracao": 1.0}]}, "ex-ponto": {"id": "ex-ponto", "titulo": "Semínima pontuada e colcheia", "legenda": "O som longo e o curto, repetidos: longo-curto, longo-curto.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nA3/2 A/2 A3/2 A/2 | A3 z |]\n", "andamento": 72, "eventos": [{"midis": [69], "duracao": 1.5}, {"midis": [69], "duracao": 0.5}, {"midis": [69], "duracao": 1.5}, {"midis": [69], "duracao": 0.5}, {"midis": [69], "duracao": 3.0}, {"midis": [], "duracao": 1.0}]}, "ex-ligadura": {"id": "ex-ligadura", "titulo": "Ligadura entre compassos", "legenda": "O último Mi do primeiro compasso continua no segundo: um som só, de três tempos.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nc c e2- | e c c2 |]\n", "andamento": 72, "eventos": [{"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [76], "duracao": 2.0, "ligada": true}, {"midis": [76], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 2.0}]}, "ex-soma": {"id": "ex-soma", "titulo": "Mínima, semínima e duas colcheias", "legenda": "Quatro tempos ao todo.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nF2 F F/2F/2 |]\n", "andamento": 72, "eventos": [{"midis": [65], "duracao": 2.0}, {"midis": [65], "duracao": 1.0}, {"midis": [65], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}]}, "exe-metade": {"id": "exe-metade", "titulo": "Dois grupos", "legenda": "Semínimas, depois colcheias: metade da duração.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nc c c c | c/2c/2 c/2c/2 c/2c/2 c/2c/2 |]\n", "andamento": 72, "eventos": [{"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}]}, "exe-soma": {"id": "exe-soma", "titulo": "Um compasso", "legenda": "Mínima, semínima e duas colcheias.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nG2 G G/2G/2 |]\n", "andamento": 72, "eventos": [{"midis": [67], "duracao": 2.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}]}, "exe-marcha": {"id": "exe-marcha", "titulo": "Marcha soldado", "legenda": "Semínima, colcheia, colcheia.", "abc": "X:1\nM:2/4\nL:1/4\n%%stretchlast 1\nK:C\nG G/2E/2 | C C |]\nw:Mar-cha sol-da-do\n", "andamento": 88, "eventos": [{"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [60], "duracao": 1.0}, {"midis": [60], "duracao": 1.0}]}, "exe-ligadura": {"id": "exe-ligadura", "titulo": "Duas notas escritas", "legenda": "Uma ligadura: um som só, de quatro tempos.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nd2- d2 |]\n", "andamento": 72, "eventos": [{"midis": [74], "duracao": 2.0, "ligada": true}, {"midis": [74], "duracao": 2.0}]}}, "teclados": {}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "valores-das-figuras", "correta": 0}, {"indice": 1, "tipo": "percepcao", "conceito": "relacao-entre-figuras", "exemplo": "exe-metade", "correta": 0}, {"indice": 2, "tipo": "multipla_escolha", "conceito": "leitura-ritmica", "exemplo": "exe-soma", "correta": 0}, {"indice": 3, "tipo": "multipla_escolha", "conceito": "relacao-entre-figuras", "correta": 0}, {"indice": 4, "tipo": "multipla_escolha", "conceito": "ponto-de-aumento", "correta": 0}, {"indice": 5, "tipo": "percepcao", "conceito": "leitura-ritmica", "exemplo": "exe-marcha", "correta": 0}, {"indice": 6, "tipo": "multipla_escolha", "conceito": "pausas", "correta": 0}, {"indice": 7, "tipo": "percepcao", "conceito": "ligadura", "exemplo": "exe-ligadura", "correta": 0}, {"indice": 8, "tipo": "multipla_escolha", "conceito": "relacao-entre-figuras", "correta": 0}, {"indice": 9, "tipo": "multipla_escolha", "conceito": "ponto-de-aumento", "correta": 0}, {"indice": 10, "tipo": "multipla_escolha", "conceito": "valores-das-figuras", "correta": 0}]}</script>
+<script type="application/json" id="dados-aula">{"codigo": "M04", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura": {"id": "ex-abertura", "titulo": "As mesmas três notas", "legenda": "Os três acordes usam só Dó, Mi e Sol. O que muda de um para o outro? Qual soa mais firme, mais \"em casa\"?", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEG]2 [EGc]2 | [Gce]4 |]\n", "andamento": 60, "eventos": [{"midis": [60, 64, 67], "duracao": 2.0}, {"midis": [64, 67, 72], "duracao": 2.0}, {"midis": [67, 72, 76], "duracao": 4.0}]}, "ex-fundamental": {"id": "ex-fundamental", "titulo": "C em estado fundamental", "legenda": "Dó no baixo: a fundamental está embaixo.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEG]4 |]\n", "andamento": 60, "eventos": [{"midis": [60, 64, 67], "duracao": 4.0}]}, "ex-primeira": {"id": "ex-primeira", "titulo": "C na 1ª inversão", "legenda": "Mi no baixo: a 3ª está embaixo. Soa um pouco mais leve.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[EGc]4 |]\n", "andamento": 60, "eventos": [{"midis": [64, 67, 72], "duracao": 4.0}]}, "ex-segunda": {"id": "ex-segunda", "titulo": "C na 2ª inversão", "legenda": "Sol no baixo: a 5ª está embaixo. Soa como se ainda fosse andar.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[Gce]4 |]\n", "andamento": 60, "eventos": [{"midis": [67, 72, 76], "duracao": 4.0}]}, "ex-baixo-descendo": {"id": "ex-baixo-descendo", "titulo": "C, G/B, Am, C/G, F", "legenda": "Siga só a nota mais grave: ela desce a escala, nota por nota.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEGc]2 [B,DGB]2 | [A,CEA]2 [G,CEG]2 | [F,CFA]4 |]\n", "andamento": 72, "eventos": [{"midis": [60, 64, 67, 72], "duracao": 2.0}, {"midis": [59, 62, 67, 71], "duracao": 2.0}, {"midis": [57, 60, 64, 69], "duracao": 2.0}, {"midis": [55, 60, 64, 67], "duracao": 2.0}, {"midis": [53, 60, 65, 69], "duracao": 4.0}]}, "exe-c-e": {"id": "exe-c-e", "titulo": "Acorde", "legenda": "Mi–Sol–Dó", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[EGc]4 |]\n", "andamento": 60, "eventos": [{"midis": [64, 67, 72], "duracao": 4.0}]}, "exe-baixo": {"id": "exe-baixo", "titulo": "Cinco acordes", "legenda": "C, G/B, Am, C/G, F: o baixo desce Dó, Si, Lá, Sol, Fá.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEGc]2 [B,DGB]2 | [A,CEA]2 [G,CEG]2 | [F,CFA]4 |]\n", "andamento": 72, "eventos": [{"midis": [60, 64, 67, 72], "duracao": 2.0}, {"midis": [59, 62, 67, 71], "duracao": 2.0}, {"midis": [57, 60, 64, 69], "duracao": 2.0}, {"midis": [55, 60, 64, 67], "duracao": 2.0}, {"midis": [53, 60, 65, 69], "duracao": 4.0}]}, "exe-g-d": {"id": "exe-g-d", "titulo": "Acorde de Sol maior", "legenda": "Ré–Sol–Si", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[DGB]4 |]\n", "andamento": 60, "eventos": [{"midis": [62, 67, 71], "duracao": 4.0}]}, "exe-posicoes": {"id": "exe-posicoes", "titulo": "Dois acordes", "legenda": "O primeiro está em estado fundamental; o segundo, na 2ª inversão.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEG]2 [G,CE]2 |]\n", "andamento": 60, "eventos": [{"midis": [60, 64, 67], "duracao": 2.0}, {"midis": [55, 60, 64], "duracao": 2.0}]}, "exe-g-d2": {"id": "exe-g-d2", "titulo": "Acorde", "legenda": "Ré–Sol–Si", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[DGB]4 |]\n", "andamento": 60, "eventos": [{"midis": [62, 67, 71], "duracao": 4.0}]}}, "teclados": {"t-1-5": {"de": 60, "ate": 72, "destaque": [{"midi": 64, "nome": "Mi"}, {"midi": 67, "nome": "Sol"}, {"midi": 72, "nome": "Dó"}]}}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "identificar-inversao", "exemplo": "exe-c-e", "correta": 0}, {"indice": 1, "tipo": "multipla_escolha", "conceito": "segunda-inversao", "correta": 0}, {"indice": 2, "tipo": "teclado", "conceito": "primeira-inversao", "base": 60, "alvo": 64, "alvo_nome": "Mi", "intervalo_nome": "3ª maior", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 60, "nome": "Dó"}]}}, {"indice": 3, "tipo": "multipla_escolha", "conceito": "baixo-invertido", "correta": 0}, {"indice": 4, "tipo": "percepcao", "conceito": "baixo-invertido", "exemplo": "exe-baixo", "correta": 0}, {"indice": 5, "tipo": "multipla_escolha", "conceito": "segunda-inversao", "exemplo": "exe-g-d", "correta": 0}, {"indice": 6, "tipo": "multipla_escolha", "conceito": "identificar-inversao", "correta": 0}, {"indice": 7, "tipo": "teclado", "conceito": "segunda-inversao", "base": 57, "alvo": 64, "alvo_nome": "Mi", "intervalo_nome": "5ª justa", "teclado": {"de": 52, "ate": 76, "destaque": [{"midi": 57, "nome": "Lá"}]}}, {"indice": 8, "tipo": "multipla_escolha", "conceito": "primeira-inversao", "correta": 0}, {"indice": 9, "tipo": "multipla_escolha", "conceito": "baixo-invertido", "correta": 0}, {"indice": 10, "tipo": "percepcao", "conceito": "segunda-inversao", "exemplo": "exe-posicoes", "correta": 0}, {"indice": 11, "tipo": "multipla_escolha", "conceito": "estado-fundamental", "correta": 0}, {"indice": 12, "tipo": "multipla_escolha", "conceito": "identificar-inversao", "exemplo": "exe-g-d2", "correta": 0}]}</script>
 <script src="https://cdn.jsdelivr.net/npm/abcjs@6.7.1/dist/abcjs-basic-min.js"></script>
 <script>
 /* Aula interativa: partitura (abcjs), som sintetizado no navegador (piano ou violão),

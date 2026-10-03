@@ -1,0 +1,1676 @@
+{
+  "codigo": "M01",
+  "titulo": "Compassos compostos e irregulares",
+  "nivel": "intermediario",
+  "resumo_curto": "6/8, 9/8 e 12/8, os irregulares 5/4 e 7/8, a tercina, a síncope e o contratempo.",
+  "prerequisitos": [
+    "Pulso e compasso simples (I05)",
+    "Figuras rítmicas (I04)"
+  ],
+  "objetivos": [
+    "Diferenciar compasso **simples** de **composto** pela divisão do tempo",
+    "Ler **6/8, 9/8 e 12/8** e os irregulares **5/4** e **7/8**",
+    "Ler e ouvir a **tercina**",
+    "Reconhecer **síncope**, **contratempo** e **anacruse**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Na fórmula 3/4, o que diz o número de cima? E o de baixo?\n2. Quanto vale a semínima pontuada, em colcheias?\n3. O que é anacruse?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Em cima, três tempos por compasso; embaixo, a semínima vale um tempo.\n2. Três colcheias (uma semínima e meia).\n3. A nota, ou o grupo de notas, que vem antes do primeiro tempo forte.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "Seis colcheias, primeira forma",
+            "legenda": "Bata palmas só nos sons fortes. Quantas colcheias há entre uma palma e outra?",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": false
+              }
+            ],
+            "compasso": "3/4",
+            "andamento": 84
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "Seis colcheias, segunda forma",
+            "legenda": "As mesmas seis colcheias. E agora, quantas há entre uma palma e outra?",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": false
+              }
+            ],
+            "compasso": "6/8",
+            "andamento": 84
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Na primeira forma, o forte volta a cada **duas** colcheias: é 3/4, que você já conhece. Na segunda, ele volta a cada **três**: é **6/8**, um **compasso composto**.\n\nAo final, você vai ler 6/8, 9/8, 12/8, 5/4 e 7/8, tocar tercinas e reconhecer síncopes e contratempos."
+        }
+      ]
+    },
+    {
+      "titulo": "Simples e composto",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O que muda entre os dois é a **divisão do tempo**.\n\n- No compasso **simples**, cada tempo se divide em **duas** partes: a semínima vira duas colcheias.\n- No compasso **composto**, cada tempo se divide em **três** partes: o tempo é uma **semínima pontuada**, que vira três colcheias."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-frase-68",
+            "titulo": "Uma frase em 6/8",
+            "legenda": "Dois tempos por compasso, cada um com três colcheias: o balanço de 1-2-3, 4-5-6.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.5
+              }
+            ],
+            "compasso": "6/8",
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Nos compostos, o número de cima conta as **divisões**, não os tempos. Divida por 3 para achar os tempos: 6/8 tem 2, 9/8 tem 3 e 12/8 tem 4. O 8 de baixo diz que a divisão é a colcheia."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Cada compasso simples tem um composto com o mesmo número de tempos.",
+          "cabecalho": [
+            "Tempos",
+            "Simples",
+            "Composto",
+            "Tempo no composto"
+          ],
+          "linhas": [
+            [
+              "2 (binário)",
+              "2/4",
+              "6/8",
+              "semínima pontuada"
+            ],
+            [
+              "3 (ternário)",
+              "3/4",
+              "9/8",
+              "semínima pontuada"
+            ],
+            [
+              "4 (quaternário)",
+              "4/4",
+              "12/8",
+              "semínima pontuada"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-frase-98",
+            "titulo": "Uma frase em 9/8",
+            "legenda": "Três tempos de três colcheias em cada compasso.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.5
+              }
+            ],
+            "compasso": "9/8",
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-frase-128",
+            "titulo": "Uma frase em 12/8",
+            "legenda": "Quatro tempos de três colcheias: muito usado no blues lento.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1.5
+              }
+            ],
+            "compasso": "12/8",
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Em andamento lento, dá para reger o 6/8 em seis (1-2-3-4-5-6). Em andamento médio ou rápido, sente-se em dois: \"um\" na 1ª colcheia e \"dois\" na 4ª."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo para ler um compasso de baixo 8",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como descobrir o pulso de **6/8**, com o motivo de cada passo.\n\n1. **Leia o número de baixo**: 8 é a colcheia. É ela que o número de cima está contando.\n2. **Veja se o de cima é 6, 9 ou 12**: esses números se dividem em grupos de três colcheias, então o compasso é composto.\n3. **Divida por 3**: 6 ÷ 3 = 2 tempos de semínima pontuada. É um **binário composto**."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** 3/4 e 6/8 têm, os dois, seis colcheias por compasso. Por que soam diferente?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque agrupam as colcheias de outro jeito. Em 3/4 são três tempos de duas (2+2+2); em 6/8, dois tempos de três (3+3). O tempo forte cai em lugares diferentes.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **9/8**: o 8 é a colcheia, 9 se divide em grupos de três. Quantos tempos?\n\nE agora dois passos são seus: **12/8**. É composto? Quantos tempos tem?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "9/8: 9 ÷ 3 = **3 tempos** de semínima pontuada, ternário composto.\n\n12/8: sim, 12 se divide em grupos de três. 12 ÷ 3 = **4 tempos**, quaternário composto.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Compassos irregulares",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Alguns compassos têm tempos que não se agrupam por igual: são os **irregulares** (ou assimétricos). O compasso **5/4** costuma se dividir em **3 + 2** (ou 2 + 3) semínimas. Ouça o apoio no 1º e no 4º tempo."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-cinco",
+            "titulo": "5/4 como 3 + 2",
+            "legenda": "Forte no 1, apoio no 4: um grupo de três e outro de dois.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              }
+            ],
+            "compasso": "5/4",
+            "andamento": 110
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O **7/8** tem sete colcheias, quase sempre em grupos de 2 e de 3. Na versão **2 + 2 + 3**, ele vira duas semínimas e uma semínima pontuada: dois passos curtos e um longo."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sete",
+            "titulo": "7/8 como 2 + 2 + 3",
+            "legenda": "Curto, curto, longo. O último grupo tem uma colcheia a mais.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1.5,
+                "acento": true
+              }
+            ],
+            "compasso": "7/8",
+            "andamento": 150
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Quiálteras: a tercina",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Às vezes um compasso simples pede, por um momento, a divisão em três. Para isso existe a **quiáltera**: um grupo com uma divisão diferente da normal, marcado com um número. A mais comum é a **tercina**: três colcheias no tempo de duas, com um **3** sobre o grupo."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-tercina",
+            "titulo": "Colcheias e tercinas",
+            "legenda": "No 1º tempo, duas colcheias; no 2º e no 3º, três notas por tempo, iguais entre si.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.3333333333333333
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.3333333333333333
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.3333333333333333
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.3333333333333333
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.3333333333333333
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.3333333333333333
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              }
+            ],
+            "compasso": "3/4",
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "A tercina não acelera o pulso: o tempo continua com a mesma duração, só que dividido em três."
+        }
+      ]
+    },
+    {
+      "titulo": "Síncope e contratempo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **síncope** é uma nota que começa numa parte fraca e se prolonga sobre a parte forte seguinte. O apoio que esperamos no tempo \"escorrega\" para antes dele."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sincope",
+            "titulo": "Colcheia, semínima, colcheia",
+            "legenda": "A semínima começa no meio do 1º tempo e atravessa o início do 2º.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sincope-ligada",
+            "titulo": "Síncope com ligadura",
+            "legenda": "O Sol entra no meio do 2º tempo e, ligado, atravessa a barra até o tempo forte seguinte.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "ligada": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Na música brasileira, a síncope mais famosa é a **síncope característica**: semicolcheia, colcheia, semicolcheia, num só tempo. Ela está no maxixe, no choro e no samba."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-caracteristica",
+            "titulo": "Síncope característica",
+            "legenda": "Curta, longa, curta no 1º tempo; depois uma semínima para descansar.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "No **contratempo**, as notas caem só nas partes fracas, e as partes fortes ficam com pausa. Primeiro, ouça o tempo marcado no grave e as notas agudas entre eles; depois, só as agudas."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-contratempo-pulso",
+            "titulo": "Contratempo com o tempo marcado",
+            "legenda": "O grave marca o tempo; o agudo responde no meio de cada tempo.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "staccato": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-contratempo",
+            "titulo": "Só o contratempo",
+            "legenda": "Pausa no tempo, nota no meio dele. Tente bater o pé no tempo enquanto ouve.",
+            "eventos": [
+              {
+                "notas": [],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              },
+              {
+                "notas": [],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "acento": true
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 96
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Anacruse no compasso composto",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A anacruse funciona igual nos compostos. Aqui a frase começa com **uma colcheia** antes da barra; o primeiro tempo forte cai na nota seguinte."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-anacruse",
+            "titulo": "Anacruse de uma colcheia em 6/8",
+            "legenda": "Uma nota de impulso, e o forte chega no Dó agudo.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [],
+                "duracao": 1.5
+              }
+            ],
+            "compasso": "6/8",
+            "anacruse": 0.5,
+            "andamento": 96
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega explicou assim:\n\n> \"6/8 e 3/4 são o mesmo compasso escrito de outro jeito, porque os dois têm seis colcheias.\"\n\nOnde está o erro, por que está errado e o que diferencia os dois?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ter seis colcheias não faz dois compassos iguais. **3/4** tem três tempos de semínima, com as colcheias em 2+2+2; **6/8** tem dois tempos de semínima pontuada, com as colcheias em 3+3. Os tempos fortes caem em lugares diferentes, como você ouviu na abertura.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos tempos tem um compasso **6/8** em andamento médio?",
+      "opcoes": [
+        "2 tempos de semínima pontuada",
+        "6 tempos de colcheia",
+        "3 tempos de semínima",
+        "8 tempos"
+      ],
+      "correta": 0,
+      "explicacao": "No composto, o 6 conta colcheias: 6 ÷ 3 = **2 tempos** de semínima pontuada. Quem marcou 3 semínimas leu como 3/4; quem marcou 8 leu o número de baixo.",
+      "conceito": "compasso-composto"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. De quantas em quantas colcheias volta o som forte?",
+      "exemplo": {
+        "id": "exe-agrupamento",
+        "titulo": "Seis colcheias",
+        "legenda": "De três em três: 6/8.",
+        "eventos": [
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "acento": false
+          }
+        ],
+        "compasso": "6/8",
+        "andamento": 84
+      },
+      "opcoes": [
+        "De 3 em 3, como em 6/8",
+        "De 2 em 2, como em 3/4"
+      ],
+      "correta": 0,
+      "explicacao": "O forte cai na 1ª e na 4ª colcheia: **3 + 3**, um compasso composto. Em 3/4 ele cairia na 1ª, 3ª e 5ª.",
+      "conceito": "simples-x-composto"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual compasso composto tem o mesmo número de tempos que **3/4**?",
+      "opcoes": [
+        "9/8",
+        "6/8",
+        "12/8",
+        "3/8"
+      ],
+      "correta": 0,
+      "explicacao": "3/4 tem 3 tempos. O composto com 3 tempos é **9/8** (9 ÷ 3 = 3). 6/8 tem 2 tempos e 12/8 tem 4.",
+      "conceito": "simples-x-composto"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Alguma nota começa numa parte fraca e se prolonga sobre o tempo seguinte?",
+      "exemplo": {
+        "id": "exe-sincope",
+        "titulo": "Frase",
+        "legenda": "A nota Sol, ligada, atravessa a barra: é uma síncope.",
+        "eventos": [
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5,
+            "ligada": true
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [],
+            "duracao": 1
+          }
+        ],
+        "compasso": "2/4",
+        "andamento": 80
+      },
+      "opcoes": [
+        "Sim, há uma síncope",
+        "Não, todas as notas começam no tempo"
+      ],
+      "correta": 0,
+      "explicacao": "O Sol entra no meio do 2º tempo e continua soando sobre o tempo forte seguinte: **síncope**. Se você não percebeu, bata o pé e note que, no tempo forte, nenhuma nota nova começa.",
+      "conceito": "sincope"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Numa **tercina** de colcheias, quantas notas cabem no tempo de uma semínima?",
+      "opcoes": [
+        "3",
+        "2",
+        "4",
+        "6"
+      ],
+      "correta": 0,
+      "explicacao": "A tercina põe **três** colcheias no tempo de duas, ou seja, no tempo de uma semínima. Duas é a divisão normal.",
+      "conceito": "quialtera"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Como as colcheias deste compasso estão agrupadas?",
+      "opcoes": [
+        "2 + 2 + 3",
+        "3 + 2 + 2",
+        "2 + 3 + 2",
+        "3 + 4"
+      ],
+      "correta": 0,
+      "explicacao": "Duas semínimas (2 + 2 colcheias) e uma semínima pontuada (3 colcheias): **2 + 2 + 3**, a forma mais comum do 7/8.",
+      "conceito": "compasso-irregular",
+      "exemplo": {
+        "id": "exe-sete",
+        "titulo": "Compasso em 7/8",
+        "legenda": "Curto, curto, longo.",
+        "eventos": [
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1.5,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1.5,
+            "acento": true
+          }
+        ],
+        "compasso": "7/8",
+        "andamento": 150
+      }
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que **2/4** é um compasso **simples**?",
+      "opcoes": [
+        "Porque cada tempo se divide em duas colcheias",
+        "Porque tem só dois tempos",
+        "Porque não tem anacruse"
+      ],
+      "correta": 0,
+      "explicacao": "Simples ou composto depende da **divisão do tempo**: em 2/4 a semínima se divide em duas. 6/8 também tem dois tempos, mas é composto.",
+      "conceito": "simples-x-composto"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça e bata o pé no tempo. Onde caem as notas?",
+      "exemplo": {
+        "id": "exe-contratempo",
+        "titulo": "Ritmo",
+        "legenda": "Pausa no tempo, nota no meio dele: contratempo.",
+        "eventos": [
+          {
+            "notas": [],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "acento": true
+          },
+          {
+            "notas": [],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "acento": true
+          },
+          {
+            "notas": [],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "acento": true
+          },
+          {
+            "notas": [],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "acento": true
+          }
+        ],
+        "compasso": "2/4",
+        "andamento": 96
+      },
+      "opcoes": [
+        "Entre os tempos, no contratempo",
+        "Junto com cada tempo",
+        "Só no primeiro tempo de cada compasso"
+      ],
+      "correta": 0,
+      "explicacao": "As notas caem na **metade fraca** de cada tempo, com pausa no tempo: é o **contratempo**. Se pareceu que caíam no tempo, tente bater o pé antes de a primeira nota soar.",
+      "conceito": "contratempo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos tempos tem um compasso **12/8**?",
+      "opcoes": [
+        "4",
+        "12",
+        "6",
+        "3"
+      ],
+      "correta": 0,
+      "explicacao": "12 colcheias em grupos de três: 12 ÷ 3 = **4 tempos** de semínima pontuada. O 12 conta divisões, não tempos.",
+      "conceito": "compasso-composto"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. O tempo forte volta de quantos em quantos pulsos?",
+      "exemplo": {
+        "id": "exe-cinco",
+        "titulo": "Pulso",
+        "legenda": "De cinco em cinco: 5/4.",
+        "eventos": [
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          }
+        ],
+        "compasso": "5/4",
+        "andamento": 110
+      },
+      "opcoes": [
+        "5",
+        "4",
+        "6"
+      ],
+      "correta": 0,
+      "explicacao": "O som forte volta a cada **cinco** pulsos: um compasso irregular, 5/4. Conte desde o forte até o próximo.",
+      "conceito": "compasso-irregular"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual figura forma a **síncope característica** da música brasileira?",
+      "opcoes": [
+        "Semicolcheia, colcheia, semicolcheia",
+        "Colcheia pontuada e semicolcheia",
+        "Quatro semicolcheias",
+        "Tercina de colcheias"
+      ],
+      "correta": 0,
+      "explicacao": "Curta, longa, curta num só tempo: **semicolcheia, colcheia, semicolcheia**. A colcheia do meio começa numa parte fraca e atravessa a metade do tempo.",
+      "conceito": "sincope"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Em que nota cai o primeiro tempo forte?",
+      "exemplo": {
+        "id": "exe-anacruse",
+        "titulo": "Frase em 6/8",
+        "legenda": "A primeira nota é anacruse; o forte cai na segunda.",
+        "eventos": [
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 1.5
+          },
+          {
+            "notas": [],
+            "duracao": 1.5
+          }
+        ],
+        "compasso": "6/8",
+        "anacruse": 0.5,
+        "andamento": 96
+      },
+      "opcoes": [
+        "Na 2ª nota",
+        "Na 1ª nota",
+        "Na 3ª nota"
+      ],
+      "correta": 0,
+      "explicacao": "A frase começa com uma colcheia de impulso, a **anacruse**. O primeiro tempo forte cai na **2ª nota**, o Dó agudo, logo depois da barra.",
+      "conceito": "anacruse"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. No 2º tempo, em quantas notas iguais o tempo se divide?",
+      "exemplo": {
+        "id": "exe-tercina",
+        "titulo": "Dois tempos",
+        "legenda": "Duas colcheias e depois uma tercina.",
+        "eventos": [
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 0.3333333333333333
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 0.3333333333333333
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 0.3333333333333333
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          }
+        ],
+        "compasso": "3/4",
+        "andamento": 72
+      },
+      "opcoes": [
+        "3",
+        "2",
+        "4"
+      ],
+      "correta": 0,
+      "explicacao": "O 1º tempo tem duas colcheias; o 2º tem **três** notas no mesmo espaço, uma **tercina**. A divisão fica mais apertada, mas o tempo não acelera.",
+      "conceito": "quialtera"
+    }
+  ],
+  "resumo": [
+    "No compasso **simples**, o tempo se divide em dois; no **composto**, em três, e o tempo é a semínima pontuada.",
+    "Em **6/8, 9/8 e 12/8**, divida o número de cima por 3: são 2, 3 e 4 tempos.",
+    "Compassos **irregulares** misturam grupos de 2 e 3: 5/4 como 3 + 2, 7/8 como 2 + 2 + 3.",
+    "A **tercina** põe três notas no tempo de duas, com um 3 sobre o grupo.",
+    "**Síncope**: nota que nasce na parte fraca e atravessa a forte. **Contratempo**: notas só nas partes fracas."
+  ],
+  "pergunta_para_chat": "Me dê fórmulas de compasso, uma de cada vez, para eu dizer se é simples, composto ou irregular e quantos tempos tem, e corrija meu raciocínio."
+}

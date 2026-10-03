@@ -1,0 +1,30 @@
+codigo: M03
+titulo: Intervalos compostos
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - I08  # Intervalos simples
+  - M02  # Intervalos aumentados, diminutos e inversão
+objetivos:
+  - Reconhecer intervalos maiores que a oitava (9ª, 10ª, 11ª, 12ª, 13ª)
+  - Converter entre intervalo simples e composto pela regra do 7
+  - Calcular os semitons de um intervalo composto somando 12
+  - Relacionar 9ª, 11ª e 13ª às tensões dos acordes cifrados
+  - Distinguir de ouvido a 9ª da 2ª e a 10ª da 3ª
+conceitos:
+  - intervalo-composto
+  - reduzir-composto
+  - semitons-compostos
+  - tensoes
+  - percepcao-composto
+fora_do_escopo:
+  - Tensões disponíveis e notas a evitar por acorde (módulo A01)
+  - Tensões alteradas, como 7(b9) e 7(#11) (módulo A02)
+exemplos_semente:
+  - "Dó4–Ré4 (2ª maior) e Dó4–Ré5 (9ª maior)"
+  - "Dó4–Mi5: 10ª maior"
+  - "C7(9), Am7(11) e G7(13)"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

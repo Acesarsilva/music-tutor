@@ -1,0 +1,31 @@
+codigo: M02
+titulo: Intervalos aumentados, diminutos e inversão
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - I08  # Intervalos simples
+  - I07  # Escala maior
+objetivos:
+  - Formar e classificar intervalos aumentados e diminutos a partir dos justos, maiores e menores
+  - Reconhecer o trítono como 4ª aumentada ou 5ª diminuta e ouvi-lo
+  - Inverter intervalos pelas regras do 9 e da troca de qualidade
+  - Dar o nome certo a intervalos enarmônicos pela escrita das notas
+conceitos:
+  - intervalo-aumentado
+  - intervalo-diminuto
+  - tritono
+  - inversao-de-intervalos
+  - enarmonia-de-intervalos
+fora_do_escopo:
+  - Intervalos duplamente aumentados ou diminutos
+  - Intervalos compostos (módulo M03)
+  - Resolução do trítono no acorde de sétima (módulos M05 e M07)
+exemplos_semente:
+  - "Dó–Fá (4ª justa) e Dó–Fá♯ (4ª aumentada)"
+  - "Si–Fá: 5ª diminuta só com notas naturais"
+  - "Dó–Mi (3ª maior) invertido vira Mi–Dó (6ª menor)"
+  - "Dó–Fá♯ e Dó–Sol♭: mesmo som, nomes diferentes"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

@@ -124,3 +124,15 @@ def test_forquilha_sem_dinamica_de_chegada(aula_piloto):
         {"notas": ["D4"], "duracao": 2, "forquilha": "fim"},
     ])
     assert any("dinâmica de chegada" in e for e in r.erros)
+
+
+def test_intervalo_composto_afirmado_confere_sem_reduzir(aula_piloto):
+    exemplo = primeiro_exemplo_com_intervalo(aula_piloto)
+    exemplo.eventos[0].notas, exemplo.eventos[1].notas = ["C4"], ["E5"]
+    exemplo.intervalo.de, exemplo.intervalo.para = "C4", "E5"
+    exemplo.intervalo.codigo = "10M"
+    assert not any(".intervalo" in e for e in validar_aula(aula_piloto).erros)
+    exemplo.intervalo.codigo = "3M"  # até a 8ª, vale o intervalo simples
+    assert not any(".intervalo" in e for e in validar_aula(aula_piloto).erros)
+    exemplo.intervalo.codigo = "10m"
+    assert any("é 10ª maior, não 10m" in e for e in validar_aula(aula_piloto).erros)

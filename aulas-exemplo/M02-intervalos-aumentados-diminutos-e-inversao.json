@@ -1,0 +1,879 @@
+{
+  "codigo": "M02",
+  "titulo": "Intervalos aumentados, diminutos e inversão",
+  "nivel": "intermediario",
+  "resumo_curto": "Intervalos aumentados e diminutos, o trítono, a inversão de intervalos e a enarmonia.",
+  "prerequisitos": [
+    "Intervalos simples (I08)",
+    "Escala maior (I07)"
+  ],
+  "objetivos": [
+    "Formar e classificar intervalos **aumentados** e **diminutos**",
+    "Reconhecer o **trítono** no papel e de ouvido",
+    "**Inverter** intervalos pelas regras do 9 e do 12",
+    "Dar o nome certo a intervalos **enarmônicos**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quantos semitons tem a 4ª justa? E a 5ª justa?\n2. Quantos semitons tem a 3ª maior? E a 3ª menor?\n3. Que intervalos podem ser justos?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. 4ª justa: 5 semitons. 5ª justa: 7.\n2. 3ª maior: 4. 3ª menor: 3.\n3. Uníssono, 4ª, 5ª e 8ª.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Duas 4ªs",
+            "legenda": "Ouça os dois pares. Só a nota de cima mudou, um semitom. Qual soa mais tenso, como se pedisse para ir a algum lugar?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O primeiro par é a 4ª justa, que você já conhece. No segundo, a 4ª ficou **um semitom maior**: virou uma **4ª aumentada**, o famoso **trítono**.\n\nAo final, você vai classificar qualquer intervalo aumentado ou diminuto, inverter intervalos e reconhecer o trítono de ouvido."
+        }
+      ]
+    },
+    {
+      "titulo": "Aumentados",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um intervalo **aumentado** tem **um semitom a mais** que o justo ou o maior de mesmo número. O número não muda, porque as notas continuam as mesmas; só um acidente afasta a de cima (ou aproxima a de baixo)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-4a",
+            "titulo": "Dó–Fá♯: 4ª aumentada",
+            "legenda": "Dó, Ré, Mi, Fá: quatro notas, uma 4ª. Com 6 semitons, um a mais que a justa.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F#4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "C4",
+              "para": "F#4",
+              "codigo": "4A"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-5a",
+            "titulo": "Dó–Sol♯: 5ª aumentada",
+            "legenda": "Uma 5ª com 8 semitons, um a mais que a justa. Soa estranha, como se não tivesse onde pousar.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G#4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4",
+                  "G#4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "C4",
+              "para": "G#4",
+              "codigo": "5A"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-2a",
+            "titulo": "Dó–Ré♯: 2ª aumentada",
+            "legenda": "Uma 2ª com 3 semitons, um a mais que a maior.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "D#4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4",
+                  "D#4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "C4",
+              "para": "D#4",
+              "codigo": "2A"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Diminutos",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um intervalo **diminuto** tem **um semitom a menos** que o justo ou o menor de mesmo número. A 5ª diminuta aparece até entre notas naturais: de **Si a Fá**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-5d",
+            "titulo": "Si–Fá: 5ª diminuta",
+            "legenda": "Si, Dó, Ré, Mi, Fá: uma 5ª. Mas há dois semitons no caminho (Si–Dó e Mi–Fá), e ela fica com 6.",
+            "eventos": [
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "B3",
+                  "F4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "B3",
+              "para": "F4",
+              "codigo": "5d"
+            }
+          }
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Si–Fá: seis semitons, mesmo sem nenhuma tecla preta nas pontas.",
+          "destaque": [
+            "B3",
+            "F4"
+          ],
+          "de": "A3",
+          "ate": "G4"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-7d",
+            "titulo": "Si–Lá♭: 7ª diminuta",
+            "legenda": "Uma 7ª com 9 semitons, um a menos que a menor.",
+            "eventos": [
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "Ab4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "B3",
+                  "Ab4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "B3",
+              "para": "Ab4",
+              "codigo": "7d"
+            }
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "De onde vem cada qualidade, em semitons.",
+          "cabecalho": [
+            "Família",
+            "diminuto",
+            "menor",
+            "justo",
+            "maior",
+            "aumentado"
+          ],
+          "linhas": [
+            [
+              "4ª, 5ª (justos)",
+              "−1",
+              "",
+              "0",
+              "",
+              "+1"
+            ],
+            [
+              "2ª, 3ª, 6ª, 7ª (maiores e menores)",
+              "−2",
+              "−1",
+              "",
+              "0",
+              "+1"
+            ]
+          ]
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Leia a tabela assim: a 3ª diminuta tem dois semitons a menos que a 3ª maior; a 5ª diminuta tem um a menos que a 5ª justa."
+        }
+      ]
+    },
+    {
+      "titulo": "O trítono",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **4ª aumentada** e a **5ª diminuta** têm, as duas, **6 semitons**, ou seja, **três tons**. Por isso se chamam **trítono**. Ele divide a oitava exatamente ao meio.\n\nNa escala maior há um só trítono, entre o **4º e o 7º grau**: em Dó maior, Fá–Si (4ª aumentada) e Si–Fá (5ª diminuta)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-tritono",
+            "titulo": "Fá–Si, o trítono de Dó maior",
+            "legenda": "Ouça a tensão; depois, Fá desce para Mi e Si sobe para Dó, e tudo relaxa.",
+            "eventos": [
+              {
+                "notas": [
+                  "F4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "C5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60,
+            "intervalo": {
+              "de": "F4",
+              "para": "B4",
+              "codigo": "4A"
+            }
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Por causa dessa tensão, o trítono ganhou o apelido latino *diabolus in musica*, \"o diabo na música\"."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: classificar Mi♭–Lá",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja o caminho completo, com o motivo de cada passo.\n\n1. **Conte as notas**: Mi, Fá, Sol, Lá. São 4: é uma **4ª**. O ♭ não entra nessa conta.\n2. **Conte os semitons**: de Mi♭ a Lá há **6**.\n3. **Compare com a referência**: a 4ª justa tem 5. Com um a mais, é **4ª aumentada**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-resolvido",
+            "titulo": "Mi♭–Lá",
+            "legenda": "Um trítono escrito como 4ª.",
+            "eventos": [
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "Eb4",
+                  "A4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "Eb4",
+              "para": "A4",
+              "codigo": "4A"
+            }
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** Mi♭–Lá tem 6 semitons, como a 5ª diminuta. Por que não é uma 5ª diminuta?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque o número vem das **notas escritas**: de Mi a Lá são quatro notas, então é uma 4ª. Para ser 5ª, a nota de cima teria de ser algum Si (Si♭♭, no caso).",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **Ré–Lá♭**: Ré, Mi, Fá, Sol, Lá = 5ª; 6 semitons. A 5ª justa tem 7. Qual é a qualidade?\n\nE agora dois passos são seus: **Fá–Ré♯**. Comece contando as notas de Fá a Ré."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ré–Lá♭: um semitom a menos que a justa, **5ª diminuta**.\n\nFá–Ré♯: Fá, Sol, Lá, Si, Dó, Ré = **6ª**. São **10** semitons; a 6ª maior tem 9. Um a mais: **6ª aumentada**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Inversão de intervalos",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "**Inverter** um intervalo é levar a nota de baixo uma oitava acima (ou a de cima uma oitava abaixo). Dó–Mi vira Mi–Dó. Três regras dizem o resultado:\n\n- os **números** somam **9**: 3ª vira 6ª, 4ª vira 5ª, 2ª vira 7ª;\n- a **qualidade** troca: maior ↔ menor, aumentado ↔ diminuto; justo continua justo;\n- os **semitons** somam **12**, uma oitava."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-inversao-3m",
+            "titulo": "Dó–Mi e Mi–Dó",
+            "legenda": "3ª maior (4 semitons) e, invertida, 6ª menor (8 semitons). 4 + 8 = 12.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "E4",
+                  "C5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 60,
+            "intervalo": {
+              "de": "E4",
+              "para": "C5",
+              "codigo": "6m"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-inversao-5j",
+            "titulo": "Ré–Lá e Lá–Ré",
+            "legenda": "5ª justa invertida vira 4ª justa: 7 + 5 = 12.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "A4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "A4",
+                  "D5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 60,
+            "intervalo": {
+              "de": "A4",
+              "para": "D5",
+              "codigo": "4J"
+            }
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "As inversões mais usadas.",
+          "cabecalho": [
+            "Intervalo",
+            "Semitons",
+            "Inversão",
+            "Semitons"
+          ],
+          "linhas": [
+            [
+              "3ª maior",
+              "4",
+              "6ª menor",
+              "8"
+            ],
+            [
+              "3ª menor",
+              "3",
+              "6ª maior",
+              "9"
+            ],
+            [
+              "4ª justa",
+              "5",
+              "5ª justa",
+              "7"
+            ],
+            [
+              "2ª maior",
+              "2",
+              "7ª menor",
+              "10"
+            ],
+            [
+              "4ª aumentada",
+              "6",
+              "5ª diminuta",
+              "6"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Repare na última linha: o trítono invertido continua sendo trítono, com 6 semitons."
+        }
+      ]
+    },
+    {
+      "titulo": "Enarmonia de intervalos",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Duas escritas diferentes podem soar igual: são intervalos **enarmônicos**. Dó–Fá♯ e Dó–Sol♭ usam a mesma tecla no alto, mas o primeiro é **4ª aumentada** (Dó a Fá) e o segundo **5ª diminuta** (Dó a Sol)."
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Fá♯ e Sol♭: a mesma tecla, dois nomes. No braço, a mesma casa.",
+          "destaque": [
+            "C4",
+            "F#4"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O mesmo acontece com Dó–Ré♯ (**2ª aumentada**) e Dó–Mi♭ (**3ª menor**): 3 semitons nos dois. O nome certo depende da escala ou do acorde em que a nota está."
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega inverteu um intervalo assim:\n\n> \"Dó–Mi é 3ª maior. Invertendo, Mi–Dó: 9 − 3 = 6, e a qualidade continua a mesma. Então é 6ª maior.\"\n\nOnde está o erro, por que está errado e qual é a resposta certa?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A conta do número está certa, mas **a qualidade troca** na inversão: maior vira menor. Mi–Dó é **6ª menor**. Confira pelos semitons: a 3ª maior tem 4, e 4 + 8 = 12; a 6ª maior teria 9, e 4 + 9 passa da oitava.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que intervalo é este?",
+      "opcoes": [
+        "4ª aumentada",
+        "5ª diminuta",
+        "4ª justa",
+        "5ª justa"
+      ],
+      "correta": 0,
+      "explicacao": "Dó, Ré, Mi, Fá: é uma 4ª, e com 6 semitons, um a mais que a justa, é **aumentada**. Quem marcou 5ª diminuta acertou o som, mas o número vem das notas escritas: Fá, não Sol.",
+      "conceito": "intervalo-aumentado",
+      "exemplo": {
+        "id": "exe-4a",
+        "titulo": "Intervalo",
+        "legenda": "Dó–Fá♯",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "F#4"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 66,
+        "intervalo": {
+          "de": "C4",
+          "para": "F#4",
+          "codigo": "4A"
+        }
+      }
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Ré4 está marcado. Clique na nota que forma uma **4ª aumentada** acima.",
+      "nota_base": "D4",
+      "intervalo": "4A",
+      "direcao": "acima",
+      "explicacao": "Ré, Mi, Fá, Sol: a 4ª é algum Sol. A 4ª justa Ré–Sol tem 5 semitons; com 6, é **Sol♯**.",
+      "conceito": "intervalo-aumentado",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a inversão da **3ª maior**?",
+      "opcoes": [
+        "6ª menor",
+        "6ª maior",
+        "5ª justa",
+        "3ª menor"
+      ],
+      "correta": 0,
+      "explicacao": "3 + 6 = 9, e maior vira menor: **6ª menor**. Quem marcou 6ª maior esqueceu de trocar a qualidade.",
+      "conceito": "inversao-de-intervalos"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Que intervalo é este?",
+      "exemplo": {
+        "id": "exe-tritono",
+        "titulo": "Intervalo",
+        "legenda": "Fá–Si: 4ª aumentada, o trítono.",
+        "eventos": [
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "F4",
+              "B4"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 66,
+        "intervalo": {
+          "de": "F4",
+          "para": "B4",
+          "codigo": "4A"
+        }
+      },
+      "opcoes": [
+        "4ª aumentada",
+        "4ª justa",
+        "5ª justa"
+      ],
+      "correta": 0,
+      "explicacao": "A tensão que pede resolução é o **trítono**, aqui escrito Fá–Si, uma 4ª aumentada. A 4ª e a 5ª justas soam abertas e estáveis.",
+      "conceito": "tritono"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos semitons tem a **5ª diminuta**?",
+      "opcoes": [
+        "6 semitons",
+        "7 semitons",
+        "5 semitons",
+        "8 semitons"
+      ],
+      "correta": 0,
+      "explicacao": "Um a menos que a 5ª justa (7): **6 semitons**, um trítono. 8 seria a 5ª aumentada.",
+      "conceito": "tritono",
+      "verificacao": {
+        "tipo": "semitons",
+        "intervalo": "5d"
+      }
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que intervalo é este?",
+      "opcoes": [
+        "5ª diminuta",
+        "5ª justa",
+        "4ª aumentada"
+      ],
+      "correta": 0,
+      "explicacao": "Si, Dó, Ré, Mi, Fá: uma 5ª. Só 6 semitons, um a menos que a justa: **diminuta**. Não basta as duas notas serem naturais; Si–Fá é a única 5ª entre naturais que não é justa.",
+      "conceito": "intervalo-diminuto",
+      "exemplo": {
+        "id": "exe-5d",
+        "titulo": "Intervalo",
+        "legenda": "Si–Fá",
+        "eventos": [
+          {
+            "notas": [
+              "B3"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 66,
+        "intervalo": {
+          "de": "B3",
+          "para": "F4",
+          "codigo": "5d"
+        }
+      }
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A 3ª maior tem 4 semitons. Quantos tem a sua inversão, a **6ª menor**?",
+      "opcoes": [
+        "8 semitons",
+        "9 semitons",
+        "4 semitons",
+        "7 semitons"
+      ],
+      "correta": 0,
+      "explicacao": "Intervalo e inversão somam 12 semitons: 12 − 4 = **8**. 9 é a 6ª maior.",
+      "conceito": "inversao-de-intervalos",
+      "verificacao": {
+        "tipo": "semitons",
+        "intervalo": "6m"
+      }
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Ré4 está marcado. Clique na nota que forma uma **5ª diminuta** acima.",
+      "nota_base": "D4",
+      "intervalo": "5d",
+      "direcao": "acima",
+      "explicacao": "Ré, Mi, Fá, Sol, Lá: a 5ª é algum Lá. Ré–Lá justa tem 7 semitons; com 6, é **Lá♭**. Se você clicou em Sol♯, o som é o mesmo, mas o nome seria 4ª aumentada.",
+      "conceito": "intervalo-diminuto",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Dó–Ré♯ e Dó–Mi♭ soam igual. Como se chama cada um?",
+      "opcoes": [
+        "2ª aumentada e 3ª menor",
+        "3ª menor e 3ª menor",
+        "2ª maior e 3ª menor",
+        "2ª aumentada e 2ª aumentada"
+      ],
+      "correta": 0,
+      "explicacao": "De Dó a Ré são duas notas: **2ª**, e com 3 semitons, aumentada. De Dó a Mi são três: **3ª menor**. O som é o mesmo; a escrita decide o nome.",
+      "conceito": "enarmonia-de-intervalos"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Que intervalo é este?",
+      "exemplo": {
+        "id": "exe-5j",
+        "titulo": "Intervalo",
+        "legenda": "Ré–Lá: 5ª justa.",
+        "eventos": [
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "D4",
+              "A4"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 66,
+        "intervalo": {
+          "de": "D4",
+          "para": "A4",
+          "codigo": "5J"
+        }
+      },
+      "opcoes": [
+        "5ª justa",
+        "5ª diminuta",
+        "4ª justa"
+      ],
+      "correta": 0,
+      "explicacao": "Som aberto e estável, sem a tensão do trítono: **5ª justa**. A 4ª justa é mais curta, com um semitom a menos que o trítono; a 5ª, um a mais.",
+      "conceito": "tritono"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Fá–Si é 4ª aumentada. E este, com Si embaixo?",
+      "opcoes": [
+        "5ª diminuta",
+        "5ª aumentada",
+        "5ª justa",
+        "4ª diminuta"
+      ],
+      "correta": 0,
+      "explicacao": "4 + 5 = 9, e aumentada vira **diminuta**: Si–Fá é 5ª diminuta. Os semitons somam 12: 6 + 6.",
+      "conceito": "inversao-de-intervalos",
+      "exemplo": {
+        "id": "exe-si-fa",
+        "titulo": "Intervalo",
+        "legenda": "Si–Fá",
+        "eventos": [
+          {
+            "notas": [
+              "B4",
+              "F5"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 60,
+        "intervalo": {
+          "de": "B4",
+          "para": "F5",
+          "codigo": "5d"
+        }
+      }
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na escala maior, entre quais graus fica o trítono?",
+      "opcoes": [
+        "4º e 7º",
+        "1º e 5º",
+        "2º e 6º",
+        "3º e 7º"
+      ],
+      "correta": 0,
+      "explicacao": "Em Dó maior, Fá (4º) e Si (7º) formam o único trítono da escala. Os outros pares são 5ªs justas.",
+      "conceito": "tritono"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual destes intervalos, invertido, mantém o **mesmo número de semitons**?",
+      "opcoes": [
+        "4ª aumentada",
+        "5ª justa",
+        "3ª maior",
+        "2ª maior"
+      ],
+      "correta": 0,
+      "explicacao": "Os semitons somam 12. Só o intervalo de **6** semitons, o trítono, continua com 6 depois de invertido.",
+      "conceito": "tritono"
+    }
+  ],
+  "resumo": [
+    "**Aumentado**: um semitom a mais que o justo ou o maior. **Diminuto**: um a menos que o justo ou o menor.",
+    "O número vem das notas escritas; os acidentes só mudam a qualidade.",
+    "O **trítono** tem 6 semitons: 4ª aumentada ou 5ª diminuta. Na escala maior, fica entre o 4º e o 7º grau.",
+    "Na **inversão**, os números somam 9, os semitons somam 12, e a qualidade troca (justo continua justo).",
+    "Intervalos **enarmônicos** soam igual e têm nomes diferentes: Dó–Fá♯ (4ª aumentada) e Dó–Sol♭ (5ª diminuta)."
+  ],
+  "pergunta_para_chat": "Me dê pares de notas com sustenidos e bemóis, um de cada vez, para eu classificar o intervalo e dizer a inversão, e me dê uma dica se eu errar."
+}

@@ -29,8 +29,9 @@ python -m music_tutor validar ../../aulas-exemplo/<arquivo>.json
 - Recalcule à mão cada intervalo, semitom ou nota citado nesses lugares. Atalho:
   `python -c "from music_tutor.teoria import calcular_intervalo, semitons; print(calcular_intervalo('C4','F#4'), semitons('5d'))"`
   (saída: `4A 6`).
-- Intervalos compostos: o campo `intervalo` aceita só códigos de 1 a 8 e reduz Dó4–Mi5 a "3M". Se o
-  texto disser "10ª", confira que diz também "3ª composta" ou equivalente.
+- Intervalos compostos: com código de 1 a 8, o campo `intervalo` reduz Dó4–Mi5 a "3M"; com código de 9 a 15
+  ("10M", "11J"), confere o intervalo sem reduzir. Se o texto disser "10ª" e o código for "3M", é erro de
+  coerência: use "10M". Atalho: `calcular_intervalo_composto('C4','E5')` (saída: `10M`).
 
 ### 2. Fatos sobre músicas
 

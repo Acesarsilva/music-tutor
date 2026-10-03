@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Figuras rítmicas</title>
+<title>Compassos compostos e irregulares</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
@@ -520,7 +520,7 @@ tbody tr:last-child td { border-bottom: 0; }
 <body>
 <header class="barra">
   <div class="barra-interna">
-    <p class="barra-aula"><span class="selo">I04</span> Figuras rítmicas</p>
+    <p class="barra-aula"><span class="selo">M01</span> Compassos compostos e irregulares</p>
     <div class="controles">
       <div class="timbre" role="group" aria-label="Instrumento">
         <button type="button" id="timbre-piano" data-timbre="piano" aria-pressed="true">Piano</button>
@@ -537,34 +537,37 @@ tbody tr:last-child td { border-bottom: 0; }
 
 <main class="aula">
   <section class="abertura">
-    <p class="rotulo">Teoria musical · Iniciante</p>
-    <h1>Figuras rítmicas</h1>
-    <p class="chamada">Semibreve, mínima, semínima, colcheia e semicolcheia, as pausas, o ponto de aumento e a ligadura.</p>
+    <p class="rotulo">Teoria musical · Intermediário</p>
+    <h1>Compassos compostos e irregulares</h1>
+    <p class="chamada">6/8, 9/8 e 12/8, os irregulares 5/4 e 7/8, a tercina, a síncope e o contratempo.</p>
     <div class="ficha">
       <div>
         <h2 class="rotulo">Você vai aprender</h2>
         <ul>
-          <li>Reconhecer <strong>semibreve, mínima, semínima, colcheia e semicolcheia</strong></li>
-          <li>Reconhecer as <strong>pausas</strong></li>
-          <li>Usar o <strong>ponto de aumento</strong> e a <strong>ligadura</strong></li>
-          <li>Ler o ritmo de cantigas somando as figuras</li>
+          <li>Diferenciar compasso <strong>simples</strong> de <strong>composto</strong> pela divisão do tempo</li>
+          <li>Ler <strong>6/8, 9/8 e 12/8</strong> e os irregulares <strong>5/4</strong> e <strong>7/8</strong></li>
+          <li>Ler e ouvir a <strong>tercina</strong></li>
+          <li>Reconhecer <strong>síncope</strong>, <strong>contratempo</strong> e <strong>anacruse</strong></li>
         </ul>
       </div>
       <div>
         <h2 class="rotulo">Antes, é bom saber</h2>
         <ul>
-          <li>Pauta e claves (I03)</li>
+          <li>Pulso e compasso simples (I05)</li>
+          <li>Figuras rítmicas (I04)</li>
         </ul>
       </div>
     </div>
     <nav class="indice" aria-label="Seções da aula">
       <ol>
         <li><a href="#secao-1">Antes de começar</a></li>
-        <li><a href="#secao-2">As cinco figuras</a></li>
-        <li><a href="#secao-3">Pausas</a></li>
-        <li><a href="#secao-4">Ponto de aumento e ligadura</a></li>
-        <li><a href="#secao-5">Passo a passo para somar um ritmo</a></li>
-        <li><a href="#secao-6">Cuidado com este erro</a></li>
+        <li><a href="#secao-2">Simples e composto</a></li>
+        <li><a href="#secao-3">Passo a passo para ler um compasso de baixo 8</a></li>
+        <li><a href="#secao-4">Compassos irregulares</a></li>
+        <li><a href="#secao-5">Quiálteras: a tercina</a></li>
+        <li><a href="#secao-6">Síncope e contratempo</a></li>
+        <li><a href="#secao-7">Anacruse no compasso composto</a></li>
+        <li><a href="#secao-8">Cuidado com este erro</a></li>
         <li><a href="#exercicios">Exercícios</a></li>
         <li><a href="#resumo">Resumo</a></li>
       </ol>
@@ -575,332 +578,433 @@ tbody tr:last-child td { border-bottom: 0; }
     <h2><span class="num">1</span>Antes de começar</h2>
     <div class="prosa"><p>Responda de cabeça, sem consultar nada. Depois confira.</p>
 <ol>
-<li>Que propriedade do som diz se ele é curto ou longo?</li>
-<li>Na clave de sol, que nota fica na 2ª linha?</li>
-<li>O silêncio faz parte do ritmo?</li>
+<li>Na fórmula 3/4, o que diz o número de cima? E o de baixo?</li>
+<li>Quanto vale a semínima pontuada, em colcheias?</li>
+<li>O que é anacruse?</li>
 </ol></div>
     <details class="resposta"><summary>Conferir as respostas</summary><div class="prosa"><ol>
-<li>A duração.</li>
-<li>Sol4.</li>
-<li>Sim: ele também tem duração e conta no ritmo.</li>
+<li>Em cima, três tempos por compasso; embaixo, a semínima vale um tempo.</li>
+<li>Três colcheias (uma semínima e meia).</li>
+<li>A nota, ou o grupo de notas, que vem antes do primeiro tempo forte.</li>
 </ol></div></details>
-    <figure class="exemplo" data-exemplo="ex-abertura">
+    <figure class="exemplo" data-exemplo="ex-abertura-a">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Ouça antes de qualquer nome</p>
-        <button type="button" class="tocar" data-tocar="ex-abertura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Seis colcheias, primeira forma</p>
+        <button type="button" class="tocar" data-tocar="ex-abertura-a"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-abertura"></div>
-      <figcaption>Os quatro compassos têm o mesmo tamanho. O que acontece com os sons de um compasso para o outro?</figcaption>
+      <div class="partitura" data-partitura="ex-abertura-a"></div>
+      <figcaption>Bata palmas só nos sons fortes. Quantas colcheias há entre uma palma e outra?</figcaption>
     </figure>
-    <div class="prosa"><p>Em cada compasso, os sons ficam com <strong>metade</strong> da duração do compasso anterior, e cabem o dobro deles. Cada duração tem um desenho próprio, uma <strong>figura rítmica</strong>.</p>
-<p>Ao final, você vai ler o ritmo de uma cantiga somando as figuras.</p></div>
+    <figure class="exemplo" data-exemplo="ex-abertura-b">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Seis colcheias, segunda forma</p>
+        <button type="button" class="tocar" data-tocar="ex-abertura-b"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-abertura-b"></div>
+      <figcaption>As mesmas seis colcheias. E agora, quantas há entre uma palma e outra?</figcaption>
+    </figure>
+    <div class="prosa"><p>Na primeira forma, o forte volta a cada <strong>duas</strong> colcheias: é 3/4, que você já conhece. Na segunda, ele volta a cada <strong>três</strong>: é <strong>6/8</strong>, um <strong>compasso composto</strong>.</p>
+<p>Ao final, você vai ler 6/8, 9/8, 12/8, 5/4 e 7/8, tocar tercinas e reconhecer síncopes e contratempos.</p></div>
   </section>
   <section class="secao" id="secao-2">
-    <h2><span class="num">2</span>As cinco figuras</h2>
-    <div class="prosa"><p>Contando a <strong>semínima</strong> como <strong>1 tempo</strong>, como nos compassos 2/4, 3/4 e 4/4, cada figura vale assim:</p></div>
+    <h2><span class="num">2</span>Simples e composto</h2>
+    <div class="prosa"><p>O que muda entre os dois é a <strong>divisão do tempo</strong>.</p>
+<ul>
+<li>No compasso <strong>simples</strong>, cada tempo se divide em <strong>duas</strong> partes: a semínima vira duas colcheias.</li>
+<li>No compasso <strong>composto</strong>, cada tempo se divide em <strong>três</strong> partes: o tempo é uma <strong>semínima pontuada</strong>, que vira três colcheias.</li>
+</ul></div>
+    <figure class="exemplo" data-exemplo="ex-frase-68">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Uma frase em 6/8</p>
+        <button type="button" class="tocar" data-tocar="ex-frase-68"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-frase-68"></div>
+      <figcaption>Dois tempos por compasso, cada um com três colcheias: o balanço de 1-2-3, 4-5-6.</figcaption>
+    </figure>
+    <div class="prosa"><p>Nos compostos, o número de cima conta as <strong>divisões</strong>, não os tempos. Divida por 3 para achar os tempos: 6/8 tem 2, 9/8 tem 3 e 12/8 tem 4. O 8 de baixo diz que a divisão é a colcheia.</p></div>
     <figure class="tabela">
       <div class="tabela-rolagem">
         <table>
-          <thead><tr><th scope="col">Figura</th><th scope="col">Tempos</th><th scope="col">Equivale a</th></tr></thead>
+          <thead><tr><th scope="col">Tempos</th><th scope="col">Simples</th><th scope="col">Composto</th><th scope="col">Tempo no composto</th></tr></thead>
           <tbody>
-            <tr><td>semibreve</td><td>4</td><td>2 mínimas</td></tr>
-            <tr><td>mínima</td><td>2</td><td>2 semínimas</td></tr>
-            <tr><td>semínima</td><td>1</td><td>2 colcheias</td></tr>
-            <tr><td>colcheia</td><td>½</td><td>2 semicolcheias</td></tr>
-            <tr><td>semicolcheia</td><td>¼</td><td>–</td></tr>
+            <tr><td>2 (binário)</td><td>2/4</td><td>6/8</td><td>semínima pontuada</td></tr>
+            <tr><td>3 (ternário)</td><td>3/4</td><td>9/8</td><td>semínima pontuada</td></tr>
+            <tr><td>4 (quaternário)</td><td>4/4</td><td>12/8</td><td>semínima pontuada</td></tr>
           </tbody>
         </table>
       </div>
-      <figcaption>As figuras e quanto cada uma dura. Cada figura vale metade da anterior.</figcaption>
+      <figcaption>Cada compasso simples tem um composto com o mesmo número de tempos.</figcaption>
     </figure>
-    <figure class="exemplo" data-exemplo="ex-semicolcheias">
+    <figure class="exemplo" data-exemplo="ex-frase-98">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Semínimas, colcheias e semicolcheias</p>
-        <button type="button" class="tocar" data-tocar="ex-semicolcheias"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Uma frase em 9/8</p>
+        <button type="button" class="tocar" data-tocar="ex-frase-98"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-semicolcheias"></div>
-      <figcaption>Um tempo de cada vez: uma semínima, duas colcheias, quatro semicolcheias, e de novo a semínima.</figcaption>
+      <div class="partitura" data-partitura="ex-frase-98"></div>
+      <figcaption>Três tempos de três colcheias em cada compasso.</figcaption>
     </figure>
-    <div class="prosa"><p>A cantiga <em>Marcha soldado</em> começa com semínima, duas colcheias e duas semínimas.</p></div>
-    <figure class="exemplo" data-exemplo="ex-marcha-soldado">
+    <figure class="exemplo" data-exemplo="ex-frase-128">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Marcha soldado</p>
-        <button type="button" class="tocar" data-tocar="ex-marcha-soldado"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Uma frase em 12/8</p>
+        <button type="button" class="tocar" data-tocar="ex-frase-128"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-marcha-soldado"></div>
-      <figcaption>"Mar" dura um tempo; "cha sol" dividem o tempo seguinte; "da" e "do" voltam a durar um tempo cada.</figcaption>
+      <div class="partitura" data-partitura="ex-frase-128"></div>
+      <figcaption>Quatro tempos de três colcheias: muito usado no blues lento.</figcaption>
     </figure>
-    <div class="prosa"><p>Em <em>Pirulito que bate bate</em>, "to que" são duas <strong>semicolcheias</strong>: cabem no tempo de uma colcheia.</p></div>
-    <figure class="exemplo" data-exemplo="ex-pirulito">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">Pirulito que bate bate</p>
-        <button type="button" class="tocar" data-tocar="ex-pirulito"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      </div>
-      <div class="partitura" data-partitura="ex-pirulito"></div>
-      <figcaption>Ouça "li-to-que": as duas últimas sílabas passam rápido, em semicolcheias.</figcaption>
-    </figure>
+    <aside class="dica"><p class="rotulo">Dica</p><p>Em andamento lento, dá para reger o 6/8 em seis (1-2-3-4-5-6). Em andamento médio ou rápido, sente-se em dois: "um" na 1ª colcheia e "dois" na 4ª.</p></aside>
   </section>
   <section class="secao" id="secao-3">
-    <h2><span class="num">3</span>Pausas</h2>
-    <div class="prosa"><p>Cada figura tem uma <strong>pausa</strong> do mesmo valor, um silêncio medido: pausa de semibreve (4 tempos), de mínima (2), de semínima (1), de colcheia (½) e de semicolcheia (¼).</p></div>
-    <figure class="exemplo" data-exemplo="ex-pausas">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">Sons e pausas</p>
-        <button type="button" class="tocar" data-tocar="ex-pausas"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      </div>
-      <div class="partitura" data-partitura="ex-pausas"></div>
-      <figcaption>Som, silêncio, som, silêncio: as pausas têm a duração exata das figuras.</figcaption>
-    </figure>
+    <h2><span class="num">3</span>Passo a passo para ler um compasso de baixo 8</h2>
+    <div class="prosa"><p>Veja como descobrir o pulso de <strong>6/8</strong>, com o motivo de cada passo.</p>
+<ol>
+<li><strong>Leia o número de baixo</strong>: 8 é a colcheia. É ela que o número de cima está contando.</li>
+<li><strong>Veja se o de cima é 6, 9 ou 12</strong>: esses números se dividem em grupos de três colcheias, então o compasso é composto.</li>
+<li><strong>Divida por 3</strong>: 6 ÷ 3 = 2 tempos de semínima pontuada. É um <strong>binário composto</strong>.</li>
+</ol></div>
+    <div class="prosa"><p><strong>Pense antes de abrir a resposta:</strong> 3/4 e 6/8 têm, os dois, seis colcheias por compasso. Por que soam diferente?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Porque agrupam as colcheias de outro jeito. Em 3/4 são três tempos de duas (2+2+2); em 6/8, dois tempos de três (3+3). O tempo forte cai em lugares diferentes.</p></div></details>
+    <div class="prosa"><p>Agora o último passo é seu. <strong>9/8</strong>: o 8 é a colcheia, 9 se divide em grupos de três. Quantos tempos?</p>
+<p>E agora dois passos são seus: <strong>12/8</strong>. É composto? Quantos tempos tem?</p></div>
+    <details class="resposta"><summary>Ver as respostas</summary><div class="prosa"><p>9/8: 9 ÷ 3 = <strong>3 tempos</strong> de semínima pontuada, ternário composto.</p>
+<p>12/8: sim, 12 se divide em grupos de três. 12 ÷ 3 = <strong>4 tempos</strong>, quaternário composto.</p></div></details>
   </section>
   <section class="secao" id="secao-4">
-    <h2><span class="num">4</span>Ponto de aumento e ligadura</h2>
-    <div class="prosa"><p>O <strong>ponto de aumento</strong>, depois da nota, soma <strong>metade</strong> do valor dela:</p>
-<ul>
-<li>semínima pontuada: 1 + ½ = <strong>1½ tempo</strong>;</li>
-<li>mínima pontuada: 2 + 1 = <strong>3 tempos</strong>.</li>
-</ul></div>
-    <figure class="exemplo" data-exemplo="ex-ponto">
+    <h2><span class="num">4</span>Compassos irregulares</h2>
+    <div class="prosa"><p>Alguns compassos têm tempos que não se agrupam por igual: são os <strong>irregulares</strong> (ou assimétricos). O compasso <strong>5/4</strong> costuma se dividir em <strong>3 + 2</strong> (ou 2 + 3) semínimas. Ouça o apoio no 1º e no 4º tempo.</p></div>
+    <figure class="exemplo" data-exemplo="ex-cinco">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Semínima pontuada e colcheia</p>
-        <button type="button" class="tocar" data-tocar="ex-ponto"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">5/4 como 3 + 2</p>
+        <button type="button" class="tocar" data-tocar="ex-cinco"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-ponto"></div>
-      <figcaption>O som longo e o curto, repetidos: longo-curto, longo-curto.</figcaption>
+      <div class="partitura" data-partitura="ex-cinco"></div>
+      <figcaption>Forte no 1, apoio no 4: um grupo de três e outro de dois.</figcaption>
     </figure>
-    <div class="prosa"><p>A <strong>ligadura</strong> é uma curva que une duas notas <strong>da mesma altura</strong>: elas soam como um som só, com a soma das durações. Ela serve, por exemplo, para atravessar a barra de compasso.</p></div>
-    <figure class="exemplo" data-exemplo="ex-ligadura">
+    <div class="prosa"><p>O <strong>7/8</strong> tem sete colcheias, quase sempre em grupos de 2 e de 3. Na versão <strong>2 + 2 + 3</strong>, ele vira duas semínimas e uma semínima pontuada: dois passos curtos e um longo.</p></div>
+    <figure class="exemplo" data-exemplo="ex-sete">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Ligadura entre compassos</p>
-        <button type="button" class="tocar" data-tocar="ex-ligadura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">7/8 como 2 + 2 + 3</p>
+        <button type="button" class="tocar" data-tocar="ex-sete"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-ligadura"></div>
-      <figcaption>O último Mi do primeiro compasso continua no segundo: um som só, de três tempos.</figcaption>
+      <div class="partitura" data-partitura="ex-sete"></div>
+      <figcaption>Curto, curto, longo. O último grupo tem uma colcheia a mais.</figcaption>
     </figure>
   </section>
   <section class="secao" id="secao-5">
-    <h2><span class="num">5</span>Passo a passo para somar um ritmo</h2>
-    <div class="prosa"><p>Veja como somar os tempos de <strong>mínima + semínima + duas colcheias</strong>, com o motivo de cada passo.</p>
-<ol>
-<li><strong>Dê o valor de cada figura</strong>: mínima 2, semínima 1, colcheias ½ e ½.</li>
-<li><strong>Junte as metades</strong>: duas colcheias valem um tempo, como uma semínima.</li>
-<li><strong>Some</strong>: 2 + 1 + 1 = <strong>4 tempos</strong>.</li>
-</ol></div>
-    <figure class="exemplo" data-exemplo="ex-soma">
+    <h2><span class="num">5</span>Quiálteras: a tercina</h2>
+    <div class="prosa"><p>Às vezes um compasso simples pede, por um momento, a divisão em três. Para isso existe a <strong>quiáltera</strong>: um grupo com uma divisão diferente da normal, marcado com um número. A mais comum é a <strong>tercina</strong>: três colcheias no tempo de duas, com um <strong>3</strong> sobre o grupo.</p></div>
+    <figure class="exemplo" data-exemplo="ex-tercina">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Mínima, semínima e duas colcheias</p>
-        <button type="button" class="tocar" data-tocar="ex-soma"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Colcheias e tercinas</p>
+        <button type="button" class="tocar" data-tocar="ex-tercina"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-soma"></div>
-      <figcaption>Quatro tempos ao todo.</figcaption>
+      <div class="partitura" data-partitura="ex-tercina"></div>
+      <figcaption>No 1º tempo, duas colcheias; no 2º e no 3º, três notas por tempo, iguais entre si.</figcaption>
     </figure>
-    <div class="prosa"><p><strong>Pense antes de abrir a resposta:</strong> por que juntar as colcheias aos pares antes de somar?</p></div>
-    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Porque duas colcheias ocupam exatamente um tempo. Pensar em pares evita somar frações e mostra onde cada tempo começa.</p></div></details>
-    <div class="prosa"><p>Agora o último passo é seu. <strong>Semínima pontuada + colcheia + mínima</strong>: 1½ + ½ + 2. Quanto dá?</p>
-<p>E agora dois passos são seus: <strong>semibreve + mínima pontuada + semínima</strong>.</p></div>
-    <details class="resposta"><summary>Ver as respostas</summary><div class="prosa"><p>1½ + ½ + 2 = <strong>4 tempos</strong>. O ponto da semínima e a colcheia completam um tempo juntos.</p>
-<p>4 + 3 + 1 = <strong>8 tempos</strong>.</p></div></details>
+    <aside class="dica"><p class="rotulo">Dica</p><p>A tercina não acelera o pulso: o tempo continua com a mesma duração, só que dividido em três.</p></aside>
   </section>
   <section class="secao" id="secao-6">
-    <h2><span class="num">6</span>Cuidado com este erro</h2>
-    <div class="prosa"><p>Uma colega calculou:</p>
-<p>&gt; "A mínima vale 2 tempos. O ponto soma mais 1, então a mínima pontuada vale 3. Do mesmo jeito, a semínima pontuada vale 1 + 1 = 2 tempos."</p>
-<p>Qual passo está errado, por que e qual é o valor certo?</p></div>
-    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>O ponto não soma sempre 1 tempo: ele soma <strong>metade do valor da nota</strong>. Na mínima, metade é 1, por isso deu certo. Na semínima, metade é ½: a semínima pontuada vale <strong>1½ tempo</strong>.</p></div></details>
+    <h2><span class="num">6</span>Síncope e contratempo</h2>
+    <div class="prosa"><p>A <strong>síncope</strong> é uma nota que começa numa parte fraca e se prolonga sobre a parte forte seguinte. O apoio que esperamos no tempo "escorrega" para antes dele.</p></div>
+    <figure class="exemplo" data-exemplo="ex-sincope">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Colcheia, semínima, colcheia</p>
+        <button type="button" class="tocar" data-tocar="ex-sincope"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-sincope"></div>
+      <figcaption>A semínima começa no meio do 1º tempo e atravessa o início do 2º.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-sincope-ligada">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Síncope com ligadura</p>
+        <button type="button" class="tocar" data-tocar="ex-sincope-ligada"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-sincope-ligada"></div>
+      <figcaption>O Sol entra no meio do 2º tempo e, ligado, atravessa a barra até o tempo forte seguinte.</figcaption>
+    </figure>
+    <div class="prosa"><p>Na música brasileira, a síncope mais famosa é a <strong>síncope característica</strong>: semicolcheia, colcheia, semicolcheia, num só tempo. Ela está no maxixe, no choro e no samba.</p></div>
+    <figure class="exemplo" data-exemplo="ex-caracteristica">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Síncope característica</p>
+        <button type="button" class="tocar" data-tocar="ex-caracteristica"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-caracteristica"></div>
+      <figcaption>Curta, longa, curta no 1º tempo; depois uma semínima para descansar.</figcaption>
+    </figure>
+    <div class="prosa"><p>No <strong>contratempo</strong>, as notas caem só nas partes fracas, e as partes fortes ficam com pausa. Primeiro, ouça o tempo marcado no grave e as notas agudas entre eles; depois, só as agudas.</p></div>
+    <figure class="exemplo" data-exemplo="ex-contratempo-pulso">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Contratempo com o tempo marcado</p>
+        <button type="button" class="tocar" data-tocar="ex-contratempo-pulso"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-contratempo-pulso"></div>
+      <figcaption>O grave marca o tempo; o agudo responde no meio de cada tempo.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-contratempo">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Só o contratempo</p>
+        <button type="button" class="tocar" data-tocar="ex-contratempo"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-contratempo"></div>
+      <figcaption>Pausa no tempo, nota no meio dele. Tente bater o pé no tempo enquanto ouve.</figcaption>
+    </figure>
+  </section>
+  <section class="secao" id="secao-7">
+    <h2><span class="num">7</span>Anacruse no compasso composto</h2>
+    <div class="prosa"><p>A anacruse funciona igual nos compostos. Aqui a frase começa com <strong>uma colcheia</strong> antes da barra; o primeiro tempo forte cai na nota seguinte.</p></div>
+    <figure class="exemplo" data-exemplo="ex-anacruse">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Anacruse de uma colcheia em 6/8</p>
+        <button type="button" class="tocar" data-tocar="ex-anacruse"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-anacruse"></div>
+      <figcaption>Uma nota de impulso, e o forte chega no Dó agudo.</figcaption>
+    </figure>
+  </section>
+  <section class="secao" id="secao-8">
+    <h2><span class="num">8</span>Cuidado com este erro</h2>
+    <div class="prosa"><p>Um colega explicou assim:</p>
+<p>&gt; "6/8 e 3/4 são o mesmo compasso escrito de outro jeito, porque os dois têm seis colcheias."</p>
+<p>Onde está o erro, por que está errado e o que diferencia os dois?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Ter seis colcheias não faz dois compassos iguais. <strong>3/4</strong> tem três tempos de semínima, com as colcheias em 2+2+2; <strong>6/8</strong> tem dois tempos de semínima pontuada, com as colcheias em 3+3. Os tempos fortes caem em lugares diferentes, como você ouviu na abertura.</p></div></details>
   </section>
 
   <section class="secao exercicios" id="exercicios">
-    <h2><span class="num">7</span>Exercícios</h2>
+    <h2><span class="num">9</span>Exercícios</h2>
     <p class="placar" id="placar" aria-live="polite">Responda para ver seus acertos.</p>
     <article class="exercicio" data-exercicio="0" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 1 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quantos tempos vale a <strong>mínima</strong>?</p></div>
+      <div class="enunciado"><p>Quantos tempos tem um compasso <strong>6/8</strong> em andamento médio?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">2 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">1 tempo</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">4 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">½ tempo</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">2 tempos de semínima pontuada</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">6 tempos de colcheia</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">3 tempos de semínima</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">8 tempos</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>A mínima vale <strong>2 tempos</strong>, metade da semibreve (4) e o dobro da semínima (1).</p></div>
+        <div class="explicacao"><p>No composto, o 6 conta colcheias: 6 ÷ 3 = <strong>2 tempos</strong> de semínima pontuada. Quem marcou 3 semínimas leu como 3/4; quem marcou 8 leu o número de baixo.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="1" data-tipo="percepcao">
       <p class="rotulo">Exercício 2 · Percepção</p>
-      <div class="enunciado"><p>Ouça. As notas do segundo grupo duram metade ou o dobro das do primeiro?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-metade"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-metade" hidden>
-        <div class="partitura" data-partitura="exe-metade"></div>
-        <figcaption>Semínimas, depois colcheias: metade da duração.</figcaption>
+      <div class="enunciado"><p>Ouça. De quantas em quantas colcheias volta o som forte?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-agrupamento"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-agrupamento" hidden>
+        <div class="partitura" data-partitura="exe-agrupamento"></div>
+        <figcaption>De três em três: 6/8.</figcaption>
       </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">metade</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">o dobro</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">o mesmo tempo</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">De 3 em 3, como em 6/8</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">De 2 em 2, como em 3/4</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>No segundo grupo cabem oito notas no espaço de quatro: cada uma dura <strong>metade</strong>. São colcheias depois de semínimas.</p></div>
+        <div class="explicacao"><p>O forte cai na 1ª e na 4ª colcheia: <strong>3 + 3</strong>, um compasso composto. Em 3/4 ele cairia na 1ª, 3ª e 5ª.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="2" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 3 · Múltipla escolha</p>
-      <div class="enunciado"><p>Olhe a partitura e ouça. Quantos tempos somam as notas?</p></div>
-      <figure class="exemplo" data-exemplo="exe-soma">
-        <div class="exemplo-topo">
-          <p class="exemplo-titulo">Um compasso</p>
-          <button type="button" class="tocar" data-tocar="exe-soma"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-        </div>
-        <div class="partitura" data-partitura="exe-soma"></div>
-      </figure>
+      <div class="enunciado"><p>Qual compasso composto tem o mesmo número de tempos que <strong>3/4</strong>?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">4 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">3 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">5 tempos</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">9/8</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">6/8</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">12/8</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">3/8</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Mínima (2) + semínima (1) + duas colcheias (½ + ½) = <strong>4 tempos</strong>. Quem soma 5 contou cada colcheia como um tempo.</p></div>
+        <div class="explicacao"><p>3/4 tem 3 tempos. O composto com 3 tempos é <strong>9/8</strong> (9 ÷ 3 = 3). 6/8 tem 2 tempos e 12/8 tem 4.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="3" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 4 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quantas <strong>semicolcheias</strong> cabem numa semínima?</p></div>
+    <article class="exercicio" data-exercicio="3" data-tipo="percepcao">
+      <p class="rotulo">Exercício 4 · Percepção</p>
+      <div class="enunciado"><p>Ouça. Alguma nota começa numa parte fraca e se prolonga sobre o tempo seguinte?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-sincope"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-sincope" hidden>
+        <div class="partitura" data-partitura="exe-sincope"></div>
+        <figcaption>A nota Sol, ligada, atravessa a barra: é uma síncope.</figcaption>
+      </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">4</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">8</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Sim, há uma síncope</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Não, todas as notas começam no tempo</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Semínima = 2 colcheias = <strong>4 semicolcheias</strong>. Se marcou 2, pensou nas colcheias.</p></div>
+        <div class="explicacao"><p>O Sol entra no meio do 2º tempo e continua soando sobre o tempo forte seguinte: <strong>síncope</strong>. Se você não percebeu, bata o pé e note que, no tempo forte, nenhuma nota nova começa.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="4" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 5 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quanto vale a <strong>semínima pontuada</strong>?</p></div>
+      <div class="enunciado"><p>Numa <strong>tercina</strong> de colcheias, quantas notas cabem no tempo de uma semínima?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">1 tempo e meio</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">1 tempo</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">3</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">2</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">4</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">6</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>O ponto soma metade do valor: 1 + ½ = <strong>1½ tempo</strong>. Quem marca 2 somou um tempo inteiro.</p></div>
+        <div class="explicacao"><p>A tercina põe <strong>três</strong> colcheias no tempo de duas, ou seja, no tempo de uma semínima. Duas é a divisão normal.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="5" data-tipo="percepcao">
-      <p class="rotulo">Exercício 6 · Percepção</p>
-      <div class="enunciado"><p>Ouça o começo de <em>Marcha soldado</em>. Que figuras formam "Mar-cha sol-"?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-marcha"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-marcha" hidden>
-        <div class="partitura" data-partitura="exe-marcha"></div>
-        <figcaption>Semínima, colcheia, colcheia.</figcaption>
+    <article class="exercicio" data-exercicio="5" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 6 · Múltipla escolha</p>
+      <div class="enunciado"><p>Como as colcheias deste compasso estão agrupadas?</p></div>
+      <figure class="exemplo" data-exemplo="exe-sete">
+        <div class="exemplo-topo">
+          <p class="exemplo-titulo">Compasso em 7/8</p>
+          <button type="button" class="tocar" data-tocar="exe-sete"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        </div>
+        <div class="partitura" data-partitura="exe-sete"></div>
       </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">semínima, colcheia, colcheia</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">três semínimas</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">colcheia, colcheia, semínima</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">2 + 2 + 3</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">3 + 2 + 2</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">2 + 3 + 2</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">3 + 4</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>"Mar" dura um tempo inteiro, e "cha sol" dividem o tempo seguinte: <strong>semínima e duas colcheias</strong>.</p></div>
+        <div class="explicacao"><p>Duas semínimas (2 + 2 colcheias) e uma semínima pontuada (3 colcheias): <strong>2 + 2 + 3</strong>, a forma mais comum do 7/8.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="6" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 7 · Múltipla escolha</p>
-      <div class="enunciado"><p>A <strong>pausa de semínima</strong> vale:</p></div>
+      <div class="enunciado"><p>Por que <strong>2/4</strong> é um compasso <strong>simples</strong>?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">1 tempo de silêncio</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">meio tempo de silêncio</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">2 tempos de silêncio</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Porque cada tempo se divide em duas colcheias</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Porque tem só dois tempos</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Porque não tem anacruse</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Cada pausa tem o valor da figura do mesmo nome: <strong>1 tempo</strong>. Meio tempo é a pausa de colcheia.</p></div>
+        <div class="explicacao"><p>Simples ou composto depende da <strong>divisão do tempo</strong>: em 2/4 a semínima se divide em duas. 6/8 também tem dois tempos, mas é composto.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="7" data-tipo="percepcao">
       <p class="rotulo">Exercício 8 · Percepção</p>
-      <div class="enunciado"><p>Ouça. Você escuta dois sons ou um som só?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-ligadura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-ligadura" hidden>
-        <div class="partitura" data-partitura="exe-ligadura"></div>
-        <figcaption>Uma ligadura: um som só, de quatro tempos.</figcaption>
+      <div class="enunciado"><p>Ouça e bata o pé no tempo. Onde caem as notas?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-contratempo"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-contratempo" hidden>
+        <div class="partitura" data-partitura="exe-contratempo"></div>
+        <figcaption>Pausa no tempo, nota no meio dele: contratempo.</figcaption>
       </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">um som só</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">dois sons</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Entre os tempos, no contratempo</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Junto com cada tempo</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Só no primeiro tempo de cada compasso</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>As duas notas estão ligadas: soam como <strong>um som só</strong>, com 2 + 2 = 4 tempos.</p></div>
+        <div class="explicacao"><p>As notas caem na <strong>metade fraca</strong> de cada tempo, com pausa no tempo: é o <strong>contratempo</strong>. Se pareceu que caíam no tempo, tente bater o pé antes de a primeira nota soar.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="8" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 9 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quantas <strong>colcheias</strong> valem uma mínima?</p></div>
+      <div class="enunciado"><p>Quantos tempos tem um compasso <strong>12/8</strong>?</p></div>
       <ol class="opcoes" type="A">
         <li><button type="button" class="opcao" data-opcao="0">4</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">8</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">12</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">6</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">3</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Mínima = 2 semínimas = <strong>4 colcheias</strong>. Se marcou 8, contou semicolcheias.</p></div>
+        <div class="explicacao"><p>12 colcheias em grupos de três: 12 ÷ 3 = <strong>4 tempos</strong> de semínima pontuada. O 12 conta divisões, não tempos.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="9" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 10 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quanto vale a <strong>mínima pontuada</strong>?</p></div>
+    <article class="exercicio" data-exercicio="9" data-tipo="percepcao">
+      <p class="rotulo">Exercício 10 · Percepção</p>
+      <div class="enunciado"><p>Ouça. O tempo forte volta de quantos em quantos pulsos?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-cinco"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-cinco" hidden>
+        <div class="partitura" data-partitura="exe-cinco"></div>
+        <figcaption>De cinco em cinco: 5/4.</figcaption>
+      </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">3 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2 tempos e meio</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">4 tempos</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">5</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">4</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">6</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>O ponto soma metade da mínima: 2 + 1 = <strong>3 tempos</strong>.</p></div>
+        <div class="explicacao"><p>O som forte volta a cada <strong>cinco</strong> pulsos: um compasso irregular, 5/4. Conte desde o forte até o próximo.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="10" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 11 · Múltipla escolha</p>
-      <div class="enunciado"><p>Qual figura vale <strong>4 tempos</strong>?</p></div>
+      <div class="enunciado"><p>Qual figura forma a <strong>síncope característica</strong> da música brasileira?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">semibreve</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">mínima</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">semínima</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">colcheia</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Semicolcheia, colcheia, semicolcheia</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Colcheia pontuada e semicolcheia</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Quatro semicolcheias</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Tercina de colcheias</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>A <strong>semibreve</strong> vale 4 tempos, a maior das cinco. A mínima vale 2.</p></div>
+        <div class="explicacao"><p>Curta, longa, curta num só tempo: <strong>semicolcheia, colcheia, semicolcheia</strong>. A colcheia do meio começa numa parte fraca e atravessa a metade do tempo.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="11" data-tipo="percepcao">
+      <p class="rotulo">Exercício 12 · Percepção</p>
+      <div class="enunciado"><p>Ouça. Em que nota cai o primeiro tempo forte?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-anacruse"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-anacruse" hidden>
+        <div class="partitura" data-partitura="exe-anacruse"></div>
+        <figcaption>A primeira nota é anacruse; o forte cai na segunda.</figcaption>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">Na 2ª nota</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Na 1ª nota</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Na 3ª nota</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>A frase começa com uma colcheia de impulso, a <strong>anacruse</strong>. O primeiro tempo forte cai na <strong>2ª nota</strong>, o Dó agudo, logo depois da barra.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="12" data-tipo="percepcao">
+      <p class="rotulo">Exercício 13 · Percepção</p>
+      <div class="enunciado"><p>Ouça. No 2º tempo, em quantas notas iguais o tempo se divide?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-tercina"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-tercina" hidden>
+        <div class="partitura" data-partitura="exe-tercina"></div>
+        <figcaption>Duas colcheias e depois uma tercina.</figcaption>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">3</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">2</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">4</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>O 1º tempo tem duas colcheias; o 2º tem <strong>três</strong> notas no mesmo espaço, uma <strong>tercina</strong>. A divisão fica mais apertada, mas o tempo não acelera.</p></div>
       </div>
     </article>
   </section>
 
   <section class="secao" id="resumo">
-    <h2><span class="num">8</span>Resumo</h2>
+    <h2><span class="num">10</span>Resumo</h2>
     <ul class="resumo">
-      <li>Com a semínima valendo 1 tempo: semibreve 4, mínima 2, semínima 1, colcheia ½, semicolcheia ¼.</li>
-      <li>Cada figura vale <strong>metade</strong> da anterior.</li>
-      <li>Cada figura tem uma <strong>pausa</strong> com o mesmo valor.</li>
-      <li>O <strong>ponto</strong> soma metade do valor da nota: semínima pontuada vale 1½.</li>
-      <li>A <strong>ligadura</strong> une duas notas da mesma altura num som só.</li>
+      <li>No compasso <strong>simples</strong>, o tempo se divide em dois; no <strong>composto</strong>, em três, e o tempo é a semínima pontuada.</li>
+      <li>Em <strong>6/8, 9/8 e 12/8</strong>, divida o número de cima por 3: são 2, 3 e 4 tempos.</li>
+      <li>Compassos <strong>irregulares</strong> misturam grupos de 2 e 3: 5/4 como 3 + 2, 7/8 como 2 + 2 + 3.</li>
+      <li>A <strong>tercina</strong> põe três notas no tempo de duas, com um 3 sobre o grupo.</li>
+      <li><strong>Síncope</strong>: nota que nasce na parte fraca e atravessa a forte. <strong>Contratempo</strong>: notas só nas partes fracas.</li>
     </ul>
     <div class="para-o-chat">
       <p class="rotulo">Leve para o chat do professor</p>
-      <p id="pergunta-chat">Me dê ritmos curtos, um de cada vez, para eu somar os tempos, e me dê uma dica antes de mostrar a resposta.</p>
+      <p id="pergunta-chat">Me dê fórmulas de compasso, uma de cada vez, para eu dizer se é simples, composto ou irregular e quantos tempos tem, e corrija meu raciocínio.</p>
       <button type="button" id="copiar-pergunta" class="secundario">Copiar pergunta</button>
     </div>
   </section>
 </main>
 
 <footer class="rodape">
-  <p>Aula I04 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
+  <p>Aula M01 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
 </footer>
 
-<script type="application/json" id="dados-aula">{"codigo": "I04", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura": {"id": "ex-abertura", "titulo": "Ouça antes de qualquer nome", "legenda": "Os quatro compassos têm o mesmo tamanho. O que acontece com os sons de um compasso para o outro?", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nG4 | G2 G2 | G G G G | G/2G/2 G/2G/2 G/2G/2 G/2G/2 |]\n", "andamento": 72, "eventos": [{"midis": [67], "duracao": 4.0}, {"midis": [67], "duracao": 2.0}, {"midis": [67], "duracao": 2.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}]}, "ex-semicolcheias": {"id": "ex-semicolcheias", "titulo": "Semínimas, colcheias e semicolcheias", "legenda": "Um tempo de cada vez: uma semínima, duas colcheias, quatro semicolcheias, e de novo a semínima.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nc c/2c/2 c/4c/4c/4c/4 c |]\n", "andamento": 72, "eventos": [{"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 1.0}]}, "ex-marcha-soldado": {"id": "ex-marcha-soldado", "titulo": "Marcha soldado", "legenda": "\"Mar\" dura um tempo; \"cha sol\" dividem o tempo seguinte; \"da\" e \"do\" voltam a durar um tempo cada.", "abc": "X:1\nM:2/4\nL:1/4\n%%stretchlast 1\nK:C\nG G/2E/2 | C C |]\nw:Mar-cha sol-da-do\n", "andamento": 88, "eventos": [{"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [60], "duracao": 1.0}, {"midis": [60], "duracao": 1.0}]}, "ex-pirulito": {"id": "ex-pirulito", "titulo": "Pirulito que bate bate", "legenda": "Ouça \"li-to-que\": as duas últimas sílabas passam rápido, em semicolcheias.", "abc": "X:1\nM:2/4\nL:1/4\n%%stretchlast 1\nK:C\nE/2F/2 | G/2G/4G/4 F/2E/2 |]\nw:Pi-ru-li-to que ba-te\n", "andamento": 88, "eventos": [{"midis": [64], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.25}, {"midis": [67], "duracao": 0.25}, {"midis": [65], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}]}, "ex-pausas": {"id": "ex-pausas", "titulo": "Sons e pausas", "legenda": "Som, silêncio, som, silêncio: as pausas têm a duração exata das figuras.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nd z d2 | z2 d/2 z/2 d |]\n", "andamento": 72, "eventos": [{"midis": [74], "duracao": 1.0}, {"midis": [], "duracao": 1.0}, {"midis": [74], "duracao": 2.0}, {"midis": [], "duracao": 2.0}, {"midis": [74], "duracao": 0.5}, {"midis": [], "duracao": 0.5}, {"midis": [74], "duracao": 1.0}]}, "ex-ponto": {"id": "ex-ponto", "titulo": "Semínima pontuada e colcheia", "legenda": "O som longo e o curto, repetidos: longo-curto, longo-curto.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nA3/2 A/2 A3/2 A/2 | A3 z |]\n", "andamento": 72, "eventos": [{"midis": [69], "duracao": 1.5}, {"midis": [69], "duracao": 0.5}, {"midis": [69], "duracao": 1.5}, {"midis": [69], "duracao": 0.5}, {"midis": [69], "duracao": 3.0}, {"midis": [], "duracao": 1.0}]}, "ex-ligadura": {"id": "ex-ligadura", "titulo": "Ligadura entre compassos", "legenda": "O último Mi do primeiro compasso continua no segundo: um som só, de três tempos.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nc c e2- | e c c2 |]\n", "andamento": 72, "eventos": [{"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [76], "duracao": 2.0, "ligada": true}, {"midis": [76], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 2.0}]}, "ex-soma": {"id": "ex-soma", "titulo": "Mínima, semínima e duas colcheias", "legenda": "Quatro tempos ao todo.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nF2 F F/2F/2 |]\n", "andamento": 72, "eventos": [{"midis": [65], "duracao": 2.0}, {"midis": [65], "duracao": 1.0}, {"midis": [65], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}]}, "exe-metade": {"id": "exe-metade", "titulo": "Dois grupos", "legenda": "Semínimas, depois colcheias: metade da duração.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nc c c c | c/2c/2 c/2c/2 c/2c/2 c/2c/2 |]\n", "andamento": 72, "eventos": [{"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}]}, "exe-soma": {"id": "exe-soma", "titulo": "Um compasso", "legenda": "Mínima, semínima e duas colcheias.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nG2 G G/2G/2 |]\n", "andamento": 72, "eventos": [{"midis": [67], "duracao": 2.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}]}, "exe-marcha": {"id": "exe-marcha", "titulo": "Marcha soldado", "legenda": "Semínima, colcheia, colcheia.", "abc": "X:1\nM:2/4\nL:1/4\n%%stretchlast 1\nK:C\nG G/2E/2 | C C |]\nw:Mar-cha sol-da-do\n", "andamento": 88, "eventos": [{"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [60], "duracao": 1.0}, {"midis": [60], "duracao": 1.0}]}, "exe-ligadura": {"id": "exe-ligadura", "titulo": "Duas notas escritas", "legenda": "Uma ligadura: um som só, de quatro tempos.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nd2- d2 |]\n", "andamento": 72, "eventos": [{"midis": [74], "duracao": 2.0, "ligada": true}, {"midis": [74], "duracao": 2.0}]}}, "teclados": {}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "valores-das-figuras", "correta": 0}, {"indice": 1, "tipo": "percepcao", "conceito": "relacao-entre-figuras", "exemplo": "exe-metade", "correta": 0}, {"indice": 2, "tipo": "multipla_escolha", "conceito": "leitura-ritmica", "exemplo": "exe-soma", "correta": 0}, {"indice": 3, "tipo": "multipla_escolha", "conceito": "relacao-entre-figuras", "correta": 0}, {"indice": 4, "tipo": "multipla_escolha", "conceito": "ponto-de-aumento", "correta": 0}, {"indice": 5, "tipo": "percepcao", "conceito": "leitura-ritmica", "exemplo": "exe-marcha", "correta": 0}, {"indice": 6, "tipo": "multipla_escolha", "conceito": "pausas", "correta": 0}, {"indice": 7, "tipo": "percepcao", "conceito": "ligadura", "exemplo": "exe-ligadura", "correta": 0}, {"indice": 8, "tipo": "multipla_escolha", "conceito": "relacao-entre-figuras", "correta": 0}, {"indice": 9, "tipo": "multipla_escolha", "conceito": "ponto-de-aumento", "correta": 0}, {"indice": 10, "tipo": "multipla_escolha", "conceito": "valores-das-figuras", "correta": 0}]}</script>
+<script type="application/json" id="dados-aula">{"codigo": "M01", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura-a": {"id": "ex-abertura-a", "titulo": "Seis colcheias, primeira forma", "legenda": "Bata palmas só nos sons fortes. Quantas colcheias há entre uma palma e outra?", "abc": "X:1\nM:3/4\nL:1/4\nK:C\n!>!c/2c/2 !>!c/2c/2 !>!c/2c/2 | !>!c/2c/2 !>!c/2c/2 !>!c/2c/2 |]\n", "andamento": 84, "eventos": [{"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}]}, "ex-abertura-b": {"id": "ex-abertura-b", "titulo": "Seis colcheias, segunda forma", "legenda": "As mesmas seis colcheias. E agora, quantas há entre uma palma e outra?", "abc": "X:1\nM:6/8\nL:1/4\nK:C\n!>!c/2c/2c/2 !>!c/2c/2c/2 | !>!c/2c/2c/2 !>!c/2c/2c/2 |]\n", "andamento": 84, "eventos": [{"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}]}, "ex-frase-68": {"id": "ex-frase-68", "titulo": "Uma frase em 6/8", "legenda": "Dois tempos por compasso, cada um com três colcheias: o balanço de 1-2-3, 4-5-6.", "abc": "X:1\nM:6/8\nL:1/4\nK:C\n!>!C E/2 G E/2 | F/2E/2D/2 C3/2 |]\n", "andamento": 96, "eventos": [{"midis": [60], "duracao": 1.0, "intensidade": 0.91}, {"midis": [64], "duracao": 0.5, "intensidade": 0.66}, {"midis": [67], "duracao": 1.0, "intensidade": 0.66}, {"midis": [64], "duracao": 0.5, "intensidade": 0.66}, {"midis": [65], "duracao": 0.5, "intensidade": 0.66}, {"midis": [64], "duracao": 0.5, "intensidade": 0.66}, {"midis": [62], "duracao": 0.5, "intensidade": 0.66}, {"midis": [60], "duracao": 1.5, "intensidade": 0.66}]}, "ex-frase-98": {"id": "ex-frase-98", "titulo": "Uma frase em 9/8", "legenda": "Três tempos de três colcheias em cada compasso.", "abc": "X:1\nM:9/8\nL:1/4\nK:C\nG/2A/2B/2 c3/2 G3/2 | E F/2 G E/2 C3/2 |]\n", "andamento": 96, "eventos": [{"midis": [67], "duracao": 0.5}, {"midis": [69], "duracao": 0.5}, {"midis": [71], "duracao": 0.5}, {"midis": [72], "duracao": 1.5}, {"midis": [67], "duracao": 1.5}, {"midis": [64], "duracao": 1.0}, {"midis": [65], "duracao": 0.5}, {"midis": [67], "duracao": 1.0}, {"midis": [64], "duracao": 0.5}, {"midis": [60], "duracao": 1.5}]}, "ex-frase-128": {"id": "ex-frase-128", "titulo": "Uma frase em 12/8", "legenda": "Quatro tempos de três colcheias: muito usado no blues lento.", "abc": "X:1\nM:12/8\nL:1/4\nK:C\nE3/2 G/2F/2E/2 D3/2 G3/2 |]\n", "andamento": 96, "eventos": [{"midis": [64], "duracao": 1.5}, {"midis": [67], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [62], "duracao": 1.5}, {"midis": [67], "duracao": 1.5}]}, "ex-cinco": {"id": "ex-cinco", "titulo": "5/4 como 3 + 2", "legenda": "Forte no 1, apoio no 4: um grupo de três e outro de dois.", "abc": "X:1\nM:5/4\nL:1/4\nK:C\n!>!c G G !>!E G | !>!c G G !>!E G |]\n", "andamento": 110, "eventos": [{"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [67], "duracao": 1.0, "intensidade": 0.66}, {"midis": [67], "duracao": 1.0, "intensidade": 0.66}, {"midis": [64], "duracao": 1.0, "intensidade": 0.91}, {"midis": [67], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [67], "duracao": 1.0, "intensidade": 0.66}, {"midis": [67], "duracao": 1.0, "intensidade": 0.66}, {"midis": [64], "duracao": 1.0, "intensidade": 0.91}, {"midis": [67], "duracao": 1.0, "intensidade": 0.66}]}, "ex-sete": {"id": "ex-sete", "titulo": "7/8 como 2 + 2 + 3", "legenda": "Curto, curto, longo. O último grupo tem uma colcheia a mais.", "abc": "X:1\nM:7/8\nL:1/4\nK:C\n!>!c !>!G !>!E3/2 | !>!c !>!G !>!E3/2 |]\n", "andamento": 150, "eventos": [{"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [67], "duracao": 1.0, "intensidade": 0.91}, {"midis": [64], "duracao": 1.5, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [67], "duracao": 1.0, "intensidade": 0.91}, {"midis": [64], "duracao": 1.5, "intensidade": 0.91}]}, "ex-tercina": {"id": "ex-tercina", "titulo": "Colcheias e tercinas", "legenda": "No 1º tempo, duas colcheias; no 2º e no 3º, três notas por tempo, iguais entre si.", "abc": "X:1\nM:3/4\nL:1/4\nK:C\nC/2D/2 (3:2:3E/2F/2E/2 (3:2:3D/2E/2D/2 | C |]\n", "andamento": 72, "eventos": [{"midis": [60], "duracao": 0.5}, {"midis": [62], "duracao": 0.5}, {"midis": [64], "duracao": 0.3333333333333333}, {"midis": [65], "duracao": 0.3333333333333333}, {"midis": [64], "duracao": 0.3333333333333333}, {"midis": [62], "duracao": 0.3333333333333333}, {"midis": [64], "duracao": 0.3333333333333333}, {"midis": [62], "duracao": 0.3333333333333333}, {"midis": [60], "duracao": 1.0}]}, "ex-sincope": {"id": "ex-sincope", "titulo": "Colcheia, semínima, colcheia", "legenda": "A semínima começa no meio do 1º tempo e atravessa o início do 2º.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nE/2 !>!G E/2 | C2 |]\n", "andamento": 80, "eventos": [{"midis": [64], "duracao": 0.5, "intensidade": 0.66}, {"midis": [67], "duracao": 1.0, "intensidade": 0.91}, {"midis": [64], "duracao": 0.5, "intensidade": 0.66}, {"midis": [60], "duracao": 2.0, "intensidade": 0.66}]}, "ex-sincope-ligada": {"id": "ex-sincope-ligada", "titulo": "Síncope com ligadura", "legenda": "O Sol entra no meio do 2º tempo e, ligado, atravessa a barra até o tempo forte seguinte.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nE E/2G/2- | G z |]\n", "andamento": 80, "eventos": [{"midis": [64], "duracao": 1.0}, {"midis": [64], "duracao": 0.5}, {"midis": [67], "duracao": 0.5, "ligada": true}, {"midis": [67], "duracao": 1.0}, {"midis": [], "duracao": 1.0}]}, "ex-caracteristica": {"id": "ex-caracteristica", "titulo": "Síncope característica", "legenda": "Curta, longa, curta no 1º tempo; depois uma semínima para descansar.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nG/4A/2G/4 E | G/4A/2G/4 c |]\n", "andamento": 72, "eventos": [{"midis": [67], "duracao": 0.25}, {"midis": [69], "duracao": 0.5}, {"midis": [67], "duracao": 0.25}, {"midis": [64], "duracao": 1.0}, {"midis": [67], "duracao": 0.25}, {"midis": [69], "duracao": 0.5}, {"midis": [67], "duracao": 0.25}, {"midis": [72], "duracao": 1.0}]}, "ex-contratempo-pulso": {"id": "ex-contratempo-pulso", "titulo": "Contratempo com o tempo marcado", "legenda": "O grave marca o tempo; o agudo responde no meio de cada tempo.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\n.E/2!>!c/2 .E/2!>!c/2 | .E/2!>!c/2 .E/2!>!c/2 |]\n", "andamento": 96, "eventos": [{"midis": [64], "duracao": 0.5, "staccato": true, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [64], "duracao": 0.5, "staccato": true, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [64], "duracao": 0.5, "staccato": true, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [64], "duracao": 0.5, "staccato": true, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}]}, "ex-contratempo": {"id": "ex-contratempo", "titulo": "Só o contratempo", "legenda": "Pausa no tempo, nota no meio dele. Tente bater o pé no tempo enquanto ouve.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nz/2 !>!c/2 z/2 !>!c/2 | z/2 !>!c/2 z/2 !>!c/2 |]\n", "andamento": 96, "eventos": [{"midis": [], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}]}, "ex-anacruse": {"id": "ex-anacruse", "titulo": "Anacruse de uma colcheia em 6/8", "legenda": "Uma nota de impulso, e o forte chega no Dó agudo.", "abc": "X:1\nM:6/8\nL:1/4\nK:C\nG/2 | !>!c G/2 e c/2 | d3/2 z3/2 |]\n", "andamento": 96, "eventos": [{"midis": [67], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [67], "duracao": 0.5, "intensidade": 0.66}, {"midis": [76], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [74], "duracao": 1.5, "intensidade": 0.66}, {"midis": [], "duracao": 1.5, "intensidade": 0.66}]}, "exe-agrupamento": {"id": "exe-agrupamento", "titulo": "Seis colcheias", "legenda": "De três em três: 6/8.", "abc": "X:1\nM:6/8\nL:1/4\nK:C\n!>!c/2c/2c/2 !>!c/2c/2c/2 | !>!c/2c/2c/2 !>!c/2c/2c/2 |]\n", "andamento": 84, "eventos": [{"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}]}, "exe-sincope": {"id": "exe-sincope", "titulo": "Frase", "legenda": "A nota Sol, ligada, atravessa a barra: é uma síncope.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nE E/2G/2- | G z |]\n", "andamento": 80, "eventos": [{"midis": [64], "duracao": 1.0}, {"midis": [64], "duracao": 0.5}, {"midis": [67], "duracao": 0.5, "ligada": true}, {"midis": [67], "duracao": 1.0}, {"midis": [], "duracao": 1.0}]}, "exe-sete": {"id": "exe-sete", "titulo": "Compasso em 7/8", "legenda": "Curto, curto, longo.", "abc": "X:1\nM:7/8\nL:1/4\nK:C\n!>!c !>!G !>!E3/2 | !>!c !>!G !>!E3/2 |]\n", "andamento": 150, "eventos": [{"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [67], "duracao": 1.0, "intensidade": 0.91}, {"midis": [64], "duracao": 1.5, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [67], "duracao": 1.0, "intensidade": 0.91}, {"midis": [64], "duracao": 1.5, "intensidade": 0.91}]}, "exe-contratempo": {"id": "exe-contratempo", "titulo": "Ritmo", "legenda": "Pausa no tempo, nota no meio dele: contratempo.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nz/2 !>!c/2 z/2 !>!c/2 | z/2 !>!c/2 z/2 !>!c/2 |]\n", "andamento": 96, "eventos": [{"midis": [], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}, {"midis": [], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.91}]}, "exe-cinco": {"id": "exe-cinco", "titulo": "Pulso", "legenda": "De cinco em cinco: 5/4.", "abc": "X:1\nM:5/4\nL:1/4\nK:C\n!>!c c c c c | !>!c c c c c | !>!c c c c c |]\n", "andamento": 110, "eventos": [{"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.66}]}, "exe-anacruse": {"id": "exe-anacruse", "titulo": "Frase em 6/8", "legenda": "A primeira nota é anacruse; o forte cai na segunda.", "abc": "X:1\nM:6/8\nL:1/4\nK:C\nG/2 | !>!c G/2 e c/2 | d3/2 z3/2 |]\n", "andamento": 96, "eventos": [{"midis": [67], "duracao": 0.5, "intensidade": 0.66}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [67], "duracao": 0.5, "intensidade": 0.66}, {"midis": [76], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 0.5, "intensidade": 0.66}, {"midis": [74], "duracao": 1.5, "intensidade": 0.66}, {"midis": [], "duracao": 1.5, "intensidade": 0.66}]}, "exe-tercina": {"id": "exe-tercina", "titulo": "Dois tempos", "legenda": "Duas colcheias e depois uma tercina.", "abc": "X:1\nM:3/4\nL:1/4\nK:C\nE/2D/2 (3:2:3C/2D/2E/2 C |]\n", "andamento": 72, "eventos": [{"midis": [64], "duracao": 0.5}, {"midis": [62], "duracao": 0.5}, {"midis": [60], "duracao": 0.3333333333333333}, {"midis": [62], "duracao": 0.3333333333333333}, {"midis": [64], "duracao": 0.3333333333333333}, {"midis": [60], "duracao": 1.0}]}}, "teclados": {}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "compasso-composto", "correta": 0}, {"indice": 1, "tipo": "percepcao", "conceito": "simples-x-composto", "exemplo": "exe-agrupamento", "correta": 0}, {"indice": 2, "tipo": "multipla_escolha", "conceito": "simples-x-composto", "correta": 0}, {"indice": 3, "tipo": "percepcao", "conceito": "sincope", "exemplo": "exe-sincope", "correta": 0}, {"indice": 4, "tipo": "multipla_escolha", "conceito": "quialtera", "correta": 0}, {"indice": 5, "tipo": "multipla_escolha", "conceito": "compasso-irregular", "exemplo": "exe-sete", "correta": 0}, {"indice": 6, "tipo": "multipla_escolha", "conceito": "simples-x-composto", "correta": 0}, {"indice": 7, "tipo": "percepcao", "conceito": "contratempo", "exemplo": "exe-contratempo", "correta": 0}, {"indice": 8, "tipo": "multipla_escolha", "conceito": "compasso-composto", "correta": 0}, {"indice": 9, "tipo": "percepcao", "conceito": "compasso-irregular", "exemplo": "exe-cinco", "correta": 0}, {"indice": 10, "tipo": "multipla_escolha", "conceito": "sincope", "correta": 0}, {"indice": 11, "tipo": "percepcao", "conceito": "anacruse", "exemplo": "exe-anacruse", "correta": 0}, {"indice": 12, "tipo": "percepcao", "conceito": "quialtera", "exemplo": "exe-tercina", "correta": 0}]}</script>
 <script src="https://cdn.jsdelivr.net/npm/abcjs@6.7.1/dist/abcjs-basic-min.js"></script>
 <script>
 /* Aula interativa: partitura (abcjs), som sintetizado no navegador (piano ou violão),

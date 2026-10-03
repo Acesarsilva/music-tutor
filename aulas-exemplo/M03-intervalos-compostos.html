@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Figuras rítmicas</title>
+<title>Intervalos compostos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
@@ -520,7 +520,7 @@ tbody tr:last-child td { border-bottom: 0; }
 <body>
 <header class="barra">
   <div class="barra-interna">
-    <p class="barra-aula"><span class="selo">I04</span> Figuras rítmicas</p>
+    <p class="barra-aula"><span class="selo">M03</span> Intervalos compostos</p>
     <div class="controles">
       <div class="timbre" role="group" aria-label="Instrumento">
         <button type="button" id="timbre-piano" data-timbre="piano" aria-pressed="true">Piano</button>
@@ -537,34 +537,34 @@ tbody tr:last-child td { border-bottom: 0; }
 
 <main class="aula">
   <section class="abertura">
-    <p class="rotulo">Teoria musical · Iniciante</p>
-    <h1>Figuras rítmicas</h1>
-    <p class="chamada">Semibreve, mínima, semínima, colcheia e semicolcheia, as pausas, o ponto de aumento e a ligadura.</p>
+    <p class="rotulo">Teoria musical · Intermediário</p>
+    <h1>Intervalos compostos</h1>
+    <p class="chamada">9ª, 10ª, 11ª, 12ª e 13ª: a regra do 7, os semitons e as tensões das cifras.</p>
     <div class="ficha">
       <div>
         <h2 class="rotulo">Você vai aprender</h2>
         <ul>
-          <li>Reconhecer <strong>semibreve, mínima, semínima, colcheia e semicolcheia</strong></li>
-          <li>Reconhecer as <strong>pausas</strong></li>
-          <li>Usar o <strong>ponto de aumento</strong> e a <strong>ligadura</strong></li>
-          <li>Ler o ritmo de cantigas somando as figuras</li>
+          <li>Reconhecer intervalos <strong>compostos</strong>, maiores que a oitava</li>
+          <li>Converter simples em composto pela <strong>regra do 7</strong></li>
+          <li>Calcular os <strong>semitons</strong> de um composto</li>
+          <li>Achar a <strong>9ª, a 11ª e a 13ª</strong> de um acorde cifrado</li>
         </ul>
       </div>
       <div>
         <h2 class="rotulo">Antes, é bom saber</h2>
         <ul>
-          <li>Pauta e claves (I03)</li>
+          <li>Intervalos simples (I08)</li>
+          <li>Intervalos aumentados, diminutos e inversão (M02)</li>
         </ul>
       </div>
     </div>
     <nav class="indice" aria-label="Seções da aula">
       <ol>
         <li><a href="#secao-1">Antes de começar</a></li>
-        <li><a href="#secao-2">As cinco figuras</a></li>
-        <li><a href="#secao-3">Pausas</a></li>
-        <li><a href="#secao-4">Ponto de aumento e ligadura</a></li>
-        <li><a href="#secao-5">Passo a passo para somar um ritmo</a></li>
-        <li><a href="#secao-6">Cuidado com este erro</a></li>
+        <li><a href="#secao-2">Simples e compostos</a></li>
+        <li><a href="#secao-3">Passo a passo: classificar Dó4–Lá5</a></li>
+        <li><a href="#secao-4">9, 11 e 13 nas cifras</a></li>
+        <li><a href="#secao-5">Cuidado com este erro</a></li>
         <li><a href="#exercicios">Exercícios</a></li>
         <li><a href="#resumo">Resumo</a></li>
       </ol>
@@ -575,332 +575,377 @@ tbody tr:last-child td { border-bottom: 0; }
     <h2><span class="num">1</span>Antes de começar</h2>
     <div class="prosa"><p>Responda de cabeça, sem consultar nada. Depois confira.</p>
 <ol>
-<li>Que propriedade do som diz se ele é curto ou longo?</li>
-<li>Na clave de sol, que nota fica na 2ª linha?</li>
-<li>O silêncio faz parte do ritmo?</li>
+<li>Quantos semitons tem a oitava?</li>
+<li>Quantos semitons tem a 2ª maior? E a 3ª maior?</li>
+<li>Que notas formam o acorde C7?</li>
 </ol></div>
     <details class="resposta"><summary>Conferir as respostas</summary><div class="prosa"><ol>
-<li>A duração.</li>
-<li>Sol4.</li>
-<li>Sim: ele também tem duração e conta no ritmo.</li>
+<li>12.</li>
+<li>2ª maior: 2. 3ª maior: 4.</li>
+<li>Dó, Mi, Sol e Si♭.</li>
 </ol></div></details>
     <figure class="exemplo" data-exemplo="ex-abertura">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Ouça antes de qualquer nome</p>
+        <p class="exemplo-titulo">Dó e Ré, duas vezes</p>
         <button type="button" class="tocar" data-tocar="ex-abertura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
       <div class="partitura" data-partitura="ex-abertura"></div>
-      <figcaption>Os quatro compassos têm o mesmo tamanho. O que acontece com os sons de um compasso para o outro?</figcaption>
+      <figcaption>As duas notas são Dó e Ré nos dois acordes. Qual soa mais áspero? Qual soa mais aberto?</figcaption>
     </figure>
-    <div class="prosa"><p>Em cada compasso, os sons ficam com <strong>metade</strong> da duração do compasso anterior, e cabem o dobro deles. Cada duração tem um desenho próprio, uma <strong>figura rítmica</strong>.</p>
-<p>Ao final, você vai ler o ritmo de uma cantiga somando as figuras.</p></div>
+    <div class="prosa"><p>No primeiro, Dó e Ré estão colados: uma 2ª maior. No segundo, o Ré subiu uma oitava, e o intervalo passou da oitava: é uma <strong>9ª maior</strong>, um <strong>intervalo composto</strong>.</p>
+<p>Ao final, você vai dar nome a intervalos até a 13ª, calcular seus semitons e entender por que as cifras falam em 9, 11 e 13.</p></div>
   </section>
   <section class="secao" id="secao-2">
-    <h2><span class="num">2</span>As cinco figuras</h2>
-    <div class="prosa"><p>Contando a <strong>semínima</strong> como <strong>1 tempo</strong>, como nos compassos 2/4, 3/4 e 4/4, cada figura vale assim:</p></div>
+    <h2><span class="num">2</span>Simples e compostos</h2>
+    <div class="prosa"><p>Os intervalos até a oitava são <strong>simples</strong>. Os maiores que a oitava são <strong>compostos</strong>: um intervalo simples somado a uma oitava. Para achar o número, <strong>some 7</strong> ao número do simples: 2ª vira 9ª, 3ª vira 10ª, 4ª vira 11ª, 5ª vira 12ª e 6ª vira 13ª.</p>
+<p>A <strong>qualidade</strong> não muda (3ª maior vira 10ª maior), e os <strong>semitons</strong> ganham 12.</p></div>
+    <figure class="exemplo" data-exemplo="ex-9">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Dó4–Ré5: 9ª maior</p>
+        <button type="button" class="tocar" data-tocar="ex-9"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-9"></div>
+      <figcaption>Uma 2ª maior aberta uma oitava: 2 + 12 = 14 semitons.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-10">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Dó4–Mi5: 10ª maior</p>
+        <button type="button" class="tocar" data-tocar="ex-10"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-10"></div>
+      <figcaption>Uma 3ª maior aberta uma oitava: 4 + 12 = 16 semitons. Doce como a 3ª, só que mais espaçosa.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-11">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Dó4–Fá5: 11ª justa</p>
+        <button type="button" class="tocar" data-tocar="ex-11"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-11"></div>
+      <figcaption>Uma 4ª justa aberta uma oitava: 5 + 12 = 17 semitons.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-13">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Dó4–Lá5: 13ª maior</p>
+        <button type="button" class="tocar" data-tocar="ex-13"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-13"></div>
+      <figcaption>Uma 6ª maior aberta uma oitava: 9 + 12 = 21 semitons.</figcaption>
+    </figure>
     <figure class="tabela">
       <div class="tabela-rolagem">
         <table>
-          <thead><tr><th scope="col">Figura</th><th scope="col">Tempos</th><th scope="col">Equivale a</th></tr></thead>
+          <thead><tr><th scope="col">Composto</th><th scope="col">Simples</th><th scope="col">Exemplo</th><th scope="col">Semitons</th></tr></thead>
           <tbody>
-            <tr><td>semibreve</td><td>4</td><td>2 mínimas</td></tr>
-            <tr><td>mínima</td><td>2</td><td>2 semínimas</td></tr>
-            <tr><td>semínima</td><td>1</td><td>2 colcheias</td></tr>
-            <tr><td>colcheia</td><td>½</td><td>2 semicolcheias</td></tr>
-            <tr><td>semicolcheia</td><td>¼</td><td>–</td></tr>
+            <tr><td>9ª maior</td><td>2ª maior</td><td>Dó4–Ré5</td><td>14</td></tr>
+            <tr><td>9ª menor</td><td>2ª menor</td><td>Dó4–Ré♭5</td><td>13</td></tr>
+            <tr><td>10ª maior</td><td>3ª maior</td><td>Dó4–Mi5</td><td>16</td></tr>
+            <tr><td>10ª menor</td><td>3ª menor</td><td>Dó4–Mi♭5</td><td>15</td></tr>
+            <tr><td>11ª justa</td><td>4ª justa</td><td>Dó4–Fá5</td><td>17</td></tr>
+            <tr><td>12ª justa</td><td>5ª justa</td><td>Dó4–Sol5</td><td>19</td></tr>
+            <tr><td>13ª maior</td><td>6ª maior</td><td>Dó4–Lá5</td><td>21</td></tr>
           </tbody>
         </table>
       </div>
-      <figcaption>As figuras e quanto cada uma dura. Cada figura vale metade da anterior.</figcaption>
+      <figcaption>Os compostos mais usados, a partir de Dó4.</figcaption>
     </figure>
-    <figure class="exemplo" data-exemplo="ex-semicolcheias">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">Semínimas, colcheias e semicolcheias</p>
-        <button type="button" class="tocar" data-tocar="ex-semicolcheias"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      </div>
-      <div class="partitura" data-partitura="ex-semicolcheias"></div>
-      <figcaption>Um tempo de cada vez: uma semínima, duas colcheias, quatro semicolcheias, e de novo a semínima.</figcaption>
-    </figure>
-    <div class="prosa"><p>A cantiga <em>Marcha soldado</em> começa com semínima, duas colcheias e duas semínimas.</p></div>
-    <figure class="exemplo" data-exemplo="ex-marcha-soldado">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">Marcha soldado</p>
-        <button type="button" class="tocar" data-tocar="ex-marcha-soldado"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      </div>
-      <div class="partitura" data-partitura="ex-marcha-soldado"></div>
-      <figcaption>"Mar" dura um tempo; "cha sol" dividem o tempo seguinte; "da" e "do" voltam a durar um tempo cada.</figcaption>
-    </figure>
-    <div class="prosa"><p>Em <em>Pirulito que bate bate</em>, "to que" são duas <strong>semicolcheias</strong>: cabem no tempo de uma colcheia.</p></div>
-    <figure class="exemplo" data-exemplo="ex-pirulito">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">Pirulito que bate bate</p>
-        <button type="button" class="tocar" data-tocar="ex-pirulito"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      </div>
-      <div class="partitura" data-partitura="ex-pirulito"></div>
-      <figcaption>Ouça "li-to-que": as duas últimas sílabas passam rápido, em semicolcheias.</figcaption>
-    </figure>
+    <aside class="dica"><p class="rotulo">Dica</p><p>Por que somar 7, e não 8? Porque a nota do meio é contada duas vezes: Dó–Dó já é uma 8ª, e o Dó de cima é também a primeira nota da segunda contagem.</p></aside>
   </section>
   <section class="secao" id="secao-3">
-    <h2><span class="num">3</span>Pausas</h2>
-    <div class="prosa"><p>Cada figura tem uma <strong>pausa</strong> do mesmo valor, um silêncio medido: pausa de semibreve (4 tempos), de mínima (2), de semínima (1), de colcheia (½) e de semicolcheia (¼).</p></div>
-    <figure class="exemplo" data-exemplo="ex-pausas">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">Sons e pausas</p>
-        <button type="button" class="tocar" data-tocar="ex-pausas"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      </div>
-      <div class="partitura" data-partitura="ex-pausas"></div>
-      <figcaption>Som, silêncio, som, silêncio: as pausas têm a duração exata das figuras.</figcaption>
-    </figure>
+    <h2><span class="num">3</span>Passo a passo: classificar Dó4–Lá5</h2>
+    <div class="prosa"><p>Veja o caminho completo, com o motivo de cada passo.</p>
+<ol>
+<li><strong>Reduza</strong>: desça a nota de cima uma oitava. Dó4–Lá4 é uma <strong>6ª maior</strong> (9 semitons).</li>
+<li><strong>Some 7 ao número</strong>: 6 + 7 = <strong>13</strong>.</li>
+<li><strong>Mantenha a qualidade e some 12 semitons</strong>: <strong>13ª maior</strong>, com 9 + 12 = 21 semitons.</li>
+</ol></div>
+    <div class="prosa"><p><strong>Pense antes de abrir a resposta:</strong> por que reduzir primeiro, em vez de contar as notas de Dó4 até Lá5?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Dá para contar, mas são 13 notas, e é fácil se perder. Reduzindo, você usa o que já sabe dos intervalos simples e só ajusta o número.</p></div></details>
+    <div class="prosa"><p>Agora o último passo é seu. <strong>Ré4–Fá5</strong>: reduzido, Ré–Fá é 3ª menor; 3 + 7 = 10. Qual é o nome?</p>
+<p>E agora dois passos são seus: <strong>Mi4–Lá5</strong>. Reduza e some.</p></div>
+    <details class="resposta"><summary>Ver as respostas</summary><div class="prosa"><p>Ré4–Fá5: <strong>10ª menor</strong>, com 3 + 12 = 15 semitons.</p>
+<p>Mi4–Lá5: Mi–Lá é 4ª justa; 4 + 7 = 11. <strong>11ª justa</strong>, com 17 semitons.</p></div></details>
   </section>
   <section class="secao" id="secao-4">
-    <h2><span class="num">4</span>Ponto de aumento e ligadura</h2>
-    <div class="prosa"><p>O <strong>ponto de aumento</strong>, depois da nota, soma <strong>metade</strong> do valor dela:</p>
-<ul>
-<li>semínima pontuada: 1 + ½ = <strong>1½ tempo</strong>;</li>
-<li>mínima pontuada: 2 + 1 = <strong>3 tempos</strong>.</li>
-</ul></div>
-    <figure class="exemplo" data-exemplo="ex-ponto">
+    <h2><span class="num">4</span>9, 11 e 13 nas cifras</h2>
+    <div class="prosa"><p>Num acorde, as notas empilhadas em 3ªs a partir da fundamental são 1, 3, 5 e 7. A próxima 3ª acima da 7ª já passou da oitava: é a <strong>9ª</strong>. Depois vêm a <strong>11ª</strong> e a <strong>13ª</strong>. Essas notas acrescentadas acima do acorde se chamam <strong>tensões</strong>, e por isso as cifras usam os números compostos.</p></div>
+    <figure class="exemplo" data-exemplo="ex-c79">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Semínima pontuada e colcheia</p>
-        <button type="button" class="tocar" data-tocar="ex-ponto"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">C7(9)</p>
+        <button type="button" class="tocar" data-tocar="ex-c79"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-ponto"></div>
-      <figcaption>O som longo e o curto, repetidos: longo-curto, longo-curto.</figcaption>
+      <div class="partitura" data-partitura="ex-c79"></div>
+      <figcaption>Dó, Mi, Sol, Si♭ e o Ré no alto: a 9ª dá brilho ao acorde de sétima.</figcaption>
     </figure>
-    <div class="prosa"><p>A <strong>ligadura</strong> é uma curva que une duas notas <strong>da mesma altura</strong>: elas soam como um som só, com a soma das durações. Ela serve, por exemplo, para atravessar a barra de compasso.</p></div>
-    <figure class="exemplo" data-exemplo="ex-ligadura">
+    <figure class="exemplo" data-exemplo="ex-am711">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Ligadura entre compassos</p>
-        <button type="button" class="tocar" data-tocar="ex-ligadura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Am7(11)</p>
+        <button type="button" class="tocar" data-tocar="ex-am711"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-ligadura"></div>
-      <figcaption>O último Mi do primeiro compasso continua no segundo: um som só, de três tempos.</figcaption>
+      <div class="partitura" data-partitura="ex-am711"></div>
+      <figcaption>Lá, Sol, Dó e o Ré no alto: a 11ª, uma 4ª justa acima da oitava do Lá.</figcaption>
     </figure>
+    <figure class="exemplo" data-exemplo="ex-g713">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">G7(13)</p>
+        <button type="button" class="tocar" data-tocar="ex-g713"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-g713"></div>
+      <figcaption>Sol, Fá, Si e o Mi no alto: a 13ª, uma 6ª maior acima da oitava do Sol.</figcaption>
+    </figure>
+    <figure class="bloco-teclado">
+      <div class="teclado-rolagem"><div class="teclado" data-teclado="t-3-4"></div></div>
+      <figcaption>
+        <span>C7(9): a 9ª (Ré5) fica acima da 7ª (Si♭4). No braço, a mesma ordem, da corda grave para a aguda.</span>
+        <span class="acoes-instrumento">
+          <button type="button" class="tocar pequeno" data-tocar-teclado="t-3-4"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir as notas</span></button>
+          <button type="button" class="secundario" data-montar-acorde="t-3-4" aria-pressed="false">Montar acorde</button>
+          <button type="button" class="tocar pequeno" data-tocar-acorde="t-3-4" hidden><span class="icone" aria-hidden="true"></span><span class="texto">Tocar juntas</span></button>
+        </span>
+      </figcaption>
+    </figure>
+    <aside class="dica"><p class="rotulo">Dica</p><p>Em quais acordes cada tensão soa bem é assunto do nível avançado. Aqui basta achar a nota pelo número.</p></aside>
   </section>
   <section class="secao" id="secao-5">
-    <h2><span class="num">5</span>Passo a passo para somar um ritmo</h2>
-    <div class="prosa"><p>Veja como somar os tempos de <strong>mínima + semínima + duas colcheias</strong>, com o motivo de cada passo.</p>
-<ol>
-<li><strong>Dê o valor de cada figura</strong>: mínima 2, semínima 1, colcheias ½ e ½.</li>
-<li><strong>Junte as metades</strong>: duas colcheias valem um tempo, como uma semínima.</li>
-<li><strong>Some</strong>: 2 + 1 + 1 = <strong>4 tempos</strong>.</li>
-</ol></div>
-    <figure class="exemplo" data-exemplo="ex-soma">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">Mínima, semínima e duas colcheias</p>
-        <button type="button" class="tocar" data-tocar="ex-soma"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      </div>
-      <div class="partitura" data-partitura="ex-soma"></div>
-      <figcaption>Quatro tempos ao todo.</figcaption>
-    </figure>
-    <div class="prosa"><p><strong>Pense antes de abrir a resposta:</strong> por que juntar as colcheias aos pares antes de somar?</p></div>
-    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Porque duas colcheias ocupam exatamente um tempo. Pensar em pares evita somar frações e mostra onde cada tempo começa.</p></div></details>
-    <div class="prosa"><p>Agora o último passo é seu. <strong>Semínima pontuada + colcheia + mínima</strong>: 1½ + ½ + 2. Quanto dá?</p>
-<p>E agora dois passos são seus: <strong>semibreve + mínima pontuada + semínima</strong>.</p></div>
-    <details class="resposta"><summary>Ver as respostas</summary><div class="prosa"><p>1½ + ½ + 2 = <strong>4 tempos</strong>. O ponto da semínima e a colcheia completam um tempo juntos.</p>
-<p>4 + 3 + 1 = <strong>8 tempos</strong>.</p></div></details>
-  </section>
-  <section class="secao" id="secao-6">
-    <h2><span class="num">6</span>Cuidado com este erro</h2>
-    <div class="prosa"><p>Uma colega calculou:</p>
-<p>&gt; "A mínima vale 2 tempos. O ponto soma mais 1, então a mínima pontuada vale 3. Do mesmo jeito, a semínima pontuada vale 1 + 1 = 2 tempos."</p>
-<p>Qual passo está errado, por que e qual é o valor certo?</p></div>
-    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>O ponto não soma sempre 1 tempo: ele soma <strong>metade do valor da nota</strong>. Na mínima, metade é 1, por isso deu certo. Na semínima, metade é ½: a semínima pontuada vale <strong>1½ tempo</strong>.</p></div></details>
+    <h2><span class="num">5</span>Cuidado com este erro</h2>
+    <div class="prosa"><p>Um colega classificou um intervalo assim:</p>
+<p>&gt; "Dó4–Mi5: Dó–Mi é uma 3ª, e uma oitava acima soma 8. Então é uma 11ª maior."</p>
+<p>Onde está o erro, por que está errado e qual é a resposta certa?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Para passar de simples a composto se <strong>soma 7</strong>, não 8, porque o Dó de cima é contado duas vezes. Dó4–Mi5 é <strong>10ª maior</strong>. Além disso, "11ª maior" nem existe: a 11ª, como a 4ª, é justa, aumentada ou diminuta.</p></div></details>
   </section>
 
   <section class="secao exercicios" id="exercicios">
-    <h2><span class="num">7</span>Exercícios</h2>
+    <h2><span class="num">6</span>Exercícios</h2>
     <p class="placar" id="placar" aria-live="polite">Responda para ver seus acertos.</p>
     <article class="exercicio" data-exercicio="0" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 1 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quantos tempos vale a <strong>mínima</strong>?</p></div>
-      <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">2 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">1 tempo</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">4 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">½ tempo</button></li>
-      </ol>
-      <div class="retorno" hidden>
-        <p class="veredito"></p>
-        <div class="explicacao"><p>A mínima vale <strong>2 tempos</strong>, metade da semibreve (4) e o dobro da semínima (1).</p></div>
-      </div>
-    </article>
-    <article class="exercicio" data-exercicio="1" data-tipo="percepcao">
-      <p class="rotulo">Exercício 2 · Percepção</p>
-      <div class="enunciado"><p>Ouça. As notas do segundo grupo duram metade ou o dobro das do primeiro?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-metade"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-metade" hidden>
-        <div class="partitura" data-partitura="exe-metade"></div>
-        <figcaption>Semínimas, depois colcheias: metade da duração.</figcaption>
+      <div class="enunciado"><p>Que intervalo é este?</p></div>
+      <figure class="exemplo" data-exemplo="exe-10">
+        <div class="exemplo-topo">
+          <p class="exemplo-titulo">Intervalo</p>
+          <button type="button" class="tocar" data-tocar="exe-10"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        </div>
+        <div class="partitura" data-partitura="exe-10"></div>
       </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">metade</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">o dobro</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">o mesmo tempo</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">10ª maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">11ª justa</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">3ª maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">10ª menor</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>No segundo grupo cabem oito notas no espaço de quatro: cada uma dura <strong>metade</strong>. São colcheias depois de semínimas.</p></div>
+        <div class="explicacao"><p>Reduzido, Dó–Mi é 3ª maior; 3 + 7 = <strong>10ª maior</strong>. Quem marcou 11ª somou 8 em vez de 7; quem marcou 3ª esqueceu a oitava.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="1" data-tipo="teclado">
+      <p class="rotulo">Exercício 2 · Toque a nota</p>
+      <div class="enunciado"><p>Dó4 está marcado. Clique na nota que forma uma <strong>9ª maior</strong> acima.</p></div>
+      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="1"></div></div>
+      <div class="acoes-teclado">
+        <button type="button" class="tocar pequeno" data-tocar-base="1"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
+      </div>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>A 9ª maior é a 2ª maior uma oitava acima: Ré, mas o <strong>Ré5</strong>, não o Ré4 vizinho.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="2" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 3 · Múltipla escolha</p>
-      <div class="enunciado"><p>Olhe a partitura e ouça. Quantos tempos somam as notas?</p></div>
-      <figure class="exemplo" data-exemplo="exe-soma">
-        <div class="exemplo-topo">
-          <p class="exemplo-titulo">Um compasso</p>
-          <button type="button" class="tocar" data-tocar="exe-soma"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-        </div>
-        <div class="partitura" data-partitura="exe-soma"></div>
-      </figure>
+      <div class="enunciado"><p>A <strong>11ª</strong> é a versão composta de qual intervalo simples?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">4 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">3 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">5 tempos</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">4ª</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">3ª</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">5ª</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">2ª</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Mínima (2) + semínima (1) + duas colcheias (½ + ½) = <strong>4 tempos</strong>. Quem soma 5 contou cada colcheia como um tempo.</p></div>
+        <div class="explicacao"><p>Tire 7 do número: 11 − 7 = <strong>4</strong>. Quem marcou 3ª tirou 8.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="3" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 4 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quantas <strong>semicolcheias</strong> cabem numa semínima?</p></div>
+    <article class="exercicio" data-exercicio="3" data-tipo="percepcao">
+      <p class="rotulo">Exercício 4 · Percepção</p>
+      <div class="enunciado"><p>Ouça. Que intervalo é este?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-9"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-9" hidden>
+        <div class="partitura" data-partitura="exe-9"></div>
+        <figcaption>Dó4–Ré5: 9ª maior.</figcaption>
+      </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">4</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">8</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">9ª maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">2ª maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">8ª justa</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Semínima = 2 colcheias = <strong>4 semicolcheias</strong>. Se marcou 2, pensou nas colcheias.</p></div>
+        <div class="explicacao"><p>As duas notas são diferentes e soam afastadas, sem o atrito da 2ª: <strong>9ª maior</strong>. A 8ª soaria como a mesma nota repetida.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="4" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 5 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quanto vale a <strong>semínima pontuada</strong>?</p></div>
+      <div class="enunciado"><p>Quantos semitons tem a <strong>10ª maior</strong>?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">1 tempo e meio</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">1 tempo</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">16 semitons</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">4 semitons</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">15 semitons</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">17 semitons</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>O ponto soma metade do valor: 1 + ½ = <strong>1½ tempo</strong>. Quem marca 2 somou um tempo inteiro.</p></div>
+        <div class="explicacao"><p>A 3ª maior tem 4; com a oitava, 4 + 12 = <strong>16</strong>. 15 é a 10ª menor.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="5" data-tipo="percepcao">
-      <p class="rotulo">Exercício 6 · Percepção</p>
-      <div class="enunciado"><p>Ouça o começo de <em>Marcha soldado</em>. Que figuras formam "Mar-cha sol-"?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-marcha"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-marcha" hidden>
-        <div class="partitura" data-partitura="exe-marcha"></div>
-        <figcaption>Semínima, colcheia, colcheia.</figcaption>
+    <article class="exercicio" data-exercicio="5" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 6 · Múltipla escolha</p>
+      <div class="enunciado"><p>No acorde <strong>C7(9)</strong>, qual nota é a 9ª?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">Ré</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Mi</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Si♭</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Dó</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>A 9ª de Dó é a 2ª uma oitava acima: <strong>Ré</strong>. Mi é a 3ª e Si♭ é a 7ª do acorde.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="6" data-tipo="teclado">
+      <p class="rotulo">Exercício 7 · Toque a nota</p>
+      <div class="enunciado"><p>Ré4 está marcado. Clique na nota que forma uma <strong>10ª menor</strong> acima.</p></div>
+      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="6"></div></div>
+      <div class="acoes-teclado">
+        <button type="button" class="tocar pequeno" data-tocar-base="6"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
+      </div>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Ré–Fá é 3ª menor; uma oitava acima, Ré4–<strong>Fá5</strong> é 10ª menor, com 15 semitons.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="7" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 8 · Múltipla escolha</p>
+      <div class="enunciado"><p>Que intervalo é este?</p></div>
+      <figure class="exemplo" data-exemplo="exe-10m">
+        <div class="exemplo-topo">
+          <p class="exemplo-titulo">Intervalo</p>
+          <button type="button" class="tocar" data-tocar="exe-10m"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        </div>
+        <div class="partitura" data-partitura="exe-10m"></div>
       </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">semínima, colcheia, colcheia</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">três semínimas</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">colcheia, colcheia, semínima</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">10ª menor</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">10ª maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">3ª menor</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">9ª menor</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>"Mar" dura um tempo inteiro, e "cha sol" dividem o tempo seguinte: <strong>semínima e duas colcheias</strong>.</p></div>
+        <div class="explicacao"><p>Reduzido, Ré–Fá é 3ª menor (3 semitons). Some 7 ao número e mantenha a qualidade: <strong>10ª menor</strong>.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="6" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 7 · Múltipla escolha</p>
-      <div class="enunciado"><p>A <strong>pausa de semínima</strong> vale:</p></div>
-      <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">1 tempo de silêncio</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">meio tempo de silêncio</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">2 tempos de silêncio</button></li>
-      </ol>
-      <div class="retorno" hidden>
-        <p class="veredito"></p>
-        <div class="explicacao"><p>Cada pausa tem o valor da figura do mesmo nome: <strong>1 tempo</strong>. Meio tempo é a pausa de colcheia.</p></div>
-      </div>
-    </article>
-    <article class="exercicio" data-exercicio="7" data-tipo="percepcao">
-      <p class="rotulo">Exercício 8 · Percepção</p>
-      <div class="enunciado"><p>Ouça. Você escuta dois sons ou um som só?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-ligadura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-ligadura" hidden>
-        <div class="partitura" data-partitura="exe-ligadura"></div>
-        <figcaption>Uma ligadura: um som só, de quatro tempos.</figcaption>
+    <article class="exercicio" data-exercicio="8" data-tipo="percepcao">
+      <p class="rotulo">Exercício 9 · Percepção</p>
+      <div class="enunciado"><p>Ouça. Que intervalo é este?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-10p"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-10p" hidden>
+        <div class="partitura" data-partitura="exe-10p"></div>
+        <figcaption>Dó4–Mi5: 10ª maior.</figcaption>
       </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">um som só</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">dois sons</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">10ª maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">3ª maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">9ª maior</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>As duas notas estão ligadas: soam como <strong>um som só</strong>, com 2 + 2 = 4 tempos.</p></div>
-      </div>
-    </article>
-    <article class="exercicio" data-exercicio="8" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 9 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quantas <strong>colcheias</strong> valem uma mínima?</p></div>
-      <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">4</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">8</button></li>
-      </ol>
-      <div class="retorno" hidden>
-        <p class="veredito"></p>
-        <div class="explicacao"><p>Mínima = 2 semínimas = <strong>4 colcheias</strong>. Se marcou 8, contou semicolcheias.</p></div>
+        <div class="explicacao"><p>O som é doce como o da 3ª maior, mas com as notas bem separadas: <strong>10ª maior</strong>. A 9ª tem um brilho mais tenso.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="9" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 10 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quanto vale a <strong>mínima pontuada</strong>?</p></div>
+      <div class="enunciado"><p>No acorde <strong>G7(13)</strong>, qual nota é a 13ª?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">3 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2 tempos e meio</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">4 tempos</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Mi</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Fá</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Ré</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Lá</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>O ponto soma metade da mínima: 2 + 1 = <strong>3 tempos</strong>.</p></div>
+        <div class="explicacao"><p>A 13ª de Sol é a 6ª uma oitava acima: Sol, Lá, Si, Dó, Ré, <strong>Mi</strong>. Fá é a 7ª do acorde.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="10" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 11 · Múltipla escolha</p>
-      <div class="enunciado"><p>Qual figura vale <strong>4 tempos</strong>?</p></div>
+      <div class="enunciado"><p>Que intervalo é este?</p></div>
+      <figure class="exemplo" data-exemplo="exe-11a">
+        <div class="exemplo-topo">
+          <p class="exemplo-titulo">Intervalo</p>
+          <button type="button" class="tocar" data-tocar="exe-11a"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        </div>
+        <div class="partitura" data-partitura="exe-11a"></div>
+      </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">semibreve</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">mínima</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">semínima</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">colcheia</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">11ª aumentada</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">12ª diminuta</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">11ª justa</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">4ª aumentada</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>A <strong>semibreve</strong> vale 4 tempos, a maior das cinco. A mínima vale 2.</p></div>
+        <div class="explicacao"><p>Reduzido, Dó–Fá♯ é 4ª aumentada; com a oitava, <strong>11ª aumentada</strong> (18 semitons). 12ª diminuta tem o mesmo som, mas a nota de cima seria um Sol♭.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="11" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 12 · Múltipla escolha</p>
+      <div class="enunciado"><p>Por que a tensão do <strong>C7(9)</strong> se chama 9, e não 2?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">Porque fica acima do acorde, além da oitava</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Porque tem 9 semitons</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Porque é a 9ª nota da escala cromática</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>A tensão é empilhada <strong>acima</strong> de 1, 3, 5 e 7, já depois da oitava, então ganha o número composto. A 9ª maior tem 14 semitons, não 9.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="12" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 13 · Múltipla escolha</p>
+      <div class="enunciado"><p>Quantos semitons tem a <strong>11ª justa</strong>?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">17 semitons</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">5 semitons</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">18 semitons</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">19 semitons</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>A 4ª justa tem 5; com a oitava, 5 + 12 = <strong>17</strong>. 19 é a 12ª justa.</p></div>
       </div>
     </article>
   </section>
 
   <section class="secao" id="resumo">
-    <h2><span class="num">8</span>Resumo</h2>
+    <h2><span class="num">7</span>Resumo</h2>
     <ul class="resumo">
-      <li>Com a semínima valendo 1 tempo: semibreve 4, mínima 2, semínima 1, colcheia ½, semicolcheia ¼.</li>
-      <li>Cada figura vale <strong>metade</strong> da anterior.</li>
-      <li>Cada figura tem uma <strong>pausa</strong> com o mesmo valor.</li>
-      <li>O <strong>ponto</strong> soma metade do valor da nota: semínima pontuada vale 1½.</li>
-      <li>A <strong>ligadura</strong> une duas notas da mesma altura num som só.</li>
+      <li>Intervalo <strong>composto</strong> é um simples somado a uma oitava.</li>
+      <li>Para o número, <strong>some 7</strong> (3ª vira 10ª); a qualidade não muda.</li>
+      <li>Para os semitons, <strong>some 12</strong> (3ª maior: 4; 10ª maior: 16).</li>
+      <li>Nas cifras, <strong>9, 11 e 13</strong> são tensões acima do acorde: em Dó, Ré, Fá e Lá.</li>
+      <li>A 11ª e a 12ª seguem a família das justas, como a 4ª e a 5ª; a 9ª, a 10ª e a 13ª, a das maiores e menores.</li>
     </ul>
     <div class="para-o-chat">
       <p class="rotulo">Leve para o chat do professor</p>
-      <p id="pergunta-chat">Me dê ritmos curtos, um de cada vez, para eu somar os tempos, e me dê uma dica antes de mostrar a resposta.</p>
+      <p id="pergunta-chat">Me dê intervalos compostos e acordes com 9, 11 ou 13, um de cada vez, para eu dizer o nome e a nota da tensão, e me corrija se eu somar errado.</p>
       <button type="button" id="copiar-pergunta" class="secundario">Copiar pergunta</button>
     </div>
   </section>
 </main>
 
 <footer class="rodape">
-  <p>Aula I04 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
+  <p>Aula M03 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
 </footer>
 
-<script type="application/json" id="dados-aula">{"codigo": "I04", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura": {"id": "ex-abertura", "titulo": "Ouça antes de qualquer nome", "legenda": "Os quatro compassos têm o mesmo tamanho. O que acontece com os sons de um compasso para o outro?", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nG4 | G2 G2 | G G G G | G/2G/2 G/2G/2 G/2G/2 G/2G/2 |]\n", "andamento": 72, "eventos": [{"midis": [67], "duracao": 4.0}, {"midis": [67], "duracao": 2.0}, {"midis": [67], "duracao": 2.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}]}, "ex-semicolcheias": {"id": "ex-semicolcheias", "titulo": "Semínimas, colcheias e semicolcheias", "legenda": "Um tempo de cada vez: uma semínima, duas colcheias, quatro semicolcheias, e de novo a semínima.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nc c/2c/2 c/4c/4c/4c/4 c |]\n", "andamento": 72, "eventos": [{"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 1.0}]}, "ex-marcha-soldado": {"id": "ex-marcha-soldado", "titulo": "Marcha soldado", "legenda": "\"Mar\" dura um tempo; \"cha sol\" dividem o tempo seguinte; \"da\" e \"do\" voltam a durar um tempo cada.", "abc": "X:1\nM:2/4\nL:1/4\n%%stretchlast 1\nK:C\nG G/2E/2 | C C |]\nw:Mar-cha sol-da-do\n", "andamento": 88, "eventos": [{"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [60], "duracao": 1.0}, {"midis": [60], "duracao": 1.0}]}, "ex-pirulito": {"id": "ex-pirulito", "titulo": "Pirulito que bate bate", "legenda": "Ouça \"li-to-que\": as duas últimas sílabas passam rápido, em semicolcheias.", "abc": "X:1\nM:2/4\nL:1/4\n%%stretchlast 1\nK:C\nE/2F/2 | G/2G/4G/4 F/2E/2 |]\nw:Pi-ru-li-to que ba-te\n", "andamento": 88, "eventos": [{"midis": [64], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.25}, {"midis": [67], "duracao": 0.25}, {"midis": [65], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}]}, "ex-pausas": {"id": "ex-pausas", "titulo": "Sons e pausas", "legenda": "Som, silêncio, som, silêncio: as pausas têm a duração exata das figuras.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nd z d2 | z2 d/2 z/2 d |]\n", "andamento": 72, "eventos": [{"midis": [74], "duracao": 1.0}, {"midis": [], "duracao": 1.0}, {"midis": [74], "duracao": 2.0}, {"midis": [], "duracao": 2.0}, {"midis": [74], "duracao": 0.5}, {"midis": [], "duracao": 0.5}, {"midis": [74], "duracao": 1.0}]}, "ex-ponto": {"id": "ex-ponto", "titulo": "Semínima pontuada e colcheia", "legenda": "O som longo e o curto, repetidos: longo-curto, longo-curto.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nA3/2 A/2 A3/2 A/2 | A3 z |]\n", "andamento": 72, "eventos": [{"midis": [69], "duracao": 1.5}, {"midis": [69], "duracao": 0.5}, {"midis": [69], "duracao": 1.5}, {"midis": [69], "duracao": 0.5}, {"midis": [69], "duracao": 3.0}, {"midis": [], "duracao": 1.0}]}, "ex-ligadura": {"id": "ex-ligadura", "titulo": "Ligadura entre compassos", "legenda": "O último Mi do primeiro compasso continua no segundo: um som só, de três tempos.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nc c e2- | e c c2 |]\n", "andamento": 72, "eventos": [{"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [76], "duracao": 2.0, "ligada": true}, {"midis": [76], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 2.0}]}, "ex-soma": {"id": "ex-soma", "titulo": "Mínima, semínima e duas colcheias", "legenda": "Quatro tempos ao todo.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nF2 F F/2F/2 |]\n", "andamento": 72, "eventos": [{"midis": [65], "duracao": 2.0}, {"midis": [65], "duracao": 1.0}, {"midis": [65], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}]}, "exe-metade": {"id": "exe-metade", "titulo": "Dois grupos", "legenda": "Semínimas, depois colcheias: metade da duração.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nc c c c | c/2c/2 c/2c/2 c/2c/2 c/2c/2 |]\n", "andamento": 72, "eventos": [{"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}]}, "exe-soma": {"id": "exe-soma", "titulo": "Um compasso", "legenda": "Mínima, semínima e duas colcheias.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nG2 G G/2G/2 |]\n", "andamento": 72, "eventos": [{"midis": [67], "duracao": 2.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}]}, "exe-marcha": {"id": "exe-marcha", "titulo": "Marcha soldado", "legenda": "Semínima, colcheia, colcheia.", "abc": "X:1\nM:2/4\nL:1/4\n%%stretchlast 1\nK:C\nG G/2E/2 | C C |]\nw:Mar-cha sol-da-do\n", "andamento": 88, "eventos": [{"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [60], "duracao": 1.0}, {"midis": [60], "duracao": 1.0}]}, "exe-ligadura": {"id": "exe-ligadura", "titulo": "Duas notas escritas", "legenda": "Uma ligadura: um som só, de quatro tempos.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nd2- d2 |]\n", "andamento": 72, "eventos": [{"midis": [74], "duracao": 2.0, "ligada": true}, {"midis": [74], "duracao": 2.0}]}}, "teclados": {}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "valores-das-figuras", "correta": 0}, {"indice": 1, "tipo": "percepcao", "conceito": "relacao-entre-figuras", "exemplo": "exe-metade", "correta": 0}, {"indice": 2, "tipo": "multipla_escolha", "conceito": "leitura-ritmica", "exemplo": "exe-soma", "correta": 0}, {"indice": 3, "tipo": "multipla_escolha", "conceito": "relacao-entre-figuras", "correta": 0}, {"indice": 4, "tipo": "multipla_escolha", "conceito": "ponto-de-aumento", "correta": 0}, {"indice": 5, "tipo": "percepcao", "conceito": "leitura-ritmica", "exemplo": "exe-marcha", "correta": 0}, {"indice": 6, "tipo": "multipla_escolha", "conceito": "pausas", "correta": 0}, {"indice": 7, "tipo": "percepcao", "conceito": "ligadura", "exemplo": "exe-ligadura", "correta": 0}, {"indice": 8, "tipo": "multipla_escolha", "conceito": "relacao-entre-figuras", "correta": 0}, {"indice": 9, "tipo": "multipla_escolha", "conceito": "ponto-de-aumento", "correta": 0}, {"indice": 10, "tipo": "multipla_escolha", "conceito": "valores-das-figuras", "correta": 0}]}</script>
+<script type="application/json" id="dados-aula">{"codigo": "M03", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura": {"id": "ex-abertura", "titulo": "Dó e Ré, duas vezes", "legenda": "As duas notas são Dó e Ré nos dois acordes. Qual soa mais áspero? Qual soa mais aberto?", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CD]4 | [Cd]4 |]\n", "andamento": 60, "eventos": [{"midis": [60, 62], "duracao": 4.0}, {"midis": [60, 74], "duracao": 4.0}]}, "ex-9": {"id": "ex-9", "titulo": "Dó4–Ré5: 9ª maior", "legenda": "Uma 2ª maior aberta uma oitava: 2 + 12 = 14 semitons.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC2 d2 | [Cd]4 |]\n", "andamento": 66, "eventos": [{"midis": [60], "duracao": 2.0}, {"midis": [74], "duracao": 2.0}, {"midis": [60, 74], "duracao": 4.0}]}, "ex-10": {"id": "ex-10", "titulo": "Dó4–Mi5: 10ª maior", "legenda": "Uma 3ª maior aberta uma oitava: 4 + 12 = 16 semitons. Doce como a 3ª, só que mais espaçosa.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC2 e2 | [Ce]4 |]\n", "andamento": 66, "eventos": [{"midis": [60], "duracao": 2.0}, {"midis": [76], "duracao": 2.0}, {"midis": [60, 76], "duracao": 4.0}]}, "ex-11": {"id": "ex-11", "titulo": "Dó4–Fá5: 11ª justa", "legenda": "Uma 4ª justa aberta uma oitava: 5 + 12 = 17 semitons.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC2 f2 | [Cf]4 |]\n", "andamento": 66, "eventos": [{"midis": [60], "duracao": 2.0}, {"midis": [77], "duracao": 2.0}, {"midis": [60, 77], "duracao": 4.0}]}, "ex-13": {"id": "ex-13", "titulo": "Dó4–Lá5: 13ª maior", "legenda": "Uma 6ª maior aberta uma oitava: 9 + 12 = 21 semitons.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC2 a2 | [Ca]4 |]\n", "andamento": 66, "eventos": [{"midis": [60], "duracao": 2.0}, {"midis": [81], "duracao": 2.0}, {"midis": [60, 81], "duracao": 4.0}]}, "ex-c79": {"id": "ex-c79", "titulo": "C7(9)", "legenda": "Dó, Mi, Sol, Si♭ e o Ré no alto: a 9ª dá brilho ao acorde de sétima.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEG_B]2 [CEG_Bd]2 |]\n", "andamento": 60, "eventos": [{"midis": [60, 64, 67, 70], "duracao": 2.0}, {"midis": [60, 64, 67, 70, 74], "duracao": 2.0}]}, "ex-am711": {"id": "ex-am711", "titulo": "Am7(11)", "legenda": "Lá, Sol, Dó e o Ré no alto: a 11ª, uma 4ª justa acima da oitava do Lá.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[A,Gc]2 [A,Gcd]2 |]\n", "andamento": 60, "eventos": [{"midis": [57, 67, 72], "duracao": 2.0}, {"midis": [57, 67, 72, 74], "duracao": 2.0}]}, "ex-g713": {"id": "ex-g713", "titulo": "G7(13)", "legenda": "Sol, Fá, Si e o Mi no alto: a 13ª, uma 6ª maior acima da oitava do Sol.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[G,FB]2 [G,FBe]2 |]\n", "andamento": 60, "eventos": [{"midis": [55, 65, 71], "duracao": 2.0}, {"midis": [55, 65, 71, 76], "duracao": 2.0}]}, "exe-10": {"id": "exe-10", "titulo": "Intervalo", "legenda": "Dó4–Mi5", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC2 e2 |]\n", "andamento": 66, "eventos": [{"midis": [60], "duracao": 2.0}, {"midis": [76], "duracao": 2.0}]}, "exe-9": {"id": "exe-9", "titulo": "Intervalo", "legenda": "Dó4–Ré5: 9ª maior.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[Cd]4 |]\n", "andamento": 60, "eventos": [{"midis": [60, 74], "duracao": 4.0}]}, "exe-10m": {"id": "exe-10m", "titulo": "Intervalo", "legenda": "Ré4–Fá5", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nD2 f2 |]\n", "andamento": 66, "eventos": [{"midis": [62], "duracao": 2.0}, {"midis": [77], "duracao": 2.0}]}, "exe-10p": {"id": "exe-10p", "titulo": "Intervalo", "legenda": "Dó4–Mi5: 10ª maior.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[Ce]4 |]\n", "andamento": 60, "eventos": [{"midis": [60, 76], "duracao": 4.0}]}, "exe-11a": {"id": "exe-11a", "titulo": "Intervalo", "legenda": "Dó4–Fá♯5", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC2 ^f2 |]\n", "andamento": 66, "eventos": [{"midis": [60], "duracao": 2.0}, {"midis": [78], "duracao": 2.0}]}}, "teclados": {"t-3-4": {"de": 60, "ate": 76, "destaque": [{"midi": 60, "nome": "Dó"}, {"midi": 64, "nome": "Mi"}, {"midi": 67, "nome": "Sol"}, {"midi": 70, "nome": "Si♭"}, {"midi": 74, "nome": "Ré"}]}}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "intervalo-composto", "exemplo": "exe-10", "correta": 0}, {"indice": 1, "tipo": "teclado", "conceito": "intervalo-composto", "base": 60, "alvo": 74, "alvo_nome": "Ré", "intervalo_nome": "9ª maior", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 60, "nome": "Dó"}]}}, {"indice": 2, "tipo": "multipla_escolha", "conceito": "reduzir-composto", "correta": 0}, {"indice": 3, "tipo": "percepcao", "conceito": "percepcao-composto", "exemplo": "exe-9", "correta": 0}, {"indice": 4, "tipo": "multipla_escolha", "conceito": "semitons-compostos", "correta": 0}, {"indice": 5, "tipo": "multipla_escolha", "conceito": "tensoes", "correta": 0}, {"indice": 6, "tipo": "teclado", "conceito": "intervalo-composto", "base": 62, "alvo": 77, "alvo_nome": "Fá", "intervalo_nome": "10ª menor", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 62, "nome": "Ré"}]}}, {"indice": 7, "tipo": "multipla_escolha", "conceito": "reduzir-composto", "exemplo": "exe-10m", "correta": 0}, {"indice": 8, "tipo": "percepcao", "conceito": "percepcao-composto", "exemplo": "exe-10p", "correta": 0}, {"indice": 9, "tipo": "multipla_escolha", "conceito": "tensoes", "correta": 0}, {"indice": 10, "tipo": "multipla_escolha", "conceito": "reduzir-composto", "exemplo": "exe-11a", "correta": 0}, {"indice": 11, "tipo": "multipla_escolha", "conceito": "tensoes", "correta": 0}, {"indice": 12, "tipo": "multipla_escolha", "conceito": "semitons-compostos", "correta": 0}]}</script>
 <script src="https://cdn.jsdelivr.net/npm/abcjs@6.7.1/dist/abcjs-basic-min.js"></script>
 <script>
 /* Aula interativa: partitura (abcjs), som sintetizado no navegador (piano ou violão),

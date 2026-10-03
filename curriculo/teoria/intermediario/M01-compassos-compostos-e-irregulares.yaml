@@ -1,0 +1,35 @@
+codigo: M01
+titulo: Compassos compostos e irregulares
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - I05  # Pulso e compasso simples
+  - I04  # Figuras rítmicas
+objetivos:
+  - Diferenciar compasso simples (tempo dividido em dois) de composto (tempo dividido em três)
+  - Ler 6/8, 9/8 e 12/8 e achar o tempo de semínima pontuada
+  - Ler compassos irregulares como 5/4 e 7/8 pelos seus agrupamentos
+  - Ler e tocar a tercina (quiáltera de três)
+  - Reconhecer síncope e contratempo, inclusive a síncope característica brasileira
+  - Achar o primeiro tempo forte quando a música começa em anacruse
+conceitos:
+  - simples-x-composto
+  - compasso-composto
+  - compasso-irregular
+  - quialtera
+  - sincope
+  - contratempo
+  - anacruse
+fora_do_escopo:
+  - Duína e outras quiálteras além da tercina
+  - Polirritmia e métrica mista (módulo A12)
+  - Ritmos brasileiros em detalhe (samba, baião, bossa: módulo A12)
+exemplos_semente:
+  - "Seis colcheias em 3/4 (2+2+2) e em 6/8 (3+3)"
+  - "Pulso de 6/8, 9/8 e 12/8 em semínimas pontuadas"
+  - "5/4 como 3+2 e 7/8 como 2+2+3"
+  - "Colcheias e tercinas no mesmo compasso"
+  - "Síncope característica: semicolcheia, colcheia, semicolcheia"
+exercicios:
+  - multipla_escolha
+  - percepcao
