@@ -43,6 +43,8 @@ Formato:
 - Inclua de 8 a 14 exercícios misturando os tipos pedidos no módulo.
 - O aluno escolhe piano ou violão: os blocos e exercícios de teclado viram um braço de violão. Escreva os
   enunciados sem depender do instrumento ("clique na nota") e mantenha essas notas entre E3 e E6.
+- Quando fizer uma pergunta para o aluno pensar no meio da aula, coloque a resposta num bloco "resposta",
+  que fica escondido até ele abrir. Não explique na aula decisões editoriais (fontes, direitos, simplificações).
 - Ajuste a aula ao perfil do aluno: reforce os pontos fracos e use o timbre preferido nos comentários.
 """
 

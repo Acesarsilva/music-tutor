@@ -79,6 +79,8 @@
     <div class="prosa">{{ bloco.markdown | md | safe }}</div>
     {% elif bloco.tipo == "dica" %}
     <aside class="dica"><p class="rotulo">Dica</p>{{ bloco.markdown | md | safe }}</aside>
+    {% elif bloco.tipo == "resposta" %}
+    <details class="resposta"><summary>{{ bloco.rotulo }}</summary><div class="prosa">{{ bloco.markdown | md | safe }}</div></details>
     {% elif bloco.tipo == "exemplo" %}
     {% set ex = bloco.exemplo %}
     <figure class="exemplo" data-exemplo="{{ ex.id }}">

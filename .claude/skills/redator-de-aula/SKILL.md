@@ -23,7 +23,7 @@ A primeira seção tem três partes curtas.
 
 1. **Aquecimento de memória** (bloco `texto`): 2 ou 3 perguntas rápidas sobre o que a aula vai usar,
    sem consulta. Ex. para acordes: "Quantos semitons tem uma 3ª maior? E uma 3ª menor? Que notas formam
-   Dó–Mi–Sol?". Logo depois, um bloco `dica` com as respostas para o aluno conferir.
+   Dó–Mi–Sol?". Logo depois, um bloco `resposta` (fica escondido até o aluno abrir) com as respostas.
 2. **Som antes do nome** (bloco `exemplo`): toque o fenômeno antes de dar o termo. A `legenda` pede uma
    observação, não uma definição. Ex.: tocar C (Dó–Mi–Sol) e depois Cm (Dó–Mi♭–Sol) e perguntar
    "Qual dos dois soa mais escuro? Só uma nota mudou." O termo "acorde menor" vem no bloco seguinte.
@@ -48,6 +48,8 @@ Para cada ideia nova, combine representações que se completam:
   Todas as notas de `destaque`, `de` e `ate` ficam entre E3 e E6.
 - `tabela`: só para comparar ou organizar (qualidade × semitons, intervalo × música de referência).
 - Nada decorativo. Se um bloco não acrescenta informação, corte.
+- `dica` fica sempre visível: use para lembretes. Resposta de pergunta feita ao aluno vai em `resposta`.
+- Não explique na aula decisões editoriais (fontes, direitos autorais, ritmo simplificado). O aluno só vê o conteúdo.
 - Escreva para os dois instrumentos: "clique na nota", "a nota marcada". Quando o raciocínio depender
   do teclado ("não há tecla preta entre Mi e Fá"), dê o equivalente no violão ("no braço, são casas vizinhas").
 
@@ -57,16 +59,16 @@ Para cada ideia nova, combine representações que se completam:
    Ex. Ré–Fá♯: "Passo 1: conte os nomes Ré, Mi, Fá: 3, é uma 3ª. O ♯ não muda o número.
    Passo 2: conte os semitons Ré–Ré♯–Mi–Fá–Fá♯: 4. Passo 3: 3ª com 4 semitons é maior."
 2. **Pergunta de autoexplicação** logo depois: "Por que o sustenido não entrou na contagem do passo 1?"
-   Responda numa `dica` em seguida.
+   Responda num bloco `resposta` logo em seguida.
 3. **Exemplo com o último passo em branco**: "Lá–Dó: Lá, Si, Dó = 3ª; Lá–Lá♯–Si–Dó = 3 semitons.
-   Maior ou menor? Pense antes de abrir a dica." Depois, um com dois passos em branco.
+   Maior ou menor? Pense antes de abrir a resposta." Depois, um com dois passos em branco.
 4. Só então os exercícios independentes.
 
 Para nível avançado, encurte: um exemplo resolvido basta, e o restante vira prática.
 
 ## 6. Exemplo errado (depois dos corretos)
 
-Inclua um bloco `texto` com uma resolução que tem **um** erro realista, seguido de uma `dica` com a
+Inclua um bloco `texto` com uma resolução que tem **um** erro realista, seguido de um bloco `resposta` com a
 correção e o motivo. Peça: achar o passo errado, dizer por que está errado e corrigir. Equívocos úteis:
 
 - **Contar semitons em vez de nomes para o número**: "Ré–Fá♯ tem 4 semitons, então é uma 4ª."

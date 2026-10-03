@@ -240,6 +240,20 @@ a { color: var(--vinho); }
 }
 .dica .rotulo { color: var(--vinho); }
 .dica p:last-child { margin-bottom: 0; }
+.resposta {
+  margin: 1rem 0 1.2rem;
+  border: 1px dashed var(--vinho);
+  border-radius: var(--raio);
+  padding: 0.55rem 1rem;
+}
+.resposta summary {
+  cursor: pointer;
+  font: 600 0.9rem var(--f-titulo);
+  color: var(--vinho);
+}
+.resposta[open] { background: var(--vinho-fundo); border-style: solid; }
+.resposta[open] summary { margin-bottom: 0.4rem; }
+.resposta .prosa p:last-child { margin-bottom: 0; }
 
 /* Exemplos com partitura */
 .exemplo {

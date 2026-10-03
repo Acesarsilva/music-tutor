@@ -44,6 +44,14 @@ class BlocoDica(BaseModel):
     markdown: str
 
 
+class BlocoResposta(BaseModel):
+    """Resposta escondida até o aluno abrir: use depois de uma pergunta para ele pensar antes."""
+
+    tipo: Literal["resposta"]
+    markdown: str
+    rotulo: str = Field("Ver resposta", description="Texto do botão que abre a resposta.")
+
+
 class BlocoExemplo(BaseModel):
     tipo: Literal["exemplo"]
     exemplo: Exemplo
@@ -65,7 +73,7 @@ class BlocoTeclado(BaseModel):
 
 
 Bloco = Annotated[
-    Union[BlocoTexto, BlocoDica, BlocoExemplo, BlocoTabela, BlocoTeclado],
+    Union[BlocoTexto, BlocoDica, BlocoResposta, BlocoExemplo, BlocoTabela, BlocoTeclado],
     Field(discriminator="tipo"),
 ]
 

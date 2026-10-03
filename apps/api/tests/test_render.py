@@ -39,3 +39,12 @@ def test_aula_invalida_nao_renderiza(aula_piloto):
     aula_piloto.exercicios[1].correta = 0
     with pytest.raises(AulaInvalida):
         renderizar(aula_piloto)
+
+
+def test_bloco_resposta_fica_escondido(aula_piloto):
+    from music_tutor.esquema import BlocoResposta
+
+    aula_piloto.secoes[0].blocos.append(BlocoResposta(tipo="resposta", markdown="Dois semitons."))
+    html = renderizar(aula_piloto)
+    assert '<details class="resposta"><summary>Ver resposta</summary>' in html
+    assert "Dois semitons." in html
