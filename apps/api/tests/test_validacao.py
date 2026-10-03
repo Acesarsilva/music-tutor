@@ -39,3 +39,10 @@ def test_tecla_fora_do_teclado(aula_piloto):
     exe.ate = "G4"  # Ré + 5ª justa = Lá4, fora
     r = validar_aula(aula_piloto)
     assert any("fora do teclado" in e for e in r.erros)
+
+
+def test_nota_fora_do_braco_do_violao(aula_piloto):
+    exe = aula_piloto.exercicios[5]
+    exe.nota_base, exe.de, exe.ate = "C3", "C3", "C6"  # Dó3 escrito fica abaixo da corda Mi solta
+    r = validar_aula(aula_piloto)
+    assert any("fora do braço do violão" in e for e in r.erros)

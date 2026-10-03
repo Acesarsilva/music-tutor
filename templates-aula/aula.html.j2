@@ -20,7 +20,7 @@
   <div class="barra-interna">
     <p class="barra-aula"><span class="selo">{{ aula.codigo }}</span> {{ aula.titulo }}</p>
     <div class="controles">
-      <div class="timbre" role="group" aria-label="Timbre">
+      <div class="timbre" role="group" aria-label="Instrumento">
         <button type="button" id="timbre-piano" data-timbre="piano" aria-pressed="{{ 'true' if timbre == 'piano' else 'false' }}">Piano</button>
         <button type="button" id="timbre-violao" data-timbre="violao" aria-pressed="{{ 'true' if timbre == 'violao' else 'false' }}">Violão</button>
       </div>
@@ -58,6 +58,7 @@
       </div>
       {% endif %}
     </div>
+    <p class="aviso-violao" data-so-violao {{ '' if timbre == 'violao' else 'hidden' }}>Você escolheu o violão: os teclados da aula viraram braços de violão em afinação padrão. Como em toda partitura de violão, a nota escrita soa uma oitava abaixo, e o braço mostra onde tocar cada nota escrita.</p>
     <nav class="indice" aria-label="Seções da aula">
       <ol>
       {% for secao in aula.secoes %}
@@ -122,7 +123,7 @@
     {% for exe in aula.exercicios %}
     {% set k = loop.index0 %}
     <article class="exercicio" data-exercicio="{{ k }}" data-tipo="{{ exe.tipo }}">
-      <p class="rotulo">Exercício {{ loop.index }} · {% if exe.tipo == "multipla_escolha" %}Múltipla escolha{% elif exe.tipo == "percepcao" %}Percepção{% else %}Teclado{% endif %}</p>
+      <p class="rotulo">Exercício {{ loop.index }} · {% if exe.tipo == "multipla_escolha" %}Múltipla escolha{% elif exe.tipo == "percepcao" %}Percepção{% else %}Toque a nota{% endif %}</p>
       <div class="enunciado">{{ exe.enunciado | md | safe }}</div>
       {% if exe.tipo == "percepcao" %}
       <button type="button" class="tocar" data-tocar="{{ exe.exemplo.id }}"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>

@@ -33,6 +33,16 @@ class Resultado:
         return not self.erros
 
 
+# O braço do violão mostra as casas 0 a 12 em afinação padrão. Como a partitura de violão é escrita
+# uma oitava acima do som real, a nota escrita mais grave é Mi3 e a mais aguda é Mi6.
+BRACO_DE, BRACO_ATE = "E3", "E6"
+
+
+def _fora_do_braco(notas: list[str]) -> list[str]:
+    lo, hi = teoria.midi(BRACO_DE), teoria.midi(BRACO_ATE)
+    return [n for n in notas if not lo <= teoria.midi(n) <= hi]
+
+
 def _normalizar(texto: str) -> str:
     texto = unicodedata.normalize("NFKC", texto).strip().lower()
     return texto.replace("º", "ª").replace(" ", " ")
@@ -144,6 +154,9 @@ def validar_aula(aula: Aula) -> Resultado:
                     fora = [n for n in bloco.destaque if not lo <= teoria.midi(n) <= hi]
                     if fora:
                         r.erros.append(f"{onde}: notas fora do teclado mostrado: {fora}")
+                    fora = _fora_do_braco(bloco.destaque)
+                    if fora:
+                        r.erros.append(f"{onde}: notas fora do braço do violão ({BRACO_DE} a {BRACO_ATE}): {fora}")
 
     for i, exe in enumerate(aula.exercicios):
         onde = f"exercicios[{i}]"
@@ -181,6 +194,8 @@ def validar_aula(aula: Aula) -> Resultado:
                     for n in (exe.nota_base, alvo):
                         if not lo <= teoria.midi(n) <= hi:
                             r.erros.append(f"{onde}: a nota {n} fica fora do teclado ({exe.de} a {exe.ate})")
+                    for n in _fora_do_braco([exe.nota_base, alvo]):
+                        r.erros.append(f"{onde}: a nota {n} fica fora do braço do violão ({BRACO_DE} a {BRACO_ATE})")
                     compilado.update(
                         base=teoria.midi(exe.nota_base),
                         alvo=teoria.midi(alvo),
