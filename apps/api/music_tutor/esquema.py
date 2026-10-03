@@ -16,6 +16,13 @@ class Evento(BaseModel):
         None,
         description='Sílaba da letra cantada nesta nota, mostrada sob a partitura. Termine com "-" quando a palavra continua ("Ci-", "ran-", "da").',
     )
+    dinamica: Optional[Literal["pp", "p", "mp", "mf", "f", "ff"]] = Field(
+        None, description="Dinâmica a partir desta nota (vale até a próxima indicação), escrita sob a pauta e ouvida no áudio."
+    )
+    acento: bool = Field(False, description="Acento (>) nesta nota: soa mais forte que as vizinhas.")
+    ligada: bool = Field(
+        False, description="Ligadura com o evento seguinte, que precisa ter as mesmas notas: as duas durações soam como uma só."
+    )
 
 
 class IntervaloAfirmado(BaseModel):

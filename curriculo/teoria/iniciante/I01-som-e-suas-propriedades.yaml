@@ -1,0 +1,31 @@
+codigo: I01
+titulo: Som e suas propriedades
+nivel: iniciante
+assunto: teoria
+prerequisitos: []
+objetivos:
+  - Reconhecer as quatro propriedades do som - altura, duração, intensidade e timbre
+  - Diferenciar som agudo de grave, curto de longo e forte de fraco
+  - Não confundir altura (agudo e grave) com intensidade (forte e fraco)
+  - Reconhecer o timbre como a "cor" que diferencia instrumentos e vozes
+conceitos:
+  - altura
+  - duracao
+  - intensidade
+  - timbre
+  - altura-vs-intensidade
+  - silencio
+fora_do_escopo:
+  - Frequência em hertz e física das ondas além de uma menção
+  - Nomes das notas (módulo I02)
+  - Figuras rítmicas (módulo I04)
+  - Sinais de dinâmica na partitura (módulo I15)
+exemplos_semente:
+  - "Dó4 e Dó5: grave e agudo"
+  - "A mesma nota curta e longa"
+  - "A mesma nota fraca e forte"
+  - "A mesma melodia no piano e no violão"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

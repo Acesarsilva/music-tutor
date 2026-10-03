@@ -1,0 +1,31 @@
+codigo: I03
+titulo: Pauta e claves
+nivel: iniciante
+assunto: teoria
+prerequisitos:
+  - I02  # Notas musicais
+objetivos:
+  - Conhecer a pauta (pentagrama), suas linhas e espaços contados de baixo para cima
+  - Ler notas na clave de sol e na clave de fá
+  - Usar linhas suplementares e localizar o Dó central (Dó4) nas duas claves
+  - Ver na pauta se uma melodia sobe, desce ou repete
+conceitos:
+  - pentagrama
+  - clave-de-sol
+  - clave-de-fa
+  - linhas-suplementares
+  - do-central
+  - direcao-na-pauta
+fora_do_escopo:
+  - Claves de dó (no máximo uma menção)
+  - Ritmo e compasso (módulos I04 e I05)
+  - Acidentes (módulo I06)
+exemplos_semente:
+  - "Sol4 na 2ª linha da clave de sol"
+  - "Fá3 na 4ª linha da clave de fá"
+  - "Dó4 na linha suplementar, nas duas claves"
+  - "Brilha, brilha: a melodia sobe e repete na pauta"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

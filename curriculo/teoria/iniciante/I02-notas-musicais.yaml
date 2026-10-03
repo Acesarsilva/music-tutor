@@ -1,0 +1,30 @@
+codigo: I02
+titulo: Notas musicais
+nivel: iniciante
+assunto: teoria
+prerequisitos:
+  - I01  # Som e suas propriedades
+objetivos:
+  - Saber as sete notas naturais em ordem, subindo e descendo
+  - Relacionar dó-ré-mi às letras usadas nas cifras (C, D, E, F, G, A, B)
+  - Entender a oitava e a numeração Dó4 para o Dó central
+  - Achar as notas no teclado pelos grupos de teclas pretas e as cordas soltas do violão
+conceitos:
+  - nomes-das-notas
+  - ordem-das-notas
+  - letras-das-notas
+  - oitava
+  - notas-no-teclado
+  - cordas-do-violao
+fora_do_escopo:
+  - Sustenidos e bemóis (módulo I06)
+  - Pauta e claves (módulo I03)
+exemplos_semente:
+  - "Dó, Ré, Mi, Fá, Sol, Lá, Si, Dó subindo e descendo"
+  - "Dó3, Dó4 e Dó5: a mesma nota em três oitavas"
+  - "Dó à esquerda do grupo de duas teclas pretas"
+  - "Cordas soltas do violão: Mi, Lá, Ré, Sol, Si, Mi"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

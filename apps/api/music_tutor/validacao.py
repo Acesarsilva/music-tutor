@@ -102,14 +102,41 @@ def _compilar_exemplo(ex: Exemplo, onde: str, r: Resultado) -> None:
                 if teoria.midi(afirmado.de) not in presentes or teoria.midi(afirmado.para) not in presentes:
                     r.erros.append(f"{onde}.intervalo: as notas {afirmado.de} e {afirmado.para} não estão no exemplo")
 
+    for k, ev in enumerate(ex.eventos):
+        if ev.ligada:
+            seguinte = ex.eventos[k + 1] if k + 1 < len(ex.eventos) else None
+            if not ev.notas or seguinte is None or esperado[k + 1] != esperado[k]:
+                r.erros.append(f"{onde}.eventos[{k}]: a ligadura precisa de um evento seguinte com as mesmas notas")
+
     r.exemplos[ex.id] = {
         "id": ex.id,
         "titulo": ex.titulo,
         "legenda": ex.legenda,
         "abc": abc,
         "andamento": ex.andamento,
-        "eventos": [{"midis": m, "duracao": ev.duracao} for m, ev in zip(esperado, ex.eventos)],
+        "eventos": _eventos_para_audio(esperado, ex.eventos),
     }
+
+
+# Volume relativo de cada dinâmica no áudio do navegador; o acento soma um pouco.
+_INTENSIDADE = {"pp": 0.22, "p": 0.38, "mp": 0.52, "mf": 0.66, "f": 0.82, "ff": 1.0}
+
+
+def _eventos_para_audio(midis: list[list[int]], eventos) -> list[dict]:
+    # Com dinâmica ou acento em algum ponto, todas as notas do exemplo ganham intensidade explícita,
+    # para o acento se destacar das vizinhas (sem dinâmica, vale mf).
+    usa = any(ev.dinamica or ev.acento for ev in eventos)
+    saida, nivel = [], None
+    for m, ev in zip(midis, eventos):
+        item = {"midis": m, "duracao": ev.duracao}
+        nivel = ev.dinamica or nivel
+        if usa:
+            base = _INTENSIDADE[nivel or "mf"]
+            item["intensidade"] = round(min(1.0, base + (0.25 if ev.acento else 0)), 2)
+        if ev.ligada:
+            item["ligada"] = True
+        saida.append(item)
+    return saida
 
 
 def _checar_opcoes(opcoes: list[str], correta: int, onde: str, r: Resultado) -> bool:
@@ -185,8 +212,6 @@ def validar_aula(aula: Aula) -> Resultado:
                                 f"{onde}: {teoria.nome_intervalo_pt(exe.verificacao.intervalo)} tem {valor} semitons, "
                                 f"mas a opção correta é {exe.opcoes[exe.correta]!r}"
                             )
-            if isinstance(exe, ExercicioPercepcao) and exe.exemplo.intervalo is None:
-                r.erros.append(f"{onde}: exercício de percepção precisa do intervalo afirmado no exemplo")
             compilado["correta"] = exe.correta
         elif isinstance(exe, ExercicioTeclado):
             if all(_checar_nota(n, onde, r) for n in [exe.nota_base, exe.de, exe.ate]):
