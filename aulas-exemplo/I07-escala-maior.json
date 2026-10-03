@@ -1,0 +1,954 @@
+{
+  "codigo": "I07",
+  "titulo": "Escala maior",
+  "nivel": "iniciante",
+  "resumo_curto": "A fórmula de tons e semitons da escala maior, os nomes dos graus e como montar a escala a partir de qualquer nota.",
+  "prerequisitos": [
+    "Nomes das notas (I02)",
+    "Tom e semitom (I06)"
+  ],
+  "objetivos": [
+    "Reconhecer a fórmula **T–T–S–T–T–T–S**",
+    "Numerar os **graus** da escala e conhecer o nome de cada um",
+    "Montar a escala maior a partir de **qualquer nota**, usando cada letra uma vez",
+    "Ouvir a **sensível** pedindo a tônica"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quantos semitons cabem em um tom?\n2. Quais duplas de notas naturais vizinhas ficam a só um semitom?\n3. Que nota fica um semitom acima de Fá?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Dois semitons.\n2. Mi–Fá e Si–Dó.\n3. Fá♯, que também se chama Sol♭.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Ouça antes de qualquer nome",
+            "legenda": "As duas sequências usam só notas naturais. Qual delas soa como se chegasse em casa na última nota?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A primeira sequência é a **escala de Dó maior**. A segunda tem as mesmas notas, começando em Ré, e soa diferente porque os tons e semitons caem em outros lugares.\n\nAo final, você vai montar a escala maior a partir de qualquer nota e dar nome a cada nota dela."
+        }
+      ]
+    },
+    {
+      "titulo": "A fórmula da escala maior",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "**Escala** é uma sequência de notas em ordem, da mais grave para a mais aguda. A escala maior tem sete notas diferentes, e a oitava nota repete a primeira, uma oitava acima.\n\nO que faz uma escala ser **maior** é a ordem das distâncias entre as notas:\n\n**tom – tom – semitom – tom – tom – tom – semitom**, ou **T–T–S–T–T–T–S**."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "A escala de Dó maior, passo a passo. Os semitons caem entre a 3ª e a 4ª nota e entre a 7ª e a 8ª.",
+          "cabecalho": [
+            "Passo",
+            "Notas",
+            "Distância"
+          ],
+          "linhas": [
+            [
+              "1º",
+              "Dó–Ré",
+              "tom"
+            ],
+            [
+              "2º",
+              "Ré–Mi",
+              "tom"
+            ],
+            [
+              "3º",
+              "Mi–Fá",
+              "semitom"
+            ],
+            [
+              "4º",
+              "Fá–Sol",
+              "tom"
+            ],
+            [
+              "5º",
+              "Sol–Lá",
+              "tom"
+            ],
+            [
+              "6º",
+              "Lá–Si",
+              "tom"
+            ],
+            [
+              "7º",
+              "Si–Dó",
+              "semitom"
+            ]
+          ]
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Escala de Dó maior: no piano, só teclas brancas.",
+          "destaque": [
+            "C4",
+            "D4",
+            "E4",
+            "F4",
+            "G4",
+            "A4",
+            "B4",
+            "C5"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-escala-do",
+            "titulo": "Escala de Dó maior",
+            "legenda": "Ouça os dois passos curtos: Mi–Fá, no meio, e Si–Dó, no fim.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A cantiga *Dó, ré, mi, fá* canta o nome das próprias notas e sobe pelo começo da escala de Dó maior."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-do-re-mi-fa",
+            "titulo": "Dó, ré, mi, fá",
+            "legenda": "A melodia sobe pelas quatro primeiras notas da escala: dois tons e um semitom.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "silaba": "Dó,"
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ré,"
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "silaba": "mi,"
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5,
+                "silaba": "fá,"
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1,
+                "silaba": "fá,"
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1,
+                "silaba": "fá,"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "silaba": "Dó,"
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ré,"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "silaba": "dó,"
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ré,"
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1,
+                "silaba": "ré,"
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1,
+                "silaba": "ré"
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 100
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Graus e seus nomes",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Cada nota da escala é um **grau**, numerado de 1 a 7 a partir da primeira. Em Dó maior, Dó é o 1º grau, Ré é o 2º, Mi é o 3º, e assim por diante. Cada grau também tem um nome, que diz o papel dele na escala."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Os graus da escala maior, com o exemplo de Dó maior.",
+          "cabecalho": [
+            "Grau",
+            "Nome",
+            "Em Dó maior"
+          ],
+          "linhas": [
+            [
+              "1º",
+              "tônica",
+              "Dó"
+            ],
+            [
+              "2º",
+              "supertônica",
+              "Ré"
+            ],
+            [
+              "3º",
+              "mediante",
+              "Mi"
+            ],
+            [
+              "4º",
+              "subdominante",
+              "Fá"
+            ],
+            [
+              "5º",
+              "dominante",
+              "Sol"
+            ],
+            [
+              "6º",
+              "superdominante",
+              "Lá"
+            ],
+            [
+              "7º",
+              "sensível",
+              "Si"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A **tônica** é a nota de repouso, a que dá nome à escala. A **sensível** fica só um semitom abaixo dela e soa como se pedisse para subir."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sensivel",
+            "titulo": "A sensível pede a tônica",
+            "legenda": "A escala para no Si e espera. Repare como o Dó do fim soa como um alívio.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O começo de *Pirulito que bate bate*, em Dó maior, usa o 3º, o 4º e o 5º graus: Mi, Fá e Sol."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-pirulito",
+            "titulo": "Pirulito que bate bate",
+            "legenda": "\"Pi-ru-li\": mediante, subdominante e dominante. Depois a melodia volta pelo mesmo caminho.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "silaba": "Pi-"
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ru-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "li-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.25,
+                "silaba": "to"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.25,
+                "silaba": "que"
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ba-"
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "silaba": "te"
+              }
+            ],
+            "compasso": "2/4",
+            "anacruse": 1,
+            "andamento": 88
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Montando a escala em outra nota",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A fórmula serve para qualquer tônica. Veja a escala de **Sol maior**, com o motivo de cada passo.\n\n1. **Escreva as sete letras em ordem**, a partir da tônica, cada uma uma vez: Sol, Lá, Si, Dó, Ré, Mi, Fá, Sol.\n2. **Confira cada passo com a fórmula**: Sol–Lá tom, Lá–Si tom, Si–Dó semitom, Dó–Ré tom, Ré–Mi tom. Tudo certo até aqui.\n3. **Ajuste com acidentes**: Mi–Fá é um semitom, mas a fórmula pede um tom. Sobe-se o Fá: **Fá♯**. Com isso, Fá♯–Sol fica um semitom, como a fórmula pede no fim.\n\nSol maior: **Sol, Lá, Si, Dó, Ré, Mi, Fá♯, Sol**."
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Escala de Sol maior: o Fá♯ entra no lugar do Fá.",
+          "destaque": [
+            "G4",
+            "A4",
+            "B4",
+            "C5",
+            "D5",
+            "E5",
+            "F#5",
+            "G5"
+          ],
+          "de": "E4",
+          "ate": "A5"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-escala-sol",
+            "titulo": "Escala de Sol maior",
+            "legenda": "O mesmo desenho da escala de Dó maior, começando em Sol. O Fá♯ mantém o semitom no fim.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** Fá♯ e Sol♭ soam igual. Por que a escala usa Fá♯, e não Sol♭?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque cada letra aparece **uma vez**. Com Sol♭, a escala teria dois Sol e nenhum Fá: Sol, Lá, Si, Dó, Ré, Mi, Sol♭, Sol.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **Ré maior**:\n\n1. Letras: Ré, Mi, Fá, Sol, Lá, Si, Dó, Ré.\n2. Ré–Mi tom; Mi–Fá é semitom, mas precisa ser tom, então **Fá♯**; Fá♯–Sol semitom; Sol–Lá tom; Lá–Si tom; Si–Dó é semitom, mas precisa ser tom, então **Dó♯**; Dó♯–Ré semitom.\n3. Quais são as notas da escala?\n\nE agora dois passos são seus. **Fá maior**: escreva as letras, confira cada passo e diga qual nota precisa de acidente."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ré maior: **Ré, Mi, Fá♯, Sol, Lá, Si, Dó♯, Ré**.\n\nFá maior: letras Fá, Sol, Lá, Si, Dó, Ré, Mi, Fá. Fá–Sol tom, Sol–Lá tom, e Lá–Si seria tom, mas a fórmula pede semitom: o Si desce para **Si♭**. Si♭–Dó fica um tom, e o resto confere. Fá maior: **Fá, Sol, Lá, Si♭, Dó, Ré, Mi, Fá**.",
+          "rotulo": "Ver as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-escala-fa",
+            "titulo": "Escala de Fá maior",
+            "legenda": "O 4º grau é Si♭: ouça o semitom curto entre Lá e Si♭.",
+            "eventos": [
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 80
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Uma colega escreveu a escala de Fá maior assim:\n\n> Fá, Sol, Lá, **Lá♯**, Dó, Ré, Mi, Fá\n\nTocada, ela soa certa. Onde está o erro, por que está errado e como fica a escrita correta?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ela repetiu a letra **Lá** e pulou a letra **Si**. Lá♯ e Si♭ soam igual, mas a escala usa cada letra uma vez. O certo é **Fá, Sol, Lá, Si♭, Dó, Ré, Mi, Fá**.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a fórmula da escala maior?",
+      "opcoes": [
+        "T–T–S–T–T–T–S",
+        "T–S–T–T–T–S–T",
+        "T–T–T–S–T–T–S",
+        "T–T–S–T–T–S–T"
+      ],
+      "correta": 0,
+      "explicacao": "Em Dó maior, os semitons caem em Mi–Fá (3º passo) e Si–Dó (7º passo): T–T–S–T–T–T–S. Quem marca T–S–T–T–T–S–T contou as notas brancas a partir de Ré, e não a partir da tônica Dó.",
+      "conceito": "formula-escala-maior"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Na escala de Sol maior, Mi5 é o 6º grau e está marcado. Clique na **próxima nota da escala**.",
+      "nota_base": "E5",
+      "intervalo": "2M",
+      "direcao": "acima",
+      "explicacao": "Do 6º para o 7º grau a fórmula pede um tom. Mi–Fá é só um semitom, então a nota é **Fá♯**. Se clicou em Fá, esqueceu de conferir o passo com a fórmula.",
+      "conceito": "construir-escala-maior",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça o passo do 7º para o 8º grau de uma escala maior. É um tom ou um semitom?",
+      "exemplo": {
+        "id": "exe-si-do",
+        "titulo": "7º para 8º grau",
+        "legenda": "Si–Dó em Dó maior: um semitom.",
+        "eventos": [
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 66,
+        "intervalo": {
+          "de": "B4",
+          "para": "C5",
+          "codigo": "2m"
+        }
+      },
+      "opcoes": [
+        "tom",
+        "semitom"
+      ],
+      "correta": 1,
+      "explicacao": "Em toda escala maior, a sensível fica **um semitom** abaixo da tônica. É esse passo curto que faz a tônica soar como chegada.",
+      "conceito": "tom-e-semitom"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Como se chama o **5º grau** da escala maior?",
+      "opcoes": [
+        "dominante",
+        "subdominante",
+        "mediante",
+        "sensível"
+      ],
+      "correta": 0,
+      "explicacao": "O 5º grau é a **dominante** (Sol, em Dó maior). A subdominante é o 4º grau, a mediante é o 3º e a sensível é o 7º.",
+      "conceito": "nomes-dos-graus"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais são as notas da escala de **Ré maior**?",
+      "opcoes": [
+        "Ré, Mi, Fá♯, Sol, Lá, Si, Dó♯, Ré",
+        "Ré, Mi, Fá, Sol, Lá, Si, Dó, Ré",
+        "Ré, Mi, Fá♯, Sol, Lá, Si, Dó, Ré",
+        "Ré, Mi, Sol♭, Sol, Lá, Si, Dó♯, Ré"
+      ],
+      "correta": 0,
+      "explicacao": "A fórmula pede tom entre o 2º e o 3º grau (Mi–Fá♯) e entre o 6º e o 7º (Si–Dó♯). Só com notas naturais os semitons caem no lugar errado; com Sol♭ a letra Sol se repete e Fá some.",
+      "conceito": "construir-escala-maior"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Fá4 está marcado. Na escala de Fá maior, clique na **4ª nota**.",
+      "nota_base": "F4",
+      "intervalo": "4J",
+      "direcao": "acima",
+      "explicacao": "Fá, Sol, Lá, **Si♭**. Do 3º para o 4º grau a fórmula pede um semitom, e Lá–Si seria um tom. Se clicou em Si, manteve a nota natural sem conferir o passo.",
+      "conceito": "construir-escala-maior",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em qualquer escala maior, quantos semitons há do **3º para o 4º grau**?",
+      "opcoes": [
+        "1 semitom",
+        "2 semitons",
+        "3 semitons"
+      ],
+      "correta": 0,
+      "explicacao": "A fórmula é T–T–**S**–T–T–T–S: o terceiro passo, do 3º para o 4º grau, é um semitom. Em Dó maior é Mi–Fá. Se marcou 2, pensou num tom.",
+      "conceito": "formula-escala-maior",
+      "verificacao": {
+        "tipo": "semitons",
+        "intervalo": "2m"
+      }
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça o passo do 1º para o 2º grau de Sol maior. É um tom ou um semitom?",
+      "exemplo": {
+        "id": "exe-sol-la",
+        "titulo": "1º para 2º grau",
+        "legenda": "Sol–Lá: um tom.",
+        "eventos": [
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 66,
+        "intervalo": {
+          "de": "G4",
+          "para": "A4",
+          "codigo": "2M"
+        }
+      },
+      "opcoes": [
+        "tom",
+        "semitom"
+      ],
+      "correta": 0,
+      "explicacao": "Sol–Lá é **um tom**, como pede o primeiro passo da fórmula. Compare com o passo do 7º para o 8º grau, que é bem mais curto.",
+      "conceito": "tom-e-semitom"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Dó maior, que grau é **Lá**?",
+      "opcoes": [
+        "5º grau",
+        "6º grau",
+        "7º grau",
+        "4º grau"
+      ],
+      "correta": 1,
+      "explicacao": "Dó, Ré, Mi, Fá, Sol, **Lá**: sexta nota, 6º grau, a superdominante. Se marcou 5º, deixou de contar a tônica como 1º grau.",
+      "conceito": "graus-da-escala"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Ré4 está marcado. Clique na **sensível** de Ré maior.",
+      "nota_base": "D4",
+      "intervalo": "7M",
+      "direcao": "acima",
+      "explicacao": "A sensível é o 7º grau, um semitom abaixo da tônica: em Ré maior é **Dó♯**. Dó natural ficaria a um tom de Ré e não pediria a tônica do mesmo jeito.",
+      "conceito": "nomes-dos-graus",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual escala maior tem **um único sustenido, Fá♯**?",
+      "opcoes": [
+        "Sol maior",
+        "Ré maior",
+        "Fá maior",
+        "Dó maior"
+      ],
+      "correta": 0,
+      "explicacao": "Sol maior é Sol, Lá, Si, Dó, Ré, Mi, Fá♯, Sol: só o Fá muda. Ré maior tem também o Dó♯, Fá maior tem Si♭ e Dó maior não tem nenhum acidente.",
+      "conceito": "construir-escala-maior"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual nome vem **antes** da dominante na ordem dos graus?",
+      "opcoes": [
+        "subdominante",
+        "superdominante",
+        "supertônica",
+        "sensível"
+      ],
+      "correta": 0,
+      "explicacao": "A subdominante é o 4º grau, logo antes da dominante (5º). \"Sub\" quer dizer abaixo; a superdominante, o 6º grau, fica logo acima.",
+      "conceito": "nomes-dos-graus"
+    }
+  ],
+  "resumo": [
+    "A escala maior segue a fórmula **T–T–S–T–T–T–S**; os semitons ficam entre o 3º e o 4º grau e entre o 7º e o 8º.",
+    "Os graus são **tônica, supertônica, mediante, subdominante, dominante, superdominante e sensível**.",
+    "Para montar a escala, escreva as sete letras em ordem e ajuste com ♯ ou ♭ até cada passo bater com a fórmula.",
+    "Cada letra aparece uma vez: em Fá maior é Si♭, e não Lá♯.",
+    "Sol maior tem Fá♯; Ré maior tem Fá♯ e Dó♯; Fá maior tem Si♭.",
+    "A **sensível** fica um semitom abaixo da tônica e soa como se pedisse para chegar nela."
+  ],
+  "pergunta_para_chat": "Me peça para montar escalas maiores a partir de notas diferentes, uma de cada vez, e me dê uma dica sobre o passo que eu errar antes de mostrar a escala."
+}

@@ -85,3 +85,25 @@ def test_abc_com_letra_sob_as_notas():
 
 def test_abc_sem_letra_nao_tem_linha_w():
     assert "w:" not in teoria.eventos_para_abc([{"notas": ["C4"], "duracao": 4}])
+
+
+@pytest.mark.parametrize(
+    "armadura,esperado",
+    [("C", {}), ("G", {"F": "#"}), ("D", {"F": "#", "C": "#"}), ("F", {"B": "b"}),
+     ("Eb", {"B": "b", "E": "b", "A": "b"}), ("C#", {l: "#" for l in "FCGDAEB"})],
+)
+def test_acidentes_da_armadura(armadura, esperado):
+    assert teoria.acidentes_da_armadura(armadura) == esperado
+
+
+def test_armadura_invalida():
+    with pytest.raises(teoria.ErroTeoria):
+        teoria.acidentes_da_armadura("Am")
+
+
+def test_abc_com_armadura_omite_acidente_da_armadura_e_marca_bequadro():
+    eventos = [{"notas": ["G4"], "duracao": 1}, {"notas": ["F#4"], "duracao": 1},
+               {"notas": ["F4"], "duracao": 1}, {"notas": ["F#5"], "duracao": 1}]
+    abc = teoria.eventos_para_abc(eventos, armadura="G")
+    assert "K:G" in abc and "G F =F f" in abc
+    assert teoria.alturas_do_abc(abc) == [[67], [66], [65], [78]]

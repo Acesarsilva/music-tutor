@@ -35,6 +35,11 @@ class Exemplo(BaseModel):
     anacruse: float = Field(0, description="Tempos antes do primeiro compasso completo (0 se não houver).")
     andamento: int = Field(72, description="Semínimas por minuto.")
     clave: Literal["sol", "fa"] = "sol"
+    armadura: str = Field(
+        "C",
+        description='Armadura de clave pela tônica maior: "C" (nenhuma), "G", "D", "F", "Bb", "F#" etc. '
+        "As notas dos eventos continuam com o acidente real (F#4 em Sol maior).",
+    )
     intervalo: Optional[IntervaloAfirmado] = None
 
 

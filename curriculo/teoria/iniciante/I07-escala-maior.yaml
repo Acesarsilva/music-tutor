@@ -1,0 +1,32 @@
+codigo: I07
+titulo: Escala maior
+nivel: iniciante
+assunto: teoria
+prerequisitos:
+  - I02  # Notas musicais
+  - I06  # Tom e semitom
+objetivos:
+  - Reconhecer a fórmula da escala maior, T–T–S–T–T–T–S
+  - Numerar os graus da escala e conhecer o nome de cada um
+  - Montar a escala maior a partir de qualquer nota, usando cada letra uma vez
+  - Ouvir a sensível pedindo a tônica
+conceitos:
+  - formula-escala-maior
+  - graus-da-escala
+  - nomes-dos-graus
+  - construir-escala-maior
+  - tom-e-semitom
+fora_do_escopo:
+  - Armaduras de clave (módulo I09)
+  - Círculo de quintas (módulo I10)
+  - Escalas menores (módulo I11)
+  - Nomes dos intervalos entre os graus (módulo I08)
+exemplos_semente:
+  - "Escala de Dó maior, de Dó4 a Dó5, com os tons e semitons marcados"
+  - "Escala de Sol maior: o Fá♯ aparece para manter a fórmula"
+  - "Escala de Fá maior: Si♭, e não Lá♯"
+  - "Cantigas que andam pela escala: Dó, ré, mi, fá; Pirulito que bate bate"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

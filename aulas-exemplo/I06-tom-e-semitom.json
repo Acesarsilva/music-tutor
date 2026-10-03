@@ -1,0 +1,808 @@
+{
+  "codigo": "I06",
+  "titulo": "Tom e semitom",
+  "nivel": "iniciante",
+  "resumo_curto": "A menor distância entre duas notas, como ela dá nome às teclas pretas e como ouvir a diferença entre tom e semitom.",
+  "prerequisitos": [
+    "Nomes das notas (I02)",
+    "Pauta e claves (I03)"
+  ],
+  "objetivos": [
+    "Reconhecer o **semitom**, a menor distância entre duas notas",
+    "Entender o **tom** como dois semitons",
+    "Lembrar que **Mi–Fá** e **Si–Dó** são semitons",
+    "Usar **sustenido**, **bemol** e **bequadro**",
+    "Entender a **enarmonia**: um som, dois nomes",
+    "Distinguir tom e semitom de ouvido"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quais são as sete notas naturais, em ordem?\n2. Que nota vem depois de Si?\n3. No piano, as teclas pretas aparecem em grupos de quantas?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Dó, Ré, Mi, Fá, Sol, Lá, Si.\n2. Dó de novo, uma oitava acima. A sequência recomeça.\n3. Em grupos de duas e de três, alternados.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Ouça antes de qualquer nome",
+            "legenda": "Os dois passos sobem para a nota vizinha. Algum deles é mais curto que o outro?",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O primeiro passo, de Mi para Fá, é o menor passo que existe entre duas notas: um **semitom**. O segundo, de Fá para Sol, é duas vezes maior: um **tom**.\n\nAo final, você vai medir tons e semitons entre quaisquer notas e dar nome às notas que ficam entre as naturais, com sustenido e bemol."
+        }
+      ]
+    },
+    {
+      "titulo": "O semitom",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O **semitom** é a menor distância entre duas notas.\n\n- No piano, são duas teclas vizinhas, sejam brancas ou pretas.\n- No violão, são duas casas vizinhas na mesma corda."
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Mi e Fá: teclas vizinhas, sem tecla preta no meio. Um semitom.",
+          "destaque": [
+            "E4",
+            "F4"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Entre quase todas as notas naturais vizinhas existe uma tecla preta. Só em dois lugares ela falta: entre **Mi e Fá** e entre **Si e Dó**. Por isso, esses dois pares ficam a só um semitom. No braço do violão, Mi e Fá ficam em casas vizinhas, e Si e Dó também."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-semitons-naturais",
+            "titulo": "Mi–Fá e Si–Dó",
+            "legenda": "Dois passos bem curtos, cada um de um semitom.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "E4",
+              "para": "F4",
+              "codigo": "2m"
+            }
+          }
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Os dois semitons entre notas naturais: Mi–Fá e Si–Dó.",
+          "destaque": [
+            "E4",
+            "F4",
+            "B4",
+            "C5"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        }
+      ]
+    },
+    {
+      "titulo": "O tom",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O **tom** é a soma de dois semitons. De Dó a Ré há um tom: Dó até a tecla preta é um semitom, e a tecla preta até Ré é outro. No violão, Dó e Ré ficam a duas casas de distância."
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "De Dó a Ré: dois semitons, passando pela tecla preta do meio. Um tom.",
+          "destaque": [
+            "C4",
+            "D4"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-do-re",
+            "titulo": "Dó–Ré",
+            "legenda": "Compare com Mi–Fá: este passo é mais largo.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "C4",
+              "para": "D4",
+              "codigo": "2M"
+            }
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Distância entre as notas naturais vizinhas. Só Mi–Fá e Si–Dó são semitons.",
+          "cabecalho": [
+            "Notas",
+            "Distância"
+          ],
+          "linhas": [
+            [
+              "Dó–Ré",
+              "tom"
+            ],
+            [
+              "Ré–Mi",
+              "tom"
+            ],
+            [
+              "Mi–Fá",
+              "semitom"
+            ],
+            [
+              "Fá–Sol",
+              "tom"
+            ],
+            [
+              "Sol–Lá",
+              "tom"
+            ],
+            [
+              "Lá–Si",
+              "tom"
+            ],
+            [
+              "Si–Dó",
+              "semitom"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Você já cantou tons e semitons sem perceber. No começo de *Pirulito que bate bate*, \"Pi-ru\" sobe um semitom e \"ru-li\" sobe um tom."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-pirulito",
+            "titulo": "Pirulito que bate bate",
+            "legenda": "\"Pi-**ru**\": Mi–Fá, um semitom. \"ru-**li**\": Fá–Sol, um tom. Depois a melodia desce pelos mesmos passos.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "silaba": "Pi-"
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ru-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "li-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.25,
+                "silaba": "to"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.25,
+                "silaba": "que"
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ba-"
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "silaba": "te"
+              }
+            ],
+            "compasso": "2/4",
+            "anacruse": 1,
+            "andamento": 88
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Sustenido, bemol e bequadro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "As teclas pretas, e as casas entre as notas naturais no violão, ganham nome a partir das vizinhas:\n\n- **Sustenido (♯)** sobe a nota um semitom. Dó♯ é um semitom acima de Dó.\n- **Bemol (♭)** desce a nota um semitom. Ré♭ é um semitom abaixo de Ré.\n- **Bequadro (♮)** cancela o sustenido ou o bemol e volta a nota natural."
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Fá♯: um semitom acima de Fá.",
+          "destaque": [
+            "F4",
+            "F#4"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-fa-sustenido",
+            "titulo": "Fá, Fá♯, Sol",
+            "legenda": "Dois semitons seguidos: a melodia sobe pela tecla preta, ou pela casa do meio, até Sol.",
+            "eventos": [
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Na partitura, o acidente fica antes da nota e vale até o fim do compasso. Para voltar à nota natural dentro do mesmo compasso, escreve-se o bequadro."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-bequadro",
+            "titulo": "Fá♯ e depois Fá♮",
+            "legenda": "O segundo Fá volta um semitom: o ♮ desfez o sustenido.",
+            "eventos": [
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Também existem o dobrado sustenido (𝄪) e o dobrado bemol (𝄫), que alteram a nota em dois semitons. Eles são raros e aparecem mais adiante."
+        }
+      ]
+    },
+    {
+      "titulo": "Um som, dois nomes",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A tecla preta entre Fá e Sol pode se chamar **Fá♯** (Fá subindo um semitom) ou **Sol♭** (Sol descendo um semitom). O som é o mesmo; muda só o nome. Notas assim são **enarmônicas**."
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Esta tecla é Fá♯ e também Sol♭.",
+          "destaque": [
+            "F#4"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-enarmonia",
+            "titulo": "Fá♯ e Sol♭",
+            "legenda": "Você ouve a mesma nota duas vezes. Na partitura, ela aparece em lugares diferentes da pauta.",
+            "eventos": [
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "Gb4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Nas notas naturais também há enarmonia. Como Mi–Fá é um semitom, **Mi♯** soa como Fá e **Fá♭** soa como Mi. Do mesmo jeito, **Si♯** soa como Dó e **Dó♭** soa como Si."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Os cinco sons entre as notas naturais, com os dois nomes de cada um.",
+          "cabecalho": [
+            "Entre",
+            "Com sustenido",
+            "Com bemol"
+          ],
+          "linhas": [
+            [
+              "Dó e Ré",
+              "Dó♯",
+              "Ré♭"
+            ],
+            [
+              "Ré e Mi",
+              "Ré♯",
+              "Mi♭"
+            ],
+            [
+              "Fá e Sol",
+              "Fá♯",
+              "Sol♭"
+            ],
+            [
+              "Sol e Lá",
+              "Sol♯",
+              "Lá♭"
+            ],
+            [
+              "Lá e Si",
+              "Lá♯",
+              "Si♭"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo para medir",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como medir a distância de **Ré a Fá♯**, com o motivo de cada passo.\n\n1. **Ande de semitom em semitom**, uma tecla ou uma casa por vez: Ré→Ré♯, Ré♯→Mi, Mi→Fá, Fá→Fá♯.\n2. **Conte os passos**: são 4 semitons.\n3. **Converta**: cada 2 semitons formam um tom. São **2 tons**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-re-fa-sustenido",
+            "titulo": "De Ré a Fá♯, semitom por semitom",
+            "legenda": "Quatro passos curtos e iguais, do primeiro ao último som.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "compasso": "4/4",
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que, no passo 1, de Mi para Fá contou só um semitom?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque não existe nota entre Mi e Fá. No piano não há tecla preta no meio; no violão, ficam em casas vizinhas. O mesmo vale para Si–Dó.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **De Lá a Si**:\n\n1. Lá→Lá♯, Lá♯→Si.\n2. São 2 semitons.\n3. É um tom ou um semitom?\n\nE agora dois passos são seus. **De Si a Dó♯**: ande de semitom em semitom, conte e diga a distância."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Lá–Si: 2 semitons formam **um tom**.\n\nSi–Dó♯: Si→Dó (não há nada entre os dois), Dó→Dó♯. São 2 semitons, **um tom**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega explicou assim:\n\n> \"Mi e Fá são notas vizinhas, como Dó e Ré. Então entre Mi e Fá também há um tom.\"\n\nOnde está o erro, por que está errado e qual é a distância certa?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ele supôs que **toda dupla de notas naturais vizinhas** fica a um tom. Entre Dó e Ré existe uma nota no meio (Dó♯ ou Ré♭), por isso são dois semitons. Entre Mi e Fá não existe nenhuma: é só **um semitom**. O mesmo acontece entre Si e Dó.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Ouça e olhe a partitura. Qual é a distância entre estas duas notas?",
+      "opcoes": [
+        "tom",
+        "semitom",
+        "tom e meio"
+      ],
+      "correta": 1,
+      "explicacao": "Mi e Fá não têm nada entre elas, então a distância é **um semitom**. Se marcou tom, tratou Mi–Fá como Dó–Ré; só que entre Dó e Ré existe uma nota, e entre Mi e Fá, não.",
+      "conceito": "semitons-naturais",
+      "exemplo": {
+        "id": "exe-mi-fa",
+        "titulo": "Duas notas vizinhas",
+        "legenda": "Ouça as duas notas e conte as teclas ou casas entre elas.",
+        "eventos": [
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 66,
+        "intervalo": {
+          "de": "E4",
+          "para": "F4",
+          "codigo": "2m"
+        }
+      }
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Mi4 está marcado. Clique na nota **um semitom acima** de Mi.",
+      "nota_base": "E4",
+      "intervalo": "2m",
+      "direcao": "acima",
+      "explicacao": "Um semitom acima de Mi é **Fá**, a vizinha imediata. Quem procura uma nota entre Mi e Fá, como se existisse um Mi♯ separado, conta um passo a mais.",
+      "conceito": "semitom",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A distância entre as duas notas é um tom ou um semitom?",
+      "exemplo": {
+        "id": "exe-fa-sol",
+        "titulo": "Fá–Sol",
+        "legenda": "Fá–Sol: um tom.",
+        "eventos": [
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 66,
+        "intervalo": {
+          "de": "F4",
+          "para": "G4",
+          "codigo": "2M"
+        }
+      },
+      "opcoes": [
+        "tom",
+        "semitom"
+      ],
+      "correta": 0,
+      "explicacao": "Fá–Sol é **um tom**: entre as duas existe Fá♯ (ou Sol♭). Compare com Mi–Fá, do começo da aula: o semitom é um passo bem mais curto.",
+      "conceito": "percepcao-tom-semitom"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o outro nome de **Dó♯**?",
+      "opcoes": [
+        "Ré♭",
+        "Si♯",
+        "Dó♭",
+        "Ré♯"
+      ],
+      "correta": 0,
+      "explicacao": "Dó♯ é Dó subindo um semitom; Ré♭ é Ré descendo um semitom. As duas caem no mesmo som: são enarmônicas. Si♯ soa como Dó natural, e Dó♭ soa como Si.",
+      "conceito": "enarmonia"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Fá4 está marcado. Clique em **Fá♯**.",
+      "nota_base": "F4",
+      "intervalo": "1A",
+      "direcao": "acima",
+      "explicacao": "O sustenido sobe Fá um semitom: a tecla preta logo à direita ou, no violão, a casa seguinte. Se clicou em Sol, subiu um tom inteiro.",
+      "conceito": "sustenido",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos semitons cabem em um **tom**?",
+      "opcoes": [
+        "1 semitom",
+        "2 semitons",
+        "3 semitons"
+      ],
+      "correta": 1,
+      "explicacao": "Um tom são dois semitons, como Dó→Dó♯→Ré. Se marcou 1, confundiu tom com semitom.",
+      "conceito": "tom",
+      "verificacao": {
+        "tipo": "semitons",
+        "intervalo": "2M"
+      }
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A distância entre as duas notas é um tom ou um semitom?",
+      "exemplo": {
+        "id": "exe-si-do",
+        "titulo": "Si–Dó",
+        "legenda": "Si–Dó: um semitom.",
+        "eventos": [
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 66,
+        "intervalo": {
+          "de": "B4",
+          "para": "C5",
+          "codigo": "2m"
+        }
+      },
+      "opcoes": [
+        "tom",
+        "semitom"
+      ],
+      "correta": 1,
+      "explicacao": "Si–Dó é **um semitom**, como Mi–Fá: não há nota entre elas. É o passo curto que fecha a sequência Lá, Si, Dó.",
+      "conceito": "percepcao-tom-semitom"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Si4 está marcado. Clique na nota **um tom acima** de Si.",
+      "nota_base": "B4",
+      "intervalo": "2M",
+      "direcao": "acima",
+      "explicacao": "Si→Dó é um semitom, e Dó→Dó♯ é outro: um tom acima de Si é **Dó♯**. Se clicou em Dó, andou só um semitom, porque Si e Dó são vizinhas.",
+      "conceito": "tom",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Para que serve o **bequadro (♮)**?",
+      "opcoes": [
+        "Subir a nota um semitom",
+        "Descer a nota um semitom",
+        "Cancelar o sustenido ou o bemol e voltar à nota natural"
+      ],
+      "correta": 2,
+      "explicacao": "O bequadro desfaz a alteração que valia antes no compasso. Quem sobe um semitom é o sustenido; quem desce é o bemol.",
+      "conceito": "bequadro"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Si4 está marcado. Clique em **Si♭**.",
+      "nota_base": "B4",
+      "intervalo": "1A",
+      "direcao": "abaixo",
+      "explicacao": "O bemol desce Si um semitom: a tecla preta logo à esquerda ou, no violão, a casa anterior. Se clicou em Lá, desceu um tom inteiro.",
+      "conceito": "bemol",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a melodia descer. O último passo é um tom ou um semitom?",
+      "exemplo": {
+        "id": "exe-sol-fa-sustenido",
+        "titulo": "Sol–Fá♯",
+        "legenda": "Sol–Fá♯: um semitom.",
+        "eventos": [
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "F#4"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 66,
+        "intervalo": {
+          "de": "G4",
+          "para": "F#4",
+          "codigo": "2m"
+        }
+      },
+      "opcoes": [
+        "tom",
+        "semitom"
+      ],
+      "correta": 1,
+      "explicacao": "De Sol a Fá♯ é **um semitom**: Fá♯ é a nota logo abaixo de Sol. Se ouviu um tom, compare com Sol–Fá, que desce mais.",
+      "conceito": "percepcao-tom-semitom"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual nota **soa igual a Fá**, mas tem outro nome?",
+      "opcoes": [
+        "Mi♯",
+        "Fá♯",
+        "Sol♭",
+        "Mi♭"
+      ],
+      "correta": 0,
+      "explicacao": "Mi e Fá ficam a um semitom. Mi♯, que é Mi subindo um semitom, cai exatamente em Fá. Fá♯ e Sol♭ são o som de cima, e Mi♭ fica abaixo de Mi.",
+      "conceito": "enarmonia"
+    }
+  ],
+  "resumo": [
+    "**Semitom** é a menor distância entre duas notas: teclas vizinhas no piano, casas vizinhas no violão.",
+    "**Tom** são dois semitons, como Dó–Ré.",
+    "Entre as notas naturais vizinhas, só **Mi–Fá** e **Si–Dó** são semitons; as outras são tons.",
+    "**♯** sobe um semitom, **♭** desce um semitom e **♮** cancela a alteração até o fim do compasso.",
+    "Notas **enarmônicas** soam igual e têm nomes diferentes: Fá♯ e Sol♭, Mi♯ e Fá.",
+    "No começo de *Pirulito que bate bate*, \"Pi-ru\" é um semitom e \"ru-li\" é um tom."
+  ],
+  "pergunta_para_chat": "Me dê pares de notas, um de cada vez, para eu dizer se a distância é tom ou semitom, e me dê uma dica antes de mostrar a resposta."
+}

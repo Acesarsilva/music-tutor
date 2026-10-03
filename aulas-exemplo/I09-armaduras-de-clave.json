@@ -1,0 +1,803 @@
+{
+  "codigo": "I09",
+  "titulo": "Armaduras de clave (maiores)",
+  "nivel": "iniciante",
+  "resumo_curto": "O que é a armadura de clave, em que ordem entram os sustenidos e os bemóis e como descobrir a tonalidade maior de uma armadura.",
+  "prerequisitos": [
+    "Tom e semitom (I06)",
+    "Escala maior (I07)"
+  ],
+  "objetivos": [
+    "Entender o que é a **armadura de clave** e até onde vale cada acidente",
+    "Saber a **ordem dos sustenidos** e a **ordem dos bemóis**",
+    "Descobrir a **tonalidade maior** de uma armadura",
+    "Ligar a armadura às notas da escala maior"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Qual é a fórmula da escala maior?\n2. Que acidente aparece na escala de Sol maior?\n3. E na escala de Fá maior?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. T–T–S–T–T–T–S.\n2. Fá♯: Sol, Lá, Si, Dó, Ré, Mi, Fá♯, Sol.\n3. Si♭: Fá, Sol, Lá, Si♭, Dó, Ré, Mi, Fá.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-sem",
+            "titulo": "Ouça e olhe a partitura",
+            "legenda": "O começo de *Pirulito que bate bate* em Fá maior. Repare no ♭ ao lado do Si, nas duas vezes.",
+            "eventos": [
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "Pi-"
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ru-"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "li-"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.25,
+                "silaba": "to"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.25,
+                "silaba": "que"
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ba-"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "te"
+              }
+            ],
+            "compasso": "2/4",
+            "anacruse": 1,
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-com",
+            "titulo": "Agora a mesma melodia, escrita de outro jeito",
+            "legenda": "O som é igual. Onde foi parar o ♭?",
+            "eventos": [
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "Pi-"
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ru-"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "li-"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.25,
+                "silaba": "to"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.25,
+                "silaba": "que"
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ba-"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "te"
+              }
+            ],
+            "compasso": "2/4",
+            "anacruse": 1,
+            "andamento": 88,
+            "armadura": "F"
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Na segunda partitura, o ♭ saiu de perto da nota e foi para o começo da pauta, logo depois da clave. Esse grupo de acidentes no começo da pauta é a **armadura de clave**.\n\nAo final, você vai olhar uma armadura e dizer de que tonalidade maior ela é."
+        }
+      ]
+    },
+    {
+      "titulo": "O que a armadura faz",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A armadura lista os acidentes da escala da música. Cada acidente dela vale para **todas as notas com aquele nome, em qualquer oitava**, do começo ao fim, sem precisar repetir o sinal.\n\nUma música em Ré maior, por exemplo, usa Fá♯ e Dó♯. A armadura de Ré maior tem esses dois sustenidos, e todo Fá e todo Dó da música são tocados com ♯."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-peixe-vivo-re",
+            "titulo": "Peixe vivo, em Ré maior",
+            "legenda": "A primeira nota é Fá♯, mesmo sem ♯ ao lado dela: quem avisa é a armadura.",
+            "eventos": [
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 0.5,
+                "silaba": "Co-"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "mo"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "po-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "de~o"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "pei-"
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5,
+                "silaba": "xe"
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5,
+                "silaba": "vi-"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "vo"
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 88,
+            "armadura": "D"
+          }
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "As notas do trecho: Fá♯, Sol, Lá e Si.",
+          "destaque": [
+            "F#4",
+            "G4",
+            "A4",
+            "B4"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Um acidente escrito ao lado da nota, como um **♮**, muda só aquela nota, e só até o fim do compasso. No compasso seguinte, a armadura volta a valer."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-bequadro-sol",
+            "titulo": "Um bequadro em Sol maior",
+            "legenda": "No primeiro compasso, o ♮ faz o terceiro som ser Fá natural, um semitom abaixo. No segundo compasso, o Fá sem sinal volta a ser Fá♯.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 72,
+            "armadura": "G"
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Dó maior não tem nenhum acidente, por isso a armadura de Dó maior é vazia."
+        }
+      ]
+    },
+    {
+      "titulo": "Armaduras com sustenidos",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Os sustenidos entram na armadura sempre na mesma ordem:\n\n**Fá – Dó – Sol – Ré – Lá – Mi – Si**\n\nUma armadura com um sustenido tem Fá♯. Com dois, Fá♯ e Dó♯. Com três, Fá♯, Dó♯ e Sol♯, e assim por diante. Nunca aparece Dó♯ sem Fá♯ antes."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Para achar a tonalidade: pegue o **último sustenido** e suba **um semitom**. Essa é a tônica.\n\n- Fá♯ é o último? Um semitom acima: **Sol maior**.\n- Dó♯ é o último? Um semitom acima: **Ré maior**."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Armaduras com sustenidos. A tônica fica um semitom acima do último sustenido.",
+          "cabecalho": [
+            "Sustenidos",
+            "Quais",
+            "Tonalidade"
+          ],
+          "linhas": [
+            [
+              "1",
+              "Fá♯",
+              "Sol maior"
+            ],
+            [
+              "2",
+              "Fá♯ Dó♯",
+              "Ré maior"
+            ],
+            [
+              "3",
+              "Fá♯ Dó♯ Sol♯",
+              "Lá maior"
+            ],
+            [
+              "4",
+              "Fá♯ Dó♯ Sol♯ Ré♯",
+              "Mi maior"
+            ],
+            [
+              "5",
+              "Fá♯ Dó♯ Sol♯ Ré♯ Lá♯",
+              "Si maior"
+            ],
+            [
+              "6",
+              "Fá♯ Dó♯ Sol♯ Ré♯ Lá♯ Mi♯",
+              "Fá♯ maior"
+            ],
+            [
+              "7",
+              "Fá♯ Dó♯ Sol♯ Ré♯ Lá♯ Mi♯ Si♯",
+              "Dó♯ maior"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-escala-la",
+            "titulo": "Escala de Lá maior, com armadura",
+            "legenda": "Três sustenidos na armadura. O último é Sol♯, e a escala termina com Sol♯ subindo para a tônica Lá.",
+            "eventos": [
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 80,
+            "armadura": "A"
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Armaduras com bemóis",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Os bemóis seguem a ordem contrária à dos sustenidos:\n\n**Si – Mi – Lá – Ré – Sol – Dó – Fá**\n\nPara achar a tonalidade: a tônica é o **penúltimo bemol**.\n\n- Si♭ e Mi♭: o penúltimo é Si♭, então é **Si♭ maior**.\n- Si♭, Mi♭ e Lá♭: o penúltimo é Mi♭, então é **Mi♭ maior**.\n\nCom um bemol só não há penúltimo. Essa armadura, só com Si♭, é a de **Fá maior**: vale guardar de cor."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Armaduras com bemóis. Com dois ou mais, a tônica é o penúltimo bemol.",
+          "cabecalho": [
+            "Bemóis",
+            "Quais",
+            "Tonalidade"
+          ],
+          "linhas": [
+            [
+              "1",
+              "Si♭",
+              "Fá maior"
+            ],
+            [
+              "2",
+              "Si♭ Mi♭",
+              "Si♭ maior"
+            ],
+            [
+              "3",
+              "Si♭ Mi♭ Lá♭",
+              "Mi♭ maior"
+            ],
+            [
+              "4",
+              "Si♭ Mi♭ Lá♭ Ré♭",
+              "Lá♭ maior"
+            ],
+            [
+              "5",
+              "Si♭ Mi♭ Lá♭ Ré♭ Sol♭",
+              "Ré♭ maior"
+            ],
+            [
+              "6",
+              "Si♭ Mi♭ Lá♭ Ré♭ Sol♭ Dó♭",
+              "Sol♭ maior"
+            ],
+            [
+              "7",
+              "Si♭ Mi♭ Lá♭ Ré♭ Sol♭ Dó♭ Fá♭",
+              "Dó♭ maior"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-escala-si-bemol",
+            "titulo": "Escala de Si♭ maior, com armadura",
+            "legenda": "Dois bemóis na armadura, Si♭ e Mi♭. A escala começa e termina em Si♭, o penúltimo bemol.",
+            "eventos": [
+              {
+                "notas": [
+                  "Bb3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 80,
+            "armadura": "Bb"
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "As armaduras se organizam num círculo, em que cada tonalidade fica a uma 5ª justa da vizinha. Esse é o **círculo de quintas**, tema da próxima aula."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo para achar a tonalidade",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como descobrir a tonalidade de uma armadura com **quatro sustenidos**, com o motivo de cada passo.\n\n1. **Nomeie os sustenidos pela ordem**: Fá♯, Dó♯, Sol♯, Ré♯. A ordem é sempre a mesma, então quatro sustenidos são sempre esses quatro.\n2. **Pegue o último**: Ré♯.\n3. **Suba um semitom**: Ré♯→Mi. A tonalidade é **Mi maior**.\n\nConfira com a escala: Mi, Fá♯, Sol♯, Lá, Si, Dó♯, Ré♯, Mi. Os quatro sustenidos estão lá."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** um semitom acima de Ré♯ cai no mesmo som que Mi. Por que o nome da tonalidade é Mi, e não outro nome desse som?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque a tônica é a nota **seguinte** ao último sustenido na ordem das letras: depois de Ré vem Mi. Ré♯ é a sensível, o 7º grau, e a tônica fica logo acima dela.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. Armadura com **três bemóis**:\n\n1. Pela ordem: Si♭, Mi♭, Lá♭.\n2. O penúltimo é Mi♭.\n3. Qual é a tonalidade?\n\nE agora dois passos são seus. Armadura com **cinco sustenidos**: nomeie os sustenidos e ache a tônica."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Três bemóis: **Mi♭ maior**.\n\nCinco sustenidos: Fá♯, Dó♯, Sol♯, Ré♯, Lá♯. O último é Lá♯; um semitom acima vem **Si**. A tonalidade é **Si maior**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega viu uma armadura com dois bemóis e explicou:\n\n> \"Os bemóis são Si♭ e Mi♭. O último é Mi♭, então a música está em Mi♭ maior.\"\n\nQual passo ele errou, por que está errado e qual é a tonalidade certa?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ele usou a regra dos sustenidos, que olha o **último** acidente. Com bemóis, a tônica é o **penúltimo**: Si♭. A tonalidade é **Si♭ maior**. Mi♭ maior tem três bemóis: Si♭, Mi♭ e Lá♭.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma armadura tem **dois sustenidos**. Qual é a tonalidade maior?",
+      "opcoes": [
+        "Ré maior",
+        "Dó♯ maior",
+        "Sol maior",
+        "Lá maior"
+      ],
+      "correta": 0,
+      "explicacao": "Dois sustenidos são Fá♯ e Dó♯. O último é Dó♯; um semitom acima vem **Ré**. Se marcou Dó♯ maior, parou no último sustenido sem subir o semitom.",
+      "conceito": "tonalidade-pelos-sustenidos"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Olhe a armadura desta partitura. Qual é a tonalidade?",
+      "opcoes": [
+        "Si♭ maior",
+        "Mi♭ maior",
+        "Fá maior",
+        "Ré maior"
+      ],
+      "correta": 0,
+      "explicacao": "A armadura tem dois bemóis, Si♭ e Mi♭. Com bemóis, a tônica é o penúltimo: **Si♭ maior**. Quem marca Mi♭ maior usou o último bemol, como se fosse armadura de sustenidos.",
+      "conceito": "tonalidade-pelos-bemois",
+      "exemplo": {
+        "id": "exe-pirulito-si-bemol",
+        "titulo": "Uma melodia conhecida",
+        "legenda": "Pirulito que bate bate, em Si♭ maior.",
+        "eventos": [
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 0.5,
+            "silaba": "Pi-"
+          },
+          {
+            "notas": [
+              "Eb5"
+            ],
+            "duracao": 0.5,
+            "silaba": "ru-"
+          },
+          {
+            "notas": [
+              "F5"
+            ],
+            "duracao": 0.5,
+            "silaba": "li-"
+          },
+          {
+            "notas": [
+              "F5"
+            ],
+            "duracao": 0.25,
+            "silaba": "to"
+          },
+          {
+            "notas": [
+              "F5"
+            ],
+            "duracao": 0.25,
+            "silaba": "que"
+          },
+          {
+            "notas": [
+              "Eb5"
+            ],
+            "duracao": 0.5,
+            "silaba": "ba-"
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 0.5,
+            "silaba": "te"
+          }
+        ],
+        "compasso": "2/4",
+        "anacruse": 1,
+        "andamento": 88,
+        "armadura": "Bb"
+      }
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "A armadura tem três sustenidos: Fá♯, Dó♯ e Sol♯. Sol♯4 está marcado. Clique na **tônica** da tonalidade.",
+      "nota_base": "G#4",
+      "intervalo": "2m",
+      "direcao": "acima",
+      "explicacao": "O último sustenido é Sol♯, e a tônica fica um semitom acima dele: **Lá**. A tonalidade é Lá maior. Se clicou em Lá♯, subiu um tom.",
+      "conceito": "tonalidade-pelos-sustenidos",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a **ordem dos sustenidos** na armadura?",
+      "opcoes": [
+        "Fá Dó Sol Ré Lá Mi Si",
+        "Si Mi Lá Ré Sol Dó Fá",
+        "Dó Ré Mi Fá Sol Lá Si",
+        "Fá Sol Lá Si Dó Ré Mi"
+      ],
+      "correta": 0,
+      "explicacao": "Os sustenidos entram como Fá, Dó, Sol, Ré, Lá, Mi, Si. A ordem ao contrário, começando em Si, é a dos bemóis.",
+      "conceito": "ordem-dos-sustenidos"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma música está em **Ré maior**. Na partitura aparece um Fá sem nenhum sinal ao lado. Que nota se toca?",
+      "opcoes": [
+        "Fá♯",
+        "Fá natural",
+        "Depende da oitava"
+      ],
+      "correta": 0,
+      "explicacao": "A armadura de Ré maior tem Fá♯ e Dó♯, e ela vale para todo Fá, em qualquer oitava. Sem ♮ ao lado, o Fá é **Fá♯**.",
+      "conceito": "armadura-na-partitura"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos bemóis tem a armadura de **Fá maior**?",
+      "opcoes": [
+        "Um, o Si♭",
+        "Nenhum",
+        "Dois, Si♭ e Mi♭",
+        "Um, o Fá♭"
+      ],
+      "correta": 0,
+      "explicacao": "Fá maior é Fá, Sol, Lá, Si♭, Dó, Ré, Mi, Fá: só o Si♭. É a armadura que não segue a regra do penúltimo bemol. Dois bemóis já são Si♭ maior.",
+      "conceito": "tonalidade-pelos-bemois"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Mi4 está marcado. Na escala de Mi maior, clique na **sensível** (7º grau).",
+      "nota_base": "E4",
+      "intervalo": "7M",
+      "direcao": "acima",
+      "explicacao": "Mi maior tem quatro sustenidos, e o último é Ré♯. A sensível de Mi maior é justamente **Ré♯**, um semitom abaixo da tônica. Se clicou em Ré, esqueceu o sustenido da armadura.",
+      "conceito": "relacao-escala-armadura",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual tonalidade maior tem **quatro bemóis**?",
+      "opcoes": [
+        "Lá♭ maior",
+        "Ré♭ maior",
+        "Mi♭ maior",
+        "Ré maior"
+      ],
+      "correta": 0,
+      "explicacao": "Quatro bemóis são Si♭, Mi♭, Lá♭ e Ré♭. O penúltimo é Lá♭: **Lá♭ maior**. Ré♭ maior é a resposta de quem usou o último bemol.",
+      "conceito": "tonalidade-pelos-bemois"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Numa música em Sol maior, um **♮** aparece antes de um Fá no meio do compasso. Até onde vale esse bequadro?",
+      "opcoes": [
+        "Até o fim do compasso",
+        "Até o fim da música",
+        "Só naquela nota, mesmo que outro Fá venha logo depois no compasso"
+      ],
+      "correta": 0,
+      "explicacao": "Um acidente ao lado da nota vale até a barra de compasso. No compasso seguinte, a armadura volta a valer e o Fá é Fá♯ de novo.",
+      "conceito": "armadura-na-partitura"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Ré4 está marcado. Clique na **3ª nota** da escala de Ré maior.",
+      "nota_base": "D4",
+      "intervalo": "3M",
+      "direcao": "acima",
+      "explicacao": "Ré, Mi, **Fá♯**. A armadura de Ré maior tem Fá♯ e Dó♯, e o Fá♯ é o 3º grau. Se clicou em Fá, esqueceu o sustenido da armadura.",
+      "conceito": "relacao-escala-armadura",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual destas armaduras está escrita **na ordem certa**?",
+      "opcoes": [
+        "Si♭ Mi♭ Lá♭",
+        "Mi♭ Si♭ Lá♭",
+        "Lá♭ Mi♭ Si♭"
+      ],
+      "correta": 0,
+      "explicacao": "Os bemóis entram como Si, Mi, Lá, Ré, Sol, Dó, Fá. Uma armadura de três bemóis é sempre Si♭, Mi♭, Lá♭, a de Mi♭ maior.",
+      "conceito": "ordem-dos-bemois"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A **armadura de clave** fica:",
+      "opcoes": [
+        "No começo de cada pauta, logo depois da clave",
+        "Antes de cada nota alterada",
+        "Só no último compasso da música"
+      ],
+      "correta": 0,
+      "explicacao": "A armadura vem no começo da pauta, logo depois da clave, e vale para a música inteira. O acidente antes de uma nota é outra coisa: vale só até o fim do compasso.",
+      "conceito": "armadura-de-clave"
+    }
+  ],
+  "resumo": [
+    "A **armadura de clave** fica no começo da pauta e lista os acidentes da escala; vale para todas as oitavas e a música inteira.",
+    "Um acidente ao lado da nota, como o ♮, vale só até o fim do compasso.",
+    "Ordem dos sustenidos: **Fá Dó Sol Ré Lá Mi Si**. A tônica fica um semitom acima do último sustenido.",
+    "Ordem dos bemóis: **Si Mi Lá Ré Sol Dó Fá**. A tônica é o penúltimo bemol.",
+    "Um bemol só (Si♭) é Fá maior; nenhum acidente é Dó maior.",
+    "Cuidado: com bemóis, olhe o penúltimo, não o último."
+  ],
+  "pergunta_para_chat": "Me mostre armaduras, uma de cada vez, misturando sustenidos e bemóis, para eu dizer a tonalidade maior, e me dê uma dica antes de dar a resposta."
+}

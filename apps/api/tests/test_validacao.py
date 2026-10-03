@@ -55,3 +55,21 @@ def test_nota_fora_do_braco_do_violao(aula_piloto):
     exe.nota_base, exe.de, exe.ate = "C3", "C3", "C6"  # Dó3 escrito fica abaixo da corda Mi solta
     r = validar_aula(aula_piloto)
     assert any("fora do braço do violão" in e for e in r.erros)
+
+
+def test_percepcao_aceita_tom_e_semitom_como_nome(aula_piloto):
+    from music_tutor.esquema import Exemplo, ExercicioPercepcao, IntervaloAfirmado
+
+    exemplo = Exemplo(
+        id="ex-mi-fa", titulo="?", legenda="Mi e Fá.",
+        eventos=[{"notas": ["E4"], "duracao": 2}, {"notas": ["F4"], "duracao": 2}],
+        intervalo=IntervaloAfirmado(de="E4", para="F4", codigo="2m"),
+    )
+    exe = ExercicioPercepcao(
+        tipo="percepcao", enunciado="Tom ou semitom?", exemplo=exemplo, opcoes=["tom", "semitom"],
+        correta=1, explicacao="Mi–Fá é semitom.", conceito="semitom",
+    )
+    aula_piloto.exercicios.append(exe)
+    assert validar_aula(aula_piloto).ok
+    exe.correta = 0
+    assert any("deveria ser" in e for e in validar_aula(aula_piloto).erros)
