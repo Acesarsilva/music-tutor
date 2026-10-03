@@ -1,0 +1,787 @@
+{
+  "codigo": "I10",
+  "titulo": "Círculo de quintas (introdução)",
+  "nivel": "iniciante",
+  "resumo_curto": "Como as tonalidades maiores se organizam em 5ªs justas, ganhando um sustenido ou um bemol a cada passo.",
+  "prerequisitos": [
+    "Intervalos simples (I08)",
+    "Armaduras de clave (I09)"
+  ],
+  "objetivos": [
+    "Montar o **círculo de quintas** a partir de Dó",
+    "Saber que o sentido **horário** acrescenta sustenidos e o **anti-horário**, bemóis",
+    "Achar o **acidente novo** de cada passo",
+    "Reconhecer as **tonalidades vizinhas**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quantos semitons tem uma 5ª justa?\n2. Quantos sustenidos tem a armadura de Ré maior? E quais são?\n3. Qual tonalidade maior tem um bemol só?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Sete semitons, como Dó–Sol.\n2. Dois: Fá♯ e Dó♯.\n3. Fá maior, com Si♭.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Ouça antes de qualquer nome",
+            "legenda": "Os saltos sobem e descem: Dó, Sol, Ré, Lá, Mi, Si. Essa sequência de nomes lembra alguma coisa da aula de armaduras?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 3.0
+              }
+            ],
+            "compasso": "4/4",
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Dó, Sol, Ré, Lá, Mi, Si: é a mesma sequência das tônicas com 0, 1, 2, 3, 4 e 5 sustenidos que você viu nas armaduras. Cada uma fica a uma **5ª justa** da anterior. Organizadas em roda, elas formam o **círculo de quintas**.\n\nAo final, você vai dar a volta no círculo nos dois sentidos e dizer, de cabeça, quantos acidentes tem cada tonalidade maior."
+        }
+      ]
+    },
+    {
+      "titulo": "Um passo de 5ª justa",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A 5ª justa tem **7 semitons**: Dó–Sol, Ré–Lá, Mi–Si. É o salto do começo de *Brilha, brilha, estrelinha*."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-brilha",
+            "titulo": "Brilha, brilha, estrelinha",
+            "legenda": "\"Bri-lha, **bri**-lha\": de Dó para Sol, uma 5ª justa.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "Bri-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "bri-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "es-"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "tre-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "li-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "nha"
+              }
+            ],
+            "andamento": 96,
+            "intervalo": {
+              "de": "C4",
+              "para": "G4",
+              "codigo": "5J"
+            }
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Subir uma 5ª e descer uma 4ª chegam na **mesma nota**, só em outra oitava: Dó sobe uma 5ª até Sol4; Dó5 desce uma 4ª até o mesmo Sol4. Por isso, no exemplo da abertura, a melodia sobe e desce para ficar na mesma região: Dó4 sobe a Sol4, Sol4 desce a Ré4, e assim por diante."
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Dó e Sol: sete semitons, uma 5ª justa.",
+          "destaque": [
+            "C4",
+            "G4"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Atenção a **Si–Fá**: as duas são naturais, mas de Si a Fá há só 6 semitons. Si–Fá é uma 5ª **diminuta**. A 5ª justa acima de Si é **Fá♯**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-si-fa-sustenido",
+            "titulo": "Si–Fá♯, uma 5ª justa",
+            "legenda": "Compare com Dó–Sol: o mesmo tamanho, sete semitons.",
+            "eventos": [
+              {
+                "notas": [
+                  "B3",
+                  "F#4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4",
+                  "G4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "B3",
+              "para": "F#4",
+              "codigo": "5J"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Sentido horário: sustenidos",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Imagine um relógio com **Dó** no 12. Cada hora para a direita é uma 5ª justa acima, e cada passo acrescenta **um sustenido** à armadura:\n\nDó (0) → Sol (1♯) → Ré (2♯) → Lá (3♯) → Mi (4♯) → Si (5♯) → Fá♯ (6♯)"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O sustenido novo é sempre a **sensível** da nova tonalidade, o 7º grau, um semitom abaixo da tônica. De Dó para Sol entra o Fá♯; de Sol para Ré entra o Dó♯."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-do-sol",
+            "titulo": "Escala de Dó maior, depois de Sol maior",
+            "legenda": "As duas escalas são quase iguais: só o Fá vira Fá♯, logo antes do Sol do fim.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F#5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 0.5
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Sentido anti-horário: bemóis",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Para a esquerda, cada passo é uma 5ª justa **abaixo** (ou uma 4ª justa acima, que dá a mesma nota) e acrescenta **um bemol**:\n\nDó (0) → Fá (1♭) → Si♭ (2♭) → Mi♭ (3♭) → Lá♭ (4♭) → Ré♭ (5♭) → Sol♭ (6♭)"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O bemol novo é sempre o **4º grau** da nova tonalidade. De Dó para Fá entra o Si♭ (Fá, Sol, Lá, **Si♭**); de Fá para Si♭ entra o Mi♭."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-do-fa",
+            "titulo": "Escala de Dó maior, depois de Fá maior",
+            "legenda": "Só o Si muda: em Fá maior ele desce para Si♭.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 0.5
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "O círculo de quintas das tonalidades maiores, como num relógio.",
+          "cabecalho": [
+            "Posição",
+            "Tonalidade",
+            "Armadura"
+          ],
+          "linhas": [
+            [
+              "12h",
+              "Dó maior",
+              "nenhum acidente"
+            ],
+            [
+              "1h",
+              "Sol maior",
+              "1♯"
+            ],
+            [
+              "2h",
+              "Ré maior",
+              "2♯"
+            ],
+            [
+              "3h",
+              "Lá maior",
+              "3♯"
+            ],
+            [
+              "4h",
+              "Mi maior",
+              "4♯"
+            ],
+            [
+              "5h",
+              "Si maior",
+              "5♯"
+            ],
+            [
+              "6h",
+              "Fá♯ maior ou Sol♭ maior",
+              "6♯ ou 6♭"
+            ],
+            [
+              "7h",
+              "Ré♭ maior",
+              "5♭"
+            ],
+            [
+              "8h",
+              "Lá♭ maior",
+              "4♭"
+            ],
+            [
+              "9h",
+              "Mi♭ maior",
+              "3♭"
+            ],
+            [
+              "10h",
+              "Si♭ maior",
+              "2♭"
+            ],
+            [
+              "11h",
+              "Fá maior",
+              "1♭"
+            ]
+          ]
+        },
+        {
+          "tipo": "dica",
+          "markdown": "No 6h os dois caminhos se encontram: **Fá♯ maior** e **Sol♭ maior** soam igual, são enarmônicas. Dó♯ maior (7♯) e Ré♭ maior (5♭), e Si maior (5♯) e Dó♭ maior (7♭), também são pares enarmônicos."
+        }
+      ]
+    },
+    {
+      "titulo": "Tonalidades vizinhas",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "As duas tonalidades ao lado de cada uma no círculo são as **vizinhas**. Elas diferem por **um acidente só**, por isso soam próximas. As vizinhas de Dó maior são Sol maior (um sustenido) e Fá maior (um bemol); as de Ré maior são Lá maior e Sol maior."
+        },
+        {
+          "tipo": "dica",
+          "markdown": "As tonalidades menores também cabem no círculo, ao lado das maiores que têm a mesma armadura. Isso aparece na aula de escalas menores."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo no círculo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como andar um passo no sentido horário a partir de **Lá maior**, com o motivo de cada passo.\n\n1. **Suba uma 5ª justa**: Lá, Si, Dó, Ré, Mi são cinco notas, e Lá–Mi tem 7 semitons. A nova tônica é **Mi**.\n2. **Some um sustenido**: Lá maior tem 3 (Fá♯, Dó♯, Sol♯); Mi maior tem 4.\n3. **Ache o sustenido novo**: é a sensível de Mi, um semitom abaixo: **Ré♯**. Ele é também o próximo na ordem Fá, Dó, Sol, **Ré**."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que o sustenido novo é sempre a sensível da nova tonalidade?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A nova escala começa na 5ª da anterior e usa quase as mesmas notas. A única que não serve é o 4º grau da tonalidade antiga: na nova, ele é o 7º grau e precisa ficar a um semitom da tônica. Por isso ele sobe. De Dó para Sol, o Fá (4º grau de Dó) vira Fá♯ (7º grau de Sol).",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. Um passo horário a partir de **Ré maior**:\n\n1. Ré + 5ª justa = Lá.\n2. Lá maior tem 3 sustenidos.\n3. Qual é o sustenido novo?\n\nE agora dois passos são seus. Um passo **anti-horário** a partir de **Fá maior**: ache a nova tônica e o bemol novo."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "De Ré para Lá entra o **Sol♯**, a sensível de Lá.\n\nFá – 5ª justa abaixo = **Si♭** (Fá, Mi, Ré, Dó, Si: cinco notas, e Si♭–Fá tem 7 semitons). O bemol novo é o 4º grau de Si♭: Si♭, Dó, Ré, **Mi♭**. Si♭ maior tem Si♭ e Mi♭.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega continuou o círculo assim:\n\n> \"Si, Dó, Ré, Mi, Fá: cinco notas. Então depois de Si maior vem Fá maior.\"\n\nQual passo ele errou, por que está errado e qual é a tonalidade certa?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ele contou as notas, mas não conferiu os **semitons**. Si–Fá tem só 6 semitons: é uma 5ª diminuta. A 5ª justa acima de Si é **Fá♯**, com 7 semitons. Depois de Si maior (5♯) vem **Fá♯ maior** (6♯). Fá maior fica do outro lado do círculo, com um bemol.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No círculo de quintas, sentido horário, que tonalidade vem logo **depois de Ré maior**?",
+      "opcoes": [
+        "Lá maior",
+        "Sol maior",
+        "Mi maior",
+        "Si♭ maior"
+      ],
+      "correta": 0,
+      "explicacao": "Ré + 5ª justa = **Lá**, e Lá maior tem um sustenido a mais (3). Sol maior vem antes de Ré, no sentido contrário; Mi maior pulou uma casa.",
+      "conceito": "sentido-horario"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Sol4 está marcado. Clique na nota **uma 5ª justa acima** de Sol.",
+      "nota_base": "G4",
+      "intervalo": "5J",
+      "direcao": "acima",
+      "explicacao": "Sol, Lá, Si, Dó, Ré: cinco notas e 7 semitons, **Ré**. É o próximo passo do círculo: Ré maior, com dois sustenidos. Quem para em Dó contou quatro notas.",
+      "conceito": "quinta-justa",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Que intervalo melódico é este?",
+      "exemplo": {
+        "id": "exe-re-la",
+        "titulo": "Salto de Ré",
+        "legenda": "Ré–Lá: 5ª justa, o passo do círculo.",
+        "eventos": [
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 72,
+        "intervalo": {
+          "de": "D4",
+          "para": "A4",
+          "codigo": "5J"
+        }
+      },
+      "opcoes": [
+        "4ª justa",
+        "5ª justa",
+        "8ª justa"
+      ],
+      "correta": 1,
+      "explicacao": "É uma **5ª justa**, o salto de \"Bri-lha, **bri**-lha\". A 4ª justa é um pouco menor, como \"Ci-**ran**-da\".",
+      "conceito": "quinta-justa"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos sustenidos tem **Mi maior**?",
+      "opcoes": [
+        "4 sustenidos",
+        "3 sustenidos",
+        "5 sustenidos",
+        "2 sustenidos"
+      ],
+      "correta": 0,
+      "explicacao": "Contando no relógio: Dó 0, Sol 1, Ré 2, Lá 3, **Mi 4**. Os quatro são Fá♯, Dó♯, Sol♯ e Ré♯. Se marcou 3, parou em Lá.",
+      "conceito": "sentido-horario"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Fá4 está marcado. Clique na nota **uma 4ª justa acima** de Fá: é o próximo passo no sentido anti-horário.",
+      "nota_base": "F4",
+      "intervalo": "4J",
+      "direcao": "acima",
+      "explicacao": "Fá, Sol, Lá, Si: quatro notas, mas Fá–Si tem 6 semitons. A 4ª justa é **Si♭**, com 5. O próximo passo anti-horário depois de Fá é Si♭ maior.",
+      "conceito": "sentido-anti-horario",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Ao passar de **Si♭ maior** para **Mi♭ maior**, qual bemol entra na armadura?",
+      "opcoes": [
+        "Lá♭",
+        "Mi♭",
+        "Ré♭",
+        "Si♭"
+      ],
+      "correta": 0,
+      "explicacao": "O bemol novo é o 4º grau da nova tonalidade: Mi♭, Fá, Sol, **Lá♭**. Mi♭ já estava em Si♭ maior; Ré♭ entra só no passo seguinte, em Lá♭ maior.",
+      "conceito": "acidente-novo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais são as tonalidades **vizinhas** de Dó maior no círculo?",
+      "opcoes": [
+        "Sol maior e Fá maior",
+        "Ré maior e Si♭ maior",
+        "Lá maior e Mi♭ maior"
+      ],
+      "correta": 0,
+      "explicacao": "As vizinhas ficam a um passo de cada lado: Sol maior (1♯) e Fá maior (1♭). Cada uma muda uma nota só em relação a Dó maior.",
+      "conceito": "tonalidades-vizinhas"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Si4 está marcado. Clique na nota **uma 5ª justa acima** de Si.",
+      "nota_base": "B4",
+      "intervalo": "5J",
+      "direcao": "acima",
+      "explicacao": "Si, Dó, Ré, Mi, Fá: cinco notas. Mas Si–Fá tem 6 semitons; a 5ª justa, com 7, é **Fá♯**. Se clicou em Fá, formou uma 5ª diminuta.",
+      "conceito": "quinta-justa",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "E este salto, é 4ª ou 5ª?",
+      "exemplo": {
+        "id": "exe-mi-si",
+        "titulo": "Salto de Mi",
+        "legenda": "Mi–Si: 5ª justa.",
+        "eventos": [
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 72,
+        "intervalo": {
+          "de": "E4",
+          "para": "B4",
+          "codigo": "5J"
+        }
+      },
+      "opcoes": [
+        "4ª justa",
+        "5ª justa"
+      ],
+      "correta": 1,
+      "explicacao": "Mi, Fá, Sol, Lá, Si: cinco notas e 7 semitons, **5ª justa**. É o passo de Mi maior para Si maior no círculo.",
+      "conceito": "quinta-justa"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Fá♯ maior tem 6 sustenidos. Que tonalidade com **bemóis** soa igual a ela?",
+      "opcoes": [
+        "Sol♭ maior",
+        "Fá maior",
+        "Si♭ maior",
+        "Ré♭ maior"
+      ],
+      "correta": 0,
+      "explicacao": "Fá♯ e Sol♭ são enarmônicas, e as duas tonalidades se encontram no 6h do círculo: Fá♯ maior (6♯) e Sol♭ maior (6♭). Fá maior é outra nota e tem um bemol só.",
+      "conceito": "enarmonia-no-circulo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No sentido horário, o sustenido novo de cada tonalidade é qual grau dela?",
+      "opcoes": [
+        "O 7º grau, a sensível",
+        "O 4º grau",
+        "O 5º grau",
+        "A tônica"
+      ],
+      "correta": 0,
+      "explicacao": "De Dó para Sol entra Fá♯, a **sensível** de Sol. O 4º grau é a regra dos bemóis, no sentido anti-horário.",
+      "conceito": "acidente-novo"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "De Ré maior para Lá maior entra um sustenido novo, a sensível de Lá. Lá4 está marcado: clique nessa sensível, acima de Lá.",
+      "nota_base": "A4",
+      "intervalo": "7M",
+      "direcao": "acima",
+      "explicacao": "A sensível de Lá maior é **Sol♯**, um semitom abaixo de Lá. Ela é o terceiro sustenido da ordem: Fá♯, Dó♯, Sol♯. Sol natural deixaria a 7ª menor.",
+      "conceito": "acidente-novo",
+      "de": "C4",
+      "ate": "C6"
+    }
+  ],
+  "resumo": [
+    "No círculo de quintas, cada tonalidade maior fica a uma **5ª justa** (7 semitons) da vizinha.",
+    "Sentido horário, a partir de Dó: Sol, Ré, Lá, Mi, Si, Fá♯, cada passo com **um sustenido** a mais.",
+    "Sentido anti-horário: Fá, Si♭, Mi♭, Lá♭, Ré♭, Sol♭, cada passo com **um bemol** a mais.",
+    "O sustenido novo é a **sensível** da nova tonalidade; o bemol novo é o **4º grau** dela.",
+    "Tonalidades **vizinhas** diferem por um acidente só.",
+    "Cuidado: Si–Fá é 5ª diminuta; a 5ª justa acima de Si é Fá♯."
+  ],
+  "pergunta_para_chat": "Me faça perguntas sobre o círculo de quintas, uma de cada vez, misturando sustenidos e bemóis, e me dê uma dica antes de mostrar a resposta."
+}
