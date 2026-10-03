@@ -516,7 +516,7 @@
       "blocos": [
         {
           "tipo": "texto",
-          "markdown": "Um jeito prático de reconhecer intervalos de ouvido é ligar cada um ao começo de uma música conhecida. Cante mentalmente a melodia e preste atenção nas duas primeiras notas **diferentes**.\n\nOs exemplos abaixo são cantigas e melodias em domínio público. A partitura mostra só o começo de cada uma, com ritmo simplificado."
+          "markdown": "Um jeito prático de reconhecer intervalos de ouvido é ligar cada um ao começo de uma música conhecida. Cante mentalmente a melodia e preste atenção nas duas primeiras notas **diferentes**."
         },
         {
           "tipo": "exemplo",
@@ -819,7 +819,7 @@
           "exemplo": {
             "id": "ex-brilha-brilha",
             "titulo": "5ª justa: Brilha, brilha, estrelinha",
-            "legenda": "\"Bri-lha, **bri**-lha\": do segundo para o terceiro som a melodia sobe uma 5ª justa. A melodia é francesa, mas a versão em português é cantada em todo o Brasil.",
+            "legenda": "\"Bri-lha, **bri**-lha\": do segundo para o terceiro som a melodia sobe uma 5ª justa.",
             "eventos": [
               {
                 "notas": [
@@ -992,7 +992,7 @@
         },
         {
           "tipo": "dica",
-          "markdown": "Para as 7ªs, a 8ª e o trítono, não confirmamos uma música brasileira conhecida que comece com eles. Treine por comparação: a 8ª é a mesma nota, mais aguda; a 7ª maior soa como uma oitava que \"não chegou\"; a 7ª menor fica um semitom abaixo dela."
+          "markdown": "Para as 7ªs, a 8ª e o trítono, treine por comparação: a 8ª é a mesma nota, mais aguda; a 7ª maior soa como uma oitava que \"não chegou\"; a 7ª menor fica um semitom abaixo dela."
         }
       ]
     }
