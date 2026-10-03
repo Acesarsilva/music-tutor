@@ -1,0 +1,28 @@
+codigo: I04
+titulo: Figuras rítmicas
+nivel: iniciante
+assunto: teoria
+prerequisitos:
+  - I03  # Pauta e claves
+objetivos:
+  - Reconhecer semibreve, mínima, semínima, colcheia e semicolcheia e quanto cada uma dura
+  - Reconhecer as pausas correspondentes
+  - Usar o ponto de aumento e a ligadura para prolongar uma nota
+  - Ler ritmos simples de cantigas
+conceitos:
+  - valores-das-figuras
+  - relacao-entre-figuras
+  - pausas
+  - ponto-de-aumento
+  - ligadura
+  - leitura-ritmica
+fora_do_escopo:
+  - Fórmulas de compasso (módulo I05)
+  - Quiálteras e compassos compostos (módulos intermediários)
+exemplos_semente:
+  - "Uma semibreve, duas mínimas, quatro semínimas, oito colcheias na mesma nota"
+  - "Semínima pontuada e colcheia"
+  - "Marcha soldado e Pirulito que bate bate: semínimas, colcheias e semicolcheias"
+exercicios:
+  - multipla_escolha
+  - percepcao

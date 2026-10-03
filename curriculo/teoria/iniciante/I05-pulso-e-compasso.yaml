@@ -1,0 +1,29 @@
+codigo: I05
+titulo: Pulso e compasso simples
+nivel: iniciante
+assunto: teoria
+prerequisitos:
+  - I04  # Figuras rítmicas
+objetivos:
+  - Sentir o pulso e diferenciar tempo forte de tempo fraco
+  - Ler as fórmulas de compasso 2/4, 3/4 e 4/4 e as barras de compasso
+  - Reconhecer de ouvido compassos binários e ternários
+  - Entender a anacruse, a nota antes do primeiro tempo forte
+conceitos:
+  - pulso
+  - tempo-forte
+  - formula-de-compasso
+  - barras-de-compasso
+  - binario-ternario-quaternario
+  - anacruse
+fora_do_escopo:
+  - Compassos compostos (6/8, 9/8) (módulos intermediários)
+  - Síncope e contratempo (módulos intermediários)
+exemplos_semente:
+  - "Pulso com acento a cada 2, 3 e 4 tempos"
+  - "Marcha soldado em 2/4"
+  - "O cravo brigou com a rosa em 3/4, com anacruse"
+  - "Brilha, brilha em 4/4"
+exercicios:
+  - multipla_escolha
+  - percepcao

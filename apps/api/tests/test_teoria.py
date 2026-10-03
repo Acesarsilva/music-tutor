@@ -107,3 +107,17 @@ def test_abc_com_armadura_omite_acidente_da_armadura_e_marca_bequadro():
     abc = teoria.eventos_para_abc(eventos, armadura="G")
     assert "K:G" in abc and "G F =F f" in abc
     assert teoria.alturas_do_abc(abc) == [[67], [66], [65], [78]]
+
+
+def test_abc_com_dinamica_acento_e_ligadura():
+    eventos = [{"notas": ["C4"], "duracao": 2, "dinamica": "p"}, {"notas": ["D4"], "duracao": 1, "acento": True},
+               {"notas": ["E4"], "duracao": 1, "ligada": True}, {"notas": ["E4"], "duracao": 4}]
+    abc = teoria.eventos_para_abc(eventos)
+    assert "!p!C2 !>!D E- | E4" in abc
+    assert teoria.alturas_do_abc(abc) == [[60], [62], [64], [64]]
+
+
+def test_abc_em_clave_de_fa_mantem_a_altura():
+    abc = teoria.eventos_para_abc([{"notas": ["F3"], "duracao": 2}, {"notas": ["C4"], "duracao": 2}], clave="fa")
+    assert "clef=bass" in abc
+    assert teoria.alturas_do_abc(abc) == [[53], [60]]

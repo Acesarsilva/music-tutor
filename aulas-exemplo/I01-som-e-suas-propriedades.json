@@ -1,0 +1,855 @@
+{
+  "codigo": "I01",
+  "titulo": "Som e suas propriedades",
+  "nivel": "iniciante",
+  "resumo_curto": "As quatro propriedades do som, altura, duração, intensidade e timbre, e como reconhecer cada uma de ouvido.",
+  "prerequisitos": [],
+  "objetivos": [
+    "Reconhecer **altura**, **duração**, **intensidade** e **timbre**",
+    "Diferenciar agudo de grave, curto de longo e forte de fraco",
+    "Não confundir altura com intensidade",
+    "Reconhecer o timbre como a cor do som"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Pense em sons do dia a dia e responda de cabeça. Depois confira.\n\n1. O apito de um juiz e o trovão: qual soa mais \"fino\"?\n2. A buzina de um carro e um sussurro: qual soa mais forte?\n3. Se duas pessoas cantam a mesma nota, como você sabe quem é quem?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. O apito: é mais **agudo**. O trovão é **grave**.\n2. A buzina: é mais **forte**. O sussurro é **fraco**.\n3. Pela \"cor\" de cada voz, que muda de pessoa para pessoa. Ela tem nome, e você vai ver qual é.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Ouça antes de qualquer nome",
+            "legenda": "Três pares de sons. Em cada par, o que mudou do primeiro som para o segundo?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 3.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2,
+                "dinamica": "p"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2,
+                "dinamica": "f"
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "No primeiro par, o segundo som ficou mais **agudo**. No segundo, ficou mais **longo**. No terceiro, mais **forte**. Essas são três propriedades do som: **altura**, **duração** e **intensidade**. A quarta, o **timbre**, é a que diferencia as vozes.\n\nAo final, você vai ouvir um som e dizer qual dessas propriedades mudou."
+        }
+      ]
+    },
+    {
+      "titulo": "Altura: agudo e grave",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "**Altura** é o quanto um som é agudo (\"fino\") ou grave (\"grosso\"). Não tem a ver com volume: um som agudo pode ser fraquinho, e um som grave pode ser muito forte.\n\n- No piano, as teclas da **esquerda** são graves, e as da **direita**, agudas.\n- No violão, as cordas mais grossas são graves; e, na mesma corda, as casas mais perto do corpo do violão soam mais agudas."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-altura",
+            "titulo": "Do grave ao agudo",
+            "legenda": "A mesma nota em três alturas: cada vez mais aguda.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C6"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Clique nas teclas da esquerda e da direita e compare.",
+          "destaque": [
+            "C4",
+            "C5",
+            "C6"
+          ],
+          "de": "C4",
+          "ate": "C6"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Numa melodia, a altura sobe e desce. No começo de *Brilha, brilha, estrelinha*, ela sobe em \"bri-lha\", sobe mais um pouco em \"es-tre\" e desce em \"li-nha\"."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-brilha",
+            "titulo": "Brilha, brilha, estrelinha",
+            "legenda": "Acompanhe a altura: repete, sobe, sobe um pouco mais, desce.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "Bri-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "bri-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "es-"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "tre-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "li-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "nha"
+              }
+            ],
+            "andamento": 96
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Duração: curto e longo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "**Duração** é quanto tempo o som dura. Sons curtos e longos, combinados, formam o **ritmo** de uma música. O **silêncio** também tem duração e faz parte do ritmo."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-duracao",
+            "titulo": "Curtos, longo e silêncio",
+            "legenda": "Quatro sons curtos, um som longo e depois um silêncio.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Intensidade: forte e fraco",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "**Intensidade** é a força do som, o que no dia a dia chamamos de volume. Um som pode ser **forte** ou **fraco** sem mudar de altura. Na música, a intensidade também se chama **dinâmica**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-intensidade",
+            "titulo": "Fraco, depois forte",
+            "legenda": "A mesma nota, na mesma altura. Só a força muda.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2,
+                "dinamica": "p"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2,
+                "dinamica": "f"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-crescendo",
+            "titulo": "Aos poucos, mais forte",
+            "legenda": "A melodia sobe e fica mais forte a cada nota.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "dinamica": "pp"
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1,
+                "dinamica": "p"
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1,
+                "dinamica": "mp"
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1,
+                "dinamica": "mf"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 4,
+                "dinamica": "f"
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Os sinais **p** (piano, fraco) e **f** (forte) sob a pauta indicam a intensidade. Eles aparecem com mais detalhe numa aula adiante."
+        }
+      ]
+    },
+    {
+      "titulo": "Timbre: a cor do som",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "**Timbre** é o que faz um piano soar diferente de um violão, mesmo tocando a mesma nota, na mesma duração e com a mesma força. É por ele que você reconhece a voz de alguém ao telefone.\n\nToque o exemplo abaixo, troque o instrumento entre piano e violão e toque de novo. As notas são as mesmas; só o timbre muda."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-timbre",
+            "titulo": "Mesma melodia, outro instrumento",
+            "legenda": "Ouça uma vez no piano e outra no violão. O que muda é a cor do som.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "Bri-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "bri-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "es-"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "tre-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "li-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "nha"
+              }
+            ],
+            "andamento": 96
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "As quatro juntas",
+      "blocos": [
+        {
+          "tipo": "tabela",
+          "legenda": "As quatro propriedades do som.",
+          "cabecalho": [
+            "Propriedade",
+            "Pergunta",
+            "Opostos"
+          ],
+          "linhas": [
+            [
+              "altura",
+              "É fino ou grosso?",
+              "agudo × grave"
+            ],
+            [
+              "duração",
+              "Quanto tempo dura?",
+              "curto × longo"
+            ],
+            [
+              "intensidade",
+              "Qual a força?",
+              "forte × fraco"
+            ],
+            [
+              "timbre",
+              "Quem está tocando?",
+              "piano, violão, voz..."
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Veja como analisar um par de sons, com o motivo de cada passo. Ouça o exemplo.\n\n1. **Altura**: as duas notas soam igualmente finas. Não mudou.\n2. **Duração**: as duas duram o mesmo. Não mudou.\n3. **Intensidade**: a segunda soa bem mais forte. **Mudou.**\n4. **Timbre**: o instrumento é o mesmo. Não mudou."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-passo",
+            "titulo": "Um par para analisar",
+            "legenda": "Só a força muda.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 2,
+                "dinamica": "p"
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 2,
+                "dinamica": "ff"
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que vale a pena conferir as quatro propriedades, uma por uma, em vez de dizer só \"o segundo é diferente\"?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque duas propriedades podem mudar juntas, e porque é fácil confundir uma com outra, principalmente altura com intensidade. Olhar uma de cada vez evita esse engano.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. Ouça o próximo par: a altura não mudou, a intensidade não mudou e o timbre não mudou. O que mudou?"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-passo-duracao",
+            "titulo": "Outro par",
+            "legenda": "Ouça os dois sons com atenção.",
+            "eventos": [
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [],
+                "duracao": 3.0
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A **duração**: o primeiro som é curto, e o segundo, longo.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega ouviu o exemplo abaixo e disse:\n\n> \"O segundo som é mais alto, então é mais agudo.\"\n\nOnde está o erro, por que está errado e o que mudou de verdade?"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-erro",
+            "titulo": "O exemplo do colega",
+            "legenda": "A mesma nota duas vezes.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2,
+                "dinamica": "p"
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2,
+                "dinamica": "f"
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ele usou \"alto\" no sentido de volume e misturou com **altura**. As duas notas são o mesmo Mi: a altura não mudou. O que mudou foi a **intensidade**: o segundo som é mais **forte**. Agudo e grave falam da altura; forte e fraco falam da intensidade.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça os dois sons. O que mudou do primeiro para o segundo?",
+      "exemplo": {
+        "id": "exe-intensidade",
+        "titulo": "Dois sons",
+        "legenda": "A mesma nota, mais forte.",
+        "eventos": [
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 2,
+            "dinamica": "p"
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 2,
+            "dinamica": "f"
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "a altura",
+        "a intensidade",
+        "a duração"
+      ],
+      "correta": 1,
+      "explicacao": "É a mesma nota, com a mesma duração: mudou a **intensidade**, o segundo é mais forte. Se marcou altura, confundiu forte com agudo.",
+      "conceito": "altura-vs-intensidade"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual destes sons é o mais **agudo**?",
+      "opcoes": [
+        "o apito de um juiz",
+        "um trovão",
+        "o motor de um caminhão"
+      ],
+      "correta": 0,
+      "explicacao": "Agudo é o som \"fino\": o **apito**. Trovão e motor de caminhão são graves, mesmo quando são fortes.",
+      "conceito": "altura"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Dó4 está marcado. Clique no Dó **mais agudo**, uma oitava acima.",
+      "nota_base": "C4",
+      "intervalo": "8J",
+      "direcao": "acima",
+      "explicacao": "O Dó mais agudo fica à direita no piano, oito teclas brancas acima: **Dó5**. No violão, ele fica mais perto do corpo do instrumento ou numa corda mais fina.",
+      "conceito": "altura",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A melodia sobe ou desce?",
+      "exemplo": {
+        "id": "exe-sobe",
+        "titulo": "Melodia",
+        "legenda": "A melodia sobe: cada nota é mais aguda.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 80
+      },
+      "opcoes": [
+        "sobe",
+        "desce",
+        "fica na mesma nota"
+      ],
+      "correta": 0,
+      "explicacao": "Cada nota é mais **aguda** que a anterior: a melodia sobe. Se a força tivesse mudado, seria intensidade, não altura.",
+      "conceito": "altura"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Um piano e um violão tocam a mesma nota, com a mesma força e a mesma duração. O que faz os dois soarem diferentes?",
+      "opcoes": [
+        "o timbre",
+        "a altura",
+        "a intensidade",
+        "a duração"
+      ],
+      "correta": 0,
+      "explicacao": "Com altura, intensidade e duração iguais, sobra o **timbre**, a \"cor\" própria de cada instrumento.",
+      "conceito": "timbre"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça os dois sons. O que mudou?",
+      "exemplo": {
+        "id": "exe-duracao",
+        "titulo": "Dois sons",
+        "legenda": "O segundo dura mais.",
+        "eventos": [
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [],
+            "duracao": 1.5
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "a duração",
+        "a altura",
+        "a intensidade"
+      ],
+      "correta": 0,
+      "explicacao": "A nota e a força são as mesmas; o segundo som dura bem mais. Mudou a **duração**.",
+      "conceito": "duracao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O silêncio entre dois sons faz parte da música?",
+      "opcoes": [
+        "Sim, ele tem duração e faz parte do ritmo",
+        "Não, é só uma falha no som",
+        "Só no fim da música"
+      ],
+      "correta": 0,
+      "explicacao": "O **silêncio** também dura um tempo certo e faz parte do ritmo. Na partitura, ele é escrito como pausa.",
+      "conceito": "silencio"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A segunda nota é mais aguda ou mais grave que a primeira?",
+      "exemplo": {
+        "id": "exe-grave",
+        "titulo": "Dois sons",
+        "legenda": "A segunda é mais grave.",
+        "eventos": [
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "mais aguda",
+        "mais grave"
+      ],
+      "correta": 1,
+      "explicacao": "A melodia desce: a segunda nota é mais **grave**. Repare que a força das duas é a mesma.",
+      "conceito": "altura"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "\"Aumente o volume da música.\" Que propriedade do som muda?",
+      "opcoes": [
+        "a intensidade",
+        "a altura",
+        "o timbre"
+      ],
+      "correta": 0,
+      "explicacao": "Volume é **intensidade**. As notas continuam com a mesma altura, só mais fortes. É a confusão de \"som alto\" com som agudo.",
+      "conceito": "altura-vs-intensidade"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Sol4 está marcado. Clique no Sol **mais grave**, uma oitava abaixo.",
+      "nota_base": "G4",
+      "intervalo": "8J",
+      "direcao": "abaixo",
+      "explicacao": "Mais grave fica à esquerda no piano: **Sol3**. No violão, ele fica numa corda mais grossa ou numa casa mais perto da cabeça do instrumento.",
+      "conceito": "altura",
+      "de": "E3",
+      "ate": "C5"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. O que muda ao longo das notas?",
+      "exemplo": {
+        "id": "exe-crescendo",
+        "titulo": "Uma nota repetida",
+        "legenda": "Mesma nota, cada vez mais forte.",
+        "eventos": [
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1,
+            "dinamica": "pp"
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1,
+            "dinamica": "p"
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1,
+            "dinamica": "mf"
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1,
+            "dinamica": "ff"
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "a intensidade",
+        "a altura",
+        "a duração"
+      ],
+      "correta": 0,
+      "explicacao": "É sempre o mesmo Mi, com a mesma duração, e cada vez mais forte: muda a **intensidade**.",
+      "conceito": "intensidade"
+    }
+  ],
+  "resumo": [
+    "**Altura**: agudo ou grave. No piano, a direita é aguda; no violão, as cordas finas.",
+    "**Duração**: curto ou longo. Sons e silêncios com durações diferentes formam o ritmo.",
+    "**Intensidade**: forte ou fraco. É o volume, também chamado de dinâmica.",
+    "**Timbre**: a cor do som, que diferencia piano, violão e vozes.",
+    "Cuidado: \"som alto\" no sentido de volume é intensidade, não altura."
+  ],
+  "pergunta_para_chat": "Me descreva pares de sons, um de cada vez, para eu dizer qual propriedade mudou, e me dê uma dica antes de mostrar a resposta."
+}

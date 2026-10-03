@@ -214,12 +214,14 @@ def eventos_para_abc(
             )
         notas = ev["notas"]
         sufixo = _duracao_abc(dur)
+        decoracao = (f"!{ev['dinamica']}!" if ev.get("dinamica") else "") + ("!>!" if ev.get("acento") else "")
+        liga = "-" if ev.get("ligada") and notas else ""
         if not notas:
-            corpo.append("z" + sufixo)
+            corpo.append(decoracao + "z" + sufixo)
         elif len(notas) == 1:
-            corpo.append(_nota_abc(notas[0], estado, da_armadura) + sufixo)
+            corpo.append(decoracao + _nota_abc(notas[0], estado, da_armadura) + sufixo + liga)
         else:
-            corpo.append("[" + "".join(_nota_abc(n, estado, da_armadura) for n in notas) + "]" + sufixo)
+            corpo.append(decoracao + "[" + "".join(_nota_abc(n, estado, da_armadura) for n in notas) + "]" + sufixo + liga)
         restante -= dur
         if restante == 0:
             corpo.append("|")
@@ -251,7 +253,9 @@ def _letra_abc(eventos: list[dict]) -> str:
 
 def alturas_do_abc(abc: str) -> list[list[int]]:
     """Lê ABC com music21 e devolve as alturas MIDI de cada evento (pausa = [])."""
-    s = converter.parse(abc, format="abc")
+    # No ABC a clave só muda o desenho; as letras continuam com a altura absoluta. O music21 desloca as notas
+    # duas oitavas quando lê "clef=bass", então a clave sai antes da leitura.
+    s = converter.parse(abc.replace(" clef=bass", ""), format="abc")
     resultado = []
     for el in s.flatten().notesAndRests:
         if el.isRest:

@@ -1,0 +1,1189 @@
+{
+  "codigo": "I05",
+  "titulo": "Pulso e compasso simples",
+  "nivel": "iniciante",
+  "resumo_curto": "O pulso, os tempos fortes e fracos, as fórmulas 2/4, 3/4 e 4/4 e a anacruse.",
+  "prerequisitos": [
+    "Figuras rítmicas (I04)"
+  ],
+  "objetivos": [
+    "Sentir o **pulso** e diferenciar **tempo forte** de fraco",
+    "Ler as fórmulas **2/4, 3/4 e 4/4** e as barras de compasso",
+    "Reconhecer de ouvido compassos **binários, ternários e quaternários**",
+    "Entender a **anacruse**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quantos tempos vale a semínima? E a mínima?\n2. Quantas colcheias cabem numa semínima?\n3. Quanto vale a semínima pontuada?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Um tempo; dois tempos.\n2. Duas.\n3. Um tempo e meio.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Ouça antes de qualquer nome",
+            "legenda": "Bata o pé junto com os sons. Alguns soam mais fortes: de quantos em quantos?",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              }
+            ],
+            "compasso": "3/4",
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "As batidas regulares que você acompanhou com o pé são o **pulso**. O som mais forte, a cada três, é o **tempo forte**, e os grupos de três formam **compassos**.\n\nAo final, você vai ler fórmulas de compasso e reconhecer de ouvido se uma música vai de dois em dois, de três em três ou de quatro em quatro."
+        }
+      ]
+    },
+    {
+      "titulo": "Pulso e tempo forte",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O **pulso** é a batida constante que você sente numa música, aquela que faz a gente bater o pé ou bater palmas. Os pulsos se agrupam: um deles soa mais forte, o **tempo forte**, e os outros são **fracos**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-binario",
+            "titulo": "De dois em dois",
+            "legenda": "Forte, fraco, forte, fraco: como passos de uma marcha.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 100
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ternario",
+            "titulo": "De três em três",
+            "legenda": "Forte, fraco, fraco: como uma valsa.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              }
+            ],
+            "compasso": "3/4",
+            "andamento": 100
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-quaternario",
+            "titulo": "De quatro em quatro",
+            "legenda": "O acento volta a cada quatro tempos. O terceiro tempo, meio-forte, tem um apoio mais leve que o primeiro.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": false
+              }
+            ],
+            "andamento": 100
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Fórmula de compasso e barras",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **fórmula de compasso**, no começo da pauta, tem dois números:\n\n- o de **cima** diz **quantos tempos** tem cada compasso;\n- o de **baixo** diz **qual figura vale um tempo**. O 4 embaixo quer dizer semínima.\n\nAssim, **2/4** tem 2 semínimas por compasso, **3/4** tem 3 e **4/4** tem 4. As **barras de compasso** separam um compasso do outro, e a **barra final**, mais grossa, fecha a música."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Os três compassos simples mais comuns.",
+          "cabecalho": [
+            "Fórmula",
+            "Tempos",
+            "Nome",
+            "Acentos"
+          ],
+          "linhas": [
+            [
+              "2/4",
+              "2",
+              "binário",
+              "forte, fraco"
+            ],
+            [
+              "3/4",
+              "3",
+              "ternário",
+              "forte, fraco, fraco"
+            ],
+            [
+              "4/4",
+              "4",
+              "quaternário",
+              "forte, fraco, meio-forte, fraco"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-marcha-soldado",
+            "titulo": "Marcha soldado, em 2/4",
+            "legenda": "Uma marcha: o tempo forte cai em \"Mar\" e em \"da\".",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "Mar-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "cha"
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "silaba": "sol-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "da-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "do"
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-brilha",
+            "titulo": "Brilha, brilha, estrelinha, em 4/4",
+            "legenda": "O tempo forte cai em \"Bri\" e em \"es\", a cada quatro tempos.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "Bri-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "bri-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "es-"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "tre-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "li-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "nha"
+              }
+            ],
+            "andamento": 96
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Anacruse",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Nem toda música começa no tempo forte. Quando a primeira nota vem **antes** do primeiro tempo forte, ela se chama **anacruse**. Em *O cravo brigou com a rosa*, o \"O\" vem sozinho, e o primeiro tempo forte cai em \"cra\"."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-cravo",
+            "titulo": "O cravo brigou com a rosa, em 3/4",
+            "legenda": "\"O\" é a anacruse; o tempo forte cai em \"cra\" e depois em \"gou\".",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "O"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "cra-"
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1,
+                "silaba": "vo"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "silaba": "bri-"
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 2,
+                "silaba": "gou"
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              }
+            ],
+            "compasso": "3/4",
+            "anacruse": 1,
+            "andamento": 88
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo para conferir um compasso",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como conferir se um compasso **3/4** com **mínima + semínima** está completo, com o motivo de cada passo.\n\n1. **Leia a fórmula**: 3 em cima, 3 tempos; 4 embaixo, a semínima vale um tempo.\n2. **Some as figuras**: mínima 2 + semínima 1 = 3.\n3. **Compare**: 3 tempos para um compasso de 3. Está completo."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-confere",
+            "titulo": "Mínima e semínima em 3/4",
+            "legenda": "Forte na mínima, fraco na semínima.",
+            "eventos": [
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 2,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 2,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "compasso": "3/4",
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** a mesma mínima com semínima caberia num compasso 2/4?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Não. 2/4 tem 2 tempos, e mínima + semínima somam 3. Sobraria um tempo, que teria de ir para o compasso seguinte.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. Compasso **4/4** com **mínima + duas colcheias**: 2 + ½ + ½ = 3. Está completo?\n\nE agora dois passos são seus: compasso **2/4** com **semínima pontuada + colcheia**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "4/4 com 3 tempos: **falta 1 tempo**, por exemplo uma semínima ou uma pausa de semínima.\n\n2/4: 1½ + ½ = 2. **Completo.**",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega leu a fórmula 3/4 assim:\n\n> \"3/4 quer dizer três quartos de tempo por compasso.\"\n\nOnde está o erro, por que está errado e o que a fórmula diz?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A fórmula de compasso não é uma fração de tempo. O **3** diz que cada compasso tem **3 tempos**, e o **4** diz que a **semínima** vale um tempo. 3/4 é um compasso de três semínimas.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na fórmula **3/4**, o que o número de **cima** diz?",
+      "opcoes": [
+        "Quantos tempos tem cada compasso",
+        "Quantos compassos tem a música",
+        "A duração de cada tempo"
+      ],
+      "correta": 0,
+      "explicacao": "O número de cima conta os **tempos do compasso**: 3. A figura que vale um tempo vem no número de baixo.",
+      "conceito": "formula-de-compasso"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça e acompanhe o pulso. O tempo forte volta de quantos em quantos tempos?",
+      "exemplo": {
+        "id": "exe-ternario",
+        "titulo": "Pulso",
+        "legenda": "De três em três: compasso ternário.",
+        "eventos": [
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          }
+        ],
+        "compasso": "3/4",
+        "andamento": 100
+      },
+      "opcoes": [
+        "binário (de 2 em 2)",
+        "ternário (de 3 em 3)",
+        "quaternário (de 4 em 4)"
+      ],
+      "correta": 1,
+      "explicacao": "O som forte volta a cada **três** pulsos: forte, fraco, fraco. É um compasso ternário, como 3/4.",
+      "conceito": "binario-ternario-quaternario"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Olhe a partitura. Quantos tempos tem cada compasso?",
+      "opcoes": [
+        "2 tempos",
+        "4 tempos",
+        "3 tempos"
+      ],
+      "correta": 0,
+      "explicacao": "A fórmula é **2/4**: dois tempos de semínima por compasso. Confira somando: semínima + duas colcheias = 2.",
+      "conceito": "formula-de-compasso",
+      "exemplo": {
+        "id": "exe-marcha",
+        "titulo": "Uma cantiga",
+        "legenda": "Marcha soldado, em 2/4.",
+        "eventos": [
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1,
+            "silaba": "Mar-"
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5,
+            "silaba": "cha"
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 0.5,
+            "silaba": "sol-"
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1,
+            "silaba": "da-"
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1,
+            "silaba": "do"
+          }
+        ],
+        "compasso": "2/4",
+        "andamento": 88
+      }
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. O tempo forte volta de quantos em quantos tempos?",
+      "exemplo": {
+        "id": "exe-binario",
+        "titulo": "Pulso",
+        "legenda": "De dois em dois: compasso binário.",
+        "eventos": [
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          }
+        ],
+        "compasso": "2/4",
+        "andamento": 100
+      },
+      "opcoes": [
+        "binário (de 2 em 2)",
+        "ternário (de 3 em 3)",
+        "quaternário (de 4 em 4)"
+      ],
+      "correta": 0,
+      "explicacao": "Forte, fraco, forte, fraco: o acento volta a cada **dois** pulsos, como numa marcha.",
+      "conceito": "binario-ternario-quaternario"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Num compasso **4/4**, quais tempos têm apoio?",
+      "opcoes": [
+        "O 1º (forte) e o 3º (meio-forte)",
+        "O 2º e o 4º",
+        "Todos têm a mesma força"
+      ],
+      "correta": 0,
+      "explicacao": "No quaternário, o **1º tempo é forte** e o **3º é meio-forte**; o 2º e o 4º são fracos.",
+      "conceito": "tempo-forte"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que é **anacruse**?",
+      "opcoes": [
+        "Nota que vem antes do primeiro tempo forte",
+        "O último compasso da música",
+        "Uma pausa no tempo forte"
+      ],
+      "correta": 0,
+      "explicacao": "Anacruse é a nota (ou o grupo de notas) **antes do primeiro tempo forte**, como o \"O\" de *O cravo brigou com a rosa*.",
+      "conceito": "anacruse"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas **semínimas** cabem num compasso **3/4**?",
+      "opcoes": [
+        "3",
+        "4",
+        "6"
+      ],
+      "correta": 0,
+      "explicacao": "O 3 de cima diz três tempos, e o 4 de baixo diz que a semínima vale um tempo: **3 semínimas**.",
+      "conceito": "formula-de-compasso"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça *O cravo brigou com a rosa*. Em qual sílaba cai o primeiro **tempo forte**?",
+      "exemplo": {
+        "id": "exe-cravo",
+        "titulo": "O cravo brigou com a rosa",
+        "legenda": "\"O\" é anacruse; o tempo forte cai em \"cra\".",
+        "eventos": [
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1,
+            "silaba": "O"
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1,
+            "silaba": "cra-"
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1,
+            "silaba": "vo"
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "silaba": "bri-"
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 2,
+            "silaba": "gou"
+          },
+          {
+            "notas": [],
+            "duracao": 1
+          }
+        ],
+        "compasso": "3/4",
+        "anacruse": 1,
+        "andamento": 88
+      },
+      "opcoes": [
+        "\"cra\"",
+        "\"O\"",
+        "\"vo\""
+      ],
+      "correta": 0,
+      "explicacao": "A música começa com o \"O\" em anacruse. O primeiro tempo forte é **\"cra\"**, onde começa o primeiro compasso completo.",
+      "conceito": "anacruse"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Para que serve a **barra de compasso**?",
+      "opcoes": [
+        "Separar um compasso do outro",
+        "Indicar o tempo forte com mais volume",
+        "Mudar a clave"
+      ],
+      "correta": 0,
+      "explicacao": "A barra **separa os compassos**; logo depois dela vem o tempo forte. A barra final, mais grossa, fecha a música.",
+      "conceito": "barras-de-compasso"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Um compasso **4/4** tem uma mínima e uma semínima. Quanto falta para completar?",
+      "opcoes": [
+        "1 tempo",
+        "2 tempos",
+        "Nada"
+      ],
+      "correta": 0,
+      "explicacao": "Mínima (2) + semínima (1) = 3. Num compasso de 4 tempos, falta **1 tempo**.",
+      "conceito": "formula-de-compasso"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. O tempo forte volta de quantos em quantos tempos?",
+      "exemplo": {
+        "id": "exe-quaternario",
+        "titulo": "Pulso",
+        "legenda": "De quatro em quatro: compasso quaternário.",
+        "eventos": [
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          }
+        ],
+        "andamento": 100
+      },
+      "opcoes": [
+        "binário (de 2 em 2)",
+        "ternário (de 3 em 3)",
+        "quaternário (de 4 em 4)"
+      ],
+      "correta": 2,
+      "explicacao": "O acento volta a cada **quatro** pulsos: compasso quaternário, como 4/4. Quem ouviu de 2 em 2 contou só metade do grupo.",
+      "conceito": "binario-ternario-quaternario"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que é o **pulso** de uma música?",
+      "opcoes": [
+        "A batida constante que dá vontade de bater o pé",
+        "A nota mais aguda da melodia",
+        "O volume da música"
+      ],
+      "correta": 0,
+      "explicacao": "Pulso é a **batida regular** por trás da música. Altura e volume são outras propriedades do som.",
+      "conceito": "pulso"
+    }
+  ],
+  "resumo": [
+    "O **pulso** é a batida constante da música; os pulsos se agrupam a partir do **tempo forte**.",
+    "Na fórmula, o número de cima conta os tempos, e o de baixo diz a figura que vale um tempo (4 = semínima).",
+    "**2/4** binário (forte, fraco), **3/4** ternário (forte, fraco, fraco), **4/4** quaternário (forte, fraco, meio-forte, fraco).",
+    "As **barras** separam os compassos; o tempo forte vem logo depois de cada barra.",
+    "**Anacruse** é a nota antes do primeiro tempo forte, como o \"O\" de *O cravo brigou com a rosa*."
+  ],
+  "pergunta_para_chat": "Me cite cantigas e ritmos, um de cada vez, para eu dizer se o compasso é binário, ternário ou quaternário, e me dê uma dica antes de mostrar a resposta."
+}

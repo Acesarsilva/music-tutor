@@ -1,0 +1,915 @@
+{
+  "codigo": "I04",
+  "titulo": "Figuras rítmicas",
+  "nivel": "iniciante",
+  "resumo_curto": "Semibreve, mínima, semínima, colcheia e semicolcheia, as pausas, o ponto de aumento e a ligadura.",
+  "prerequisitos": [
+    "Pauta e claves (I03)"
+  ],
+  "objetivos": [
+    "Reconhecer **semibreve, mínima, semínima, colcheia e semicolcheia**",
+    "Reconhecer as **pausas**",
+    "Usar o **ponto de aumento** e a **ligadura**",
+    "Ler o ritmo de cantigas somando as figuras"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Que propriedade do som diz se ele é curto ou longo?\n2. Na clave de sol, que nota fica na 2ª linha?\n3. O silêncio faz parte do ritmo?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. A duração.\n2. Sol4.\n3. Sim: ele também tem duração e conta no ritmo.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Ouça antes de qualquer nome",
+            "legenda": "Os quatro compassos têm o mesmo tamanho. O que acontece com os sons de um compasso para o outro?",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Em cada compasso, os sons ficam com **metade** da duração do compasso anterior, e cabem o dobro deles. Cada duração tem um desenho próprio, uma **figura rítmica**.\n\nAo final, você vai ler o ritmo de uma cantiga somando as figuras."
+        }
+      ]
+    },
+    {
+      "titulo": "As cinco figuras",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Contando a **semínima** como **1 tempo**, como nos compassos 2/4, 3/4 e 4/4, cada figura vale assim:"
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "As figuras e quanto cada uma dura. Cada figura vale metade da anterior.",
+          "cabecalho": [
+            "Figura",
+            "Tempos",
+            "Equivale a"
+          ],
+          "linhas": [
+            [
+              "semibreve",
+              "4",
+              "2 mínimas"
+            ],
+            [
+              "mínima",
+              "2",
+              "2 semínimas"
+            ],
+            [
+              "semínima",
+              "1",
+              "2 colcheias"
+            ],
+            [
+              "colcheia",
+              "½",
+              "2 semicolcheias"
+            ],
+            [
+              "semicolcheia",
+              "¼",
+              "–"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-semicolcheias",
+            "titulo": "Semínimas, colcheias e semicolcheias",
+            "legenda": "Um tempo de cada vez: uma semínima, duas colcheias, quatro semicolcheias, e de novo a semínima.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A cantiga *Marcha soldado* começa com semínima, duas colcheias e duas semínimas."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-marcha-soldado",
+            "titulo": "Marcha soldado",
+            "legenda": "\"Mar\" dura um tempo; \"cha sol\" dividem o tempo seguinte; \"da\" e \"do\" voltam a durar um tempo cada.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "Mar-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "cha"
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "silaba": "sol-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "da-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "do"
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Em *Pirulito que bate bate*, \"to que\" são duas **semicolcheias**: cabem no tempo de uma colcheia."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-pirulito",
+            "titulo": "Pirulito que bate bate",
+            "legenda": "Ouça \"li-to-que\": as duas últimas sílabas passam rápido, em semicolcheias.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "silaba": "Pi-"
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ru-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "li-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.25,
+                "silaba": "to"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.25,
+                "silaba": "que"
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ba-"
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "silaba": "te"
+              }
+            ],
+            "compasso": "2/4",
+            "anacruse": 1,
+            "andamento": 88
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Pausas",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Cada figura tem uma **pausa** do mesmo valor, um silêncio medido: pausa de semibreve (4 tempos), de mínima (2), de semínima (1), de colcheia (½) e de semicolcheia (¼)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-pausas",
+            "titulo": "Sons e pausas",
+            "legenda": "Som, silêncio, som, silêncio: as pausas têm a duração exata das figuras.",
+            "eventos": [
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Ponto de aumento e ligadura",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O **ponto de aumento**, depois da nota, soma **metade** do valor dela:\n\n- semínima pontuada: 1 + ½ = **1½ tempo**;\n- mínima pontuada: 2 + 1 = **3 tempos**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ponto",
+            "titulo": "Semínima pontuada e colcheia",
+            "legenda": "O som longo e o curto, repetidos: longo-curto, longo-curto.",
+            "eventos": [
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 3.0
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A **ligadura** é uma curva que une duas notas **da mesma altura**: elas soam como um som só, com a soma das durações. Ela serve, por exemplo, para atravessar a barra de compasso."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ligadura",
+            "titulo": "Ligadura entre compassos",
+            "legenda": "O último Mi do primeiro compasso continua no segundo: um som só, de três tempos.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 2,
+                "ligada": true
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo para somar um ritmo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como somar os tempos de **mínima + semínima + duas colcheias**, com o motivo de cada passo.\n\n1. **Dê o valor de cada figura**: mínima 2, semínima 1, colcheias ½ e ½.\n2. **Junte as metades**: duas colcheias valem um tempo, como uma semínima.\n3. **Some**: 2 + 1 + 1 = **4 tempos**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-soma",
+            "titulo": "Mínima, semínima e duas colcheias",
+            "legenda": "Quatro tempos ao todo.",
+            "eventos": [
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que juntar as colcheias aos pares antes de somar?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque duas colcheias ocupam exatamente um tempo. Pensar em pares evita somar frações e mostra onde cada tempo começa.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **Semínima pontuada + colcheia + mínima**: 1½ + ½ + 2. Quanto dá?\n\nE agora dois passos são seus: **semibreve + mínima pontuada + semínima**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1½ + ½ + 2 = **4 tempos**. O ponto da semínima e a colcheia completam um tempo juntos.\n\n4 + 3 + 1 = **8 tempos**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Uma colega calculou:\n\n> \"A mínima vale 2 tempos. O ponto soma mais 1, então a mínima pontuada vale 3. Do mesmo jeito, a semínima pontuada vale 1 + 1 = 2 tempos.\"\n\nQual passo está errado, por que e qual é o valor certo?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "O ponto não soma sempre 1 tempo: ele soma **metade do valor da nota**. Na mínima, metade é 1, por isso deu certo. Na semínima, metade é ½: a semínima pontuada vale **1½ tempo**.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos tempos vale a **mínima**?",
+      "opcoes": [
+        "2 tempos",
+        "1 tempo",
+        "4 tempos",
+        "½ tempo"
+      ],
+      "correta": 0,
+      "explicacao": "A mínima vale **2 tempos**, metade da semibreve (4) e o dobro da semínima (1).",
+      "conceito": "valores-das-figuras"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. As notas do segundo grupo duram metade ou o dobro das do primeiro?",
+      "exemplo": {
+        "id": "exe-metade",
+        "titulo": "Dois grupos",
+        "legenda": "Semínimas, depois colcheias: metade da duração.",
+        "eventos": [
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "metade",
+        "o dobro",
+        "o mesmo tempo"
+      ],
+      "correta": 0,
+      "explicacao": "No segundo grupo cabem oito notas no espaço de quatro: cada uma dura **metade**. São colcheias depois de semínimas.",
+      "conceito": "relacao-entre-figuras"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Olhe a partitura e ouça. Quantos tempos somam as notas?",
+      "opcoes": [
+        "4 tempos",
+        "3 tempos",
+        "5 tempos"
+      ],
+      "correta": 0,
+      "explicacao": "Mínima (2) + semínima (1) + duas colcheias (½ + ½) = **4 tempos**. Quem soma 5 contou cada colcheia como um tempo.",
+      "conceito": "leitura-ritmica",
+      "exemplo": {
+        "id": "exe-soma",
+        "titulo": "Um compasso",
+        "legenda": "Mínima, semínima e duas colcheias.",
+        "eventos": [
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5
+          }
+        ],
+        "andamento": 72
+      }
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas **semicolcheias** cabem numa semínima?",
+      "opcoes": [
+        "4",
+        "2",
+        "8"
+      ],
+      "correta": 0,
+      "explicacao": "Semínima = 2 colcheias = **4 semicolcheias**. Se marcou 2, pensou nas colcheias.",
+      "conceito": "relacao-entre-figuras"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quanto vale a **semínima pontuada**?",
+      "opcoes": [
+        "1 tempo e meio",
+        "2 tempos",
+        "1 tempo"
+      ],
+      "correta": 0,
+      "explicacao": "O ponto soma metade do valor: 1 + ½ = **1½ tempo**. Quem marca 2 somou um tempo inteiro.",
+      "conceito": "ponto-de-aumento"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça o começo de *Marcha soldado*. Que figuras formam \"Mar-cha sol-\"?",
+      "exemplo": {
+        "id": "exe-marcha",
+        "titulo": "Marcha soldado",
+        "legenda": "Semínima, colcheia, colcheia.",
+        "eventos": [
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1,
+            "silaba": "Mar-"
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5,
+            "silaba": "cha"
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 0.5,
+            "silaba": "sol-"
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1,
+            "silaba": "da-"
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1,
+            "silaba": "do"
+          }
+        ],
+        "compasso": "2/4",
+        "andamento": 88
+      },
+      "opcoes": [
+        "semínima, colcheia, colcheia",
+        "três semínimas",
+        "colcheia, colcheia, semínima"
+      ],
+      "correta": 0,
+      "explicacao": "\"Mar\" dura um tempo inteiro, e \"cha sol\" dividem o tempo seguinte: **semínima e duas colcheias**.",
+      "conceito": "leitura-ritmica"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A **pausa de semínima** vale:",
+      "opcoes": [
+        "1 tempo de silêncio",
+        "meio tempo de silêncio",
+        "2 tempos de silêncio"
+      ],
+      "correta": 0,
+      "explicacao": "Cada pausa tem o valor da figura do mesmo nome: **1 tempo**. Meio tempo é a pausa de colcheia.",
+      "conceito": "pausas"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Você escuta dois sons ou um som só?",
+      "exemplo": {
+        "id": "exe-ligadura",
+        "titulo": "Duas notas escritas",
+        "legenda": "Uma ligadura: um som só, de quatro tempos.",
+        "eventos": [
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 2,
+            "ligada": true
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "um som só",
+        "dois sons"
+      ],
+      "correta": 0,
+      "explicacao": "As duas notas estão ligadas: soam como **um som só**, com 2 + 2 = 4 tempos.",
+      "conceito": "ligadura"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas **colcheias** valem uma mínima?",
+      "opcoes": [
+        "4",
+        "2",
+        "8"
+      ],
+      "correta": 0,
+      "explicacao": "Mínima = 2 semínimas = **4 colcheias**. Se marcou 8, contou semicolcheias.",
+      "conceito": "relacao-entre-figuras"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quanto vale a **mínima pontuada**?",
+      "opcoes": [
+        "3 tempos",
+        "2 tempos e meio",
+        "4 tempos"
+      ],
+      "correta": 0,
+      "explicacao": "O ponto soma metade da mínima: 2 + 1 = **3 tempos**.",
+      "conceito": "ponto-de-aumento"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual figura vale **4 tempos**?",
+      "opcoes": [
+        "semibreve",
+        "mínima",
+        "semínima",
+        "colcheia"
+      ],
+      "correta": 0,
+      "explicacao": "A **semibreve** vale 4 tempos, a maior das cinco. A mínima vale 2.",
+      "conceito": "valores-das-figuras"
+    }
+  ],
+  "resumo": [
+    "Com a semínima valendo 1 tempo: semibreve 4, mínima 2, semínima 1, colcheia ½, semicolcheia ¼.",
+    "Cada figura vale **metade** da anterior.",
+    "Cada figura tem uma **pausa** com o mesmo valor.",
+    "O **ponto** soma metade do valor da nota: semínima pontuada vale 1½.",
+    "A **ligadura** une duas notas da mesma altura num som só."
+  ],
+  "pergunta_para_chat": "Me dê ritmos curtos, um de cada vez, para eu somar os tempos, e me dê uma dica antes de mostrar a resposta."
+}

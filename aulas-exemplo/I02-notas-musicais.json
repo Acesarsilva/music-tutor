@@ -1,0 +1,597 @@
+{
+  "codigo": "I02",
+  "titulo": "Notas musicais",
+  "nivel": "iniciante",
+  "resumo_curto": "Os sete nomes das notas, as letras usadas nas cifras, as oitavas e onde achar cada nota no teclado e no violão.",
+  "prerequisitos": [
+    "Som e suas propriedades (I01)"
+  ],
+  "objetivos": [
+    "Dizer as **sete notas** em ordem, subindo e descendo",
+    "Relacionar dó-ré-mi às **letras** C, D, E, F, G, A, B",
+    "Entender a **oitava** e o Dó central (Dó4)",
+    "Achar as notas no **teclado** e conhecer as **cordas soltas** do violão"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quais são as quatro propriedades do som?\n2. No piano, para que lado ficam os sons agudos?\n3. Você conhece o nome de alguma nota musical?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Altura, duração, intensidade e timbre.\n2. Para a direita.\n3. Provavelmente \"dó\", \"ré\" ou \"mi\". É por elas que esta aula começa.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Ouça antes de qualquer nome",
+            "legenda": "Oito sons subindo, um depois do outro. O último parece o primeiro, só que mais agudo?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Esses oito sons são as **notas musicais** Dó, Ré, Mi, Fá, Sol, Lá, Si e, de novo, Dó. O último Dó soa como o primeiro, só que mais agudo: a sequência recomeçou.\n\nAo final, você vai dizer as notas em ordem, nos dois sentidos, e achar cada uma no teclado e no violão."
+        }
+      ]
+    },
+    {
+      "titulo": "Sete nomes que se repetem",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A música ocidental usa **sete nomes** de notas:\n\n**Dó, Ré, Mi, Fá, Sol, Lá, Si**\n\nDepois de Si, volta o Dó, e a sequência se repete mais aguda. Descendo, a ordem se inverte: Dó, Si, Lá, Sol, Fá, Mi, Ré, Dó."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-do-re-mi-fa",
+            "titulo": "Dó, ré, mi, fá",
+            "legenda": "A cantiga canta o nome das próprias notas, subindo de Dó até Fá.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "silaba": "Dó,"
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ré,"
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "silaba": "mi,"
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5,
+                "silaba": "fá,"
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1,
+                "silaba": "fá,"
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1,
+                "silaba": "fá"
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 100
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-descendo",
+            "titulo": "De Dó a Dó, descendo",
+            "legenda": "A mesma sequência, de cima para baixo: Dó, Si, Lá, Sol, Fá, Mi, Ré, Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 80
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "As letras das notas",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Em muitos países, e nas **cifras** dos acordes, as notas têm nomes de letras. A sequência começa em Lá:"
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Os nomes em dó-ré-mi e em letras.",
+          "cabecalho": [
+            "Dó-ré-mi",
+            "Letra"
+          ],
+          "linhas": [
+            [
+              "Dó",
+              "C"
+            ],
+            [
+              "Ré",
+              "D"
+            ],
+            [
+              "Mi",
+              "E"
+            ],
+            [
+              "Fá",
+              "F"
+            ],
+            [
+              "Sol",
+              "G"
+            ],
+            [
+              "Lá",
+              "A"
+            ],
+            [
+              "Si",
+              "B"
+            ]
+          ]
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Um jeito de lembrar: **Lá é A**, a primeira letra do alfabeto. A partir dele, siga o alfabeto: Si é B, Dó é C, Ré é D, e assim por diante."
+        }
+      ]
+    },
+    {
+      "titulo": "Oitavas",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A distância de um Dó até o próximo Dó é uma **oitava**: são oito notas, contando as duas pontas. Notas com o mesmo nome em oitavas diferentes soam parecidas, uma mais aguda que a outra.\n\nPara dizer de qual Dó estamos falando, usamos um número: **Dó4** é o **Dó central**, no meio do piano. Dó5 é o Dó seguinte, mais agudo, e Dó3 é o anterior, mais grave. Todas as notas de Dó4 até Si4 levam o 4."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-oitavas",
+            "titulo": "Dó3, Dó4 e Dó5",
+            "legenda": "Três Dós: o mesmo nome, três alturas.",
+            "eventos": [
+              {
+                "notas": [
+                  "C3"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "No teclado e no violão",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "No piano, as teclas pretas aparecem em grupos de **duas** e de **três**. O **Dó** é a tecla branca logo à esquerda de cada grupo de duas pretas. A partir dele, as brancas seguem a ordem: Dó, Ré, Mi, Fá, Sol, Lá, Si."
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Dó4 a Dó5: o Dó fica à esquerda do grupo de duas teclas pretas.",
+          "destaque": [
+            "C4",
+            "D4",
+            "E4",
+            "F4",
+            "G4",
+            "A4",
+            "B4",
+            "C5"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "No violão, as seis cordas soltas, da mais grossa para a mais fina, são **Mi, Lá, Ré, Sol, Si e Mi**. A mais grossa e a mais fina são as duas Mi, a duas oitavas de distância."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-cordas-soltas",
+            "titulo": "As seis cordas soltas do violão",
+            "legenda": "Da corda mais grossa à mais fina: Mi, Lá, Ré, Sol, Si, Mi.",
+            "eventos": [
+              {
+                "notas": [
+                  "E3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 3.0
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo para achar uma nota",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como achar o **Sol4**, com o motivo de cada passo.\n\n1. **Ache o Dó central** (Dó4): à esquerda do grupo de duas pretas, no meio do teclado.\n2. **Conte as notas** a partir dele, em ordem: Dó, Ré, Mi, Fá, **Sol**.\n3. **Confira a oitava**: você não passou por outro Dó, então ainda está na oitava 4. É o Sol4."
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Dó4 e Sol4.",
+          "destaque": [
+            "C4",
+            "G4"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** se você continuasse contando depois do Si4, que nota viria, e com qual número?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Viria o **Dó5**. A cada Dó, a sequência recomeça e o número da oitava sobe um.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. Achar o **Lá4**: (1) Dó4; (2) Dó, Ré, Mi, Fá, Sol, Lá; (3) qual é a oitava?\n\nE agora dois passos são seus: a partir do Dó4, ache o **Ré5**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Lá4: você não passou por outro Dó, então é a oitava 4.\n\nRé5: Dó, Ré, Mi, Fá, Sol, Lá, Si, **Dó5**, Ré. Depois do Dó5, a nota seguinte é o **Ré5**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Uma colega disse:\n\n> \"Depois de Si vem Lá, porque Lá vem antes na palavra dó-ré-mi-fá-sol-lá-si.\"\n\nOnde está o erro, por que está errado e qual nota vem depois de Si?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ela andou para trás. Lá vem **antes** de Si. Subindo, depois de Si a sequência recomeça: vem **Dó**, uma oitava acima do Dó de partida.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que nota vem **depois de Si**, subindo?",
+      "opcoes": [
+        "Dó",
+        "Lá",
+        "Ré",
+        "Sol"
+      ],
+      "correta": 0,
+      "explicacao": "Depois de Si a sequência recomeça: **Dó**, na oitava seguinte. Lá vem antes de Si.",
+      "conceito": "ordem-das-notas"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Dó4 está marcado. Clique em **Fá**.",
+      "nota_base": "C4",
+      "intervalo": "4J",
+      "direcao": "acima",
+      "explicacao": "Dó, Ré, Mi, **Fá**: a quarta nota a partir de Dó. No piano, é a tecla branca à esquerda do grupo de três pretas.",
+      "conceito": "notas-no-teclado",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a letra de **Sol**?",
+      "opcoes": [
+        "G",
+        "S",
+        "E",
+        "D"
+      ],
+      "correta": 0,
+      "explicacao": "Lá é A, Si é B, Dó é C, Ré é D, Mi é E, Fá é F e **Sol é G**. S não é nome de nota.",
+      "conceito": "letras-das-notas"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A segunda nota tem o mesmo nome da primeira, uma oitava acima?",
+      "exemplo": {
+        "id": "exe-oitava",
+        "titulo": "Dois sons",
+        "legenda": "Dó4 e Dó5: mesmo nome, uma oitava acima.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "sim, é uma oitava",
+        "não, é outra nota"
+      ],
+      "correta": 0,
+      "explicacao": "Dó4 e Dó5: o mesmo nome, uma **oitava** acima. Por isso soam tão parecidos.",
+      "conceito": "oitava"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a ordem das notas **descendo** a partir de Sol?",
+      "opcoes": [
+        "Sol, Fá, Mi, Ré",
+        "Sol, Lá, Si, Dó",
+        "Sol, Mi, Dó, Lá"
+      ],
+      "correta": 0,
+      "explicacao": "Descendo, a ordem se inverte: Sol, **Fá, Mi, Ré**. Sol, Lá, Si, Dó é subindo.",
+      "conceito": "ordem-das-notas"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Mi4 está marcado. Clique no **Mi uma oitava acima**.",
+      "nota_base": "E4",
+      "intervalo": "8J",
+      "direcao": "acima",
+      "explicacao": "Oito notas a partir de Mi, contando as duas pontas: Mi, Fá, Sol, Lá, Si, Dó, Ré, **Mi5**.",
+      "conceito": "oitava",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual nota corresponde à letra **B**?",
+      "opcoes": [
+        "Si",
+        "Ré",
+        "Lá",
+        "Mi"
+      ],
+      "correta": 0,
+      "explicacao": "A é Lá e **B é Si**, a nota seguinte. Quem marcou Ré pensou na ordem do alfabeto a partir de Dó.",
+      "conceito": "letras-das-notas"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais são as cordas soltas do violão, da mais grossa para a mais fina?",
+      "opcoes": [
+        "Mi, Lá, Ré, Sol, Si, Mi",
+        "Dó, Ré, Mi, Fá, Sol, Lá",
+        "Mi, Si, Sol, Ré, Lá, Mi"
+      ],
+      "correta": 0,
+      "explicacao": "Da mais grossa: **Mi, Lá, Ré, Sol, Si, Mi**. A terceira opção é a mesma lista ao contrário, da mais fina para a mais grossa.",
+      "conceito": "cordas-do-violao"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Dó4 está marcado. Clique em **Lá**.",
+      "nota_base": "C4",
+      "intervalo": "6M",
+      "direcao": "acima",
+      "explicacao": "Dó, Ré, Mi, Fá, Sol, **Lá**: a sexta nota. No piano, fica entre a segunda e a terceira tecla preta do grupo de três.",
+      "conceito": "notas-no-teclado",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Onde fica o **Dó** no teclado do piano?",
+      "opcoes": [
+        "Logo à esquerda do grupo de duas teclas pretas",
+        "Logo à esquerda do grupo de três teclas pretas",
+        "Entre duas teclas pretas"
+      ],
+      "correta": 0,
+      "explicacao": "O Dó é a branca à **esquerda do grupo de duas** pretas. À esquerda do grupo de três fica o Fá.",
+      "conceito": "notas-no-teclado"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos nomes de notas diferentes existem na sequência Dó, Ré, Mi...?",
+      "opcoes": [
+        "7",
+        "8",
+        "12"
+      ],
+      "correta": 0,
+      "explicacao": "São **sete** nomes. O oitavo som da escala é Dó de novo, uma oitava acima, e não um nome novo.",
+      "conceito": "nomes-das-notas"
+    }
+  ],
+  "resumo": [
+    "As notas são **Dó, Ré, Mi, Fá, Sol, Lá, Si**; depois de Si, a sequência recomeça.",
+    "Em letras: Dó C, Ré D, Mi E, Fá F, Sol G, **Lá A**, Si B.",
+    "De um Dó ao próximo há uma **oitava**; **Dó4** é o Dó central.",
+    "No piano, o Dó fica à esquerda do grupo de duas teclas pretas.",
+    "Cordas soltas do violão, da grossa para a fina: **Mi, Lá, Ré, Sol, Si, Mi**."
+  ],
+  "pergunta_para_chat": "Me faça perguntas sobre as notas, uma de cada vez, misturando ordem, letras e oitavas, e me dê uma dica antes de mostrar a resposta."
+}

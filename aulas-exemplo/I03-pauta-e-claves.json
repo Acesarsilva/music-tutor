@@ -1,0 +1,672 @@
+{
+  "codigo": "I03",
+  "titulo": "Pauta e claves",
+  "nivel": "iniciante",
+  "resumo_curto": "Como as notas são escritas na pauta, o que fazem as claves de sol e de fá e onde fica o Dó central.",
+  "prerequisitos": [
+    "Notas musicais (I02)"
+  ],
+  "objetivos": [
+    "Conhecer a **pauta**: 5 linhas e 4 espaços, contados de baixo para cima",
+    "Ler notas na **clave de sol** e na **clave de fá**",
+    "Usar **linhas suplementares** e achar o **Dó central**",
+    "Ver na pauta se a melodia sobe, desce ou repete"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quais são as sete notas, em ordem?\n2. Qual é o Dó central?\n3. Que nota vem depois de Si, subindo?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Dó, Ré, Mi, Fá, Sol, Lá, Si.\n2. Dó4, no meio do piano.\n3. Dó, uma oitava acima.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Ouça e acompanhe as bolinhas",
+            "legenda": "Quando o som sobe, para onde vão as bolinhas? E quando o som repete?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "Bri-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "bri-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "es-"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "tre-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "li-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "nha"
+              }
+            ],
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "As bolinhas são as notas escritas, e as cinco linhas onde elas ficam formam a **pauta**. Quanto mais aguda a nota, mais alto ela fica na pauta; nota repetida fica no mesmo lugar.\n\nAo final, você vai ler notas na clave de sol e na clave de fá."
+        }
+      ]
+    },
+    {
+      "titulo": "A pauta",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **pauta**, ou **pentagrama**, tem **5 linhas** e **4 espaços**, contados **de baixo para cima**. Cada nota fica numa linha ou num espaço. Subindo de uma linha para o espaço logo acima, a nota sobe para a seguinte: de Mi para Fá, de Fá para Sol."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-escala-pauta",
+            "titulo": "De Dó a Dó na pauta",
+            "legenda": "Cada nota ocupa o lugar logo acima da anterior: linha, espaço, linha, espaço.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 80
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Clave de sol",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **clave** no começo da pauta diz que nota fica em cada lugar. A **clave de sol** enrola na **2ª linha** e marca ali o **Sol4**. A partir dele, as outras notas seguem em ordem."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sol-segunda-linha",
+            "titulo": "Sol4 na 2ª linha",
+            "legenda": "A nota fica exatamente na linha em que a clave de sol começa a enrolar.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Notas nas linhas e nos espaços da clave de sol, de baixo para cima.",
+          "cabecalho": [
+            "Lugar",
+            "1º",
+            "2º",
+            "3º",
+            "4º",
+            "5º"
+          ],
+          "linhas": [
+            [
+              "Linhas",
+              "Mi4",
+              "Sol4",
+              "Si4",
+              "Ré5",
+              "Fá5"
+            ],
+            [
+              "Espaços",
+              "Fá4",
+              "Lá4",
+              "Dó5",
+              "Mi5",
+              "–"
+            ]
+          ]
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Os espaços da clave de sol formam **Fá, Lá, Dó, Mi**, de baixo para cima."
+        }
+      ]
+    },
+    {
+      "titulo": "Clave de fá",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **clave de fá** é usada para sons graves, como os da mão esquerda do piano e do contrabaixo. Os dois pontos dela ficam em volta da **4ª linha**, e ali está o **Fá3**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-fa-quarta-linha",
+            "titulo": "Fá3 na 4ª linha da clave de fá",
+            "legenda": "A nota fica na linha entre os dois pontos da clave.",
+            "eventos": [
+              {
+                "notas": [
+                  "F3"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60,
+            "clave": "fa"
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Notas nas linhas e nos espaços da clave de fá, de baixo para cima.",
+          "cabecalho": [
+            "Lugar",
+            "1º",
+            "2º",
+            "3º",
+            "4º",
+            "5º"
+          ],
+          "linhas": [
+            [
+              "Linhas",
+              "Sol2",
+              "Si2",
+              "Ré3",
+              "Fá3",
+              "Lá3"
+            ],
+            [
+              "Espaços",
+              "Lá2",
+              "Dó3",
+              "Mi3",
+              "Sol3",
+              "–"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Linhas suplementares e Dó central",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Quando a nota passa da pauta, desenham-se **linhas suplementares**, pequenas linhas acima ou abaixo. O **Dó central (Dó4)** fica na primeira linha suplementar **abaixo** da clave de sol e na primeira linha suplementar **acima** da clave de fá. É a mesma nota nas duas claves."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-do-central-sol",
+            "titulo": "Dó4 na clave de sol",
+            "legenda": "Uma linha suplementar abaixo da pauta.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-do-central-fa",
+            "titulo": "Dó4 na clave de fá",
+            "legenda": "O mesmo som, agora uma linha suplementar acima da pauta.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60,
+            "clave": "fa"
+          }
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "O Dó central, a mesma tecla nas duas claves.",
+          "destaque": [
+            "C4"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo para ler uma nota",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como ler a nota no **3º espaço** da clave de sol, com o motivo de cada passo.\n\n1. **Parta de uma nota conhecida**: a clave de sol diz que a 2ª linha é Sol4.\n2. **Suba um lugar por vez**, linha ou espaço, uma nota por vez: 2º espaço Lá4, 3ª linha Si4, 3º espaço **Dó5**.\n3. **Confira a oitava**: você passou de Si para Dó, então a oitava mudou para 5."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-terceiro-espaco",
+            "titulo": "Nota no 3º espaço da clave de sol",
+            "legenda": "Dó5, uma oitava acima do Dó central.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que, no passo 2, cada linha e cada espaço contam como uma nota?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque linhas e espaços se alternam, e cada lugar logo acima guarda a nota seguinte da ordem. Pular uma linha e cair no espaço é andar uma nota; ir de uma linha à próxima linha é andar duas.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. A nota na **4ª linha** da clave de sol: a 3ª linha é Si4, o 3º espaço é Dó5. E a 4ª linha?\n\nE agora dois passos são seus: leia a nota no **1º espaço** da clave de sol."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "4ª linha: **Ré5**.\n\n1º espaço: parta do Sol4 na 2ª linha e desça. 1º espaço fica logo abaixo dela: **Fá4**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega leu esta nota na clave de fá:\n\n> \"Está na 2ª linha. Na 2ª linha fica o Sol, então é Sol.\"\n\nOnde está o erro, por que está errado e qual é a nota certa?"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-erro",
+            "titulo": "A nota do colega",
+            "legenda": "Na clave de fá, a 2ª linha é Si2.",
+            "eventos": [
+              {
+                "notas": [
+                  "B2"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60,
+            "clave": "fa"
+          }
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ele usou a **clave de sol** para ler uma nota na **clave de fá**. Cada clave muda o nome dos lugares. Na clave de fá, a 4ª linha é Fá3; descendo, 3ª linha Ré3, **2ª linha Si2**.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Olhe a partitura e ouça. Que nota é esta?",
+      "opcoes": [
+        "Mi4",
+        "Sol4",
+        "Fá4",
+        "Ré4"
+      ],
+      "correta": 0,
+      "explicacao": "A nota está na **1ª linha** da clave de sol: **Mi4**. Sol4 fica na 2ª linha; quem marcou Fá4 confundiu a linha com o espaço logo acima.",
+      "conceito": "clave-de-sol",
+      "exemplo": {
+        "id": "exe-mi4",
+        "titulo": "Uma nota",
+        "legenda": "Ouça e olhe onde a nota está.",
+        "eventos": [
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60,
+        "clave": "sol"
+      }
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Na clave de sol, a 2ª linha é Sol4. Dó4 está marcado: clique no **Sol4**.",
+      "nota_base": "C4",
+      "intervalo": "5J",
+      "direcao": "acima",
+      "explicacao": "Dó, Ré, Mi, Fá, **Sol**: a quinta nota a partir do Dó central, a que a clave de sol marca na 2ª linha.",
+      "conceito": "clave-de-sol",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça sem olhar. A melodia sobe, desce ou repete?",
+      "exemplo": {
+        "id": "exe-desce",
+        "titulo": "Melodia",
+        "legenda": "A melodia desce: as notas vão para baixo na pauta.",
+        "eventos": [
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 80
+      },
+      "opcoes": [
+        "sobe",
+        "desce",
+        "repete"
+      ],
+      "correta": 1,
+      "explicacao": "As notas ficam mais graves uma a uma: a melodia **desce**, e na pauta as bolinhas vão para baixo.",
+      "conceito": "direcao-na-pauta"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Olhe a partitura. Que nota é esta, na clave de fá?",
+      "opcoes": [
+        "Fá3",
+        "Lá3",
+        "Ré3",
+        "Sol3"
+      ],
+      "correta": 0,
+      "explicacao": "Está na **4ª linha** da clave de fá, entre os dois pontos: **Fá3**. Quem marcou Ré3 contou as linhas de cima para baixo.",
+      "conceito": "clave-de-fa",
+      "exemplo": {
+        "id": "exe-fa3",
+        "titulo": "Uma nota",
+        "legenda": "Ouça e olhe onde a nota está.",
+        "eventos": [
+          {
+            "notas": [
+              "F3"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60,
+        "clave": "fa"
+      }
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas **linhas** e quantos **espaços** tem a pauta?",
+      "opcoes": [
+        "5 linhas e 4 espaços",
+        "4 linhas e 5 espaços",
+        "5 linhas e 5 espaços"
+      ],
+      "correta": 0,
+      "explicacao": "São **5 linhas** e os **4 espaços** entre elas. O que fica acima ou abaixo da pauta usa linhas suplementares.",
+      "conceito": "pentagrama"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Olhe a partitura. Que nota é esta?",
+      "opcoes": [
+        "Dó4",
+        "Ré4",
+        "Si3",
+        "Dó5"
+      ],
+      "correta": 0,
+      "explicacao": "Uma linha suplementar abaixo da clave de sol: o **Dó central**, Dó4. Dó5 fica no 3º espaço, dentro da pauta.",
+      "conceito": "do-central",
+      "exemplo": {
+        "id": "exe-do4",
+        "titulo": "Uma nota",
+        "legenda": "Ouça e olhe onde a nota está.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60,
+        "clave": "sol"
+      }
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Dó4 está marcado. Clique na nota da **1ª linha** da clave de sol.",
+      "nota_base": "C4",
+      "intervalo": "3M",
+      "direcao": "acima",
+      "explicacao": "A 1ª linha da clave de sol é **Mi4**: Dó4 fica na linha suplementar, Ré4 logo abaixo da pauta e Mi4 na 1ª linha. Quem clicou em Ré parou no espaço abaixo da pauta.",
+      "conceito": "clave-de-sol",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A melodia sobe, desce ou repete?",
+      "exemplo": {
+        "id": "exe-repete",
+        "titulo": "Melodia",
+        "legenda": "A mesma nota quatro vezes: na pauta, as bolinhas ficam no mesmo lugar.",
+        "eventos": [
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 80
+      },
+      "opcoes": [
+        "sobe",
+        "desce",
+        "repete"
+      ],
+      "correta": 2,
+      "explicacao": "É sempre o mesmo som: a nota **repete**, e na pauta fica no mesmo lugar.",
+      "conceito": "direcao-na-pauta"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Onde fica o **Dó central** na clave de fá?",
+      "opcoes": [
+        "Na primeira linha suplementar acima da pauta",
+        "Na primeira linha suplementar abaixo da pauta",
+        "Na 3ª linha"
+      ],
+      "correta": 0,
+      "explicacao": "Na clave de fá, o Dó4 fica **acima** da pauta, na primeira linha suplementar. Abaixo da pauta é o lugar dele na clave de sol.",
+      "conceito": "linhas-suplementares"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Olhe a partitura. Que nota é esta?",
+      "opcoes": [
+        "Si2",
+        "Sol2",
+        "Ré3",
+        "Sol4"
+      ],
+      "correta": 0,
+      "explicacao": "Clave de fá, **2ª linha**: **Si2**. Quem marcou Sol leu como se fosse a clave de sol.",
+      "conceito": "clave-de-fa",
+      "exemplo": {
+        "id": "exe-si2",
+        "titulo": "Uma nota",
+        "legenda": "Ouça e olhe onde a nota está.",
+        "eventos": [
+          {
+            "notas": [
+              "B2"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60,
+        "clave": "fa"
+      }
+    }
+  ],
+  "resumo": [
+    "A **pauta** tem 5 linhas e 4 espaços, contados de baixo para cima; mais alto é mais agudo.",
+    "A **clave de sol** marca o Sol4 na 2ª linha. Linhas: Mi, Sol, Si, Ré, Fá; espaços: Fá, Lá, Dó, Mi.",
+    "A **clave de fá** marca o Fá3 na 4ª linha. Linhas: Sol, Si, Ré, Fá, Lá; espaços: Lá, Dó, Mi, Sol.",
+    "O **Dó4** fica numa linha suplementar: abaixo da clave de sol e acima da clave de fá.",
+    "Para ler uma nota, parta da nota que a clave marca e ande um lugar por vez."
+  ],
+  "pergunta_para_chat": "Me peça para ler notas na clave de sol e na clave de fá, uma de cada vez, e me dê uma dica antes de mostrar a resposta."
+}

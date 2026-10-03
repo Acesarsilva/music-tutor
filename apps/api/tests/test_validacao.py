@@ -73,3 +73,34 @@ def test_percepcao_aceita_tom_e_semitom_como_nome(aula_piloto):
     assert validar_aula(aula_piloto).ok
     exe.correta = 0
     assert any("deveria ser" in e for e in validar_aula(aula_piloto).erros)
+
+
+def _aula_com_exemplo(aula, eventos):
+    from music_tutor.esquema import BlocoExemplo, Exemplo
+
+    exemplo = Exemplo(id="ex-teste", titulo="t", legenda="l", eventos=eventos)
+    aula.secoes[0].blocos.append(BlocoExemplo(tipo="exemplo", exemplo=exemplo))
+    return validar_aula(aula)
+
+
+def test_dinamica_vale_ate_a_proxima_e_vira_intensidade(aula_piloto):
+    r = _aula_com_exemplo(aula_piloto, [
+        {"notas": ["C4"], "duracao": 1, "dinamica": "p"}, {"notas": ["D4"], "duracao": 1},
+        {"notas": ["E4"], "duracao": 1, "dinamica": "f", "acento": True}, {"notas": ["F4"], "duracao": 1},
+    ])
+    assert r.ok, r.erros
+    assert [e["intensidade"] for e in r.exemplos["ex-teste"]["eventos"]] == [0.38, 0.38, 1.0, 0.82]
+
+
+def test_ligadura_exige_mesmas_notas(aula_piloto):
+    r = _aula_com_exemplo(aula_piloto, [
+        {"notas": ["C4"], "duracao": 2, "ligada": True}, {"notas": ["D4"], "duracao": 2},
+    ])
+    assert any("ligadura" in e for e in r.erros)
+
+
+def test_acento_se_destaca_das_vizinhas(aula_piloto):
+    r = _aula_com_exemplo(aula_piloto, [
+        {"notas": ["C5"], "duracao": 1, "acento": True}, {"notas": ["C5"], "duracao": 1},
+    ])
+    assert [e["intensidade"] for e in r.exemplos["ex-teste"]["eventos"]] == [0.91, 0.66]
