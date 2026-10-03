@@ -49,14 +49,17 @@ Para cada ideia nova, combine representações que se completam:
 - `tabela`: só para comparar ou organizar (qualidade × semitons, intervalo × música de referência).
 - Nada decorativo. Se um bloco não acrescenta informação, corte.
 - `dica` fica sempre visível: use para lembretes. Resposta de pergunta feita ao aluno vai em `resposta`.
-- Não explique na aula decisões editoriais (fontes, direitos autorais, ritmo simplificado). O aluno só vê o conteúdo.
+- Não explique na aula decisões editoriais (fontes, direitos autorais). O aluno só vê o conteúdo.
+- Fale em contar **notas** ("Ré, Mi, Fá: três notas"), não "nomes": o aluno já conhece as notas.
+- Em música cantada, dê a cada nota a sua `silaba` ("Ci-", "ran-", "da"; "de~o" junta duas palavras), que aparece sob a
+  partitura. O ritmo segue a prosódia: sílaba tônica no tempo forte, anacruse quando a letra começa em sílaba fraca.
 - Escreva para os dois instrumentos: "clique na nota", "a nota marcada". Quando o raciocínio depender
   do teclado ("não há tecla preta entre Mi e Fá"), dê o equivalente no violão ("no braço, são casas vizinhas").
 
 ## 5. Exemplo resolvido, depois retirada gradual
 
 1. **Exemplo resolvido completo** (bloco `texto` + `exemplo`): todos os passos, cada um com o porquê.
-   Ex. Ré–Fá♯: "Passo 1: conte os nomes Ré, Mi, Fá: 3, é uma 3ª. O ♯ não muda o número.
+   Ex. Ré–Fá♯: "Passo 1: conte as notas Ré, Mi, Fá: 3, é uma 3ª. O ♯ não muda o número.
    Passo 2: conte os semitons Ré–Ré♯–Mi–Fá–Fá♯: 4. Passo 3: 3ª com 4 semitons é maior."
 2. **Pergunta de autoexplicação** logo depois: "Por que o sustenido não entrou na contagem do passo 1?"
    Responda num bloco `resposta` logo em seguida.
@@ -71,7 +74,7 @@ Para nível avançado, encurte: um exemplo resolvido basta, e o restante vira pr
 Inclua um bloco `texto` com uma resolução que tem **um** erro realista, seguido de um bloco `resposta` com a
 correção e o motivo. Peça: achar o passo errado, dizer por que está errado e corrigir. Equívocos úteis:
 
-- **Contar semitons em vez de nomes para o número**: "Ré–Fá♯ tem 4 semitons, então é uma 4ª."
+- **Contar semitons em vez de notas para o número**: "Ré–Fá♯ tem 4 semitons, então é uma 4ª."
 - **Não contar as duas pontas**: "De Dó a Sol: Ré, Mi, Fá, Sol, são 4, é uma 4ª."
 - **Enarmonia**: "Dó–Fá♯ e Dó–Sol♭ são o mesmo intervalo." Soam igual, mas o primeiro é 4ª aumentada e
   o segundo 5ª diminuta; o nome da nota decide o número.
@@ -95,12 +98,12 @@ corresponde a um equívoco específico. Ex.: exemplo Ré4–Fá♯4 com `interva
 | 3ª maior | correta |
 | 3ª menor | ignorou o ♯ ou decorou "Ré–Fá é menor" |
 | 4ª justa | usou os 4 semitons como número |
-| 5ª justa | contou teclas/casas (Ré, Ré♯, Mi, Fá, Fá♯) como nomes |
+| 5ª justa | contou teclas/casas (Ré, Ré♯, Mi, Fá, Fá♯) como notas |
 
 **Explicação**: o app mostra a mesma `explicacao` para quem acertou e para quem errou, e só há uma
 tentativa. Então ela diz a regra aplicada a este item e nomeia a armadilha da opção errada mais provável.
-Uma a três frases, sem elogio genérico. Ex.: "Ré, Mi, Fá: três nomes, é uma 3ª. São 4 semitons, então é
-maior. Se você marcou 4ª, contou semitons em vez de nomes."
+Uma a três frases, sem elogio genérico. Ex.: "Ré, Mi, Fá: três notas, é uma 3ª. São 4 semitons, então é
+maior. Se você marcou 4ª, contou semitons em vez de notas."
 
 **Regras do formato** (o validador cobra):
 - De 2 a 5 opções, sem repetidas; `correta` é índice a partir de 0.

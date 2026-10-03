@@ -35,10 +35,9 @@ def test_html_do_modelo_e_escapado(aula_piloto):
     assert "<strong>ok</strong>" in html
 
 
-def test_aula_invalida_nao_renderiza(aula_piloto):
-    aula_piloto.exercicios[1].correta = 0
+def test_aula_invalida_nao_renderiza(aula_com_erro):
     with pytest.raises(AulaInvalida):
-        renderizar(aula_piloto)
+        renderizar(aula_com_erro)
 
 
 def test_bloco_resposta_fica_escondido(aula_piloto):

@@ -4,24 +4,76 @@
   "nivel": "iniciante",
   "resumo_curto": "Como medir a distância entre duas notas, dar nome a ela e começar a reconhecê-la de ouvido.",
   "prerequisitos": [
-    "Nomes das notas e onde ficam no teclado (I02)",
+    "Nomes das notas (I02)",
     "Tom e semitom (I06)",
     "Escala maior (I07)"
   ],
   "objetivos": [
     "Diferenciar intervalo **melódico** de intervalo **harmônico**",
-    "Achar o **número** do intervalo contando os nomes das notas",
+    "Achar o **número** do intervalo contando as notas",
     "Classificar intervalos como **justos, maiores ou menores** contando semitons",
     "Usar a escala maior como régua para reconhecer intervalos",
     "Ligar cada intervalo ao começo de uma música conhecida"
   ],
   "secoes": [
     {
-      "titulo": "O que é um intervalo",
+      "titulo": "Antes de começar",
       "blocos": [
         {
           "tipo": "texto",
-          "markdown": "**Intervalo** é a distância de altura entre duas notas. É com intervalos que se constroem melodias, acordes e escalas, então eles são a base de quase tudo que vem depois na teoria.\n\nQuando as duas notas soam uma depois da outra, o intervalo é **melódico**. Ele pode ser **ascendente** (a segunda nota é mais aguda) ou **descendente** (a segunda nota é mais grave). Quando as duas notas soam ao mesmo tempo, o intervalo é **harmônico**."
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quantos semitons cabem em um tom?\n2. Quais duplas de notas naturais vizinhas ficam a só um semitom?\n3. Quais são as notas da escala de Dó maior?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Dois semitons.\n2. Mi–Fá e Si–Dó. Entre elas não há tecla preta no piano; no violão, são casas vizinhas.\n3. Dó, Ré, Mi, Fá, Sol, Lá, Si e Dó de novo.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Ouça antes de qualquer nome",
+            "legenda": "Nos dois pares, as notas ficam à mesma distância na pauta. Eles soam iguais? Qual soa mais escuro?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72,
+            "compasso": "3/4"
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Essa distância entre duas notas tem nome: **intervalo**. Os dois pares que você ouviu são intervalos do mesmo tamanho na pauta, mas de qualidades diferentes, e no fim desta aula você vai saber explicar por quê.\n\nAo final, você vai dar nome a qualquer intervalo entre Dó4 e Dó5 e reconhecer vários deles de ouvido, com cantigas que você já conhece."
+        }
+      ]
+    },
+    {
+      "titulo": "Melódico e harmônico",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Quando as duas notas soam **uma depois da outra**, o intervalo é **melódico**. Ele é **ascendente** se a segunda nota é mais aguda e **descendente** se é mais grave.\n\nQuando as duas soam **ao mesmo tempo**, o intervalo é **harmônico**."
         },
         {
           "tipo": "exemplo",
@@ -113,11 +165,11 @@
       "blocos": [
         {
           "tipo": "texto",
-          "markdown": "Para achar o número, conte os **nomes** das notas da mais grave até a mais aguda, **incluindo as duas pontas**.\n\n- De Dó a Mi: Dó, Ré, Mi. São 3 nomes, então é uma **3ª** (terça).\n- De Dó a Sol: Dó, Ré, Mi, Fá, Sol. São 5 nomes, então é uma **5ª** (quinta).\n\nOs acidentes não mudam o número. Dó–Mi e Dó–Mi♭ são as duas uma 3ª, porque a nota de cima continua se chamando Mi."
+          "markdown": "Para achar o número, conte as **notas** da mais grave até a mais aguda, **incluindo as duas pontas**.\n\n- De Dó a Mi: Dó, Ré, Mi. São 3 notas, então é uma **3ª** (terça).\n- De Dó a Sol: Dó, Ré, Mi, Fá, Sol. São 5 notas, então é uma **5ª** (quinta).\n\nOs acidentes não mudam o número. Dó–Mi e Dó–Mi♭ são as duas uma 3ª, porque a nota de cima continua se chamando Mi."
         },
         {
           "tipo": "teclado",
-          "legenda": "Dó, Ré, Mi: três nomes, uma 3ª.",
+          "legenda": "Dó, Ré, Mi: três notas, uma 3ª.",
           "destaque": [
             "C4",
             "D4",
@@ -399,6 +451,68 @@
       ]
     },
     {
+      "titulo": "Passo a passo para classificar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como classificar **Mi–Sol**, com o motivo de cada passo.\n\n1. **Número.** Conte as notas: Mi, Fá, Sol. São 3, então é uma **3ª**.\n2. **Semitons.** Ande de semitom em semitom: Mi→Fá, Fá→Fá♯, Fá♯→Sol. São **3**.\n3. **Qualidade.** Uma 3ª com 3 semitons é **menor** (a maior teria 4). Mi–Sol é uma **3ª menor**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-mi-sol",
+            "titulo": "Mi–Sol, melódico e harmônico",
+            "legenda": "Compare com Dó–Mi, do começo da aula: este som é mais escuro.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 72,
+            "intervalo": {
+              "de": "E4",
+              "para": "G4",
+              "codigo": "3m"
+            }
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que, no passo 2, de Mi para Fá contou só um semitom, e não dois?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque Mi e Fá são vizinhas: não existe nota entre elas. No piano não há tecla preta no meio; no violão, ficam em casas vizinhas. O mesmo vale para Si–Dó.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **Ré–Fá♯**:\n\n1. Ré, Mi, Fá: 3 notas, é uma 3ª. O ♯ não muda o número.\n2. Ré→Ré♯→Mi→Fá→Fá♯: 4 semitons.\n3. Maior ou menor?\n\nE agora dois passos são seus. **Sol–Si**: conte as notas e os semitons e diga o intervalo."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ré–Fá♯: uma 3ª com 4 semitons é **maior**.\n\nSol–Si: Sol, Lá, Si são 3 notas, uma 3ª. Sol→Sol♯→Lá→Lá♯→Si são 4 semitons. É uma **3ª maior**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
       "titulo": "A escala maior como régua",
       "blocos": [
         {
@@ -512,6 +626,20 @@
       ]
     },
     {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega classificou **Ré–Fá♯** assim:\n\n> \"De Ré até Fá♯ há 4 semitons. Então é uma 4ª.\"\n\nQual passo ele errou, por que está errado e qual é a resposta certa?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ele usou os **semitons para dar o número**. O número vem das **notas**: Ré, Mi, Fá são 3, então é uma 3ª. Os 4 semitons servem para a qualidade: 3ª com 4 semitons é **3ª maior**. Uma 4ª de verdade, como Ré–Sol, tem 4 notas (Ré, Mi, Fá, Sol) e 5 semitons.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    },
+    {
       "titulo": "Intervalos que você já conhece",
       "blocos": [
         {
@@ -529,47 +657,54 @@
                 "notas": [
                   "E4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "Pi-"
               },
               {
                 "notas": [
                   "F4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "ru-"
               },
               {
                 "notas": [
                   "G4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "li-"
               },
               {
                 "notas": [
                   "G4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.25,
+                "silaba": "to"
               },
               {
                 "notas": [
                   "G4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.25,
+                "silaba": "que"
               },
               {
                 "notas": [
                   "F4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "ba-"
               },
               {
                 "notas": [
                   "E4"
                 ],
-                "duracao": 1
+                "duracao": 0.5,
+                "silaba": "te"
               }
             ],
             "compasso": "2/4",
-            "anacruse": 0,
+            "anacruse": 1,
             "andamento": 88,
             "intervalo": {
               "de": "E4",
@@ -589,37 +724,43 @@
                 "notas": [
                   "G4"
                 ],
-                "duracao": 0.75
+                "duracao": 0.75,
+                "silaba": "Pa-"
               },
               {
                 "notas": [
                   "G4"
                 ],
-                "duracao": 0.25
+                "duracao": 0.25,
+                "silaba": "ra-"
               },
               {
                 "notas": [
                   "A4"
                 ],
-                "duracao": 1
+                "duracao": 1,
+                "silaba": "béns"
               },
               {
                 "notas": [
                   "G4"
                 ],
-                "duracao": 1
+                "duracao": 1,
+                "silaba": "a"
               },
               {
                 "notas": [
                   "C5"
                 ],
-                "duracao": 1
+                "duracao": 1,
+                "silaba": "vo-"
               },
               {
                 "notas": [
                   "B4"
                 ],
-                "duracao": 2
+                "duracao": 2,
+                "silaba": "cê"
               }
             ],
             "compasso": "3/4",
@@ -643,49 +784,57 @@
                 "notas": [
                   "E4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "Co-"
               },
               {
                 "notas": [
                   "G4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "mo"
               },
               {
                 "notas": [
                   "G4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "po-"
               },
               {
                 "notas": [
                   "F4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "de~o"
               },
               {
                 "notas": [
                   "F4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "pei-"
               },
               {
                 "notas": [
                   "A4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "xe"
               },
               {
                 "notas": [
                   "A4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "vi-"
               },
               {
                 "notas": [
                   "G4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "vo"
               }
             ],
             "compasso": "2/4",
@@ -709,35 +858,36 @@
                 "notas": [
                   "G4"
                 ],
-                "duracao": 0.5
+                "duracao": 1,
+                "silaba": "Mar-"
               },
               {
                 "notas": [
                   "G4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "cha"
               },
               {
                 "notas": [
                   "E4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "sol-"
               },
               {
                 "notas": [
                   "C4"
                 ],
-                "duracao": 0.5
+                "duracao": 1,
+                "silaba": "da-"
               },
               {
                 "notas": [
                   "C4"
                 ],
-                "duracao": 1
-              },
-              {
-                "notas": [],
-                "duracao": 1
+                "duracao": 1,
+                "silaba": "do"
               }
             ],
             "compasso": "2/4",
@@ -761,47 +911,54 @@
                 "notas": [
                   "D4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "Ci-"
               },
               {
                 "notas": [
                   "G4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "ran-"
               },
               {
                 "notas": [
                   "G4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "da,"
               },
               {
                 "notas": [
                   "B4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "ci-"
               },
               {
                 "notas": [
                   "B4"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "ran-"
               },
               {
                 "notas": [
                   "D5"
                 ],
-                "duracao": 0.5
+                "duracao": 0.5,
+                "silaba": "di-"
               },
               {
                 "notas": [
                   "D5"
                 ],
-                "duracao": 0.5
+                "duracao": 1,
+                "silaba": "nha"
               },
               {
                 "notas": [],
-                "duracao": 1
+                "duracao": 0.5
               }
             ],
             "compasso": "2/4",
@@ -825,43 +982,57 @@
                 "notas": [
                   "C4"
                 ],
-                "duracao": 1
+                "duracao": 1,
+                "silaba": "Bri-"
               },
               {
                 "notas": [
                   "C4"
                 ],
-                "duracao": 1
+                "duracao": 1,
+                "silaba": "lha,"
               },
               {
                 "notas": [
                   "G4"
                 ],
-                "duracao": 1
+                "duracao": 1,
+                "silaba": "bri-"
               },
               {
                 "notas": [
                   "G4"
                 ],
-                "duracao": 1
+                "duracao": 1,
+                "silaba": "lha,"
               },
               {
                 "notas": [
                   "A4"
                 ],
-                "duracao": 1
+                "duracao": 1,
+                "silaba": "es-"
               },
               {
                 "notas": [
                   "A4"
                 ],
-                "duracao": 1
+                "duracao": 1,
+                "silaba": "tre-"
               },
               {
                 "notas": [
                   "G4"
                 ],
-                "duracao": 2
+                "duracao": 1,
+                "silaba": "li-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "nha"
               }
             ],
             "andamento": 96,
@@ -883,39 +1054,44 @@
                 "notas": [
                   "G4"
                 ],
-                "duracao": 0.5
+                "duracao": 1,
+                "silaba": "O"
               },
               {
                 "notas": [
                   "G4"
                 ],
-                "duracao": 0.5
+                "duracao": 1,
+                "silaba": "cra-"
               },
               {
                 "notas": [
                   "E4"
                 ],
-                "duracao": 0.5
+                "duracao": 1,
+                "silaba": "vo"
               },
               {
                 "notas": [
                   "C5"
                 ],
-                "duracao": 0.5
+                "duracao": 1,
+                "silaba": "bri-"
               },
               {
                 "notas": [
                   "B4"
                 ],
-                "duracao": 1
+                "duracao": 2,
+                "silaba": "gou"
               },
               {
                 "notas": [],
                 "duracao": 1
               }
             ],
-            "compasso": "2/4",
-            "anacruse": 0,
+            "compasso": "3/4",
+            "anacruse": 1,
             "andamento": 88,
             "intervalo": {
               "de": "E4",
@@ -1000,116 +1176,41 @@
   "exercicios": [
     {
       "tipo": "multipla_escolha",
-      "enunciado": "Quantos semitons tem uma **3ª maior**?",
-      "opcoes": [
-        "2 semitons",
-        "3 semitons",
-        "4 semitons",
-        "5 semitons"
-      ],
-      "correta": 2,
-      "explicacao": "A 3ª maior tem 4 semitons, como Dó–Mi (Dó, Dó♯, Ré, Ré♯, Mi). A 3ª menor tem um semitom a menos: 3.",
-      "conceito": "semitons",
-      "verificacao": {
-        "tipo": "semitons",
-        "intervalo": "3M"
-      }
-    },
-    {
-      "tipo": "multipla_escolha",
       "enunciado": "Ouça e olhe a partitura. Qual é este intervalo?",
+      "opcoes": [
+        "3ª maior",
+        "3ª menor",
+        "4ª justa",
+        "5ª justa"
+      ],
+      "correta": 0,
+      "explicacao": "Mi, Fá, Sol: três notas, é uma 3ª. De Mi a Sol♯ há 4 semitons, então é **maior**. Se marcou 3ª menor, esqueceu o ♯ do Sol; se marcou 4ª, usou os semitons como número; se marcou 5ª, contou teclas ou casas, com sustenidos e bemóis, no lugar das notas.",
+      "conceito": "qualidade-maior-menor",
       "exemplo": {
-        "id": "ex-q-re-fa",
-        "titulo": "Ré e Fá",
-        "legenda": "Ré–Fá, 3ª menor.",
+        "id": "ex-q-mi-sol-sustenido",
+        "titulo": "Duas notas",
+        "legenda": "Mi–Sol♯, 3ª maior.",
         "eventos": [
           {
             "notas": [
-              "D4"
+              "E4"
             ],
             "duracao": 2
           },
           {
             "notas": [
-              "F4"
+              "G#4"
             ],
             "duracao": 2
           }
         ],
         "andamento": 72,
         "intervalo": {
-          "de": "D4",
-          "para": "F4",
-          "codigo": "3m"
-        }
-      },
-      "opcoes": [
-        "2ª maior",
-        "3ª menor",
-        "3ª maior",
-        "4ª justa"
-      ],
-      "correta": 1,
-      "explicacao": "Ré, Mi, Fá: três nomes, então é uma 3ª. De Ré a Fá há 3 semitons, então é **menor**.",
-      "conceito": "qualidade-maior-menor"
-    },
-    {
-      "tipo": "multipla_escolha",
-      "enunciado": "E este intervalo harmônico?",
-      "exemplo": {
-        "id": "ex-q-mi-si",
-        "titulo": "Mi e Si juntos",
-        "legenda": "Mi–Si, 5ª justa.",
-        "eventos": [
-          {
-            "notas": [
-              "E4",
-              "B4"
-            ],
-            "duracao": 4
-          }
-        ],
-        "andamento": 72,
-        "intervalo": {
           "de": "E4",
-          "para": "B4",
-          "codigo": "5J"
+          "para": "G#4",
+          "codigo": "3M"
         }
-      },
-      "opcoes": [
-        "4ª justa",
-        "5ª justa",
-        "6ª menor",
-        "6ª maior"
-      ],
-      "correta": 1,
-      "explicacao": "Mi, Fá, Sol, Lá, Si: cinco nomes, uma 5ª. Na escala de Mi maior a 5ª nota é Si, então a 5ª é **justa** (7 semitons).",
-      "conceito": "qualidade-justa"
-    },
-    {
-      "tipo": "multipla_escolha",
-      "enunciado": "Qual destes intervalos pode ser **justo**?",
-      "opcoes": [
-        "2ª",
-        "3ª",
-        "5ª",
-        "7ª"
-      ],
-      "correta": 2,
-      "explicacao": "Só o uníssono, a 4ª, a 5ª e a 8ª são justos. A 2ª, a 3ª, a 6ª e a 7ª são maiores ou menores.",
-      "conceito": "qualidade-justa"
-    },
-    {
-      "tipo": "multipla_escolha",
-      "enunciado": "Mi–Fá e Si–Dó são dois intervalos sem tecla preta no meio. Que intervalo eles formam?",
-      "opcoes": [
-        "2ª menor (1 semitom)",
-        "2ª maior (2 semitons)",
-        "3ª menor (3 semitons)"
-      ],
-      "correta": 0,
-      "explicacao": "Mi e Fá são vizinhas no teclado (e casas vizinhas no violão), assim como Si e Dó. A distância é de um semitom, então formam uma **2ª menor**. As outras duplas de notas naturais vizinhas (Dó–Ré, Ré–Mi, Fá–Sol, Sol–Lá, Lá–Si) são 2ª maiores.",
-      "conceito": "semitons"
+      }
     },
     {
       "tipo": "teclado",
@@ -1117,81 +1218,10 @@
       "nota_base": "D4",
       "intervalo": "5J",
       "direcao": "acima",
-      "explicacao": "Ré, Mi, Fá, Sol, Lá: cinco nomes, uma 5ª. De Ré a Lá há 7 semitons, então a 5ª é justa.",
+      "explicacao": "Ré, Mi, Fá, Sol, Lá: cinco notas, uma 5ª. De Ré a Lá há 7 semitons, então é justa. Quem para em Sol contou só quatro notas: Ré–Sol é uma 4ª.",
       "conceito": "qualidade-justa",
       "de": "C4",
       "ate": "C6"
-    },
-    {
-      "tipo": "teclado",
-      "enunciado": "Fá4 está marcado. Clique na nota que forma uma **3ª maior acima** de Fá.",
-      "nota_base": "F4",
-      "intervalo": "3M",
-      "direcao": "acima",
-      "explicacao": "Fá, Sol, Lá: três nomes, uma 3ª. De Fá a Lá há 4 semitons, então é maior.",
-      "conceito": "qualidade-maior-menor",
-      "de": "C4",
-      "ate": "C6"
-    },
-    {
-      "tipo": "teclado",
-      "enunciado": "Mi4 está marcado. Clique na nota que forma uma **2ª menor acima** de Mi.",
-      "nota_base": "E4",
-      "intervalo": "2m",
-      "direcao": "acima",
-      "explicacao": "Entre Mi e Fá não existe tecla preta: as duas já são vizinhas, a um semitom de distância. Por isso Mi–Fá é uma 2ª menor.",
-      "conceito": "semitons",
-      "de": "C4",
-      "ate": "C6"
-    },
-    {
-      "tipo": "teclado",
-      "enunciado": "Lá4 está marcado. Clique na nota que forma uma **3ª menor acima** de Lá.",
-      "nota_base": "A4",
-      "intervalo": "3m",
-      "direcao": "acima",
-      "explicacao": "Lá, Si, Dó: três nomes, uma 3ª. De Lá a Dó há 3 semitons, então é menor. Na escala de Lá maior a 3ª seria Dó♯.",
-      "conceito": "qualidade-maior-menor",
-      "de": "C4",
-      "ate": "C6"
-    },
-    {
-      "tipo": "percepcao",
-      "enunciado": "Ouça sem olhar a partitura. Que intervalo melódico é este?",
-      "exemplo": {
-        "id": "ex-p-5J",
-        "titulo": "Intervalo para identificar",
-        "legenda": "Dó–Sol, 5ª justa.",
-        "eventos": [
-          {
-            "notas": [
-              "C4"
-            ],
-            "duracao": 2
-          },
-          {
-            "notas": [
-              "G4"
-            ],
-            "duracao": 2
-          }
-        ],
-        "andamento": 72,
-        "intervalo": {
-          "de": "C4",
-          "para": "G4",
-          "codigo": "5J"
-        }
-      },
-      "opcoes": [
-        "3ª maior",
-        "4ª justa",
-        "5ª justa",
-        "8ª justa"
-      ],
-      "correta": 2,
-      "explicacao": "É uma 5ª justa, o mesmo salto de \"Bri-lha, **bri**-lha\".",
-      "conceito": "percepcao-de-intervalos"
     },
     {
       "tipo": "percepcao",
@@ -1221,8 +1251,35 @@
         "3ª menor"
       ],
       "correta": 1,
-      "explicacao": "Lá–Dó tem 3 semitons: 3ª menor. Repare no som mais escuro, comparado com Dó–Mi.",
+      "explicacao": "Lá–Dó tem 3 semitons: 3ª menor. Compare com o primeiro par da abertura, Dó–Mi: a 3ª maior soa mais aberta e luminosa.",
       "conceito": "percepcao-de-intervalos"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos semitons cabem em um **tom**?",
+      "opcoes": [
+        "1 semitom",
+        "2 semitons",
+        "3 semitons"
+      ],
+      "correta": 1,
+      "explicacao": "Um tom são dois semitons, como Dó–Ré (Dó→Dó♯→Ré). É a mesma medida de uma 2ª maior. Se marcou 1, confundiu tom com semitom.",
+      "conceito": "semitons",
+      "verificacao": {
+        "tipo": "semitons",
+        "intervalo": "2M"
+      }
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Mi4 está marcado. Clique na nota que forma uma **2ª menor acima** de Mi.",
+      "nota_base": "E4",
+      "intervalo": "2m",
+      "direcao": "acima",
+      "explicacao": "Mi e Fá são vizinhas: um semitom de distância, então Mi–Fá é 2ª menor. Quem clica em Fá♯ imagina uma nota entre Mi e Fá, que não existe.",
+      "conceito": "semitons",
+      "de": "C4",
+      "ate": "C6"
     },
     {
       "tipo": "percepcao",
@@ -1259,8 +1316,139 @@
         "6ª maior"
       ],
       "correta": 1,
-      "explicacao": "É uma 4ª justa, como \"Lá **vem** a noiva\" na Marcha nupcial.",
+      "explicacao": "É uma 4ª justa, o mesmo salto de \"Ci-**ran**-da, cirandinha\" e do começo do Hino Nacional, \"Ou-**vi**-ram\". A 5ª justa é um pouco mais larga, como em \"Bri-lha, **bri**-lha\".",
       "conceito": "percepcao-de-intervalos"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "E este intervalo harmônico?",
+      "opcoes": [
+        "4ª justa",
+        "5ª justa",
+        "6ª menor",
+        "6ª maior"
+      ],
+      "correta": 1,
+      "explicacao": "Mi, Fá, Sol, Lá, Si: cinco notas, uma 5ª. Na escala de Mi maior a 5ª nota é Si, então a 5ª é **justa** (7 semitons). Se marcou 4ª, esqueceu de contar uma das pontas.",
+      "conceito": "numero-do-intervalo",
+      "exemplo": {
+        "id": "ex-q-mi-si",
+        "titulo": "Duas notas juntas",
+        "legenda": "Mi–Si, 5ª justa.",
+        "eventos": [
+          {
+            "notas": [
+              "E4",
+              "B4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 72,
+        "intervalo": {
+          "de": "E4",
+          "para": "B4",
+          "codigo": "5J"
+        }
+      }
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Fá4 está marcado. Clique na nota que forma uma **3ª maior acima** de Fá.",
+      "nota_base": "F4",
+      "intervalo": "3M",
+      "direcao": "acima",
+      "explicacao": "Fá, Sol, Lá: três notas, uma 3ª. De Fá a Lá há 4 semitons, então é maior. Lá♭ daria só 3 semitons, uma 3ª menor.",
+      "conceito": "qualidade-maior-menor",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na escala de **Sol maior**, qual nota forma uma **7ª maior** com Sol?",
+      "opcoes": [
+        "Fá",
+        "Fá♯",
+        "Mi",
+        "Sol"
+      ],
+      "correta": 1,
+      "explicacao": "A escala de Sol maior tem Fá♯: Sol, Lá, Si, Dó, Ré, Mi, **Fá♯**. Todo intervalo da tônica até uma nota da escala maior é maior ou justo, então Sol–Fá♯ é a 7ª maior. Fá natural daria uma 7ª menor.",
+      "conceito": "intervalos-da-escala-maior"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça sem olhar a partitura. Que intervalo melódico é este?",
+      "exemplo": {
+        "id": "ex-p-5J",
+        "titulo": "Intervalo para identificar",
+        "legenda": "Dó–Sol, 5ª justa.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 72,
+        "intervalo": {
+          "de": "C4",
+          "para": "G4",
+          "codigo": "5J"
+        }
+      },
+      "opcoes": [
+        "3ª maior",
+        "4ª justa",
+        "5ª justa",
+        "8ª justa"
+      ],
+      "correta": 2,
+      "explicacao": "É uma 5ª justa, o salto de \"Bri-lha, **bri**-lha\". A 4ª justa é um pouco menor, como \"Ci-**ran**-da\".",
+      "conceito": "percepcao-de-intervalos"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Lá4 está marcado. Clique na nota que forma uma **3ª menor acima** de Lá.",
+      "nota_base": "A4",
+      "intervalo": "3m",
+      "direcao": "acima",
+      "explicacao": "Lá, Si, Dó: três notas, uma 3ª. De Lá a Dó há 3 semitons, então é menor. Na escala de Lá maior a 3ª seria Dó♯, a 3ª maior.",
+      "conceito": "qualidade-maior-menor",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Duas notas tocadas **ao mesmo tempo** formam um intervalo:",
+      "opcoes": [
+        "melódico ascendente",
+        "melódico descendente",
+        "harmônico"
+      ],
+      "correta": 2,
+      "explicacao": "Ao mesmo tempo é **harmônico**. Melódico é quando as notas soam uma depois da outra, subindo (ascendente) ou descendo (descendente).",
+      "conceito": "intervalo-harmonico"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual destes intervalos pode ser **justo**?",
+      "opcoes": [
+        "2ª",
+        "3ª",
+        "5ª",
+        "7ª"
+      ],
+      "correta": 2,
+      "explicacao": "Só o uníssono, a 4ª, a 5ª e a 8ª são justos. A 2ª, a 3ª, a 6ª e a 7ª são maiores ou menores, nunca justas.",
+      "conceito": "qualidade-justa"
     },
     {
       "tipo": "percepcao",
@@ -1297,16 +1485,17 @@
         "8ª justa"
       ],
       "correta": 3,
-      "explicacao": "É a mesma nota, uma oitava acima: 8ª justa, como \"**Some**-where\" em *Over the Rainbow*.",
+      "explicacao": "É a mesma nota, uma oitava acima: 8ª justa. A 7ª maior soa como uma oitava que \"não chegou\", meio tom antes.",
       "conceito": "percepcao-de-intervalos"
     }
   ],
   "resumo": [
     "Intervalo é a distância entre duas notas: **melódico** quando soam uma depois da outra, **harmônico** quando soam juntas.",
-    "O **número** vem da contagem dos nomes das notas, incluindo as duas pontas.",
-    "A **qualidade** vem da contagem de semitons: uníssono, 4ª, 5ª e 8ª são justos; 2ª, 3ª, 6ª e 7ª são maiores ou menores.",
-    "Na escala maior, todos os intervalos a partir da tônica são maiores ou justos. Um semitom abaixo, o maior vira menor.",
-    "Ligar intervalos a músicas conhecidas ajuda a reconhecê-los de ouvido."
+    "O **número** vem da contagem das **notas**, incluindo as duas pontas. Acidentes não mudam o número.",
+    "A **qualidade** vem dos **semitons**: uníssono, 4ª, 5ª e 8ª são justos; 2ª, 3ª, 6ª e 7ª são maiores ou menores.",
+    "Na escala maior, todo intervalo a partir da tônica é maior ou justo. Um semitom a menos, o maior vira menor.",
+    "Cuidado: semitom não dá o número. Ré–Fá♯ tem 4 semitons e é uma 3ª maior.",
+    "Cantigas ajudam o ouvido: *Ciranda, cirandinha* (4ª justa), *Peixe vivo* (3ª menor), *Brilha, brilha* (5ª justa)."
   ],
-  "pergunta_para_chat": "Me faça 5 perguntas sobre intervalos simples, começando por 3ª maiores e menores, e me corrija a cada resposta."
+  "pergunta_para_chat": "Me faça perguntas sobre intervalos simples, uma de cada vez, misturando 3ªs maiores e menores com 4ªs e 5ªs justas, e me dê dicas antes de dar a resposta."
 }

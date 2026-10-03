@@ -68,3 +68,20 @@ def test_abc_com_acidentes_anacruse_e_volta_pelo_music21():
 def test_evento_que_atravessa_a_barra():
     with pytest.raises(teoria.ErroTeoria):
         teoria.eventos_para_abc([{"notas": ["C4"], "duracao": 3}, {"notas": ["D4"], "duracao": 2}])
+
+
+def test_abc_com_letra_sob_as_notas():
+    eventos = [
+        {"notas": ["D4"], "duracao": 0.5, "silaba": "Ci-"},
+        {"notas": ["G4"], "duracao": 0.5, "silaba": "ran-"},
+        {"notas": ["G4"], "duracao": 0.5, "silaba": "da"},
+        {"notas": [], "duracao": 0.5},
+        {"notas": ["B4"], "duracao": 0.5, "silaba": "de~o"},
+    ]
+    abc = teoria.eventos_para_abc(eventos, compasso="2/4", anacruse=0.5)
+    assert abc.endswith("w:Ci-ran-da de~o\n")
+    assert teoria.alturas_do_abc(abc) == [[62], [67], [67], [], [71]]
+
+
+def test_abc_sem_letra_nao_tem_linha_w():
+    assert "w:" not in teoria.eventos_para_abc([{"notas": ["C4"], "duracao": 4}])

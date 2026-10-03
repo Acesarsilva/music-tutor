@@ -30,6 +30,9 @@ Como escrever:
 - Use músicas brasileiras conhecidas como referência, de qualquer estilo (cantigas de roda, folclore, samba,
   choro, bossa nova, MPB, forró, sertanejo, pop). Exemplos tocados devem usar só melodias em domínio público
   (cantigas, folclore, hinos antigos) ou trechos curtos de poucas notas; em tabelas, cite a música e o trecho.
+- Em melodias cantadas, preencha "silaba" em cada nota ("Ci-", "ran-", "da"); a letra aparece sob a partitura.
+  O ritmo segue a letra: sílaba tônica no tempo forte, anacruse quando a frase começa em sílaba fraca.
+- Para achar o número do intervalo, fale em contar as notas ("Ré, Mi, Fá: três notas"), não os nomes.
 - Não invente fatos. Se não tiver certeza de que uma música começa com certo intervalo, não a cite.
 - Respeite o escopo do módulo: o que estiver em "fora_do_escopo" pode ser só mencionado.
 

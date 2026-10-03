@@ -2,6 +2,7 @@ from types import SimpleNamespace
 
 import pytest
 
+from conftest import escolha_sobre_intervalo
 from music_tutor import gerador
 
 
@@ -45,7 +46,8 @@ def test_gera_e_valida(aula_piloto):
 
 def test_devolve_erros_ao_modelo_e_aceita_correcao(aula_piloto):
     errada = aula_piloto.model_copy(deep=True)
-    errada.exercicios[1].correta = 0
+    exe = escolha_sobre_intervalo(errada)
+    exe.correta = (exe.correta + 1) % len(exe.opcoes)
     cliente = ClienteFalso([errada, aula_piloto])
     gerador.gerar_aula("I08", cliente=cliente)
     assert len(cliente.chamadas) == 2
@@ -53,9 +55,8 @@ def test_devolve_erros_ao_modelo_e_aceita_correcao(aula_piloto):
     assert ultima[-1]["role"] == "user" and "music21" in ultima[-1]["content"]
 
 
-def test_desiste_depois_das_tentativas(aula_piloto):
-    errada = aula_piloto.model_copy(deep=True)
-    errada.exercicios[1].correta = 0
+def test_desiste_depois_das_tentativas(aula_com_erro):
+    errada = aula_com_erro
     cliente = ClienteFalso([errada] * (gerador.TENTATIVAS_DE_CORRECAO + 1))
     with pytest.raises(RuntimeError, match="não passou na validação"):
         gerador.gerar_aula("I08", cliente=cliente)
