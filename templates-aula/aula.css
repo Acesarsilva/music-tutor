@@ -482,10 +482,3 @@ tbody tr:last-child td { border-bottom: 0; }
   font-variant-numeric: tabular-nums;
 }
 .numero-casa.marcador { opacity: 1; color: var(--tinta); }
-.aviso-violao {
-  font-size: 0.92rem;
-  color: var(--tinta-suave);
-  border-left: 3px solid var(--latao);
-  padding: 0.2rem 0 0.2rem 0.8rem;
-  margin: 1rem 0;
-}

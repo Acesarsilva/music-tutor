@@ -524,8 +524,6 @@
     document.querySelectorAll("[data-timbre]").forEach(function (b) {
       b.setAttribute("aria-pressed", String(b.dataset.timbre === timbre));
     });
-    document.querySelectorAll("[data-so-violao]").forEach(function (el) { el.hidden = timbre !== "violao"; });
-    document.querySelectorAll("[data-nome-instrumento]").forEach(function (el) { el.textContent = timbre === "violao" ? "braço do violão" : "teclado"; });
     if (mudou) Object.keys(instrumentos).forEach(function (id) { montarInstrumento(instrumentos[id]); });
   }
 

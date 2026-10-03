@@ -492,13 +492,6 @@ tbody tr:last-child td { border-bottom: 0; }
   font-variant-numeric: tabular-nums;
 }
 .numero-casa.marcador { opacity: 1; color: var(--tinta); }
-.aviso-violao {
-  font-size: 0.92rem;
-  color: var(--tinta-suave);
-  border-left: 3px solid var(--latao);
-  padding: 0.2rem 0 0.2rem 0.8rem;
-  margin: 1rem 0;
-}
 
 </style>
 </head>
@@ -545,7 +538,6 @@ tbody tr:last-child td { border-bottom: 0; }
         </ul>
       </div>
     </div>
-    <p class="aviso-violao" data-so-violao hidden>Você escolheu o violão: os teclados da aula viraram braços de violão em afinação padrão. Como em toda partitura de violão, a nota escrita soa uma oitava abaixo, e o braço mostra onde tocar cada nota escrita.</p>
     <nav class="indice" aria-label="Seções da aula">
       <ol>
         <li><a href="#secao-1">O que é um intervalo</a></li>
@@ -1536,8 +1528,6 @@ tbody tr:last-child td { border-bottom: 0; }
     document.querySelectorAll("[data-timbre]").forEach(function (b) {
       b.setAttribute("aria-pressed", String(b.dataset.timbre === timbre));
     });
-    document.querySelectorAll("[data-so-violao]").forEach(function (el) { el.hidden = timbre !== "violao"; });
-    document.querySelectorAll("[data-nome-instrumento]").forEach(function (el) { el.textContent = timbre === "violao" ? "braço do violão" : "teclado"; });
     if (mudou) Object.keys(instrumentos).forEach(function (id) { montarInstrumento(instrumentos[id]); });
   }
 
