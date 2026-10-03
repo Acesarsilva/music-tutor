@@ -1,0 +1,1344 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Intervalos simples</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Layout: uma coluna de leitura (~46rem) com barra fixa de controles de som no topo.
+   Cor: papel frio, tinta azul-grafite, vinho como destaque e latão para a nota que está tocando. */
+:root {
+  --papel: #f4f5f7;
+  --superficie: #ffffff;
+  --tinta: #1d2330;
+  --tinta-suave: #586276;
+  --linha: #dde1e8;
+  --vinho: #8a2c52;
+  --vinho-fundo: #f6e9ef;
+  --latao: #b8770f;
+  --certo: #22744a;
+  --certo-fundo: #e5f3ea;
+  --errado: #b4372f;
+  --errado-fundo: #fbe9e7;
+  --tecla-branca: #ffffff;
+  --tecla-preta: #20242c;
+  --f-titulo: "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --f-texto: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --raio: 10px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --papel: #15171c;
+    --superficie: #1e2129;
+    --tinta: #e7e9ee;
+    --tinta-suave: #a2a9b8;
+    --linha: #333845;
+    --vinho: #e38aae;
+    --vinho-fundo: #3a2230;
+    --latao: #e8ac48;
+    --certo: #6fcf98;
+    --certo-fundo: #1b3326;
+    --errado: #f08a80;
+    --errado-fundo: #3b2120;
+    --tecla-branca: #e9eaee;
+    --tecla-preta: #0c0d10;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --papel: #15171c;
+  --superficie: #1e2129;
+  --tinta: #e7e9ee;
+  --tinta-suave: #a2a9b8;
+  --linha: #333845;
+  --vinho: #e38aae;
+  --vinho-fundo: #3a2230;
+  --latao: #e8ac48;
+  --certo: #6fcf98;
+  --certo-fundo: #1b3326;
+  --errado: #f08a80;
+  --errado-fundo: #3b2120;
+  --tecla-branca: #e9eaee;
+  --tecla-preta: #0c0d10;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--f-texto);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+[hidden] { display: none !important; }
+
+/* Barra de controles */
+.barra {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 10;
+  background: color-mix(in srgb, var(--papel) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--linha);
+  font-family: var(--f-titulo);
+}
+.barra-interna {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0.6rem 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+.barra-aula {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.selo {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: var(--vinho-fundo);
+  color: var(--vinho);
+  margin-right: 0.35rem;
+  font-variant-numeric: tabular-nums;
+}
+.controles { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; }
+.timbre {
+  display: inline-flex;
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+  padding: 2px;
+  background: var(--superficie);
+}
+.timbre button {
+  font: 600 0.85rem var(--f-titulo);
+  border: 0;
+  background: transparent;
+  color: var(--tinta-suave);
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.timbre button[aria-pressed="true"] { background: var(--vinho); color: var(--superficie); }
+.andamento {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--tinta-suave);
+}
+.andamento input { width: 6.5rem; accent-color: var(--vinho); }
+.andamento output { font-variant-numeric: tabular-nums; min-width: 2.6rem; }
+
+/* Estrutura */
+.aula { max-width: 46rem; margin: 0 auto; padding: 0 16px; padding-block: 2rem 3rem; }
+.rotulo {
+  font-family: var(--f-titulo);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tinta-suave);
+  margin: 0 0 0.4rem;
+}
+h1, h2, h3 { font-family: var(--f-titulo); line-height: 1.15; text-wrap: balance; }
+h1 { font-size: clamp(2rem, 6vw, 2.9rem); margin: 0 0 0.6rem; letter-spacing: -0.01em; }
+.chamada { font-size: 1.2rem; color: var(--tinta-suave); margin: 0 0 1.5rem; }
+.ficha {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem 2rem;
+  padding: 1.1rem 0;
+  border-top: 1px solid var(--linha);
+  border-bottom: 1px solid var(--linha);
+}
+.ficha ul { margin: 0; padding-left: 1.1rem; }
+.ficha li { margin: 0.15rem 0; }
+.indice ol {
+  list-style: none;
+  margin: 1.2rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  counter-reset: indice;
+  font-family: var(--f-titulo);
+  font-size: 0.9rem;
+}
+.indice li { counter-increment: indice; }
+.indice a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--tinta);
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+}
+.indice a::before { content: counter(indice) "  "; color: var(--vinho); font-weight: 600; white-space: pre; }
+.indice a:hover { border-color: var(--vinho); }
+
+.secao { margin-top: 3rem; scroll-margin-top: 5rem; }
+.secao > h2 {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin: 0 0 1rem;
+}
+.num {
+  font-size: 0.95rem;
+  color: var(--vinho);
+  font-variant-numeric: tabular-nums;
+  border: 1.5px solid var(--vinho);
+  border-radius: 999px;
+  min-width: 1.8rem;
+  height: 1.8rem;
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  transform: translateY(-0.1rem);
+}
+.prosa p { margin: 0 0 0.9rem; }
+.prosa ul, .prosa ol { padding-left: 1.3rem; margin: 0 0 0.9rem; }
+strong { font-weight: 600; }
+a { color: var(--vinho); }
+
+.dica {
+  margin: 1.2rem 0;
+  padding: 0.9rem 1.1rem;
+  background: var(--vinho-fundo);
+  border-radius: var(--raio);
+}
+.dica .rotulo { color: var(--vinho); }
+.dica p:last-child { margin-bottom: 0; }
+
+/* Exemplos com partitura */
+.exemplo {
+  margin: 1.4rem 0;
+  padding: 0.9rem 1rem 0.8rem;
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+}
+.exemplo-topo { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
+.exemplo-titulo { margin: 0; font-family: var(--f-titulo); font-weight: 600; min-width: 0; }
+.partitura { color: var(--tinta); min-height: 4rem; overflow-x: auto; }
+.partitura svg { display: block; max-width: 100%; }
+.partitura .tocando, .partitura .tocando path { fill: var(--latao); stroke: var(--latao); }
+.exemplo figcaption, figure figcaption { font-size: 0.95rem; color: var(--tinta-suave); }
+
+.tocar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font: 600 0.9rem var(--f-titulo);
+  color: var(--superficie);
+  background: var(--vinho);
+  border: 0;
+  border-radius: 999px;
+  padding: 0.4rem 0.95rem 0.4rem 0.75rem;
+  cursor: pointer;
+  flex: none;
+}
+.tocar.pequeno { font-size: 0.8rem; padding: 0.3rem 0.8rem 0.3rem 0.6rem; }
+.tocar .icone {
+  width: 0; height: 0;
+  border-left: 0.6em solid currentColor;
+  border-top: 0.38em solid transparent;
+  border-bottom: 0.38em solid transparent;
+}
+.tocar.ativo .icone { width: 0.6em; height: 0.6em; border: 0; background: currentColor; border-radius: 1px; }
+.tocar:hover { filter: brightness(1.08); }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid var(--latao); outline-offset: 2px; }
+
+/* Tabelas */
+.tabela { margin: 1.4rem 0; }
+.tabela-rolagem { overflow-x: auto; border: 1px solid var(--linha); border-radius: var(--raio); background: var(--superficie); }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 0.5rem 0.8rem; border-bottom: 1px solid var(--linha); vertical-align: top; }
+th { font-family: var(--f-titulo); font-weight: 600; font-size: 0.85rem; color: var(--tinta-suave); }
+tbody tr:last-child td { border-bottom: 0; }
+.tabela figcaption { margin-top: 0.4rem; }
+
+/* Teclado */
+.bloco-teclado { margin: 1.4rem 0; }
+.bloco-teclado figcaption { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1rem; margin-top: 0.5rem; }
+.teclado-rolagem { overflow-x: auto; padding-bottom: 0.25rem; }
+.teclado {
+  position: relative;
+  height: 9rem;
+  margin: 0 auto;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.tecla {
+  position: absolute;
+  top: 0;
+  border: 1px solid var(--linha);
+  border-radius: 0 0 6px 6px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font: 600 0.7rem var(--f-titulo);
+}
+.tecla.branca { background: var(--tecla-branca); color: #5a6070; height: 100%; z-index: 1; border-color: #c9cdd6; }
+.tecla.preta { background: var(--tecla-preta); color: #e7e9ee; height: 60%; z-index: 2; border-color: var(--tecla-preta); }
+.tecla .nome { padding-bottom: 0.35rem; pointer-events: none; }
+.tecla.preta .nome { font-size: 0.6rem; }
+.tecla.destaque.branca { background: color-mix(in srgb, var(--vinho) 22%, var(--tecla-branca)); }
+.tecla.destaque.preta { background: color-mix(in srgb, var(--vinho) 55%, var(--tecla-preta)); }
+.tecla.base.branca { background: color-mix(in srgb, var(--vinho) 22%, var(--tecla-branca)); }
+.tecla.base.preta { background: color-mix(in srgb, var(--vinho) 55%, var(--tecla-preta)); }
+.tecla.soando.branca { background: color-mix(in srgb, var(--latao) 45%, var(--tecla-branca)); }
+.tecla.soando.preta { background: color-mix(in srgb, var(--latao) 70%, var(--tecla-preta)); }
+.tecla.acertou.branca, .tecla.acertou.preta { background: var(--certo); color: #fff; }
+.tecla.errou.branca, .tecla.errou.preta { background: var(--errado); color: #fff; }
+
+/* Exercícios */
+.placar { font-family: var(--f-titulo); color: var(--tinta-suave); margin-top: -0.4rem; font-variant-numeric: tabular-nums; }
+.exercicio {
+  margin: 1.2rem 0;
+  padding: 1.1rem 1.1rem 1rem;
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+}
+.exercicio .exemplo { margin: 0.8rem 0; border-style: dashed; }
+.enunciado p { margin: 0 0 0.8rem; }
+.opcoes { list-style: none; margin: 0.8rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 0.5rem; }
+.opcao {
+  width: 100%;
+  text-align: left;
+  font: 1rem var(--f-texto);
+  color: var(--tinta);
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  border-radius: 8px;
+  padding: 0.55rem 0.8rem;
+  cursor: pointer;
+}
+.opcao:hover:not(:disabled) { border-color: var(--vinho); }
+.opcao:disabled { cursor: default; }
+.opcao.certa { background: var(--certo-fundo); border-color: var(--certo); color: var(--tinta); }
+.opcao.errada { background: var(--errado-fundo); border-color: var(--errado); color: var(--tinta); }
+.acoes-teclado { margin-top: 0.6rem; }
+.retorno { margin-top: 0.9rem; padding-top: 0.8rem; border-top: 1px solid var(--linha); }
+.veredito { font-family: var(--f-titulo); font-weight: 700; margin: 0 0 0.3rem; }
+.veredito.certo { color: var(--certo); }
+.veredito.errado { color: var(--errado); }
+.explicacao p { margin: 0 0 0.6rem; }
+.explicacao p:last-child { margin-bottom: 0; }
+
+/* Resumo */
+.resumo { padding-left: 1.2rem; }
+.resumo li { margin: 0.3rem 0; }
+.para-o-chat {
+  margin-top: 1.5rem;
+  padding: 1rem 1.1rem;
+  border: 1.5px solid var(--vinho);
+  border-radius: var(--raio);
+}
+.para-o-chat .rotulo { color: var(--vinho); }
+#pergunta-chat { font-size: 1.1rem; margin: 0 0 0.7rem; }
+.secundario {
+  font: 600 0.85rem var(--f-titulo);
+  color: var(--vinho);
+  background: transparent;
+  border: 1px solid var(--vinho);
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  cursor: pointer;
+}
+.rodape {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 16px;
+  padding-block: 1.5rem 2.5rem;
+  border-top: 1px solid var(--linha);
+  font-family: var(--f-titulo);
+  font-size: 0.8rem;
+  color: var(--tinta-suave);
+}
+.aviso-som {
+  position: fixed;
+  left: 50%;
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  background: var(--tinta);
+  color: var(--papel);
+  font-family: var(--f-titulo);
+  font-size: 0.85rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  z-index: 20;
+  max-width: calc(100% - 32px);
+}
+
+@media (max-width: 520px) {
+  body { font-size: 1rem; }
+  .barra-aula { flex-basis: 100%; }
+  .andamento input { width: 5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; transition: none !important; }
+}
+
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="barra-interna">
+    <p class="barra-aula"><span class="selo">I08</span> Intervalos simples</p>
+    <div class="controles">
+      <div class="timbre" role="group" aria-label="Timbre">
+        <button type="button" id="timbre-piano" data-timbre="piano" aria-pressed="true">Piano</button>
+        <button type="button" id="timbre-violao" data-timbre="violao" aria-pressed="false">Violão</button>
+      </div>
+      <label class="andamento" for="andamento">
+        <span>Andamento</span>
+        <input type="range" id="andamento" min="50" max="150" step="10" value="100">
+        <output id="andamento-valor" for="andamento">100%</output>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main class="aula">
+  <section class="abertura">
+    <p class="rotulo">Teoria musical · Iniciante</p>
+    <h1>Intervalos simples</h1>
+    <p class="chamada">Como medir a distância entre duas notas, dar nome a ela e começar a reconhecê-la de ouvido.</p>
+    <div class="ficha">
+      <div>
+        <h2 class="rotulo">Você vai aprender</h2>
+        <ul>
+          <li>Diferenciar intervalo <strong>melódico</strong> de intervalo <strong>harmônico</strong></li>
+          <li>Achar o <strong>número</strong> do intervalo contando os nomes das notas</li>
+          <li>Classificar intervalos como <strong>justos, maiores ou menores</strong> contando semitons</li>
+          <li>Usar a escala maior como régua para reconhecer intervalos</li>
+          <li>Ligar cada intervalo ao começo de uma música conhecida</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="rotulo">Antes, é bom saber</h2>
+        <ul>
+          <li>Nomes das notas e onde ficam no teclado (I02)</li>
+          <li>Tom e semitom (I06)</li>
+          <li>Escala maior (I07)</li>
+        </ul>
+      </div>
+    </div>
+    <nav class="indice" aria-label="Seções da aula">
+      <ol>
+        <li><a href="#secao-1">O que é um intervalo</a></li>
+        <li><a href="#secao-2">O número do intervalo</a></li>
+        <li><a href="#secao-3">Semitons e qualidade</a></li>
+        <li><a href="#secao-4">A escala maior como régua</a></li>
+        <li><a href="#secao-5">Intervalos que você já conhece</a></li>
+        <li><a href="#exercicios">Exercícios</a></li>
+        <li><a href="#resumo">Resumo</a></li>
+      </ol>
+    </nav>
+  </section>
+
+  <section class="secao" id="secao-1">
+    <h2><span class="num">1</span>O que é um intervalo</h2>
+    <div class="prosa"><p><strong>Intervalo</strong> é a distância de altura entre duas notas. É com intervalos que se constroem melodias, acordes e escalas, então eles são a base de quase tudo que vem depois na teoria.</p>
+<p>Quando as duas notas soam uma depois da outra, o intervalo é <strong>melódico</strong>. Ele pode ser <strong>ascendente</strong> (a segunda nota é mais aguda) ou <strong>descendente</strong> (a segunda nota é mais grave). Quando as duas notas soam ao mesmo tempo, o intervalo é <strong>harmônico</strong>.</p></div>
+    <figure class="exemplo" data-exemplo="ex-do-mi-melodico">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Intervalo melódico ascendente</p>
+        <button type="button" class="tocar" data-tocar="ex-do-mi-melodico"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-do-mi-melodico"></div>
+      <figcaption>Primeiro Dó, depois Mi: a melodia sobe.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-mi-do-descendente">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Intervalo melódico descendente</p>
+        <button type="button" class="tocar" data-tocar="ex-mi-do-descendente"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-mi-do-descendente"></div>
+      <figcaption>Primeiro Mi, depois Dó: a melodia desce. As notas são as mesmas do exemplo anterior.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-do-mi-harmonico">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Intervalo harmônico</p>
+        <button type="button" class="tocar" data-tocar="ex-do-mi-harmonico"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-do-mi-harmonico"></div>
+      <figcaption>Dó e Mi ao mesmo tempo. Na partitura, as notas ficam empilhadas.</figcaption>
+    </figure>
+    <aside class="dica"><p class="rotulo">Dica</p><p>Nesta aula, o número depois do nome indica a oitava: <strong>Dó4</strong> é o Dó central do piano, e <strong>Dó5</strong> é o Dó seguinte, mais agudo.</p></aside>
+  </section>
+  <section class="secao" id="secao-2">
+    <h2><span class="num">2</span>O número do intervalo</h2>
+    <div class="prosa"><p>Para achar o número, conte os <strong>nomes</strong> das notas da mais grave até a mais aguda, <strong>incluindo as duas pontas</strong>.</p>
+<ul>
+<li>De Dó a Mi: Dó, Ré, Mi. São 3 nomes, então é uma <strong>3ª</strong> (terça).</li>
+<li>De Dó a Sol: Dó, Ré, Mi, Fá, Sol. São 5 nomes, então é uma <strong>5ª</strong> (quinta).</li>
+</ul>
+<p>Os acidentes não mudam o número. Dó–Mi e Dó–Mi♭ são as duas uma 3ª, porque a nota de cima continua se chamando Mi.</p></div>
+    <figure class="bloco-teclado">
+      <div class="teclado-rolagem"><div class="teclado" data-teclado="t-1-1"></div></div>
+      <figcaption>
+        <span>Dó, Ré, Mi: três nomes, uma 3ª.</span>
+        <button type="button" class="tocar pequeno" data-tocar-teclado="t-1-1"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir as notas</span></button>
+      </figcaption>
+    </figure>
+    <figure class="tabela">
+      <div class="tabela-rolagem">
+        <table>
+          <thead><tr><th scope="col">Número</th><th scope="col">Nome</th><th scope="col">Exemplo a partir de Dó</th></tr></thead>
+          <tbody>
+            <tr><td>2ª</td><td>segunda</td><td>Dó–Ré</td></tr>
+            <tr><td>3ª</td><td>terça</td><td>Dó–Mi</td></tr>
+            <tr><td>4ª</td><td>quarta</td><td>Dó–Fá</td></tr>
+            <tr><td>5ª</td><td>quinta</td><td>Dó–Sol</td></tr>
+            <tr><td>6ª</td><td>sexta</td><td>Dó–Lá</td></tr>
+            <tr><td>7ª</td><td>sétima</td><td>Dó–Si</td></tr>
+            <tr><td>8ª</td><td>oitava</td><td>Dó–Dó (o próximo Dó, mais agudo)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <figcaption>Os nomes dos intervalos simples, que são os que cabem dentro de uma oitava. Duas notas iguais formam um <strong>uníssono</strong>.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-escada-de-do">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">De Dó até cada nota da escala</p>
+        <button type="button" class="tocar" data-tocar="ex-escada-de-do"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-escada-de-do"></div>
+      <figcaption>Dó fica embaixo e a nota de cima sobe: 2ª, 3ª, 4ª, 5ª, 6ª, 7ª e 8ª.</figcaption>
+    </figure>
+  </section>
+  <section class="secao" id="secao-3">
+    <h2><span class="num">3</span>Semitons e qualidade</h2>
+    <div class="prosa"><p>O número sozinho não basta. Dó–Mi e Ré–Fá são as duas uma 3ª, mas não soam iguais. De Dó a Mi há <strong>4 semitons</strong>; de Ré a Fá há só <strong>3</strong>.</p>
+<p>O <strong>semitom</strong> é a menor distância entre duas teclas vizinhas do piano, sejam brancas ou pretas. Contando semitons, descobrimos a <strong>qualidade</strong> do intervalo:</p>
+<ul>
+<li><strong>Justos</strong>: uníssono, 4ª, 5ª e 8ª.</li>
+<li><strong>Maiores ou menores</strong>: 2ª, 3ª, 6ª e 7ª. O menor tem um semitom a menos que o maior.</li>
+</ul></div>
+    <figure class="exemplo" data-exemplo="ex-3M-do-mi">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">3ª maior: Dó–Mi (4 semitons)</p>
+        <button type="button" class="tocar" data-tocar="ex-3M-do-mi"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-3M-do-mi"></div>
+      <figcaption>Um som aberto e luminoso.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-3m-re-fa">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">3ª menor: Ré–Fá (3 semitons)</p>
+        <button type="button" class="tocar" data-tocar="ex-3m-re-fa"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-3m-re-fa"></div>
+      <figcaption>Um som mais escuro e fechado. Ouça os dois exemplos em seguida para comparar.</figcaption>
+    </figure>
+    <figure class="bloco-teclado">
+      <div class="teclado-rolagem"><div class="teclado" data-teclado="t-2-3"></div></div>
+      <figcaption>
+        <span>De Ré a Fá: Ré–Ré♯, Ré♯–Mi, Mi–Fá. São três semitons.</span>
+        <button type="button" class="tocar pequeno" data-tocar-teclado="t-2-3"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir as notas</span></button>
+      </figcaption>
+    </figure>
+    <figure class="tabela">
+      <div class="tabela-rolagem">
+        <table>
+          <thead><tr><th scope="col">Intervalo</th><th scope="col">Semitons</th><th scope="col">A partir de Dó</th></tr></thead>
+          <tbody>
+            <tr><td>uníssono</td><td>0</td><td>Dó–Dó (a mesma nota)</td></tr>
+            <tr><td>2ª menor</td><td>1</td><td>Dó–Ré♭</td></tr>
+            <tr><td>2ª maior</td><td>2</td><td>Dó–Ré</td></tr>
+            <tr><td>3ª menor</td><td>3</td><td>Dó–Mi♭</td></tr>
+            <tr><td>3ª maior</td><td>4</td><td>Dó–Mi</td></tr>
+            <tr><td>4ª justa</td><td>5</td><td>Dó–Fá</td></tr>
+            <tr><td>5ª justa</td><td>7</td><td>Dó–Sol</td></tr>
+            <tr><td>6ª menor</td><td>8</td><td>Dó–Lá♭</td></tr>
+            <tr><td>6ª maior</td><td>9</td><td>Dó–Lá</td></tr>
+            <tr><td>7ª menor</td><td>10</td><td>Dó–Si♭</td></tr>
+            <tr><td>7ª maior</td><td>11</td><td>Dó–Si</td></tr>
+            <tr><td>8ª justa</td><td>12</td><td>Dó–Dó (uma oitava acima)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <figcaption>Cada qualidade medida a partir de Dó. O intervalo de 6 semitons aparece na dica abaixo.</figcaption>
+    </figure>
+    <aside class="dica"><p class="rotulo">Dica</p><p>Com 6 semitons existe o <strong>trítono</strong>, como Dó–Fá♯ ou Dó–Sol♭. Ele se chama 4ª aumentada ou 5ª diminuta, conforme a escrita, e é estudado com calma no módulo M02.</p></aside>
+  </section>
+  <section class="secao" id="secao-4">
+    <h2><span class="num">4</span>A escala maior como régua</h2>
+    <div class="prosa"><p>Na escala maior, todas as notas formam intervalos <strong>maiores ou justos</strong> com a primeira nota, a tônica. Em Dó maior: Dó–Ré é 2ª maior, Dó–Mi é 3ª maior, Dó–Fá é 4ª justa, Dó–Sol é 5ª justa, Dó–Lá é 6ª maior, Dó–Si é 7ª maior e Dó–Dó é 8ª justa.</p>
+<p>Isso vira um atalho para classificar qualquer intervalo:</p>
+<ol>
+<li>Imagine a escala maior da nota de baixo.</li>
+<li>Se a nota de cima está nessa escala, o intervalo é <strong>maior</strong> (2ª, 3ª, 6ª, 7ª) ou <strong>justo</strong> (4ª, 5ª, 8ª).</li>
+<li>Se a nota de cima está um semitom abaixo da nota da escala, o intervalo maior vira <strong>menor</strong>.</li>
+</ol></div>
+    <figure class="bloco-teclado">
+      <div class="teclado-rolagem"><div class="teclado" data-teclado="t-3-1"></div></div>
+      <figcaption>
+        <span>Escala de Dó maior: cada nota forma um intervalo maior ou justo com Dó.</span>
+        <button type="button" class="tocar pequeno" data-tocar-teclado="t-3-1"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir as notas</span></button>
+      </figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-escala-do-maior">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Escala de Dó maior</p>
+        <button type="button" class="tocar" data-tocar="ex-escala-do-maior"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-escala-do-maior"></div>
+      <figcaption>Da tônica Dó4 até Dó5.</figcaption>
+    </figure>
+    <div class="prosa"><p>Veja o atalho funcionando com Ré–Fá. Na escala de Ré maior, a 3ª nota é <strong>Fá♯</strong>. Fá está um semitom abaixo de Fá♯, então Ré–Fá é uma <strong>3ª menor</strong>.</p></div>
+    <figure class="exemplo" data-exemplo="ex-re-fa-sustenido-fa">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Ré–Fá♯ e depois Ré–Fá</p>
+        <button type="button" class="tocar" data-tocar="ex-re-fa-sustenido-fa"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-re-fa-sustenido-fa"></div>
+      <figcaption>Primeiro a 3ª maior (Ré–Fá♯), depois a 3ª menor (Ré–Fá). Só a nota de cima muda, um semitom.</figcaption>
+    </figure>
+  </section>
+  <section class="secao" id="secao-5">
+    <h2><span class="num">5</span>Intervalos que você já conhece</h2>
+    <div class="prosa"><p>Um jeito prático de reconhecer intervalos de ouvido é ligar cada um ao começo de uma música conhecida. Cante mentalmente a melodia e preste atenção nas duas primeiras notas <strong>diferentes</strong>.</p></div>
+    <figure class="exemplo" data-exemplo="ex-parabens">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">2ª maior: Parabéns a você</p>
+        <button type="button" class="tocar" data-tocar="ex-parabens"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-parabens"></div>
+      <figcaption>"Pa-ra-<strong>béns</strong>": as duas primeiras sílabas repetem a nota, e "béns" sobe uma 2ª maior.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-saints">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">3ª maior: When the Saints Go Marching In</p>
+        <button type="button" class="tocar" data-tocar="ex-saints"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-saints"></div>
+      <figcaption>"Oh, <strong>when</strong> the saints": de "Oh" para "when" a melodia sobe uma 3ª maior.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-marcha-nupcial">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">4ª justa: Marcha nupcial (Wagner)</p>
+        <button type="button" class="tocar" data-tocar="ex-marcha-nupcial"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-marcha-nupcial"></div>
+      <figcaption>"Lá <strong>vem</strong> a noiva": de "Lá" para "vem" a melodia sobe uma 4ª justa.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-brilha-brilha">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">5ª justa: Brilha, brilha, estrelinha</p>
+        <button type="button" class="tocar" data-tocar="ex-brilha-brilha"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-brilha-brilha"></div>
+      <figcaption>"Bri-lha, <strong>bri</strong>-lha": do segundo para o terceiro som a melodia sobe uma 5ª justa.</figcaption>
+    </figure>
+    <figure class="tabela">
+      <div class="tabela-rolagem">
+        <table>
+          <thead><tr><th scope="col">Intervalo</th><th scope="col">Música</th><th scope="col">Onde ouvir</th></tr></thead>
+          <tbody>
+            <tr><td>2ª menor</td><td>Tema de <em>Tubarão</em> (John Williams)</td><td>as duas notas que se alternam no grave</td></tr>
+            <tr><td>2ª maior</td><td><em>Parabéns a você</em></td><td>"Pa-ra-<strong>béns</strong>"</td></tr>
+            <tr><td>3ª menor</td><td><em>Garota de Ipanema</em> (Tom Jobim), descendente</td><td>"<strong>O</strong>-lha que coisa"</td></tr>
+            <tr><td>3ª maior</td><td><em>When the Saints Go Marching In</em></td><td>"Oh, <strong>when</strong>"</td></tr>
+            <tr><td>4ª justa</td><td>Marcha nupcial (Wagner)</td><td>"Lá <strong>vem</strong> a noiva"</td></tr>
+            <tr><td>5ª justa</td><td><em>Brilha, brilha, estrelinha</em></td><td>"Bri-lha, <strong>bri</strong>-lha"</td></tr>
+            <tr><td>6ª maior</td><td><em>My Bonnie Lies over the Ocean</em></td><td>"My <strong>Bon</strong>-nie"</td></tr>
+            <tr><td>7ª menor</td><td><em>Somewhere</em> (West Side Story)</td><td>"There's <strong>a</strong> place"</td></tr>
+            <tr><td>8ª justa</td><td><em>Over the Rainbow</em></td><td>"<strong>Some</strong>-where"</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <figcaption>Referências para treinar o ouvido. Todas sobem, exceto Garota de Ipanema, que desce.</figcaption>
+    </figure>
+    <aside class="dica"><p class="rotulo">Dica</p><p>A 6ª menor e a 7ª maior aparecem pouco no começo de músicas conhecidas. Para elas, o melhor treino é comparar com a vizinha: a 6ª menor soa como uma 6ª maior mais escura, e a 7ª maior soa como uma oitava que "não chegou".</p></aside>
+  </section>
+
+  <section class="secao exercicios" id="exercicios">
+    <h2><span class="num">6</span>Exercícios</h2>
+    <p class="placar" id="placar" aria-live="polite">Responda para ver seus acertos.</p>
+    <article class="exercicio" data-exercicio="0" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 1 · Múltipla escolha</p>
+      <div class="enunciado"><p>Quantos semitons tem uma <strong>3ª maior</strong>?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">2 semitons</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">3 semitons</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">4 semitons</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">5 semitons</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>A 3ª maior tem 4 semitons, como Dó–Mi (Dó, Dó♯, Ré, Ré♯, Mi). A 3ª menor tem um semitom a menos: 3.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="1" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 2 · Múltipla escolha</p>
+      <div class="enunciado"><p>Ouça e olhe a partitura. Qual é este intervalo?</p></div>
+      <figure class="exemplo" data-exemplo="ex-q-re-fa">
+        <div class="exemplo-topo">
+          <p class="exemplo-titulo">Ré e Fá</p>
+          <button type="button" class="tocar" data-tocar="ex-q-re-fa"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        </div>
+        <div class="partitura" data-partitura="ex-q-re-fa"></div>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">2ª maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">3ª menor</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">3ª maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">4ª justa</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Ré, Mi, Fá: três nomes, então é uma 3ª. De Ré a Fá há 3 semitons, então é <strong>menor</strong>.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="2" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 3 · Múltipla escolha</p>
+      <div class="enunciado"><p>E este intervalo harmônico?</p></div>
+      <figure class="exemplo" data-exemplo="ex-q-mi-si">
+        <div class="exemplo-topo">
+          <p class="exemplo-titulo">Mi e Si juntos</p>
+          <button type="button" class="tocar" data-tocar="ex-q-mi-si"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        </div>
+        <div class="partitura" data-partitura="ex-q-mi-si"></div>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">4ª justa</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">5ª justa</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">6ª menor</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">6ª maior</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Mi, Fá, Sol, Lá, Si: cinco nomes, uma 5ª. Na escala de Mi maior a 5ª nota é Si, então a 5ª é <strong>justa</strong> (7 semitons).</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="3" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 4 · Múltipla escolha</p>
+      <div class="enunciado"><p>Qual destes intervalos pode ser <strong>justo</strong>?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">2ª</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">3ª</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">5ª</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">7ª</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Só o uníssono, a 4ª, a 5ª e a 8ª são justos. A 2ª, a 3ª, a 6ª e a 7ª são maiores ou menores.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="4" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 5 · Múltipla escolha</p>
+      <div class="enunciado"><p>Mi–Fá e Si–Dó são dois intervalos sem tecla preta no meio. Que intervalo eles formam?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">2ª menor (1 semitom)</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">2ª maior (2 semitons)</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">3ª menor (3 semitons)</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Mi e Fá são vizinhas no teclado, assim como Si e Dó. A distância é de um semitom, então formam uma <strong>2ª menor</strong>. As outras duplas de notas naturais vizinhas (Dó–Ré, Ré–Mi, Fá–Sol, Sol–Lá, Lá–Si) são 2ª maiores.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="5" data-tipo="teclado">
+      <p class="rotulo">Exercício 6 · Teclado</p>
+      <div class="enunciado"><p>Ré4 está marcado no teclado. Clique na nota que forma uma <strong>5ª justa acima</strong> de Ré.</p></div>
+      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="5"></div></div>
+      <div class="acoes-teclado">
+        <button type="button" class="tocar pequeno" data-tocar-base="5"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
+      </div>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Ré, Mi, Fá, Sol, Lá: cinco nomes, uma 5ª. De Ré a Lá há 7 semitons, então a 5ª é justa.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="6" data-tipo="teclado">
+      <p class="rotulo">Exercício 7 · Teclado</p>
+      <div class="enunciado"><p>Fá4 está marcado. Clique na nota que forma uma <strong>3ª maior acima</strong> de Fá.</p></div>
+      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="6"></div></div>
+      <div class="acoes-teclado">
+        <button type="button" class="tocar pequeno" data-tocar-base="6"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
+      </div>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Fá, Sol, Lá: três nomes, uma 3ª. De Fá a Lá há 4 semitons, então é maior.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="7" data-tipo="teclado">
+      <p class="rotulo">Exercício 8 · Teclado</p>
+      <div class="enunciado"><p>Mi4 está marcado. Clique na nota que forma uma <strong>2ª menor acima</strong> de Mi.</p></div>
+      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="7"></div></div>
+      <div class="acoes-teclado">
+        <button type="button" class="tocar pequeno" data-tocar-base="7"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
+      </div>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Entre Mi e Fá não existe tecla preta: as duas já são vizinhas, a um semitom de distância. Por isso Mi–Fá é uma 2ª menor.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="8" data-tipo="teclado">
+      <p class="rotulo">Exercício 9 · Teclado</p>
+      <div class="enunciado"><p>Lá4 está marcado. Clique na nota que forma uma <strong>3ª menor acima</strong> de Lá.</p></div>
+      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="8"></div></div>
+      <div class="acoes-teclado">
+        <button type="button" class="tocar pequeno" data-tocar-base="8"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
+      </div>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Lá, Si, Dó: três nomes, uma 3ª. De Lá a Dó há 3 semitons, então é menor. Na escala de Lá maior a 3ª seria Dó♯.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="9" data-tipo="percepcao">
+      <p class="rotulo">Exercício 10 · Percepção</p>
+      <div class="enunciado"><p>Ouça sem olhar a partitura. Que intervalo melódico é este?</p></div>
+      <button type="button" class="tocar" data-tocar="ex-p-5J"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="ex-p-5J" hidden>
+        <div class="partitura" data-partitura="ex-p-5J"></div>
+        <figcaption>Dó–Sol, 5ª justa.</figcaption>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">3ª maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">4ª justa</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">5ª justa</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">8ª justa</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>É uma 5ª justa, o mesmo salto de "Bri-lha, <strong>bri</strong>-lha".</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="10" data-tipo="percepcao">
+      <p class="rotulo">Exercício 11 · Percepção</p>
+      <div class="enunciado"><p>Ouça o intervalo harmônico. É uma 3ª maior ou uma 3ª menor?</p></div>
+      <button type="button" class="tocar" data-tocar="ex-p-3m"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="ex-p-3m" hidden>
+        <div class="partitura" data-partitura="ex-p-3m"></div>
+        <figcaption>Lá–Dó, 3ª menor.</figcaption>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">3ª maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">3ª menor</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Lá–Dó tem 3 semitons: 3ª menor. Repare no som mais escuro, comparado com Dó–Mi.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="11" data-tipo="percepcao">
+      <p class="rotulo">Exercício 12 · Percepção</p>
+      <div class="enunciado"><p>Que intervalo melódico é este?</p></div>
+      <button type="button" class="tocar" data-tocar="ex-p-4J"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="ex-p-4J" hidden>
+        <div class="partitura" data-partitura="ex-p-4J"></div>
+        <figcaption>Sol–Dó, 4ª justa.</figcaption>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">3ª maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">4ª justa</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">5ª justa</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">6ª maior</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>É uma 4ª justa, como "Lá <strong>vem</strong> a noiva" na Marcha nupcial.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="12" data-tipo="percepcao">
+      <p class="rotulo">Exercício 13 · Percepção</p>
+      <div class="enunciado"><p>E este, bem mais largo?</p></div>
+      <button type="button" class="tocar" data-tocar="ex-p-8J"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="ex-p-8J" hidden>
+        <div class="partitura" data-partitura="ex-p-8J"></div>
+        <figcaption>Dó4–Dó5, 8ª justa.</figcaption>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">5ª justa</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">6ª maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">7ª maior</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">8ª justa</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>É a mesma nota, uma oitava acima: 8ª justa, como "<strong>Some</strong>-where" em <em>Over the Rainbow</em>.</p></div>
+      </div>
+    </article>
+  </section>
+
+  <section class="secao" id="resumo">
+    <h2><span class="num">7</span>Resumo</h2>
+    <ul class="resumo">
+      <li>Intervalo é a distância entre duas notas: <strong>melódico</strong> quando soam uma depois da outra, <strong>harmônico</strong> quando soam juntas.</li>
+      <li>O <strong>número</strong> vem da contagem dos nomes das notas, incluindo as duas pontas.</li>
+      <li>A <strong>qualidade</strong> vem da contagem de semitons: uníssono, 4ª, 5ª e 8ª são justos; 2ª, 3ª, 6ª e 7ª são maiores ou menores.</li>
+      <li>Na escala maior, todos os intervalos a partir da tônica são maiores ou justos. Um semitom abaixo, o maior vira menor.</li>
+      <li>Ligar intervalos a músicas conhecidas ajuda a reconhecê-los de ouvido.</li>
+    </ul>
+    <div class="para-o-chat">
+      <p class="rotulo">Leve para o chat do professor</p>
+      <p id="pergunta-chat">Me faça 5 perguntas sobre intervalos simples, começando por 3ª maiores e menores, e me corrija a cada resposta.</p>
+      <button type="button" id="copiar-pergunta" class="secundario">Copiar pergunta</button>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <p>Aula I08 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
+</footer>
+
+<script type="application/json" id="dados-aula">{"codigo": "I08", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-do-mi-melodico": {"id": "ex-do-mi-melodico", "titulo": "Intervalo melódico ascendente", "legenda": "Primeiro Dó, depois Mi: a melodia sobe.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC2 E2 |]\n", "andamento": 72, "eventos": [{"midis": [60], "duracao": 2.0}, {"midis": [64], "duracao": 2.0}]}, "ex-mi-do-descendente": {"id": "ex-mi-do-descendente", "titulo": "Intervalo melódico descendente", "legenda": "Primeiro Mi, depois Dó: a melodia desce. As notas são as mesmas do exemplo anterior.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nE2 C2 |]\n", "andamento": 72, "eventos": [{"midis": [64], "duracao": 2.0}, {"midis": [60], "duracao": 2.0}]}, "ex-do-mi-harmonico": {"id": "ex-do-mi-harmonico", "titulo": "Intervalo harmônico", "legenda": "Dó e Mi ao mesmo tempo. Na partitura, as notas ficam empilhadas.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CE]4 |]\n", "andamento": 72, "eventos": [{"midis": [60, 64], "duracao": 4.0}]}, "ex-escada-de-do": {"id": "ex-escada-de-do", "titulo": "De Dó até cada nota da escala", "legenda": "Dó fica embaixo e a nota de cima sobe: 2ª, 3ª, 4ª, 5ª, 6ª, 7ª e 8ª.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CD] [CE] [CF] [CG] | [CA] [CB] [Cc]2 |]\n", "andamento": 60, "eventos": [{"midis": [60, 62], "duracao": 1.0}, {"midis": [60, 64], "duracao": 1.0}, {"midis": [60, 65], "duracao": 1.0}, {"midis": [60, 67], "duracao": 1.0}, {"midis": [60, 69], "duracao": 1.0}, {"midis": [60, 71], "duracao": 1.0}, {"midis": [60, 72], "duracao": 2.0}]}, "ex-3M-do-mi": {"id": "ex-3M-do-mi", "titulo": "3ª maior: Dó–Mi (4 semitons)", "legenda": "Um som aberto e luminoso.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC E [CE]2 |]\n", "andamento": 72, "eventos": [{"midis": [60], "duracao": 1.0}, {"midis": [64], "duracao": 1.0}, {"midis": [60, 64], "duracao": 2.0}]}, "ex-3m-re-fa": {"id": "ex-3m-re-fa", "titulo": "3ª menor: Ré–Fá (3 semitons)", "legenda": "Um som mais escuro e fechado. Ouça os dois exemplos em seguida para comparar.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nD F [DF]2 |]\n", "andamento": 72, "eventos": [{"midis": [62], "duracao": 1.0}, {"midis": [65], "duracao": 1.0}, {"midis": [62, 65], "duracao": 2.0}]}, "ex-escala-do-maior": {"id": "ex-escala-do-maior", "titulo": "Escala de Dó maior", "legenda": "Da tônica Dó4 até Dó5.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC D E F | G A B c |]\n", "andamento": 84, "eventos": [{"midis": [60], "duracao": 1.0}, {"midis": [62], "duracao": 1.0}, {"midis": [64], "duracao": 1.0}, {"midis": [65], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [71], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}]}, "ex-re-fa-sustenido-fa": {"id": "ex-re-fa-sustenido-fa", "titulo": "Ré–Fá♯ e depois Ré–Fá", "legenda": "Primeiro a 3ª maior (Ré–Fá♯), depois a 3ª menor (Ré–Fá). Só a nota de cima muda, um semitom.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[D^F]2 [D=F]2 |]\n", "andamento": 66, "eventos": [{"midis": [62, 66], "duracao": 2.0}, {"midis": [62, 65], "duracao": 2.0}]}, "ex-parabens": {"id": "ex-parabens", "titulo": "2ª maior: Parabéns a você", "legenda": "\"Pa-ra-**béns**\": as duas primeiras sílabas repetem a nota, e \"béns\" sobe uma 2ª maior.", "abc": "X:1\nM:3/4\nL:1/4\nK:C\nG3/4 G/4 | A G c | B2 |]\n", "andamento": 96, "eventos": [{"midis": [67], "duracao": 0.75}, {"midis": [67], "duracao": 0.25}, {"midis": [69], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [71], "duracao": 2.0}]}, "ex-saints": {"id": "ex-saints", "titulo": "3ª maior: When the Saints Go Marching In", "legenda": "\"Oh, **when** the saints\": de \"Oh\" para \"when\" a melodia sobe uma 3ª maior.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC E F | G4 |]\n", "andamento": 120, "eventos": [{"midis": [60], "duracao": 1.0}, {"midis": [64], "duracao": 1.0}, {"midis": [65], "duracao": 1.0}, {"midis": [67], "duracao": 4.0}]}, "ex-marcha-nupcial": {"id": "ex-marcha-nupcial", "titulo": "4ª justa: Marcha nupcial (Wagner)", "legenda": "\"Lá **vem** a noiva\": de \"Lá\" para \"vem\" a melodia sobe uma 4ª justa.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nG | c3/4 c/4 c2 |]\n", "andamento": 72, "eventos": [{"midis": [67], "duracao": 1.0}, {"midis": [72], "duracao": 0.75}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 2.0}]}, "ex-brilha-brilha": {"id": "ex-brilha-brilha", "titulo": "5ª justa: Brilha, brilha, estrelinha", "legenda": "\"Bri-lha, **bri**-lha\": do segundo para o terceiro som a melodia sobe uma 5ª justa.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC C G G | A A G2 |]\n", "andamento": 96, "eventos": [{"midis": [60], "duracao": 1.0}, {"midis": [60], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [69], "duracao": 1.0}, {"midis": [67], "duracao": 2.0}]}, "ex-q-re-fa": {"id": "ex-q-re-fa", "titulo": "Ré e Fá", "legenda": "Ré–Fá, 3ª menor.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nD2 F2 |]\n", "andamento": 72, "eventos": [{"midis": [62], "duracao": 2.0}, {"midis": [65], "duracao": 2.0}]}, "ex-q-mi-si": {"id": "ex-q-mi-si", "titulo": "Mi e Si juntos", "legenda": "Mi–Si, 5ª justa.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[EB]4 |]\n", "andamento": 72, "eventos": [{"midis": [64, 71], "duracao": 4.0}]}, "ex-p-5J": {"id": "ex-p-5J", "titulo": "Intervalo para identificar", "legenda": "Dó–Sol, 5ª justa.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC2 G2 |]\n", "andamento": 72, "eventos": [{"midis": [60], "duracao": 2.0}, {"midis": [67], "duracao": 2.0}]}, "ex-p-3m": {"id": "ex-p-3m", "titulo": "Intervalo para identificar", "legenda": "Lá–Dó, 3ª menor.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[Ac]4 |]\n", "andamento": 72, "eventos": [{"midis": [69, 72], "duracao": 4.0}]}, "ex-p-4J": {"id": "ex-p-4J", "titulo": "Intervalo para identificar", "legenda": "Sol–Dó, 4ª justa.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nG2 c2 |]\n", "andamento": 72, "eventos": [{"midis": [67], "duracao": 2.0}, {"midis": [72], "duracao": 2.0}]}, "ex-p-8J": {"id": "ex-p-8J", "titulo": "Intervalo para identificar", "legenda": "Dó4–Dó5, 8ª justa.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nC2 c2 |]\n", "andamento": 72, "eventos": [{"midis": [60], "duracao": 2.0}, {"midis": [72], "duracao": 2.0}]}}, "teclados": {"t-1-1": {"de": 60, "ate": 71, "destaque": [{"midi": 60, "nome": "Dó"}, {"midi": 62, "nome": "Ré"}, {"midi": 64, "nome": "Mi"}]}, "t-2-3": {"de": 60, "ate": 71, "destaque": [{"midi": 62, "nome": "Ré"}, {"midi": 65, "nome": "Fá"}]}, "t-3-1": {"de": 60, "ate": 72, "destaque": [{"midi": 60, "nome": "Dó"}, {"midi": 62, "nome": "Ré"}, {"midi": 64, "nome": "Mi"}, {"midi": 65, "nome": "Fá"}, {"midi": 67, "nome": "Sol"}, {"midi": 69, "nome": "Lá"}, {"midi": 71, "nome": "Si"}, {"midi": 72, "nome": "Dó"}]}}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "semitons", "correta": 2}, {"indice": 1, "tipo": "multipla_escolha", "conceito": "qualidade-maior-menor", "exemplo": "ex-q-re-fa", "correta": 1}, {"indice": 2, "tipo": "multipla_escolha", "conceito": "qualidade-justa", "exemplo": "ex-q-mi-si", "correta": 1}, {"indice": 3, "tipo": "multipla_escolha", "conceito": "qualidade-justa", "correta": 2}, {"indice": 4, "tipo": "multipla_escolha", "conceito": "semitons", "correta": 0}, {"indice": 5, "tipo": "teclado", "conceito": "qualidade-justa", "base": 62, "alvo": 69, "alvo_nome": "Lá", "intervalo_nome": "5ª justa", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 62, "nome": "Ré"}]}}, {"indice": 6, "tipo": "teclado", "conceito": "qualidade-maior-menor", "base": 65, "alvo": 69, "alvo_nome": "Lá", "intervalo_nome": "3ª maior", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 65, "nome": "Fá"}]}}, {"indice": 7, "tipo": "teclado", "conceito": "semitons", "base": 64, "alvo": 65, "alvo_nome": "Fá", "intervalo_nome": "2ª menor", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 64, "nome": "Mi"}]}}, {"indice": 8, "tipo": "teclado", "conceito": "qualidade-maior-menor", "base": 69, "alvo": 72, "alvo_nome": "Dó", "intervalo_nome": "3ª menor", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 69, "nome": "Lá"}]}}, {"indice": 9, "tipo": "percepcao", "conceito": "percepcao-de-intervalos", "exemplo": "ex-p-5J", "correta": 2}, {"indice": 10, "tipo": "percepcao", "conceito": "percepcao-de-intervalos", "exemplo": "ex-p-3m", "correta": 1}, {"indice": 11, "tipo": "percepcao", "conceito": "percepcao-de-intervalos", "exemplo": "ex-p-4J", "correta": 1}, {"indice": 12, "tipo": "percepcao", "conceito": "percepcao-de-intervalos", "exemplo": "ex-p-8J", "correta": 3}]}</script>
+<script src="https://cdn.jsdelivr.net/npm/abcjs@6.7.1/dist/abcjs-basic-min.js"></script>
+<script>
+/* Aula interativa: partitura (abcjs), som sintetizado no navegador (piano ou violão),
+   teclado clicável e exercícios com correção imediata. Sem dependências além do abcjs. */
+(function () {
+  "use strict";
+
+  var dados = JSON.parse(document.getElementById("dados-aula").textContent);
+
+  function guardar(chave, valor) { try { localStorage.setItem(chave, valor); } catch (e) { /* sem armazenamento */ } }
+  function ler(chave) { try { return localStorage.getItem(chave); } catch (e) { return null; } }
+
+  var estado = {
+    timbre: ler("music-tutor:timbre") || dados.preferencias.timbre || "piano",
+    fatorAndamento: 1
+  };
+
+  /* ------------------------------------------------------------ Som */
+  var Som = (function () {
+    var ctx = null, saidas = {}, cache = new Map(), ativos = new Set();
+
+    function contexto() {
+      if (!ctx) {
+        var AC = window.AudioContext || window.webkitAudioContext;
+        ctx = new AC();
+        var comp = ctx.createDynamicsCompressor();
+        comp.threshold.value = -14; comp.ratio.value = 3;
+        var mestre = ctx.createGain(); mestre.gain.value = 0.9;
+        mestre.connect(comp); comp.connect(ctx.destination);
+
+        var piano = ctx.createBiquadFilter(); piano.type = "lowpass"; piano.frequency.value = 9000;
+        piano.connect(mestre);
+
+        var corpo1 = ctx.createBiquadFilter(); corpo1.type = "peaking"; corpo1.frequency.value = 105; corpo1.Q.value = 1.4; corpo1.gain.value = 4;
+        var corpo2 = ctx.createBiquadFilter(); corpo2.type = "peaking"; corpo2.frequency.value = 230; corpo2.Q.value = 1.2; corpo2.gain.value = 2.5;
+        var brilho = ctx.createBiquadFilter(); brilho.type = "lowpass"; brilho.frequency.value = 4200;
+        corpo1.connect(corpo2); corpo2.connect(brilho); brilho.connect(mestre);
+        saidas = { piano: piano, violao: corpo1 };
+      }
+      if (ctx.state === "suspended") ctx.resume();
+      return ctx;
+    }
+
+    function freq(m) { return 440 * Math.pow(2, (m - 69) / 12); }
+
+    function normalizar(dados, alvo) {
+      var pico = 0;
+      for (var i = 0; i < dados.length; i++) { var a = Math.abs(dados[i]); if (a > pico) pico = a; }
+      if (pico > 0) { var k = alvo / pico; for (var j = 0; j < dados.length; j++) dados[j] *= k; }
+    }
+
+    // Piano: soma de parciais levemente inarmônicos, duas cordas desafinadas e batida do martelo.
+    function bufferPiano(m) {
+      var sr = ctx.sampleRate, f0 = freq(m);
+      var dur = Math.max(1.6, Math.min(4.5, 4.5 - (m - 48) * 0.06));
+      var n = Math.floor(sr * dur), dados = new Float32Array(n);
+      var B = 0.00012 * Math.pow(2, (m - 48) / 18);
+      var limite = Math.min(7000, sr / 2 - 500);
+      for (var h = 1; h <= 40; h++) {
+        var fh = h * f0 * Math.sqrt(1 + B * h * h);
+        if (fh > limite) break;
+        var amp = Math.pow(h, -1.15) * Math.abs(Math.sin(Math.PI * h * 0.12)) * (1 + 0.6 / h);
+        var d1 = (0.55 + 0.32 * h) * Math.pow(f0 / 261.6, 0.55);
+        var d2 = d1 * 0.16;
+        [0.9996, 1.0004].forEach(function (desv) {
+          var w = 2 * Math.PI * fh * desv / sr;
+          var c = Math.cos(w), s = Math.sin(w);
+          var fase = Math.random() * 2 * Math.PI;
+          var re = Math.cos(fase), im = Math.sin(fase);
+          var e1 = Math.exp(-d1 / sr), e2 = Math.exp(-d2 / sr), a1 = 0.72 * amp * 0.5, a2 = 0.28 * amp * 0.5;
+          for (var i = 0; i < n; i++) {
+            dados[i] += (a1 + a2) * im;
+            var nre = re * c - im * s; im = re * s + im * c; re = nre;
+            a1 *= e1; a2 *= e2;
+          }
+        });
+      }
+      var ataque = Math.floor(sr * 0.002), martelo = Math.floor(sr * 0.018), lp = 0;
+      for (var i = 0; i < n; i++) {
+        if (i < martelo) { lp += 0.25 * ((Math.random() * 2 - 1) - lp); dados[i] += lp * 0.05 * (1 - i / martelo); }
+        if (i < ataque) dados[i] *= i / ataque;
+      }
+      normalizar(dados, 0.42);
+      return dados;
+    }
+
+    // Violão: Karplus-Strong com atraso fracionário para manter a afinação nas notas agudas.
+    function bufferViolao(m) {
+      var sr = ctx.sampleRate, f0 = freq(m);
+      var dur = Math.max(1.4, Math.min(3.8, 3.8 - (m - 40) * 0.05));
+      var n = Math.floor(sr * dur), y = new Float32Array(n);
+      var P = sr / f0 - 0.5;
+      var L = Math.ceil(P) + 2, lp = 0;
+      for (var i = 0; i < L; i++) { lp += 0.55 * ((Math.random() * 2 - 1) - lp); y[i] = lp; }
+      var pos = Math.max(1, Math.round(P * 0.18));
+      for (var k = L - 1; k >= pos; k--) y[k] -= 0.6 * y[k - pos];
+      var t60 = Math.max(0.9, 3.2 - (m - 40) * 0.05);
+      var g = Math.pow(10, -3 / (t60 * f0));
+      for (var t = L; t < n; t++) {
+        var d = t - P, i0 = Math.floor(d), fr = d - i0;
+        var a = y[i0] * (1 - fr) + y[i0 + 1] * fr;
+        var b = y[i0 - 1] * (1 - fr) + y[i0] * fr;
+        y[t] = g * 0.5 * (a + b);
+      }
+      var ataque = Math.floor(sr * 0.003);
+      for (var j = 0; j < ataque; j++) y[j] *= j / ataque;
+      normalizar(y, 0.5);
+      return y;
+    }
+
+    function buffer(m, timbre) {
+      var chave = timbre + ":" + m;
+      if (!cache.has(chave)) {
+        var dadosSom = timbre === "violao" ? bufferViolao(m) : bufferPiano(m);
+        var b = ctx.createBuffer(1, dadosSom.length, ctx.sampleRate);
+        b.copyToChannel(dadosSom, 0);
+        cache.set(chave, b);
+      }
+      return cache.get(chave);
+    }
+
+    function nota(m, quando, duracao, timbre, intensidade) {
+      var fonte = ctx.createBufferSource();
+      fonte.buffer = buffer(m, timbre);
+      var ganho = ctx.createGain();
+      ganho.gain.setValueAtTime(intensidade, quando);
+      var fim = quando + duracao;
+      if (timbre === "violao") ganho.gain.setTargetAtTime(0, fim + 0.1, 0.22);
+      else ganho.gain.setTargetAtTime(0, fim, 0.09);
+      fonte.connect(ganho); ganho.connect(saidas[timbre]);
+      fonte.start(quando);
+      fonte.stop(Math.min(quando + fonte.buffer.duration, fim + 1.5));
+      var registro = { fonte: fonte, ganho: ganho };
+      ativos.add(registro);
+      fonte.onended = function () { ativos.delete(registro); };
+    }
+
+    function parar() {
+      if (!ctx) return;
+      ativos.forEach(function (r) {
+        try { r.ganho.gain.cancelScheduledValues(ctx.currentTime); r.ganho.gain.setTargetAtTime(0, ctx.currentTime, 0.03); r.fonte.stop(ctx.currentTime + 0.2); } catch (e) { /* já parou */ }
+      });
+      ativos.clear();
+    }
+
+    // eventos: [{midis: [..], duracao: tempos}]
+    function tocarEventos(eventos, andamento, aoPasso, aoFim) {
+      var c = contexto();
+      var timbre = estado.timbre;
+      eventos.forEach(function (ev) { ev.midis.forEach(function (m) { buffer(m, timbre); }); });
+      var spb = 60 / (andamento * estado.fatorAndamento);
+      var inicio = c.currentTime + 0.08, t = inicio, timers = [];
+      eventos.forEach(function (ev, idx) {
+        var dur = ev.duracao * spb;
+        ev.midis.forEach(function (m) { nota(m, t, dur * 0.95, timbre, ev.midis.length > 1 ? 0.62 : 0.8); });
+        var atraso = (t - c.currentTime) * 1000;
+        timers.push(setTimeout(function () { if (aoPasso) aoPasso(idx); }, Math.max(0, atraso)));
+        t += dur;
+      });
+      timers.push(setTimeout(function () { if (aoFim) aoFim(); }, (t - c.currentTime) * 1000 + 250));
+      return { cancelar: function () { timers.forEach(clearTimeout); parar(); if (aoFim) aoFim(); } };
+    }
+
+    return { contexto: contexto, tocarEventos: tocarEventos, parar: parar };
+  })();
+
+  /* ------------------------------------------------------------ Partituras */
+  var elementosPorExemplo = {};
+  var abcjsPronto = typeof window.ABCJS !== "undefined";
+
+  function desenharPartituras() {
+    document.querySelectorAll("[data-partitura]").forEach(function (alvo) {
+      var id = alvo.getAttribute("data-partitura");
+      var ex = dados.exemplos[id];
+      if (!ex) return;
+      if (!abcjsPronto) {
+        alvo.textContent = "A partitura não carregou (sem conexão). O áudio continua funcionando.";
+        alvo.classList.add("sem-partitura");
+        return;
+      }
+      ABCJS.renderAbc(alvo, ex.abc, {
+        responsive: "resize",
+        add_classes: true,
+        paddingtop: 6,
+        paddingbottom: 6,
+        paddingleft: 0,
+        paddingright: 0,
+        foregroundColor: "currentColor",
+        staffwidth: 520
+      });
+      elementosPorExemplo[id] = elementosPorExemplo[id] || [];
+      elementosPorExemplo[id].push(alvo);
+    });
+  }
+
+  function marcarNota(id, idx) {
+    (elementosPorExemplo[id] || []).forEach(function (alvo) {
+      var notas = alvo.querySelectorAll(".abcjs-note, .abcjs-rest");
+      notas.forEach(function (el, i) { el.classList.toggle("tocando", i === idx); });
+    });
+  }
+
+  /* ------------------------------------------------------------ Botões de tocar */
+  var tocandoAgora = null;
+
+  function aviso(texto) {
+    var el = document.createElement("div");
+    el.className = "aviso-som";
+    el.setAttribute("role", "status");
+    el.textContent = texto;
+    document.body.appendChild(el);
+    setTimeout(function () { el.remove(); }, 3500);
+  }
+
+  function tocarComBotao(botao, eventos, andamento, aoPasso) {
+    if (tocandoAgora && tocandoAgora.botao === botao) { tocandoAgora.controle.cancelar(); return; }
+    if (tocandoAgora) tocandoAgora.controle.cancelar();
+    var texto = botao.querySelector(".texto"), original = texto ? texto.textContent : "";
+    botao.classList.add("ativo");
+    if (texto) texto.textContent = "Parar";
+    var registro = { botao: botao };
+    try {
+      registro.controle = Som.tocarEventos(eventos, andamento, aoPasso, function () {
+        botao.classList.remove("ativo");
+        if (texto) texto.textContent = original;
+        if (aoPasso) aoPasso(-1);
+        if (tocandoAgora === registro) tocandoAgora = null;
+      });
+      tocandoAgora = registro;
+    } catch (e) {
+      botao.classList.remove("ativo");
+      if (texto) texto.textContent = original;
+      aviso("Este navegador não liberou o áudio. Toque de novo ou verifique o volume.");
+    }
+  }
+
+  document.addEventListener("click", function (evento) {
+    var botao = evento.target.closest("[data-tocar]");
+    if (botao) {
+      var id = botao.getAttribute("data-tocar");
+      var ex = dados.exemplos[id];
+      tocarComBotao(botao, ex.eventos, ex.andamento, function (idx) { marcarNota(id, idx); });
+      return;
+    }
+    var botaoTeclado = evento.target.closest("[data-tocar-teclado]");
+    if (botaoTeclado) {
+      var t = teclados[botaoTeclado.getAttribute("data-tocar-teclado")];
+      var midis = t.dados.destaque.map(function (d) { return d.midi; }).sort(function (a, b) { return a - b; });
+      var eventos = midis.map(function (m) { return { midis: [m], duracao: 1 }; });
+      if (midis.length > 1) eventos.push({ midis: midis, duracao: 2 });
+      tocarComBotao(botaoTeclado, eventos, 80, function (idx) {
+        t.marcarSoando(idx < 0 ? [] : eventos[idx].midis);
+      });
+    }
+  });
+
+  /* ------------------------------------------------------------ Teclado */
+  var BRANCAS = { 0: "Dó", 2: "Ré", 4: "Mi", 5: "Fá", 7: "Sol", 9: "Lá", 11: "Si" };
+  var teclados = {};
+
+  function criarTeclado(el, info, aoClicar) {
+    var larguraBranca = 34, larguraPreta = 22, x = 0, teclas = {};
+    for (var m = info.de; m <= info.ate; m++) {
+      var classe = m % 12, branca = classe in BRANCAS;
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "tecla " + (branca ? "branca" : "preta");
+      b.dataset.midi = m;
+      var rotulo = document.createElement("span");
+      rotulo.className = "nome";
+      if (branca) {
+        b.style.left = x + "px";
+        b.style.width = larguraBranca + "px";
+        if (classe === 0) rotulo.textContent = "Dó" + (Math.floor(m / 12) - 1);
+        x += larguraBranca;
+      } else {
+        b.style.left = (x - larguraPreta / 2) + "px";
+        b.style.width = larguraPreta + "px";
+      }
+      b.setAttribute("aria-label", branca ? BRANCAS[classe] + (Math.floor(m / 12) - 1) : "tecla preta");
+      b.appendChild(rotulo);
+      el.appendChild(b);
+      teclas[m] = b;
+    }
+    el.style.width = x + "px";
+    info.destaque.forEach(function (d) {
+      var tecla = teclas[d.midi];
+      if (!tecla) return;
+      tecla.classList.add("destaque");
+      tecla.querySelector(".nome").textContent = d.nome;
+      tecla.setAttribute("aria-label", d.nome + " (destacada)");
+    });
+    el.addEventListener("click", function (evento) {
+      var tecla = evento.target.closest(".tecla");
+      if (!tecla) return;
+      var midiTecla = Number(tecla.dataset.midi);
+      if (aoClicar && aoClicar(midiTecla, tecla) === false) return;
+      Som.tocarEventos([{ midis: [midiTecla], duracao: 1 }], 90);
+      tecla.classList.add("soando");
+      setTimeout(function () { tecla.classList.remove("soando"); }, 350);
+    });
+    return {
+      dados: info,
+      teclas: teclas,
+      marcarSoando: function (midis) {
+        Object.keys(teclas).forEach(function (k) { teclas[k].classList.toggle("soando", midis.indexOf(Number(k)) >= 0); });
+      }
+    };
+  }
+
+  /* ------------------------------------------------------------ Exercícios */
+  var placar = { respondidos: 0, acertos: 0, total: dados.exercicios.length };
+
+  function atualizarPlacar() {
+    var el = document.getElementById("placar");
+    if (!el) return;
+    el.textContent = placar.respondidos === 0
+      ? "Responda para ver seus acertos."
+      : "Acertos: " + placar.acertos + " de " + placar.respondidos + " respondidos (" + placar.total + " no total).";
+  }
+
+  function mostrarRetorno(artigo, certo, texto) {
+    var retorno = artigo.querySelector(".retorno");
+    var veredito = retorno.querySelector(".veredito");
+    veredito.textContent = texto;
+    veredito.className = "veredito " + (certo ? "certo" : "errado");
+    retorno.hidden = false;
+    var oculto = artigo.querySelector(".exemplo.oculto");
+    if (oculto) { oculto.hidden = false; }
+    placar.respondidos += 1;
+    if (certo) placar.acertos += 1;
+    atualizarPlacar();
+  }
+
+  function prepararOpcoes(artigo, exe) {
+    artigo.querySelectorAll(".opcao").forEach(function (botao) {
+      botao.addEventListener("click", function () {
+        var escolhida = Number(botao.dataset.opcao), certo = escolhida === exe.correta;
+        artigo.querySelectorAll(".opcao").forEach(function (b) {
+          b.disabled = true;
+          if (Number(b.dataset.opcao) === exe.correta) b.classList.add("certa");
+        });
+        if (!certo) botao.classList.add("errada");
+        mostrarRetorno(artigo, certo, certo ? "Isso mesmo." : "Ainda não. A resposta certa está marcada em verde.");
+      });
+    });
+  }
+
+  function prepararTecladoExercicio(artigo, exe) {
+    var el = artigo.querySelector("[data-teclado-exercicio]");
+    var respondido = false;
+    var teclado = criarTeclado(el, exe.teclado, function (midiTecla, tecla) {
+      if (respondido || midiTecla === exe.base) return true;
+      respondido = true;
+      var certo = midiTecla === exe.alvo;
+      tecla.classList.add(certo ? "acertou" : "errou");
+      if (certo) tecla.querySelector(".nome").textContent = exe.alvo_nome;
+      if (!certo) {
+        var alvo = teclado.teclas[exe.alvo];
+        if (alvo) { alvo.classList.add("acertou"); alvo.querySelector(".nome").textContent = exe.alvo_nome; }
+      }
+      Som.tocarEventos([{ midis: [exe.base], duracao: 1 }, { midis: [midiTecla], duracao: 1 }, { midis: [exe.base, midiTecla], duracao: 2 }], 90);
+      mostrarRetorno(artigo, certo, certo
+        ? "Isso mesmo: " + exe.alvo_nome + " forma uma " + exe.intervalo_nome + "."
+        : "Ainda não. A nota certa é " + exe.alvo_nome + ", marcada em verde.");
+      return false;
+    });
+    var base = teclado.teclas[exe.base];
+    if (base) { base.classList.add("base"); }
+    artigo.querySelector("[data-tocar-base]").addEventListener("click", function () {
+      Som.tocarEventos([{ midis: [exe.base], duracao: 1.5 }], 80);
+    });
+  }
+
+  /* ------------------------------------------------------------ Controles */
+  function aplicarTimbre(timbre) {
+    estado.timbre = timbre;
+    guardar("music-tutor:timbre", timbre);
+    document.querySelectorAll("[data-timbre]").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.dataset.timbre === timbre));
+    });
+  }
+
+  document.querySelectorAll("[data-timbre]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      aplicarTimbre(b.dataset.timbre);
+      Som.tocarEventos([{ midis: [60, 64, 67], duracao: 1.5 }], 80);
+    });
+  });
+
+  var andamento = document.getElementById("andamento");
+  if (andamento) {
+    andamento.addEventListener("input", function () {
+      estado.fatorAndamento = Number(andamento.value) / 100;
+      document.getElementById("andamento-valor").textContent = andamento.value + "%";
+    });
+  }
+
+  var copiar = document.getElementById("copiar-pergunta");
+  if (copiar) {
+    copiar.addEventListener("click", function () {
+      var texto = document.getElementById("pergunta-chat").textContent;
+      function selecionar() {
+        var r = document.createRange(); r.selectNodeContents(document.getElementById("pergunta-chat"));
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        copiar.textContent = "Texto selecionado";
+      }
+      try {
+        navigator.clipboard.writeText(texto).then(function () { copiar.textContent = "Copiada"; }, selecionar);
+      } catch (e) { selecionar(); }
+    });
+  }
+
+  /* ------------------------------------------------------------ Início */
+  aplicarTimbre(estado.timbre);
+  desenharPartituras();
+  document.querySelectorAll("[data-teclado]").forEach(function (el) {
+    var id = el.getAttribute("data-teclado");
+    teclados[id] = criarTeclado(el, dados.teclados[id]);
+  });
+  dados.exercicios.forEach(function (exe) {
+    var artigo = document.querySelector('[data-exercicio="' + exe.indice + '"]');
+    if (!artigo) return;
+    if (exe.tipo === "teclado") prepararTecladoExercicio(artigo, exe);
+    else prepararOpcoes(artigo, exe);
+  });
+  atualizarPlacar();
+})();
+
+</script>
+</body>
+</html>
