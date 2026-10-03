@@ -108,7 +108,11 @@
       <div class="teclado-rolagem"><div class="teclado" data-teclado="t-{{ i }}-{{ j }}"></div></div>
       <figcaption>
         <span>{{ bloco.legenda | md_linha | safe }}</span>
-        <button type="button" class="tocar pequeno" data-tocar-teclado="t-{{ i }}-{{ j }}"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir as notas</span></button>
+        <span class="acoes-instrumento">
+          <button type="button" class="tocar pequeno" data-tocar-teclado="t-{{ i }}-{{ j }}"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir as notas</span></button>
+          <button type="button" class="secundario" data-montar-acorde="t-{{ i }}-{{ j }}" aria-pressed="false">Montar acorde</button>
+          <button type="button" class="tocar pequeno" data-tocar-acorde="t-{{ i }}-{{ j }}" hidden><span class="icone" aria-hidden="true"></span><span class="texto">Tocar juntas</span></button>
+        </span>
       </figcaption>
     </figure>
     {% endif %}
