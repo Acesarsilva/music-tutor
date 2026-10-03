@@ -20,7 +20,7 @@ Este repositório começa pela peça central: o gerador de aulas.
 apps/api/            backend Python: teoria, validação, gerador e CLI
 curriculo/teoria/    um YAML por módulo do currículo
 templates-aula/      template HTML, CSS e JavaScript das aulas
-aulas-exemplo/       aula piloto I08 (JSON validado e HTML gerado)
+aulas-exemplo/       aulas I06, I07, I08 (piloto) e I09 (JSON validado e HTML gerado)
 .claude/skills/      skills do Claude para escrever, revisar e dar aulas (CC BY-SA 4.0)
 ```
 
