@@ -3,6 +3,7 @@
     python -m music_tutor validar aulas-exemplo/I08-intervalos-simples.json
     python -m music_tutor renderizar aulas-exemplo/I08-intervalos-simples.json -o aula.html --timbre violao
     python -m music_tutor gerar I08 -o aula.json            (precisa de ANTHROPIC_API_KEY)
+    python -m music_tutor sincronizar-curriculo              (precisa de DATABASE_URL)
 """
 
 from __future__ import annotations
@@ -40,6 +41,8 @@ def main(argv: list[str] | None = None) -> int:
     p_ger.add_argument("--perfil", help="JSON com o perfil do aluno")
     p_ger.add_argument("--html", help="também renderiza o HTML neste caminho")
 
+    sub.add_parser("sincronizar-curriculo", help="copia os módulos de curriculo/ para a tabela modules do banco")
+
     args = parser.parse_args(argv)
 
     if args.comando == "validar":
@@ -71,6 +74,22 @@ def main(argv: list[str] | None = None) -> int:
             timbre = (perfil or {}).get("timbre", "piano")
             Path(args.html).write_text(renderizar(aula, timbre=timbre), encoding="utf-8")
             print(f"HTML salvo em {args.html}")
+        return 0
+
+    if args.comando == "sincronizar-curriculo":
+        import os
+
+        import psycopg
+
+        from .app.curriculo import ler_modulos, sincronizar
+
+        url = os.environ.get("DATABASE_URL")
+        if not url:
+            print("defina DATABASE_URL (conexão direta do Supabase, como dono do banco)", file=sys.stderr)
+            return 1
+        with psycopg.connect(url, prepare_threshold=None) as conn:
+            total = sincronizar(conn, ler_modulos())
+        print(f"{total} módulos sincronizados")
         return 0
 
     return 1
