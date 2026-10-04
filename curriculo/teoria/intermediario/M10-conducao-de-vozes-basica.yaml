@@ -1,0 +1,30 @@
+codigo: M10
+titulo: Condução de vozes básica
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - M04  # Inversões de tríades
+  - M09  # Cadências
+objetivos:
+  - Reconhecer os movimentos entre duas vozes (paralelo, direto, contrário e oblíquo)
+  - Ligar acordes mantendo as notas comuns e movendo as outras pelo caminho mais curto
+  - Reconhecer e evitar quintas e oitavas paralelas
+  - Resolver a sensível e a 7ª do acorde V7
+conceitos:
+  - tipos-de-movimento
+  - notas-comuns
+  - caminho-mais-curto
+  - quintas-oitavas-paralelas
+  - resolucao-do-v7
+  - percepcao-movimento
+fora_do_escopo:
+  - Regras completas do coral a quatro vozes (dobramentos, cruzamento de vozes)
+  - Contraponto por espécies (módulo A10)
+  - Voicings de jazz (módulo A09)
+exemplos_semente:
+  - "C para G mantendo o Sol"
+  - "Dó–Sol para Ré–Lá: quintas paralelas"
+  - "Si sobe para Dó, Fá desce para Mi"
+exercicios:
+  - multipla_escolha
+  - percepcao

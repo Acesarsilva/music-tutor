@@ -1,0 +1,738 @@
+{
+  "codigo": "M10",
+  "titulo": "Condução de vozes básica",
+  "nivel": "intermediario",
+  "resumo_curto": "Tipos de movimento, notas comuns, caminho mais curto, 5ªs e 8ªs paralelas e a resolução do V7.",
+  "prerequisitos": [
+    "Inversões de tríades (M04)",
+    "Cadências (M09)"
+  ],
+  "objetivos": [
+    "Reconhecer movimento **paralelo, direto, contrário e oblíquo**",
+    "Ligar acordes mantendo as **notas comuns**",
+    "Evitar **5ªs e 8ªs paralelas**",
+    "Resolver a **sensível** e a **7ª** do V7"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Que notas formam C, F e G?\n2. Que notas C e Am têm em comum?\n3. No G7, qual é a sensível e qual é a 7ª?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. C: Dó, Mi, Sol. F: Fá, Lá, Dó. G: Sol, Si, Ré.\n2. Dó e Mi.\n3. A sensível é Si (sobe para Dó); a 7ª é Fá (desce para Mi).",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "C, F, C: primeira versão",
+            "legenda": "Siga a nota de cima de cada acorde. Ela anda pouco ou salta?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "C, F, C: segunda versão",
+            "legenda": "Os mesmos acordes. E agora, as notas andam juntas ou cada uma por um caminho?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Na primeira, o Dó fica parado e as outras notas sobem um degrau: soa ligado, como um coro. Na segunda, tudo salta junto, e a passagem soa mais dura. Cuidar de como cada nota passa de um acorde ao outro é a **condução de vozes**.\n\nAo final, você vai ligar acordes pelo caminho mais suave e evitar os erros mais conhecidos."
+        }
+      ]
+    },
+    {
+      "titulo": "Quatro tipos de movimento",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Pense em cada nota do acorde como uma **voz** (como num coro). Entre duas vozes há quatro movimentos:\n\n- **paralelo**: as duas andam na mesma direção mantendo o mesmo intervalo;\n- **direto**: andam na mesma direção, mas o intervalo muda;\n- **contrário**: uma sobe e a outra desce;\n- **oblíquo**: uma fica parada e a outra se move."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-paralelo",
+            "titulo": "Paralelo",
+            "legenda": "3ªs que sobem juntas: Dó–Mi, Ré–Fá, Mi–Sol, Fá–Lá.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-contrario",
+            "titulo": "Contrário",
+            "legenda": "A de baixo sobe, a de cima desce: as vozes se aproximam.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F4",
+                  "G4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-obliquo",
+            "titulo": "Oblíquo",
+            "legenda": "O Dó fica; a voz de cima se move.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O movimento **contrário** e o **oblíquo** dão mais independência às vozes; o paralelo em 3ªs e 6ªs soa bonito e é muito usado em duetos."
+        }
+      ]
+    },
+    {
+      "titulo": "Quintas e oitavas paralelas",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Há um paralelo que a harmonia tradicional evita: **5ªs justas** e **8ªs** seguidas no mesmo par de vozes. Com esses intervalos tão \"abertos\", as duas vozes soam como uma só, e o acorde perde uma voz."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-quintas",
+            "titulo": "5ªs paralelas",
+            "legenda": "Dó–Sol, Ré–Lá, Mi–Si, Fá–Dó: as vozes se fundem num som oco.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F4",
+                  "C5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 72,
+            "intervalo": {
+              "de": "C4",
+              "para": "G4",
+              "codigo": "5J"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-oitavas",
+            "titulo": "8ªs paralelas",
+            "legenda": "Duas vozes que viram uma só, oitava acima.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "E5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F4",
+                  "F5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 72,
+            "intervalo": {
+              "de": "C4",
+              "para": "C5",
+              "codigo": "8J"
+            }
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Na música popular, 5ªs e 8ªs paralelas aparecem de propósito, como nos power chords do rock. A regra vale para escrever vozes independentes, como num coro ou num arranjo de cordas."
+        }
+      ]
+    },
+    {
+      "titulo": "Notas comuns e caminho mais curto",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Duas regras simples resolvem quase toda ligação entre acordes:\n\n1. **Mantenha as notas comuns** na mesma voz.\n2. **Mova as outras pelo caminho mais curto**, de preferência por grau conjunto (um degrau)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-c-g",
+            "titulo": "C, G, C",
+            "legenda": "O Sol fica no alto; o Dó desce a Si e o Mi desce a Ré. Depois, tudo volta.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "B3",
+                  "D4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "No **V7–I**, duas notas têm caminho certo: a **sensível** (Si) **sobe** para a tônica (Dó), e a **7ª** (Fá) **desce** um degrau (para Mi)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-v7-i",
+            "titulo": "Si–Fá para Dó–Mi",
+            "legenda": "O trítono do G7 se resolve: cada nota anda meio tom.",
+            "eventos": [
+              {
+                "notas": [
+                  "F4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "C5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60,
+            "intervalo": {
+              "de": "F4",
+              "para": "B4",
+              "codigo": "4A"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: ligar C a Am",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja o caminho completo, com o motivo de cada passo. Comece de Dó–Mi–Sol.\n\n1. **Ache as notas comuns**: C (Dó, Mi, Sol) e Am (Lá, Dó, Mi) dividem Dó e Mi. Elas ficam.\n2. **Mova a nota que sobra pelo caminho mais curto**: Sol sobe um tom até Lá.\n3. **Confira as paralelas**: só uma voz se moveu, então não há 5ªs nem 8ªs paralelas. Resultado: Dó–Mi–Lá."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-resolvido",
+            "titulo": "C para Am",
+            "legenda": "Só o Sol se move, para Lá.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "A4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que manter as notas comuns deixa a passagem mais suave?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque o ouvido acompanha cada voz. Se uma nota já está soando e continua no acorde seguinte, ela liga os dois acordes, e as outras vozes andam pouco.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **C para F**, de Dó–Mi–Sol: Dó é comum; Mi sobe a Fá e Sol sobe a Lá. Há paralelas?\n\nE agora dois passos são seus: **C para Em**, de Dó–Mi–Sol."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "C para F: Mi–Sol (3ª) vira Fá–Lá (3ª), uma 3ª paralela, que é permitida. **Sem 5ªs nem 8ªs paralelas**: Dó–Fá–Lá.\n\nC para Em: comuns Mi e Sol ficam; Dó desce a Si. Resultado: **Si–Mi–Sol**, sem paralelas.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega ligou C a F assim:\n\n> \"Dó–Mi–Sol vai para Fá–Lá–Dó, todas as vozes subindo juntas. Fica bem uniforme.\"\n\nOnde está o erro, por que está errado e qual é a ligação melhor?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A voz de baixo e a de cima formam Dó–Sol (5ª justa) e depois Fá–Dó (outra 5ª justa): **5ªs paralelas**. Além disso, o Dó, nota comum, foi abandonado. Melhor: manter o Dó e subir as outras por grau, **Dó–Fá–Lá**.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma voz sobe e a outra desce. Que movimento é este?",
+      "opcoes": [
+        "Contrário",
+        "Paralelo",
+        "Oblíquo",
+        "Direto"
+      ],
+      "correta": 0,
+      "explicacao": "Direções opostas: movimento **contrário**. No oblíquo uma voz fica parada; no paralelo e no direto, as duas vão para o mesmo lado.",
+      "conceito": "tipos-de-movimento"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Há um problema de condução neste trecho. Qual?",
+      "opcoes": [
+        "5ªs paralelas",
+        "8ªs paralelas",
+        "Nenhum problema",
+        "Movimento oblíquo"
+      ],
+      "correta": 0,
+      "explicacao": "Dó–Sol vira Ré–Lá: duas **5ªs justas** seguidas nas mesmas vozes. As vozes se fundem.",
+      "conceito": "quintas-oitavas-paralelas",
+      "exemplo": {
+        "id": "exe-quintas",
+        "titulo": "Duas vozes",
+        "legenda": "Dó–Sol, Ré–Lá.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "G4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "D4",
+              "A4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 72
+      }
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça as duas vozes. Que movimento elas fazem?",
+      "exemplo": {
+        "id": "exe-contrario",
+        "titulo": "Duas vozes",
+        "legenda": "A de baixo sobe, a de cima desce: contrário.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "D4",
+              "B4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "E4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "F4",
+              "G4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Contrário",
+        "Paralelo",
+        "Oblíquo"
+      ],
+      "correta": 0,
+      "explicacao": "As vozes **se aproximam**: a grave sobe e a aguda desce. Movimento **contrário**.",
+      "conceito": "percepcao-movimento"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Ligando **C** (Dó–Mi–Sol) a **G**, qual nota deve ficar parada?",
+      "opcoes": [
+        "Sol",
+        "Dó",
+        "Mi",
+        "Nenhuma"
+      ],
+      "correta": 0,
+      "explicacao": "**Sol** está nos dois acordes: é a nota comum. Dó desce a Si e Mi desce a Ré.",
+      "conceito": "notas-comuns"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No **G7 → C**, para onde vai a sensível (Si)?",
+      "opcoes": [
+        "Sobe para Dó",
+        "Desce para Lá",
+        "Fica em Si",
+        "Sobe para Ré"
+      ],
+      "correta": 0,
+      "explicacao": "A sensível fica meio tom abaixo da tônica e **sobe para Dó**. A 7ª (Fá) é que desce, para Mi.",
+      "conceito": "resolucao-do-v7"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual ligação de **C para Am** segue melhor as regras?",
+      "opcoes": [
+        "Dó–Mi–Sol → Dó–Mi–Lá",
+        "Dó–Mi–Sol → Lá–Dó–Mi, todas subindo",
+        "Dó–Mi–Sol → Mi–Lá–Dó, saltando",
+        "Dó–Mi–Sol → Si–Ré–Sol"
+      ],
+      "correta": 0,
+      "explicacao": "Dó e Mi são comuns e ficam; só o Sol anda um tom até Lá. As outras opções saltam sem necessidade ou nem formam Am.",
+      "conceito": "caminho-mais-curto"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça as duas vozes. Uma delas fica parada?",
+      "exemplo": {
+        "id": "exe-obliquo",
+        "titulo": "Duas vozes",
+        "legenda": "O Dó fica; a de cima se move: oblíquo.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "F4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "G4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Sim: movimento oblíquo",
+        "Não: as duas se movem juntas"
+      ],
+      "correta": 0,
+      "explicacao": "A voz grave repete o **Dó** enquanto a aguda sobe e volta: movimento **oblíquo**.",
+      "conceito": "percepcao-movimento"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que a harmonia tradicional evita **8ªs paralelas**?",
+      "opcoes": [
+        "As duas vozes soam como uma só",
+        "Porque a 8ª é dissonante",
+        "Porque a 8ª não existe em acordes",
+        "Porque o som fica mais alto"
+      ],
+      "correta": 0,
+      "explicacao": "Na 8ª as notas são as mesmas; em paralelo, as duas vozes **se fundem** e o acorde perde independência. A 8ª não é dissonante.",
+      "conceito": "quintas-oitavas-paralelas"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No **G7 → C**, para onde vai a 7ª do acorde (Fá)?",
+      "opcoes": [
+        "Desce para Mi",
+        "Sobe para Sol",
+        "Fica em Fá",
+        "Sobe para Lá"
+      ],
+      "correta": 0,
+      "explicacao": "A 7ª **desce um degrau**: Fá → Mi. Junto com Si → Dó, ela desfaz o trítono.",
+      "conceito": "resolucao-do-v7"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Duas vozes sobem juntas: Dó–Mi, depois Ré–Fá. Que movimento é este?",
+      "opcoes": [
+        "Paralelo",
+        "Contrário",
+        "Oblíquo"
+      ],
+      "correta": 0,
+      "explicacao": "Mesma direção e mesmo intervalo (3ª): **paralelo**. 3ªs paralelas são permitidas e soam bem.",
+      "conceito": "tipos-de-movimento"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Dó–Mi–Sol vai a Fá–Lá–Dó, todas subindo. Qual é o problema?",
+      "opcoes": [
+        "5ªs paralelas entre a voz grave e a aguda",
+        "8ªs paralelas",
+        "A sensível não resolveu",
+        "Nenhum"
+      ],
+      "correta": 0,
+      "explicacao": "Dó–Sol (5ª justa) vira Fá–Dó (5ª justa): **5ªs paralelas**. A versão Dó–Fá–Lá evita isso e mantém o Dó.",
+      "conceito": "quintas-oitavas-paralelas"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a primeira coisa a procurar para ligar dois acordes?",
+      "opcoes": [
+        "As notas comuns",
+        "A nota mais aguda",
+        "O acorde mais grave",
+        "Uma 5ª justa"
+      ],
+      "correta": 0,
+      "explicacao": "Ache as **notas comuns** e mantenha-as; depois mova as outras pelo caminho mais curto.",
+      "conceito": "notas-comuns"
+    }
+  ],
+  "resumo": [
+    "Cada nota do acorde é uma **voz**; entre duas vozes o movimento é paralelo, direto, contrário ou oblíquo.",
+    "Mantenha as **notas comuns** e mova as outras pelo **caminho mais curto**.",
+    "Evite **5ªs justas e 8ªs paralelas**: as vozes se fundem. 3ªs e 6ªs paralelas são bem-vindas.",
+    "No **V7–I**, a sensível sobe para a tônica e a 7ª desce um degrau."
+  ],
+  "pergunta_para_chat": "Me dê dois acordes, um par de cada vez, para eu dizer como ligar as vozes, e aponte se eu criar 5ªs ou 8ªs paralelas."
+}

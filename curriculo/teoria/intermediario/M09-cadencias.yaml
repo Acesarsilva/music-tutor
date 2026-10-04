@@ -1,0 +1,30 @@
+codigo: M09
+titulo: Cadências
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - M07  # Funções harmônicas
+  - M08  # Progressões comuns
+objetivos:
+  - Entender a cadência como o fim de uma frase harmônica
+  - Reconhecer as cadências autêntica (V–I), plagal (IV–I), meia cadência (termina no V) e deceptiva (V–VI)
+  - Diferenciar cadência autêntica perfeita de imperfeita
+  - Reconhecer as cadências de ouvido pela sensação de fim, de pausa ou de surpresa
+conceitos:
+  - cadencia-autentica
+  - autentica-perfeita-imperfeita
+  - cadencia-plagal
+  - meia-cadencia
+  - cadencia-deceptiva
+  - percepcao-cadencia
+fora_do_escopo:
+  - Cadência frígia e outras cadências modais (módulo A06)
+  - Condução de vozes em detalhe (módulo M10)
+exemplos_semente:
+  - "G7 para C: cadência autêntica"
+  - "F para C: o amém dos hinos"
+  - "C, F, G: a frase para no V"
+  - "G7 para Am: a surpresa"
+exercicios:
+  - multipla_escolha
+  - percepcao
