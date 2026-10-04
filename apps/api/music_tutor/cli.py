@@ -3,6 +3,7 @@
     python -m music_tutor validar aulas-exemplo/I08-intervalos-simples.json
     python -m music_tutor renderizar aulas-exemplo/I08-intervalos-simples.json -o aula.html --timbre violao
     python -m music_tutor gerar I08 -o aula.json            (precisa de ANTHROPIC_API_KEY)
+    python -m music_tutor site -o dist                       (site estático com as aulas prontas)
     python -m music_tutor sincronizar-curriculo              (precisa de DATABASE_URL)
 """
 
@@ -41,6 +42,9 @@ def main(argv: list[str] | None = None) -> int:
     p_ger.add_argument("--perfil", help="JSON com o perfil do aluno")
     p_ger.add_argument("--html", help="também renderiza o HTML neste caminho")
 
+    p_site = sub.add_parser("site", help="gera o site estático com as aulas prontas")
+    p_site.add_argument("-o", "--saida", default="dist", help="pasta de saída (apagada e recriada)")
+
     sub.add_parser("sincronizar-curriculo", help="copia os módulos de curriculo/ para a tabela modules do banco")
 
     args = parser.parse_args(argv)
@@ -74,6 +78,13 @@ def main(argv: list[str] | None = None) -> int:
             timbre = (perfil or {}).get("timbre", "piano")
             Path(args.html).write_text(renderizar(aula, timbre=timbre), encoding="utf-8")
             print(f"HTML salvo em {args.html}")
+        return 0
+
+    if args.comando == "site":
+        from .site import gerar_site
+
+        total = gerar_site(Path(args.saida))
+        print(f"site com {total} aulas em {args.saida}")
         return 0
 
     if args.comando == "sincronizar-curriculo":

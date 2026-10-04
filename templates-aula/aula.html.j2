@@ -18,6 +18,10 @@
 {% endif %}
 <header class="barra">
   <div class="barra-interna">
+    {% if voltar %}
+    <style>.voltar { font-family: var(--f-titulo); font-weight: 600; color: var(--vinho); text-decoration: none; white-space: nowrap; }</style>
+    <a class="voltar" href="{{ voltar }}">← Aulas</a>
+    {% endif %}
     <p class="barra-aula"><span class="selo">{{ aula.codigo }}</span> {{ aula.titulo }}</p>
     <div class="controles">
       <div class="timbre" role="group" aria-label="Instrumento">

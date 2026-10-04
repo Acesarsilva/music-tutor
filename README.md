@@ -52,7 +52,21 @@ Exemplo de `perfil.json`:
 {"nivel": "iniciante", "timbre": "violao", "pontos_fracos": ["qualidade-maior-menor"]}
 ```
 
-## O app
+## Site das aulas (primeiro lançamento)
+
+O primeiro lançamento é um site estático, sem login: uma página com a lista de aulas por nível e uma página por
+aula, com partitura, áudio e exercícios corrigidos no navegador. Entra toda aula com JSON em `aulas-exemplo/`.
+
+```bash
+python -m music_tutor site -o dist     # gera o site em dist/
+python -m http.server -d dist 8000     # abre em http://localhost:8000
+```
+
+Na Vercel: importe o repositório com a raiz do projeto na raiz do repositório (Root Directory vazio). O
+`vercel.json` já define a instalação, o build e a pasta `dist`. Cada aula nova que entra na main publica
+sozinha; cada PR ganha uma prévia.
+
+## O app (fase seguinte)
 
 ```
 navegador ── login (Supabase Auth) ──> token
