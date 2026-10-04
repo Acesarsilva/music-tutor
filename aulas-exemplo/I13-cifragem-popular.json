@@ -1,0 +1,610 @@
+{
+  "codigo": "I13",
+  "titulo": "Cifragem popular",
+  "nivel": "iniciante",
+  "resumo_curto": "Como ler cifras de acordes: a letra, os símbolos de tríade, as sétimas, o baixo trocado e as notas acrescentadas.",
+  "prerequisitos": [
+    "Notas musicais (I02)",
+    "Tríades (I12)"
+  ],
+  "objetivos": [
+    "Ler a **letra** da cifra como a fundamental",
+    "Ler **m, °, +** e as sétimas **7, 7M, m7, m7(b5)**",
+    "Entender o **baixo trocado** (C/E) e os símbolos **9** e **sus4**",
+    "Montar no teclado ou no violão as notas de uma cifra"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quais notas formam a tríade de Dó maior? E a de Dó menor?\n2. Qual é a letra de Sol? E de Lá?\n3. Quantos semitons tem uma 7ª menor? E uma 7ª maior?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Dó, Mi, Sol; Dó, Mi♭, Sol.\n2. Sol é G; Lá é A.\n3. 10 e 11 semitons.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Ouça antes de qualquer nome",
+            "legenda": "Quatro acordes de Dó. Os dois últimos têm uma nota a mais em cima. Qual deles soa mais \"pedindo para ir\" a outro lugar?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Esses quatro acordes se escrevem **C**, **Cm**, **C7** e **C7M**. É assim que aparecem nas revistas de cifras, nos songbooks e nos sites de música: uma letra e alguns símbolos. O terceiro, C7, é o que mais pede para seguir em frente.\n\nAo final, você vai ler uma cifra e dizer quais notas tocar."
+        }
+      ]
+    },
+    {
+      "titulo": "A letra é a fundamental",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **letra** da cifra é a fundamental do acorde: C = Dó, D = Ré, E = Mi, F = Fá, G = Sol, A = Lá, B = Si. Um ♯ ou ♭ junto da letra faz parte do nome: **F♯** é Fá♯ maior, **B♭** é Si♭ maior.\n\nSozinha, a letra indica uma **tríade maior**."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Símbolos das tríades na cifra, com Dó de fundamental.",
+          "cabecalho": [
+            "Cifra",
+            "Acorde",
+            "Notas"
+          ],
+          "linhas": [
+            [
+              "C",
+              "Dó maior",
+              "Dó, Mi, Sol"
+            ],
+            [
+              "Cm",
+              "Dó menor",
+              "Dó, Mi♭, Sol"
+            ],
+            [
+              "C° ou Cdim",
+              "Dó diminuto",
+              "Dó, Mi♭, Sol♭"
+            ],
+            [
+              "C+ ou Caug",
+              "Dó aumentado",
+              "Dó, Mi, Sol♯"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Acordes com sétima",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O **7** acrescenta uma 4ª nota, a **sétima**, empilhada mais uma 3ª acima:\n\n- **7** sozinho é a **7ª menor**. **G7** = Sol, Si, Ré, **Fá**. É o acorde de dominante, muito usado antes de voltar à tônica.\n- **7M** (ou maj7) é a **7ª maior**. **C7M** = Dó, Mi, Sol, **Si**.\n- **m7** é tríade menor com 7ª menor. **Am7** = Lá, Dó, Mi, **Sol**.\n- **m7(b5)** é tríade diminuta com 7ª menor, o acorde **meio-diminuto**. **F♯m7(b5)** = Fá♯, Lá, Dó, **Mi**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-g7",
+            "titulo": "G7: Sol, Si, Ré, Fá",
+            "legenda": "Ouça como o Fá, a 7ª, deixa o acorde instável.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-c7m",
+            "titulo": "C7M: Dó, Mi, Sol, Si",
+            "legenda": "Um som suave e aberto, comum na bossa nova.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-fsm7b5",
+            "titulo": "F♯m7(b5): Fá♯, Lá, Dó, Mi",
+            "legenda": "Um som tenso e escuro: tríade diminuta com 7ª menor.",
+            "eventos": [
+              {
+                "notas": [
+                  "F#3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#3",
+                  "A3",
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "G7 no teclado: Sol, Si, Ré e Fá.",
+          "destaque": [
+            "G4",
+            "B4",
+            "D5",
+            "F5"
+          ],
+          "de": "F4",
+          "ate": "G5"
+        }
+      ]
+    },
+    {
+      "titulo": "Baixo trocado e notas acrescentadas",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **barra** indica a nota do **baixo**: **C/E** é Dó maior com **Mi** no baixo, a nota mais grave. O acorde continua sendo C; muda só a nota de baixo."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-c-sobre-e",
+            "titulo": "C e depois C/E",
+            "legenda": "O mesmo acorde. No segundo, a nota mais grave é Mi.",
+            "eventos": [
+              {
+                "notas": [
+                  "C3",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E3",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Dois símbolos comuns acrescentam ou trocam uma nota:\n\n- **9**: na cifra brasileira, **C9** costuma indicar Dó maior com a 9ª (o Ré, uma oitava acima) acrescentada: Dó, Mi, Sol, Ré. Com a sétima junto, escreve-se **C7(9)**.\n- **sus4**: a terça é trocada pela 4ª. **Csus4** = Dó, **Fá**, Sol."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sus4",
+            "titulo": "Csus4 e depois C",
+            "legenda": "O Fá do sus4 parece suspenso e se resolve descendo para o Mi.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "F4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo para ler uma cifra",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como ler **Dm7**, com o motivo de cada passo.\n\n1. **Letra**: D = Ré. É a fundamental.\n2. **Tríade**: o **m** pede tríade menor: Ré, Fá, Lá.\n3. **Sétima**: o **7** sem M é 7ª menor: 10 semitons acima de Ré, o **Dó**.\n4. **Notas**: Ré, Fá, Lá, Dó."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-dm7",
+            "titulo": "Dm7: Ré, Fá, Lá, Dó",
+            "legenda": "Tríade menor com 7ª menor.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** em Dm7, o \"m\" e o \"7\" falam da mesma coisa?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Não. O **m** fala da **terça** (menor). O **7** fala da **sétima** (menor, porque não tem M). São duas notas diferentes do acorde.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **A7**: (1) Lá; (2) tríade maior Lá, Dó♯, Mi; (3) qual é a 7ª?\n\nE agora dois passos são seus: **E7M**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A7: 7ª menor de Lá é **Sol**. Notas: Lá, Dó♯, Mi, Sol.\n\nE7M: tríade de Mi maior (Mi, Sol♯, Si) e 7ª maior, 11 semitons acima de Mi: **Ré♯**. Notas: Mi, Sol♯, Si, Ré♯.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega leu assim:\n\n> \"C7M quer dizer Dó menor com sétima, porque tem M.\"\n\nOnde está o erro, por que está errado e o que significa C7M?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ele confundiu **M** com **m**. O **m minúsculo**, logo depois da letra, indica tríade **menor**. O **M maiúsculo** junto do 7 indica **7ª maior**. C7M é Dó maior com 7ª maior: Dó, Mi, Sol, Si. Dó menor com 7ª menor seria Cm7.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais notas formam **Am**?",
+      "opcoes": [
+        "Lá, Dó, Mi",
+        "Lá, Dó♯, Mi",
+        "Lá, Dó, Mi♭",
+        "Dó, Mi, Sol"
+      ],
+      "correta": 0,
+      "explicacao": "A = Lá, e o **m** pede tríade menor: Lá, **Dó**, Mi. Dó♯ seria a terça de A maior.",
+      "conceito": "cifra-de-triade"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "G7: Sol4 está marcado. Clique na **sétima** do acorde.",
+      "nota_base": "G4",
+      "intervalo": "7m",
+      "direcao": "acima",
+      "explicacao": "O 7 sozinho é 7ª menor: 10 semitons acima de Sol, o **Fá**. Fá♯ seria a 7ª maior, de G7M.",
+      "conceito": "setima-menor",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça o acorde. Ele tem três notas diferentes ou quatro?",
+      "exemplo": {
+        "id": "exe-g7",
+        "titulo": "Acorde",
+        "legenda": "G7: Sol, Si, Ré, Fá, quatro notas.",
+        "eventos": [
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "F4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "três notas (tríade)",
+        "quatro notas (com sétima)"
+      ],
+      "correta": 1,
+      "explicacao": "É o **G7**: Sol, Si, Ré e a 7ª Fá. A sétima deixa o som mais tenso que o de uma tríade.",
+      "conceito": "setima-menor"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que significa **C/E**?",
+      "opcoes": [
+        "Dó maior com Mi no baixo",
+        "Dó maior ou Mi maior, à escolha",
+        "Dó e Mi tocados juntos, sem Sol"
+      ],
+      "correta": 0,
+      "explicacao": "A barra mostra o **baixo**: Dó maior (Dó, Mi, Sol) com **Mi** como nota mais grave.",
+      "conceito": "baixo-trocado"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "C7M: Dó4 está marcado. Clique na **sétima maior**.",
+      "nota_base": "C4",
+      "intervalo": "7M",
+      "direcao": "acima",
+      "explicacao": "7M é 7ª maior: 11 semitons acima de Dó, o **Si**, um semitom abaixo do Dó seguinte. Si♭ seria a 7ª do C7.",
+      "conceito": "setima-maior",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais notas formam **F♯m7(b5)**?",
+      "opcoes": [
+        "Fá♯, Lá, Dó, Mi",
+        "Fá♯, Lá, Dó♯, Mi",
+        "Fá♯, Lá♯, Dó, Mi",
+        "Fá, Lá, Dó, Mi♭"
+      ],
+      "correta": 0,
+      "explicacao": "Fá♯ menor com 5ª diminuta (b5): Fá♯, Lá, **Dó**. A 7ª menor de Fá♯ é Mi. Com Dó♯ seria F♯m7, sem o b5.",
+      "conceito": "meio-diminuto"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em **Dm7**, o que o **m** indica?",
+      "opcoes": [
+        "Que a terça é menor",
+        "Que a sétima é menor",
+        "Que o acorde é meio-diminuto"
+      ],
+      "correta": 0,
+      "explicacao": "O m minúsculo logo depois da letra fala da **terça**: tríade menor. A sétima menor vem do 7 sem M.",
+      "conceito": "cifra-de-triade"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça os dois acordes. O segundo é C ou C7?",
+      "exemplo": {
+        "id": "exe-c-c7",
+        "titulo": "Dois acordes",
+        "legenda": "C e depois C7, com o Si♭ em cima.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "Bb4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "C7",
+        "C"
+      ],
+      "correta": 0,
+      "explicacao": "O segundo tem uma nota a mais, o **Si♭**, e soa mais tenso: é **C7**.",
+      "conceito": "setima-menor"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Csus4: Dó4 está marcado. Clique na nota que entra **no lugar da terça**.",
+      "nota_base": "C4",
+      "intervalo": "4J",
+      "direcao": "acima",
+      "explicacao": "No sus4, a terça Mi dá lugar à **4ª, Fá**. Csus4 = Dó, Fá, Sol.",
+      "conceito": "notas-acrescentadas",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual cifra é **Si♭ maior**?",
+      "opcoes": [
+        "B♭",
+        "Bm",
+        "B",
+        "A♯m"
+      ],
+      "correta": 0,
+      "explicacao": "A letra B é Si, e o ♭ junto dela faz parte do nome: **B♭** é Si♭ maior. Bm seria Si menor.",
+      "conceito": "letra-e-fundamental"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na cifra brasileira, **C9** costuma indicar:",
+      "opcoes": [
+        "Dó maior com a 9ª (Ré) acrescentada",
+        "Dó com sétima e nona, sempre",
+        "Dó menor com 9ª"
+      ],
+      "correta": 0,
+      "explicacao": "C9 costuma ser Dó maior com o **Ré** acrescentado. Com a sétima junto, escreve-se C7(9).",
+      "conceito": "notas-acrescentadas"
+    }
+  ],
+  "resumo": [
+    "A **letra** é a fundamental; sozinha, indica tríade maior.",
+    "**m** = menor, **°** = diminuto, **+** = aumentado.",
+    "**7** = 7ª menor; **7M** = 7ª maior; **m7** = menor com 7ª menor; **m7(b5)** = meio-diminuto.",
+    "A **barra** mostra o baixo: C/E é Dó maior com Mi embaixo.",
+    "**9** acrescenta a 9ª; **sus4** troca a terça pela 4ª."
+  ],
+  "pergunta_para_chat": "Me dê cifras, uma de cada vez, para eu dizer as notas, e me dê uma dica antes de mostrar a resposta."
+}

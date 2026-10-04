@@ -1,0 +1,29 @@
+codigo: I16
+titulo: Percepção I
+nivel: iniciante
+assunto: teoria
+prerequisitos:
+  - I08  # Intervalos simples
+  - I12  # Tríades
+  - I05  # Pulso e compasso simples
+objetivos:
+  - Reconhecer de ouvido a tríade maior e a menor
+  - Reconhecer intervalos simples melódicos com cantigas de referência
+  - Fazer ditados rítmicos simples com semínimas, colcheias e mínimas
+conceitos:
+  - percepcao-maior-menor
+  - intervalos-de-ouvido
+  - referencias-cantigas
+  - ditado-ritmico
+  - pulso-de-ouvido
+fora_do_escopo:
+  - Ditado melódico (módulo intermediário)
+  - Tríades diminutas e aumentadas de ouvido
+  - Intervalos harmônicos compostos
+exemplos_semente:
+  - "C e Cm em sequência"
+  - "Cantigas de referência para 2ª, 3ª, 4ª, 5ª e 6ª"
+  - "Ditado de um compasso 2/4"
+exercicios:
+  - percepcao
+  - multipla_escolha

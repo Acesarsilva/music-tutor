@@ -1,0 +1,616 @@
+{
+  "codigo": "I14",
+  "titulo": "Campo harmônico maior (tríades)",
+  "nivel": "iniciante",
+  "resumo_curto": "As sete tríades que nascem da escala maior, a numeração romana e os acordes principais I, IV e V.",
+  "prerequisitos": [
+    "Escala maior (I07)",
+    "Tríades (I12)",
+    "Cifragem popular (I13)"
+  ],
+  "objetivos": [
+    "Montar a tríade de cada grau da escala maior",
+    "Reconhecer o padrão **maior, menor, menor, maior, maior, menor, diminuto**",
+    "Usar a **numeração romana**",
+    "Reconhecer **I, IV e V** e a progressão I–IV–V–I"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quais são as notas de Dó maior?\n2. Como se forma uma tríade?\n3. Que cifra tem a tríade Ré, Fá, Lá?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Dó, Ré, Mi, Fá, Sol, Lá, Si.\n2. Empilhando duas 3ªs: fundamental, terça e quinta.\n3. Dm: Ré–Fá é 3ª menor, e Ré–Lá é 5ª justa.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Ouça antes de qualquer nome",
+            "legenda": "Quatro acordes. O último soa como chegada? Qual deles mais \"pede\" a volta?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Os quatro acordes, **C, F, G e C**, usam só notas da escala de Dó maior. O G é o que mais pede a volta ao C. Os acordes que se formam com as notas de uma escala são o **campo harmônico** dela.\n\nAo final, você vai montar o campo harmônico de qualquer tonalidade maior e numerar os acordes."
+        }
+      ]
+    },
+    {
+      "titulo": "Uma tríade em cada grau",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Sobre cada nota da escala, empilhe duas 3ªs usando **só notas da escala**. Em Dó maior, a partir de Ré sai Ré, Fá, Lá; a partir de Si sai Si, Ré, Fá. Cada grau ganha a sua tríade."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-campo-do",
+            "titulo": "As tríades de Dó maior, grau por grau",
+            "legenda": "Ouça a qualidade mudar: maior, menor, menor, maior, maior, menor, diminuta, e o Dó de novo.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5",
+                  "E5",
+                  "G5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "O campo harmônico de Dó maior.",
+          "cabecalho": [
+            "Grau",
+            "Notas",
+            "Tipo",
+            "Cifra"
+          ],
+          "linhas": [
+            [
+              "I",
+              "Dó, Mi, Sol",
+              "maior",
+              "C"
+            ],
+            [
+              "ii",
+              "Ré, Fá, Lá",
+              "menor",
+              "Dm"
+            ],
+            [
+              "iii",
+              "Mi, Sol, Si",
+              "menor",
+              "Em"
+            ],
+            [
+              "IV",
+              "Fá, Lá, Dó",
+              "maior",
+              "F"
+            ],
+            [
+              "V",
+              "Sol, Si, Ré",
+              "maior",
+              "G"
+            ],
+            [
+              "vi",
+              "Lá, Dó, Mi",
+              "menor",
+              "Am"
+            ],
+            [
+              "vii°",
+              "Si, Ré, Fá",
+              "diminuta",
+              "B°"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O padrão é o mesmo em **qualquer** tonalidade maior: **maior, menor, menor, maior, maior, menor, diminuto**. Na **numeração romana**, os maiores ganham algarismos maiúsculos (I, IV, V), os menores, minúsculos (ii, iii, vi), e o diminuto leva ° (vii°)."
+        }
+      ]
+    },
+    {
+      "titulo": "Os acordes principais",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Três graus carregam a maior parte das músicas simples:\n\n- **I**, a **tônica**: o acorde de repouso.\n- **IV**, a **subdominante**: afasta da tônica.\n- **V**, a **dominante**: cria tensão e pede a volta ao I.\n\nCom I, IV e V dá para acompanhar muitas cantigas e canções populares."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-i-iv-v-i",
+            "titulo": "I–IV–V–I em Dó maior",
+            "legenda": "C, F, G, C: saída, afastamento, tensão e chegada.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Para acompanhar uma melodia, escolhe-se o acorde que contém a nota que está soando. No começo de *Marcha soldado* em Dó maior, Sol, Mi e Dó são as três notas de **C**, o I grau."
+        }
+      ]
+    },
+    {
+      "titulo": "Em outras tonalidades",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como montar o campo harmônico de **Sol maior**, com o motivo de cada passo.\n\n1. **Escala**: Sol, Lá, Si, Dó, Ré, Mi, Fá♯.\n2. **Padrão**: maior, menor, menor, maior, maior, menor, diminuto.\n3. **Cifras**: G, Am, Bm, C, D, Em, F♯°.\n4. **Confira o vii°**: Fá♯, Lá, Dó tem 3ª menor e 5ª diminuta. É diminuto mesmo."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-campo-sol",
+            "titulo": "Campo harmônico de Sol maior",
+            "legenda": "O mesmo padrão de qualidades, agora a partir de Sol.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5",
+                  "E5",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5",
+                  "F#5",
+                  "A5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5",
+                  "G5",
+                  "B5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#5",
+                  "A5",
+                  "C6"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G5",
+                  "B5",
+                  "D6"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que o padrão de qualidades é igual em todas as tonalidades maiores?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque toda escala maior tem a mesma fórmula, T–T–S–T–T–T–S. As 3ªs empilhadas sobre cada grau medem sempre os mesmos semitons, então as qualidades se repetem.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **Fá maior**: escala Fá, Sol, Lá, Si♭, Dó, Ré, Mi; padrão maior, menor, menor, maior, maior, menor, diminuto. Quais são as cifras?\n\nE agora dois passos são seus: o campo harmônico de **Ré maior**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Fá maior: **F, Gm, Am, B♭, C, Dm, E°**.\n\nRé maior: escala Ré, Mi, Fá♯, Sol, Lá, Si, Dó♯. Cifras: **D, Em, F♯m, G, A, Bm, C♯°**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Uma colega montou o campo de Ré maior assim:\n\n> \"D, Em, Fm, G, A, Bm, C°\"\n\nOnde está o erro, por que está errado e qual é o certo?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ela usou as notas naturais e esqueceu a **armadura de Ré maior** (Fá♯ e Dó♯). O iii grau é **F♯m** (Fá♯, Lá, Dó♯) e o vii° é **C♯°** (Dó♯, Mi, Sol). As tríades do campo usam só notas da escala.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a tríade do **vi grau** de Dó maior?",
+      "opcoes": [
+        "Am",
+        "A",
+        "Em",
+        "G"
+      ],
+      "correta": 0,
+      "explicacao": "Dó, Ré, Mi, Fá, Sol, **Lá**: o 6º grau. Lá, Dó, Mi tem 3ª menor: **Am**. Quem marca A usou Dó♯, que não está em Dó maior.",
+      "conceito": "triades-da-escala"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Em Ré maior, Ré4 está marcado. Clique na **fundamental do IV grau**.",
+      "nota_base": "D4",
+      "intervalo": "4J",
+      "direcao": "acima",
+      "explicacao": "Ré, Mi, Fá♯, **Sol**: o 4º grau. O IV de Ré maior é **G**.",
+      "conceito": "acordes-principais",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a tríade. Ela é maior ou menor?",
+      "exemplo": {
+        "id": "exe-em",
+        "titulo": "Tríade",
+        "legenda": "Em: Mi, Sol, Si, menor.",
+        "eventos": [
+          {
+            "notas": [
+              "E4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60,
+        "intervalo": {
+          "de": "E4",
+          "para": "G4",
+          "codigo": "3m"
+        }
+      },
+      "opcoes": [
+        "3ª maior",
+        "3ª menor"
+      ],
+      "correta": 1,
+      "explicacao": "Mi–Sol tem 3 semitons: terça menor, acorde **Em**, o iii grau de Dó maior.",
+      "conceito": "percepcao-maior-menor"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o padrão de qualidades do campo harmônico maior?",
+      "opcoes": [
+        "maior, menor, menor, maior, maior, menor, diminuto",
+        "maior, maior, menor, maior, menor, menor, diminuto",
+        "menor, maior, maior, menor, menor, maior, diminuto"
+      ],
+      "correta": 0,
+      "explicacao": "I maior, ii e iii menores, IV e V maiores, vi menor, vii° diminuto. Vale para toda tonalidade maior.",
+      "conceito": "padrao-do-campo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em **Sol maior**, qual é o acorde de **V grau**?",
+      "opcoes": [
+        "D",
+        "Dm",
+        "C",
+        "G"
+      ],
+      "correta": 0,
+      "explicacao": "Sol, Lá, Si, Dó, **Ré**: o 5º grau. O V é maior: **D** (Ré, Fá♯, Lá).",
+      "conceito": "campo-em-outras-tonalidades"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na numeração romana, o que indica **ii** em minúsculas?",
+      "opcoes": [
+        "Que o acorde do 2º grau é menor",
+        "Que o acorde é pequeno, de duas notas",
+        "Que é o 2º acorde da música"
+      ],
+      "correta": 0,
+      "explicacao": "Minúsculas indicam acorde **menor**; maiúsculas, maior. O ii de Dó maior é Dm.",
+      "conceito": "numeracao-romana"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Em Lá maior, Lá4 está marcado. Clique na **fundamental do V grau**.",
+      "nota_base": "A4",
+      "intervalo": "5J",
+      "direcao": "acima",
+      "explicacao": "Lá, Si, Dó♯, Ré, **Mi**: o 5º grau. O V de Lá maior é **E**.",
+      "conceito": "acordes-principais",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça os quatro acordes. Qual é o último?",
+      "exemplo": {
+        "id": "exe-progressao",
+        "titulo": "Progressão",
+        "legenda": "C, F, G e de novo C: o I volta no fim.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "F4",
+              "A4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G4",
+              "B4",
+              "D5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 66
+      },
+      "opcoes": [
+        "o I (volta ao repouso)",
+        "o V (fica em suspenso)"
+      ],
+      "correta": 0,
+      "explicacao": "A progressão termina no **I**: soa como chegada. Se terminasse no V, ficaria pedindo continuação.",
+      "conceito": "acordes-principais"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais são as tríades do campo harmônico de **Fá maior**?",
+      "opcoes": [
+        "F, Gm, Am, B♭, C, Dm, E°",
+        "F, Gm, Am, B, C, Dm, E°",
+        "F, G, Am, B♭, C, Dm, Em"
+      ],
+      "correta": 0,
+      "explicacao": "A escala de Fá maior tem Si♭, então o IV é **B♭**. O padrão maior, menor, menor, maior, maior, menor, diminuto dá F, Gm, Am, B♭, C, Dm, E°.",
+      "conceito": "campo-em-outras-tonalidades"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual grau do campo harmônico maior é **diminuto**?",
+      "opcoes": [
+        "vii°",
+        "ii",
+        "iii",
+        "vi"
+      ],
+      "correta": 0,
+      "explicacao": "Só o **vii°**: em Dó maior, Si, Ré, Fá, com 3ª menor e 5ª diminuta. ii, iii e vi são menores.",
+      "conceito": "padrao-do-campo"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a tríade. Ela é maior ou menor?",
+      "exemplo": {
+        "id": "exe-f",
+        "titulo": "Tríade",
+        "legenda": "F: Fá, Lá, Dó, maior.",
+        "eventos": [
+          {
+            "notas": [
+              "F4",
+              "A4",
+              "C5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60,
+        "intervalo": {
+          "de": "F4",
+          "para": "A4",
+          "codigo": "3M"
+        }
+      },
+      "opcoes": [
+        "3ª maior",
+        "3ª menor"
+      ],
+      "correta": 0,
+      "explicacao": "Fá–Lá tem 4 semitons: terça maior, acorde **F**, o IV grau de Dó maior.",
+      "conceito": "percepcao-maior-menor"
+    }
+  ],
+  "resumo": [
+    "O **campo harmônico** são as tríades formadas só com notas da escala, uma em cada grau.",
+    "Padrão em toda tonalidade maior: **I, ii, iii, IV, V, vi, vii°**.",
+    "Em Dó maior: C, Dm, Em, F, G, Am, B°.",
+    "**I** tônica (repouso), **IV** subdominante (afasta), **V** dominante (tensão que pede o I).",
+    "Use a armadura: em Ré maior o iii é F♯m e o vii° é C♯°."
+  ],
+  "pergunta_para_chat": "Me peça campos harmônicos de tonalidades maiores, um de cada vez, e me dê uma dica antes de mostrar a resposta."
+}

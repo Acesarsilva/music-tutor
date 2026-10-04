@@ -1,0 +1,1168 @@
+{
+  "codigo": "I16",
+  "titulo": "Percepção I",
+  "nivel": "iniciante",
+  "resumo_curto": "Treino de ouvido: tríade maior ou menor, intervalos com cantigas de referência e ditado rítmico simples.",
+  "prerequisitos": [
+    "Pulso e compasso simples (I05)",
+    "Intervalos simples (I08)",
+    "Tríades (I12)"
+  ],
+  "objetivos": [
+    "Reconhecer de ouvido a **tríade maior** e a **menor**",
+    "Reconhecer **intervalos** com cantigas de referência",
+    "Fazer **ditados rítmicos** simples"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Qual nota muda entre C e Cm?\n2. Que cantiga começa com uma 4ª justa subindo?\n3. Quantas colcheias cabem num tempo de semínima?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. A terça: Mi em C, Mi♭ em Cm.\n2. *Ciranda, cirandinha*, em \"Ci-**ran**-da\".\n3. Duas.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Ouça antes de qualquer nome",
+            "legenda": "Dois acordes e dois saltos. Qual acorde é mais escuro? Qual salto é maior?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Esta aula é de **treino de ouvido**. Você vai reconhecer, sem olhar a partitura, se um acorde é maior ou menor, que intervalo uma melodia faz e qual é o ritmo de um trecho curto.\n\nAo final, você vai acertar esses três tipos de pergunta usando estratégias que funcionam sempre."
+        }
+      ]
+    },
+    {
+      "titulo": "Maior ou menor?",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Para reconhecer a tríade, preste atenção na **terça**. Uma estratégia:\n\n1. Ouça o acorde junto.\n2. Ouça as notas uma a uma, de baixo para cima.\n3. Cante as duas primeiras notas: se o passo é largo e luminoso (4 semitons), é **maior**; se é mais estreito e escuro (3 semitons), é **menor**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-g-gm",
+            "titulo": "G e depois Gm",
+            "legenda": "Primeiro maior, depois menor. Só a terça muda: Si para Si♭.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G4",
+                  "Bb4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 66
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Intervalos com cantigas",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Para cada intervalo, guarde uma cantiga que começa com ele. Ao ouvir um intervalo novo, cante as cantigas de cabeça até achar a que encaixa."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-pirulito",
+            "titulo": "2ª menor: Pirulito que bate bate",
+            "legenda": "\"Pi-**ru**\": um semitom acima.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "silaba": "Pi-"
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ru-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "li-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.25,
+                "silaba": "to"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.25,
+                "silaba": "que"
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ba-"
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "silaba": "te"
+              }
+            ],
+            "compasso": "2/4",
+            "anacruse": 1,
+            "andamento": 88,
+            "intervalo": {
+              "de": "E4",
+              "para": "F4",
+              "codigo": "2m"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-peixe-vivo",
+            "titulo": "3ª menor: Peixe vivo",
+            "legenda": "\"Co-**mo**\": três semitons acima.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "silaba": "Co-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "mo"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "po-"
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5,
+                "silaba": "de~o"
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5,
+                "silaba": "pei-"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "xe"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "vi-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "vo"
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 88,
+            "intervalo": {
+              "de": "E4",
+              "para": "G4",
+              "codigo": "3m"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ciranda",
+            "titulo": "4ª justa: Ciranda, cirandinha",
+            "legenda": "\"Ci-**ran**\": cinco semitons acima.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5,
+                "silaba": "Ci-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ran-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "da,"
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ci-"
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ran-"
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5,
+                "silaba": "di-"
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1,
+                "silaba": "nha"
+              },
+              {
+                "notas": [],
+                "duracao": 0.5
+              }
+            ],
+            "compasso": "2/4",
+            "anacruse": 0.5,
+            "andamento": 88,
+            "intervalo": {
+              "de": "D4",
+              "para": "G4",
+              "codigo": "4J"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-brilha",
+            "titulo": "5ª justa: Brilha, brilha, estrelinha",
+            "legenda": "\"Bri-lha, **bri**\": sete semitons acima.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "Bri-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "bri-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "lha,"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "es-"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "tre-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "li-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "nha"
+              }
+            ],
+            "andamento": 96,
+            "intervalo": {
+              "de": "C4",
+              "para": "G4",
+              "codigo": "5J"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-cravo",
+            "titulo": "6ª menor: O cravo brigou com a rosa",
+            "legenda": "\"cra-vo **bri**\": de Mi para Dó, oito semitons acima.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "O"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "cra-"
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1,
+                "silaba": "vo"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "silaba": "bri-"
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 2,
+                "silaba": "gou"
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              }
+            ],
+            "compasso": "3/4",
+            "anacruse": 1,
+            "andamento": 88,
+            "intervalo": {
+              "de": "E4",
+              "para": "C5",
+              "codigo": "6m"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-marcha",
+            "titulo": "3ª menor descendo: Marcha soldado",
+            "legenda": "\"Mar-cha **sol**\": três semitons abaixo.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "Mar-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "cha"
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "silaba": "sol-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "da-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "do"
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 88,
+            "intervalo": {
+              "de": "G4",
+              "para": "E4",
+              "codigo": "3m"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Ditado rítmico",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "No ditado rítmico, você ouve um trecho e escreve o ritmo. Veja como, com o motivo de cada passo, num compasso **2/4**:\n\n1. **Sinta o pulso**: dois tempos por compasso.\n2. **Conte os sons em cada tempo**: um som no 1º tempo; dois sons no 2º tempo.\n3. **Escreva as figuras**: um som por tempo é **semínima**; dois sons iguais num tempo são **colcheias**. Resposta: semínima, colcheia, colcheia."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ditado",
+            "titulo": "Um compasso 2/4",
+            "legenda": "Semínima, depois duas colcheias.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** e se um som começa num tempo e continua pelo tempo seguinte?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ele dura **dois tempos**: é uma **mínima**. Num 2/4, uma mínima ocupa o compasso inteiro.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. Compasso 2/4: no 1º tempo, dois sons; no 2º tempo, um som. Quais figuras?\n\nE agora dois passos são seus: ouça o próximo exemplo e escreva o ritmo."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ditado-2",
+            "titulo": "Outro compasso 2/4",
+            "legenda": "Ouça com o pulso de dois tempos.",
+            "eventos": [
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Primeiro: **duas colcheias e uma semínima**.\n\nSegundo: dois sons em cada tempo, **quatro colcheias**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega ouviu C e depois um acorde mais agudo, e disse:\n\n> \"O segundo acorde soa mais agudo, então é o maior.\"\n\nOnde está o erro, por que está errado e como decidir?"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-erro",
+            "titulo": "Os dois acordes",
+            "legenda": "C e depois Am, mais agudo e menor.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ele confundiu **altura** com **qualidade**. Ser mais agudo não torna o acorde maior. O segundo é **Am**: Lá–Dó tem 3 semitons, terça menor. Para decidir, ouça a terça, a distância entre as duas notas de baixo.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a tríade. A terça é maior ou menor?",
+      "exemplo": {
+        "id": "exe-d",
+        "titulo": "Tríade",
+        "legenda": "D: Ré, Fá♯, Lá.",
+        "eventos": [
+          {
+            "notas": [
+              "D4",
+              "F#4",
+              "A4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60,
+        "intervalo": {
+          "de": "D4",
+          "para": "F#4",
+          "codigo": "3M"
+        }
+      },
+      "opcoes": [
+        "3ª maior",
+        "3ª menor"
+      ],
+      "correta": 0,
+      "explicacao": "Ré–Fá♯ tem 4 semitons: **maior**, o acorde D.",
+      "conceito": "percepcao-maior-menor"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Que intervalo melódico é este?",
+      "exemplo": {
+        "id": "exe-4j",
+        "titulo": "Salto",
+        "legenda": "Lá–Ré: 4ª justa, como Ciranda.",
+        "eventos": [
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 72,
+        "intervalo": {
+          "de": "A4",
+          "para": "D5",
+          "codigo": "4J"
+        }
+      },
+      "opcoes": [
+        "3ª menor",
+        "4ª justa",
+        "5ª justa",
+        "6ª menor"
+      ],
+      "correta": 1,
+      "explicacao": "É uma **4ª justa**, o salto de \"Ci-**ran**-da\". A 5ª de \"Bri-lha, **bri**\" é um pouco maior.",
+      "conceito": "intervalos-de-ouvido"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça o ritmo em 2/4. Qual é a escrita certa?",
+      "exemplo": {
+        "id": "exe-ritmo-1",
+        "titulo": "Ritmo",
+        "legenda": "Duas colcheias e uma semínima.",
+        "eventos": [
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          }
+        ],
+        "compasso": "2/4",
+        "andamento": 80
+      },
+      "opcoes": [
+        "duas colcheias e uma semínima",
+        "uma semínima e duas colcheias",
+        "uma mínima"
+      ],
+      "correta": 0,
+      "explicacao": "Dois sons no 1º tempo (**colcheias**) e um som no 2º (**semínima**).",
+      "conceito": "ditado-ritmico"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a tríade. A terça é maior ou menor?",
+      "exemplo": {
+        "id": "exe-cm",
+        "titulo": "Tríade",
+        "legenda": "Cm: Dó, Mi♭, Sol.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "Eb4",
+              "G4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60,
+        "intervalo": {
+          "de": "C4",
+          "para": "Eb4",
+          "codigo": "3m"
+        }
+      },
+      "opcoes": [
+        "3ª maior",
+        "3ª menor"
+      ],
+      "correta": 1,
+      "explicacao": "Dó–Mi♭ tem 3 semitons: **menor**, o acorde Cm.",
+      "conceito": "percepcao-maior-menor"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Que intervalo melódico é este?",
+      "exemplo": {
+        "id": "exe-2m",
+        "titulo": "Passo",
+        "legenda": "Si–Dó: 2ª menor, como Pirulito.",
+        "eventos": [
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 72,
+        "intervalo": {
+          "de": "B4",
+          "para": "C5",
+          "codigo": "2m"
+        }
+      },
+      "opcoes": [
+        "2ª menor",
+        "2ª maior",
+        "3ª menor"
+      ],
+      "correta": 0,
+      "explicacao": "Um semitom só: **2ª menor**, o passo de \"Pi-**ru**\".",
+      "conceito": "intervalos-de-ouvido"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Que intervalo melódico é este?",
+      "exemplo": {
+        "id": "exe-5j",
+        "titulo": "Salto",
+        "legenda": "Fá–Dó: 5ª justa, como Brilha, brilha.",
+        "eventos": [
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 72,
+        "intervalo": {
+          "de": "F4",
+          "para": "C5",
+          "codigo": "5J"
+        }
+      },
+      "opcoes": [
+        "4ª justa",
+        "5ª justa",
+        "6ª menor",
+        "8ª justa"
+      ],
+      "correta": 1,
+      "explicacao": "É a **5ª justa** de \"Bri-lha, **bri**-lha\". A 4ª é um pouco menor; a 6ª menor, um pouco maior.",
+      "conceito": "referencias-cantigas"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça o ritmo em 2/4. Qual é a escrita certa?",
+      "exemplo": {
+        "id": "exe-ritmo-2",
+        "titulo": "Ritmo",
+        "legenda": "Uma mínima.",
+        "eventos": [
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "compasso": "2/4",
+        "andamento": 80
+      },
+      "opcoes": [
+        "uma mínima",
+        "duas semínimas",
+        "quatro colcheias"
+      ],
+      "correta": 0,
+      "explicacao": "Um som só, que atravessa os dois tempos: **mínima**.",
+      "conceito": "ditado-ritmico"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que cantiga ajuda a lembrar a **3ª menor** subindo?",
+      "opcoes": [
+        "*Peixe vivo*",
+        "*Ciranda, cirandinha*",
+        "*Brilha, brilha*"
+      ],
+      "correta": 0,
+      "explicacao": "\"Co-**mo** po-de\", de *Peixe vivo*, sobe uma 3ª menor. Ciranda é 4ª justa; Brilha, brilha, 5ª justa.",
+      "conceito": "referencias-cantigas"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Que intervalo melódico é este?",
+      "exemplo": {
+        "id": "exe-6m",
+        "titulo": "Salto",
+        "legenda": "Mi–Dó: 6ª menor, como O cravo.",
+        "eventos": [
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 72,
+        "intervalo": {
+          "de": "E4",
+          "para": "C5",
+          "codigo": "6m"
+        }
+      },
+      "opcoes": [
+        "5ª justa",
+        "6ª menor",
+        "8ª justa"
+      ],
+      "correta": 1,
+      "explicacao": "É a **6ª menor** de \"cra-vo **bri**-gou\". A 5ª justa é menor, e a 8ª, bem maior.",
+      "conceito": "referencias-cantigas"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça o pulso deste trecho. Ele vai de dois em dois ou de três em três?",
+      "exemplo": {
+        "id": "exe-pulso",
+        "titulo": "Pulso",
+        "legenda": "De três em três.",
+        "eventos": [
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": false
+          }
+        ],
+        "compasso": "3/4",
+        "andamento": 100
+      },
+      "opcoes": [
+        "de dois em dois",
+        "de três em três"
+      ],
+      "correta": 1,
+      "explicacao": "O acento volta a cada **três** pulsos: compasso ternário.",
+      "conceito": "pulso-de-ouvido"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a tríade. A terça é maior ou menor?",
+      "exemplo": {
+        "id": "exe-em",
+        "titulo": "Tríade",
+        "legenda": "Em: Mi, Sol, Si.",
+        "eventos": [
+          {
+            "notas": [
+              "E4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60,
+        "intervalo": {
+          "de": "E4",
+          "para": "G4",
+          "codigo": "3m"
+        }
+      },
+      "opcoes": [
+        "3ª maior",
+        "3ª menor"
+      ],
+      "correta": 1,
+      "explicacao": "Mi–Sol tem 3 semitons: **menor**, o acorde Em.",
+      "conceito": "percepcao-maior-menor"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Que intervalo melódico é este, descendo?",
+      "exemplo": {
+        "id": "exe-3m-desc",
+        "titulo": "Salto",
+        "legenda": "Sol–Mi: 3ª menor descendo, como Marcha soldado.",
+        "eventos": [
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 72,
+        "intervalo": {
+          "de": "G4",
+          "para": "E4",
+          "codigo": "3m"
+        }
+      },
+      "opcoes": [
+        "2ª maior",
+        "3ª menor",
+        "4ª justa"
+      ],
+      "correta": 1,
+      "explicacao": "É a **3ª menor** descendo de \"Mar-cha **sol**-da-do\".",
+      "conceito": "intervalos-de-ouvido"
+    }
+  ],
+  "resumo": [
+    "Maior ou menor: ouça a **terça**, a distância entre as duas notas de baixo.",
+    "Referências: 2ª menor *Pirulito*, 3ª menor *Peixe vivo*, 4ª justa *Ciranda*, 5ª justa *Brilha, brilha*, 6ª menor *O cravo*.",
+    "Ditado rítmico: sinta o pulso, conte os sons de cada tempo e escreva as figuras.",
+    "Mais agudo não quer dizer maior: altura e qualidade são coisas diferentes."
+  ],
+  "pergunta_para_chat": "Me descreva intervalos e acordes, um de cada vez, para eu dizer qual cantiga ou qualidade combina, e me dê uma dica antes de mostrar a resposta."
+}
