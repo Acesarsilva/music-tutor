@@ -1,0 +1,35 @@
+codigo: A07
+titulo: Escalas simétricas e exóticas
+nivel: avancado
+assunto: teoria
+prerequisitos:
+  - M11  # Modos gregos
+  - A02  # Acordes alterados
+objetivos:
+  - Formar a escala de tons inteiros e saber sobre que acordes ela soa
+  - Formar a escala diminuta nas versões tom-semitom e semitom-tom
+  - Entender por que as escalas simétricas têm poucas transposições diferentes
+  - Formar a menor melódica e os seus modos mais usados, o lídio dominante e a alterada
+  - Formar o frígio dominante, modo da menor harmônica
+  - Escolher a escala de acordo com o acorde
+conceitos:
+  - escala-de-tons-inteiros
+  - escala-diminuta
+  - simetria
+  - menor-melodica
+  - modos-da-menor-melodica
+  - frigio-dominante
+  - percepcao-escalas
+fora_do_escopo:
+  - Escalas não ocidentais e microtons
+  - Uso composicional das escalas no século XX (módulo A13)
+exemplos_semente:
+  - "Dó, Ré, Mi, Fá sustenido, Sol sustenido, Lá sustenido: tons inteiros"
+  - "Dó diminuta tom-semitom e Sol diminuta semitom-tom sobre G7"
+  - "Fá lídio dominante sobre F7(#11)"
+  - "Sol alterada sobre G7alt"
+  - "Mi frígio dominante sobre o E7 de Lá menor"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

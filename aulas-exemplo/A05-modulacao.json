@@ -1,0 +1,1029 @@
+{
+  "codigo": "A05",
+  "titulo": "Modulação",
+  "nivel": "avancado",
+  "resumo_curto": "Mudar de tom: por acorde pivô, direta, por cromatismo e por enarmonia.",
+  "prerequisitos": [
+    "Cadências (M09)",
+    "Dominantes secundárias (M14)",
+    "Transposição (M17)",
+    "Empréstimo modal (A03)"
+  ],
+  "objetivos": [
+    "Diferenciar **modulação** de tonicização",
+    "Reconhecer os **tons vizinhos**",
+    "Modular por **acorde pivô**",
+    "Reconhecer a modulação **direta**, **cromática** e **enarmônica**",
+    "Ouvir a mudança de centro tonal"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. O D7 em Dó maior é que tipo de acorde?\n2. Qual é a diferença entre o Fm emprestado e uma mudança para Dó menor?\n3. Quais tons têm só um acidente de diferença em relação a Dó maior?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Dominante secundária: V7/V.\n2. O Fm é uma cor passageira; Dó maior continua sendo a tônica.\n3. Sol maior (Fá♯) e Fá maior (Si♭), e os relativos deles.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "C, F, Am, D7, G, D7, G",
+            "legenda": "Ouça até o fim. Qual acorde soa como casa no final?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "D4",
+                  "F#4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "D4",
+                  "F#4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O começo soa em Dó, mas o fim se apoia em **Sol**: o D7 volta e confirma o G como nova tônica. Quando o centro tonal muda e se estabelece, há **modulação**.\n\nAo final, você vai reconhecer quatro jeitos de modular e diferenciar a modulação de um acorde de passagem."
+        }
+      ]
+    },
+    {
+      "titulo": "Modulação ou passagem?",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Uma dominante secundária (M14) ou um empréstimo (A03) **visitam** outro tom por um acorde. A **modulação** muda de casa: o novo tom ganha **cadência própria** e permanece por algum tempo.\n\nOs tons mais fáceis de alcançar são os **tons vizinhos**: os que têm **um acidente** de diferença na armadura, mais os relativos. Para Dó maior: Sol maior, Fá maior, Lá menor, Mi menor e Ré menor."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Tons vizinhos de Dó maior.",
+          "cabecalho": [
+            "Tom",
+            "Armadura",
+            "Relação"
+          ],
+          "linhas": [
+            [
+              "Lá menor",
+              "nenhuma",
+              "relativo"
+            ],
+            [
+              "Sol maior",
+              "Fá♯",
+              "dominante"
+            ],
+            [
+              "Mi menor",
+              "Fá♯",
+              "relativo da dominante"
+            ],
+            [
+              "Fá maior",
+              "Si♭",
+              "subdominante"
+            ],
+            [
+              "Ré menor",
+              "Si♭",
+              "relativo da subdominante"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Por acorde pivô",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O jeito mais suave: achar um **acorde comum** aos dois tons e usá-lo como ponte, o **acorde pivô**. Ele chega com uma função no tom antigo e sai com outra no tom novo.\n\nNo exemplo da abertura, o **Am** é VIm em Dó e **IIm** em Sol. Depois dele, o D7 (V7 de Sol) e o G confirmam o tom novo."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Análise com pivô.",
+          "cabecalho": [
+            "Acorde",
+            "Em Dó maior",
+            "Em Sol maior"
+          ],
+          "linhas": [
+            [
+              "C",
+              "I",
+              ""
+            ],
+            [
+              "F",
+              "IV",
+              ""
+            ],
+            [
+              "Am",
+              "VIm",
+              "IIm"
+            ],
+            [
+              "D7",
+              "",
+              "V7"
+            ],
+            [
+              "G",
+              "",
+              "I"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-pivo",
+            "titulo": "O pivô Am",
+            "legenda": "C, F, Am (pivô), D7, G.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "D4",
+                  "F#4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 66
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Direta",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na **modulação direta**, o tom muda sem preparação, normalmente entre uma frase e outra. Na música popular é comum repetir o último refrão **meio tom** ou **um tom acima**, para dar energia ao final."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-direta",
+            "titulo": "O mesmo trecho meio tom acima",
+            "legenda": "A segunda vez começa em Ré♭, sem aviso.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Ab4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Ab4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Gb4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Db4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Db4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 88
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Por cromatismo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na **modulação cromática**, uma nota do acorde se altera por semitom **na mesma voz** e leva ao tom novo. De C para E: o **Sol** sobe para **Sol♯**, a 3ª do E, e o caminho segue em Mi maior com A, B7 e E."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-cromatica",
+            "titulo": "C, E, A, B7, E",
+            "legenda": "Siga a voz de cima do primeiro para o segundo acorde: Sol, Sol♯.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C#5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "B3",
+                  "D#4",
+                  "A4",
+                  "F#5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "E5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 66
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Por enarmonia",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O acorde **diminuto com 7ª** é feito só de 3ªs menores. Por isso, o mesmo som pode ser escrito de várias maneiras, e cada escrita tem uma resolução diferente:\n\n- escrito **B°** (Si, Ré, Fá, Lá♭), o Si é sensível de Dó: resolve em **C**;\n- escrito **D°** (Ré, Fá, Lá♭, Dó♭), o Ré é sensível de Mi♭: resolve em **E♭**.\n\nTrocando a escrita no meio do caminho, a música vai para um tom distante: é a **modulação enarmônica**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-b-dim",
+            "titulo": "B° → C",
+            "legenda": "O diminuto como sensível de Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "B3",
+                  "D4",
+                  "F4",
+                  "Ab4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-d-dim",
+            "titulo": "D° → E♭, A♭, B♭7, E♭",
+            "legenda": "O mesmo som, escrito D°, leva a Mi♭ maior, que se confirma com A♭ e B♭7.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "Ab4",
+                  "Cb5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Eb4",
+                  "G4",
+                  "Bb4",
+                  "Eb5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Eb4",
+                  "Ab4",
+                  "C5",
+                  "Eb5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "Ab4",
+                  "Bb4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Eb4",
+                  "G4",
+                  "Bb4",
+                  "Eb5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: achar o pivô",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Module de **Dó maior para Fá maior** por pivô, com o motivo de cada passo.\n\n1. **Liste os acordes dos dois tons**: Dó maior tem C, Dm, Em, F, G, Am, B°. Fá maior tem F, Gm, Am, B♭, C, Dm, E°.\n2. **Ache os comuns**: C, Dm, F, Am.\n3. **Escolha um e confirme o tom novo**: Dm (IIm em Dó, VIm em Fá), depois C7 e F."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que o C, que também é comum, é um pivô menos claro aqui?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "O C é a **tônica** de Dó. Usado como pivô, ele soa como volta para casa, não como saída. Um pivô que não é a tônica do tom antigo deixa a mudança mais clara.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. De **Dó maior para Lá menor**, os acordes comuns incluem Am, Dm, F e C. Escolha um pivô e diga como confirmar Lá menor.\n\nE agora todos os passos são seus: de **Sol maior para Ré maior**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Dó maior para Lá menor: por exemplo **Dm** (IIm em Dó, IVm em Lá menor), depois **E7** e **Am**.\n\nSol maior (G, Am, Bm, C, D, Em, F♯°) e Ré maior (D, Em, F♯m, G, A, Bm, C♯°) têm em comum G, Bm, D e Em. Por exemplo **Em** (VIm em Sol, IIm em Ré), depois **A7** e **D**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega analisou **C, A7, Dm, G7, C** e disse:\n\n> \"A música modulou para Ré menor no A7 e voltou.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "O A7 é uma **dominante secundária** (V7/IIm): o Dm aparece por um instante e a progressão segue para G7 e C. Ré menor nunca se estabelece, não há cadência própria. É tonicização, não modulação.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que diferencia uma **modulação** de uma dominante secundária?",
+      "opcoes": [
+        "Na modulação, o novo tom se estabelece com cadência própria",
+        "A modulação usa só acordes menores",
+        "A dominante secundária muda a armadura",
+        "Não há diferença"
+      ],
+      "correta": 0,
+      "explicacao": "A dominante secundária visita o acorde por um instante. Na **modulação**, o novo centro se confirma e fica.",
+      "conceito": "modulacao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual destes é um **tom vizinho** de Dó maior?",
+      "opcoes": [
+        "Mi menor",
+        "Mi maior",
+        "Si♭ maior",
+        "Ré maior"
+      ],
+      "correta": 0,
+      "explicacao": "Mi menor tem um sustenido (Fá♯): é o relativo de Sol maior, vizinho de Dó.",
+      "conceito": "tons-vizinhos"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na modulação de Dó para Sol, o **Am** pode ser pivô porque é:",
+      "opcoes": [
+        "VIm em Dó e IIm em Sol",
+        "V em Dó e I em Sol",
+        "Tônica nos dois tons",
+        "Dominante secundária"
+      ],
+      "correta": 0,
+      "explicacao": "O Am existe nos dois campos: **VIm** em Dó e **IIm** em Sol.",
+      "conceito": "acorde-pivo"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Onde fica a tônica no final?",
+      "exemplo": {
+        "id": "exe-pivo",
+        "titulo": "Progressão",
+        "legenda": "C, F, Am, D7, G, D7, G: termina em Sol.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "F4",
+              "A4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "A4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "D4",
+              "F#4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "B3",
+              "D4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "A3",
+              "D4",
+              "F#4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "B3",
+              "D4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 66
+      },
+      "opcoes": [
+        "Em Sol: a música modulou",
+        "Em Dó, como no começo",
+        "Em Lá menor"
+      ],
+      "correta": 0,
+      "explicacao": "O D7 confirma duas vezes o **G** como casa: a música modulou para Sol maior.",
+      "conceito": "percepcao-modulacao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que acordes Dó maior e Fá maior têm em comum?",
+      "opcoes": [
+        "C, Dm, F, Am",
+        "G, Em, B°",
+        "B♭, Gm, E°",
+        "Só o C"
+      ],
+      "correta": 0,
+      "explicacao": "Dó maior: C, Dm, Em, F, G, Am, B°. Fá maior: F, Gm, Am, B♭, C, Dm, E°. Comuns: **C, Dm, F, Am**.",
+      "conceito": "acorde-pivo"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Como o tom muda?",
+      "exemplo": {
+        "id": "exe-direta",
+        "titulo": "Trecho repetido",
+        "legenda": "A segunda vez está meio tom acima.",
+        "eventos": [
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B3"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 4.0
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Ab4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Bb4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Ab4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Gb4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "Eb4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Db4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Eb4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Db4"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 88
+      },
+      "opcoes": [
+        "De repente, meio tom acima, sem preparação",
+        "Gradualmente, por um pivô",
+        "Não muda"
+      ],
+      "correta": 0,
+      "explicacao": "A frase recomeça **meio tom acima**, sem nenhum acorde de ligação: modulação **direta**.",
+      "conceito": "modulacao-direta"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na progressão **C, E, A, B7, E**, como o tom muda de Dó para Mi?",
+      "opcoes": [
+        "O Sol do C sobe para Sol♯ na mesma voz",
+        "Por um acorde pivô comum aos dois tons",
+        "Pela troca de escrita de um diminuto",
+        "Não há modulação"
+      ],
+      "correta": 0,
+      "explicacao": "C e E não são vizinhos; a ponte é o **Sol → Sol♯**, um cromatismo na mesma voz.",
+      "conceito": "modulacao-cromatica"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que o acorde diminuto com 7ª é bom para modulações enarmônicas?",
+      "opcoes": [
+        "É feito só de 3ªs menores, então qualquer nota pode virar a sensível",
+        "Porque é um acorde maior",
+        "Porque não tem trítono",
+        "Porque só existe em Dó"
+      ],
+      "correta": 0,
+      "explicacao": "Com 3ªs menores iguais, as quatro notas são simétricas: **cada uma pode ser a sensível** de um tom diferente.",
+      "conceito": "modulacao-enarmonica"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O som de **B°** (Si, Ré, Fá, Lá♭), escrito **D°** (Ré, Fá, Lá♭, Dó♭), resolve naturalmente em:",
+      "opcoes": [
+        "E♭",
+        "C",
+        "A",
+        "G"
+      ],
+      "correta": 0,
+      "explicacao": "Escrito D°, o **Ré** é a sensível: sobe meio tom para **Mi♭**.",
+      "conceito": "modulacao-enarmonica"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça as duas resoluções do mesmo acorde diminuto. Elas chegam ao mesmo tom?",
+      "exemplo": {
+        "id": "exe-enarmonia",
+        "titulo": "Duas resoluções",
+        "legenda": "B° → C e depois D° → E♭.",
+        "eventos": [
+          {
+            "notas": [
+              "B3",
+              "D4",
+              "F4",
+              "Ab4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "D4",
+              "F4",
+              "Ab4",
+              "Cb5"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "Eb4",
+              "G4",
+              "Bb4",
+              "Eb5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "Não: o mesmo som leva a dois tons diferentes",
+        "Sim: as duas chegam em Dó"
+      ],
+      "correta": 0,
+      "explicacao": "As teclas do diminuto são as mesmas, mas a segunda resolução vai para **Mi♭**: é a enarmonia em ação.",
+      "conceito": "percepcao-modulacao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Para confirmar uma modulação para Sol maior, o que ajuda mais?",
+      "opcoes": [
+        "Uma cadência D7 → G",
+        "Um acorde de C",
+        "Um acorde de Fm",
+        "Um B°"
+      ],
+      "correta": 0,
+      "explicacao": "A **cadência autêntica** do novo tom (D7 → G) estabelece a nova tônica.",
+      "conceito": "modulacao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em **C, A7, Dm, G7, C**, há modulação?",
+      "opcoes": [
+        "Não: o A7 é dominante secundária",
+        "Sim, para Ré menor",
+        "Sim, para Lá maior",
+        "Sim, por enarmonia"
+      ],
+      "correta": 0,
+      "explicacao": "O Dm aparece só por um acorde e a música volta a Dó: **tonicização**, não modulação.",
+      "conceito": "modulacao"
+    }
+  ],
+  "resumo": [
+    "**Modulação**: o centro tonal muda e se estabelece com cadência própria.",
+    "**Tons vizinhos** diferem em um acidente, mais os relativos.",
+    "**Pivô**: um acorde comum aos dois tons, com função diferente em cada um.",
+    "**Direta**: sem preparação, como o refrão repetido meio tom acima.",
+    "**Cromática**: uma nota se altera por semitom na mesma voz.",
+    "**Enarmônica**: o diminuto (ou outro acorde) é reescrito e resolve em outro tom."
+  ],
+  "pergunta_para_chat": "Me dê pares de tons, um de cada vez, para eu planejar uma modulação por pivô (escolhendo o acorde e a cadência), e às vezes progressões para eu dizer se houve modulação ou só tonicização. Corrija minhas análises."
+}

@@ -1,0 +1,30 @@
+codigo: A06
+titulo: Harmonia modal
+nivel: avancado
+assunto: teoria
+prerequisitos:
+  - M11  # Modos gregos
+  - A03  # Empréstimo modal
+objetivos:
+  - Diferenciar a harmonia modal da tonal, que gira em torno do V7 com sensível
+  - Usar acordes que contêm a nota característica de cada modo
+  - Montar progressões que sustentam os modos dórico, frígio, lídio, mixolídio e eólio
+  - Usar as cadências modais, como bVII–I e bII–Im
+  - Reconhecer de ouvido o modo de uma progressão
+conceitos:
+  - harmonia-modal
+  - nota-caracteristica
+  - progressoes-por-modo
+  - cadencias-modais
+  - percepcao-modal
+fora_do_escopo:
+  - Modos da menor melódica e da menor harmônica (módulo A07)
+  - Pantonalidade e politonalidade (módulo A13)
+exemplos_semente:
+  - "Cm7 e F: o Lá natural do dórico"
+  - "Db e Cm: a cadência frígia bII–Im"
+  - "C e D/C: o Fá sustenido do lídio"
+  - "C e Bb: o bVII do mixolídio, som do baião"
+exercicios:
+  - multipla_escolha
+  - percepcao

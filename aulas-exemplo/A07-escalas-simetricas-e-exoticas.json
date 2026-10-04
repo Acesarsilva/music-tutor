@@ -1,0 +1,1002 @@
+{
+  "codigo": "A07",
+  "titulo": "Escalas simétricas e exóticas",
+  "nivel": "avancado",
+  "resumo_curto": "Tons inteiros, diminuta, menor melódica e seus modos, e frígio dominante.",
+  "prerequisitos": [
+    "Modos gregos (M11)",
+    "Acordes alterados (A02)"
+  ],
+  "objetivos": [
+    "Formar a escala de **tons inteiros**",
+    "Formar a **diminuta** tom-semitom e semitom-tom",
+    "Entender a **simetria** dessas escalas",
+    "Usar a **menor melódica**, o **lídio dominante** e a **alterada**",
+    "Usar o **frígio dominante**",
+    "Escolher a escala pelo acorde"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quantos semitons há entre as notas de um acorde diminuto com 7ª?\n2. Quais são as alterações do acorde 7alt?\n3. Qual é a diferença entre a menor natural e a menor harmônica?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Três: todas são 3ªs menores.\n2. b9, ♯9, ♯11 e b13.\n3. A harmônica tem a 7ª elevada (a sensível).",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "Escala maior",
+            "legenda": "Tons e semitons misturados.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              }
+            ],
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "Outra escala",
+            "legenda": "Só tons inteiros. Onde fica o repouso?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1.0
+              }
+            ],
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Na segunda, todos os passos são iguais: nenhuma nota puxa mais que as outras, e o repouso some. É a escala de **tons inteiros**, uma escala **simétrica**. Ao lado dela existem escalas que nascem da menor melódica e da menor harmônica, usadas sobre acordes alterados.\n\nAo final, você vai formar essas escalas e escolher a certa para cada acorde."
+        }
+      ]
+    },
+    {
+      "titulo": "Tons inteiros",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A escala de **tons inteiros** tem **seis notas**, todas a um tom de distância. Como o padrão se repete a cada nota, só existem **duas** escalas de tons inteiros diferentes: a que começa em Dó e a que começa em Dó♯.\n\nEla soa sobre o **acorde aumentado** e sobre o acorde **7(♯5)**: um som flutuante, de sonho."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ti",
+            "titulo": "C aumentado e a escala de tons inteiros",
+            "legenda": "Dó, Mi, Sol♯ cabem todos na escala.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G#4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1.0
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Dó, Ré, Mi, Fá♯, Sol♯, Lá♯: seis notas a um tom.",
+          "destaque": [
+            "C4",
+            "D4",
+            "E4",
+            "F#4",
+            "G#4",
+            "A#4"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        }
+      ]
+    },
+    {
+      "titulo": "Diminuta",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A escala **diminuta** alterna tom e semitom e tem **oito notas**. Só existem **três** diminutas diferentes.\n\n- **tom-semitom** (começa com tom): soa sobre o **acorde diminuto** (C°);\n- **semitom-tom** (começa com semitom): soa sobre o acorde **7** com b9, ♯9, ♯11 e 13 natural, como o G7(b9). É a chamada **dominante diminuta**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-dim-ts",
+            "titulo": "C° e a diminuta tom-semitom",
+            "legenda": "Oito notas, alternando tom e semitom.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "Gb4",
+                  "A4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Gb4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Ab4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-dim-st",
+            "titulo": "G7(b9) e a diminuta semitom-tom",
+            "legenda": "Sol, Lá♭, Si♭, Si, Dó♯, Ré, Mi, Fá.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "Ab4",
+                  "E5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Ab3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Bb3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 80
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "A menor melódica e os seus modos",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **menor melódica** (na versão do jazz, igual subindo e descendo) é a escala maior com a **3ª menor**: Dó, Ré, Mi♭, Fá, Sol, Lá, Si. Ela soa sobre o **Cm(7M)**.\n\nComo os modos gregos nascem da escala maior, outros modos nascem da menor melódica. Dois são muito usados:\n\n- 4º modo, **lídio dominante** (lídio com 7ª menor): soa sobre o **7(♯11)**. É a mesma escala nordestina (mixolídio com 4ª aumentada) vista na A02;\n- 7º modo, **alterada**: soa sobre o **7alt**, com b9, ♯9, ♯11 e b13."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-melm",
+            "titulo": "Cm(7M) e a menor melódica",
+            "legenda": "A maior com Mi♭.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-lidb7",
+            "titulo": "F7(♯11) e Fá lídio dominante",
+            "legenda": "Fá, Sol, Lá, Si, Dó, Ré, Mi♭: 4º modo de Dó menor melódica.",
+            "eventos": [
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "Eb4",
+                  "B4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Eb5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 0.5
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-alt",
+            "titulo": "G7alt e Sol alterada",
+            "legenda": "Sol, Lá♭, Si♭, Si, Ré♭, Mi♭, Fá: 7º modo de Lá♭ menor melódica.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "Bb4",
+                  "Eb5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Ab3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Bb3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Db4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              }
+            ],
+            "andamento": 80
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Frígio dominante",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Da **menor harmônica** sai o **frígio dominante**, o 5º modo: em Lá menor harmônica, a partir de Mi: Mi, Fá, Sol♯, Lá, Si, Dó, Ré. Soa sobre o **E7(b9)** que resolve em Am, com o salto de 2ª aumentada (Fá–Sol♯) que lembra a música árabe e o flamenco."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-fdom",
+            "titulo": "E7(b9) e Mi frígio dominante",
+            "legenda": "Ouça a 2ª aumentada entre Fá e Sol♯.",
+            "eventos": [
+              {
+                "notas": [
+                  "E3",
+                  "G#3",
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "A4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 80
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: escolher a escala",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Escolha a escala para o **D7(♯11)**, com o motivo de cada passo.\n\n1. **Liste o que o acorde pede**: 3ª maior, 7ª menor, 9 natural, ♯11.\n2. **Procure a escala que tenha tudo isso**: lídio dominante (lídio com 7ª menor).\n3. **Escreva a partir de Ré**: Ré, Mi, Fá♯, **Sol♯**, Lá, Si, Dó."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** de qual menor melódica essa escala é o 4º modo?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "O 4º grau é Ré, então a tônica fica uma 4ª justa abaixo: **Lá menor melódica** (Lá, Si, Dó, Ré, Mi, Fá♯, Sol♯). As notas são as mesmas, começando de Ré.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. O **A7(b9)** com 13 natural pede b9, ♯9, ♯11 e 13: procure a escala simétrica que tem tudo isso e escreva a partir de Lá.\n\nE agora todos os passos são seus: o **Am(7M)**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A7(b9): a **diminuta semitom-tom**: Lá, Si♭, Dó, Dó♯, Ré♯, Mi, Fá♯, Sol.\n\nAm(7M): 3ª menor e 7ª maior: a **menor melódica** de Lá: Lá, Si, Dó, Ré, Mi, Fá♯, Sol♯.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega usou a **diminuta tom-semitom** de Sol sobre o **G7**.\n\n> \"Diminuta é diminuta, tanto faz por onde começa.\"\n\nPor que soa mal?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Sol tom-semitom tem Sol, Lá, **Si♭**, Dó, Ré♭, Mi♭, Mi, Fá♯: falta o **Si** (a 3ª maior do G7) e aparece o **Fá♯** (7ª maior). Sobre o G7, a certa é a **semitom-tom**, que tem Si e Fá. A ordem dos passos decide quais notas caem em cima do acorde.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas notas tem a escala de **tons inteiros**?",
+      "opcoes": [
+        "6",
+        "7",
+        "8",
+        "5"
+      ],
+      "correta": 0,
+      "explicacao": "Seis tons inteiros completam a oitava: **6 notas**.",
+      "conceito": "escala-de-tons-inteiros"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Na escala de tons inteiros que começa em Dó, Mi4 está marcado. Clique na nota seguinte.",
+      "nota_base": "E4",
+      "intervalo": "2M",
+      "direcao": "acima",
+      "explicacao": "Um tom acima de Mi: **Fá♯**. Na escala maior viria Fá, meio tom acima.",
+      "conceito": "escala-de-tons-inteiros",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas escalas diminutas **diferentes** existem?",
+      "opcoes": [
+        "3",
+        "12",
+        "2",
+        "1"
+      ],
+      "correta": 0,
+      "explicacao": "O padrão tom-semitom se repete a cada 3 semitons: só há **três** diminutas diferentes.",
+      "conceito": "simetria"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Que escala é esta?",
+      "exemplo": {
+        "id": "exe-ti",
+        "titulo": "Escala",
+        "legenda": "Tons inteiros a partir de Dó.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "F#4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G#4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "A#4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1.0
+          }
+        ],
+        "andamento": 88
+      },
+      "opcoes": [
+        "Tons inteiros",
+        "Diminuta",
+        "Maior",
+        "Menor melódica"
+      ],
+      "correta": 0,
+      "explicacao": "Seis notas, todas a um tom: sem semitons, sem repouso. **Tons inteiros**.",
+      "conceito": "percepcao-escalas"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Sobre o **G7(b9)** com 13 natural, qual escala simétrica funciona?",
+      "opcoes": [
+        "Diminuta semitom-tom de Sol",
+        "Diminuta tom-semitom de Sol",
+        "Tons inteiros de Sol",
+        "Menor melódica de Sol"
+      ],
+      "correta": 0,
+      "explicacao": "A **semitom-tom** tem Sol, Lá♭ (b9), Si♭ (♯9), Si, Dó♯ (♯11), Ré, Mi (13), Fá.",
+      "conceito": "escala-diminuta"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A **menor melódica** de Dó é:",
+      "opcoes": [
+        "Dó, Ré, Mi♭, Fá, Sol, Lá, Si",
+        "Dó, Ré, Mi♭, Fá, Sol, Lá♭, Si",
+        "Dó, Ré, Mi♭, Fá, Sol, Lá♭, Si♭",
+        "Dó, Ré, Mi, Fá♯, Sol, Lá, Si"
+      ],
+      "correta": 0,
+      "explicacao": "É a escala maior com a **3ª menor**. A segunda opção é a harmônica; a terceira, a natural.",
+      "conceito": "menor-melodica"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Dó4 está marcado: é a tônica de Dó menor melódica. Clique na **6ª** dessa escala.",
+      "nota_base": "C4",
+      "intervalo": "6M",
+      "direcao": "acima",
+      "explicacao": "A menor melódica tem a 6ª **maior**: **Lá**.",
+      "conceito": "menor-melodica",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual escala soa sobre o **F7(♯11)**?",
+      "opcoes": [
+        "Fá lídio dominante",
+        "Fá jônio",
+        "Fá frígio",
+        "Fá eólio"
+      ],
+      "correta": 0,
+      "explicacao": "O **lídio dominante** (lídio com 7ª menor) tem a 3ª maior, a 7ª menor e a ♯11.",
+      "conceito": "modos-da-menor-melodica"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A escala **alterada** é qual modo da menor melódica?",
+      "opcoes": [
+        "7º",
+        "4º",
+        "1º",
+        "5º"
+      ],
+      "correta": 0,
+      "explicacao": "A alterada começa no **7º grau** da menor melódica: Sol alterada é o 7º modo de Lá♭ menor melódica.",
+      "conceito": "modos-da-menor-melodica"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Que intervalo característico aparece entre a 2ª e a 3ª notas?",
+      "exemplo": {
+        "id": "exe-fdom",
+        "titulo": "Escala",
+        "legenda": "Mi frígio dominante.",
+        "eventos": [
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G#4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 0.5
+          }
+        ],
+        "andamento": 80
+      },
+      "opcoes": [
+        "2ª aumentada",
+        "2ª menor",
+        "2ª maior",
+        "3ª maior"
+      ],
+      "correta": 0,
+      "explicacao": "Fá → Sol♯ é uma **2ª aumentada** (três semitons): a marca do **frígio dominante**.",
+      "conceito": "frigio-dominante"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O **frígio dominante** é qual modo de qual escala?",
+      "opcoes": [
+        "5º modo da menor harmônica",
+        "3º modo da escala maior",
+        "5º modo da menor melódica",
+        "1º modo da diminuta"
+      ],
+      "correta": 0,
+      "explicacao": "Começando no 5º grau da menor harmônica (Mi, em Lá menor harmônica): **frígio dominante**.",
+      "conceito": "frigio-dominante"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que só existem duas escalas de tons inteiros diferentes?",
+      "opcoes": [
+        "O padrão é igual a partir de qualquer nota; transpor um tom dá a mesma escala",
+        "Porque só há duas notas pretas",
+        "Porque a escala tem dois tons",
+        "Por convenção"
+      ],
+      "correta": 0,
+      "explicacao": "Transpondo a escala um tom acima, caem as mesmas notas. Só a transposição de **meio tom** dá notas novas.",
+      "conceito": "simetria"
+    }
+  ],
+  "resumo": [
+    "**Tons inteiros**: 6 notas a um tom; só 2 escalas diferentes; soa sobre o aumentado e o 7(♯5).",
+    "**Diminuta**: 8 notas alternando tom e semitom; só 3 diferentes. Tom-semitom sobre o °; semitom-tom sobre o 7(b9).",
+    "**Menor melódica**: a maior com 3ª menor; soa sobre o m(7M).",
+    "**Lídio dominante** (4º modo) sobre o 7(♯11); **alterada** (7º modo) sobre o 7alt.",
+    "**Frígio dominante**: 5º modo da menor harmônica, sobre o V7(b9) do tom menor."
+  ],
+  "pergunta_para_chat": "Me dê acordes cifrados, um de cada vez, para eu escolher a escala e escrevê-la nota por nota, e corrija se alguma nota chocar com o acorde."
+}

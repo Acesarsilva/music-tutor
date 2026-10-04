@@ -1,0 +1,36 @@
+codigo: A05
+titulo: Modulação
+nivel: avancado
+assunto: teoria
+prerequisitos:
+  - M09  # Cadências
+  - M14  # Dominantes secundárias
+  - M17  # Transposição
+  - A03  # Empréstimo modal
+objetivos:
+  - Diferenciar modulação de dominante secundária e de empréstimo
+  - Reconhecer os tons vizinhos, que diferem em um acidente
+  - Modular por acorde pivô, um acorde comum aos dois tons
+  - Reconhecer a modulação direta, sem preparação
+  - Modular por cromatismo, com uma nota que se altera na mesma voz
+  - Modular por enarmonia, reinterpretando o acorde diminuto
+  - Ouvir a mudança de centro tonal
+conceitos:
+  - modulacao
+  - tons-vizinhos
+  - acorde-pivo
+  - modulacao-direta
+  - modulacao-cromatica
+  - modulacao-enarmonica
+  - percepcao-modulacao
+fora_do_escopo:
+  - Modulação pela sexta aumentada alemã (módulo A08)
+  - Análise de modulações em músicas inteiras (módulo A14)
+exemplos_semente:
+  - "C, F, Am, D7, G: o Am é VIm de Dó e IIm de Sol"
+  - "Refrão repetido meio tom acima"
+  - "C, E, A, B7, E: o Sol vira Sol sustenido"
+  - "B° respelado como D° e resolvendo em Eb"
+exercicios:
+  - multipla_escolha
+  - percepcao
