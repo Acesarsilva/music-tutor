@@ -163,8 +163,8 @@ def _nota_abc(
     chave = (letra, oitava)
     da_armadura = da_armadura or {}
     atual = estado_compasso.get(chave, da_armadura.get(letra, ""))
-    if acidente == atual and chave not in estado_compasso:
-        # A armadura (ou a ausência dela) já dá o acidente certo.
+    if acidente == atual and (chave not in estado_compasso or acidente == da_armadura.get(letra, "")):
+        # A armadura (ou a ausência dela) já dá o acidente certo, mesmo repetido no compasso.
         prefixo = ""
     elif acidente == atual:
         # Acidente já vale no compasso; repete por clareza quando houver acidente.

@@ -169,3 +169,11 @@ def test_codigos_compostos():
     assert teoria.nota_por_intervalo("C4", "9M") == "D5"
     with pytest.raises(teoria.ErroTeoria):
         teoria.validar_codigo_intervalo("9J")
+
+
+def test_armadura_nao_repete_o_acidente_no_compasso():
+    eventos = [{"notas": ["F#4"], "duracao": 1}, {"notas": ["F#4"], "duracao": 1},
+               {"notas": ["F4"], "duracao": 1}, {"notas": ["F#4"], "duracao": 1}]
+    abc = teoria.eventos_para_abc(eventos, armadura="D")
+    assert "F F =F ^F |]" in abc
+    assert teoria.alturas_do_abc(abc) == [[66], [66], [65], [66]]

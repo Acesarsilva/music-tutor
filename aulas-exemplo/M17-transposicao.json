@@ -1,0 +1,959 @@
+{
+  "codigo": "M17",
+  "titulo": "Transposição",
+  "nivel": "intermediario",
+  "resumo_curto": "Mudar a música de tom: pelo intervalo, pelos graus, na cifra, nos transpositores e com capotraste.",
+  "prerequisitos": [
+    "Armaduras de clave (I09)",
+    "Intervalos aumentados e diminutos (M02)",
+    "Campo harmônico com tétrades (M06)"
+  ],
+  "objetivos": [
+    "Transpor uma melodia **pelo intervalo**",
+    "Transpor **pelos graus**, trocando a armadura",
+    "Transpor uma sequência de **acordes**",
+    "Ler para **instrumentos transpositores**",
+    "Usar o **capotraste**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quantos sustenidos tem a armadura de Ré maior? Quais?\n2. Que intervalo há de Dó a Ré? E de Dó a Sol?\n3. Em Dó maior, quais são o I, o IV e o V7?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Dois: Fá♯ e Dó♯.\n2. Uma 2ª maior; uma 5ª justa.\n3. C, F e G7.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "Uma melodia",
+            "legenda": "Brilha, brilha, estrelinha, começando em Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 100
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "A mesma melodia?",
+            "legenda": "Começando em Ré. É outra música ou a mesma?",
+            "eventos": [
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "armadura": "D",
+            "andamento": 100
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "É a mesma música: todas as notas subiram uma 2ª maior, e o desenho ficou igual. Mudar uma música de tom sem mudar a melodia é **transpor**. Serve para caber na voz de quem canta, no instrumento que toca ou junto com outro músico.\n\nAo final, você vai transpor melodias e acordes, ler para instrumentos transpositores e usar o capotraste."
+        }
+      ]
+    },
+    {
+      "titulo": "Transpor pelo intervalo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O primeiro jeito: escolha o **intervalo** entre o tom original e o novo, e mova **todas** as notas por esse intervalo, com a qualidade exata.\n\nDe Dó para Ré, tudo sobe uma **2ª maior**: Dó vira Ré, Mi vira **Fá♯** (não Fá, que seria uma 2ª menor), Si vira **Dó♯**. Contar só as linhas e espaços da pauta não basta; o tamanho de cada intervalo precisa ser mantido."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Dó maior transposto uma 2ª maior acima.",
+          "cabecalho": [
+            "Em Dó",
+            "Em Ré"
+          ],
+          "linhas": [
+            [
+              "Dó",
+              "Ré"
+            ],
+            [
+              "Ré",
+              "Mi"
+            ],
+            [
+              "Mi",
+              "Fá♯"
+            ],
+            [
+              "Fá",
+              "Sol"
+            ],
+            [
+              "Sol",
+              "Lá"
+            ],
+            [
+              "Lá",
+              "Si"
+            ],
+            [
+              "Si",
+              "Dó♯"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sol",
+            "titulo": "Brilha, brilha em Sol",
+            "legenda": "Tudo uma 4ª justa abaixo: começa em Sol. A armadura ganha um Fá♯.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "armadura": "G",
+            "andamento": 100
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Transpor pelos graus",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O segundo jeito pensa na escala: cada nota é um **grau** do tom (Dó é o 1º grau de Dó maior, Mi é o 3º...). Para transpor:\n\n1. escreva a melodia em graus;\n2. troque a **armadura** pela do novo tom;\n3. escreva os mesmos graus na escala nova.\n\nA armadura cuida dos acidentes. Só as notas de fora da escala precisam ser pensadas uma a uma."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-graus-c",
+            "titulo": "Graus 3, 4, 5, 3, 2, 1 em Dó",
+            "legenda": "Mi, Fá, Sol, Mi, Ré, Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-graus-d",
+            "titulo": "Os mesmos graus em Ré",
+            "legenda": "Fá♯, Sol, Lá, Fá♯, Mi, Ré: a armadura de Ré dá o Fá♯.",
+            "eventos": [
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "armadura": "D",
+            "andamento": 88
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Transpor acordes",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na cifra, transponha a **fundamental** de cada acorde e **mantenha o tipo** (m, 7, 7M...). Pensando em graus é mais rápido: I, IV, V7, I em Dó é C, F, G7, C; em Ré, os mesmos graus dão D, G, A7, D."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-prog-c",
+            "titulo": "C, F, G7, C",
+            "legenda": "Em Dó maior.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-prog-d",
+            "titulo": "D, G, A7, D",
+            "legenda": "Os mesmos graus em Ré maior.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F#4",
+                  "A4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "D4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "G4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F#4",
+                  "A4",
+                  "D5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "armadura": "D",
+            "andamento": 66
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Instrumentos transpositores",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Em alguns instrumentos, a nota **escrita** é diferente da nota que **soa**. O nome do instrumento diz o som do Dó escrito:\n\n- **clarinete e trompete em Si♭**: o Dó escrito soa **Si♭**, uma 2ª maior abaixo;\n- **saxofone alto em Mi♭**: o Dó escrito soa **Mi♭**, uma 6ª maior abaixo;\n- **trompa em Fá**: o Dó escrito soa **Fá**, uma 5ª justa abaixo;\n- **violão**: escrito em clave de sol, soa uma **oitava abaixo** do escrito.\n\nPara escrever a parte de um clarinete que deve soar em Dó, faz-se o caminho inverso: escreve-se uma 2ª maior **acima**, em Ré."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "O que soa quando o músico lê Dó.",
+          "cabecalho": [
+            "Instrumento",
+            "Dó escrito soa",
+            "Para soar Dó, escreva"
+          ],
+          "linhas": [
+            [
+              "Flauta, violino, piano",
+              "Dó",
+              "Dó"
+            ],
+            [
+              "Clarinete, trompete (Si♭)",
+              "Si♭ (2ª maior abaixo)",
+              "Ré"
+            ],
+            [
+              "Saxofone alto (Mi♭)",
+              "Mi♭ (6ª maior abaixo)",
+              "Lá"
+            ],
+            [
+              "Trompa (Fá)",
+              "Fá (5ª justa abaixo)",
+              "Sol"
+            ],
+            [
+              "Violão",
+              "Dó uma oitava abaixo",
+              "Dó uma oitava acima"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "O capotraste",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O **capotraste** prende todas as cordas do violão numa casa. Cada casa sobe **um semitom**: as formas de acorde continuam as mesmas, mas tudo soa mais agudo.\n\n- forma de **G** com capotraste na casa 2: soa **A** (2 semitons acima);\n- forma de **C** na casa 5: soa **F** (5 semitons acima).\n\nPara achar a casa, conte os semitons entre o acorde da forma e o acorde que deve soar."
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Com capotraste, quem lê a cifra do som real (A) e quem toca as formas (G) estão certos ao mesmo tempo. Combine antes qual das duas cifras vai no papel."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: transpor uma melodia",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja **Mi, Fá, Sol, Mi** de Dó para Fá maior, com o motivo de cada passo.\n\n1. **Ache o intervalo**: de Dó para Fá sobe uma 4ª justa.\n2. **Troque a armadura**: Fá maior tem Si♭.\n3. **Mova cada nota pelo intervalo**: Mi vira Lá, Fá vira **Si♭**, Sol vira Dó, Mi vira Lá."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que Fá vira Si♭, e não Si?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "De Fá a Si é uma 4ª **aumentada** (três tons). Para manter a 4ª **justa**, a nota é **Si♭**, que já está na armadura de Fá maior.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. **Sol, Lá, Si** de Dó para Ré: o intervalo é uma 2ª maior e a armadura tem Fá♯ e Dó♯. Mova as notas.\n\nE agora todos os passos são seus: os acordes **Am, Dm, E7, Am** de Lá menor para Mi menor."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Sol, Lá, Si em Ré: **Lá, Si, Dó♯**.\n\nDe Lá para Mi sobe uma 5ª justa (ou desce uma 4ª justa); a armadura de Mi menor tem Fá♯. Os acordes ficam **Em, Am, B7, Em**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega transpôs **Dó, Mi, Sol** de Dó para Ré e escreveu:\n\n> \"Ré, Fá, Lá. Subi tudo uma nota.\"\n\nO que aconteceu?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ele subiu cada nota uma **linha ou espaço**, mas não manteve a qualidade dos intervalos. Dó–Mi é uma 3ª maior; Ré–Fá é uma 3ª menor, e o acorde maior virou menor. Subindo uma **2ª maior**, o certo é **Ré, Fá♯, Lá**.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que é transpor uma música?",
+      "opcoes": [
+        "Mudar o tom mantendo a melodia e o ritmo",
+        "Trocar a melodia por outra",
+        "Tocar mais rápido",
+        "Mudar o compasso"
+      ],
+      "correta": 0,
+      "explicacao": "Transpor é mover **todas** as notas pelo mesmo intervalo: o tom muda, a música continua a mesma.",
+      "conceito": "transposicao-por-intervalo"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Uma melodia em Dó vai para Ré, uma 2ª maior acima. Mi4 está marcado: clique na nota que ele vira.",
+      "nota_base": "E4",
+      "intervalo": "2M",
+      "direcao": "acima",
+      "explicacao": "Uma 2ª maior acima de Mi é **Fá♯**. Fá natural seria só meio tom.",
+      "conceito": "transposicao-por-intervalo",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Transpondo de Dó para Ré, a cifra **G7** vira:",
+      "opcoes": [
+        "A7",
+        "Am7",
+        "G♯7",
+        "D7"
+      ],
+      "correta": 0,
+      "explicacao": "Sobe a fundamental uma 2ª maior (Sol → Lá) e mantém o tipo: **A7**.",
+      "conceito": "transposicao-de-acordes"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça as duas versões. A segunda é a mesma melodia em outro tom?",
+      "exemplo": {
+        "id": "exe-transposta",
+        "titulo": "Duas versões",
+        "legenda": "A segunda está em Sol.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G3"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G3"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 100
+      },
+      "opcoes": [
+        "Sim, só começa mais grave",
+        "Não, a melodia mudou"
+      ],
+      "correta": 0,
+      "explicacao": "O desenho é o mesmo, uma 4ª justa abaixo: é uma **transposição**.",
+      "conceito": "percepcao-transposicao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Dó maior, a melodia usa os graus 1, 3 e 5. Em Sol maior, esses graus são:",
+      "opcoes": [
+        "Sol, Si, Ré",
+        "Sol, Lá, Si",
+        "Dó, Mi, Sol",
+        "Sol, Si♭, Ré"
+      ],
+      "correta": 0,
+      "explicacao": "Na escala de Sol maior, o 1º grau é Sol, o 3º é Si e o 5º é Ré: **Sol, Si, Ré**.",
+      "conceito": "transposicao-por-graus"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A progressão **C, Am, F, G** vai para Fá maior. Como fica?",
+      "opcoes": [
+        "F, Dm, B♭, C",
+        "F, Dm, B, C",
+        "F, Am, B♭, C",
+        "G, Em, C, D"
+      ],
+      "correta": 0,
+      "explicacao": "Tudo uma 4ª justa acima, mantendo os tipos: **F, Dm, B♭, C**. Fá a Si seria 4ª aumentada.",
+      "conceito": "transposicao-de-acordes"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Um clarinetista em Si♭ lê **Dó**. Qual nota soa?",
+      "opcoes": [
+        "Si♭",
+        "Dó",
+        "Ré",
+        "Mi♭"
+      ],
+      "correta": 0,
+      "explicacao": "No clarinete em Si♭, o Dó escrito soa **Si♭**, uma 2ª maior abaixo.",
+      "conceito": "instrumentos-transpositores"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Para o clarinete em Si♭ **soar** Dó, que nota deve estar escrita? Dó4 está marcado.",
+      "nota_base": "C4",
+      "intervalo": "2M",
+      "direcao": "acima",
+      "explicacao": "Ele soa uma 2ª maior abaixo do escrito; escreva uma 2ª maior acima: **Ré**.",
+      "conceito": "instrumentos-transpositores",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Com o capotraste na casa 3, a forma de **C** soa como:",
+      "opcoes": [
+        "E♭",
+        "D",
+        "E",
+        "F"
+      ],
+      "correta": 0,
+      "explicacao": "Três semitons acima de Dó: Dó♯, Ré, **Mi♭**. O acorde soa **E♭**.",
+      "conceito": "capotraste"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A cantora pede a música em A, mas você só quer usar as formas de G. Em que casa vai o capotraste?",
+      "opcoes": [
+        "Casa 2",
+        "Casa 1",
+        "Casa 3",
+        "Casa 7"
+      ],
+      "correta": 0,
+      "explicacao": "De Sol a Lá são **2 semitons**: capotraste na **casa 2**.",
+      "conceito": "capotraste"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual destes instrumentos **não** é transpositor?",
+      "opcoes": [
+        "Flauta",
+        "Clarinete em Si♭",
+        "Saxofone alto",
+        "Trompa em Fá"
+      ],
+      "correta": 0,
+      "explicacao": "Na **flauta**, a nota escrita é a que soa. Os outros soam diferente do escrito.",
+      "conceito": "instrumentos-transpositores"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Uma melodia em Dó vai para Fá, uma 4ª justa acima. Fá4 está marcado: clique na nota que ele vira.",
+      "nota_base": "F4",
+      "intervalo": "4J",
+      "direcao": "acima",
+      "explicacao": "Uma 4ª justa acima de Fá é **Si♭**. Si natural seria uma 4ª aumentada.",
+      "conceito": "transposicao-por-intervalo",
+      "de": "C4",
+      "ate": "C6"
+    }
+  ],
+  "resumo": [
+    "**Transpor** é mudar o tom movendo todas as notas pelo mesmo intervalo, com a qualidade exata.",
+    "Pelos graus: escreva a melodia em graus, troque a armadura e reescreva os graus no tom novo.",
+    "Nos acordes, transponha a fundamental e mantenha o tipo (m, 7, 7M).",
+    "Clarinete e trompete em Si♭ soam uma 2ª maior abaixo; sax alto em Mi♭, uma 6ª maior abaixo; trompa em Fá, uma 5ª justa abaixo; o violão, uma oitava abaixo.",
+    "Cada casa do **capotraste** sobe um semitom, e as formas dos acordes não mudam."
+  ],
+  "pergunta_para_chat": "Me dê melodias curtas e sequências de acordes, uma de cada vez, com um tom de destino, para eu transpor, e confira cada nota e cada cifra."
+}

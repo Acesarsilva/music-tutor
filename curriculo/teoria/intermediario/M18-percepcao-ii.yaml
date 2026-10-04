@@ -1,0 +1,30 @@
+codigo: M18
+titulo: Percepção II
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - I16  # Percepção I
+  - M05  # Acordes de sétima
+  - M07  # Funções harmônicas
+objetivos:
+  - Seguir um método para o ditado melódico, da tônica ao nome das notas
+  - Descrever o contorno de uma melodia, com graus conjuntos e saltos
+  - Reconhecer de ouvido as funções de tônica, subdominante e dominante numa progressão
+  - Ouvir a linha do baixo para descobrir os acordes
+  - Reconhecer de ouvido as tétrades 7M, 7, m7, m7(b5) e diminuta
+conceitos:
+  - ditado-melodico
+  - contorno-melodico
+  - ditado-harmonico
+  - funcoes-de-ouvido
+  - tetrades-de-ouvido
+fora_do_escopo:
+  - Ditado a duas vozes e tensões de ouvido (módulo A17)
+  - Ditado de acordes alterados e de empréstimo modal (módulo A17)
+exemplos_semente:
+  - "Ditado de uma melodia curta em Dó, começando na tônica"
+  - "C, Am, F, G7, C: tônica, tônica, subdominante, dominante, tônica"
+  - "C7M, C7, Cm7, Cm7(b5) e B° em arpejo e em bloco"
+exercicios:
+  - multipla_escolha
+  - percepcao

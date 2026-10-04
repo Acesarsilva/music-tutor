@@ -1,0 +1,33 @@
+codigo: M17
+titulo: Transposição
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - I09  # Armaduras de clave
+  - M02  # Intervalos aumentados, diminutos e inversão
+  - M06  # Campo harmônico com tétrades
+objetivos:
+  - Transpor uma melodia para outro tom movendo todas as notas pelo mesmo intervalo
+  - Transpor pelos graus da escala, trocando a armadura
+  - Transpor uma sequência de acordes cifrada
+  - Entender os instrumentos transpositores, como o clarinete e o saxofone
+  - Usar o capotraste no violão para mudar o tom sem mudar as formas dos acordes
+conceitos:
+  - transposicao-por-intervalo
+  - transposicao-por-graus
+  - transposicao-de-acordes
+  - instrumentos-transpositores
+  - capotraste
+  - percepcao-transposicao
+fora_do_escopo:
+  - Modulação dentro da música (módulo A05)
+  - Escrita para orquestra (módulo A16)
+exemplos_semente:
+  - "Brilha, brilha em Dó, em Sol e em Ré"
+  - "C, F, G7, C transposto para Ré: D, G, A7, D"
+  - "Clarinete em Si bemol: o Dó escrito soa Si bemol"
+  - "Forma de G com capotraste na casa 2 soa A"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado
