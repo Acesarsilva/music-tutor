@@ -1,0 +1,32 @@
+codigo: M12
+titulo: Escala pentatônica e blues
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - I07  # Escala maior
+  - I11  # Escalas menores
+  - M08  # Progressões comuns (blues de 12 compassos)
+objetivos:
+  - Formar a pentatônica maior tirando o 4º e o 7º grau da escala maior
+  - Formar a pentatônica menor e relacioná-la com a maior relativa
+  - Montar a escala blues com a blue note (5ª diminuta)
+  - Usar a pentatônica e a escala blues para improvisar sobre acordes e sobre o blues
+conceitos:
+  - pentatonica-maior
+  - pentatonica-menor
+  - pentatonicas-relativas
+  - escala-blues
+  - improviso-pentatonico
+  - percepcao-pentatonica
+fora_do_escopo:
+  - Pentatônicas sobre tensões e substituições (nível avançado)
+  - Escalas simétricas (módulo A07)
+exemplos_semente:
+  - "Dó pentatônica maior: Dó, Ré, Mi, Sol, Lá"
+  - "Lá pentatônica menor: as mesmas notas, a partir de Lá"
+  - "As teclas pretas formam uma pentatônica"
+  - "Lá blues: Lá, Dó, Ré, Mi♭, Mi, Sol"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

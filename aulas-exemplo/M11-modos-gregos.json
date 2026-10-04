@@ -1,0 +1,1146 @@
+{
+  "codigo": "M11",
+  "titulo": "Modos gregos",
+  "nivel": "intermediario",
+  "resumo_curto": "Os sete modos da escala maior, sua nota característica e os modos sobre a mesma tônica.",
+  "prerequisitos": [
+    "Escala maior (I07)",
+    "Escalas menores (I11)",
+    "Intervalos aumentados e diminutos (M02)"
+  ],
+  "objetivos": [
+    "Formar os **sete modos** a partir dos graus da escala maior",
+    "Classificar cada modo como **maior** ou **menor**",
+    "Achar a **nota característica** de cada modo",
+    "Construir os modos sobre a **mesma tônica**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Qual é a sequência de tons e semitons da escala maior?\n2. Que notas formam Lá menor natural? Tem algum acidente?\n3. Quantos semitons tem a 4ª aumentada?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. T–T–S–T–T–T–S.\n2. Lá, Si, Dó, Ré, Mi, Fá, Sol: nenhum acidente, as mesmas notas de Dó maior.\n3. 6, um trítono.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Só teclas brancas",
+            "legenda": "Uma escala só com as notas de Dó maior, mas começando e terminando em Ré. Soa maior ou menor? Soa como Ré menor que você conhece?",
+            "eventos": [
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Soa menor, mas com uma cor diferente: o Si natural, onde a menor natural teria Si♭. É o **modo dórico**. Começar a escala maior em cada um dos seus graus dá sete **modos**, com nomes gregos.\n\nAo final, você vai montar os sete modos, achar a nota característica de cada um e reconhecer alguns de ouvido."
+        }
+      ]
+    },
+    {
+      "titulo": "Sete modos, uma escala",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Toque as notas de Dó maior a partir de cada grau. A sequência de tons e semitons muda, porque os semitons (Mi–Fá e Si–Dó) caem em lugares diferentes."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Os modos com as teclas brancas.",
+          "cabecalho": [
+            "Grau",
+            "Modo",
+            "De... a...",
+            "Som"
+          ],
+          "linhas": [
+            [
+              "1º",
+              "jônio",
+              "Dó a Dó",
+              "maior (é a escala maior)"
+            ],
+            [
+              "2º",
+              "dórico",
+              "Ré a Ré",
+              "menor"
+            ],
+            [
+              "3º",
+              "frígio",
+              "Mi a Mi",
+              "menor"
+            ],
+            [
+              "4º",
+              "lídio",
+              "Fá a Fá",
+              "maior"
+            ],
+            [
+              "5º",
+              "mixolídio",
+              "Sol a Sol",
+              "maior"
+            ],
+            [
+              "6º",
+              "eólio",
+              "Lá a Lá",
+              "menor (é a menor natural)"
+            ],
+            [
+              "7º",
+              "lócrio",
+              "Si a Si",
+              "diminuto"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O **som** vem da 3ª entre a tônica do modo e o 3º grau: 3ª maior dá modo maior; 3ª menor, menor. O lócrio tem 3ª menor e 5ª diminuta, por isso soa instável e é o menos usado."
+        }
+      ]
+    },
+    {
+      "titulo": "A nota característica",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Cada modo se parece com a escala maior ou com a menor natural, exceto por uma nota: a **nota característica**. É ela que dá a cor do modo."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "O que distingue cada modo.",
+          "cabecalho": [
+            "Modo",
+            "Compare com",
+            "Nota característica"
+          ],
+          "linhas": [
+            [
+              "dórico",
+              "menor natural",
+              "6ª maior"
+            ],
+            [
+              "frígio",
+              "menor natural",
+              "2ª menor"
+            ],
+            [
+              "lídio",
+              "maior",
+              "4ª aumentada"
+            ],
+            [
+              "mixolídio",
+              "maior",
+              "7ª menor"
+            ],
+            [
+              "lócrio",
+              "menor natural",
+              "2ª menor e 5ª diminuta"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-mixo",
+            "titulo": "Sol mixolídio",
+            "legenda": "Sol maior com o Fá natural: a 7ª menor deixa o som maior, mas mais solto, menos \"conclusivo\".",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 3
+              }
+            ],
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-lidio",
+            "titulo": "Fá lídio",
+            "legenda": "Fá maior com Si natural: a 4ª aumentada soa luminosa, quase flutuante.",
+            "eventos": [
+              {
+                "notas": [
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 3
+              }
+            ],
+            "andamento": 88,
+            "intervalo": {
+              "de": "F4",
+              "para": "B4",
+              "codigo": "4A"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-dorico",
+            "titulo": "Ré dórico",
+            "legenda": "Ré menor com Si natural: a 6ª maior deixa o menor mais claro.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 3
+              }
+            ],
+            "andamento": 88,
+            "intervalo": {
+              "de": "D4",
+              "para": "B4",
+              "codigo": "6M"
+            }
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "A música nordestina, como o baião e o xote, usa muito o mixolídio e o lídio. O dórico é comum no jazz, no funk e no rock."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: que modo é Sol a Sol nas teclas brancas?",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja o caminho completo, com o motivo de cada passo.\n\n1. **Olhe a 3ª**: Sol–Si é 3ª maior. É um modo **maior**: jônio, lídio ou mixolídio.\n2. **Compare com a escala maior de Sol**: Sol maior tem Fá♯; aqui o Fá é natural.\n3. **Nomeie pela diferença**: 7ª menor sobre um modo maior é o **mixolídio**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-comparacao",
+            "titulo": "Sol maior e Sol mixolídio",
+            "legenda": "Primeiro com Fá♯, depois com Fá natural.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              }
+            ],
+            "andamento": 100
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que comparar com a escala maior de Sol, e não com a de Dó?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque o modo tem tônica Sol. A nota característica é a diferença entre o modo e a escala **da mesma tônica**: Sol maior tem Fá♯, Sol mixolídio tem Fá.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **Mi a Mi nas brancas**: Mi–Sol é 3ª menor; comparado a Mi menor natural (com Fá♯), aqui o Fá é natural, uma 2ª menor. Que modo é?\n\nE agora dois passos são seus: **Fá a Fá nas brancas**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Mi a Mi: menor com 2ª menor, **frígio**.\n\nFá a Fá: Fá–Lá é 3ª maior (modo maior). Fá maior teria Si♭; aqui o Si é natural, 4ª aumentada: **lídio**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Modos sobre a mesma tônica",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na prática, é útil pensar nos modos todos sobre a **mesma tônica**, como versões da escala maior ou menor com uma ou duas notas alteradas. Sobre Dó:"
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Os modos paralelos de Dó, do mais claro ao mais escuro.",
+          "cabecalho": [
+            "Modo",
+            "Notas",
+            "Alterações em relação a Dó maior"
+          ],
+          "linhas": [
+            [
+              "lídio",
+              "Dó Ré Mi Fá♯ Sol Lá Si",
+              "4ª aumentada"
+            ],
+            [
+              "jônio",
+              "Dó Ré Mi Fá Sol Lá Si",
+              "nenhuma"
+            ],
+            [
+              "mixolídio",
+              "Dó Ré Mi Fá Sol Lá Si♭",
+              "7ª menor"
+            ],
+            [
+              "dórico",
+              "Dó Ré Mi♭ Fá Sol Lá Si♭",
+              "3ª e 7ª menores"
+            ],
+            [
+              "eólio",
+              "Dó Ré Mi♭ Fá Sol Lá♭ Si♭",
+              "3ª, 6ª e 7ª menores"
+            ],
+            [
+              "frígio",
+              "Dó Ré♭ Mi♭ Fá Sol Lá♭ Si♭",
+              "2ª, 3ª, 6ª e 7ª menores"
+            ],
+            [
+              "lócrio",
+              "Dó Ré♭ Mi♭ Fá Sol♭ Lá♭ Si♭",
+              "2ª, 3ª, 6ª e 7ª menores, 5ª diminuta"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Cada linha da tabela muda uma nota em relação à anterior e fica um pouco mais escura."
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega afirmou:\n\n> \"Ré dórico é a mesma coisa que Ré menor natural, só que começando em Ré.\"\n\nOnde está o erro, por que está errado e qual é a diferença?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ré menor natural tem **Si♭** (é o relativo de Fá maior). Ré dórico usa as notas de Dó maior, com **Si natural**: a 6ª maior é a nota característica. Os dois são menores, mas com cores diferentes.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-eolio-dorico",
+            "titulo": "Ré menor natural e Ré dórico",
+            "legenda": "Primeiro com Si♭, depois com Si natural.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              }
+            ],
+            "andamento": 100
+          }
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que modo começa no **5º grau** da escala maior?",
+      "opcoes": [
+        "Mixolídio",
+        "Lídio",
+        "Dórico",
+        "Eólio"
+      ],
+      "correta": 0,
+      "explicacao": "Sol a Sol nas teclas brancas, 5º grau de Dó maior: **mixolídio**. Lídio é o 4º; eólio, o 6º.",
+      "conceito": "modos-da-escala-maior"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça duas escalas de Sol. Qual delas é o **mixolídio**?",
+      "exemplo": {
+        "id": "exe-mixo",
+        "titulo": "Duas escalas",
+        "legenda": "Primeiro Sol maior (Fá♯), depois Sol mixolídio (Fá).",
+        "eventos": [
+          {
+            "notas": [
+              "G3"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A3"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B3"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F#4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G3"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A3"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B3"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [],
+            "duracao": 1
+          }
+        ],
+        "andamento": 100
+      },
+      "opcoes": [
+        "A segunda",
+        "A primeira"
+      ],
+      "correta": 0,
+      "explicacao": "Na segunda, a 7ª nota (Fá natural) fica um tom abaixo da tônica, sem a atração da sensível: **mixolídio**.",
+      "conceito": "percepcao-modos"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Fá4 está marcado. Clique na **nota característica do Fá lídio**, a 4ª aumentada.",
+      "nota_base": "F4",
+      "intervalo": "4A",
+      "direcao": "acima",
+      "explicacao": "Fá, Sol, Lá, Si: a 4ª é Si, e Fá–Si tem 6 semitons, **4ª aumentada**. Fá maior teria Si♭.",
+      "conceito": "nota-caracteristica",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a nota característica do **dórico**?",
+      "opcoes": [
+        "6ª maior",
+        "2ª menor",
+        "7ª menor",
+        "4ª aumentada"
+      ],
+      "correta": 0,
+      "explicacao": "O dórico é um menor com **6ª maior** (Si natural em Ré dórico). 2ª menor é do frígio; 4ª aumentada, do lídio.",
+      "conceito": "nota-caracteristica"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais modos têm som **maior**?",
+      "opcoes": [
+        "Jônio, lídio e mixolídio",
+        "Dórico, frígio e eólio",
+        "Jônio, dórico e lídio",
+        "Mixolídio, eólio e lócrio"
+      ],
+      "correta": 0,
+      "explicacao": "Os que têm **3ª maior** sobre a tônica: jônio (Dó), lídio (Fá) e mixolídio (Sol).",
+      "conceito": "modos-maiores-e-menores"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Sol4 está marcado. Clique na **nota característica do Sol mixolídio**, a 7ª menor.",
+      "nota_base": "G4",
+      "intervalo": "7m",
+      "direcao": "acima",
+      "explicacao": "A 7ª menor de Sol é **Fá** (10 semitons). Fá♯ seria a sensível de Sol maior.",
+      "conceito": "nota-caracteristica",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que modo é **Mi a Mi** nas teclas brancas?",
+      "opcoes": [
+        "Frígio",
+        "Eólio",
+        "Dórico",
+        "Lócrio"
+      ],
+      "correta": 0,
+      "explicacao": "Mi–Sol é 3ª menor, e Mi–Fá é **2ª menor**, a nota característica do **frígio**. Mi menor natural teria Fá♯.",
+      "conceito": "modos-da-escala-maior"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça duas escalas de Ré. Qual delas é o **dórico**?",
+      "exemplo": {
+        "id": "exe-dorico",
+        "titulo": "Duas escalas",
+        "legenda": "Primeiro Ré menor natural (Si♭), depois Ré dórico (Si).",
+        "eventos": [
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Bb4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [],
+            "duracao": 1
+          }
+        ],
+        "andamento": 100
+      },
+      "opcoes": [
+        "A segunda",
+        "A primeira"
+      ],
+      "correta": 0,
+      "explicacao": "Na segunda, a 6ª nota (Si natural) está mais alta e clareia o som menor: **dórico**.",
+      "conceito": "percepcao-modos"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Sobre Dó, que modo tem as notas **Dó, Ré, Mi, Fá, Sol, Lá, Si♭**?",
+      "opcoes": [
+        "Mixolídio",
+        "Dórico",
+        "Eólio",
+        "Lídio"
+      ],
+      "correta": 0,
+      "explicacao": "É Dó maior com a 7ª abaixada (Si♭): **mixolídio**. O dórico também abaixaria a 3ª (Mi♭).",
+      "conceito": "modos-paralelos"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que o **lócrio** é o modo menos usado?",
+      "opcoes": [
+        "A 5ª diminuta deixa a tônica instável",
+        "Porque não tem semitons",
+        "Porque é igual ao jônio",
+        "Porque tem 3ª maior"
+      ],
+      "correta": 0,
+      "explicacao": "Si–Fá é **5ª diminuta**: o acorde da tônica é diminuto e não soa como repouso.",
+      "conceito": "modos-maiores-e-menores"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Sobre Dó, qual modo tem **Fá♯**?",
+      "opcoes": [
+        "Lídio",
+        "Mixolídio",
+        "Frígio",
+        "Dórico"
+      ],
+      "correta": 0,
+      "explicacao": "Fá♯ é a 4ª aumentada de Dó, nota característica do **lídio**: Dó Ré Mi Fá♯ Sol Lá Si.",
+      "conceito": "modos-paralelos"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O **eólio** é o mesmo que:",
+      "opcoes": [
+        "A escala menor natural",
+        "A escala maior",
+        "A menor harmônica",
+        "A escala cromática"
+      ],
+      "correta": 0,
+      "explicacao": "O eólio, do 6º grau (Lá a Lá), é a **menor natural**. A menor harmônica sobe o 7º grau.",
+      "conceito": "modos-da-escala-maior"
+    }
+  ],
+  "resumo": [
+    "Os modos são a escala maior começando em cada grau: jônio, dórico, frígio, lídio, mixolídio, eólio, lócrio.",
+    "**Maiores**: jônio, lídio, mixolídio. **Menores**: dórico, frígio, eólio. O lócrio é diminuto.",
+    "Notas características: dórico 6ª maior, frígio 2ª menor, lídio 4ª aumentada, mixolídio 7ª menor.",
+    "Sobre a mesma tônica, do mais claro ao mais escuro: lídio, jônio, mixolídio, dórico, eólio, frígio, lócrio."
+  ],
+  "pergunta_para_chat": "Me dê um modo e uma tônica, um de cada vez, para eu escrever as notas e dizer a nota característica, e me corrija se eu errar algum acidente."
+}

@@ -1,0 +1,752 @@
+{
+  "codigo": "M09",
+  "titulo": "Cadências",
+  "nivel": "intermediario",
+  "resumo_curto": "Autêntica (perfeita e imperfeita), plagal, meia cadência e deceptiva, no papel e de ouvido.",
+  "prerequisitos": [
+    "Funções harmônicas (M07)",
+    "Progressões comuns (M08)"
+  ],
+  "objetivos": [
+    "Entender a **cadência** como a pontuação de uma frase",
+    "Reconhecer **autêntica, plagal, meia cadência e deceptiva**",
+    "Diferenciar autêntica **perfeita** de **imperfeita**",
+    "Reconhecer as cadências **de ouvido**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Em Dó maior, quais acordes são a tônica, a subdominante e a dominante principais?\n2. Que trítono há no G7, e como ele se resolve?\n3. Qual é o VIm de Dó maior?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. C (tônica), F (subdominante) e G ou G7 (dominante).\n2. Si–Fá; Si sobe para Dó e Fá desce para Mi.\n3. Am.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "Primeiro final",
+            "legenda": "Ouça até o último acorde. A frase acabou ou ficou no ar?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "C4",
+                  "F4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "Segundo final",
+            "legenda": "Os mesmos três primeiros acordes. E agora, acabou?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "C4",
+                  "F4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O primeiro termina em casa, no C. O segundo para no G e deixa a frase aberta, como uma vírgula. Os dois acordes finais de uma frase formam a **cadência**, a pontuação da música.\n\nAo final, você vai reconhecer, no papel e de ouvido, as quatro cadências mais usadas."
+        }
+      ]
+    },
+    {
+      "titulo": "Cadência autêntica: V–I",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **cadência autêntica** vai da dominante à tônica: **V–I** (ou V7–I). É o final mais forte: o trítono do V7 se resolve, e a sensível sobe para a tônica. Funciona como um ponto final."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-autentica",
+            "titulo": "G7 → C",
+            "legenda": "A tensão do G7 se desfaz no C.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "D5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Ela pode ser **perfeita** ou **imperfeita**:\n\n- **perfeita**: os dois acordes em estado fundamental, e a nota mais aguda do I é a própria tônica (Dó);\n- **imperfeita**: falta uma dessas condições, por exemplo a melodia termina em Mi, ou o V está invertido. Ainda é conclusiva, mas menos."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-perfeita",
+            "titulo": "Perfeita",
+            "legenda": "G7 → C, com Dó no alto: fim completo.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-imperfeita",
+            "titulo": "Imperfeita",
+            "legenda": "G/B → C, com Mi no alto: termina, mas sem a mesma firmeza.",
+            "eventos": [
+              {
+                "notas": [
+                  "B3",
+                  "D4",
+                  "G4",
+                  "D5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Cadência plagal: IV–I",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **cadência plagal** vai da subdominante à tônica: **IV–I**. É mais suave que a autêntica, sem trítono para resolver. Por ser comum no fim de hinos, é chamada de cadência do **amém**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-plagal",
+            "titulo": "F → C",
+            "legenda": "Um fim calmo, sem tensão: \"a-mém\".",
+            "eventos": [
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 2,
+                "silaba": "A-"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4,
+                "silaba": "mém"
+              }
+            ],
+            "anacruse": 2,
+            "andamento": 56
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Meia cadência: termina no V",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **meia cadência** termina na **dominante**. A frase para, mas fica suspensa, pedindo continuação, como uma vírgula ou uma pergunta. Pode chegar ao V a partir de qualquer acorde: I–V, IV–V, IIm–V."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-meia",
+            "titulo": "C, F, G",
+            "legenda": "A frase para no G. Repare que dá vontade de ouvir mais.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "C4",
+                  "F4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "É comum uma frase terminar em meia cadência e a frase seguinte, que \"responde\", terminar em cadência autêntica."
+        }
+      ]
+    },
+    {
+      "titulo": "Cadência deceptiva: V–VI",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na **cadência deceptiva** (ou **de engano**), o V prepara a tônica, mas a música vai para o **VIm**. O ouvido esperava o C e recebe o Am: uma surpresa. Como o Am divide notas com o C, a troca soa natural, só que sem fechar a frase."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-deceptiva",
+            "titulo": "G7 → Am",
+            "legenda": "Você espera o C... e ouve o Am.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: que cadência é esta?",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Para classificar, olhe só para os **dois últimos acordes** da frase. Veja com **Dm, G7, C**, em Dó maior.\n\n1. **Ache o último acorde**: C, o I. A frase termina na tônica.\n2. **Ache o penúltimo**: G7, o V7.\n3. **Compare com as quatro**: V–I é **autêntica**. Com os dois em estado fundamental e Dó no alto, **perfeita**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-resolvido",
+            "titulo": "Dm, G7, C",
+            "legenda": "Termina em V7–I com Dó no alto.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que o Dm do começo não muda a classificação?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque a cadência é definida pelo **final** da frase: os dois últimos acordes. O Dm prepara o caminho, mas o que decide é o V7–I.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **C, Am, F, C**: os dois últimos são F e C, IV–I. Que cadência é?\n\nE agora dois passos são seus: **C, Dm, G7, Am**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "C, Am, F, C: IV–I, **plagal**.\n\nC, Dm, G7, Am: os dois últimos são G7 (V7) e Am (VIm): **deceptiva**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega classificou a frase **C, Am, Dm, G** assim:\n\n> \"Ela tem um V, o G, então é uma cadência autêntica.\"\n\nOnde está o erro, por que está errado e qual é a cadência?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ter um V não basta: a autêntica é **V indo para I**. Aqui a frase **termina** no G, sem voltar ao C. É uma **meia cadência**.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que cadência termina com **V–I**?",
+      "opcoes": [
+        "Autêntica",
+        "Plagal",
+        "Meia cadência",
+        "Deceptiva"
+      ],
+      "correta": 0,
+      "explicacao": "Dominante para tônica é a **autêntica**, o final mais forte. Plagal é IV–I; deceptiva é V–VIm.",
+      "conceito": "cadencia-autentica"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça o fim desta frase. Que cadência é?",
+      "exemplo": {
+        "id": "exe-meia",
+        "titulo": "Frase",
+        "legenda": "C, F, G: para no V, meia cadência.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "F3",
+              "A3",
+              "C4",
+              "F4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "G4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 66
+      },
+      "opcoes": [
+        "Meia cadência",
+        "Autêntica",
+        "Plagal"
+      ],
+      "correta": 0,
+      "explicacao": "A frase **para no G**, a dominante, e fica suspensa: **meia cadência**. Na autêntica, o G iria ao C.",
+      "conceito": "percepcao-cadencia"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a cadência de **G7 → Am** em Dó maior?",
+      "opcoes": [
+        "Deceptiva",
+        "Autêntica",
+        "Plagal",
+        "Meia cadência"
+      ],
+      "correta": 0,
+      "explicacao": "O V7 prepara o C, mas vai ao **VIm** (Am): **deceptiva**, ou de engano. Quem marcou autêntica viu o V7 e não olhou o destino.",
+      "conceito": "cadencia-deceptiva"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A cadência **IV–I** se chama:",
+      "opcoes": [
+        "Plagal",
+        "Autêntica",
+        "Deceptiva",
+        "Meia cadência"
+      ],
+      "correta": 0,
+      "explicacao": "Subdominante para tônica é a **plagal**, a do \"amém\". Sem trítono para resolver, ela soa mais suave.",
+      "conceito": "cadencia-plagal"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A frase termina com um ponto final ou com uma surpresa?",
+      "exemplo": {
+        "id": "exe-deceptiva",
+        "titulo": "Frase",
+        "legenda": "C, G7, Am: cadência deceptiva.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "F4",
+              "D5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "A3",
+              "C4",
+              "E4",
+              "C5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "Com uma surpresa: vai para outro acorde",
+        "Com um ponto final, na tônica"
+      ],
+      "correta": 0,
+      "explicacao": "Depois do G7 o ouvido espera o C, mas chega o **Am**: cadência **deceptiva**.",
+      "conceito": "percepcao-cadencia"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que torna uma cadência autêntica **perfeita**?",
+      "opcoes": [
+        "V e I em estado fundamental, com a tônica no alto do I",
+        "Usar G7 em vez de G",
+        "Terminar com um acorde menor",
+        "Ter quatro acordes"
+      ],
+      "correta": 0,
+      "explicacao": "**Perfeita**: os dois acordes em estado fundamental e a tônica na voz mais aguda do I. Faltando algo, é imperfeita. A 7ª no V não decide isso.",
+      "conceito": "autentica-perfeita-imperfeita"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma frase termina em **IIm–V**. Que cadência é?",
+      "opcoes": [
+        "Meia cadência",
+        "Autêntica",
+        "Plagal",
+        "Deceptiva"
+      ],
+      "correta": 0,
+      "explicacao": "Termina **no V**: **meia cadência**. O que vem antes do V não muda o nome.",
+      "conceito": "meia-cadencia"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Que cadência fecha esta frase?",
+      "exemplo": {
+        "id": "exe-plagal",
+        "titulo": "Frase",
+        "legenda": "F → C: cadência plagal.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "F3",
+              "C4",
+              "F4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 56
+      },
+      "opcoes": [
+        "Plagal",
+        "Autêntica",
+        "Meia cadência"
+      ],
+      "correta": 0,
+      "explicacao": "Termina na tônica, mas sem a tensão do V7: veio do **F**, IV–I, **plagal**.",
+      "conceito": "percepcao-cadencia"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em **Sol maior**, qual é a cadência autêntica com tétrade?",
+      "opcoes": [
+        "D7 → G",
+        "C → G",
+        "D7 → Em",
+        "G → D"
+      ],
+      "correta": 0,
+      "explicacao": "O V7 de Sol maior é D7: **D7 → G**. C → G é plagal; D7 → Em é deceptiva; G → D é meia cadência.",
+      "conceito": "cadencia-autentica"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "G/B → C, com Mi no alto do C, é uma cadência autêntica:",
+      "opcoes": [
+        "Imperfeita",
+        "Perfeita",
+        "Plagal"
+      ],
+      "correta": 0,
+      "explicacao": "O V está invertido (Si no baixo) e a melodia termina em Mi: **imperfeita**. Basta uma das condições faltar.",
+      "conceito": "autentica-perfeita-imperfeita",
+      "exemplo": {
+        "id": "exe-imperfeita",
+        "titulo": "Dois acordes",
+        "legenda": "G/B → C com Mi no alto.",
+        "eventos": [
+          {
+            "notas": [
+              "B3",
+              "D4",
+              "G4",
+              "D5"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      }
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual cadência soa mais como uma **vírgula**, pedindo continuação?",
+      "opcoes": [
+        "Meia cadência",
+        "Autêntica perfeita",
+        "Plagal"
+      ],
+      "correta": 0,
+      "explicacao": "A **meia cadência** para no V, que pede a tônica: a frase fica suspensa. A autêntica e a plagal terminam na tônica.",
+      "conceito": "meia-cadencia"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que a cadência deceptiva V–VIm soa natural, mesmo sendo uma surpresa?",
+      "opcoes": [
+        "O VIm divide notas com o I",
+        "Porque o VIm é a dominante",
+        "Porque o V não tem trítono",
+        "Porque o VIm está fora do tom"
+      ],
+      "correta": 0,
+      "explicacao": "Am (Lá, Dó, Mi) divide **Dó e Mi** com o C, por isso substitui a tônica. A surpresa é que não fecha a frase.",
+      "conceito": "cadencia-deceptiva"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a cadência de **C, Am, F, C**?",
+      "opcoes": [
+        "Plagal",
+        "Autêntica",
+        "Deceptiva",
+        "Meia cadência"
+      ],
+      "correta": 0,
+      "explicacao": "Olhe só os dois últimos: F → C, IV–I, **plagal**.",
+      "conceito": "cadencia-plagal"
+    }
+  ],
+  "resumo": [
+    "A **cadência** são os dois últimos acordes de uma frase.",
+    "**Autêntica**: V–I, o ponto final. **Perfeita** com os dois em estado fundamental e a tônica no alto.",
+    "**Plagal**: IV–I, o \"amém\", um fim suave.",
+    "**Meia cadência**: termina no V, como uma vírgula.",
+    "**Deceptiva**: V–VIm, a surpresa no lugar da tônica."
+  ],
+  "pergunta_para_chat": "Me dê frases de três ou quatro acordes, uma de cada vez, para eu dizer qual cadência termina cada uma, e me corrija se eu olhar os acordes errados."
+}

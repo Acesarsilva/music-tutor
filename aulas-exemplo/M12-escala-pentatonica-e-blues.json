@@ -1,0 +1,827 @@
+{
+  "codigo": "M12",
+  "titulo": "Escala pentatônica e blues",
+  "nivel": "intermediario",
+  "resumo_curto": "Pentatônicas maior e menor, as relativas, a escala blues com a blue note e o improviso.",
+  "prerequisitos": [
+    "Escala maior (I07)",
+    "Escalas menores (I11)",
+    "Progressões comuns (M08)"
+  ],
+  "objetivos": [
+    "Formar a **pentatônica maior** e a **menor**",
+    "Relacionar pentatônicas **relativas**",
+    "Montar a **escala blues** com a blue note",
+    "**Improvisar** com a pentatônica"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Que notas formam a escala de Dó maior?\n2. Qual é a relativa menor de Dó maior?\n3. Quantos semitons tem a 5ª diminuta?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Dó, Ré, Mi, Fá, Sol, Lá, Si.\n2. Lá menor.\n3. 6.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Só as teclas pretas",
+            "legenda": "Uma escala tocada só com as teclas pretas. Soa \"errada\" ou soa aberta e cantável? Repare que ela tem menos notas que a escala maior.",
+            "eventos": [
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "São só **cinco** notas por oitava, sem nenhum semitom entre vizinhas: uma **escala pentatônica**. Ela aparece em músicas do mundo todo e é a primeira escala de muitos improvisadores.\n\nAo final, você vai montar as pentatônicas maior e menor e a escala blues, e usá-las para improvisar."
+        }
+      ]
+    },
+    {
+      "titulo": "Pentatônica maior",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **pentatônica maior** é a escala maior **sem o 4º e o 7º grau**. Em Dó: tire o Fá e o Si e fique com **Dó, Ré, Mi, Sol, Lá**. Saem justamente as duas notas que formavam semitons (Mi–Fá e Si–Dó)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-maior-e-penta",
+            "titulo": "Dó maior e Dó pentatônica maior",
+            "legenda": "Primeiro as sete notas; depois as cinco, sem Fá e Si.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              }
+            ],
+            "andamento": 100
+          }
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Dó pentatônica maior. No braço, as mesmas cinco notas.",
+          "destaque": [
+            "C4",
+            "D4",
+            "E4",
+            "G4",
+            "A4"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Sem semitons, nenhuma nota \"pede\" resolução forte. Por isso quase qualquer combinação dessas notas soa bem sobre o acorde de Dó."
+        }
+      ]
+    },
+    {
+      "titulo": "Pentatônica menor e relativas",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **pentatônica menor** é a menor natural **sem o 2º e o 6º grau**. Em Lá: tire o Si e o Fá e fique com **Lá, Dó, Ré, Mi, Sol**.\n\nCompare: são as **mesmas cinco notas** da pentatônica de Dó maior, começando em Lá. Como nas escalas maior e menor, a pentatônica maior e a menor de tons relativos dividem as notas."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-penta-am",
+            "titulo": "Lá pentatônica menor",
+            "legenda": "Lá, Dó, Ré, Mi, Sol: as notas de Dó pentatônica, a partir de Lá.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 100
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Pentatônicas relativas.",
+          "cabecalho": [
+            "Pentatônica maior",
+            "Notas",
+            "Pentatônica menor relativa"
+          ],
+          "linhas": [
+            [
+              "Dó",
+              "Dó Ré Mi Sol Lá",
+              "Lá"
+            ],
+            [
+              "Sol",
+              "Sol Lá Si Ré Mi",
+              "Mi"
+            ],
+            [
+              "Fá",
+              "Fá Sol Lá Dó Ré",
+              "Ré"
+            ],
+            [
+              "Fá♯ (teclas pretas)",
+              "Fá♯ Sol♯ Lá♯ Dó♯ Ré♯",
+              "Ré♯"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "A escala blues e a blue note",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Acrescente à pentatônica menor uma nota entre o 4º e o 5º grau, a **5ª diminuta**: é a **blue note**. O resultado é a **escala blues**. Em Lá: **Lá, Dó, Ré, Mi♭, Mi, Sol**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-blues",
+            "titulo": "Lá blues",
+            "legenda": "Seis notas. O Mi♭ é a blue note, que normalmente passa rápido para o Mi ou o Ré.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 100,
+            "intervalo": {
+              "de": "A3",
+              "para": "Eb4",
+              "codigo": "5d"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-frase-blues",
+            "titulo": "Uma frase na escala blues",
+            "legenda": "O Mi♭ escorrega para o Mi: o tempero do blues.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              }
+            ],
+            "andamento": 90
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "No blues, a 3ª menor da escala soa sobre acordes maiores (o Dó sobre A7). Esse choque proposital faz parte do som do estilo."
+        }
+      ]
+    },
+    {
+      "titulo": "Improvisar com a pentatônica",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Para improvisar sobre um acorde menor, use a **pentatônica menor da mesma tônica**: sobre Am, Lá pentatônica menor. Sobre um acorde maior, a **pentatônica maior**. Comece e termine as frases numa nota do acorde (Lá, Dó ou Mi sobre Am) e o resto soa bem quase sempre."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-improviso",
+            "titulo": "Frase sobre Am",
+            "legenda": "Só notas de Lá pentatônica menor, terminando no Mi, a 5ª do acorde.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 90
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: a pentatônica maior de Sol",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja o caminho completo, com o motivo de cada passo.\n\n1. **Escreva a escala maior**: Sol, Lá, Si, Dó, Ré, Mi, Fá♯.\n2. **Tire o 4º e o 7º grau**: Dó e Fá♯.\n3. **Fique com cinco notas**: **Sol, Lá, Si, Ré, Mi**."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que justamente o 4º e o 7º grau saem?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque são as notas que formam semitons com as vizinhas (Si–Dó e Fá♯–Sol). Sem elas, a escala fica só com tons e 3ªs menores entre as notas, sem nenhuma tensão de semitom.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **Fá pentatônica maior**: Fá maior é Fá, Sol, Lá, Si♭, Dó, Ré, Mi. Sem o 4º (Si♭) e o 7º (Mi), quais notas ficam?\n\nE agora dois passos são seus: a **pentatônica menor de Mi**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Fá pentatônica maior: **Fá, Sol, Lá, Dó, Ré**.\n\nMi menor natural: Mi, Fá♯, Sol, Lá, Si, Dó, Ré. Sem o 2º (Fá♯) e o 6º (Dó): **Mi, Sol, Lá, Si, Ré**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega montou a pentatônica maior de Dó assim:\n\n> \"Tiro o 2º e o 6º grau da escala maior: Dó, Mi, Fá, Sol, Si.\"\n\nOnde está o erro, por que está errado e qual é a escala certa?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ele usou a regra da pentatônica **menor**. Na **maior**, saem o **4º e o 7º** grau (Fá e Si). A escala dele ainda tem os dois semitons (Mi–Fá e Si–Dó). O certo é **Dó, Ré, Mi, Sol, Lá**.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais são as notas de **Dó pentatônica maior**?",
+      "opcoes": [
+        "Dó, Ré, Mi, Sol, Lá",
+        "Dó, Mi, Fá, Sol, Si",
+        "Dó, Ré, Fá, Sol, Lá",
+        "Dó, Mi♭, Fá, Sol, Si♭"
+      ],
+      "correta": 0,
+      "explicacao": "Dó maior sem o 4º (Fá) e o 7º (Si): **Dó, Ré, Mi, Sol, Lá**. Dó, Mi♭, Fá, Sol, Si♭ é a pentatônica menor de Dó.",
+      "conceito": "pentatonica-maior"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Lá3 está marcado. Clique na **blue note** da escala blues de Lá, a 5ª diminuta.",
+      "nota_base": "A3",
+      "intervalo": "5d",
+      "direcao": "acima",
+      "explicacao": "A 5ª diminuta de Lá é **Mi♭** (6 semitons), entre o Ré e o Mi. Ré♯ soa igual, mas o nome na escala é Mi♭.",
+      "conceito": "escala-blues",
+      "de": "E3",
+      "ate": "E5"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Esta escala tem cinco ou sete notas por oitava?",
+      "exemplo": {
+        "id": "exe-penta",
+        "titulo": "Escala",
+        "legenda": "Dó pentatônica maior: cinco notas.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 100
+      },
+      "opcoes": [
+        "Cinco: é pentatônica",
+        "Sete: é a escala maior"
+      ],
+      "correta": 0,
+      "explicacao": "Depois do Mi vem o **Sol**, pulando o Fá, e depois do Lá vem o Dó, pulando o Si: **cinco** notas, pentatônica.",
+      "conceito": "percepcao-pentatonica"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que graus da menor natural saem para formar a **pentatônica menor**?",
+      "opcoes": [
+        "2º e 6º",
+        "4º e 7º",
+        "3º e 7º",
+        "1º e 5º"
+      ],
+      "correta": 0,
+      "explicacao": "Na menor saem o **2º e o 6º** (Si e Fá em Lá menor). O 4º e o 7º saem na pentatônica **maior**.",
+      "conceito": "pentatonica-menor"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Lá pentatônica menor tem as mesmas notas de qual pentatônica maior?",
+      "opcoes": [
+        "Dó",
+        "Lá",
+        "Mi",
+        "Sol"
+      ],
+      "correta": 0,
+      "explicacao": "Lá, Dó, Ré, Mi, Sol são as notas de **Dó pentatônica maior**: como Lá menor é relativa de Dó maior.",
+      "conceito": "pentatonicas-relativas"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais são as notas da escala **blues de Lá**?",
+      "opcoes": [
+        "Lá, Dó, Ré, Mi♭, Mi, Sol",
+        "Lá, Dó, Ré, Mi, Sol",
+        "Lá, Si, Dó, Ré, Mi, Fá, Sol",
+        "Lá, Dó♯, Mi, Sol, Si♭"
+      ],
+      "correta": 0,
+      "explicacao": "Pentatônica menor (Lá, Dó, Ré, Mi, Sol) mais a blue note **Mi♭**. Sem o Mi♭, é só a pentatônica.",
+      "conceito": "escala-blues"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a frase. Ela usa a **blue note**?",
+      "exemplo": {
+        "id": "exe-blue",
+        "titulo": "Frase",
+        "legenda": "Sim: o Mi♭ passa para o Mi.",
+        "eventos": [
+          {
+            "notas": [
+              "A3"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "Eb4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "A3"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [],
+            "duracao": 1
+          }
+        ],
+        "andamento": 90
+      },
+      "opcoes": [
+        "Sim, uma nota escorrega para a seguinte",
+        "Não, só notas da pentatônica"
+      ],
+      "correta": 0,
+      "explicacao": "O **Mi♭** aparece entre Ré e Mi, como um deslize: é a blue note da escala blues de Lá.",
+      "conceito": "percepcao-pentatonica"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Para improvisar sobre **Am**, que escala é a escolha mais simples?",
+      "opcoes": [
+        "Lá pentatônica menor",
+        "Lá pentatônica maior",
+        "Dó maior começando em Dó",
+        "Mi pentatônica maior"
+      ],
+      "correta": 0,
+      "explicacao": "Sobre acorde menor, a **pentatônica menor da mesma tônica**: Lá, Dó, Ré, Mi, Sol. Lá pentatônica maior teria Dó♯, que choca com o Dó do Am.",
+      "conceito": "improviso-pentatonico"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais são as notas de **Sol pentatônica maior**?",
+      "opcoes": [
+        "Sol, Lá, Si, Ré, Mi",
+        "Sol, Lá, Dó, Ré, Mi",
+        "Sol, Si♭, Dó, Ré, Fá",
+        "Sol, Lá, Si, Dó, Ré"
+      ],
+      "correta": 0,
+      "explicacao": "Sol maior sem o 4º (Dó) e o 7º (Fá♯): **Sol, Lá, Si, Ré, Mi**.",
+      "conceito": "pentatonica-maior"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que a pentatônica soa bem sobre quase qualquer combinação?",
+      "opcoes": [
+        "Não tem semitons entre notas vizinhas",
+        "Tem todas as notas do acorde",
+        "Tem sete notas",
+        "Só tem notas pretas"
+      ],
+      "correta": 0,
+      "explicacao": "Sem **semitons**, nenhuma nota cria a atração forte que pediria resolução. Por isso é tão usada para improvisar.",
+      "conceito": "improviso-pentatonico"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual pentatônica menor é relativa de **Fá pentatônica maior**?",
+      "opcoes": [
+        "Ré",
+        "Lá",
+        "Dó",
+        "Mi"
+      ],
+      "correta": 0,
+      "explicacao": "Fá maior tem relativa **Ré** menor: Ré, Fá, Sol, Lá, Dó são as mesmas notas de Fá, Sol, Lá, Dó, Ré.",
+      "conceito": "pentatonicas-relativas"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Dó4 está marcado. Clique na nota de **Dó pentatônica maior** que fica uma 6ª maior acima.",
+      "nota_base": "C4",
+      "intervalo": "6M",
+      "direcao": "acima",
+      "explicacao": "Dó, Ré, Mi, Sol, **Lá**: a 6ª maior de Dó é Lá, a última nota da pentatônica antes da oitava.",
+      "conceito": "pentatonica-maior",
+      "de": "C4",
+      "ate": "C6"
+    }
+  ],
+  "resumo": [
+    "**Pentatônica maior** = escala maior sem o 4º e o 7º grau (Dó, Ré, Mi, Sol, Lá).",
+    "**Pentatônica menor** = menor natural sem o 2º e o 6º (Lá, Dó, Ré, Mi, Sol).",
+    "Pentatônicas **relativas** têm as mesmas notas, como Dó maior e Lá menor.",
+    "**Escala blues** = pentatônica menor + **blue note** (5ª diminuta): Lá, Dó, Ré, Mi♭, Mi, Sol.",
+    "Sem semitons, a pentatônica é a escala mais segura para começar a improvisar."
+  ],
+  "pergunta_para_chat": "Me peça pentatônicas e escalas blues em tons diferentes, uma de cada vez, e confira as notas que eu escrever; depois me sugira uma frase curta para improvisar."
+}

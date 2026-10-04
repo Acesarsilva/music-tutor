@@ -1,0 +1,32 @@
+codigo: M11
+titulo: Modos gregos
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - I07  # Escala maior
+  - I11  # Escalas menores
+  - M02  # Intervalos aumentados, diminutos e inversão
+objetivos:
+  - Formar os sete modos a partir dos graus da escala maior
+  - Classificar cada modo como de som maior ou menor pela 3ª
+  - Identificar a nota característica de cada modo
+  - Construir os modos sobre a mesma tônica (modos paralelos)
+  - Diferenciar de ouvido o mixolídio do maior e o dórico do menor natural
+conceitos:
+  - modos-da-escala-maior
+  - modos-maiores-e-menores
+  - nota-caracteristica
+  - modos-paralelos
+  - percepcao-modos
+fora_do_escopo:
+  - Harmonia modal e cadências modais (módulo A06)
+  - Modos da menor melódica e da menor harmônica (módulo A07)
+exemplos_semente:
+  - "Ré dórico: as teclas brancas de Ré a Ré"
+  - "Sol mixolídio e Sol maior: só o Fá muda"
+  - "Fá lídio: o Si, 4ª aumentada"
+  - "Os sete modos sobre Dó"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado
