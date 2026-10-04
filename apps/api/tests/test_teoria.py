@@ -32,7 +32,7 @@ def test_semitons_e_nomes(codigo, semitons, nome):
     assert teoria.nome_intervalo_pt(codigo) == nome
 
 
-@pytest.mark.parametrize("codigo", ["3J", "5M", "9M", "4x", ""])
+@pytest.mark.parametrize("codigo", ["3J", "5M", "9J", "16M", "4x", ""])
 def test_codigos_invalidos(codigo):
     with pytest.raises(teoria.ErroTeoria):
         teoria.validar_codigo_intervalo(codigo)
@@ -60,7 +60,7 @@ def test_abc_com_acidentes_anacruse_e_volta_pelo_music21():
         {"notas": ["C5"], "duracao": 3},
     ]
     abc = teoria.eventos_para_abc(eventos, compasso="3/4", anacruse=1)
-    assert "G3/4 G/4 |" in abc
+    assert "G3/4G/4 |" in abc
     assert "[D=F]" in abc  # o bequadro cancela o sustenido do mesmo compasso
     assert teoria.alturas_do_abc(abc) == [[67], [67], [62, 66], [62, 65], [], [72]]
 
@@ -121,3 +121,43 @@ def test_abc_em_clave_de_fa_mantem_a_altura():
     abc = teoria.eventos_para_abc([{"notas": ["F3"], "duracao": 2}, {"notas": ["C4"], "duracao": 2}], clave="fa")
     assert "clef=bass" in abc
     assert teoria.alturas_do_abc(abc) == [[53], [60]]
+
+
+def test_abc_com_quialteras_de_tres():
+    eventos = [{"notas": [n], "duracao": 1 / 3} for n in ("C4", "D4", "E4")] + [
+        {"notas": ["F4"], "duracao": 1},
+        {"notas": ["G4"], "duracao": 2 / 3}, {"notas": ["A4"], "duracao": 1 / 3}, {"notas": ["B4"], "duracao": 1},
+    ]
+    abc = teoria.eventos_para_abc(eventos)
+    assert "(3:2:3C/2D/2E/2 F (3:2:2GA/2 B |]" in abc
+    assert teoria.alturas_do_abc(abc) == [[60], [62], [64], [65], [67], [69], [71]]
+
+
+def test_quialtera_incompleta():
+    with pytest.raises(teoria.ErroTeoria):
+        teoria.eventos_para_abc([{"notas": ["C4"], "duracao": 1 / 3}, {"notas": ["D4"], "duracao": 1 / 3},
+                                 {"notas": ["E4"], "duracao": 1}])
+
+
+def test_barras_de_colcheia_seguem_o_tempo_do_compasso():
+    colcheias = [{"notas": ["C5"], "duracao": 0.5} for _ in range(6)]
+    assert "c/2c/2 c/2c/2 c/2c/2 |]" in teoria.eventos_para_abc(colcheias, compasso="3/4")
+    assert "c/2c/2c/2 c/2c/2c/2 |]" in teoria.eventos_para_abc(colcheias, compasso="6/8")
+    pausa = [{"notas": ["C5"], "duracao": 0.5}, {"notas": [], "duracao": 0.5}, {"notas": ["C5"], "duracao": 1}]
+    assert "c/2 z/2 c |]" in teoria.eventos_para_abc(pausa, compasso="2/4")
+
+
+@pytest.mark.parametrize(
+    "de, para, esperado",
+    [("C4", "D5", "9M"), ("C4", "Db5", "9m"), ("D4", "F5", "10m"), ("E4", "A5", "11J"), ("C4", "A5", "13M")],
+)
+def test_intervalo_composto(de, para, esperado):
+    assert teoria.calcular_intervalo_composto(de, para) == esperado
+    assert teoria.calcular_intervalo(de, para) == esperado.replace(esperado[:-1], str(int(esperado[:-1]) - 7))
+
+
+def test_codigos_compostos():
+    assert teoria.semitons("10M") == 16 and teoria.nome_intervalo_pt("11J") == "11ª justa"
+    assert teoria.nota_por_intervalo("C4", "9M") == "D5"
+    with pytest.raises(teoria.ErroTeoria):
+        teoria.validar_codigo_intervalo("9J")

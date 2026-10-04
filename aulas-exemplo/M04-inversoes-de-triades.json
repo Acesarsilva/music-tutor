@@ -1,0 +1,587 @@
+{
+  "codigo": "M04",
+  "titulo": "Inversões de tríades",
+  "nivel": "intermediario",
+  "resumo_curto": "Estado fundamental, 1ª e 2ª inversão, como achar a fundamental e as cifras com baixo (C/E).",
+  "prerequisitos": [
+    "Tríades (I12)",
+    "Cifragem popular (I13)"
+  ],
+  "objetivos": [
+    "Diferenciar **fundamental** de **baixo**",
+    "Reconhecer **estado fundamental, 1ª e 2ª inversão**",
+    "Achar a fundamental de uma tríade invertida",
+    "Ler e escrever cifras com **baixo invertido** (C/E, G/B)"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Que notas formam o acorde C? E o Am?\n2. Numa tríade, que intervalo há entre a fundamental e a 3ª? E entre a fundamental e a 5ª?\n3. O que a cifra **G** indica?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. C: Dó, Mi, Sol. Am: Lá, Dó, Mi.\n2. Uma 3ª (maior ou menor) e uma 5ª (justa, na maior e na menor).\n3. Acorde de Sol maior: Sol, Si, Ré.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "As mesmas três notas",
+            "legenda": "Os três acordes usam só Dó, Mi e Sol. O que muda de um para o outro? Qual soa mais firme, mais \"em casa\"?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Os três são o acorde **C**. O que muda é a nota que fica **embaixo**. Quando a fundamental Dó está no baixo, o acorde soa mais firme; com outra nota embaixo, ele está **invertido**.\n\nAo final, você vai reconhecer a posição de qualquer tríade, achar a fundamental e ler cifras como C/E."
+        }
+      ]
+    },
+    {
+      "titulo": "Fundamental e baixo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Duas palavras que parecem iguais, mas não são:\n\n- a **fundamental** é a nota que dá **nome** ao acorde (o Dó do C);\n- o **baixo** é a nota **mais grave** que soa.\n\nQuando as duas coincidem, o acorde está em **estado fundamental**. Quando não, a nota do baixo diz qual é a inversão."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "As três posições de uma tríade.",
+          "cabecalho": [
+            "Posição",
+            "Nota no baixo",
+            "C",
+            "Am"
+          ],
+          "linhas": [
+            [
+              "Estado fundamental",
+              "fundamental",
+              "Dó–Mi–Sol",
+              "Lá–Dó–Mi"
+            ],
+            [
+              "1ª inversão",
+              "3ª",
+              "Mi–Sol–Dó",
+              "Dó–Mi–Lá"
+            ],
+            [
+              "2ª inversão",
+              "5ª",
+              "Sol–Dó–Mi",
+              "Mi–Lá–Dó"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-fundamental",
+            "titulo": "C em estado fundamental",
+            "legenda": "Dó no baixo: a fundamental está embaixo.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-primeira",
+            "titulo": "C na 1ª inversão",
+            "legenda": "Mi no baixo: a 3ª está embaixo. Soa um pouco mais leve.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-segunda",
+            "titulo": "C na 2ª inversão",
+            "legenda": "Sol no baixo: a 5ª está embaixo. Soa como se ainda fosse andar.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "C na 1ª inversão: Mi embaixo, depois Sol e Dó. No braço, Mi na corda mais grave tocada.",
+          "destaque": [
+            "E4",
+            "G4",
+            "C5"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Na harmonia tradicional, a 1ª inversão se chama **acorde de sexta** e a 2ª, **acorde de quarta e sexta**, pelos intervalos que as notas formam com o baixo."
+        }
+      ]
+    },
+    {
+      "titulo": "Cifra com baixo invertido",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na cifra popular, a barra indica o baixo: **C/E** é o acorde C com **Mi no baixo**. Antes da barra vem o acorde; depois, a nota mais grave.\n\n- **C/E**: C na 1ª inversão (Mi é a 3ª de Dó).\n- **C/G**: C na 2ª inversão (Sol é a 5ª de Dó).\n- **Am/C**: Am na 1ª inversão (Dó é a 3ª de Lá)."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Uma das razões para inverter é fazer o baixo andar por notas vizinhas. Ouça a linha **C, G/B, Am, C/G, F**: o baixo desce Dó, Si, Lá, Sol, Fá, um grau por vez."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-baixo-descendo",
+            "titulo": "C, G/B, Am, C/G, F",
+            "legenda": "Siga só a nota mais grave: ela desce a escala, nota por nota.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: que acorde é Mi–Sol–Dó?",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja o caminho completo, com o motivo de cada passo.\n\n1. **Empilhe em 3ªs**: reorganize as notas até cada uma ficar uma 3ª acima da outra: Dó–Mi–Sol.\n2. **Ache a fundamental**: é a nota de baixo da pilha, **Dó**. Dó–Mi é 3ª maior: acorde **C**.\n3. **Olhe o baixo real**: o mais grave é Mi, a 3ª. É a **1ª inversão**, cifra **C/E**."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que não basta olhar a nota mais grave para saber o nome do acorde?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque a nota mais grave só é a fundamental no estado fundamental. Numa inversão, o baixo é a 3ª ou a 5ª, e o nome vem da fundamental, que você acha empilhando em 3ªs.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **Lá–Ré–Fá♯**: em 3ªs, Ré–Fá♯–Lá, acorde **D**. O baixo é Lá. Qual é a inversão e a cifra?\n\nE agora dois passos são seus: **Si–Ré–Sol**. Empilhe e ache a fundamental."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Lá–Ré–Fá♯: Lá é a 5ª de Ré, **2ª inversão**, cifra **D/A**.\n\nSi–Ré–Sol: em 3ªs, Sol–Si–Ré, acorde **G**. O baixo Si é a 3ª: **1ª inversão**, **G/B**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega leu o acorde Mi–Sol–Dó (de baixo para cima) assim:\n\n> \"A nota mais grave é Mi, e Mi–Sol é uma 3ª menor. Então é o acorde Em.\"\n\nOnde está o erro, por que está errado e qual é o acorde?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ele tomou o **baixo** pela **fundamental**. Em seria Mi–Sol–**Si**; aqui a terceira nota é Dó. Empilhando em 3ªs, Dó–Mi–Sol: é **C** com Mi no baixo, **C/E**.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que acorde é este, e em que posição?",
+      "opcoes": [
+        "C/E, 1ª inversão",
+        "Em, estado fundamental",
+        "C, estado fundamental",
+        "C/G, 2ª inversão"
+      ],
+      "correta": 0,
+      "explicacao": "Empilhando em 3ªs, Dó–Mi–Sol: acorde C. O baixo é Mi, a 3ª: **1ª inversão, C/E**. Quem marcou Em tomou o baixo pela fundamental.",
+      "conceito": "identificar-inversao",
+      "exemplo": {
+        "id": "exe-c-e",
+        "titulo": "Acorde",
+        "legenda": "Mi–Sol–Dó",
+        "eventos": [
+          {
+            "notas": [
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      }
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na **2ª inversão**, que nota da tríade fica no baixo?",
+      "opcoes": [
+        "A 5ª",
+        "A 3ª",
+        "A fundamental"
+      ],
+      "correta": 0,
+      "explicacao": "1ª inversão, a 3ª no baixo; **2ª inversão, a 5ª**. A fundamental no baixo é o estado fundamental.",
+      "conceito": "segunda-inversao"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Dó4 está marcado: é a fundamental de C. Clique na nota que vai no **baixo de C/E**, uma 3ª maior acima.",
+      "nota_base": "C4",
+      "intervalo": "3M",
+      "direcao": "acima",
+      "explicacao": "C/E tem **Mi** no baixo: a 3ª do acorde, 4 semitons acima de Dó.",
+      "conceito": "primeira-inversao",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que significa a cifra **G/B**?",
+      "opcoes": [
+        "Sol maior com Si no baixo",
+        "Sol maior e Si maior juntos",
+        "Si maior com Sol no baixo",
+        "Sol maior com 7ª"
+      ],
+      "correta": 0,
+      "explicacao": "Antes da barra vem o acorde (G); depois, a nota do baixo (Si). Si é a 3ª de Sol: **1ª inversão**.",
+      "conceito": "baixo-invertido"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça e siga a nota mais grave. O que ela faz?",
+      "exemplo": {
+        "id": "exe-baixo",
+        "titulo": "Cinco acordes",
+        "legenda": "C, G/B, Am, C/G, F: o baixo desce Dó, Si, Lá, Sol, Fá.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "B3",
+              "D4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "A3",
+              "C4",
+              "E4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "F3",
+              "C4",
+              "F4",
+              "A4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Desce nota a nota",
+        "Sobe nota a nota",
+        "Fica sempre na mesma nota"
+      ],
+      "correta": 0,
+      "explicacao": "O baixo **desce** a escala: Dó, Si, Lá, Sol, Fá. As inversões G/B e C/G existem justamente para ele poder andar assim.",
+      "conceito": "baixo-invertido"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Este acorde de Sol maior está em que posição?",
+      "opcoes": [
+        "2ª inversão",
+        "1ª inversão",
+        "Estado fundamental"
+      ],
+      "correta": 0,
+      "explicacao": "Ré–Sol–Si: o baixo Ré é a 5ª de Sol, então é a **2ª inversão**, G/D.",
+      "conceito": "segunda-inversao",
+      "exemplo": {
+        "id": "exe-g-d",
+        "titulo": "Acorde de Sol maior",
+        "legenda": "Ré–Sol–Si",
+        "eventos": [
+          {
+            "notas": [
+              "D4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      }
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a cifra de **Mi–Lá–Dó♯** (Mi no baixo)?",
+      "opcoes": [
+        "A/E",
+        "E",
+        "C♯m",
+        "A/C♯"
+      ],
+      "correta": 0,
+      "explicacao": "Em 3ªs, Lá–Dó♯–Mi: acorde **A**. O baixo Mi é a 5ª: **A/E**. A/C♯ teria Dó♯ no baixo.",
+      "conceito": "identificar-inversao"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Lá3 está marcado: é a fundamental de Am. Clique na nota que vai no **baixo de Am/E**, uma 5ª justa acima.",
+      "nota_base": "A3",
+      "intervalo": "5J",
+      "direcao": "acima",
+      "explicacao": "Am/E tem **Mi** no baixo: a 5ª de Lá. É a 2ª inversão de Am.",
+      "conceito": "segunda-inversao",
+      "de": "E3",
+      "ate": "E5"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na 1ª inversão de **C** (Mi–Sol–Dó), que intervalos as notas de cima formam com o baixo?",
+      "opcoes": [
+        "3ª menor e 6ª menor",
+        "3ª maior e 5ª justa",
+        "4ª justa e 6ª maior",
+        "3ª maior e 6ª maior"
+      ],
+      "correta": 0,
+      "explicacao": "Mi–Sol é 3ª menor (3 semitons) e Mi–Dó é 6ª menor (8 semitons). 3ª maior e 5ª justa são do estado fundamental; 4ª e 6ª, da 2ª inversão.",
+      "conceito": "primeira-inversao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais notas formam **Am/C**, de baixo para cima?",
+      "opcoes": [
+        "Dó, Mi, Lá",
+        "Lá, Dó, Mi",
+        "Dó, Mi, Sol",
+        "Dó, Mi♭, Lá"
+      ],
+      "correta": 0,
+      "explicacao": "Am é Lá–Dó–Mi; com Dó no baixo, fica **Dó–Mi–Lá**. Lá, Dó, Mi seria o estado fundamental; Dó, Mi, Sol é o acorde C.",
+      "conceito": "baixo-invertido"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça dois acordes de C. Em qual deles a 5ª (Sol) está no baixo?",
+      "exemplo": {
+        "id": "exe-posicoes",
+        "titulo": "Dois acordes",
+        "legenda": "O primeiro está em estado fundamental; o segundo, na 2ª inversão.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "C4",
+              "E4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "No segundo",
+        "No primeiro"
+      ],
+      "correta": 0,
+      "explicacao": "O segundo começa mais grave, em Sol: **2ª inversão**, C/G. No primeiro, o baixo é o próprio Dó.",
+      "conceito": "segunda-inversao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Num acorde em **estado fundamental**, qual nota fica no baixo?",
+      "opcoes": [
+        "A fundamental",
+        "A 3ª",
+        "A 5ª",
+        "A nota mais aguda da melodia"
+      ],
+      "correta": 0,
+      "explicacao": "Estado fundamental quer dizer **fundamental no baixo**, como Dó–Mi–Sol para C.",
+      "conceito": "estado-fundamental"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que acorde é este?",
+      "opcoes": [
+        "G/D",
+        "Bm/D",
+        "D",
+        "G/B"
+      ],
+      "correta": 0,
+      "explicacao": "Em 3ªs, Sol–Si–Ré: acorde G. O baixo é Ré, a 5ª: **G/D**. G/B teria Si no baixo; D seria Ré–Fá♯–Lá.",
+      "conceito": "identificar-inversao",
+      "exemplo": {
+        "id": "exe-g-d2",
+        "titulo": "Acorde",
+        "legenda": "Ré–Sol–Si",
+        "eventos": [
+          {
+            "notas": [
+              "D4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      }
+    }
+  ],
+  "resumo": [
+    "A **fundamental** dá nome ao acorde; o **baixo** é a nota mais grave.",
+    "Fundamental no baixo: **estado fundamental**. 3ª no baixo: **1ª inversão**. 5ª no baixo: **2ª inversão**.",
+    "Para achar a fundamental, **empilhe as notas em 3ªs**; a de baixo da pilha dá o nome.",
+    "Na cifra, a barra indica o baixo: **C/E** é C com Mi no baixo.",
+    "Inversões deixam o baixo andar por graus vizinhos, como em C, G/B, Am, C/G, F."
+  ],
+  "pergunta_para_chat": "Me dê tríades escritas de baixo para cima, uma de cada vez, para eu dizer a cifra com baixo e a inversão, e me corrija se eu confundir baixo com fundamental."
+}

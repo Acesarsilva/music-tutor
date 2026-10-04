@@ -88,8 +88,11 @@ def _compilar_exemplo(ex: Exemplo, onde: str, r: Resultado) -> None:
             afirmado.para, f"{onde}.intervalo.para", r
         ):
             try:
-                real = teoria.calcular_intervalo(afirmado.de, afirmado.para)
-                teoria.validar_codigo_intervalo(afirmado.codigo)
+                numero, _ = teoria.validar_codigo_intervalo(afirmado.codigo)
+                # Até a 8ª, o intervalo afirmado é o simples (Dó4–Mi5 vale como 3ª); da 9ª em diante, o composto.
+                real = (teoria.calcular_intervalo_composto if numero > 8 else teoria.calcular_intervalo)(
+                    afirmado.de, afirmado.para
+                )
             except teoria.ErroTeoria as e:
                 r.erros.append(f"{onde}.intervalo: {e}")
             else:

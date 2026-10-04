@@ -1,0 +1,31 @@
+codigo: M04
+titulo: Inversões de tríades
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - I12  # Tríades
+  - I13  # Cifragem popular
+objetivos:
+  - Diferenciar fundamental (a nota que dá nome ao acorde) de baixo (a nota mais grave)
+  - Reconhecer estado fundamental, 1ª inversão e 2ª inversão pela nota do baixo
+  - Achar a fundamental de uma tríade invertida reorganizando as notas em 3ªs
+  - Ler e escrever cifras com baixo invertido (C/E, G/B, C/G)
+  - Ouvir o efeito das inversões numa linha de baixo
+conceitos:
+  - estado-fundamental
+  - primeira-inversao
+  - segunda-inversao
+  - identificar-inversao
+  - baixo-invertido
+fora_do_escopo:
+  - Inversões de tétrades (módulo M05)
+  - Baixo com nota fora do acorde (como C/B ou C/D)
+  - Regras de condução de vozes (módulo M10)
+exemplos_semente:
+  - "Dó–Mi–Sol, Mi–Sol–Dó e Sol–Dó–Mi: as três posições de C"
+  - "Linha de baixo descendente: C, G/B, Am, C/G, F"
+  - "Mi–Sol–Dó não é Em: o baixo não é a fundamental"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

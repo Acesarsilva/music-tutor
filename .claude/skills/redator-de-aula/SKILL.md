@@ -119,7 +119,7 @@ maior. Se você marcou 4ª, contou semitons em vez de notas."
 
 - Texto: dó-ré-mi (Dó, Ré♯, Si♭), com ♯ e ♭ de verdade. Cifras (C, Dm, G7) só para acordes.
   Oitava quando importa: Dó4 é o Dó central.
-- Dados: notação científica ASCII ("C4", "F#4", "Bb3"); códigos de intervalo "3M", "5J", "2m", de 1 a 8.
+- Dados: notação científica ASCII ("C4", "F#4", "Bb3"); códigos de intervalo "3M", "5J", "2m", de 1 a 15 ("9M", "11J").
 - Armadura: o `exemplo` aceita `armadura` com a tônica maior ("G", "D", "F", "Bb"). As notas dos eventos
   continuam com o acidente real ("F#4" em Sol maior); a partitura omite o que a armadura já diz.
 - Aulas anteriores à I08 ainda não dão nome aos intervalos: em `percepcao`, a opção correta pode ser
@@ -127,10 +127,13 @@ maior. Se você marcou 4ª, contou semitons em vez de notas."
 - Ritmo e dinâmica: cada evento aceita `dinamica` ("pp" a "ff", vale até a próxima), `acento` (tempo forte,
   pulso) e `ligada` (une ao evento seguinte, com as mesmas notas). Percepção de ritmo, compasso ou dinâmica
   não leva `intervalo`; nesse caso confira a resposta à mão.
+- Tercinas: durações em terços de tempo (1/3 cada colcheia de tercina, 2/3 cada semínima de tercina); o grupo
+  precisa fechar um tempo inteiro ou meio tempo, e a partitura ganha o 3 sobre ele. Colcheias do mesmo tempo
+  saem unidas por barra (semínima pontuada nos compassos 6/8, 9/8 e 12/8).
 - Articulação: `staccato` (nota curta), `expressao` ("inicio"/"fim", ligadura de legato) e `forquilha`
   ("crescendo"/"diminuendo" começa; "fim" termina numa nota que traz a `dinamica` de chegada).
-  O campo `intervalo` reduz intervalos compostos (Dó4–Mi5 vira "3M"); se o texto fala de 10ª, diga
-  "10ª maior (3ª maior composta)".
+  O campo `intervalo` com código até 8 reduz intervalos compostos (Dó4–Mi5 vale "3M"); quando o texto fala de
+  10ª, use o código composto ("10M"), e a opção correta passa a ser "10ª maior".
 - Referências: músicas brasileiras conhecidas de qualquer estilo (cantigas de roda, folclore, samba,
   choro, bossa nova, MPB, forró, sertanejo, pop).
 - **Tocado** (`exemplo`): só melodia em domínio público (cantigas, folclore, hinos antigos) ou poucas notas.

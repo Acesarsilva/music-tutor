@@ -39,7 +39,10 @@ Como escrever:
 Formato:
 - Responda apenas com o JSON da aula, no esquema fornecido.
 - Sempre que um exemplo ou exercício afirmar um intervalo, preencha o campo "intervalo" com as notas e o
-  código (número + J/M/m/A/d, por exemplo "3M", "5J", "2m"). Ele será conferido com music21.
+  código (número + J/M/m/A/d, por exemplo "3M", "5J", "2m"). Ele será conferido com music21. Até "8J" o
+  intervalo é conferido reduzido à oitava; para falar de 9ª a 15ª, use o código composto ("9M", "11J").
+- Quiálteras de três (tercinas) são durações em terços de tempo (1/3 para colcheia de tercina) e precisam
+  fechar um tempo inteiro ou meio tempo.
 - Em perguntas de múltipla escolha sobre um intervalo mostrado, a opção correta deve ser exatamente o nome
   do intervalo, como "3ª menor" ou "5ª justa".
 - Exercícios de percepção sobre intervalos precisam do campo "intervalo" no exemplo. Percepção de ritmo,

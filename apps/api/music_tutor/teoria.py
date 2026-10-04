@@ -27,7 +27,7 @@ _QUALIDADE_PT = {
     "A": "aumentada",
     "d": "diminuta",
 }
-_CODIGO_RE = re.compile(r"^([1-8])(J|M|m|A|d)$")
+_CODIGO_RE = re.compile(r"^([1-9]|1[0-5])(J|M|m|A|d)$")
 
 
 class ErroTeoria(ValueError):
@@ -61,9 +61,9 @@ def nome_nota_pt(nota: str, com_oitava: bool = False) -> str:
 def validar_codigo_intervalo(codigo: str) -> tuple[int, str]:
     m = _CODIGO_RE.match(codigo)
     if not m:
-        raise ErroTeoria(f"código de intervalo inválido: {codigo!r} (ex.: 3M, 5J, 2m)")
+        raise ErroTeoria(f"código de intervalo inválido: {codigo!r} (ex.: 3M, 5J, 2m, 10M)")
     numero, qualidade = int(m.group(1)), m.group(2)
-    justos = {1, 4, 5, 8}
+    justos = {1, 4, 5, 8, 11, 12, 15}
     if qualidade == "J" and numero not in justos:
         raise ErroTeoria(f"{numero}ª não pode ser justa")
     if qualidade in "Mm" and numero in justos:
@@ -95,6 +95,15 @@ def calcular_intervalo(de: str, para: str) -> str:
     m = re.match(r"^(P|M|m|A|d)(\d+)$", nome)
     if not m or int(m.group(2)) > 8:
         raise ErroTeoria(f"intervalo {de}-{para} ({nome}) fora do escopo de intervalos simples")
+    return f"{m.group(2)}{_QUALIDADE_DE_M21[m.group(1)]}"
+
+
+def calcular_intervalo_composto(de: str, para: str) -> str:
+    """Intervalo sem reduzir à oitava, até a 15ª: ("C4", "D5") -> "9M"; ("C4", "E4") -> "3M"."""
+    nome = interval.Interval(para_pitch(de), para_pitch(para)).name
+    m = re.match(r"^(P|M|m|A|d)(\d+)$", nome)
+    if not m or int(m.group(2)) > 15:
+        raise ErroTeoria(f"intervalo {de}-{para} ({nome}) fora do escopo (até a 15ª)")
     return f"{m.group(2)}{_QUALIDADE_DE_M21[m.group(1)]}"
 
 
@@ -206,15 +215,26 @@ def eventos_para_abc(
     corpo: list[str] = []
     estado: dict[tuple[str, int], str] = {}
     restante = Fraction(anacruse).limit_denominator(64) if anacruse else tempos_por_compasso
+    # Colcheias e menores se unem por barra dentro do mesmo tempo: semínima nos compassos simples,
+    # semínima pontuada nos compostos (6/8, 9/8, 12/8).
+    composto = den == 8 and num % 3 == 0
+    tempo_do_grupo = Fraction(3, 2) if composto else Fraction(1)
+    grupo_anterior = None
     forquilha_aberta = None
-    for ev in eventos:
-        dur = Fraction(ev["duracao"]).limit_denominator(64)
+    duracoes = [Fraction(ev["duracao"]).limit_denominator(64) for ev in eventos]
+    grupos_tercina = _grupos_de_tercina(duracoes)
+    for i, ev in enumerate(eventos):
+        dur = duracoes[i]
         if dur > restante:
             raise ErroTeoria(
                 f"o evento {ev['notas'] or 'pausa'} ({float(dur)} tempos) atravessa a barra de compasso"
             )
         notas = ev["notas"]
-        sufixo = _duracao_abc(dur)
+        if i in grupos_tercina:
+            # Quiáltera: três figuras no tempo de duas. Escreve a figura cheia (2/3 de tempo -> semínima).
+            sufixo = _duracao_abc(dur * Fraction(3, 2))
+        else:
+            sufixo = _duracao_abc(dur)
         decoracao = ""
         forquilha = ev.get("forquilha")
         if forquilha == "fim":
@@ -233,15 +253,24 @@ def eventos_para_abc(
         abre = "(" if ev.get("expressao") == "inicio" else ""
         fecha = ")" if ev.get("expressao") == "fim" else ""
         liga = "-" if ev.get("ligada") and notas else ""
+        tercina = f"(3:2:{grupos_tercina[i]}" if grupos_tercina.get(i) else ""
         if not notas:
-            corpo.append(decoracao + "z" + sufixo)
+            token = tercina + decoracao + "z" + sufixo
         elif len(notas) == 1:
-            corpo.append(abre + decoracao + _nota_abc(notas[0], estado, da_armadura) + sufixo + liga + fecha)
+            token = abre + tercina + decoracao + _nota_abc(notas[0], estado, da_armadura) + sufixo + liga + fecha
         else:
-            corpo.append(abre + decoracao + "[" + "".join(_nota_abc(n, estado, da_armadura) for n in notas) + "]" + sufixo + liga + fecha)
+            token = abre + tercina + decoracao + "[" + "".join(_nota_abc(n, estado, da_armadura) for n in notas) + "]" + sufixo + liga + fecha
+        posicao = tempos_por_compasso - restante
+        grupo = (posicao // tempo_do_grupo) if notas and dur < tempo_do_grupo and dur < 1 else None
+        if grupo is not None and grupo == grupo_anterior and corpo and corpo[-1] != "|":
+            corpo[-1] += token  # sem espaço: a barra une as figuras
+        else:
+            corpo.append(token)
+        grupo_anterior = grupo
         restante -= dur
         if restante == 0:
             corpo.append("|")
+            grupo_anterior = None
             estado = {}
             restante = tempos_por_compasso
     if forquilha_aberta is not None:
@@ -253,8 +282,35 @@ def eventos_para_abc(
     abc = "\n".join(linhas) + "\n" + " ".join(corpo) + "\n"
     letra = _letra_abc(eventos)
     if letra:
-        abc += f"w:{letra}\n"
+        # Com letra, a pauta ocupa a largura toda para as sílabas não se encostarem.
+        abc = abc.replace("\nK:", "\n%%stretchlast 1\nK:", 1) + f"w:{letra}\n"
     return abc
+
+
+def _grupos_de_tercina(duracoes: list[Fraction]) -> dict[int, int]:
+    """Índices dos eventos em quiáltera de 3 (duração com denominador múltiplo de 3).
+
+    Devolve {índice: n} onde n é o número de eventos do grupo no primeiro evento e 0 nos demais.
+    Um grupo vai até a soma das durações reais voltar a ser uma fração sem fator 3 (ex.: 1/3 + 1/3 + 1/3 = 1).
+    """
+    grupos: dict[int, int] = {}
+    i = 0
+    while i < len(duracoes):
+        if duracoes[i].denominator % 3:
+            i += 1
+            continue
+        inicio, soma = i, Fraction(0)
+        while i < len(duracoes) and duracoes[i].denominator % 3 == 0:
+            soma += duracoes[i]
+            i += 1
+            if soma.denominator % 3 != 0:
+                break
+        if soma.denominator % 3 == 0:
+            raise ErroTeoria("quiáltera incompleta: as durações em terços de tempo precisam fechar um tempo inteiro ou meio tempo")
+        grupos[inicio] = i - inicio
+        for j in range(inicio + 1, i):
+            grupos[j] = 0
+    return grupos
 
 
 def _letra_abc(eventos: list[dict]) -> str:

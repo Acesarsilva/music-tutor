@@ -1,0 +1,731 @@
+{
+  "codigo": "M03",
+  "titulo": "Intervalos compostos",
+  "nivel": "intermediario",
+  "resumo_curto": "9ª, 10ª, 11ª, 12ª e 13ª: a regra do 7, os semitons e as tensões das cifras.",
+  "prerequisitos": [
+    "Intervalos simples (I08)",
+    "Intervalos aumentados, diminutos e inversão (M02)"
+  ],
+  "objetivos": [
+    "Reconhecer intervalos **compostos**, maiores que a oitava",
+    "Converter simples em composto pela **regra do 7**",
+    "Calcular os **semitons** de um composto",
+    "Achar a **9ª, a 11ª e a 13ª** de um acorde cifrado"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quantos semitons tem a oitava?\n2. Quantos semitons tem a 2ª maior? E a 3ª maior?\n3. Que notas formam o acorde C7?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. 12.\n2. 2ª maior: 2. 3ª maior: 4.\n3. Dó, Mi, Sol e Si♭.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Dó e Ré, duas vezes",
+            "legenda": "As duas notas são Dó e Ré nos dois acordes. Qual soa mais áspero? Qual soa mais aberto?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "D4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "C4",
+                  "D5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "No primeiro, Dó e Ré estão colados: uma 2ª maior. No segundo, o Ré subiu uma oitava, e o intervalo passou da oitava: é uma **9ª maior**, um **intervalo composto**.\n\nAo final, você vai dar nome a intervalos até a 13ª, calcular seus semitons e entender por que as cifras falam em 9, 11 e 13."
+        }
+      ]
+    },
+    {
+      "titulo": "Simples e compostos",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Os intervalos até a oitava são **simples**. Os maiores que a oitava são **compostos**: um intervalo simples somado a uma oitava. Para achar o número, **some 7** ao número do simples: 2ª vira 9ª, 3ª vira 10ª, 4ª vira 11ª, 5ª vira 12ª e 6ª vira 13ª.\n\nA **qualidade** não muda (3ª maior vira 10ª maior), e os **semitons** ganham 12."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-9",
+            "titulo": "Dó4–Ré5: 9ª maior",
+            "legenda": "Uma 2ª maior aberta uma oitava: 2 + 12 = 14 semitons.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4",
+                  "D5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "C4",
+              "para": "D5",
+              "codigo": "9M"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-10",
+            "titulo": "Dó4–Mi5: 10ª maior",
+            "legenda": "Uma 3ª maior aberta uma oitava: 4 + 12 = 16 semitons. Doce como a 3ª, só que mais espaçosa.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "C4",
+              "para": "E5",
+              "codigo": "10M"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-11",
+            "titulo": "Dó4–Fá5: 11ª justa",
+            "legenda": "Uma 4ª justa aberta uma oitava: 5 + 12 = 17 semitons.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "C4",
+              "para": "F5",
+              "codigo": "11J"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-13",
+            "titulo": "Dó4–Lá5: 13ª maior",
+            "legenda": "Uma 6ª maior aberta uma oitava: 9 + 12 = 21 semitons.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4",
+                  "A5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 66,
+            "intervalo": {
+              "de": "C4",
+              "para": "A5",
+              "codigo": "13M"
+            }
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Os compostos mais usados, a partir de Dó4.",
+          "cabecalho": [
+            "Composto",
+            "Simples",
+            "Exemplo",
+            "Semitons"
+          ],
+          "linhas": [
+            [
+              "9ª maior",
+              "2ª maior",
+              "Dó4–Ré5",
+              "14"
+            ],
+            [
+              "9ª menor",
+              "2ª menor",
+              "Dó4–Ré♭5",
+              "13"
+            ],
+            [
+              "10ª maior",
+              "3ª maior",
+              "Dó4–Mi5",
+              "16"
+            ],
+            [
+              "10ª menor",
+              "3ª menor",
+              "Dó4–Mi♭5",
+              "15"
+            ],
+            [
+              "11ª justa",
+              "4ª justa",
+              "Dó4–Fá5",
+              "17"
+            ],
+            [
+              "12ª justa",
+              "5ª justa",
+              "Dó4–Sol5",
+              "19"
+            ],
+            [
+              "13ª maior",
+              "6ª maior",
+              "Dó4–Lá5",
+              "21"
+            ]
+          ]
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Por que somar 7, e não 8? Porque a nota do meio é contada duas vezes: Dó–Dó já é uma 8ª, e o Dó de cima é também a primeira nota da segunda contagem."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: classificar Dó4–Lá5",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja o caminho completo, com o motivo de cada passo.\n\n1. **Reduza**: desça a nota de cima uma oitava. Dó4–Lá4 é uma **6ª maior** (9 semitons).\n2. **Some 7 ao número**: 6 + 7 = **13**.\n3. **Mantenha a qualidade e some 12 semitons**: **13ª maior**, com 9 + 12 = 21 semitons."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que reduzir primeiro, em vez de contar as notas de Dó4 até Lá5?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Dá para contar, mas são 13 notas, e é fácil se perder. Reduzindo, você usa o que já sabe dos intervalos simples e só ajusta o número.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **Ré4–Fá5**: reduzido, Ré–Fá é 3ª menor; 3 + 7 = 10. Qual é o nome?\n\nE agora dois passos são seus: **Mi4–Lá5**. Reduza e some."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ré4–Fá5: **10ª menor**, com 3 + 12 = 15 semitons.\n\nMi4–Lá5: Mi–Lá é 4ª justa; 4 + 7 = 11. **11ª justa**, com 17 semitons.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "9, 11 e 13 nas cifras",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Num acorde, as notas empilhadas em 3ªs a partir da fundamental são 1, 3, 5 e 7. A próxima 3ª acima da 7ª já passou da oitava: é a **9ª**. Depois vêm a **11ª** e a **13ª**. Essas notas acrescentadas acima do acorde se chamam **tensões**, e por isso as cifras usam os números compostos."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-c79",
+            "titulo": "C7(9)",
+            "legenda": "Dó, Mi, Sol, Si♭ e o Ré no alto: a 9ª dá brilho ao acorde de sétima.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "Bb4",
+                  "D5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60,
+            "intervalo": {
+              "de": "C4",
+              "para": "D5",
+              "codigo": "9M"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-am711",
+            "titulo": "Am7(11)",
+            "legenda": "Lá, Sol, Dó e o Ré no alto: a 11ª, uma 4ª justa acima da oitava do Lá.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "G4",
+                  "C5",
+                  "D5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60,
+            "intervalo": {
+              "de": "A3",
+              "para": "D5",
+              "codigo": "11J"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-g713",
+            "titulo": "G7(13)",
+            "legenda": "Sol, Fá, Si e o Mi no alto: a 13ª, uma 6ª maior acima da oitava do Sol.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60,
+            "intervalo": {
+              "de": "G3",
+              "para": "E5",
+              "codigo": "13M"
+            }
+          }
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "C7(9): a 9ª (Ré5) fica acima da 7ª (Si♭4). No braço, a mesma ordem, da corda grave para a aguda.",
+          "destaque": [
+            "C4",
+            "E4",
+            "G4",
+            "Bb4",
+            "D5"
+          ],
+          "de": "C4",
+          "ate": "E5"
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Em quais acordes cada tensão soa bem é assunto do nível avançado. Aqui basta achar a nota pelo número."
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega classificou um intervalo assim:\n\n> \"Dó4–Mi5: Dó–Mi é uma 3ª, e uma oitava acima soma 8. Então é uma 11ª maior.\"\n\nOnde está o erro, por que está errado e qual é a resposta certa?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Para passar de simples a composto se **soma 7**, não 8, porque o Dó de cima é contado duas vezes. Dó4–Mi5 é **10ª maior**. Além disso, \"11ª maior\" nem existe: a 11ª, como a 4ª, é justa, aumentada ou diminuta.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que intervalo é este?",
+      "opcoes": [
+        "10ª maior",
+        "11ª justa",
+        "3ª maior",
+        "10ª menor"
+      ],
+      "correta": 0,
+      "explicacao": "Reduzido, Dó–Mi é 3ª maior; 3 + 7 = **10ª maior**. Quem marcou 11ª somou 8 em vez de 7; quem marcou 3ª esqueceu a oitava.",
+      "conceito": "intervalo-composto",
+      "exemplo": {
+        "id": "exe-10",
+        "titulo": "Intervalo",
+        "legenda": "Dó4–Mi5",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 66,
+        "intervalo": {
+          "de": "C4",
+          "para": "E5",
+          "codigo": "10M"
+        }
+      }
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Dó4 está marcado. Clique na nota que forma uma **9ª maior** acima.",
+      "nota_base": "C4",
+      "intervalo": "9M",
+      "direcao": "acima",
+      "explicacao": "A 9ª maior é a 2ª maior uma oitava acima: Ré, mas o **Ré5**, não o Ré4 vizinho.",
+      "conceito": "intervalo-composto",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A **11ª** é a versão composta de qual intervalo simples?",
+      "opcoes": [
+        "4ª",
+        "3ª",
+        "5ª",
+        "2ª"
+      ],
+      "correta": 0,
+      "explicacao": "Tire 7 do número: 11 − 7 = **4**. Quem marcou 3ª tirou 8.",
+      "conceito": "reduzir-composto"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Que intervalo é este?",
+      "exemplo": {
+        "id": "exe-9",
+        "titulo": "Intervalo",
+        "legenda": "Dó4–Ré5: 9ª maior.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "D5"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 60,
+        "intervalo": {
+          "de": "C4",
+          "para": "D5",
+          "codigo": "9M"
+        }
+      },
+      "opcoes": [
+        "9ª maior",
+        "2ª maior",
+        "8ª justa"
+      ],
+      "correta": 0,
+      "explicacao": "As duas notas são diferentes e soam afastadas, sem o atrito da 2ª: **9ª maior**. A 8ª soaria como a mesma nota repetida.",
+      "conceito": "percepcao-composto"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos semitons tem a **10ª maior**?",
+      "opcoes": [
+        "16 semitons",
+        "4 semitons",
+        "15 semitons",
+        "17 semitons"
+      ],
+      "correta": 0,
+      "explicacao": "A 3ª maior tem 4; com a oitava, 4 + 12 = **16**. 15 é a 10ª menor.",
+      "conceito": "semitons-compostos",
+      "verificacao": {
+        "tipo": "semitons",
+        "intervalo": "10M"
+      }
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No acorde **C7(9)**, qual nota é a 9ª?",
+      "opcoes": [
+        "Ré",
+        "Mi",
+        "Si♭",
+        "Dó"
+      ],
+      "correta": 0,
+      "explicacao": "A 9ª de Dó é a 2ª uma oitava acima: **Ré**. Mi é a 3ª e Si♭ é a 7ª do acorde.",
+      "conceito": "tensoes"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Ré4 está marcado. Clique na nota que forma uma **10ª menor** acima.",
+      "nota_base": "D4",
+      "intervalo": "10m",
+      "direcao": "acima",
+      "explicacao": "Ré–Fá é 3ª menor; uma oitava acima, Ré4–**Fá5** é 10ª menor, com 15 semitons.",
+      "conceito": "intervalo-composto",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que intervalo é este?",
+      "opcoes": [
+        "10ª menor",
+        "10ª maior",
+        "3ª menor",
+        "9ª menor"
+      ],
+      "correta": 0,
+      "explicacao": "Reduzido, Ré–Fá é 3ª menor (3 semitons). Some 7 ao número e mantenha a qualidade: **10ª menor**.",
+      "conceito": "reduzir-composto",
+      "exemplo": {
+        "id": "exe-10m",
+        "titulo": "Intervalo",
+        "legenda": "Ré4–Fá5",
+        "eventos": [
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "F5"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 66,
+        "intervalo": {
+          "de": "D4",
+          "para": "F5",
+          "codigo": "10m"
+        }
+      }
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Que intervalo é este?",
+      "exemplo": {
+        "id": "exe-10p",
+        "titulo": "Intervalo",
+        "legenda": "Dó4–Mi5: 10ª maior.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E5"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 60,
+        "intervalo": {
+          "de": "C4",
+          "para": "E5",
+          "codigo": "10M"
+        }
+      },
+      "opcoes": [
+        "10ª maior",
+        "3ª maior",
+        "9ª maior"
+      ],
+      "correta": 0,
+      "explicacao": "O som é doce como o da 3ª maior, mas com as notas bem separadas: **10ª maior**. A 9ª tem um brilho mais tenso.",
+      "conceito": "percepcao-composto"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No acorde **G7(13)**, qual nota é a 13ª?",
+      "opcoes": [
+        "Mi",
+        "Fá",
+        "Ré",
+        "Lá"
+      ],
+      "correta": 0,
+      "explicacao": "A 13ª de Sol é a 6ª uma oitava acima: Sol, Lá, Si, Dó, Ré, **Mi**. Fá é a 7ª do acorde.",
+      "conceito": "tensoes"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que intervalo é este?",
+      "opcoes": [
+        "11ª aumentada",
+        "12ª diminuta",
+        "11ª justa",
+        "4ª aumentada"
+      ],
+      "correta": 0,
+      "explicacao": "Reduzido, Dó–Fá♯ é 4ª aumentada; com a oitava, **11ª aumentada** (18 semitons). 12ª diminuta tem o mesmo som, mas a nota de cima seria um Sol♭.",
+      "conceito": "reduzir-composto",
+      "exemplo": {
+        "id": "exe-11a",
+        "titulo": "Intervalo",
+        "legenda": "Dó4–Fá♯5",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "F#5"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 66,
+        "intervalo": {
+          "de": "C4",
+          "para": "F#5",
+          "codigo": "11A"
+        }
+      }
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que a tensão do **C7(9)** se chama 9, e não 2?",
+      "opcoes": [
+        "Porque fica acima do acorde, além da oitava",
+        "Porque tem 9 semitons",
+        "Porque é a 9ª nota da escala cromática"
+      ],
+      "correta": 0,
+      "explicacao": "A tensão é empilhada **acima** de 1, 3, 5 e 7, já depois da oitava, então ganha o número composto. A 9ª maior tem 14 semitons, não 9.",
+      "conceito": "tensoes"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos semitons tem a **11ª justa**?",
+      "opcoes": [
+        "17 semitons",
+        "5 semitons",
+        "18 semitons",
+        "19 semitons"
+      ],
+      "correta": 0,
+      "explicacao": "A 4ª justa tem 5; com a oitava, 5 + 12 = **17**. 19 é a 12ª justa.",
+      "conceito": "semitons-compostos",
+      "verificacao": {
+        "tipo": "semitons",
+        "intervalo": "11J"
+      }
+    }
+  ],
+  "resumo": [
+    "Intervalo **composto** é um simples somado a uma oitava.",
+    "Para o número, **some 7** (3ª vira 10ª); a qualidade não muda.",
+    "Para os semitons, **some 12** (3ª maior: 4; 10ª maior: 16).",
+    "Nas cifras, **9, 11 e 13** são tensões acima do acorde: em Dó, Ré, Fá e Lá.",
+    "A 11ª e a 12ª seguem a família das justas, como a 4ª e a 5ª; a 9ª, a 10ª e a 13ª, a das maiores e menores."
+  ],
+  "pergunta_para_chat": "Me dê intervalos compostos e acordes com 9, 11 ou 13, um de cada vez, para eu dizer o nome e a nota da tensão, e me corrija se eu somar errado."
+}
