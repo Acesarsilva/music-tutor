@@ -49,8 +49,9 @@ def _teclado(de: str, ate: str, destaque: list[str]) -> dict:
     }
 
 
-def renderizar(aula: Aula, timbre: str = "piano", fragmento: bool = False) -> str:
-    """Valida e renderiza. `fragmento=True` omite doctype/html/head/body (para embutir)."""
+def renderizar(aula: Aula, timbre: str = "piano", fragmento: bool = False, voltar: str | None = None) -> str:
+    """Valida e renderiza. `fragmento=True` omite doctype/html/head/body (para embutir).
+    `voltar` é o endereço da lista de aulas, mostrado como link na barra (usado no site)."""
     if timbre not in TIMBRES:
         raise ValueError(f"timbre deve ser um de {TIMBRES}")
     resultado: Resultado = validar_aula(aula)
@@ -91,5 +92,6 @@ def renderizar(aula: Aula, timbre: str = "piano", fragmento: bool = False) -> st
         js=(PASTA_TEMPLATES / "aula.js").read_text(encoding="utf-8"),
         fragmento=fragmento,
         timbre=timbre,
+        voltar=voltar,
         nivel_pt={"iniciante": "Iniciante", "intermediario": "Intermediário", "avancado": "Avançado"}[aula.nivel],
     )

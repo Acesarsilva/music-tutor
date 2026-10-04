@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Professor de Música · Aulas de teoria musical</title>
+<meta name="description" content="Aulas de teoria musical com partitura, áudio de piano ou violão e exercícios.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+:root {
+  --papel: #f4f5f7; --superficie: #ffffff; --tinta: #1d2330; --tinta-suave: #586276;
+  --linha: #dde1e8; --vinho: #8a2c52; --vinho-fundo: #f6e9ef;
+  --f-titulo: "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --f-texto: "Source Serif 4", Georgia, "Times New Roman", serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --papel: #15171c; --superficie: #1e2129; --tinta: #e7e9ee; --tinta-suave: #a2a9b8;
+    --linha: #333845; --vinho: #e38aae; --vinho-fundo: #3a2230;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--papel); color: var(--tinta); font: 1.0625rem/1.6 var(--f-texto); }
+main { max-width: 46rem; margin: 0 auto; padding: 3rem 16px 4rem; }
+h1, h2, .codigo, .titulo { font-family: var(--f-titulo); }
+h1 { font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.1; margin: 0 0 .75rem; }
+.chamada { color: var(--tinta-suave); margin: 0 0 2.5rem; font-size: 1.15rem; }
+h2 { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--tinta-suave); margin: 2rem 0 .75rem; }
+ol { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+a.aula {
+  display: grid; grid-template-columns: 3.25rem 1fr; gap: .1rem 1rem; align-items: baseline;
+  padding: 1rem 1.1rem; background: var(--superficie); border: 1px solid var(--linha); border-radius: 10px;
+  color: inherit; text-decoration: none; transition: border-color .15s;
+}
+a.aula:hover, a.aula:focus-visible { border-color: var(--vinho); }
+.codigo { grid-row: span 2; font-weight: 700; color: var(--vinho); background: var(--vinho-fundo); border-radius: 6px; padding: .1rem .4rem; text-align: center; font-size: .9rem; }
+.titulo { font-weight: 600; font-size: 1.1rem; }
+.resumo { color: var(--tinta-suave); font-size: .97rem; }
+footer { margin-top: 3rem; color: var(--tinta-suave); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Aulas de teoria musical</h1>
+  <p class="chamada">{{ total }} aulas com partitura, áudio em piano ou violão e exercícios corrigidos na hora. Siga na ordem ou escolha um assunto.</p>
+  {% for nivel in niveis %}
+  <h2>{{ nivel.rotulo }}</h2>
+  <ol>
+    {% for aula in nivel.aulas %}
+    <li>
+      <a class="aula" href="{{ aula.href }}">
+        <span class="codigo">{{ aula.codigo }}</span>
+        <span class="titulo">{{ aula.titulo }}</span>
+        <span class="resumo">{{ aula.resumo | md_linha | safe }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+  {% endfor %}
+  <footer>Professor de Música</footer>
+</main>
+</body>
+</html>
