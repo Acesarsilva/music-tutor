@@ -252,14 +252,17 @@ def eventos_para_abc(
             decoracao += "."
         abre = "(" if ev.get("expressao") == "inicio" else ""
         fecha = ")" if ev.get("expressao") == "fim" else ""
-        liga = "-" if ev.get("ligada") and notas else ""
+        liga = "-" if notas and (ev.get("ligada") or (len(notas) == 1 and ev.get("ligar"))) else ""
         tercina = f"(3:2:{grupos_tercina[i]}" if grupos_tercina.get(i) else ""
         if not notas:
             token = tercina + decoracao + "z" + sufixo
         elif len(notas) == 1:
             token = abre + tercina + decoracao + _nota_abc(notas[0], estado, da_armadura) + sufixo + liga + fecha
         else:
-            token = abre + tercina + decoracao + "[" + "".join(_nota_abc(n, estado, da_armadura) for n in notas) + "]" + sufixo + liga + fecha
+            # Com "ligar", a ligadura sai só nas notas escolhidas, dentro do acorde.
+            presas = set(ev.get("ligar") or [])
+            corpo_acorde = "".join(_nota_abc(n, estado, da_armadura) + ("-" if n in presas else "") for n in notas)
+            token = abre + tercina + decoracao + "[" + corpo_acorde + "]" + sufixo + liga + fecha
         posicao = tempos_por_compasso - restante
         grupo = (posicao // tempo_do_grupo) if notas and dur < tempo_do_grupo and dur < 1 else None
         if grupo is not None and grupo == grupo_anterior and corpo and corpo[-1] != "|":

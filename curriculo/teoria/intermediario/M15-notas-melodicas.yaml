@@ -1,0 +1,36 @@
+codigo: M15
+titulo: Notas melódicas
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - I12  # Tríades
+  - M09  # Cadências
+  - M13  # Cromatismo
+objetivos:
+  - Diferenciar as notas da melodia que pertencem ao acorde das que não pertencem
+  - Reconhecer a nota de passagem e a bordadura, nos tempos fracos
+  - Reconhecer a apojatura e o retardo, nos tempos fortes
+  - Reconhecer a antecipação de uma nota do acorde seguinte
+  - Classificar uma nota melódica pelo tempo em que cai e pelo jeito como chega e sai
+  - Ouvir a tensão e a resolução das notas melódicas
+conceitos:
+  - nota-melodica
+  - nota-de-passagem
+  - bordadura
+  - apojatura
+  - retardo
+  - antecipacao
+  - percepcao-notas-melodicas
+fora_do_escopo:
+  - Contraponto por espécies (módulo A10)
+  - Tensões 9, 11 e 13 como notas do acorde (módulo A01)
+exemplos_semente:
+  - "Dó, Ré, Mi sobre C: o Ré é nota de passagem"
+  - "Mi, Fá, Mi sobre C: bordadura superior"
+  - "Dó sobre G no tempo forte, resolvendo em Si: apojatura"
+  - "Dó preso do C para o G, resolvendo em Si: retardo"
+  - "Dó antes do tempo, sobre o G7: antecipação"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

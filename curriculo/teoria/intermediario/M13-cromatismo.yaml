@@ -1,0 +1,33 @@
+codigo: M13
+titulo: Cromatismo
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - I06  # Tom e semitom
+  - M02  # Intervalos aumentados, diminutos e inversão
+  - M12  # Escala pentatônica e blues
+objetivos:
+  - Escrever a escala cromática subindo com sustenidos e descendo com bemóis
+  - Reconhecer notas de passagem e bordaduras cromáticas numa melodia
+  - Usar a aproximação cromática para chegar a uma nota do acorde
+  - Ouvir a diferença entre um movimento diatônico e um cromático
+conceitos:
+  - escala-cromatica
+  - escrita-da-cromatica
+  - passagem-cromatica
+  - bordadura-cromatica
+  - aproximacao-cromatica
+  - percepcao-cromatismo
+fora_do_escopo:
+  - Notas melódicas diatônicas em detalhe (módulo M15)
+  - Acordes cromáticos e dominantes secundárias (módulo M14)
+  - Linhas de baixo cromáticas na rearmonização (módulo A04)
+exemplos_semente:
+  - "Escala cromática de Dó a Dó, subindo e descendo"
+  - "Dó, Dó♯, Ré: passagem cromática"
+  - "Mi, Ré♯, Mi: bordadura cromática inferior"
+  - "Si, Dó subindo para o Dó do acorde: aproximação"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

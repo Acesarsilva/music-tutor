@@ -47,7 +47,7 @@ Formato:
   do intervalo, como "3ª menor" ou "5ª justa".
 - Exercícios de percepção sobre intervalos precisam do campo "intervalo" no exemplo. Percepção de ritmo,
   compasso ou dinâmica não leva "intervalo"; use "dinamica", "acento", "ligada",
-  "staccato", "expressao" e "forquilha" nos eventos quando ajudar.
+  "ligar" (só algumas notas do acorde, como no retardo), "staccato", "expressao" e "forquilha" nos eventos quando ajudar.
 - Inclua de 8 a 14 exercícios misturando os tipos pedidos no módulo.
 - O aluno escolhe piano ou violão: os blocos e exercícios de teclado viram um braço de violão. Escreva os
   enunciados sem depender do instrumento ("clique na nota") e mantenha essas notas entre E3 e E6.

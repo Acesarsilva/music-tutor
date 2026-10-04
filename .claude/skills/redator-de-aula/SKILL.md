@@ -125,7 +125,8 @@ maior. Se você marcou 4ª, contou semitons em vez de notas."
 - Aulas anteriores à I08 ainda não dão nome aos intervalos: em `percepcao`, a opção correta pode ser
   "semitom" (2m) ou "tom" (2M). Em `teclado`, "1A" pede a mesma nota com ♯ ou ♭ (Fá→Fá♯, Si→Si♭ abaixo).
 - Ritmo e dinâmica: cada evento aceita `dinamica` ("pp" a "ff", vale até a próxima), `acento` (tempo forte,
-  pulso) e `ligada` (une ao evento seguinte, com as mesmas notas). Percepção de ritmo, compasso ou dinâmica
+  pulso), `ligada` (une ao evento seguinte, com as mesmas notas) e `ligar` (lista de notas do acorde que
+  continuam soando no evento seguinte enquanto as outras mudam, como no retardo). Percepção de ritmo, compasso ou dinâmica
   não leva `intervalo`; nesse caso confira a resposta à mão.
 - Tercinas: durações em terços de tempo (1/3 cada colcheia de tercina, 2/3 cada semínima de tercina); o grupo
   precisa fechar um tempo inteiro ou meio tempo, e a partitura ganha o 3 sobre ele. Colcheias do mesmo tempo

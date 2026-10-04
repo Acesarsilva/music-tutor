@@ -1132,13 +1132,17 @@ tbody tr:last-child td { border-bottom: 0; }
       var inicio = c.currentTime + 0.08, t = inicio, timers = [];
       eventos.forEach(function (ev, idx) {
         var dur = ev.duracao * spb;
-        // Nota ligada à anterior não é atacada de novo: a anterior já soa pelas duas durações.
-        var continua = idx > 0 && eventos[idx - 1].ligada;
-        var soa = dur;
-        for (var k = idx; eventos[k].ligada && k + 1 < eventos.length; k++) soa += eventos[k + 1].duracao * spb;
         var intensidade = ev.intensidade != null ? ev.intensidade * (ev.midis.length > 1 ? 0.8 : 1) : (ev.midis.length > 1 ? 0.62 : 0.8);
-        if (ev.staccato) soa = Math.min(soa, 0.4 * dur);
-        if (!continua) ev.midis.forEach(function (m) { nota(m + oitava, t, soa * 0.95, timbre, intensidade); });
+        // Nota ligada à anterior não é atacada de novo: a anterior já soa pelas duas durações.
+        // "ligada" prende o evento inteiro; "ligar", só algumas notas do acorde.
+        function presa(e, m) { return e.ligada || (e.ligar && e.ligar.indexOf(m) >= 0); }
+        ev.midis.forEach(function (m) {
+          if (idx > 0 && presa(eventos[idx - 1], m)) return;
+          var soa = dur;
+          for (var k = idx; presa(eventos[k], m) && k + 1 < eventos.length; k++) soa += eventos[k + 1].duracao * spb;
+          if (ev.staccato) soa = Math.min(soa, 0.4 * dur);
+          nota(m + oitava, t, soa * 0.95, timbre, intensidade);
+        });
         var atraso = (t - c.currentTime) * 1000;
         timers.push(setTimeout(function () { if (aoPasso) aoPasso(idx); }, Math.max(0, atraso)));
         t += dur;

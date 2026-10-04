@@ -1,0 +1,834 @@
+{
+  "codigo": "M14",
+  "titulo": "Dominantes secundárias",
+  "nivel": "intermediario",
+  "resumo_curto": "O V7 de outros acordes do tom: V7/V, V7/IIm e o II cadencial secundário.",
+  "prerequisitos": [
+    "Acordes de sétima (M05)",
+    "Funções harmônicas (M07)",
+    "Progressões comuns (M08)",
+    "Cromatismo (M13)"
+  ],
+  "objetivos": [
+    "Entender a **dominante secundária** como o V7 de outro acorde do tom",
+    "**Construir** a dominante secundária de qualquer acorde maior ou menor do campo",
+    "Ler e escrever a análise **V7/V**, **V7/IIm** e outras",
+    "Usar o **II cadencial secundário**",
+    "Reconhecer a dominante secundária de ouvido"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Qual é o V7 de Dó maior? E quais são as suas notas?\n2. Em G7, qual nota é a sensível de Dó?\n3. Qual é a função do Dm7 em Dó maior?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. G7: Sol, Si, Ré, Fá.\n2. Si, que sobe meio tom para Dó.\n3. Subdominante (é o IIm7).",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "Primeira versão",
+            "legenda": "C, Am, Dm, G7, C. Tudo dentro do tom.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "Segunda versão",
+            "legenda": "C, A7, Dm, G7, C. Só o segundo acorde mudou. O que você sente nele?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "G4",
+                  "C#5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "No **A7** aparece um **Dó♯**, nota de fora de Dó maior. Ele cria tensão e \"puxa\" para o Dm, como o G7 puxa para o C. O A7 é a dominante do Dm, por empréstimo de um instante: uma **dominante secundária**.\n\nAo final, você vai construir, analisar e reconhecer dominantes secundárias em qualquer tom maior."
+        }
+      ]
+    },
+    {
+      "titulo": "O que é uma dominante secundária",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Todo acorde maior ou menor do tom pode ser tratado como uma **tônica momentânea**. O acorde que o prepara é o **V7 dele**, a sua **dominante secundária**.\n\nNa análise, escreve-se **V7/** seguido do acorde de chegada. **V7/V** se lê \"cinco com sétima do cinco\": em Dó, é o D7, que leva ao G."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-d7-g",
+            "titulo": "D7 → G",
+            "legenda": "O V7/V: o Fá♯ sobe para Sol.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F#4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "G3",
+                  "D4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-e7-am",
+            "titulo": "E7 → Am",
+            "legenda": "O V7/VIm: o Sol♯ sobe para Lá.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Por que só acordes maiores e menores? Porque o VIIm7(b5) (Bm7(b5) em Dó) não soa estável como ponto de chegada, então não ganha dominante própria."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "As dominantes secundárias de Dó maior.",
+          "cabecalho": [
+            "Acorde de chegada",
+            "Dominante secundária",
+            "Análise",
+            "Nota de fora do tom"
+          ],
+          "linhas": [
+            [
+              "Dm (IIm)",
+              "A7",
+              "V7/IIm",
+              "Dó♯"
+            ],
+            [
+              "Em (IIIm)",
+              "B7",
+              "V7/IIIm",
+              "Ré♯ e Fá♯"
+            ],
+            [
+              "F (IV)",
+              "C7",
+              "V7/IV",
+              "Si♭"
+            ],
+            [
+              "G (V)",
+              "D7",
+              "V7/V",
+              "Fá♯"
+            ],
+            [
+              "Am (VIm)",
+              "E7",
+              "V7/VIm",
+              "Sol♯"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Como construir",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Para achar a dominante secundária de um acorde:\n\n1. pegue a **fundamental** do acorde de chegada;\n2. suba uma **5ª justa** (ou desça uma 4ª justa): essa é a fundamental da dominante;\n3. monte sobre ela um **acorde maior com sétima menor** (tipo 7).\n\nA 3ª desse acorde é a **sensível** do acorde de chegada: está meio tom abaixo dele e sobe para ele. Quase sempre é ela a nota de fora do tom."
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "O D7: Ré, Fá♯, Lá, Dó. O Fá♯ é a sensível de Sol.",
+          "destaque": [
+            "D4",
+            "F#4",
+            "A4",
+            "C5"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-c7-f",
+            "titulo": "C7 → F",
+            "legenda": "O V7/IV: o próprio C ganha sétima menor (Si♭), que desce para Lá.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-b7-em",
+            "titulo": "B7 → Em",
+            "legenda": "O V7/IIIm: o Ré♯ sobe para Mi.",
+            "eventos": [
+              {
+                "notas": [
+                  "B3",
+                  "D#4",
+                  "F#4",
+                  "A4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "O II cadencial secundário",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Assim como o V7 do tom costuma vir depois do IIm7 (Dm7–G7–C), a dominante secundária também pode ser precedida pelo **II do acorde de chegada**. É o **II cadencial secundário**: um IIm7–V7 inteiro apontando para outro acorde do tom.\n\n- Chegando num acorde **maior**, o II é **m7**: Gm7–C7–F (o II e o V do IV).\n- Chegando num acorde **menor**, o II é **m7(b5)**: Em7(b5)–A7–Dm (o II e o V do IIm)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ii-v-iv",
+            "titulo": "Gm7, C7, F",
+            "legenda": "O II–V do IV.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "D4",
+                  "F4",
+                  "Bb4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ii-v-iim",
+            "titulo": "Em7(b5), A7, Dm",
+            "legenda": "O II–V do IIm: o acorde de chegada é menor.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "Bb4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "G4",
+                  "C#5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "D5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A progressão C, A7, Dm, G7, C é muito comum no samba e no choro: a dominante secundária dá um empurrão a mais antes do II–V do tom."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-samba",
+            "titulo": "C, A7, Dm7, G7, C",
+            "legenda": "Duas dominantes em cadeia: A7 leva a Dm7, G7 leva a C.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "G4",
+                  "C#5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 80
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: analisar uma dominante secundária",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja **C, E7, Am** em Dó maior, com o motivo de cada passo.\n\n1. **Ache o acorde de fora do tom**: E7 tem Sol♯; no campo de Dó o III é Em7.\n2. **Veja se é do tipo 7 e para onde vai**: é E7 e vai para Am.\n3. **Confira a 5ª justa**: subindo de Lá até Mi há uma 5ª justa, ou seja, Mi é a 5ª de Lá.\n4. **Escreva a análise**: Am é o VIm, então E7 é **V7/VIm**."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** se o E7 fosse seguido de F, e não de Am, ainda seria V7/VIm?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A análise V7/VIm pressupõe que o E7 resolva em Am. Se ele vai para outro acorde, a função muda: é uma **resolução de surpresa**, como a cadência deceptiva. O nome continua E7, mas a expectativa criada é a do Am.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. **D7, G**: D7 tem Fá♯, está fora do tom e vai para G. Confira a 5ª e escreva a análise.\n\nE agora todos os passos são seus: **C7, F**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "D7, G: Ré é a 5ª justa de Sol; G é o V, então D7 é **V7/V**.\n\nC7, F: C7 tem Si♭, nota de fora do tom; Dó é a 5ª justa de Fá; F é o IV, então C7 é **V7/IV**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"Em Dó maior, a dominante do Am é o Em7, porque Mi é a 5ª de Lá e o Em7 já está no campo harmônico.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A fundamental está certa, mas o **tipo** não. Dominante é um acorde **maior com sétima menor**: **E7** (Mi, Sol♯, Si, Ré). O Em7 tem Sol natural, não tem sensível de Lá e por isso não puxa para o Am. A nota alterada, o Sol♯, é justamente o que faz a dominante secundária funcionar.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Dó maior, qual é o **V7/V**?",
+      "opcoes": [
+        "D7",
+        "Dm7",
+        "G7",
+        "A7"
+      ],
+      "correta": 0,
+      "explicacao": "O V de Dó é G; a 5ª justa de Sol é Ré; o acorde do tipo 7 sobre Ré é **D7**. Dm7 é o IIm7, com Fá natural.",
+      "conceito": "construcao-dominante-secundaria"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O A7 tem as notas Lá, Dó♯, Mi e Sol. Qual delas está fora de Dó maior?",
+      "opcoes": [
+        "Dó♯",
+        "Lá",
+        "Mi",
+        "Sol"
+      ],
+      "correta": 0,
+      "explicacao": "**Dó♯**, a 3ª do A7. Ela é a sensível de Ré e sobe para ele quando o A7 resolve em Dm.",
+      "conceito": "sensivel-secundaria"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Ré4 está marcado. Clique na **3ª do D7**, a nota que é sensível de Sol.",
+      "nota_base": "D4",
+      "intervalo": "3M",
+      "direcao": "acima",
+      "explicacao": "A 3ª maior de Ré é **Fá♯**, meio tom abaixo de Sol.",
+      "conceito": "construcao-dominante-secundaria",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Dó maior, o E7 normalmente resolve em:",
+      "opcoes": [
+        "Am",
+        "Em",
+        "E",
+        "C"
+      ],
+      "correta": 0,
+      "explicacao": "Mi é a 5ª de Lá: o E7 é o **V7/VIm** e resolve em **Am**, com o Sol♯ subindo para Lá.",
+      "conceito": "dominante-secundaria"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça as duas progressões. Em qual há uma dominante secundária?",
+      "exemplo": {
+        "id": "exe-secundaria",
+        "titulo": "Duas progressões",
+        "legenda": "A segunda tem A7 no lugar de Am.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "A3",
+              "C4",
+              "E4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "D4",
+              "F4",
+              "A4",
+              "D5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "F4",
+              "B4",
+              "D5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "G4",
+              "C#5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "D4",
+              "F4",
+              "A4",
+              "D5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "F4",
+              "B4",
+              "D5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Na segunda",
+        "Na primeira"
+      ],
+      "correta": 0,
+      "explicacao": "Na segunda, o **A7** traz Dó♯ e soa mais tenso, puxando para o Dm. Na primeira, o Am é do próprio tom.",
+      "conceito": "percepcao-dominante-secundaria"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Dó maior, o B7 é a dominante secundária de qual acorde?",
+      "opcoes": [
+        "Em",
+        "C",
+        "Bm7(b5)",
+        "G"
+      ],
+      "correta": 0,
+      "explicacao": "Si é a 5ª justa de Mi: B7 é o **V7/IIIm** e resolve em **Em**.",
+      "conceito": "dominante-secundaria"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que não se usa dominante secundária para o VIIm7(b5) de um tom maior?",
+      "opcoes": [
+        "Porque ele não soa estável como acorde de chegada",
+        "Porque não tem 5ª justa acima",
+        "Porque a dominante dele seria o próprio V7",
+        "Porque é um acorde maior"
+      ],
+      "correta": 0,
+      "explicacao": "Uma dominante secundária trata o acorde de chegada como tônica momentânea. O m7(b5) é instável demais para esse papel.",
+      "conceito": "dominante-secundaria"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Complete o II cadencial secundário que leva ao F em Dó maior: **?, C7, F**",
+      "opcoes": [
+        "Gm7",
+        "Dm7",
+        "G7",
+        "Am7"
+      ],
+      "correta": 0,
+      "explicacao": "O II de Fá é Sol; como F é maior, o II é **Gm7**. O Dm7 é o II do próprio tom.",
+      "conceito": "ii-cadencial-secundario"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Lá4 está marcado: é a fundamental do Am. Clique na **sensível** que o E7 usa para chegar nele.",
+      "nota_base": "A4",
+      "intervalo": "2m",
+      "direcao": "abaixo",
+      "explicacao": "Meio tom abaixo de Lá: **Sol♯**, a 3ª do E7.",
+      "conceito": "sensivel-secundaria",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na progressão **C, A7, Dm7, G7, C**, o A7 é:",
+      "opcoes": [
+        "V7/IIm",
+        "V7/V",
+        "V7/VIm",
+        "VIm7"
+      ],
+      "correta": 0,
+      "explicacao": "Ele vai para Dm7, o IIm7. A dominante do IIm: **V7/IIm**. VIm7 seria Am7, com Dó natural.",
+      "conceito": "analise-dominante-secundaria"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça: o D7 resolve em G. Como soa o G nesse momento?",
+      "exemplo": {
+        "id": "exe-d7-g",
+        "titulo": "C, D7, G",
+        "legenda": "O D7 leva ao G como se o G fosse a tônica.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "D4",
+              "F#4",
+              "A4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "D4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 66
+      },
+      "opcoes": [
+        "Como um ponto de chegada, uma tônica por um instante",
+        "Como uma tensão que não resolve",
+        "Igual a um C"
+      ],
+      "correta": 0,
+      "explicacao": "O Fá♯ do D7 sobe para Sol e o G soa como **tônica momentânea**. É o efeito de toda dominante secundária.",
+      "conceito": "percepcao-dominante-secundaria"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em **Sol maior**, qual é o V7/V?",
+      "opcoes": [
+        "A7",
+        "D7",
+        "E7",
+        "Am7"
+      ],
+      "correta": 0,
+      "explicacao": "O V de Sol é D; a 5ª justa de Ré é Lá: **A7**. D7 é o V7 do próprio tom.",
+      "conceito": "construcao-dominante-secundaria"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o II cadencial secundário que leva ao **Dm** em Dó maior?",
+      "opcoes": [
+        "Em7(b5), A7",
+        "Em7, A7",
+        "Am7, D7",
+        "Gm7, C7"
+      ],
+      "correta": 0,
+      "explicacao": "Dm é menor, então o II dele é **m7(b5)**: Em7(b5), seguido do A7.",
+      "conceito": "ii-cadencial-secundario"
+    }
+  ],
+  "resumo": [
+    "A **dominante secundária** é o V7 de um acorde maior ou menor do tom que não é a tônica.",
+    "Para construir: 5ª justa acima da fundamental de chegada, acorde do tipo **7**.",
+    "A 3ª da dominante secundária é a **sensível** do acorde de chegada, e quase sempre é a nota de fora do tom.",
+    "Em Dó maior: A7 (V7/IIm), B7 (V7/IIIm), C7 (V7/IV), D7 (V7/V), E7 (V7/VIm).",
+    "O **II cadencial secundário** coloca o IIm7 (ou m7(b5), se a chegada é menor) antes da dominante secundária."
+  ],
+  "pergunta_para_chat": "Me dê progressões curtas em tons maiores, uma de cada vez, para eu achar as dominantes secundárias e escrever a análise, e corrija se eu errar o acorde de chegada."
+}

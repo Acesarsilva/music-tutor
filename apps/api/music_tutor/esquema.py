@@ -23,6 +23,11 @@ class Evento(BaseModel):
     ligada: bool = Field(
         False, description="Ligadura com o evento seguinte, que precisa ter as mesmas notas: as duas durações soam como uma só."
     )
+    ligar: list[str] = Field(
+        default_factory=list,
+        description="Liga só estas notas do acorde ao evento seguinte, que precisa contê-las; as outras são tocadas de novo "
+        "(ex.: o retardo, em que a melodia segura a nota enquanto o acorde muda).",
+    )
     staccato: bool = Field(False, description="Staccato (ponto sobre a nota): soa bem curta, separada da seguinte.")
     expressao: Optional[Literal["inicio", "fim"]] = Field(
         None, description="Ligadura de expressão (legato): começa nesta nota ou termina nela."

@@ -1,0 +1,953 @@
+{
+  "codigo": "M15",
+  "titulo": "Notas melódicas",
+  "nivel": "intermediario",
+  "resumo_curto": "Passagem, bordadura, apojatura, retardo e antecipação: as notas de fora do acorde.",
+  "prerequisitos": [
+    "Tríades (I12)",
+    "Cadências (M09)",
+    "Cromatismo (M13)"
+  ],
+  "objetivos": [
+    "Diferenciar **notas do acorde** e **notas melódicas**",
+    "Reconhecer a **passagem** e a **bordadura** nos tempos fracos",
+    "Reconhecer a **apojatura** e o **retardo** nos tempos fortes",
+    "Reconhecer a **antecipação**",
+    "Ouvir a tensão e a resolução de cada uma"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quais são as notas do acorde C? E do G?\n2. Em 4/4, quais tempos são fortes?\n3. O que é uma bordadura cromática?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. C: Dó, Mi, Sol. G: Sol, Si, Ré.\n2. O 1º é o forte; o 3º é meio forte. O 2º e o 4º são fracos.\n3. A melodia sai de uma nota, vai a um semitom ao lado e volta a ela.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "Primeira melodia",
+            "legenda": "Só notas dos acordes C e G.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "B4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "Segunda melodia",
+            "legenda": "Os mesmos acordes. A melodia ficou mais cantada ou mais dura?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "E5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "D5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A primeira melodia só pula entre notas do acorde, como um arpejo. A segunda anda por graus vizinhos e usa notas que **não estão no acorde**, como o Ré e o Fá sobre C. São as **notas melódicas** (também chamadas de notas não harmônicas ou notas de enfeite): criam uma tensão breve e se resolvem numa nota do acorde.\n\nAo final, você vai reconhecer e classificar as cinco notas melódicas mais comuns."
+        }
+      ]
+    },
+    {
+      "titulo": "Nos tempos fracos: passagem e bordadura",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **nota de passagem** fica **entre** duas notas do acorde e liga as duas por grau conjunto, sempre na mesma direção. A **bordadura** sai de uma nota do acorde, vai à nota vizinha e **volta** à mesma nota. As duas costumam cair no tempo fraco.\n\nEm M13 você viu as versões cromáticas. Aqui as notas são da própria escala."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-passagem",
+            "titulo": "Nota de passagem subindo",
+            "legenda": "Sobre C: Dó, **Ré**, Mi. O Ré liga duas notas do acorde.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-passagem-desce",
+            "titulo": "Nota de passagem descendo",
+            "legenda": "Sobre C: Sol, **Fá**, Mi.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-bord-sup",
+            "titulo": "Bordadura superior",
+            "legenda": "Sobre C: Mi, **Fá**, Mi.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-bord-inf",
+            "titulo": "Bordadura inferior",
+            "legenda": "Sobre C: Dó, **Si**, Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Nos tempos fortes: apojatura e retardo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Quando a nota de fora do acorde cai no **tempo forte**, a tensão fica bem mais exposta. Dois casos:\n\n- **apojatura**: a melodia chega à nota de fora, geralmente **por salto**, e depois **resolve por grau conjunto** numa nota do acorde;\n- **retardo**: a nota vem **presa do acorde anterior**. O acorde muda, ela continua soando e só depois resolve, quase sempre **descendo** por grau conjunto. São três momentos: **preparação** (nota do acorde), **suspensão** (o acorde muda e ela fica) e **resolução**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-apojatura",
+            "titulo": "Apojatura",
+            "legenda": "Sol salta para **Dó** no tempo forte do G; o Dó resolve descendo em Si.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "G5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "B4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-retardo",
+            "titulo": "Retardo",
+            "legenda": "O Dó do C fica preso enquanto o acorde vira G e só depois desce para Si.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4,
+                "ligar": [
+                  "G4",
+                  "C5"
+                ]
+              },
+              {
+                "notas": [
+                  "G3",
+                  "D4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "D4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "No retardo, ouça a nota aguda: ela **não é tocada de novo** quando o acorde muda. É o que o diferencia da apojatura, que é atacada no tempo forte."
+        }
+      ]
+    },
+    {
+      "titulo": "Chegando antes: antecipação",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **antecipação** é uma nota do **próximo** acorde tocada um pouco antes dele, no tempo fraco. Quando o acorde chega, a melodia repete a nota ou a mantém. É comum em finais de frase."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-antecipacao",
+            "titulo": "Antecipação",
+            "legenda": "Sobre G7, o **Dó** aparece antes do tempo; logo depois chega o C.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "B4"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "As cinco notas melódicas.",
+          "cabecalho": [
+            "Nota",
+            "Tempo",
+            "Como chega",
+            "Como sai"
+          ],
+          "linhas": [
+            [
+              "Passagem",
+              "fraco",
+              "grau conjunto",
+              "grau conjunto, na mesma direção"
+            ],
+            [
+              "Bordadura",
+              "fraco",
+              "grau conjunto",
+              "volta à mesma nota"
+            ],
+            [
+              "Apojatura",
+              "forte",
+              "geralmente por salto",
+              "grau conjunto"
+            ],
+            [
+              "Retardo",
+              "forte",
+              "presa do acorde anterior",
+              "grau conjunto, quase sempre descendo"
+            ],
+            [
+              "Antecipação",
+              "fraco",
+              "qualquer",
+              "fica no acorde seguinte, do qual é nota"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: classificar a nota melódica",
+      "blocos": [
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-frase",
+            "titulo": "Uma frase com notas melódicas",
+            "legenda": "C, F, G7, C. Use a frase para seguir os passos.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "C4",
+                  "A5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "C4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "C4",
+                  "A5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "D5"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Veja o **Ré** do 2º tempo do primeiro compasso, com o motivo de cada passo.\n\n1. **É nota do acorde?** O acorde é C (Dó, Mi, Sol): o Ré não é.\n2. **Em que tempo cai?** No 2º, um tempo fraco.\n3. **Como chega e como sai?** Vem de Mi e vai para Dó, por grau conjunto, descendo: **nota de passagem**."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** e o Mi do 4º tempo, que vem de Dó e salta para Lá?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "O Mi está no acorde C, então **não é nota melódica**: o primeiro passo já responde. O salto não muda nada, porque notas do acorde podem chegar e sair de qualquer jeito.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. O **Sol** do 3º tempo do segundo compasso: o acorde é F (Fá, Lá, Dó), e o Sol não pertence a ele. Em que tempo cai, e como chega e sai?\n\nE agora todos os passos são seus: o **Dó** do último tempo do terceiro compasso, sobre G7."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Sol sobre F: cai no 3º tempo, vem de Lá e volta a Lá: **bordadura inferior**.\n\nDó sobre G7: o G7 tem Sol, Si, Ré e Fá; o Dó não está nele. Cai na segunda metade do 4º tempo, fraca, e fica no compasso seguinte, onde é nota do C: **antecipação**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega analisou o exemplo do retardo assim:\n\n> \"O Dó sobre o G está no tempo forte e resolve descendo. Então é uma apojatura.\"\n\nO que faltou olhar?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Faltou olhar **de onde a nota veio**. O Dó já soava no acorde anterior (C) e ficou preso quando o acorde mudou: isso é um **retardo**. A apojatura é atacada no tempo forte, geralmente depois de um salto. Tempo e resolução são iguais nos dois; a chegada é o que decide.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que é uma nota melódica?",
+      "opcoes": [
+        "Uma nota da melodia que não pertence ao acorde do momento",
+        "Qualquer nota da melodia",
+        "A nota mais aguda do acorde",
+        "Uma nota de fora da escala"
+      ],
+      "correta": 0,
+      "explicacao": "É uma nota da melodia **fora do acorde** que soa no momento. Ela pode ser da escala (como o Ré sobre C) ou cromática.",
+      "conceito": "nota-melodica"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Sobre o acorde C, a melodia faz **Mi, Fá, Sol**. O Fá é:",
+      "opcoes": [
+        "Nota de passagem",
+        "Bordadura",
+        "Apojatura",
+        "Antecipação"
+      ],
+      "correta": 0,
+      "explicacao": "Liga Mi a Sol, duas notas do acorde, por grau conjunto e na mesma direção: **nota de passagem**.",
+      "conceito": "nota-de-passagem"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Mi5 está marcado, sobre o acorde C. Clique na **bordadura superior** de Mi, dentro da escala de Dó maior.",
+      "nota_base": "E5",
+      "intervalo": "2m",
+      "direcao": "acima",
+      "explicacao": "A nota vizinha de cima na escala é **Fá**, meio tom acima. A melodia faz Mi, Fá, Mi.",
+      "conceito": "bordadura",
+      "de": "C5",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Sobre o acorde G, a melodia faz **Sol, Lá, Sol**. O Lá é:",
+      "opcoes": [
+        "Bordadura superior",
+        "Bordadura inferior",
+        "Nota de passagem",
+        "Retardo"
+      ],
+      "correta": 0,
+      "explicacao": "Sai de Sol, vai à vizinha de cima e **volta**: **bordadura superior**.",
+      "conceito": "bordadura"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça as duas versões. Em qual a nota de fora do acorde cai no tempo forte?",
+      "exemplo": {
+        "id": "exe-forte-fraco",
+        "titulo": "Duas versões",
+        "legenda": "A primeira tem passagem no tempo fraco; a segunda, apojatura no forte.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "D5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "E5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "B4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 66
+      },
+      "opcoes": [
+        "Na segunda",
+        "Na primeira"
+      ],
+      "correta": 0,
+      "explicacao": "Na segunda, o Dó soa junto com o G no **tempo forte** e só depois resolve em Si: a tensão fica bem exposta. Na primeira, o Ré passa rápido no tempo fraco.",
+      "conceito": "percepcao-notas-melodicas"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual nota melódica tem **preparação, suspensão e resolução**?",
+      "opcoes": [
+        "Retardo",
+        "Apojatura",
+        "Antecipação",
+        "Bordadura"
+      ],
+      "correta": 0,
+      "explicacao": "O **retardo** vem preso do acorde anterior (preparação), continua quando o acorde muda (suspensão) e então desce para uma nota do acorde (resolução).",
+      "conceito": "retardo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A melodia salta para uma nota de fora do acorde no **tempo forte** e depois desce um grau até uma nota do acorde. É uma:",
+      "opcoes": [
+        "Apojatura",
+        "Nota de passagem",
+        "Antecipação",
+        "Bordadura"
+      ],
+      "correta": 0,
+      "explicacao": "Tempo forte, chegada por salto, resolução por grau conjunto: **apojatura**.",
+      "conceito": "apojatura"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Si4 está marcado: é a nota de chegada sobre o G. Clique na nota que, presa do acorde C, faz o **retardo** resolvendo nela.",
+      "nota_base": "B4",
+      "intervalo": "2m",
+      "direcao": "acima",
+      "explicacao": "O retardo resolve descendo por grau conjunto: a nota de cima é **Dó**, que estava no acorde C.",
+      "conceito": "retardo",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Sobre G7, pouco antes de chegar o C, a melodia toca **Dó** no tempo fraco e o mantém no C. Esse Dó é:",
+      "opcoes": [
+        "Antecipação",
+        "Retardo",
+        "Apojatura",
+        "Nota de passagem"
+      ],
+      "correta": 0,
+      "explicacao": "É nota do **próximo** acorde, tocada antes dele: **antecipação**.",
+      "conceito": "antecipacao"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A nota aguda é tocada de novo quando o acorde muda?",
+      "exemplo": {
+        "id": "exe-retardo",
+        "titulo": "Retardo",
+        "legenda": "O Dó fica preso do C para o G e depois desce para Si.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4,
+            "ligar": [
+              "G4",
+              "C5"
+            ]
+          },
+          {
+            "notas": [
+              "G3",
+              "D4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "D4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 66
+      },
+      "opcoes": [
+        "Não: ela fica presa e só depois desce",
+        "Sim: é atacada de novo no tempo forte"
+      ],
+      "correta": 0,
+      "explicacao": "A nota **não é atacada de novo**: é um **retardo**. Se fosse atacada no tempo forte, seria uma apojatura.",
+      "conceito": "percepcao-notas-melodicas"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que a bordadura e a nota de passagem soam suaves, mesmo fora do acorde?",
+      "opcoes": [
+        "Caem no tempo fraco e andam por grau conjunto",
+        "Porque são sempre cromáticas",
+        "Porque duram mais que as notas do acorde",
+        "Porque ficam no tempo forte"
+      ],
+      "correta": 0,
+      "explicacao": "Elas passam rápido, **no tempo fraco**, e se movem para notas vizinhas. A tensão quase não chega a ser notada.",
+      "conceito": "nota-melodica"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Sobre o acorde F, a melodia faz **Lá, Si♭, Dó**. O Si♭ é:",
+      "opcoes": [
+        "Nota de passagem",
+        "Bordadura",
+        "Retardo",
+        "Nota do acorde"
+      ],
+      "correta": 0,
+      "explicacao": "F tem Fá, Lá e Dó. O Si♭ liga Lá a Dó por grau conjunto, subindo: **nota de passagem**.",
+      "conceito": "nota-de-passagem"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Duas notas no tempo forte resolvem descendo por grau conjunto. Uma veio presa do acorde anterior; a outra foi atacada depois de um salto. São, nesta ordem:",
+      "opcoes": [
+        "Retardo e apojatura",
+        "Apojatura e retardo",
+        "Antecipação e bordadura",
+        "Passagem e retardo"
+      ],
+      "correta": 0,
+      "explicacao": "Presa do acorde anterior: **retardo**. Atacada depois de salto: **apojatura**. A chegada decide.",
+      "conceito": "apojatura"
+    }
+  ],
+  "resumo": [
+    "**Notas melódicas** são notas da melodia fora do acorde do momento; criam tensão e resolvem numa nota do acorde.",
+    "**Passagem**: liga duas notas do acorde por grau conjunto. **Bordadura**: sai e volta à mesma nota. As duas no tempo fraco.",
+    "**Apojatura**: no tempo forte, geralmente depois de salto, resolve por grau conjunto.",
+    "**Retardo**: presa do acorde anterior, resolve quase sempre descendo.",
+    "**Antecipação**: nota do próximo acorde, tocada antes dele.",
+    "Para classificar: é do acorde? Em que tempo cai? Como chega e como sai?"
+  ],
+  "pergunta_para_chat": "Me dê pequenas melodias com a harmonia cifrada, uma de cada vez, para eu marcar as notas melódicas e dizer o tipo de cada uma, e corrija minha análise."
+}

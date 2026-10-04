@@ -1,0 +1,2091 @@
+{
+  "codigo": "M16",
+  "titulo": "Forma musical básica",
+  "nivel": "intermediario",
+  "resumo_curto": "Motivo, frase, período e as formas binária, ternária, A A B A e estrofe-refrão.",
+  "prerequisitos": [
+    "Pulso e compasso (I05)",
+    "Cadências (M09)"
+  ],
+  "objetivos": [
+    "Reconhecer o **motivo**, a **repetição** e a **sequência**",
+    "Reconhecer a **frase** e o **período**",
+    "Diferenciar as formas **binária**, **ternária** e **A A B A**",
+    "Reconhecer **estrofe** e **refrão**",
+    "Marcar com letras a forma de uma música"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Qual cadência soa como um ponto final? E qual soa como uma vírgula?\n2. Quantos tempos tem um compasso 4/4?\n3. Pense numa música que você sabe cantar. Alguma parte dela volta igual?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. A autêntica (V–I) é o ponto final; a meia cadência (termina no V) é a vírgula.\n2. Quatro.\n3. Quase sempre: o refrão, ou a primeira parte, voltam. É disso que trata a aula.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Brilha, brilha, estrelinha, inteira",
+            "legenda": "Ouça até o fim. Que parte volta? Que parte aparece só uma vez?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 100
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A melodia tem três partes de quatro compassos. A primeira e a última são iguais; a do meio é nova. Dando letras às partes, a música é **A B A**. Esse desenho, como as partes se repetem, contrastam e voltam, é a **forma** da música.\n\nAo final, você vai reconhecer motivo, frase e período e marcar com letras a forma de uma música."
+        }
+      ]
+    },
+    {
+      "titulo": "Motivo: a menor ideia",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O **motivo** é a menor ideia musical que se reconhece, com poucas notas e um ritmo próprio. A música cresce fazendo coisas com ele:\n\n- **repetição**: o motivo volta igual;\n- **sequência**: o motivo volta com o mesmo desenho, começando numa nota mais aguda ou mais grave;\n- **variação**: o motivo volta parecido, com alguma mudança no ritmo ou nas notas."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-motivo",
+            "titulo": "Um motivo",
+            "legenda": "Mi, Fá, Sol, Mi, Dó: duas colcheias e três semínimas.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-repeticao",
+            "titulo": "Repetição",
+            "legenda": "O motivo duas vezes, igual.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sequencia",
+            "titulo": "Sequência",
+            "legenda": "O mesmo desenho começando em Mi, depois em Fá, depois em Sol.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 88
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Frase e período",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **frase** é um trecho completo, que termina numa **cadência**, como uma frase falada termina numa pontuação. Muitas frases têm **quatro compassos**.\n\nQuando duas frases formam uma pergunta e uma resposta, temos um **período**:\n\n- o **antecedente** (a pergunta) termina aberto, normalmente numa meia cadência, no V;\n- o **consequente** (a resposta) começa igual ou parecido e termina fechado, numa cadência autêntica, no I."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-frase",
+            "titulo": "Uma frase",
+            "legenda": "A primeira frase de Brilha, brilha: quatro compassos que terminam no Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 100
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-periodo",
+            "titulo": "Um período",
+            "legenda": "Pergunta (C, F, C, G): termina no Ré, sobre o G. Resposta (C, F, G7, C): começa igual e termina no Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 96
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Formas binária e ternária",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Para descrever a forma, cada parte ganha uma **letra**. A mesma letra quer dizer a mesma música; uma letra nova, material novo; e uma letra com apóstrofo (**A'**), uma volta com mudanças.\n\n- **Binária (A B)**: duas partes que contrastam. A segunda não traz a primeira de volta.\n- **Ternária (A B A)**: depois do contraste, a primeira parte **volta**. A volta dá a sensação de fechar o círculo.\n- **A A B A**: a primeira parte é tocada duas vezes, vem um contraste, chamado de **ponte**, e a primeira parte volta. É a forma de muitas canções populares, como *Garota de Ipanema*, de Tom Jobim e Vinicius de Moraes."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-binaria",
+            "titulo": "Forma binária: A B",
+            "legenda": "A: semínimas, terminando em Dó. B: colcheias, mais aguda, sem voltar ao A.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ternaria-b",
+            "titulo": "A parte B de Brilha, brilha",
+            "legenda": "A parte nova da forma A B A: o mesmo motivo duas vezes, parando no Ré.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 100
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Estrofe e refrão",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Nas canções com letra, a forma mais comum alterna **estrofe** e **refrão**:\n\n- a **estrofe** volta com a **mesma melodia** e **letra nova** a cada vez: ela conta a história;\n- o **refrão** volta com a **mesma melodia** e a **mesma letra**: é a parte que todo mundo canta junto."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Uma canção com estrofe e refrão.",
+          "cabecalho": [
+            "Parte",
+            "Melodia",
+            "Letra",
+            "Letra da forma"
+          ],
+          "linhas": [
+            [
+              "Estrofe 1",
+              "x",
+              "letra 1",
+              "A"
+            ],
+            [
+              "Refrão",
+              "y",
+              "refrão",
+              "B"
+            ],
+            [
+              "Estrofe 2",
+              "x",
+              "letra 2",
+              "A"
+            ],
+            [
+              "Refrão",
+              "y",
+              "refrão",
+              "B"
+            ]
+          ]
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Na forma, o que conta é a **melodia**. Duas estrofes com letras diferentes e a mesma melodia recebem a mesma letra (A)."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: marcar a forma",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja com **Brilha, brilha, estrelinha**, com o motivo de cada passo.\n\n1. **Divida em frases**, pelas cadências e respirações: são três trechos de quatro compassos.\n2. **Compare cada trecho com os anteriores**: o 1º é material novo (A); o 2º é diferente do 1º (B); o 3º é igual ao 1º (A).\n3. **Junte as letras**: **A B A**, forma ternária."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** se o último trecho voltasse com o final mudado, como ficaria a forma?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "**A B A'**. Ainda é ternária: a parte A volta reconhecível, e o apóstrofo registra a mudança.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus, no exemplo da forma binária. Ele tem dois trechos de quatro compassos: compare-os e junte as letras.\n\nE agora todos os passos são seus: uma canção tem estrofe, estrofe, uma parte nova que aparece só uma vez e a estrofe de novo, todas as estrofes com a mesma melodia."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Forma binária: o 2º trecho tem outro ritmo e outro registro, sem trazer o 1º de volta: **A B**.\n\nA canção: estrofe (A), estrofe (A), parte nova (B), estrofe (A): **A A B A**, e a parte B é a ponte.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"Brilha, brilha tem forma A B, porque só tem duas melodias diferentes.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "As letras não contam **quantas** melodias existem, e sim **a ordem** em que elas aparecem. A melodia A volta no fim, e essa volta faz parte da forma: **A B A**. A B seria uma música que termina na parte nova.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que é um **motivo**?",
+      "opcoes": [
+        "A menor ideia musical que se reconhece",
+        "Uma música inteira",
+        "A parte que todo mundo canta junto",
+        "O último acorde de uma frase"
+      ],
+      "correta": 0,
+      "explicacao": "O **motivo** é uma ideia curta, de poucas notas e com ritmo próprio, que a música repete e transforma.",
+      "conceito": "motivo"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. O motivo volta igual ou começando numa nota mais aguda?",
+      "exemplo": {
+        "id": "exe-sequencia",
+        "titulo": "Motivo",
+        "legenda": "O mesmo desenho sobe um grau a cada vez.",
+        "eventos": [
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 88
+      },
+      "opcoes": [
+        "Mais aguda: é uma sequência",
+        "Igual: é uma repetição"
+      ],
+      "correta": 0,
+      "explicacao": "O desenho começa em Mi, depois em Fá, depois em Sol: **sequência**.",
+      "conceito": "motivo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Como termina normalmente uma **frase**?",
+      "opcoes": [
+        "Numa cadência",
+        "Num acorde de sétima",
+        "Numa pausa longa",
+        "Na nota mais aguda"
+      ],
+      "correta": 0,
+      "explicacao": "Como a frase falada termina numa pontuação, a frase musical termina numa **cadência**.",
+      "conceito": "frase"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Num período, o **antecedente** termina:",
+      "opcoes": [
+        "Aberto, normalmente no V",
+        "Fechado, no I",
+        "Sempre num acorde menor",
+        "Com a mesma nota do começo"
+      ],
+      "correta": 0,
+      "explicacao": "O antecedente é a pergunta: termina **aberto**, numa meia cadência. O consequente responde e fecha no I.",
+      "conceito": "periodo"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça as duas frases do período. Qual delas é a resposta?",
+      "exemplo": {
+        "id": "exe-periodo",
+        "titulo": "Duas frases",
+        "legenda": "A segunda termina no Dó, sobre o C.",
+        "eventos": [
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B3"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 96
+      },
+      "opcoes": [
+        "A segunda: termina fechada, no Dó",
+        "A primeira: termina no Ré"
+      ],
+      "correta": 0,
+      "explicacao": "A primeira termina no Ré e deixa a frase no ar. A segunda volta ao **Dó** e fecha: é o **consequente**.",
+      "conceito": "periodo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a diferença entre as formas binária e ternária?",
+      "opcoes": [
+        "Na ternária, a primeira parte volta no fim",
+        "A ternária tem compasso 3/4",
+        "A binária tem só duas notas",
+        "Na binária, a primeira parte volta no fim"
+      ],
+      "correta": 0,
+      "explicacao": "Binária: **A B**. Ternária: **A B A**, com a volta da primeira parte. O nome não tem relação com o compasso.",
+      "conceito": "forma-ternaria"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a melodia inteira. Qual é a forma?",
+      "exemplo": {
+        "id": "exe-ternaria",
+        "titulo": "Uma melodia conhecida",
+        "legenda": "A, B e A de novo.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 100
+      },
+      "opcoes": [
+        "A B A",
+        "A B",
+        "A A B",
+        "A B C"
+      ],
+      "correta": 0,
+      "explicacao": "Três trechos de quatro compassos: o primeiro, um novo e o primeiro de novo: **A B A**.",
+      "conceito": "percepcao-forma"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A primeira parte volta no fim?",
+      "exemplo": {
+        "id": "exe-binaria",
+        "titulo": "Duas partes",
+        "legenda": "A em semínimas; B em colcheias, sem volta.",
+        "eventos": [
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 4.0
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 96
+      },
+      "opcoes": [
+        "Não: a forma é A B",
+        "Sim: a forma é A B A"
+      ],
+      "correta": 0,
+      "explicacao": "Depois da parte em colcheias, a música termina sem trazer a primeira de volta: **A B**, forma binária.",
+      "conceito": "forma-binaria"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Numa canção, o que diferencia o **refrão** da **estrofe**?",
+      "opcoes": [
+        "O refrão volta com a mesma letra; a estrofe muda de letra",
+        "O refrão é sempre mais lento",
+        "A estrofe não tem melodia",
+        "O refrão aparece uma vez só"
+      ],
+      "correta": 0,
+      "explicacao": "As duas repetem a melodia. O **refrão** repete também a **letra**; a **estrofe** traz letra nova a cada vez.",
+      "conceito": "estrofe-refrao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na forma **A A B A**, como se chama a parte B?",
+      "opcoes": [
+        "Ponte",
+        "Refrão",
+        "Introdução",
+        "Coda"
+      ],
+      "correta": 0,
+      "explicacao": "É o contraste entre as voltas do A: a **ponte**.",
+      "conceito": "forma-ternaria"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma música tem estrofe, refrão, estrofe com outra letra e refrão. Qual é a forma?",
+      "opcoes": [
+        "A B A B",
+        "A B C D",
+        "A A B B",
+        "A B C B"
+      ],
+      "correta": 0,
+      "explicacao": "As estrofes têm a mesma melodia (A) e os refrões também (B): **A B A B**. A letra nova não muda a letra da forma.",
+      "conceito": "estrofe-refrao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que indica o apóstrofo em **A'**?",
+      "opcoes": [
+        "A parte A voltou com alguma mudança",
+        "Uma parte nova",
+        "A parte A tocada mais forte",
+        "O fim da música"
+      ],
+      "correta": 0,
+      "explicacao": "**A'** é a parte A reconhecível, mas com alguma mudança, como outro final.",
+      "conceito": "forma-ternaria"
+    }
+  ],
+  "resumo": [
+    "O **motivo** é a menor ideia musical; a música cresce com repetição, sequência e variação.",
+    "A **frase** termina numa cadência; muitas têm quatro compassos.",
+    "O **período** junta antecedente (pergunta, termina aberto) e consequente (resposta, termina no I).",
+    "**Binária**: A B. **Ternária**: A B A. **A A B A**: a parte B é a ponte.",
+    "**Estrofe**: mesma melodia, letra nova. **Refrão**: mesma melodia e mesma letra.",
+    "Para marcar a forma: divida em frases, compare cada trecho com os anteriores e junte as letras."
+  ],
+  "pergunta_para_chat": "Vou te dizer músicas brasileiras que eu conheço, uma de cada vez. Me ajude a dividir em partes e marcar a forma com letras, e me corrija se eu confundir estrofe, refrão e ponte."
+}

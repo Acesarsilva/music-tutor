@@ -1,0 +1,33 @@
+codigo: M16
+titulo: Forma musical básica
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - I05  # Pulso e compasso
+  - M09  # Cadências
+objetivos:
+  - Reconhecer o motivo e o que se faz com ele, como a repetição e a sequência
+  - Reconhecer a frase e o seu fim pela cadência
+  - Entender o período como uma pergunta (antecedente) e uma resposta (consequente)
+  - Diferenciar as formas binária (AB) e ternária (ABA) e a canção A A B A
+  - Reconhecer estrofe e refrão numa canção
+  - Ouvir e marcar com letras as partes de uma música
+conceitos:
+  - motivo
+  - frase
+  - periodo
+  - forma-binaria
+  - forma-ternaria
+  - estrofe-refrao
+  - percepcao-forma
+fora_do_escopo:
+  - Rondó, tema com variações e forma-sonata (módulo A11)
+  - Desenvolvimento motívico na composição (módulo A15)
+exemplos_semente:
+  - "Brilha, brilha, estrelinha inteira: A B A"
+  - "Um motivo repetido e depois em sequência, um grau acima"
+  - "Pergunta que termina no V, resposta que termina no I"
+  - "Garota de Ipanema como exemplo de A A B A, citada só pelo título"
+exercicios:
+  - multipla_escolha
+  - percepcao
