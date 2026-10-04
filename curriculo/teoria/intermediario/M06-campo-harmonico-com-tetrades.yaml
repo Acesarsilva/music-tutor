@@ -1,0 +1,32 @@
+codigo: M06
+titulo: Campo harmônico com tétrades
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - I14  # Campo harmônico maior (tríades)
+  - I11  # Escalas menores
+  - M05  # Acordes de sétima
+objetivos:
+  - Montar a tétrade de cada grau da escala maior
+  - Reconhecer o padrão 7M, m7, m7, 7M, 7, m7, m7(b5)
+  - Escrever os graus com o tipo do acorde (I7M, IIm7, V7...)
+  - Montar o campo harmônico menor natural, harmônico e melódico
+  - Explicar por que a menor harmônica tem o acorde V7
+conceitos:
+  - campo-maior-tetrades
+  - numeracao-com-tetrades
+  - campo-menor-natural
+  - campo-menor-harmonico
+  - campo-menor-melodico
+  - percepcao-campo
+fora_do_escopo:
+  - Funções harmônicas (módulo M07)
+  - Empréstimo modal (módulo A03)
+  - Modos da menor melódica (módulo A07)
+exemplos_semente:
+  - "Campo de Dó maior: C7M, Dm7, Em7, F7M, G7, Am7, Bm7(b5)"
+  - "Lá menor natural: Am7, Bm7(b5), C7M, Dm7, Em7, F7M, G7"
+  - "Em7 e E7: o Sol♯ da menor harmônica"
+exercicios:
+  - multipla_escolha
+  - percepcao

@@ -1,0 +1,672 @@
+{
+  "codigo": "M07",
+  "titulo": "Funções harmônicas",
+  "nivel": "intermediario",
+  "resumo_curto": "Tônica, subdominante e dominante, os acordes substitutos e a tensão do trítono.",
+  "prerequisitos": [
+    "Campo harmônico com tétrades (M06)",
+    "Intervalos aumentados, diminutos e inversão (M02)"
+  ],
+  "objetivos": [
+    "Reconhecer **tônica, subdominante e dominante** pela sensação",
+    "Dar a função de cada grau do campo maior",
+    "Explicar os **substitutos** pelas notas em comum",
+    "Explicar a tensão da dominante pelo **trítono**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quais são as tétrades do campo de Dó maior?\n2. Quantos semitons tem o trítono? Onde ele aparece na escala maior?\n3. Que notas formam G7?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. C7M, Dm7, Em7, F7M, G7, Am7, Bm7(b5).\n2. 6 semitons; entre o 4º e o 7º grau (em Dó, Fá e Si).\n3. Sol, Si, Ré, Fá.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Uma pequena viagem",
+            "legenda": "Ouça os quatro acordes. Em qual deles você está em casa? Em qual se afasta? Em qual fica com vontade de voltar?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O C7M é a **casa**; o F7M **se afasta** dela, sem pressa; o G7 cria a **tensão** que pede a volta. Essas três sensações são as **funções harmônicas**: **tônica**, **subdominante** e **dominante**.\n\nAo final, você vai dar a função de cada acorde de um tom e entender por que outros acordes podem substituir os principais."
+        }
+      ]
+    },
+    {
+      "titulo": "As três funções",
+      "blocos": [
+        {
+          "tipo": "tabela",
+          "legenda": "O papel de cada função.",
+          "cabecalho": [
+            "Função",
+            "Sensação",
+            "Acorde principal (Dó maior)",
+            "Grau"
+          ],
+          "linhas": [
+            [
+              "Tônica (T)",
+              "repouso, chegada",
+              "C7M",
+              "I"
+            ],
+            [
+              "Subdominante (SD)",
+              "afastamento, movimento sem urgência",
+              "F7M",
+              "IV"
+            ],
+            [
+              "Dominante (D)",
+              "tensão que pede resolução na tônica",
+              "G7",
+              "V"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A maioria das músicas tonais anda por esse ciclo: sai da tônica, passa ou não pela subdominante, chega à dominante e volta à tônica. **T → SD → D → T**."
+        }
+      ]
+    },
+    {
+      "titulo": "A tensão da dominante",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Por que o G7 pede tanto o C? Dentro dele há um **trítono**, Si–Fá. Na resolução, cada nota anda meio tom: **Si sobe para Dó** (a sensível vai à tônica) e **Fá desce para Mi**. O trítono se desfaz numa 3ª do acorde de Dó."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-tritono",
+            "titulo": "Si–Fá resolvendo em Dó–Mi",
+            "legenda": "Só as duas notas do trítono, e a resolução: as duas andam meio tom, em direções opostas.",
+            "eventos": [
+              {
+                "notas": [
+                  "F4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "C5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60,
+            "intervalo": {
+              "de": "F4",
+              "para": "B4",
+              "codigo": "4A"
+            }
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-g7-c",
+            "titulo": "G7 indo para C",
+            "legenda": "O acorde inteiro: a tensão do G7 se resolve no acorde de Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Os substitutos",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Os outros acordes do campo têm a função do acorde principal com que mais **compartilham notas**:\n\n- **Am7** (Lá, Dó, Mi, Sol) e **Em7** (Mi, Sol, Si, Ré) têm três notas do **C7M**: são **tônica**;\n- **Dm7** (Ré, Fá, Lá, Dó) tem três notas do **F7M**: é **subdominante**;\n- **Bm7(b5)** (Si, Ré, Fá, Lá) tem três notas do **G7**, inclusive o trítono Si–Fá: é **dominante**."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "As funções no campo de Dó maior.",
+          "cabecalho": [
+            "Função",
+            "Principal",
+            "Substitutos"
+          ],
+          "linhas": [
+            [
+              "Tônica",
+              "I7M (C7M)",
+              "VIm7 (Am7), IIIm7 (Em7)"
+            ],
+            [
+              "Subdominante",
+              "IV7M (F7M)",
+              "IIm7 (Dm7)"
+            ],
+            [
+              "Dominante",
+              "V7 (G7)",
+              "VIIm7(b5) (Bm7(b5))"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-substitutos",
+            "titulo": "Am7, Dm7, G7, C7M",
+            "legenda": "O mesmo caminho da abertura (T, SD, D, T), agora com dois substitutos no lugar do C7M e do F7M.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "O IIIm7 é o substituto de tônica mais fraco: ele também tem Si, a sensível, e por isso às vezes soa levemente instável."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: as funções de Em7, F7M, G7, C7M",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja o caminho completo, com o motivo de cada passo.\n\n1. **Ache o tom**: os quatro acordes estão no campo de Dó maior, e a progressão termina em C7M.\n2. **Dê o grau de cada um**: Em7 = IIIm7, F7M = IV7M, G7 = V7, C7M = I7M.\n3. **Troque grau por função**: III é tônica, IV é subdominante, V é dominante, I é tônica. **T – SD – D – T**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-resolvido",
+            "titulo": "Em7, F7M, G7, C7M",
+            "legenda": "T, SD, D, T.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que o Em7 pode começar a progressão no lugar do C7M?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque divide três notas com o C7M (Mi, Sol, Si). Soa como uma versão da tônica, com outra cor.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **Am7 – Dm7 – G7 – C7M**: VIm7, IIm7, V7, I7M. Quais são as funções?\n\nE agora dois passos são seus: **C7M – Bm7(b5) – C7M**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Am7 – Dm7 – G7 – C7M: **T – SD – D – T**.\n\nC7M – Bm7(b5) – C7M: graus I, VII, I; funções **T – D – T**. O Bm7(b5) faz o papel do G7.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Funções no tom menor",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "No tom menor, as funções são as mesmas. Em **Lá menor**:\n\n- **tônica**: Am7 (ou Am);\n- **subdominante**: Dm7 (IVm7) e Bm7(b5) (IIm7(b5));\n- **dominante**: **E7** e **G♯°**, emprestados da menor harmônica, porque precisam da sensível Sol♯."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-menor",
+            "titulo": "Am, Dm7, E7, Am",
+            "legenda": "T, SD, D, T em Lá menor. O Sol♯ do E7 sobe para o Lá do Am.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "A4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega classificou um acorde assim:\n\n> \"Em Dó maior, o Dm7 tem função de tônica, porque é menor, como o Am7.\"\n\nOnde está o erro, por que está errado e qual é a função?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A função não vem de o acorde ser maior ou menor, e sim das **notas em comum** com o acorde principal. Dm7 (Ré, Fá, Lá, Dó) divide Fá, Lá e Dó com o F7M: é **subdominante**. O Am7 é tônica porque divide notas com o C7M.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Dó maior, qual é a função do **G7**?",
+      "opcoes": [
+        "Dominante",
+        "Tônica",
+        "Subdominante"
+      ],
+      "correta": 0,
+      "explicacao": "G7 é o V7 do tom, com o trítono Si–Fá: **dominante**, a tensão que pede o C.",
+      "conceito": "funcao-dominante"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais acordes do campo de Dó maior têm função de **tônica**?",
+      "opcoes": [
+        "C7M, Em7 e Am7",
+        "C7M, F7M e G7",
+        "Dm7 e F7M",
+        "G7 e Bm7(b5)"
+      ],
+      "correta": 0,
+      "explicacao": "O I e os dois acordes que dividem três notas com ele: **C7M, Em7 e Am7**. C7M, F7M e G7 são os principais de cada função.",
+      "conceito": "funcao-tonica"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Qual dos quatro acordes cria mais tensão, pedindo o seguinte?",
+      "exemplo": {
+        "id": "exe-ciclo",
+        "titulo": "Quatro acordes",
+        "legenda": "C7M (T), F7M (SD), G7 (D), C7M (T).",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "F3",
+              "A3",
+              "C4",
+              "E4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "F4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "O terceiro",
+        "O segundo",
+        "O primeiro"
+      ],
+      "correta": 0,
+      "explicacao": "O terceiro é o **G7**, a dominante. O segundo, F7M, se afasta da tônica sem a mesma urgência.",
+      "conceito": "percepcao-funcao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que o **Dm7** tem função de subdominante em Dó maior?",
+      "opcoes": [
+        "Divide três notas com o F7M",
+        "Porque é um acorde menor",
+        "Porque vem antes do V",
+        "Porque tem um trítono"
+      ],
+      "correta": 0,
+      "explicacao": "Ré, **Fá, Lá, Dó**: três notas do F7M. A função vem das notas em comum, não de o acorde ser menor.",
+      "conceito": "funcao-subdominante"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que intervalo dentro do **G7** cria a tensão da dominante?",
+      "opcoes": [
+        "O trítono Si–Fá",
+        "A 5ª justa Sol–Ré",
+        "A 3ª maior Sol–Si",
+        "A 7ª menor Sol–Fá"
+      ],
+      "correta": 0,
+      "explicacao": "O **trítono Si–Fá** (4ª aumentada) se resolve em Dó–Mi: Si sobe, Fá desce. Os outros intervalos não pedem resolução com a mesma força.",
+      "conceito": "funcao-dominante"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais são as funções em **Am7 – Dm7 – G7 – C7M**?",
+      "opcoes": [
+        "T – SD – D – T",
+        "SD – T – D – T",
+        "T – D – SD – T",
+        "D – SD – D – T"
+      ],
+      "correta": 0,
+      "explicacao": "Am7 (VI) é tônica, Dm7 (II) subdominante, G7 (V) dominante, C7M (I) tônica: **T – SD – D – T**.",
+      "conceito": "acordes-substitutos"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em **Lá menor**, qual acorde tem função de dominante?",
+      "opcoes": [
+        "E7",
+        "Dm7",
+        "Am7",
+        "F7M"
+      ],
+      "correta": 0,
+      "explicacao": "**E7**, o V7 que vem da menor harmônica, com a sensível Sol♯. Dm7 é subdominante; Am7, tônica.",
+      "conceito": "funcao-no-tom-menor"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A progressão termina em repouso ou em suspense?",
+      "exemplo": {
+        "id": "exe-suspense",
+        "titulo": "Três acordes",
+        "legenda": "C7M, F7M, G7: termina na dominante, em suspense.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "F3",
+              "A3",
+              "C4",
+              "E4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "F4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "Em suspense",
+        "Em repouso"
+      ],
+      "correta": 0,
+      "explicacao": "Termina no **G7**, a dominante: a música fica \"no ar\", pedindo o C7M que não veio.",
+      "conceito": "percepcao-funcao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual acorde do campo maior pode substituir o **V7** com função de dominante?",
+      "opcoes": [
+        "VIIm7(b5)",
+        "IIm7",
+        "VIm7",
+        "IV7M"
+      ],
+      "correta": 0,
+      "explicacao": "O **VIIm7(b5)** (Bm7(b5) em Dó) tem Si, Ré e Fá, três notas do G7, inclusive o trítono. IIm7 é subdominante; VIm7, tônica.",
+      "conceito": "funcao-dominante"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em **Sol maior**, qual é o acorde principal da **subdominante** (IV)?",
+      "opcoes": [
+        "C7M",
+        "D7",
+        "Em7",
+        "G7M"
+      ],
+      "correta": 0,
+      "explicacao": "O 4º grau de Sol maior é Dó: **C7M**. D7 é o V7 (dominante); Em7 é o VIm7 (tônica).",
+      "conceito": "funcao-subdominante"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em **Fá maior**, qual acorde substitui a tônica como **VIm7**?",
+      "opcoes": [
+        "Dm7",
+        "Am7",
+        "Gm7",
+        "C7"
+      ],
+      "correta": 0,
+      "explicacao": "O 6º grau de Fá maior é Ré: **Dm7** (Ré, Fá, Lá, Dó), que divide Fá, Lá e Dó com o F7M. Gm7 é o IIm7.",
+      "conceito": "acordes-substitutos"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em **Lá menor**, qual é a função do **Dm7**?",
+      "opcoes": [
+        "Subdominante",
+        "Tônica",
+        "Dominante"
+      ],
+      "correta": 0,
+      "explicacao": "Dm7 é o IVm7 de Lá menor: **subdominante**, como o IV no tom maior.",
+      "conceito": "funcao-no-tom-menor"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que sensação caracteriza a função de **tônica**?",
+      "opcoes": [
+        "Repouso, chegada",
+        "Tensão que pede resolução",
+        "Afastamento sem urgência",
+        "Mudança de tom"
+      ],
+      "correta": 0,
+      "explicacao": "Tônica é **repouso**. Tensão é a dominante; afastamento sem urgência, a subdominante.",
+      "conceito": "funcao-tonica"
+    }
+  ],
+  "resumo": [
+    "**Tônica** é repouso, **subdominante** é afastamento, **dominante** é tensão que pede a tônica.",
+    "Em Dó maior: T = C7M, Em7, Am7; SD = F7M, Dm7; D = G7, Bm7(b5).",
+    "Um substituto tem a função do principal com que **divide mais notas**.",
+    "A dominante deve sua tensão ao **trítono** (Si–Fá em G7), que se resolve meio tom para Dó–Mi.",
+    "No tom menor, a dominante usa a **sensível** da menor harmônica (E7 e G♯° em Lá menor)."
+  ],
+  "pergunta_para_chat": "Me dê progressões curtas em um tom, uma de cada vez, para eu dizer a função de cada acorde (T, SD ou D), e me pergunte por que quando eu errar."
+}

@@ -1,0 +1,31 @@
+codigo: M07
+titulo: Funções harmônicas
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - M06  # Campo harmônico com tétrades
+  - M02  # Intervalos aumentados, diminutos e inversão (trítono)
+objetivos:
+  - Reconhecer as três funções harmônicas, tônica (repouso), subdominante (afastamento) e dominante (tensão)
+  - Classificar cada grau do campo maior por função
+  - Explicar os substitutos pelas notas em comum com o acorde principal
+  - Explicar a tensão da dominante pelo trítono e sua resolução
+  - Aplicar as funções no tom menor
+conceitos:
+  - funcao-tonica
+  - funcao-subdominante
+  - funcao-dominante
+  - acordes-substitutos
+  - funcao-no-tom-menor
+  - percepcao-funcao
+fora_do_escopo:
+  - Dominantes secundárias (módulo M14)
+  - Substituição tritonal (módulo A04)
+  - Empréstimo modal (módulo A03)
+exemplos_semente:
+  - "C7M, F7M, G7, C7M: T, SD, D, T"
+  - "Am7, Dm7, G7, C7M: os substitutos fazem o mesmo caminho"
+  - "G7 indo a C: Si sobe para Dó, Fá desce para Mi"
+exercicios:
+  - multipla_escolha
+  - percepcao

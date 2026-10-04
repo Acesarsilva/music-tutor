@@ -1,0 +1,927 @@
+{
+  "codigo": "M06",
+  "titulo": "Campo harmônico com tétrades",
+  "nivel": "intermediario",
+  "resumo_curto": "As tétrades de cada grau no tom maior e nos tons menores natural, harmônico e melódico.",
+  "prerequisitos": [
+    "Campo harmônico maior (I14)",
+    "Escalas menores (I11)",
+    "Acordes de sétima (M05)"
+  ],
+  "objetivos": [
+    "Montar o **campo maior com tétrades** em qualquer tom",
+    "Reconhecer o padrão **7M, m7, m7, 7M, 7, m7, m7(b5)**",
+    "Montar o campo **menor natural, harmônico e melódico**",
+    "Explicar por que a menor harmônica tem o **V7**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. No campo de Dó maior com tríades, quais graus são menores?\n2. Que nota a menor harmônica de Lá muda em relação à natural?\n3. Que notas formam G7?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. ii (Dm), iii (Em) e vi (Am).\n2. Sobe o 7º grau: Sol vira Sol♯.\n3. Sol, Si, Ré, Fá.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Sete acordes de uma escala",
+            "legenda": "Os sete acordes usam só as notas de Dó maior. Um deles soa mais tenso, pedindo para voltar ao primeiro. Qual?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4",
+                  "B4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4",
+                  "C5",
+                  "E5",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4",
+                  "D5",
+                  "F5",
+                  "A5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O mais tenso é o quinto, **G7**: o único acorde 7 (de sétima da dominante) do campo. Juntando uma 7ª a cada tríade do campo harmônico, você obtém o **campo harmônico com tétrades**.\n\nAo final, você vai montar o campo de tétrades de qualquer tom maior e dos três tipos de menor."
+        }
+      ]
+    },
+    {
+      "titulo": "O campo maior com tétrades",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O método é o mesmo das tríades: sobre cada grau, empilhe notas da escala pulando uma. Agora são quatro notas: 1, 3, 5 e 7."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Campo harmônico de Dó maior com tétrades.",
+          "cabecalho": [
+            "Grau",
+            "Notas",
+            "Tipo",
+            "Cifra"
+          ],
+          "linhas": [
+            [
+              "I7M",
+              "Dó, Mi, Sol, Si",
+              "maior com 7ª maior",
+              "C7M"
+            ],
+            [
+              "IIm7",
+              "Ré, Fá, Lá, Dó",
+              "menor com 7ª menor",
+              "Dm7"
+            ],
+            [
+              "IIIm7",
+              "Mi, Sol, Si, Ré",
+              "menor com 7ª menor",
+              "Em7"
+            ],
+            [
+              "IV7M",
+              "Fá, Lá, Dó, Mi",
+              "maior com 7ª maior",
+              "F7M"
+            ],
+            [
+              "V7",
+              "Sol, Si, Ré, Fá",
+              "maior com 7ª menor",
+              "G7"
+            ],
+            [
+              "VIm7",
+              "Lá, Dó, Mi, Sol",
+              "menor com 7ª menor",
+              "Am7"
+            ],
+            [
+              "VIIm7(b5)",
+              "Si, Ré, Fá, Lá",
+              "meio-diminuto",
+              "Bm7(b5)"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O padrão vale para todo tom maior: **7M, m7, m7, 7M, 7, m7, m7(b5)**. Repare na escrita dos graus: com tétrades, é comum usar o algarismo romano em maiúscula seguido do tipo do acorde (IIm7, V7, VIIm7(b5))."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-campo-maior",
+            "titulo": "O campo de Dó maior",
+            "legenda": "C7M, Dm7, Em7, F7M, G7, Am7, Bm7(b5). Os 7M soam abertos; o G7, tenso.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4",
+                  "B4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4",
+                  "C5",
+                  "E5",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4",
+                  "D5",
+                  "F5",
+                  "A5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Só há um acorde 7 no campo maior, o do V grau. Achou um 7 numa música? Pense primeiro no tom que fica uma 5ª justa abaixo dele."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: o V grau de Ré maior",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja o caminho completo, com o motivo de cada passo.\n\n1. **Escreva a escala**: Ré, Mi, Fá♯, Sol, Lá, Si, Dó♯.\n2. **Empilhe a partir do 5º grau, pulando uma**: Lá, Dó♯, Mi, Sol.\n3. **Classifique**: Lá–Dó♯–Mi é tríade maior; Lá–Sol é 7ª menor. **A7**, como manda o padrão do V."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** no campo maior, o I e o IV também têm tríade maior. Por que eles levam 7M, e só o V leva 7?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque a 7ª vem da escala. Em Dó maior, a 7ª do I é Si e a do IV é Mi, as duas a 11 semitons da fundamental (7ª maior). A do V é Fá, a 10 semitons de Sol (7ª menor).",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **IIm7 de Fá maior**: escala Fá, Sol, Lá, Si♭, Dó, Ré, Mi; a partir do 2º grau, Sol, Si♭, Ré, Fá. Qual é a cifra?\n\nE agora dois passos são seus: o **VIIm7(b5) de Sol maior**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Fá maior: **Gm7** (Sol, Si♭, Ré, Fá).\n\nSol maior: escala Sol, Lá, Si, Dó, Ré, Mi, Fá♯. A partir do 7º grau, Fá♯, Lá, Dó, Mi: **F♯m7(b5)**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Menor natural",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A menor natural de Lá tem as mesmas notas de Dó maior, então o campo traz os mesmos acordes, começando do Lá: **Am7, Bm7(b5), C7M, Dm7, Em7, F7M, G7**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-campo-natural",
+            "titulo": "Lá menor natural",
+            "legenda": "Am7, Bm7(b5), C7M, Dm7, Em7, F7M, G7. O V (Em7) é menor e não puxa com força para o Am7.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3",
+                  "D4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4",
+                  "B4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Campo de Lá menor natural.",
+          "cabecalho": [
+            "Grau",
+            "Cifra"
+          ],
+          "linhas": [
+            [
+              "Im7",
+              "Am7"
+            ],
+            [
+              "IIm7(b5)",
+              "Bm7(b5)"
+            ],
+            [
+              "bIII7M",
+              "C7M"
+            ],
+            [
+              "IVm7",
+              "Dm7"
+            ],
+            [
+              "Vm7",
+              "Em7"
+            ],
+            [
+              "bVI7M",
+              "F7M"
+            ],
+            [
+              "bVII7",
+              "G7"
+            ]
+          ]
+        },
+        {
+          "tipo": "dica",
+          "markdown": "O b antes do grau (bIII, bVI, bVII) indica que ele fica um semitom abaixo do grau correspondente da escala maior de mesma tônica."
+        }
+      ]
+    },
+    {
+      "titulo": "Menor harmônica: nasce o V7",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na menor harmônica, o 7º grau sobe: Sol vira **Sol♯**, a sensível. Isso muda os acordes que têm Sol. O mais importante é o V: Mi–**Sol♯**–Si–Ré tem 3ª maior, e o Em7 vira **E7**, que puxa com força para o Am."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-em7-e7",
+            "titulo": "Em7 e E7, depois Am",
+            "legenda": "Primeiro Em7 indo para Am; depois E7 indo para Am. Na segunda vez, a chegada soa muito mais conclusiva.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "A4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-campo-harmonico",
+            "titulo": "Lá menor harmônica",
+            "legenda": "Am(7M), Bm7(b5), C7M(#5), Dm7, E7, F7M, G♯°.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "G#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3",
+                  "D4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G#4",
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G#4",
+                  "B4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Campo de Lá menor harmônica: o que muda é tudo o que tem Sol♯.",
+          "cabecalho": [
+            "Grau",
+            "Notas",
+            "Cifra"
+          ],
+          "linhas": [
+            [
+              "Im(7M)",
+              "Lá, Dó, Mi, Sol♯",
+              "Am(7M)"
+            ],
+            [
+              "IIm7(b5)",
+              "Si, Ré, Fá, Lá",
+              "Bm7(b5)"
+            ],
+            [
+              "bIII7M(#5)",
+              "Dó, Mi, Sol♯, Si",
+              "C7M(#5)"
+            ],
+            [
+              "IVm7",
+              "Ré, Fá, Lá, Dó",
+              "Dm7"
+            ],
+            [
+              "V7",
+              "Mi, Sol♯, Si, Ré",
+              "E7"
+            ],
+            [
+              "bVI7M",
+              "Fá, Lá, Dó, Mi",
+              "F7M"
+            ],
+            [
+              "VII°",
+              "Sol♯, Si, Ré, Fá",
+              "G♯°"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Menor melódica",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A menor melódica sobe também o 6º grau: Fá vira **Fá♯**. Com Fá♯ e Sol♯, o campo fica assim:"
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Campo de Lá menor melódica.",
+          "cabecalho": [
+            "Grau",
+            "Notas",
+            "Cifra"
+          ],
+          "linhas": [
+            [
+              "Im(7M)",
+              "Lá, Dó, Mi, Sol♯",
+              "Am(7M)"
+            ],
+            [
+              "IIm7",
+              "Si, Ré, Fá♯, Lá",
+              "Bm7"
+            ],
+            [
+              "bIII7M(#5)",
+              "Dó, Mi, Sol♯, Si",
+              "C7M(#5)"
+            ],
+            [
+              "IV7",
+              "Ré, Fá♯, Lá, Dó",
+              "D7"
+            ],
+            [
+              "V7",
+              "Mi, Sol♯, Si, Ré",
+              "E7"
+            ],
+            [
+              "VIm7(b5)",
+              "Fá♯, Lá, Dó, Mi",
+              "F♯m7(b5)"
+            ],
+            [
+              "VIIm7(b5)",
+              "Sol♯, Si, Ré, Fá♯",
+              "G♯m7(b5)"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Na prática, o tom menor mistura os três campos. O **V7** e o **VII°** vêm quase sempre da harmônica, porque a sensível Sol♯ é o que dá a sensação de chegada no Am."
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega montou o V grau de Lá menor harmônica assim:\n\n> \"O V de Lá menor é Mi. Mi–Sol é 3ª menor e Mi–Ré é 7ª menor, então o acorde é Em7.\"\n\nOnde está o erro, por que está errado e qual é o acorde?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ele usou o Sol da menor **natural**. Na **harmônica**, o 7º grau é **Sol♯**, e Mi–Sol♯ é 3ª maior. O V é **E7** (Mi, Sol♯, Si, Ré), o acorde que puxa para o Am.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No campo de **Dó maior** com tétrades, qual acorde fica no **V grau**?",
+      "opcoes": [
+        "G7",
+        "G7M",
+        "Gm7",
+        "G°"
+      ],
+      "correta": 0,
+      "explicacao": "Sol, Si, Ré, Fá: tríade maior com 7ª menor, **G7**. G7M precisaria de Fá♯, que não está em Dó maior.",
+      "conceito": "campo-maior-tetrades"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça dois acordes do campo de Dó maior. Qual deles é o **V7**?",
+      "exemplo": {
+        "id": "exe-i-v",
+        "titulo": "Dois acordes",
+        "legenda": "O primeiro é C7M (I); o segundo, G7 (V).",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G4",
+              "B4",
+              "D5",
+              "F5"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "O segundo",
+        "O primeiro"
+      ],
+      "correta": 0,
+      "explicacao": "O **V7** é o tenso, que pede para voltar: aqui, o segundo (G7). O C7M, o I, soa aberto e em repouso.",
+      "conceito": "percepcao-campo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a cifra do **VII grau** do campo de Dó maior?",
+      "opcoes": [
+        "Bm7(b5)",
+        "B°",
+        "Bm7",
+        "B7"
+      ],
+      "correta": 0,
+      "explicacao": "Si, Ré, Fá, Lá: tríade diminuta com 7ª menor, **Bm7(b5)**. B° pediria Lá♭, que não está na escala.",
+      "conceito": "campo-maior-tetrades"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No campo de **Lá menor natural**, qual é o acorde do I grau?",
+      "opcoes": [
+        "Am7",
+        "Am(7M)",
+        "A7M",
+        "A7"
+      ],
+      "correta": 0,
+      "explicacao": "Lá, Dó, Mi, Sol: menor com 7ª menor, **Am7**. Am(7M), com Sol♯, é o I da menor harmônica.",
+      "conceito": "campo-menor-natural"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que o V da menor harmônica de Lá é **E7**, e não Em7?",
+      "opcoes": [
+        "Porque o Sol♯ torna maior a 3ª de Mi",
+        "Porque o Ré sobe para Ré♯",
+        "Porque o Si vira Si♭",
+        "Porque todo V é sempre menor"
+      ],
+      "correta": 0,
+      "explicacao": "A menor harmônica sobe o 7º grau, Sol → **Sol♯**. Mi–Sol♯ é 3ª maior, e o acorde vira E7. Ré e Si não mudam.",
+      "conceito": "campo-menor-harmonico"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em **Fá maior**, qual é o **IIm7**?",
+      "opcoes": [
+        "Gm7",
+        "G7",
+        "Gm7(b5)",
+        "Am7"
+      ],
+      "correta": 0,
+      "explicacao": "O 2º grau de Fá maior é Sol: Sol, Si♭, Ré, Fá, **Gm7**. Am7 é o IIIm7.",
+      "conceito": "numeracao-com-tetrades"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça o V de Lá menor em duas versões, cada uma indo para Am. Qual delas vem da **menor harmônica**?",
+      "exemplo": {
+        "id": "exe-em7-e7",
+        "titulo": "Duas cadências",
+        "legenda": "Primeiro Em7 → Am; depois E7 → Am, da menor harmônica.",
+        "eventos": [
+          {
+            "notas": [
+              "E4",
+              "G4",
+              "B4",
+              "D5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "A3",
+              "C4",
+              "E4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "E4",
+              "G#4",
+              "B4",
+              "D5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "A3",
+              "C4",
+              "E4",
+              "A4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "A segunda",
+        "A primeira"
+      ],
+      "correta": 0,
+      "explicacao": "Na segunda, o **E7** traz o Sol♯, que sobe meio tom até o Lá: a chegada fica muito mais forte. Esse é o V7 da menor harmônica.",
+      "conceito": "campo-menor-harmonico"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual tétrade fica no **VII grau** da menor harmônica de Lá?",
+      "opcoes": [
+        "G♯°",
+        "G7",
+        "G♯m7(b5)",
+        "Gm7(b5)"
+      ],
+      "correta": 0,
+      "explicacao": "Sol♯, Si, Ré, Fá: três 3ªs menores, **G♯°**. G♯m7(b5) teria Fá♯ (é o VII da melódica); G7 é o da natural.",
+      "conceito": "campo-menor-harmonico"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na **menor melódica** de Lá, qual é o acorde do IV grau?",
+      "opcoes": [
+        "D7",
+        "Dm7",
+        "D7M",
+        "Dm(7M)"
+      ],
+      "correta": 0,
+      "explicacao": "Com Fá♯, Ré–Fá♯–Lá–Dó é tríade maior com 7ª menor: **D7**. Dm7 é o IV da natural e da harmônica.",
+      "conceito": "campo-menor-melodico"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Fá–Lá–Dó–Mi é o IV grau de Dó maior. Qual é a cifra?",
+      "opcoes": [
+        "F7M",
+        "F7",
+        "Fm7",
+        "Fm(7M)"
+      ],
+      "correta": 0,
+      "explicacao": "Fá–Lá 3ª maior, Fá–Dó 5ª justa, Fá–Mi 7ª maior (11 semitons): **F7M**. O 7 sozinho pediria Mi♭.",
+      "conceito": "campo-maior-tetrades"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais graus do campo maior são acordes **m7**?",
+      "opcoes": [
+        "II, III e VI",
+        "I, IV e V",
+        "II, V e VI",
+        "III, VI e VII"
+      ],
+      "correta": 0,
+      "explicacao": "O padrão é 7M, **m7, m7**, 7M, 7, **m7**, m7(b5): os graus **II, III e VI**. O VII é meio-diminuto.",
+      "conceito": "numeracao-com-tetrades"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em **Sol maior**, qual é o **V7**?",
+      "opcoes": [
+        "D7",
+        "D7M",
+        "Dm7",
+        "C7"
+      ],
+      "correta": 0,
+      "explicacao": "O 5º grau de Sol é Ré: Ré, Fá♯, Lá, Dó, **D7**. Dó é natural em Sol maior, então a 7ª é menor.",
+      "conceito": "numeracao-com-tetrades"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No campo de **Lá menor natural**, qual acorde fica no VII grau?",
+      "opcoes": [
+        "G7",
+        "G♯°",
+        "Gm7",
+        "G7M"
+      ],
+      "correta": 0,
+      "explicacao": "Na natural, o 7º grau é Sol: Sol, Si, Ré, Fá, **G7**. G♯° aparece só na harmônica, com Sol♯.",
+      "conceito": "campo-menor-natural"
+    }
+  ],
+  "resumo": [
+    "Campo maior: **I7M, IIm7, IIIm7, IV7M, V7, VIm7, VIIm7(b5)**. Só o V é um acorde 7.",
+    "Em Dó maior: C7M, Dm7, Em7, F7M, G7, Am7, Bm7(b5).",
+    "Lá menor natural usa os mesmos acordes de Dó maior, a partir de Am7.",
+    "Na **menor harmônica**, o Sol♯ cria o **E7** (V7) e o **G♯°** (VII°), que puxam para o Am.",
+    "Na **menor melódica**, o Fá♯ cria ainda Bm7, D7 e F♯m7(b5)."
+  ],
+  "pergunta_para_chat": "Me peça o campo harmônico com tétrades de um tom, maior ou menor, um de cada vez, e confira grau por grau o que eu responder."
+}

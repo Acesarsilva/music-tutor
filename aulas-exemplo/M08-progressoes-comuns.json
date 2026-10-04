@@ -1,0 +1,913 @@
+{
+  "codigo": "M08",
+  "titulo": "Progressões comuns",
+  "nivel": "intermediario",
+  "resumo_curto": "I–IV–V, II–V–I, I–VI–IV–V, turnaround e a forma do blues de 12 compassos.",
+  "prerequisitos": [
+    "Campo harmônico com tétrades (M06)",
+    "Funções harmônicas (M07)"
+  ],
+  "objetivos": [
+    "Montar em qualquer tom **I–IV–V**, **II–V–I** e **I–VI–IV–V**",
+    "Montar o **II–V–I menor**",
+    "Usar o **turnaround** I–VI–II–V",
+    "Conhecer a forma do **blues de 12 compassos**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quais são as funções de C7M, Dm7, G7 e Am7 em Dó maior?\n2. Qual é o V7 de Dó maior? E o IIm7?\n3. Em Lá menor, de onde vem o E7?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. C7M e Am7: tônica. Dm7: subdominante. G7: dominante.\n2. V7: G7. IIm7: Dm7.\n3. Da menor harmônica, que tem Sol♯.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Quatro acordes conhecidos",
+            "legenda": "Você provavelmente já ouviu esta sequência em muitas canções. Repare como o último acorde puxa de volta para o primeiro.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "C4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "São C, Am, F e G: graus **I, VIm, IV e V**. Algumas combinações de graus aparecem tanto que viraram fórmulas, as **progressões comuns**.\n\nAo final, você vai reconhecer e montar em qualquer tom as progressões I–IV–V, II–V–I, I–VI–IV–V, o turnaround e o blues de 12 compassos."
+        }
+      ]
+    },
+    {
+      "titulo": "I–IV–V",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "As três funções em seus acordes principais: tônica, subdominante, dominante e volta. É a base de muita música folclórica, do rock e do forró."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-i-iv-v",
+            "titulo": "C, F, G, C",
+            "legenda": "T, SD, D, T: o caminho mais direto.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "C4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "II–V–I",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O **IIm7–V7–I7M** troca o IV pelo seu substituto, o IIm7. Com tétrades, ele soa macio e encadeado: cada acorde tem notas em comum com o seguinte. É a progressão central do jazz e da bossa nova."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ii-v-i",
+            "titulo": "Dm7, G7, C7M",
+            "legenda": "SD, D, T. Ouça como o G7 se resolve no C7M.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [],
+                "duracao": 2
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "No tom menor, o II é meio-diminuto e o V vem da menor harmônica: **IIm7(b5)–V7–Im**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ii-v-i-menor",
+            "titulo": "Bm7(b5), E7, Am",
+            "legenda": "O mesmo caminho em Lá menor, mais escuro.",
+            "eventos": [
+              {
+                "notas": [
+                  "B3",
+                  "D4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [],
+                "duracao": 2
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "O II–V–I em alguns tons.",
+          "cabecalho": [
+            "Tom",
+            "IIm7",
+            "V7",
+            "I7M"
+          ],
+          "linhas": [
+            [
+              "Dó maior",
+              "Dm7",
+              "G7",
+              "C7M"
+            ],
+            [
+              "Fá maior",
+              "Gm7",
+              "C7",
+              "F7M"
+            ],
+            [
+              "Sol maior",
+              "Am7",
+              "D7",
+              "G7M"
+            ],
+            [
+              "Ré maior",
+              "Em7",
+              "A7",
+              "D7M"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "I–VI–IV–V",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A sequência da abertura, **I–VIm–IV–V**, é uma das mais usadas na música popular. Em funções: tônica, tônica (substituto), subdominante, dominante."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-i-vi-iv-v",
+            "titulo": "C, Am, F, G",
+            "legenda": "T, T, SD, D: o G deixa a volta ao C em aberto, pronta para repetir.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "C4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Turnaround",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "**Turnaround** é uma sequência curta que leva de volta ao I, no fim de uma seção, para a música recomeçar. O mais comum é **I7M–VIm7–IIm7–V7**: depois do V7, volta-se ao I."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-turnaround",
+            "titulo": "C7M, Am7, Dm7, G7, C7M",
+            "legenda": "T, T, SD, D e de volta à T.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: o II–V–I de Sol maior",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja o caminho completo, com o motivo de cada passo.\n\n1. **Ache os graus na escala**: Sol, Lá, Si, Dó, Ré, Mi, Fá♯. O II é Lá, o V é Ré, o I é Sol.\n2. **Aplique o tipo de cada grau no campo maior**: II é m7, V é 7, I é 7M.\n3. **Junte**: **Am7 – D7 – G7M**."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que o V é D7, e não D7M, se Ré maior tem Dó♯?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque os acordes vêm da escala de **Sol maior**, que tem Dó natural. A 7ª de Ré, nessa escala, é Dó: 7ª menor, D7.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **II–V–I de Fá maior**: Gm7, C7 e... qual é o I?\n\nE agora dois passos são seus: o **II–V–I de Ré maior**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Fá maior: Gm7 – C7 – **F7M**.\n\nRé maior: escala Ré, Mi, Fá♯, Sol, Lá, Si, Dó♯. II = Mi, V = Lá, I = Ré: **Em7 – A7 – D7M**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Blues de 12 compassos",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O **blues** tem uma forma fixa de 12 compassos, repetida durante a música. Na versão básica, usa só três acordes, todos com 7ª menor, inclusive o I e o IV: é o som característico do blues, fora do campo harmônico maior."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "A forma do blues em Dó: um acorde por compasso.",
+          "cabecalho": [
+            "Compassos",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "linhas": [
+            [
+              "1 a 4",
+              "C7",
+              "C7",
+              "C7",
+              "C7"
+            ],
+            [
+              "5 a 8",
+              "F7",
+              "F7",
+              "C7",
+              "C7"
+            ],
+            [
+              "9 a 12",
+              "G7",
+              "F7",
+              "C7",
+              "G7"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-blues-1",
+            "titulo": "Compassos 1 a 4",
+            "legenda": "Quatro compassos de C7, o I7.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 120
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-blues-2",
+            "titulo": "Compassos 5 a 8",
+            "legenda": "Dois de F7 (IV7) e dois de C7.",
+            "eventos": [
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "C4",
+                  "Eb4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "C4",
+                  "Eb4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 120
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-blues-3",
+            "titulo": "Compassos 9 a 12",
+            "legenda": "G7, F7, C7 e um G7 final, que é o turnaround para recomeçar.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "C4",
+                  "Eb4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 120
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega montou o II–V–I de Ré maior assim:\n\n> \"Em Ré maior: Em7 – A7M – D7M.\"\n\nOnde está o erro, por que está errado e qual é a progressão certa?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "O V do campo maior é sempre um acorde **7**, com 7ª menor. A 7ª de Lá em Ré maior é Sol (natural), então o V é **A7**: Em7 – **A7** – D7M. O A7M precisaria de Sol♯, que não está em Ré maior.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em **Dó maior**, qual é o II–V–I com tétrades?",
+      "opcoes": [
+        "Dm7 – G7 – C7M",
+        "Dm7 – G7M – C7M",
+        "D7 – G7 – C7M",
+        "Em7 – A7 – D7M"
+      ],
+      "correta": 0,
+      "explicacao": "II = Ré (m7), V = Sol (7), I = Dó (7M): **Dm7 – G7 – C7M**. G7M precisaria de Fá♯; Em7 – A7 – D7M é o de Ré maior.",
+      "conceito": "ii-v-i"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Qual progressão é esta?",
+      "exemplo": {
+        "id": "exe-i-vi-iv-v",
+        "titulo": "Quatro acordes",
+        "legenda": "C, Am, F, G: I–VI–IV–V.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "A3",
+              "C4",
+              "E4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "F3",
+              "A3",
+              "C4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "I–VI–IV–V",
+        "I–IV–V–I",
+        "II–V–I"
+      ],
+      "correta": 0,
+      "explicacao": "O segundo acorde é **menor** (Am) e o último é o V, sem voltar ao I: **I–VI–IV–V**.",
+      "conceito": "percepcao-progressao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais acordes formam **I–IV–V** em **Sol maior**?",
+      "opcoes": [
+        "G, C, D",
+        "G, D, A",
+        "G, C, Em",
+        "G, Am, D"
+      ],
+      "correta": 0,
+      "explicacao": "Na escala de Sol: I = Sol, IV = Dó, V = Ré. **G, C, D**. Em e Am são substitutos, não os principais.",
+      "conceito": "i-iv-v"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Para que serve um **turnaround**?",
+      "opcoes": [
+        "Levar de volta ao I no fim de uma seção",
+        "Mudar de tom no meio da música",
+        "Encerrar a música de vez",
+        "Trocar o compasso"
+      ],
+      "correta": 0,
+      "explicacao": "Turnaround é a sequência curta, como I–VI–II–V, que **prepara a volta ao I** para a música recomeçar.",
+      "conceito": "turnaround"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No blues de 12 compassos em **Dó**, que acorde fica no **compasso 5**?",
+      "opcoes": [
+        "F7",
+        "C7",
+        "G7",
+        "Am7"
+      ],
+      "correta": 0,
+      "explicacao": "Os compassos 1 a 4 são do I7 (C7); o 5 e o 6 vão ao **IV7, F7**.",
+      "conceito": "blues-12-compassos"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o II–V–I de **Lá menor**?",
+      "opcoes": [
+        "Bm7(b5) – E7 – Am",
+        "Bm7 – E7 – Am",
+        "Bm7(b5) – Em7 – Am",
+        "Dm7 – G7 – C7M"
+      ],
+      "correta": 0,
+      "explicacao": "No tom menor, o II é meio-diminuto (Bm7(b5)) e o V vem da harmônica (E7). Dm7 – G7 – C7M é o de Dó maior, o relativo.",
+      "conceito": "ii-v-i"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Qual progressão é esta?",
+      "exemplo": {
+        "id": "exe-ii-v-i",
+        "titulo": "Três acordes",
+        "legenda": "Dm7, G7, C7M: II–V–I.",
+        "eventos": [
+          {
+            "notas": [
+              "D4",
+              "F4",
+              "A4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "F4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [],
+            "duracao": 2
+          }
+        ],
+        "andamento": 66
+      },
+      "opcoes": [
+        "II–V–I",
+        "I–IV–V",
+        "I–VI–IV–V"
+      ],
+      "correta": 0,
+      "explicacao": "Começa num acorde menor (Dm7), passa pela tensão do G7 e repousa no C7M: **II–V–I**.",
+      "conceito": "percepcao-progressao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No blues básico, por que C7 e F7 têm 7ª menor, se não são acordes 7 no campo de Dó maior?",
+      "opcoes": [
+        "É o som característico do blues",
+        "Porque são acordes de dominante do tom",
+        "Porque o blues é em tom menor",
+        "Porque a 7ª maior não existe no blues"
+      ],
+      "correta": 0,
+      "explicacao": "O blues põe **7ª menor no I, no IV e no V**: é a cor do estilo, que sai do campo maior. No campo, só o G7 seria acorde 7.",
+      "conceito": "blues-12-compassos"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais são as funções em **I–VI–IV–V**?",
+      "opcoes": [
+        "T – T – SD – D",
+        "T – SD – D – T",
+        "T – D – SD – D",
+        "SD – T – SD – D"
+      ],
+      "correta": 0,
+      "explicacao": "I é tônica, VIm é substituto da tônica, IV é subdominante, V é dominante: **T – T – SD – D**.",
+      "conceito": "i-vi-iv-v"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em **Fá maior**, qual é o turnaround **I–VI–II–V** com tétrades?",
+      "opcoes": [
+        "F7M – Dm7 – Gm7 – C7",
+        "F7M – Dm7 – G7 – C7",
+        "F7M – D7 – Gm7 – C7M",
+        "F – Am – B♭ – C"
+      ],
+      "correta": 0,
+      "explicacao": "Na escala de Fá: I = F7M, VI = Dm7, II = Gm7, V = C7. G7 precisaria de Si natural, que não está em Fá maior.",
+      "conceito": "turnaround"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantos compassos de **I7** abrem o blues de 12 compassos?",
+      "opcoes": [
+        "4",
+        "2",
+        "1",
+        "8"
+      ],
+      "correta": 0,
+      "explicacao": "Os **quatro** primeiros compassos ficam no I7; o IV7 chega no compasso 5.",
+      "conceito": "blues-12-compassos"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça o fim de um blues em Dó. Em que acorde ele para?",
+      "exemplo": {
+        "id": "exe-blues-fim",
+        "titulo": "Compassos 9 a 12",
+        "legenda": "G7, F7, C7, G7: para no V7, pronto para recomeçar.",
+        "eventos": [
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "F4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "F3",
+              "A3",
+              "C4",
+              "Eb4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "Bb4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "F4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 120
+      },
+      "opcoes": [
+        "No V7, pedindo para recomeçar",
+        "No I7, em repouso",
+        "No IV7"
+      ],
+      "correta": 0,
+      "explicacao": "O último compasso é **G7**, o V7: tensão que leva de volta ao C7 do começo. É o turnaround do blues.",
+      "conceito": "blues-12-compassos"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em **Ré maior**, qual é o **V7** do II–V–I?",
+      "opcoes": [
+        "A7",
+        "A7M",
+        "Am7",
+        "E7"
+      ],
+      "correta": 0,
+      "explicacao": "O 5º grau de Ré é Lá, e no campo maior o V é sempre 7: **A7**. E7 é o V7 de Lá maior.",
+      "conceito": "ii-v-i"
+    }
+  ],
+  "resumo": [
+    "**I–IV–V–I** usa os três acordes principais: T, SD, D, T.",
+    "**IIm7–V7–I7M** (Dm7–G7–C7M) é o caminho central do jazz e da bossa nova; no menor, IIm7(b5)–V7–Im.",
+    "**I–VI–IV–V** (C–Am–F–G) é das sequências mais usadas na música popular.",
+    "O **turnaround** I–VI–II–V prepara a volta ao I no fim de uma seção.",
+    "O **blues** tem 12 compassos: I7 (4), IV7 (2), I7 (2), V7, IV7, I7, V7."
+  ],
+  "pergunta_para_chat": "Me peça para montar II–V–I, I–VI–IV–V ou o blues em tons diferentes, um de cada vez, e confira os acordes que eu escrever."
+}
