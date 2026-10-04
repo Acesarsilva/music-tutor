@@ -1,0 +1,34 @@
+codigo: A04
+titulo: Substituição tritonal e rearmonização
+nivel: avancado
+assunto: teoria
+prerequisitos:
+  - A02  # Acordes alterados
+  - A03  # Empréstimo modal
+  - M14  # Dominantes secundárias
+objetivos:
+  - Entender a substituição tritonal pelo trítono comum a duas dominantes
+  - Usar o SubV7, com o baixo descendo por semitom até a tônica
+  - Usar o II relacionado do SubV7
+  - Usar acordes diminutos de passagem entre acordes do tom
+  - Criar linhas de baixo cromáticas com inversões
+  - Rearmonizar uma melodia mantendo cada nota dentro do acorde ou como tensão disponível
+conceitos:
+  - substituicao-tritonal
+  - ii-relacionado-do-subv
+  - diminuto-de-passagem
+  - baixo-cromatico
+  - rearmonizacao
+  - percepcao-rearmonizacao
+fora_do_escopo:
+  - Voicings em quartas e upper structures (módulo A09)
+  - Harmonização completa de melodias (módulo A15)
+exemplos_semente:
+  - "G7 e Db7 dividem o trítono Fá e Si"
+  - "Dm7, Db7, C7M: o baixo desce por semitons"
+  - "C7M, C#°, Dm7: o diminuto de passagem"
+  - "C, C7M/B, C7/Bb, F/A, Fm/Ab, C/G: baixo cromático descendo"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

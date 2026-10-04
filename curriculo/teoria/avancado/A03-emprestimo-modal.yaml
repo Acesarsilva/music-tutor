@@ -1,0 +1,34 @@
+codigo: A03
+titulo: Empréstimo modal
+nivel: avancado
+assunto: teoria
+prerequisitos:
+  - M06  # Campo harmônico com tétrades
+  - M07  # Funções harmônicas
+  - M11  # Modos gregos
+objetivos:
+  - Entender o tom paralelo, com a mesma tônica e outro modo
+  - Usar no tom maior acordes emprestados do tom menor paralelo
+  - Reconhecer o IVm e a subdominante menor
+  - Usar o bVI e o bVII, inclusive na cadência bVI–bVII–I e no IVm7–bVII7–I
+  - Reconhecer a terça de picardia, o empréstimo no sentido contrário
+  - Ouvir a cor escura que o empréstimo traz ao tom maior
+conceitos:
+  - modo-paralelo
+  - emprestimo-modal
+  - subdominante-menor
+  - bvi-e-bvii
+  - terca-de-picardia
+  - percepcao-emprestimo
+fora_do_escopo:
+  - Harmonia modal sem centro maior ou menor (módulo A06)
+  - Modulação definitiva para o tom paralelo (módulo A05)
+exemplos_semente:
+  - "C, F, Fm, C: o IVm"
+  - "C, Ab, Bb, C: bVI, bVII, I"
+  - "Fm7, Bb7, C7M: a resolução pelo bVII7"
+  - "Am, Dm, E7, A: terça de picardia"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

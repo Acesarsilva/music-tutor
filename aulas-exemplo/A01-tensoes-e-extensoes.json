@@ -1,0 +1,652 @@
+{
+  "codigo": "A01",
+  "titulo": "Tensões e extensões",
+  "nivel": "avancado",
+  "resumo_curto": "As notas 9, 11 e 13, como cifrá-las e quais cabem em cada acorde.",
+  "prerequisitos": [
+    "Intervalos compostos (M03)",
+    "Acordes de sétima (M05)",
+    "Campo harmônico com tétrades (M06)",
+    "Modos gregos (M11)"
+  ],
+  "objetivos": [
+    "Formar as extensões **9**, **11** e **13**",
+    "Ler e escrever cifras com tensões",
+    "Diferenciar **tensões disponíveis** de **notas a evitar**",
+    "Saber as tensões de cada acorde do campo maior",
+    "Ouvir a cor de cada tensão"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Uma 9ª é a mesma nota de que intervalo simples?\n2. Quais são as notas do C7M?\n3. Que modo corresponde ao IIm7 de um tom maior?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Da 2ª, uma oitava acima.\n2. Dó, Mi, Sol, Si.\n3. O dórico.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "C7M",
+            "legenda": "Quatro notas: Dó, Mi, Sol, Si.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "C7M(9)",
+            "legenda": "Agora com Ré em cima. O que mudou na cor do acorde?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O Ré acima do Si deixa o acorde mais aberto e brilhante, sem mudar a função: ainda é a tônica de Dó maior. Notas assim, acima da 7ª, são as **tensões** (ou **extensões**). Elas são a base do som da bossa nova e do jazz.\n\nAo final, você vai cifrar acordes com tensões e saber quais tensões cabem em cada acorde."
+        }
+      ]
+    },
+    {
+      "titulo": "A pilha de 3ªs continua",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Depois da 7ª, a pilha de 3ªs continua: **9**, **11** e **13**. Cada uma é uma nota da escala uma oitava acima:\n\n- **9** = a 2ª uma oitava acima (em Dó: Ré);\n- **11** = a 4ª uma oitava acima (Fá);\n- **13** = a 6ª uma oitava acima (Lá).\n\nDepois da 13, a pilha volta à fundamental: são sete notas, a escala inteira."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-pilha",
+            "titulo": "Dó, Mi, Sol, Si, Ré, Fá, Lá",
+            "legenda": "A pilha de 3ªs até a 13.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Na cifra brasileira, as tensões vêm entre parênteses depois do acorde: **C7M(9)**, **Dm7(11)**, **G7(13)**. Quando o acorde tem 6ª e 9ª sem a 7ª, escreve-se **C6(9)**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-c69",
+            "titulo": "C6(9)",
+            "legenda": "Dó, Mi, Lá, Ré: um acorde de tônica muito usado na bossa nova.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "A4",
+                  "D5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Tensões disponíveis e notas a evitar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Nem toda tensão cabe em todo acorde. A regra prática:\n\n> Uma nota que fica **uma 9ª menor acima de uma nota do acorde** (meio tom acima, uma oitava depois) choca com ela. É uma **nota a evitar** como tensão sustentada.\n\nAs outras são **tensões disponíveis**. A nota a evitar ainda pode aparecer de passagem, na melodia; o problema é deixá-la soando como parte do acorde."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-c7m-11",
+            "titulo": "C7M com Fá",
+            "legenda": "O Fá fica uma 9ª menor acima do Mi: o choque é forte.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "B4",
+                  "F5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-c7m-s11",
+            "titulo": "C7M(♯11)",
+            "legenda": "Com Fá♯, a 11 aumentada, o choque some: é a cor do modo lídio.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "B4",
+                  "F#5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-g7-11",
+            "titulo": "G7 com Dó",
+            "legenda": "O Dó fica uma 9ª menor acima do Si, a 3ª do G7.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "C6"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "No acorde 7, a 11 natural soa bem quando a 3ª sai: é o acorde **sus4**, assunto da próxima aula."
+        }
+      ]
+    },
+    {
+      "titulo": "Tensões por acorde do campo maior",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Aplicando a regra a cada tipo de acorde em Dó maior:"
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Tensões em Dó maior.",
+          "cabecalho": [
+            "Acorde",
+            "Disponíveis",
+            "A evitar",
+            "Por quê"
+          ],
+          "linhas": [
+            [
+              "C7M (I7M)",
+              "9, 13 e ♯11",
+              "11",
+              "Fá fica uma 9ª menor acima do Mi"
+            ],
+            [
+              "Dm7 (IIm7)",
+              "9 e 11",
+              "(13 com cuidado)",
+              "Si e Fá formam trítono e lembram a dominante"
+            ],
+            [
+              "G7 (V7)",
+              "9 e 13",
+              "11",
+              "Dó fica uma 9ª menor acima do Si"
+            ],
+            [
+              "Bm7(b5) (VIIm7(b5))",
+              "11 e b13",
+              "b9",
+              "Dó fica uma 9ª menor acima do Si"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-dm7-9",
+            "titulo": "Dm7(9)",
+            "legenda": "Ré, Fá, Dó, Mi: o Mi acrescenta brilho ao menor.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-dm7-11",
+            "titulo": "Dm7(11)",
+            "legenda": "Ré, Dó, Fá, Sol: a 11 soa aberta, sem choque.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "C5",
+                  "F5",
+                  "G5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ii-v-i",
+            "titulo": "Dm7(9), G7(13), C7M(9)",
+            "legenda": "O II–V–I com tensões, como na bossa nova.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: a tensão está disponível?",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja se a **13** cabe no **G7**, com o motivo de cada passo.\n\n1. **Ache a nota**: a 13 de Sol é Mi.\n2. **Liste as notas do acorde**: Sol, Si, Ré, Fá.\n3. **Procure meio tom abaixo dela**: a nota meio tom abaixo de Mi é Ré♯, que não está no acorde. **Disponível**."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** e se o acorde fosse **Gm7**, com Si♭? O Mi continuaria disponível?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Sim pela regra: meio tom abaixo de Mi ainda é Ré♯, que não está no Gm7. Mas o Mi com o Si♭ forma um trítono, e o acorde passa a soar como dominante. Por isso a 13 no m7 é usada com cuidado, como no Dm7 da tabela.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. A **9** do **C7M** é Ré; as notas do acorde são Dó, Mi, Sol, Si. Procure a nota meio tom abaixo.\n\nE agora todos os passos são seus: a **11** do **Am7**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "9 do C7M: meio tom abaixo de Ré é Ré♭ (Dó♯), fora do acorde: **disponível**.\n\n11 do Am7: a 11 de Lá é Ré; Am7 tem Lá, Dó, Mi, Sol; meio tom abaixo de Ré é Dó♯, fora do acorde: **disponível**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega cifrou o acorde Dó, Mi, Sol, Si, Ré como:\n\n> \"C7M(2)\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Acima da 7ª, a nota se chama pela **extensão**: Ré é a **9**, e a cifra é **C7M(9)**. O número 2 aparece em acordes sem 7ª, como **C(add9)** ou **C2**, em que o Ré entra no lugar ou ao lado das notas da tríade.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A **11** de um acorde corresponde a que intervalo simples?",
+      "opcoes": [
+        "4ª",
+        "2ª",
+        "6ª",
+        "5ª"
+      ],
+      "correta": 0,
+      "explicacao": "A pilha segue 7, 9, 11, 13: a 11 é a **4ª** uma oitava acima.",
+      "conceito": "extensoes"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Dó4 está marcado. Clique na **9ª maior** de Dó, a tensão 9 do C7M(9).",
+      "nota_base": "C4",
+      "intervalo": "9M",
+      "direcao": "acima",
+      "explicacao": "Uma 9ª maior acima de Dó4 é **Ré5**: a 2ª maior, uma oitava acima.",
+      "conceito": "extensoes",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a cifra de Ré, Fá, Lá, Dó, Mi?",
+      "opcoes": [
+        "Dm7(9)",
+        "Dm(add9)",
+        "Dm7(11)",
+        "D7(9)"
+      ],
+      "correta": 0,
+      "explicacao": "Dm7 com a 9 (Mi): **Dm7(9)**. D7 teria Fá♯.",
+      "conceito": "cifra-de-tensoes"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça os dois acordes. Qual tem a tensão 9?",
+      "exemplo": {
+        "id": "exe-9",
+        "titulo": "Dois acordes",
+        "legenda": "C7M e depois C7M(9).",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "B4",
+              "D5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "O segundo",
+        "O primeiro"
+      ],
+      "correta": 0,
+      "explicacao": "O segundo tem **Ré** acima do Si: soa mais aberto e brilhante.",
+      "conceito": "percepcao-tensoes"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que a 11 natural (Fá) é nota a evitar no C7M?",
+      "opcoes": [
+        "Fica uma 9ª menor acima do Mi, a 3ª",
+        "Fica uma 9ª menor acima do Dó",
+        "Não pertence à escala de Dó maior",
+        "Forma uma 5ª justa com o Dó"
+      ],
+      "correta": 0,
+      "explicacao": "Fá está meio tom acima de Mi: como tensão, a distância vira uma **9ª menor**, e o choque é forte.",
+      "conceito": "notas-a-evitar"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No **G7**, quais são as tensões disponíveis sem alteração?",
+      "opcoes": [
+        "9 e 13",
+        "9 e 11",
+        "11 e 13",
+        "Só a 11"
+      ],
+      "correta": 0,
+      "explicacao": "A 11 (Dó) fica uma 9ª menor acima do Si: evitar. A **9** (Lá) e a **13** (Mi) são disponíveis.",
+      "conceito": "tensoes-por-acorde"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Sol3 está marcado: é a fundamental do G7. Clique na **13**.",
+      "nota_base": "G3",
+      "intervalo": "13M",
+      "direcao": "acima",
+      "explicacao": "A 13ª maior acima de Sol3 é **Mi5**: a 6ª maior, uma oitava acima.",
+      "conceito": "extensoes",
+      "de": "E3",
+      "ate": "E5"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça os dois acordes. Em qual a nota de cima choca com a 3ª?",
+      "exemplo": {
+        "id": "exe-evitar",
+        "titulo": "Dois acordes",
+        "legenda": "C7M com Fá e depois C7M(♯11).",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "B4",
+              "F5"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "B4",
+              "F#5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "No primeiro",
+        "No segundo"
+      ],
+      "correta": 0,
+      "explicacao": "No primeiro, o **Fá** fica uma 9ª menor acima do Mi. Com **Fá♯**, o choque desaparece.",
+      "conceito": "percepcao-tensoes"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual tensão dá ao C7M a cor do modo **lídio**?",
+      "opcoes": [
+        "♯11",
+        "9",
+        "13",
+        "b9"
+      ],
+      "correta": 0,
+      "explicacao": "O lídio é a escala maior com a 4ª aumentada. No acorde, ela vira a **♯11** (Fá♯ em Dó).",
+      "conceito": "tensoes-disponiveis"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No **Dm7** (IIm7 de Dó maior), quais tensões são disponíveis sem cuidado especial?",
+      "opcoes": [
+        "9 e 11",
+        "Só a 13",
+        "b9 e 13",
+        "♯11"
+      ],
+      "correta": 0,
+      "explicacao": "Mi (9) e Sol (11) não ficam uma 9ª menor acima de nenhuma nota do acorde: **9 e 11**.",
+      "conceito": "tensoes-por-acorde"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a regra prática para uma **nota a evitar**?",
+      "opcoes": [
+        "Fica uma 9ª menor acima de uma nota do acorde",
+        "É qualquer nota de fora da escala",
+        "É a nota mais aguda do acorde",
+        "Fica uma 5ª acima da fundamental"
+      ],
+      "correta": 0,
+      "explicacao": "A nota a evitar fica **meio tom acima** de uma nota do acorde, uma oitava depois: uma **9ª menor**.",
+      "conceito": "notas-a-evitar"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça o II–V–I. Que tipo de som as tensões dão à progressão?",
+      "exemplo": {
+        "id": "exe-ii-v-i",
+        "titulo": "Progressão",
+        "legenda": "Dm7(9), G7(13), C7M(9).",
+        "eventos": [
+          {
+            "notas": [
+              "D4",
+              "F4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "F4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "B4",
+              "D5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "Um som macio e colorido, como na bossa nova",
+        "Um som áspero, com choques fortes",
+        "Um som vazio, só com fundamentais"
+      ],
+      "correta": 0,
+      "explicacao": "Só há tensões disponíveis: o resultado é **macio e colorido**, sem choques de 9ª menor.",
+      "conceito": "tensoes-disponiveis"
+    }
+  ],
+  "resumo": [
+    "As **extensões** continuam a pilha de 3ªs: 9 (2ª), 11 (4ª) e 13 (6ª), uma oitava acima.",
+    "Na cifra, as tensões vão entre parênteses: C7M(9), Dm7(11), G7(13), C6(9).",
+    "**Nota a evitar**: fica uma 9ª menor acima de uma nota do acorde.",
+    "C7M: 9, 13 e ♯11. Dm7: 9 e 11. G7: 9 e 13. Bm7(b5): 11 e b13.",
+    "Tensões disponíveis mudam a cor do acorde sem mudar a função."
+  ],
+  "pergunta_para_chat": "Me dê acordes cifrados, um de cada vez, para eu dizer as notas, as tensões disponíveis e as notas a evitar, e corrija meus erros."
+}
