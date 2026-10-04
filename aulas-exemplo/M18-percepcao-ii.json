@@ -1,0 +1,1332 @@
+{
+  "codigo": "M18",
+  "titulo": "Percepção II",
+  "nivel": "intermediario",
+  "resumo_curto": "Ditado melódico, ditado harmônico pelas funções e as tétrades de ouvido.",
+  "prerequisitos": [
+    "Percepção I (I16)",
+    "Acordes de sétima (M05)",
+    "Funções harmônicas (M07)"
+  ],
+  "objetivos": [
+    "Fazer **ditados melódicos** curtos com um método",
+    "Descrever o **contorno** de uma melodia",
+    "Reconhecer as **funções** (T, SD, D) numa progressão",
+    "Seguir o **baixo** para achar os acordes",
+    "Reconhecer as **tétrades** 7M, 7, m7, m7(b5) e diminuta"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Em Dó maior, quais acordes são de tônica, de subdominante e de dominante?\n2. Que tétrade tem um trítono e pede resolução?\n3. Que intervalo abre *Peixe vivo*?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Tônica: C (e Am, Em). Subdominante: F (e Dm). Dominante: G7 (e Bm7(b5)).\n2. A dominante, o acorde **7** (como G7).\n3. Uma 3ª menor.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Uma melodia para escrever",
+            "legenda": "Ouça duas ou três vezes. Começa em Dó. Você conseguiria escrevê-la?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Escrever o que se ouve é o **ditado**. Em I16 você fez ditados de ritmo; agora as notas, os acordes e as tétrades entram no jogo. O segredo é ter um **método**: ouvir uma coisa de cada vez.\n\nAo final, você vai fazer ditados melódicos curtos, reconhecer funções numa progressão e as tétrades mais usadas."
+        }
+      ]
+    },
+    {
+      "titulo": "Ditado melódico em quatro passos",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Ouça a melodia várias vezes, cada vez atrás de uma coisa:\n\n1. **a tônica**: cante a nota de repouso do tom; a melodia quase sempre termina nela;\n2. **o contorno**: onde sobe, onde desce, onde anda por **grau conjunto** (notas vizinhas) e onde **salta**;\n3. **o ritmo**: bata o pulso e escreva as durações, como em I16;\n4. **as notas**: compare cada nota com a tônica ou com a anterior e dê o nome."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ditado-1",
+            "titulo": "A melodia da abertura",
+            "legenda": "Dó, Ré, Mi, Dó, Sol, Mi | Fá, Mi, Ré, Si, Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "No exemplo: a tônica é Dó, e a melodia termina nela. O contorno sobe por grau conjunto (Dó, Ré, Mi), volta ao Dó, **salta** até Sol e desce até Mi. Depois desce por grau conjunto, passa pelo **Si**, a sensível, e chega ao Dó."
+        }
+      ]
+    },
+    {
+      "titulo": "Ditado harmônico: as funções",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "No ditado harmônico, o primeiro objetivo não é dar o nome de cada acorde, e sim a sua **função**:\n\n- **tônica (T)**: repouso, sensação de casa;\n- **subdominante (SD)**: afastamento, movimento sem urgência;\n- **dominante (D)**: tensão que pede a volta para a tônica.\n\nOuça o **baixo**. É a voz mais fácil de seguir e quase sempre toca a fundamental do acorde. Do baixo e da função, sai o acorde."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-funcoes",
+            "titulo": "C, Am, F, G7, C",
+            "legenda": "T, T, SD, D, T. Siga o baixo: Dó, Lá, Fá, Sol, Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-funcoes-2",
+            "titulo": "C, Dm, G7, C",
+            "legenda": "T, SD, D, T. Baixo: Dó, Ré, Sol, Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Funções em Dó maior.",
+          "cabecalho": [
+            "Função",
+            "Acordes",
+            "Sensação"
+          ],
+          "linhas": [
+            [
+              "Tônica",
+              "C, Am, Em",
+              "repouso"
+            ],
+            [
+              "Subdominante",
+              "F, Dm",
+              "afastamento"
+            ],
+            [
+              "Dominante",
+              "G7",
+              "tensão, pede o I"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Tétrades de ouvido",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Cada tétrade tem um caráter:\n\n- **7M**: maior, macia e luminosa, sem pressa de resolver;\n- **7**: maior com um trítono dentro, tensa, pede resolução;\n- **m7**: menor e macia, mais escura que a 7M;\n- **m7(b5)**: menor e sombria, com tensão;\n- **diminuta (°)**: só 3ªs menores empilhadas, a mais tensa e instável.\n\nOuça cada uma em arpejo e depois em bloco."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-c7m",
+            "titulo": "C7M",
+            "legenda": "Luminosa e parada.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-c7",
+            "titulo": "C7",
+            "legenda": "A 7ª menor cria o trítono Mi–Si♭: tensão.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-cm7",
+            "titulo": "Cm7",
+            "legenda": "Menor e macia.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-cm7b5",
+            "titulo": "Cm7(b5)",
+            "legenda": "A 5ª diminuta escurece e tensiona.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Gb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "Gb4",
+                  "Bb4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-bdim",
+            "titulo": "B°",
+            "legenda": "Três 3ªs menores: a mais instável.",
+            "eventos": [
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Ab4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3",
+                  "D4",
+                  "F4",
+                  "Ab4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 80
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: um ditado de funções",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Ouça **C, F, G7, C** abaixo, com o motivo de cada passo.\n\n1. **Ache a tônica**: o primeiro e o último acordes soam como casa: T.\n2. **Siga o baixo**: Dó, Fá, Sol, Dó.\n3. **Dê as funções**: Fá sem urgência, SD; Sol com tensão, D. Fica **T, SD, D, T**: C, F, G7, C."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-passo",
+            "titulo": "Quatro acordes",
+            "legenda": "Ouça o baixo e a tensão de cada acorde.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** se o baixo do segundo acorde fosse Ré, e o acorde menor, o que mudaria?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "O acorde seria **Dm**, também de **subdominante**. A função continua SD; só o acorde muda. Por isso ouvir a função primeiro ajuda: ela reduz as opções a poucas.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. No exemplo **C, Am, F, G7, C**, o baixo faz Dó, Lá, Fá, Sol, Dó. Dê as funções.\n\nE agora todos os passos são seus: ouça a progressão abaixo e escreva as funções e os acordes."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sua-vez",
+            "titulo": "Sua vez",
+            "legenda": "Ouça várias vezes, começando pelo baixo.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E3",
+                  "G3",
+                  "B3",
+                  "E4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "D4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "C, Am, F, G7, C: **T, T, SD, D, T**.\n\nSua vez: o baixo faz Dó, Mi, Fá, Sol, Dó. Os acordes são **C, Em, F, G, C**: T, T, SD, D, T. O Em, como o Am, é de tônica.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"O C7M é o acorde mais tenso, porque tem uma 7ª maior, que é quase uma oitava.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A 7ª maior fica a meio tom da oitava, mas na tétrade **7M** ela soa macia e estável: não há trítono. A tensão que pede resolução vem do **trítono** do acorde **7** (Mi–Si♭ no C7). As mais instáveis são a **m7(b5)** e a **diminuta**.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No ditado melódico, o que se procura primeiro?",
+      "opcoes": [
+        "A tônica",
+        "O nome da última nota",
+        "A armadura escrita",
+        "O andamento exato"
+      ],
+      "correta": 0,
+      "explicacao": "A **tônica** é a referência: o contorno, o ritmo e os nomes das notas vêm depois, comparando com ela.",
+      "conceito": "ditado-melodico"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Como é o contorno da melodia?",
+      "exemplo": {
+        "id": "exe-contorno",
+        "titulo": "Melodia",
+        "legenda": "Sobe por grau conjunto e desce em salto.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 80
+      },
+      "opcoes": [
+        "Sobe por grau conjunto e desce com um salto",
+        "Desce por grau conjunto e sobe com um salto",
+        "Fica sempre na mesma nota",
+        "Só tem saltos"
+      ],
+      "correta": 0,
+      "explicacao": "Dó, Ré, Mi, Fá, Sol sobem nota a nota; depois a melodia **salta** de volta ao Dó.",
+      "conceito": "contorno-melodico"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "A melodia começa em Dó, a tônica. Qual destas é a escrita certa?",
+      "exemplo": {
+        "id": "exe-ditado-2",
+        "titulo": "Ditado",
+        "legenda": "Mi, Sol, Lá, Sol, Fá, Ré | Mi, Dó, Ré, Si, Dó.",
+        "eventos": [
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B3"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 80
+      },
+      "opcoes": [
+        "Mi, Sol, Lá, Sol, Fá, Ré, Mi, Dó, Ré, Si, Dó",
+        "Mi, Fá, Sol, Fá, Mi, Ré, Mi, Dó, Ré, Si, Dó",
+        "Mi, Sol, Lá, Si, Lá, Sol, Mi, Dó, Ré, Si, Dó"
+      ],
+      "correta": 0,
+      "explicacao": "A melodia começa com o salto Mi–Sol e chega ao Lá, desce por grau conjunto até Fá, salta para Ré e termina com Mi, Dó, Ré, Si, Dó.",
+      "conceito": "ditado-melodico"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Esta melodia termina na tônica, Dó. Qual é a primeira nota?",
+      "exemplo": {
+        "id": "exe-ditado-3",
+        "titulo": "Ditado",
+        "legenda": "Sol, Mi, Fá, Ré, Mi, Dó, Ré, Dó.",
+        "eventos": [
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 80
+      },
+      "opcoes": [
+        "Sol",
+        "Mi",
+        "Dó",
+        "Ré"
+      ],
+      "correta": 0,
+      "explicacao": "A melodia desce em ziguezague de **Sol** até Dó: Sol, Mi, Fá, Ré, Mi, Dó, Ré, Dó.",
+      "conceito": "ditado-melodico"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a progressão. Qual é a função do último acorde?",
+      "exemplo": {
+        "id": "exe-fim-d",
+        "titulo": "Progressão",
+        "legenda": "C, F, G7: termina na dominante.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "F3",
+              "C4",
+              "F4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "F4",
+              "B4",
+              "D5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 66
+      },
+      "opcoes": [
+        "Dominante: ficou no ar",
+        "Tônica: chegou em casa",
+        "Subdominante"
+      ],
+      "correta": 0,
+      "explicacao": "O último acorde é o **G7**: a tensão fica no ar, pedindo o C.",
+      "conceito": "funcoes-de-ouvido"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Siga o baixo. Qual é a sequência?",
+      "exemplo": {
+        "id": "exe-baixo",
+        "titulo": "Progressão",
+        "legenda": "C, Am, Dm, G7, C.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "A3",
+              "C4",
+              "E4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "D4",
+              "F4",
+              "A4",
+              "D5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "F4",
+              "B4",
+              "D5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 66
+      },
+      "opcoes": [
+        "Dó, Lá, Ré, Sol, Dó",
+        "Dó, Fá, Sol, Dó, Dó",
+        "Dó, Mi, Fá, Sol, Dó",
+        "Dó, Ré, Mi, Fá, Sol"
+      ],
+      "correta": 0,
+      "explicacao": "O baixo faz **Dó, Lá, Ré, Sol, Dó**: os acordes são C, Am, Dm, G7, C.",
+      "conceito": "ditado-harmonico"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Quais são as funções desta progressão?",
+      "exemplo": {
+        "id": "exe-funcoes",
+        "titulo": "Progressão",
+        "legenda": "C, F, G7, C.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "F3",
+              "C4",
+              "F4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "F4",
+              "B4",
+              "D5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 66
+      },
+      "opcoes": [
+        "T, SD, D, T",
+        "T, D, SD, T",
+        "SD, T, D, T",
+        "T, T, D, T"
+      ],
+      "correta": 0,
+      "explicacao": "Casa, afastamento, tensão, casa: **T, SD, D, T**.",
+      "conceito": "funcoes-de-ouvido"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça as duas tétrades. Qual é a **C7**, a que pede resolução?",
+      "exemplo": {
+        "id": "exe-7m-7",
+        "titulo": "Duas tétrades",
+        "legenda": "C7M e depois C7.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "Bb4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "A segunda",
+        "A primeira"
+      ],
+      "correta": 0,
+      "explicacao": "A segunda tem Si♭ e o trítono Mi–Si♭: é o **C7**. A primeira, com Si natural, é a C7M.",
+      "conceito": "tetrades-de-ouvido"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Que tétrade é esta?",
+      "exemplo": {
+        "id": "exe-cm7",
+        "titulo": "Tétrade",
+        "legenda": "Cm7.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Eb4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Bb4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4",
+              "Eb4",
+              "G4",
+              "Bb4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 80
+      },
+      "opcoes": [
+        "m7",
+        "7M",
+        "7",
+        "diminuta"
+      ],
+      "correta": 0,
+      "explicacao": "Menor e macia, sem trítono: **Cm7**.",
+      "conceito": "tetrades-de-ouvido"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Que tétrade é esta?",
+      "exemplo": {
+        "id": "exe-bdim",
+        "titulo": "Tétrade",
+        "legenda": "B°.",
+        "eventos": [
+          {
+            "notas": [
+              "B3"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Ab4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B3",
+              "D4",
+              "F4",
+              "Ab4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 80
+      },
+      "opcoes": [
+        "Diminuta",
+        "m7",
+        "7M",
+        "7"
+      ],
+      "correta": 0,
+      "explicacao": "Três 3ªs menores empilhadas: a **diminuta**, a mais instável.",
+      "conceito": "tetrades-de-ouvido"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Que tétrade é esta?",
+      "exemplo": {
+        "id": "exe-cm7b5",
+        "titulo": "Tétrade",
+        "legenda": "Cm7(b5).",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Eb4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Gb4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Bb4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4",
+              "Eb4",
+              "Gb4",
+              "Bb4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 80
+      },
+      "opcoes": [
+        "m7(b5)",
+        "m7",
+        "7M",
+        "7"
+      ],
+      "correta": 0,
+      "explicacao": "Menor, com a 5ª diminuta (Sol♭): **m7(b5)**. Ao lado da Cm7, soa mais escura e tensa.",
+      "conceito": "tetrades-de-ouvido"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No ditado harmônico, por que ouvir o **baixo** primeiro?",
+      "opcoes": [
+        "Ele costuma tocar a fundamental do acorde",
+        "Ele toca sempre a melodia",
+        "Ele é sempre a nota mais forte",
+        "Ele nunca muda"
+      ],
+      "correta": 0,
+      "explicacao": "O baixo quase sempre toca a **fundamental**. Com ela e a função, o acorde fica fácil de achar.",
+      "conceito": "ditado-harmonico"
+    }
+  ],
+  "resumo": [
+    "Ditado melódico: tônica, contorno, ritmo e, por último, o nome das notas.",
+    "**Contorno**: onde a melodia sobe, desce, anda por grau conjunto e salta.",
+    "Ditado harmônico: primeiro a **função** (T, SD, D), seguindo o **baixo**; depois o acorde.",
+    "**7M** macia, **7** tensa (trítono), **m7** menor e macia, **m7(b5)** sombria, **diminuta** a mais instável."
+  ],
+  "pergunta_para_chat": "Descreva para mim, uma de cada vez, progressões e tétrades que eu possa tocar no teclado da aula, e me faça perguntas sobre a função ou o tipo de cada uma. Corrija minhas respostas e me diga o que ouvir na próxima."
+}
