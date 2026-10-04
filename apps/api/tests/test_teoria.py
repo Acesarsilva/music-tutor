@@ -117,6 +117,14 @@ def test_abc_com_dinamica_acento_e_ligadura():
     assert teoria.alturas_do_abc(abc) == [[60], [62], [64], [64]]
 
 
+def test_abc_liga_so_a_nota_escolhida_do_acorde():
+    eventos = [{"notas": ["C4", "E4", "G4", "C5"], "duracao": 2, "ligar": ["C5"]},
+               {"notas": ["G3", "D4", "G4", "C5"], "duracao": 2}]
+    abc = teoria.eventos_para_abc(eventos)
+    assert "[CEGc-]2 [G,DGc]2" in abc
+    assert teoria.alturas_do_abc(abc) == [[60, 64, 67, 72], [55, 62, 67, 72]]
+
+
 def test_abc_em_clave_de_fa_mantem_a_altura():
     abc = teoria.eventos_para_abc([{"notas": ["F3"], "duracao": 2}, {"notas": ["C4"], "duracao": 2}], clave="fa")
     assert "clef=bass" in abc

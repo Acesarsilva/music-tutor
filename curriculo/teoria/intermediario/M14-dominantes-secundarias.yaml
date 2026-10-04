@@ -1,0 +1,35 @@
+codigo: M14
+titulo: Dominantes secundárias
+nivel: intermediario
+assunto: teoria
+prerequisitos:
+  - M05  # Acordes de sétima
+  - M07  # Funções harmônicas
+  - M08  # Progressões comuns
+  - M13  # Cromatismo
+objetivos:
+  - Entender a dominante secundária como o V7 de um acorde do tom que não é a tônica
+  - Construir a dominante secundária de qualquer acorde maior ou menor do campo harmônico
+  - Reconhecer a nota alterada como sensível do acorde de chegada
+  - Ler e escrever a cifra de análise, como V7/V e V7/IIm
+  - Usar o II cadencial secundário (IIm7 e V7 em direção a outro acorde)
+  - Reconhecer de ouvido a dominante secundária numa progressão
+conceitos:
+  - dominante-secundaria
+  - construcao-dominante-secundaria
+  - sensivel-secundaria
+  - analise-dominante-secundaria
+  - ii-cadencial-secundario
+  - percepcao-dominante-secundaria
+fora_do_escopo:
+  - Substituição tritonal (módulo A04) e empréstimo modal (módulo A03)
+  - Modulação definitiva para outro tom (módulo A05)
+exemplos_semente:
+  - "C, A7, Dm, G7, C: o A7 prepara o Dm"
+  - "D7 resolvendo em G: o V7 do V"
+  - "E7 resolvendo em Am: o V7 do VIm"
+  - "Gm7, C7, F: o II e o V do IV"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

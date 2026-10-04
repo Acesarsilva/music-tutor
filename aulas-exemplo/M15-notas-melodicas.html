@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Figuras rítmicas</title>
+<title>Notas melódicas</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
@@ -520,7 +520,7 @@ tbody tr:last-child td { border-bottom: 0; }
 <body>
 <header class="barra">
   <div class="barra-interna">
-    <p class="barra-aula"><span class="selo">I04</span> Figuras rítmicas</p>
+    <p class="barra-aula"><span class="selo">M15</span> Notas melódicas</p>
     <div class="controles">
       <div class="timbre" role="group" aria-label="Instrumento">
         <button type="button" id="timbre-piano" data-timbre="piano" aria-pressed="true">Piano</button>
@@ -537,33 +537,36 @@ tbody tr:last-child td { border-bottom: 0; }
 
 <main class="aula">
   <section class="abertura">
-    <p class="rotulo">Teoria musical · Iniciante</p>
-    <h1>Figuras rítmicas</h1>
-    <p class="chamada">Semibreve, mínima, semínima, colcheia e semicolcheia, as pausas, o ponto de aumento e a ligadura.</p>
+    <p class="rotulo">Teoria musical · Intermediário</p>
+    <h1>Notas melódicas</h1>
+    <p class="chamada">Passagem, bordadura, apojatura, retardo e antecipação: as notas de fora do acorde.</p>
     <div class="ficha">
       <div>
         <h2 class="rotulo">Você vai aprender</h2>
         <ul>
-          <li>Reconhecer <strong>semibreve, mínima, semínima, colcheia e semicolcheia</strong></li>
-          <li>Reconhecer as <strong>pausas</strong></li>
-          <li>Usar o <strong>ponto de aumento</strong> e a <strong>ligadura</strong></li>
-          <li>Ler o ritmo de cantigas somando as figuras</li>
+          <li>Diferenciar <strong>notas do acorde</strong> e <strong>notas melódicas</strong></li>
+          <li>Reconhecer a <strong>passagem</strong> e a <strong>bordadura</strong> nos tempos fracos</li>
+          <li>Reconhecer a <strong>apojatura</strong> e o <strong>retardo</strong> nos tempos fortes</li>
+          <li>Reconhecer a <strong>antecipação</strong></li>
+          <li>Ouvir a tensão e a resolução de cada uma</li>
         </ul>
       </div>
       <div>
         <h2 class="rotulo">Antes, é bom saber</h2>
         <ul>
-          <li>Pauta e claves (I03)</li>
+          <li>Tríades (I12)</li>
+          <li>Cadências (M09)</li>
+          <li>Cromatismo (M13)</li>
         </ul>
       </div>
     </div>
     <nav class="indice" aria-label="Seções da aula">
       <ol>
         <li><a href="#secao-1">Antes de começar</a></li>
-        <li><a href="#secao-2">As cinco figuras</a></li>
-        <li><a href="#secao-3">Pausas</a></li>
-        <li><a href="#secao-4">Ponto de aumento e ligadura</a></li>
-        <li><a href="#secao-5">Passo a passo para somar um ritmo</a></li>
+        <li><a href="#secao-2">Nos tempos fracos: passagem e bordadura</a></li>
+        <li><a href="#secao-3">Nos tempos fortes: apojatura e retardo</a></li>
+        <li><a href="#secao-4">Chegando antes: antecipação</a></li>
+        <li><a href="#secao-5">Passo a passo: classificar a nota melódica</a></li>
         <li><a href="#secao-6">Cuidado com este erro</a></li>
         <li><a href="#exercicios">Exercícios</a></li>
         <li><a href="#resumo">Resumo</a></li>
@@ -575,137 +578,152 @@ tbody tr:last-child td { border-bottom: 0; }
     <h2><span class="num">1</span>Antes de começar</h2>
     <div class="prosa"><p>Responda de cabeça, sem consultar nada. Depois confira.</p>
 <ol>
-<li>Que propriedade do som diz se ele é curto ou longo?</li>
-<li>Na clave de sol, que nota fica na 2ª linha?</li>
-<li>O silêncio faz parte do ritmo?</li>
+<li>Quais são as notas do acorde C? E do G?</li>
+<li>Em 4/4, quais tempos são fortes?</li>
+<li>O que é uma bordadura cromática?</li>
 </ol></div>
     <details class="resposta"><summary>Conferir as respostas</summary><div class="prosa"><ol>
-<li>A duração.</li>
-<li>Sol4.</li>
-<li>Sim: ele também tem duração e conta no ritmo.</li>
+<li>C: Dó, Mi, Sol. G: Sol, Si, Ré.</li>
+<li>O 1º é o forte; o 3º é meio forte. O 2º e o 4º são fracos.</li>
+<li>A melodia sai de uma nota, vai a um semitom ao lado e volta a ela.</li>
 </ol></div></details>
-    <figure class="exemplo" data-exemplo="ex-abertura">
+    <figure class="exemplo" data-exemplo="ex-abertura-a">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Ouça antes de qualquer nome</p>
-        <button type="button" class="tocar" data-tocar="ex-abertura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Primeira melodia</p>
+        <button type="button" class="tocar" data-tocar="ex-abertura-a"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-abertura"></div>
-      <figcaption>Os quatro compassos têm o mesmo tamanho. O que acontece com os sons de um compasso para o outro?</figcaption>
+      <div class="partitura" data-partitura="ex-abertura-a"></div>
+      <figcaption>Só notas dos acordes C e G.</figcaption>
     </figure>
-    <div class="prosa"><p>Em cada compasso, os sons ficam com <strong>metade</strong> da duração do compasso anterior, e cabem o dobro deles. Cada duração tem um desenho próprio, uma <strong>figura rítmica</strong>.</p>
-<p>Ao final, você vai ler o ritmo de uma cantiga somando as figuras.</p></div>
+    <figure class="exemplo" data-exemplo="ex-abertura-b">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Segunda melodia</p>
+        <button type="button" class="tocar" data-tocar="ex-abertura-b"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-abertura-b"></div>
+      <figcaption>Os mesmos acordes. A melodia ficou mais cantada ou mais dura?</figcaption>
+    </figure>
+    <div class="prosa"><p>A primeira melodia só pula entre notas do acorde, como um arpejo. A segunda anda por graus vizinhos e usa notas que <strong>não estão no acorde</strong>, como o Ré e o Fá sobre C. São as <strong>notas melódicas</strong> (também chamadas de notas não harmônicas ou notas de enfeite): criam uma tensão breve e se resolvem numa nota do acorde.</p>
+<p>Ao final, você vai reconhecer e classificar as cinco notas melódicas mais comuns.</p></div>
   </section>
   <section class="secao" id="secao-2">
-    <h2><span class="num">2</span>As cinco figuras</h2>
-    <div class="prosa"><p>Contando a <strong>semínima</strong> como <strong>1 tempo</strong>, como nos compassos 2/4, 3/4 e 4/4, cada figura vale assim:</p></div>
-    <figure class="tabela">
-      <div class="tabela-rolagem">
-        <table>
-          <thead><tr><th scope="col">Figura</th><th scope="col">Tempos</th><th scope="col">Equivale a</th></tr></thead>
-          <tbody>
-            <tr><td>semibreve</td><td>4</td><td>2 mínimas</td></tr>
-            <tr><td>mínima</td><td>2</td><td>2 semínimas</td></tr>
-            <tr><td>semínima</td><td>1</td><td>2 colcheias</td></tr>
-            <tr><td>colcheia</td><td>½</td><td>2 semicolcheias</td></tr>
-            <tr><td>semicolcheia</td><td>¼</td><td>–</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <figcaption>As figuras e quanto cada uma dura. Cada figura vale metade da anterior.</figcaption>
-    </figure>
-    <figure class="exemplo" data-exemplo="ex-semicolcheias">
+    <h2><span class="num">2</span>Nos tempos fracos: passagem e bordadura</h2>
+    <div class="prosa"><p>A <strong>nota de passagem</strong> fica <strong>entre</strong> duas notas do acorde e liga as duas por grau conjunto, sempre na mesma direção. A <strong>bordadura</strong> sai de uma nota do acorde, vai à nota vizinha e <strong>volta</strong> à mesma nota. As duas costumam cair no tempo fraco.</p>
+<p>Em M13 você viu as versões cromáticas. Aqui as notas são da própria escala.</p></div>
+    <figure class="exemplo" data-exemplo="ex-passagem">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Semínimas, colcheias e semicolcheias</p>
-        <button type="button" class="tocar" data-tocar="ex-semicolcheias"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Nota de passagem subindo</p>
+        <button type="button" class="tocar" data-tocar="ex-passagem"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-semicolcheias"></div>
-      <figcaption>Um tempo de cada vez: uma semínima, duas colcheias, quatro semicolcheias, e de novo a semínima.</figcaption>
+      <div class="partitura" data-partitura="ex-passagem"></div>
+      <figcaption>Sobre C: Dó, <strong>Ré</strong>, Mi. O Ré liga duas notas do acorde.</figcaption>
     </figure>
-    <div class="prosa"><p>A cantiga <em>Marcha soldado</em> começa com semínima, duas colcheias e duas semínimas.</p></div>
-    <figure class="exemplo" data-exemplo="ex-marcha-soldado">
+    <figure class="exemplo" data-exemplo="ex-passagem-desce">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Marcha soldado</p>
-        <button type="button" class="tocar" data-tocar="ex-marcha-soldado"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Nota de passagem descendo</p>
+        <button type="button" class="tocar" data-tocar="ex-passagem-desce"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-marcha-soldado"></div>
-      <figcaption>"Mar" dura um tempo; "cha sol" dividem o tempo seguinte; "da" e "do" voltam a durar um tempo cada.</figcaption>
+      <div class="partitura" data-partitura="ex-passagem-desce"></div>
+      <figcaption>Sobre C: Sol, <strong>Fá</strong>, Mi.</figcaption>
     </figure>
-    <div class="prosa"><p>Em <em>Pirulito que bate bate</em>, "to que" são duas <strong>semicolcheias</strong>: cabem no tempo de uma colcheia.</p></div>
-    <figure class="exemplo" data-exemplo="ex-pirulito">
+    <figure class="exemplo" data-exemplo="ex-bord-sup">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Pirulito que bate bate</p>
-        <button type="button" class="tocar" data-tocar="ex-pirulito"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Bordadura superior</p>
+        <button type="button" class="tocar" data-tocar="ex-bord-sup"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-pirulito"></div>
-      <figcaption>Ouça "li-to-que": as duas últimas sílabas passam rápido, em semicolcheias.</figcaption>
+      <div class="partitura" data-partitura="ex-bord-sup"></div>
+      <figcaption>Sobre C: Mi, <strong>Fá</strong>, Mi.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-bord-inf">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Bordadura inferior</p>
+        <button type="button" class="tocar" data-tocar="ex-bord-inf"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-bord-inf"></div>
+      <figcaption>Sobre C: Dó, <strong>Si</strong>, Dó.</figcaption>
     </figure>
   </section>
   <section class="secao" id="secao-3">
-    <h2><span class="num">3</span>Pausas</h2>
-    <div class="prosa"><p>Cada figura tem uma <strong>pausa</strong> do mesmo valor, um silêncio medido: pausa de semibreve (4 tempos), de mínima (2), de semínima (1), de colcheia (½) e de semicolcheia (¼).</p></div>
-    <figure class="exemplo" data-exemplo="ex-pausas">
+    <h2><span class="num">3</span>Nos tempos fortes: apojatura e retardo</h2>
+    <div class="prosa"><p>Quando a nota de fora do acorde cai no <strong>tempo forte</strong>, a tensão fica bem mais exposta. Dois casos:</p>
+<ul>
+<li><strong>apojatura</strong>: a melodia chega à nota de fora, geralmente <strong>por salto</strong>, e depois <strong>resolve por grau conjunto</strong> numa nota do acorde;</li>
+<li><strong>retardo</strong>: a nota vem <strong>presa do acorde anterior</strong>. O acorde muda, ela continua soando e só depois resolve, quase sempre <strong>descendo</strong> por grau conjunto. São três momentos: <strong>preparação</strong> (nota do acorde), <strong>suspensão</strong> (o acorde muda e ela fica) e <strong>resolução</strong>.</li>
+</ul></div>
+    <figure class="exemplo" data-exemplo="ex-apojatura">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Sons e pausas</p>
-        <button type="button" class="tocar" data-tocar="ex-pausas"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Apojatura</p>
+        <button type="button" class="tocar" data-tocar="ex-apojatura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-pausas"></div>
-      <figcaption>Som, silêncio, som, silêncio: as pausas têm a duração exata das figuras.</figcaption>
+      <div class="partitura" data-partitura="ex-apojatura"></div>
+      <figcaption>Sol salta para <strong>Dó</strong> no tempo forte do G; o Dó resolve descendo em Si.</figcaption>
     </figure>
+    <figure class="exemplo" data-exemplo="ex-retardo">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Retardo</p>
+        <button type="button" class="tocar" data-tocar="ex-retardo"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-retardo"></div>
+      <figcaption>O Dó do C fica preso enquanto o acorde vira G e só depois desce para Si.</figcaption>
+    </figure>
+    <aside class="dica"><p class="rotulo">Dica</p><p>No retardo, ouça a nota aguda: ela <strong>não é tocada de novo</strong> quando o acorde muda. É o que o diferencia da apojatura, que é atacada no tempo forte.</p></aside>
   </section>
   <section class="secao" id="secao-4">
-    <h2><span class="num">4</span>Ponto de aumento e ligadura</h2>
-    <div class="prosa"><p>O <strong>ponto de aumento</strong>, depois da nota, soma <strong>metade</strong> do valor dela:</p>
-<ul>
-<li>semínima pontuada: 1 + ½ = <strong>1½ tempo</strong>;</li>
-<li>mínima pontuada: 2 + 1 = <strong>3 tempos</strong>.</li>
-</ul></div>
-    <figure class="exemplo" data-exemplo="ex-ponto">
+    <h2><span class="num">4</span>Chegando antes: antecipação</h2>
+    <div class="prosa"><p>A <strong>antecipação</strong> é uma nota do <strong>próximo</strong> acorde tocada um pouco antes dele, no tempo fraco. Quando o acorde chega, a melodia repete a nota ou a mantém. É comum em finais de frase.</p></div>
+    <figure class="exemplo" data-exemplo="ex-antecipacao">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Semínima pontuada e colcheia</p>
-        <button type="button" class="tocar" data-tocar="ex-ponto"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Antecipação</p>
+        <button type="button" class="tocar" data-tocar="ex-antecipacao"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-ponto"></div>
-      <figcaption>O som longo e o curto, repetidos: longo-curto, longo-curto.</figcaption>
+      <div class="partitura" data-partitura="ex-antecipacao"></div>
+      <figcaption>Sobre G7, o <strong>Dó</strong> aparece antes do tempo; logo depois chega o C.</figcaption>
     </figure>
-    <div class="prosa"><p>A <strong>ligadura</strong> é uma curva que une duas notas <strong>da mesma altura</strong>: elas soam como um som só, com a soma das durações. Ela serve, por exemplo, para atravessar a barra de compasso.</p></div>
-    <figure class="exemplo" data-exemplo="ex-ligadura">
-      <div class="exemplo-topo">
-        <p class="exemplo-titulo">Ligadura entre compassos</p>
-        <button type="button" class="tocar" data-tocar="ex-ligadura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+    <figure class="tabela">
+      <div class="tabela-rolagem">
+        <table>
+          <thead><tr><th scope="col">Nota</th><th scope="col">Tempo</th><th scope="col">Como chega</th><th scope="col">Como sai</th></tr></thead>
+          <tbody>
+            <tr><td>Passagem</td><td>fraco</td><td>grau conjunto</td><td>grau conjunto, na mesma direção</td></tr>
+            <tr><td>Bordadura</td><td>fraco</td><td>grau conjunto</td><td>volta à mesma nota</td></tr>
+            <tr><td>Apojatura</td><td>forte</td><td>geralmente por salto</td><td>grau conjunto</td></tr>
+            <tr><td>Retardo</td><td>forte</td><td>presa do acorde anterior</td><td>grau conjunto, quase sempre descendo</td></tr>
+            <tr><td>Antecipação</td><td>fraco</td><td>qualquer</td><td>fica no acorde seguinte, do qual é nota</td></tr>
+          </tbody>
+        </table>
       </div>
-      <div class="partitura" data-partitura="ex-ligadura"></div>
-      <figcaption>O último Mi do primeiro compasso continua no segundo: um som só, de três tempos.</figcaption>
+      <figcaption>As cinco notas melódicas.</figcaption>
     </figure>
   </section>
   <section class="secao" id="secao-5">
-    <h2><span class="num">5</span>Passo a passo para somar um ritmo</h2>
-    <div class="prosa"><p>Veja como somar os tempos de <strong>mínima + semínima + duas colcheias</strong>, com o motivo de cada passo.</p>
-<ol>
-<li><strong>Dê o valor de cada figura</strong>: mínima 2, semínima 1, colcheias ½ e ½.</li>
-<li><strong>Junte as metades</strong>: duas colcheias valem um tempo, como uma semínima.</li>
-<li><strong>Some</strong>: 2 + 1 + 1 = <strong>4 tempos</strong>.</li>
-</ol></div>
-    <figure class="exemplo" data-exemplo="ex-soma">
+    <h2><span class="num">5</span>Passo a passo: classificar a nota melódica</h2>
+    <figure class="exemplo" data-exemplo="ex-frase">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Mínima, semínima e duas colcheias</p>
-        <button type="button" class="tocar" data-tocar="ex-soma"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Uma frase com notas melódicas</p>
+        <button type="button" class="tocar" data-tocar="ex-frase"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-soma"></div>
-      <figcaption>Quatro tempos ao todo.</figcaption>
+      <div class="partitura" data-partitura="ex-frase"></div>
+      <figcaption>C, F, G7, C. Use a frase para seguir os passos.</figcaption>
     </figure>
-    <div class="prosa"><p><strong>Pense antes de abrir a resposta:</strong> por que juntar as colcheias aos pares antes de somar?</p></div>
-    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Porque duas colcheias ocupam exatamente um tempo. Pensar em pares evita somar frações e mostra onde cada tempo começa.</p></div></details>
-    <div class="prosa"><p>Agora o último passo é seu. <strong>Semínima pontuada + colcheia + mínima</strong>: 1½ + ½ + 2. Quanto dá?</p>
-<p>E agora dois passos são seus: <strong>semibreve + mínima pontuada + semínima</strong>.</p></div>
-    <details class="resposta"><summary>Ver as respostas</summary><div class="prosa"><p>1½ + ½ + 2 = <strong>4 tempos</strong>. O ponto da semínima e a colcheia completam um tempo juntos.</p>
-<p>4 + 3 + 1 = <strong>8 tempos</strong>.</p></div></details>
+    <div class="prosa"><p>Veja o <strong>Ré</strong> do 2º tempo do primeiro compasso, com o motivo de cada passo.</p>
+<ol>
+<li><strong>É nota do acorde?</strong> O acorde é C (Dó, Mi, Sol): o Ré não é.</li>
+<li><strong>Em que tempo cai?</strong> No 2º, um tempo fraco.</li>
+<li><strong>Como chega e como sai?</strong> Vem de Mi e vai para Dó, por grau conjunto, descendo: <strong>nota de passagem</strong>.</li>
+</ol></div>
+    <div class="prosa"><p><strong>Pense antes de abrir a resposta:</strong> e o Mi do 4º tempo, que vem de Dó e salta para Lá?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>O Mi está no acorde C, então <strong>não é nota melódica</strong>: o primeiro passo já responde. O salto não muda nada, porque notas do acorde podem chegar e sair de qualquer jeito.</p></div></details>
+    <div class="prosa"><p>Agora os dois últimos passos são seus. O <strong>Sol</strong> do 3º tempo do segundo compasso: o acorde é F (Fá, Lá, Dó), e o Sol não pertence a ele. Em que tempo cai, e como chega e sai?</p>
+<p>E agora todos os passos são seus: o <strong>Dó</strong> do último tempo do terceiro compasso, sobre G7.</p></div>
+    <details class="resposta"><summary>Ver as respostas</summary><div class="prosa"><p>Sol sobre F: cai no 3º tempo, vem de Lá e volta a Lá: <strong>bordadura inferior</strong>.</p>
+<p>Dó sobre G7: o G7 tem Sol, Si, Ré e Fá; o Dó não está nele. Cai na segunda metade do 4º tempo, fraca, e fica no compasso seguinte, onde é nota do C: <strong>antecipação</strong>.</p></div></details>
   </section>
   <section class="secao" id="secao-6">
     <h2><span class="num">6</span>Cuidado com este erro</h2>
-    <div class="prosa"><p>Uma colega calculou:</p>
-<p>&gt; "A mínima vale 2 tempos. O ponto soma mais 1, então a mínima pontuada vale 3. Do mesmo jeito, a semínima pontuada vale 1 + 1 = 2 tempos."</p>
-<p>Qual passo está errado, por que e qual é o valor certo?</p></div>
-    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>O ponto não soma sempre 1 tempo: ele soma <strong>metade do valor da nota</strong>. Na mínima, metade é 1, por isso deu certo. Na semínima, metade é ½: a semínima pontuada vale <strong>1½ tempo</strong>.</p></div></details>
+    <div class="prosa"><p>Um colega analisou o exemplo do retardo assim:</p>
+<p>&gt; "O Dó sobre o G está no tempo forte e resolve descendo. Então é uma apojatura."</p>
+<p>O que faltou olhar?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Faltou olhar <strong>de onde a nota veio</strong>. O Dó já soava no acorde anterior (C) e ficou preso quando o acorde mudou: isso é um <strong>retardo</strong>. A apojatura é atacada no tempo forte, geralmente depois de um salto. Tempo e resolução são iguais nos dois; a chegada é o que decide.</p></div></details>
   </section>
 
   <section class="secao exercicios" id="exercicios">
@@ -713,168 +731,186 @@ tbody tr:last-child td { border-bottom: 0; }
     <p class="placar" id="placar" aria-live="polite">Responda para ver seus acertos.</p>
     <article class="exercicio" data-exercicio="0" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 1 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quantos tempos vale a <strong>mínima</strong>?</p></div>
+      <div class="enunciado"><p>O que é uma nota melódica?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">2 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">1 tempo</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">4 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">½ tempo</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Uma nota da melodia que não pertence ao acorde do momento</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Qualquer nota da melodia</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">A nota mais aguda do acorde</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Uma nota de fora da escala</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>A mínima vale <strong>2 tempos</strong>, metade da semibreve (4) e o dobro da semínima (1).</p></div>
+        <div class="explicacao"><p>É uma nota da melodia <strong>fora do acorde</strong> que soa no momento. Ela pode ser da escala (como o Ré sobre C) ou cromática.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="1" data-tipo="percepcao">
-      <p class="rotulo">Exercício 2 · Percepção</p>
-      <div class="enunciado"><p>Ouça. As notas do segundo grupo duram metade ou o dobro das do primeiro?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-metade"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-metade" hidden>
-        <div class="partitura" data-partitura="exe-metade"></div>
-        <figcaption>Semínimas, depois colcheias: metade da duração.</figcaption>
-      </figure>
+    <article class="exercicio" data-exercicio="1" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 2 · Múltipla escolha</p>
+      <div class="enunciado"><p>Sobre o acorde C, a melodia faz <strong>Mi, Fá, Sol</strong>. O Fá é:</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">metade</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">o dobro</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">o mesmo tempo</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Nota de passagem</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Bordadura</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Apojatura</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Antecipação</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>No segundo grupo cabem oito notas no espaço de quatro: cada uma dura <strong>metade</strong>. São colcheias depois de semínimas.</p></div>
+        <div class="explicacao"><p>Liga Mi a Sol, duas notas do acorde, por grau conjunto e na mesma direção: <strong>nota de passagem</strong>.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="2" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 3 · Múltipla escolha</p>
-      <div class="enunciado"><p>Olhe a partitura e ouça. Quantos tempos somam as notas?</p></div>
-      <figure class="exemplo" data-exemplo="exe-soma">
-        <div class="exemplo-topo">
-          <p class="exemplo-titulo">Um compasso</p>
-          <button type="button" class="tocar" data-tocar="exe-soma"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-        </div>
-        <div class="partitura" data-partitura="exe-soma"></div>
-      </figure>
-      <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">4 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">3 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">5 tempos</button></li>
-      </ol>
+    <article class="exercicio" data-exercicio="2" data-tipo="teclado">
+      <p class="rotulo">Exercício 3 · Toque a nota</p>
+      <div class="enunciado"><p>Mi5 está marcado, sobre o acorde C. Clique na <strong>bordadura superior</strong> de Mi, dentro da escala de Dó maior.</p></div>
+      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="2"></div></div>
+      <div class="acoes-teclado">
+        <button type="button" class="tocar pequeno" data-tocar-base="2"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
+      </div>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Mínima (2) + semínima (1) + duas colcheias (½ + ½) = <strong>4 tempos</strong>. Quem soma 5 contou cada colcheia como um tempo.</p></div>
+        <div class="explicacao"><p>A nota vizinha de cima na escala é <strong>Fá</strong>, meio tom acima. A melodia faz Mi, Fá, Mi.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="3" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 4 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quantas <strong>semicolcheias</strong> cabem numa semínima?</p></div>
+      <div class="enunciado"><p>Sobre o acorde G, a melodia faz <strong>Sol, Lá, Sol</strong>. O Lá é:</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">4</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">8</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Bordadura superior</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Bordadura inferior</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Nota de passagem</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Retardo</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Semínima = 2 colcheias = <strong>4 semicolcheias</strong>. Se marcou 2, pensou nas colcheias.</p></div>
+        <div class="explicacao"><p>Sai de Sol, vai à vizinha de cima e <strong>volta</strong>: <strong>bordadura superior</strong>.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="4" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 5 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quanto vale a <strong>semínima pontuada</strong>?</p></div>
-      <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">1 tempo e meio</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">1 tempo</button></li>
-      </ol>
-      <div class="retorno" hidden>
-        <p class="veredito"></p>
-        <div class="explicacao"><p>O ponto soma metade do valor: 1 + ½ = <strong>1½ tempo</strong>. Quem marca 2 somou um tempo inteiro.</p></div>
-      </div>
-    </article>
-    <article class="exercicio" data-exercicio="5" data-tipo="percepcao">
-      <p class="rotulo">Exercício 6 · Percepção</p>
-      <div class="enunciado"><p>Ouça o começo de <em>Marcha soldado</em>. Que figuras formam "Mar-cha sol-"?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-marcha"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-marcha" hidden>
-        <div class="partitura" data-partitura="exe-marcha"></div>
-        <figcaption>Semínima, colcheia, colcheia.</figcaption>
+    <article class="exercicio" data-exercicio="4" data-tipo="percepcao">
+      <p class="rotulo">Exercício 5 · Percepção</p>
+      <div class="enunciado"><p>Ouça as duas versões. Em qual a nota de fora do acorde cai no tempo forte?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-forte-fraco"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-forte-fraco" hidden>
+        <div class="partitura" data-partitura="exe-forte-fraco"></div>
+        <figcaption>A primeira tem passagem no tempo fraco; a segunda, apojatura no forte.</figcaption>
       </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">semínima, colcheia, colcheia</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">três semínimas</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">colcheia, colcheia, semínima</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Na segunda</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Na primeira</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>"Mar" dura um tempo inteiro, e "cha sol" dividem o tempo seguinte: <strong>semínima e duas colcheias</strong>.</p></div>
+        <div class="explicacao"><p>Na segunda, o Dó soa junto com o G no <strong>tempo forte</strong> e só depois resolve em Si: a tensão fica bem exposta. Na primeira, o Ré passa rápido no tempo fraco.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="5" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 6 · Múltipla escolha</p>
+      <div class="enunciado"><p>Qual nota melódica tem <strong>preparação, suspensão e resolução</strong>?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">Retardo</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Apojatura</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Antecipação</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Bordadura</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>O <strong>retardo</strong> vem preso do acorde anterior (preparação), continua quando o acorde muda (suspensão) e então desce para uma nota do acorde (resolução).</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="6" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 7 · Múltipla escolha</p>
-      <div class="enunciado"><p>A <strong>pausa de semínima</strong> vale:</p></div>
+      <div class="enunciado"><p>A melodia salta para uma nota de fora do acorde no <strong>tempo forte</strong> e depois desce um grau até uma nota do acorde. É uma:</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">1 tempo de silêncio</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">meio tempo de silêncio</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">2 tempos de silêncio</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Apojatura</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Nota de passagem</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Antecipação</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Bordadura</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Cada pausa tem o valor da figura do mesmo nome: <strong>1 tempo</strong>. Meio tempo é a pausa de colcheia.</p></div>
+        <div class="explicacao"><p>Tempo forte, chegada por salto, resolução por grau conjunto: <strong>apojatura</strong>.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="7" data-tipo="percepcao">
-      <p class="rotulo">Exercício 8 · Percepção</p>
-      <div class="enunciado"><p>Ouça. Você escuta dois sons ou um som só?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-ligadura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-ligadura" hidden>
-        <div class="partitura" data-partitura="exe-ligadura"></div>
-        <figcaption>Uma ligadura: um som só, de quatro tempos.</figcaption>
-      </figure>
-      <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">um som só</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">dois sons</button></li>
-      </ol>
+    <article class="exercicio" data-exercicio="7" data-tipo="teclado">
+      <p class="rotulo">Exercício 8 · Toque a nota</p>
+      <div class="enunciado"><p>Si4 está marcado: é a nota de chegada sobre o G. Clique na nota que, presa do acorde C, faz o <strong>retardo</strong> resolvendo nela.</p></div>
+      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="7"></div></div>
+      <div class="acoes-teclado">
+        <button type="button" class="tocar pequeno" data-tocar-base="7"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
+      </div>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>As duas notas estão ligadas: soam como <strong>um som só</strong>, com 2 + 2 = 4 tempos.</p></div>
+        <div class="explicacao"><p>O retardo resolve descendo por grau conjunto: a nota de cima é <strong>Dó</strong>, que estava no acorde C.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="8" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 9 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quantas <strong>colcheias</strong> valem uma mínima?</p></div>
+      <div class="enunciado"><p>Sobre G7, pouco antes de chegar o C, a melodia toca <strong>Dó</strong> no tempo fraco e o mantém no C. Esse Dó é:</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">4</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">8</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Antecipação</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Retardo</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Apojatura</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Nota de passagem</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Mínima = 2 semínimas = <strong>4 colcheias</strong>. Se marcou 8, contou semicolcheias.</p></div>
+        <div class="explicacao"><p>É nota do <strong>próximo</strong> acorde, tocada antes dele: <strong>antecipação</strong>.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="9" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 10 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quanto vale a <strong>mínima pontuada</strong>?</p></div>
+    <article class="exercicio" data-exercicio="9" data-tipo="percepcao">
+      <p class="rotulo">Exercício 10 · Percepção</p>
+      <div class="enunciado"><p>Ouça. A nota aguda é tocada de novo quando o acorde muda?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-retardo"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-retardo" hidden>
+        <div class="partitura" data-partitura="exe-retardo"></div>
+        <figcaption>O Dó fica preso do C para o G e depois desce para Si.</figcaption>
+      </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">3 tempos</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">2 tempos e meio</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">4 tempos</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Não: ela fica presa e só depois desce</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Sim: é atacada de novo no tempo forte</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>O ponto soma metade da mínima: 2 + 1 = <strong>3 tempos</strong>.</p></div>
+        <div class="explicacao"><p>A nota <strong>não é atacada de novo</strong>: é um <strong>retardo</strong>. Se fosse atacada no tempo forte, seria uma apojatura.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="10" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 11 · Múltipla escolha</p>
-      <div class="enunciado"><p>Qual figura vale <strong>4 tempos</strong>?</p></div>
+      <div class="enunciado"><p>Por que a bordadura e a nota de passagem soam suaves, mesmo fora do acorde?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">semibreve</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">mínima</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">semínima</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">colcheia</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Caem no tempo fraco e andam por grau conjunto</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Porque são sempre cromáticas</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Porque duram mais que as notas do acorde</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Porque ficam no tempo forte</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>A <strong>semibreve</strong> vale 4 tempos, a maior das cinco. A mínima vale 2.</p></div>
+        <div class="explicacao"><p>Elas passam rápido, <strong>no tempo fraco</strong>, e se movem para notas vizinhas. A tensão quase não chega a ser notada.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="11" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 12 · Múltipla escolha</p>
+      <div class="enunciado"><p>Sobre o acorde F, a melodia faz <strong>Lá, Si♭, Dó</strong>. O Si♭ é:</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">Nota de passagem</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Bordadura</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Retardo</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Nota do acorde</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>F tem Fá, Lá e Dó. O Si♭ liga Lá a Dó por grau conjunto, subindo: <strong>nota de passagem</strong>.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="12" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 13 · Múltipla escolha</p>
+      <div class="enunciado"><p>Duas notas no tempo forte resolvem descendo por grau conjunto. Uma veio presa do acorde anterior; a outra foi atacada depois de um salto. São, nesta ordem:</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">Retardo e apojatura</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Apojatura e retardo</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Antecipação e bordadura</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Passagem e retardo</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Presa do acorde anterior: <strong>retardo</strong>. Atacada depois de salto: <strong>apojatura</strong>. A chegada decide.</p></div>
       </div>
     </article>
   </section>
@@ -882,25 +918,26 @@ tbody tr:last-child td { border-bottom: 0; }
   <section class="secao" id="resumo">
     <h2><span class="num">8</span>Resumo</h2>
     <ul class="resumo">
-      <li>Com a semínima valendo 1 tempo: semibreve 4, mínima 2, semínima 1, colcheia ½, semicolcheia ¼.</li>
-      <li>Cada figura vale <strong>metade</strong> da anterior.</li>
-      <li>Cada figura tem uma <strong>pausa</strong> com o mesmo valor.</li>
-      <li>O <strong>ponto</strong> soma metade do valor da nota: semínima pontuada vale 1½.</li>
-      <li>A <strong>ligadura</strong> une duas notas da mesma altura num som só.</li>
+      <li><strong>Notas melódicas</strong> são notas da melodia fora do acorde do momento; criam tensão e resolvem numa nota do acorde.</li>
+      <li><strong>Passagem</strong>: liga duas notas do acorde por grau conjunto. <strong>Bordadura</strong>: sai e volta à mesma nota. As duas no tempo fraco.</li>
+      <li><strong>Apojatura</strong>: no tempo forte, geralmente depois de salto, resolve por grau conjunto.</li>
+      <li><strong>Retardo</strong>: presa do acorde anterior, resolve quase sempre descendo.</li>
+      <li><strong>Antecipação</strong>: nota do próximo acorde, tocada antes dele.</li>
+      <li>Para classificar: é do acorde? Em que tempo cai? Como chega e como sai?</li>
     </ul>
     <div class="para-o-chat">
       <p class="rotulo">Leve para o chat do professor</p>
-      <p id="pergunta-chat">Me dê ritmos curtos, um de cada vez, para eu somar os tempos, e me dê uma dica antes de mostrar a resposta.</p>
+      <p id="pergunta-chat">Me dê pequenas melodias com a harmonia cifrada, uma de cada vez, para eu marcar as notas melódicas e dizer o tipo de cada uma, e corrija minha análise.</p>
       <button type="button" id="copiar-pergunta" class="secundario">Copiar pergunta</button>
     </div>
   </section>
 </main>
 
 <footer class="rodape">
-  <p>Aula I04 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
+  <p>Aula M15 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
 </footer>
 
-<script type="application/json" id="dados-aula">{"codigo": "I04", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura": {"id": "ex-abertura", "titulo": "Ouça antes de qualquer nome", "legenda": "Os quatro compassos têm o mesmo tamanho. O que acontece com os sons de um compasso para o outro?", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nG4 | G2 G2 | G G G G | G/2G/2 G/2G/2 G/2G/2 G/2G/2 |]\n", "andamento": 72, "eventos": [{"midis": [67], "duracao": 4.0}, {"midis": [67], "duracao": 2.0}, {"midis": [67], "duracao": 2.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}]}, "ex-semicolcheias": {"id": "ex-semicolcheias", "titulo": "Semínimas, colcheias e semicolcheias", "legenda": "Um tempo de cada vez: uma semínima, duas colcheias, quatro semicolcheias, e de novo a semínima.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nc c/2c/2 c/4c/4c/4c/4 c |]\n", "andamento": 72, "eventos": [{"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 1.0}]}, "ex-marcha-soldado": {"id": "ex-marcha-soldado", "titulo": "Marcha soldado", "legenda": "\"Mar\" dura um tempo; \"cha sol\" dividem o tempo seguinte; \"da\" e \"do\" voltam a durar um tempo cada.", "abc": "X:1\nM:2/4\nL:1/4\n%%stretchlast 1\nK:C\nG G/2E/2 | C C |]\nw:Mar-cha sol-da-do\n", "andamento": 88, "eventos": [{"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [60], "duracao": 1.0}, {"midis": [60], "duracao": 1.0}]}, "ex-pirulito": {"id": "ex-pirulito", "titulo": "Pirulito que bate bate", "legenda": "Ouça \"li-to-que\": as duas últimas sílabas passam rápido, em semicolcheias.", "abc": "X:1\nM:2/4\nL:1/4\n%%stretchlast 1\nK:C\nE/2F/2 | G/2G/4G/4 F/2E/2 |]\nw:Pi-ru-li-to que ba-te\n", "andamento": 88, "eventos": [{"midis": [64], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.25}, {"midis": [67], "duracao": 0.25}, {"midis": [65], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}]}, "ex-pausas": {"id": "ex-pausas", "titulo": "Sons e pausas", "legenda": "Som, silêncio, som, silêncio: as pausas têm a duração exata das figuras.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nd z d2 | z2 d/2 z/2 d |]\n", "andamento": 72, "eventos": [{"midis": [74], "duracao": 1.0}, {"midis": [], "duracao": 1.0}, {"midis": [74], "duracao": 2.0}, {"midis": [], "duracao": 2.0}, {"midis": [74], "duracao": 0.5}, {"midis": [], "duracao": 0.5}, {"midis": [74], "duracao": 1.0}]}, "ex-ponto": {"id": "ex-ponto", "titulo": "Semínima pontuada e colcheia", "legenda": "O som longo e o curto, repetidos: longo-curto, longo-curto.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nA3/2 A/2 A3/2 A/2 | A3 z |]\n", "andamento": 72, "eventos": [{"midis": [69], "duracao": 1.5}, {"midis": [69], "duracao": 0.5}, {"midis": [69], "duracao": 1.5}, {"midis": [69], "duracao": 0.5}, {"midis": [69], "duracao": 3.0}, {"midis": [], "duracao": 1.0}]}, "ex-ligadura": {"id": "ex-ligadura", "titulo": "Ligadura entre compassos", "legenda": "O último Mi do primeiro compasso continua no segundo: um som só, de três tempos.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nc c e2- | e c c2 |]\n", "andamento": 72, "eventos": [{"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [76], "duracao": 2.0, "ligada": true}, {"midis": [76], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 2.0}]}, "ex-soma": {"id": "ex-soma", "titulo": "Mínima, semínima e duas colcheias", "legenda": "Quatro tempos ao todo.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nF2 F F/2F/2 |]\n", "andamento": 72, "eventos": [{"midis": [65], "duracao": 2.0}, {"midis": [65], "duracao": 1.0}, {"midis": [65], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}]}, "exe-metade": {"id": "exe-metade", "titulo": "Dois grupos", "legenda": "Semínimas, depois colcheias: metade da duração.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nc c c c | c/2c/2 c/2c/2 c/2c/2 c/2c/2 |]\n", "andamento": 72, "eventos": [{"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 1.0}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5}]}, "exe-soma": {"id": "exe-soma", "titulo": "Um compasso", "legenda": "Mínima, semínima e duas colcheias.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nG2 G G/2G/2 |]\n", "andamento": 72, "eventos": [{"midis": [67], "duracao": 2.0}, {"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}]}, "exe-marcha": {"id": "exe-marcha", "titulo": "Marcha soldado", "legenda": "Semínima, colcheia, colcheia.", "abc": "X:1\nM:2/4\nL:1/4\n%%stretchlast 1\nK:C\nG G/2E/2 | C C |]\nw:Mar-cha sol-da-do\n", "andamento": 88, "eventos": [{"midis": [67], "duracao": 1.0}, {"midis": [67], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [60], "duracao": 1.0}, {"midis": [60], "duracao": 1.0}]}, "exe-ligadura": {"id": "exe-ligadura", "titulo": "Duas notas escritas", "legenda": "Uma ligadura: um som só, de quatro tempos.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nd2- d2 |]\n", "andamento": 72, "eventos": [{"midis": [74], "duracao": 2.0, "ligada": true}, {"midis": [74], "duracao": 2.0}]}}, "teclados": {}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "valores-das-figuras", "correta": 0}, {"indice": 1, "tipo": "percepcao", "conceito": "relacao-entre-figuras", "exemplo": "exe-metade", "correta": 0}, {"indice": 2, "tipo": "multipla_escolha", "conceito": "leitura-ritmica", "exemplo": "exe-soma", "correta": 0}, {"indice": 3, "tipo": "multipla_escolha", "conceito": "relacao-entre-figuras", "correta": 0}, {"indice": 4, "tipo": "multipla_escolha", "conceito": "ponto-de-aumento", "correta": 0}, {"indice": 5, "tipo": "percepcao", "conceito": "leitura-ritmica", "exemplo": "exe-marcha", "correta": 0}, {"indice": 6, "tipo": "multipla_escolha", "conceito": "pausas", "correta": 0}, {"indice": 7, "tipo": "percepcao", "conceito": "ligadura", "exemplo": "exe-ligadura", "correta": 0}, {"indice": 8, "tipo": "multipla_escolha", "conceito": "relacao-entre-figuras", "correta": 0}, {"indice": 9, "tipo": "multipla_escolha", "conceito": "ponto-de-aumento", "correta": 0}, {"indice": 10, "tipo": "multipla_escolha", "conceito": "valores-das-figuras", "correta": 0}]}</script>
+<script type="application/json" id="dados-aula">{"codigo": "M15", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura-a": {"id": "ex-abertura-a", "titulo": "Primeira melodia", "legenda": "Só notas dos acordes C e G.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEGc] [CEGe] [CEGg] [CEGe] | [G,B,Dd]2 [G,B,DB]2 |]\n", "andamento": 72, "eventos": [{"midis": [60, 64, 67, 72], "duracao": 1.0}, {"midis": [60, 64, 67, 76], "duracao": 1.0}, {"midis": [60, 64, 67, 79], "duracao": 1.0}, {"midis": [60, 64, 67, 76], "duracao": 1.0}, {"midis": [55, 59, 62, 74], "duracao": 2.0}, {"midis": [55, 59, 62, 71], "duracao": 2.0}]}, "ex-abertura-b": {"id": "ex-abertura-b", "titulo": "Segunda melodia", "legenda": "Os mesmos acordes. A melodia ficou mais cantada ou mais dura?", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEGc] [CEGd] [CEGe] [CEGf] | [G,B,De]2 [G,B,Dd]2 |]\n", "andamento": 72, "eventos": [{"midis": [60, 64, 67, 72], "duracao": 1.0}, {"midis": [60, 64, 67, 74], "duracao": 1.0}, {"midis": [60, 64, 67, 76], "duracao": 1.0}, {"midis": [60, 64, 67, 77], "duracao": 1.0}, {"midis": [55, 59, 62, 76], "duracao": 2.0}, {"midis": [55, 59, 62, 74], "duracao": 2.0}]}, "ex-passagem": {"id": "ex-passagem", "titulo": "Nota de passagem subindo", "legenda": "Sobre C: Dó, **Ré**, Mi. O Ré liga duas notas do acorde.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEGc] [CEGd] [CEGe]2 |]\n", "andamento": 72, "eventos": [{"midis": [60, 64, 67, 72], "duracao": 1.0}, {"midis": [60, 64, 67, 74], "duracao": 1.0}, {"midis": [60, 64, 67, 76], "duracao": 2.0}]}, "ex-passagem-desce": {"id": "ex-passagem-desce", "titulo": "Nota de passagem descendo", "legenda": "Sobre C: Sol, **Fá**, Mi.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEGg] [CEGf] [CEGe]2 |]\n", "andamento": 72, "eventos": [{"midis": [60, 64, 67, 79], "duracao": 1.0}, {"midis": [60, 64, 67, 77], "duracao": 1.0}, {"midis": [60, 64, 67, 76], "duracao": 2.0}]}, "ex-bord-sup": {"id": "ex-bord-sup", "titulo": "Bordadura superior", "legenda": "Sobre C: Mi, **Fá**, Mi.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEGe] [CEGf] [CEGe]2 |]\n", "andamento": 72, "eventos": [{"midis": [60, 64, 67, 76], "duracao": 1.0}, {"midis": [60, 64, 67, 77], "duracao": 1.0}, {"midis": [60, 64, 67, 76], "duracao": 2.0}]}, "ex-bord-inf": {"id": "ex-bord-inf", "titulo": "Bordadura inferior", "legenda": "Sobre C: Dó, **Si**, Dó.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEGc] [CEGB] [CEGc]2 |]\n", "andamento": 72, "eventos": [{"midis": [60, 64, 67, 72], "duracao": 1.0}, {"midis": [60, 64, 67, 71], "duracao": 1.0}, {"midis": [60, 64, 67, 72], "duracao": 2.0}]}, "ex-apojatura": {"id": "ex-apojatura", "titulo": "Apojatura", "legenda": "Sol salta para **Dó** no tempo forte do G; o Dó resolve descendo em Si.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEGe]2 [CEGg]2 | [G,B,Dc]2 [G,B,DB]2 |]\n", "andamento": 66, "eventos": [{"midis": [60, 64, 67, 76], "duracao": 2.0}, {"midis": [60, 64, 67, 79], "duracao": 2.0}, {"midis": [55, 59, 62, 72], "duracao": 2.0}, {"midis": [55, 59, 62, 71], "duracao": 2.0}]}, "ex-retardo": {"id": "ex-retardo", "titulo": "Retardo", "legenda": "O Dó do C fica preso enquanto o acorde vira G e só depois desce para Si.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEG-c-]4 | [G,DGc]2 [G,DGB]2 |]\n", "andamento": 66, "eventos": [{"midis": [60, 64, 67, 72], "duracao": 4.0, "ligar": [67, 72]}, {"midis": [55, 62, 67, 72], "duracao": 2.0}, {"midis": [55, 62, 67, 71], "duracao": 2.0}]}, "ex-antecipacao": {"id": "ex-antecipacao", "titulo": "Antecipação", "legenda": "Sobre G7, o **Dó** aparece antes do tempo; logo depois chega o C.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[G,B,Fd]2 [G,B,FB]3/2 [G,B,Fc]/2 | [CEGc]4 |]\n", "andamento": 66, "eventos": [{"midis": [55, 59, 65, 74], "duracao": 2.0}, {"midis": [55, 59, 65, 71], "duracao": 1.5}, {"midis": [55, 59, 65, 72], "duracao": 0.5}, {"midis": [60, 64, 67, 72], "duracao": 4.0}]}, "ex-frase": {"id": "ex-frase", "titulo": "Uma frase com notas melódicas", "legenda": "C, F, G7, C. Use a frase para seguir os passos.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEGe] [CEGd] [CEGc] [CEGe] | [F,A,Ca]2 [F,A,Cg] [F,A,Ca] | [G,B,Fg] [G,B,Ff] [G,B,Fd]3/2 [G,B,Fc]/2 | [CEGc]4 |]\n", "andamento": 72, "eventos": [{"midis": [60, 64, 67, 76], "duracao": 1.0}, {"midis": [60, 64, 67, 74], "duracao": 1.0}, {"midis": [60, 64, 67, 72], "duracao": 1.0}, {"midis": [60, 64, 67, 76], "duracao": 1.0}, {"midis": [53, 57, 60, 81], "duracao": 2.0}, {"midis": [53, 57, 60, 79], "duracao": 1.0}, {"midis": [53, 57, 60, 81], "duracao": 1.0}, {"midis": [55, 59, 65, 79], "duracao": 1.0}, {"midis": [55, 59, 65, 77], "duracao": 1.0}, {"midis": [55, 59, 65, 74], "duracao": 1.5}, {"midis": [55, 59, 65, 72], "duracao": 0.5}, {"midis": [60, 64, 67, 72], "duracao": 4.0}]}, "exe-forte-fraco": {"id": "exe-forte-fraco", "titulo": "Duas versões", "legenda": "A primeira tem passagem no tempo fraco; a segunda, apojatura no forte.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEGc] [CEGd] [CEGe]2 | [G,B,Dc]2 [G,B,DB]2 |]\n", "andamento": 66, "eventos": [{"midis": [60, 64, 67, 72], "duracao": 1.0}, {"midis": [60, 64, 67, 74], "duracao": 1.0}, {"midis": [60, 64, 67, 76], "duracao": 2.0}, {"midis": [55, 59, 62, 72], "duracao": 2.0}, {"midis": [55, 59, 62, 71], "duracao": 2.0}]}, "exe-retardo": {"id": "exe-retardo", "titulo": "Retardo", "legenda": "O Dó fica preso do C para o G e depois desce para Si.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEG-c-]4 | [G,DGc]2 [G,DGB]2 |]\n", "andamento": 66, "eventos": [{"midis": [60, 64, 67, 72], "duracao": 4.0, "ligar": [67, 72]}, {"midis": [55, 62, 67, 72], "duracao": 2.0}, {"midis": [55, 62, 67, 71], "duracao": 2.0}]}}, "teclados": {}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "nota-melodica", "correta": 0}, {"indice": 1, "tipo": "multipla_escolha", "conceito": "nota-de-passagem", "correta": 0}, {"indice": 2, "tipo": "teclado", "conceito": "bordadura", "base": 76, "alvo": 77, "alvo_nome": "Fá", "intervalo_nome": "2ª menor", "teclado": {"de": 72, "ate": 84, "destaque": [{"midi": 76, "nome": "Mi"}]}}, {"indice": 3, "tipo": "multipla_escolha", "conceito": "bordadura", "correta": 0}, {"indice": 4, "tipo": "percepcao", "conceito": "percepcao-notas-melodicas", "exemplo": "exe-forte-fraco", "correta": 0}, {"indice": 5, "tipo": "multipla_escolha", "conceito": "retardo", "correta": 0}, {"indice": 6, "tipo": "multipla_escolha", "conceito": "apojatura", "correta": 0}, {"indice": 7, "tipo": "teclado", "conceito": "retardo", "base": 71, "alvo": 72, "alvo_nome": "Dó", "intervalo_nome": "2ª menor", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 71, "nome": "Si"}]}}, {"indice": 8, "tipo": "multipla_escolha", "conceito": "antecipacao", "correta": 0}, {"indice": 9, "tipo": "percepcao", "conceito": "percepcao-notas-melodicas", "exemplo": "exe-retardo", "correta": 0}, {"indice": 10, "tipo": "multipla_escolha", "conceito": "nota-melodica", "correta": 0}, {"indice": 11, "tipo": "multipla_escolha", "conceito": "nota-de-passagem", "correta": 0}, {"indice": 12, "tipo": "multipla_escolha", "conceito": "apojatura", "correta": 0}]}</script>
 <script src="https://cdn.jsdelivr.net/npm/abcjs@6.7.1/dist/abcjs-basic-min.js"></script>
 <script>
 /* Aula interativa: partitura (abcjs), som sintetizado no navegador (piano ou violão),

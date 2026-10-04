@@ -122,6 +122,12 @@ def _compilar_exemplo(ex: Exemplo, onde: str, r: Resultado) -> None:
             seguinte = ex.eventos[k + 1] if k + 1 < len(ex.eventos) else None
             if not ev.notas or seguinte is None or esperado[k + 1] != esperado[k]:
                 r.erros.append(f"{onde}.eventos[{k}]: a ligadura precisa de um evento seguinte com as mesmas notas")
+        if ev.ligar:
+            seguinte = ex.eventos[k + 1] if k + 1 < len(ex.eventos) else None
+            proximas = {teoria.midi(n) for n in seguinte.notas} if seguinte else set()
+            for n in ev.ligar:
+                if n not in ev.notas or teoria.midi(n) not in proximas:
+                    r.erros.append(f"{onde}.eventos[{k}]: {n} só pode ser ligada se estiver neste evento e no seguinte")
 
     r.exemplos[ex.id] = {
         "id": ex.id,
@@ -149,6 +155,8 @@ def _eventos_para_audio(midis: list[list[int]], eventos) -> list[dict]:
             item["nivel"] = _INTENSIDADE[nivel or "mf"]
         if ev.ligada:
             item["ligada"] = True
+        if ev.ligar:
+            item["ligar"] = [teoria.midi(n) for n in ev.ligar]
         if ev.staccato:
             item["staccato"] = True
         saida.append(item)

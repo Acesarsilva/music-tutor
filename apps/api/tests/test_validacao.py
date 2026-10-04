@@ -99,6 +99,22 @@ def test_ligadura_exige_mesmas_notas(aula_piloto):
     assert any("ligadura" in e for e in r.erros)
 
 
+def test_ligar_prende_so_algumas_notas(aula_piloto):
+    r = _aula_com_exemplo(aula_piloto, [
+        {"notas": ["C4", "E4", "G4", "C5"], "duracao": 2, "ligar": ["C5"]},
+        {"notas": ["G3", "D4", "G4", "C5"], "duracao": 1}, {"notas": ["G3", "D4", "G4", "B4"], "duracao": 1},
+    ])
+    assert r.ok, r.erros
+    assert r.exemplos["ex-teste"]["eventos"][0]["ligar"] == [72]
+
+
+def test_ligar_exige_a_nota_no_evento_seguinte(aula_piloto):
+    r = _aula_com_exemplo(aula_piloto, [
+        {"notas": ["C4", "E4", "G4"], "duracao": 2, "ligar": ["E4"]}, {"notas": ["B3", "D4", "G4"], "duracao": 2},
+    ])
+    assert any("E4 só pode ser ligada" in e for e in r.erros)
+
+
 def test_acento_se_destaca_das_vizinhas(aula_piloto):
     r = _aula_com_exemplo(aula_piloto, [
         {"notas": ["C5"], "duracao": 1, "acento": True}, {"notas": ["C5"], "duracao": 1},

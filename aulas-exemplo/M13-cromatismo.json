@@ -1,0 +1,841 @@
+{
+  "codigo": "M13",
+  "titulo": "Cromatismo",
+  "nivel": "intermediario",
+  "resumo_curto": "A escala cromática e as passagens, bordaduras e aproximações cromáticas.",
+  "prerequisitos": [
+    "Tom e semitom (I06)",
+    "Intervalos aumentados e diminutos (M02)",
+    "Pentatônica e blues (M12)"
+  ],
+  "objetivos": [
+    "Escrever a **escala cromática** subindo e descendo",
+    "Reconhecer **passagens** e **bordaduras** cromáticas",
+    "Usar a **aproximação cromática**",
+    "Ouvir a diferença entre o diatônico e o cromático"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quantos semitons há numa oitava?\n2. Fá♯ e Sol♭ são a mesma tecla? Por que têm nomes diferentes?\n3. Qual é a blue note da escala blues de Lá?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. 12.\n2. Sim, são enarmônicas. O nome depende do caminho: Fá♯ vem de Fá subindo, Sol♭ vem de Sol descendo.\n3. Mi♭, a 5ª diminuta.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "Dó, Ré, Mi",
+            "legenda": "Uma subida simples pela escala.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "Dó, ?, Ré",
+            "legenda": "Agora há uma nota entre Dó e Ré. Que efeito ela dá à melodia?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A nota do meio, **Dó♯**, não pertence à escala de Dó maior. Ela liga Dó a Ré por semitom e dá à melodia um sabor mais deslizante. Usar notas de fora da escala, andando por semitons, é o **cromatismo**.\n\nAo final, você vai escrever a escala cromática e reconhecer passagens, bordaduras e aproximações cromáticas."
+        }
+      ]
+    },
+    {
+      "titulo": "A escala cromática",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **escala cromática** usa os 12 sons da oitava, todos a um semitom de distância. Por convenção:\n\n- **subindo**, escreva com **sustenidos** (Dó, Dó♯, Ré, Ré♯...);\n- **descendo**, com **bemóis** (Dó, Si, Si♭, Lá, Lá♭...).\n\nAssim cada nota alterada aponta para o lado para onde a melodia vai."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-cromatica-sobe",
+            "titulo": "Subindo, com sustenidos",
+            "legenda": "Doze semitons até o Dó de cima.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-cromatica-desce",
+            "titulo": "Descendo, com bemóis",
+            "legenda": "O mesmo caminho de volta.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Ab4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Gb4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Db4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Todas as teclas de Dó4 a Dó5, brancas e pretas. No braço, todas as casas seguidas da mesma corda.",
+          "destaque": [
+            "C4",
+            "C#4",
+            "D4",
+            "D#4",
+            "E4",
+            "F4",
+            "F#4",
+            "G4",
+            "G#4",
+            "A4",
+            "A#4",
+            "B4",
+            "C5"
+          ],
+          "de": "C4",
+          "ate": "C5"
+        }
+      ]
+    },
+    {
+      "titulo": "Passagem e bordadura cromáticas",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Duas formas de usar uma nota cromática numa melodia:\n\n- **passagem cromática**: a nota fica **entre** duas notas da escala, ligando-as por semitons (Dó, Dó♯, Ré);\n- **bordadura cromática**: a melodia sai de uma nota, vai a um semitom **ao lado** e **volta** a ela (Mi, Ré♯, Mi)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-passagem-desce",
+            "titulo": "Passagem descendo",
+            "legenda": "Mi, Mi♭, Ré: o Mi♭ liga as duas notas da escala.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-bordadura-inf",
+            "titulo": "Bordadura inferior",
+            "legenda": "Mi, Ré♯, Mi: um semitom abaixo e de volta.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-bordadura-sup",
+            "titulo": "Bordadura superior",
+            "legenda": "Sol, Lá♭, Sol: um semitom acima e de volta.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Ab4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 80
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Aproximação cromática",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na **aproximação cromática**, a melodia chega a uma nota importante, quase sempre do acorde, vindo de **um semitom ao lado**. A nota de fora cria um instante de tensão que se resolve na nota do acorde. É um recurso muito presente no choro e no jazz."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-aprox-cima",
+            "titulo": "Chegando de cima",
+            "legenda": "Sobre C: Lá, Sol♯, Sol. O Sol♯ desce meio tom até o Sol do acorde.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-aprox-baixo",
+            "titulo": "Chegando de baixo",
+            "legenda": "Fá♯ sobe meio tom até o Sol, a 5ª do C.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-frase",
+            "titulo": "Uma frase cromática",
+            "legenda": "Passagem (Fá, Fá♯, Sol), bordadura (Lá, Sol♯, Lá) e passagem descendo (Si, Si♭, Lá).",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 80
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: classificar a nota cromática",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja com **Sol, Sol♯, Lá** em Dó maior, com o motivo de cada passo.\n\n1. **Ache a nota de fora da escala**: Sol♯ não está em Dó maior.\n2. **Olhe de onde vem e para onde vai**: vem de Sol e vai para Lá, outra nota.\n3. **Classifique**: entre duas notas diferentes, por semitons: **passagem cromática**."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que se escreve Sol♯, e não Lá♭, nesse caso?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque a melodia está **subindo** de Sol para Lá. Sol♯ diz \"Sol alterado para cima\"; Lá♭ seria a escrita de uma melodia descendo de Lá para Sol.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu. **Ré, Dó♯, Ré**: Dó♯ está fora de Dó maior; vem de Ré e volta a Ré. Como se chama?\n\nE agora dois passos são seus: **Si, Si♭, Lá**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ré, Dó♯, Ré: sai e volta à mesma nota, **bordadura cromática** (inferior).\n\nSi, Si♭, Lá: Si♭ está fora de Dó maior e liga Si a Lá descendo: **passagem cromática**, escrita com bemol porque desce.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega escreveu a escala cromática subindo de Dó assim:\n\n> \"Dó, Ré♭, Ré, Mi♭, Mi, Fá, Sol♭, Sol, Lá♭, Lá, Si♭, Si, Dó.\"\n\nOs sons estão certos. Onde está o erro de escrita, e por que importa?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Subindo, a convenção é usar **sustenidos**: Dó, Dó♯, Ré, Ré♯... Com bemóis, cada nota alterada parece \"puxar\" para baixo, contra a direção da melodia, e a leitura fica mais difícil. Os bemóis ficam para a escala descendo.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas notas diferentes tem a escala cromática numa oitava?",
+      "opcoes": [
+        "12",
+        "7",
+        "5",
+        "8"
+      ],
+      "correta": 0,
+      "explicacao": "Todos os semitons da oitava: **12** sons. Sete é a escala maior; cinco, a pentatônica.",
+      "conceito": "escala-cromatica"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Dó4 está marcado. Clique na nota que vem logo depois na **escala cromática subindo**.",
+      "nota_base": "C4",
+      "intervalo": "1A",
+      "direcao": "acima",
+      "explicacao": "Um semitom acima de Dó, escrito com sustenido porque sobe: **Dó♯**.",
+      "conceito": "escrita-da-cromatica",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na melodia **Mi, Ré♯, Mi**, o Ré♯ é:",
+      "opcoes": [
+        "Bordadura cromática",
+        "Passagem cromática",
+        "Aproximação de cima",
+        "Nota da escala de Dó maior"
+      ],
+      "correta": 0,
+      "explicacao": "A melodia sai do Mi, vai um semitom abaixo e **volta** ao Mi: **bordadura**. Na passagem, ela seguiria para outra nota.",
+      "conceito": "bordadura-cromatica"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça duas melodias. Qual delas tem uma nota cromática?",
+      "exemplo": {
+        "id": "exe-cromatica",
+        "titulo": "Duas melodias",
+        "legenda": "A segunda tem Dó♯ entre Dó e Ré.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C#4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 80
+      },
+      "opcoes": [
+        "A segunda",
+        "A primeira"
+      ],
+      "correta": 0,
+      "explicacao": "Na segunda, entre Dó e Ré aparece o **Dó♯**: os passos ficam de semitom, mais deslizantes.",
+      "conceito": "percepcao-cromatismo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Descendo de Ré para Dó por semitons, como se escreve a nota do meio?",
+      "opcoes": [
+        "Ré♭",
+        "Dó♯",
+        "Mi♭",
+        "Si"
+      ],
+      "correta": 0,
+      "explicacao": "Descendo, a convenção é o **bemol**: Ré, Ré♭, Dó. Dó♯ é o mesmo som, escrito para melodias que sobem.",
+      "conceito": "escrita-da-cromatica"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na melodia **Fá, Fá♯, Sol**, o Fá♯ é:",
+      "opcoes": [
+        "Passagem cromática",
+        "Bordadura cromática",
+        "Blue note",
+        "Nota da escala de Dó maior"
+      ],
+      "correta": 0,
+      "explicacao": "Fica **entre** Fá e Sol, ligando-os por semitons: **passagem cromática**.",
+      "conceito": "passagem-cromatica"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Sol4 está marcado: é a 5ª do acorde C. Clique na nota que faz a **aproximação cromática de baixo**.",
+      "nota_base": "G4",
+      "intervalo": "2m",
+      "direcao": "abaixo",
+      "explicacao": "Um semitom abaixo de Sol é **Fá♯**: ele sobe meio tom e chega ao Sol.",
+      "conceito": "aproximacao-cromatica",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a frase sobre o acorde de Dó. Como a melodia chega à nota final?",
+      "exemplo": {
+        "id": "exe-aprox",
+        "titulo": "Frase",
+        "legenda": "Lá, Sol♯, Sol: chega ao Sol de um semitom acima.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G#4"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 80
+      },
+      "opcoes": [
+        "Desce por semitom até a nota do acorde",
+        "Salta de longe até a nota",
+        "Fica parada na mesma nota"
+      ],
+      "correta": 0,
+      "explicacao": "O **Sol♯** está meio tom acima do Sol e desce até ele: **aproximação cromática** de cima.",
+      "conceito": "percepcao-cromatismo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que a aproximação cromática soa bem, mesmo usando uma nota de fora da escala?",
+      "opcoes": [
+        "A nota de fora resolve meio tom depois numa nota do acorde",
+        "Porque fica no tempo forte e dura muito",
+        "Porque toda nota cromática pertence ao acorde",
+        "Porque substitui a tônica"
+      ],
+      "correta": 0,
+      "explicacao": "A tensão dura um instante e **se resolve por semitom** numa nota do acorde. Se a nota de fora ficasse parada, soaria como erro.",
+      "conceito": "aproximacao-cromatica"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual destas é a escala cromática **descendo** de Dó?",
+      "opcoes": [
+        "Dó, Si, Si♭, Lá, Lá♭...",
+        "Dó, Si, Lá♯, Lá, Sol♯...",
+        "Dó, Si, Lá, Sol, Fá...",
+        "Dó, Dó♯, Ré, Ré♯..."
+      ],
+      "correta": 0,
+      "explicacao": "Descendo, com **bemóis**: Dó, Si, Si♭, Lá, Lá♭. A segunda opção tem os sons certos, mas a escrita de subida.",
+      "conceito": "escala-cromatica"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na melodia **Sol, Lá♭, Sol**, o Lá♭ é:",
+      "opcoes": [
+        "Bordadura cromática superior",
+        "Bordadura cromática inferior",
+        "Passagem cromática"
+      ],
+      "correta": 0,
+      "explicacao": "Vai um semitom **acima** do Sol e volta: **bordadura superior**.",
+      "conceito": "bordadura-cromatica"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Mi4 está marcado. Clique na nota da **bordadura cromática inferior** de Mi.",
+      "nota_base": "E4",
+      "intervalo": "2m",
+      "direcao": "abaixo",
+      "explicacao": "Um semitom abaixo de Mi: **Ré♯**. A melodia faz Mi, Ré♯, Mi.",
+      "conceito": "bordadura-cromatica",
+      "de": "C4",
+      "ate": "C6"
+    }
+  ],
+  "resumo": [
+    "A **escala cromática** tem os 12 sons da oitava, todos a um semitom.",
+    "Subindo, escreva com **sustenidos**; descendo, com **bemóis**.",
+    "**Passagem cromática**: liga duas notas diferentes por semitons (Dó, Dó♯, Ré).",
+    "**Bordadura cromática**: sai e volta à mesma nota (Mi, Ré♯, Mi).",
+    "**Aproximação cromática**: chega a uma nota do acorde vindo de um semitom ao lado."
+  ],
+  "pergunta_para_chat": "Me dê pequenas melodias escritas, uma de cada vez, para eu apontar e classificar as notas cromáticas, e corrija a escrita se eu usar o acidente errado."
+}
