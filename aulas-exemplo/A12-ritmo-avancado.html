@@ -1,0 +1,1647 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ritmo avançado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Layout: uma coluna de leitura (~46rem) com barra fixa de controles de som no topo.
+   Cor: papel frio, tinta azul-grafite, vinho como destaque e latão para a nota que está tocando. */
+:root {
+  --papel: #f4f5f7;
+  --superficie: #ffffff;
+  --tinta: #1d2330;
+  --tinta-suave: #586276;
+  --linha: #dde1e8;
+  --vinho: #8a2c52;
+  --vinho-fundo: #f6e9ef;
+  --latao: #b8770f;
+  --certo: #22744a;
+  --certo-fundo: #e5f3ea;
+  --errado: #b4372f;
+  --errado-fundo: #fbe9e7;
+  --tecla-branca: #ffffff;
+  --tecla-preta: #20242c;
+  --madeira: #efe4d0;
+  --corda: #8c8170;
+  --traste: #c4b9a5;
+  --pestana: #d9cfbd;
+  --f-titulo: "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --f-texto: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --raio: 10px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --papel: #15171c;
+    --superficie: #1e2129;
+    --tinta: #e7e9ee;
+    --tinta-suave: #a2a9b8;
+    --linha: #333845;
+    --vinho: #e38aae;
+    --vinho-fundo: #3a2230;
+    --latao: #e8ac48;
+    --certo: #6fcf98;
+    --certo-fundo: #1b3326;
+    --errado: #f08a80;
+    --errado-fundo: #3b2120;
+    --tecla-branca: #e9eaee;
+    --tecla-preta: #0c0d10;
+    --madeira: #2b261f;
+    --corda: #a39a87;
+    --traste: #4d463a;
+    --pestana: #cfc5b0;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --papel: #15171c;
+  --superficie: #1e2129;
+  --tinta: #e7e9ee;
+  --tinta-suave: #a2a9b8;
+  --linha: #333845;
+  --vinho: #e38aae;
+  --vinho-fundo: #3a2230;
+  --latao: #e8ac48;
+  --certo: #6fcf98;
+  --certo-fundo: #1b3326;
+  --errado: #f08a80;
+  --errado-fundo: #3b2120;
+  --tecla-branca: #e9eaee;
+  --tecla-preta: #0c0d10;
+  --madeira: #2b261f;
+  --corda: #a39a87;
+  --traste: #4d463a;
+  --pestana: #cfc5b0;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--f-texto);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+[hidden] { display: none !important; }
+
+/* Barra de controles */
+.barra {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 10;
+  background: color-mix(in srgb, var(--papel) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--linha);
+  font-family: var(--f-titulo);
+}
+.barra-interna {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0.6rem 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+.barra-aula {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.selo {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: var(--vinho-fundo);
+  color: var(--vinho);
+  margin-right: 0.35rem;
+  font-variant-numeric: tabular-nums;
+}
+.controles { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; }
+.timbre {
+  display: inline-flex;
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+  padding: 2px;
+  background: var(--superficie);
+}
+.timbre button {
+  font: 600 0.85rem var(--f-titulo);
+  border: 0;
+  background: transparent;
+  color: var(--tinta-suave);
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.timbre button[aria-pressed="true"] { background: var(--vinho); color: var(--superficie); }
+.andamento {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--tinta-suave);
+}
+.andamento input { width: 6.5rem; accent-color: var(--vinho); }
+.andamento output { font-variant-numeric: tabular-nums; min-width: 2.6rem; }
+
+/* Estrutura */
+.aula { max-width: 46rem; margin: 0 auto; padding: 0 16px; padding-block: 2rem 3rem; }
+.rotulo {
+  font-family: var(--f-titulo);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tinta-suave);
+  margin: 0 0 0.4rem;
+}
+h1, h2, h3 { font-family: var(--f-titulo); line-height: 1.15; text-wrap: balance; }
+h1 { font-size: clamp(2rem, 6vw, 2.9rem); margin: 0 0 0.6rem; letter-spacing: -0.01em; }
+.chamada { font-size: 1.2rem; color: var(--tinta-suave); margin: 0 0 1.5rem; }
+.ficha {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem 2rem;
+  padding: 1.1rem 0;
+  border-top: 1px solid var(--linha);
+  border-bottom: 1px solid var(--linha);
+}
+.ficha ul { margin: 0; padding-left: 1.1rem; }
+.ficha li { margin: 0.15rem 0; }
+.indice ol {
+  list-style: none;
+  margin: 1.2rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  counter-reset: indice;
+  font-family: var(--f-titulo);
+  font-size: 0.9rem;
+}
+.indice li { counter-increment: indice; }
+.indice a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--tinta);
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+}
+.indice a::before { content: counter(indice) "  "; color: var(--vinho); font-weight: 600; white-space: pre; }
+.indice a:hover { border-color: var(--vinho); }
+
+.secao { margin-top: 3rem; scroll-margin-top: 5rem; }
+.secao > h2 {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin: 0 0 1rem;
+}
+.num {
+  font-size: 0.95rem;
+  color: var(--vinho);
+  font-variant-numeric: tabular-nums;
+  border: 1.5px solid var(--vinho);
+  border-radius: 999px;
+  min-width: 1.8rem;
+  height: 1.8rem;
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  transform: translateY(-0.1rem);
+}
+.prosa p { margin: 0 0 0.9rem; }
+.prosa ul, .prosa ol { padding-left: 1.3rem; margin: 0 0 0.9rem; }
+strong { font-weight: 600; }
+a { color: var(--vinho); }
+
+.dica {
+  margin: 1.2rem 0;
+  padding: 0.9rem 1.1rem;
+  background: var(--vinho-fundo);
+  border-radius: var(--raio);
+}
+.dica .rotulo { color: var(--vinho); }
+.dica p:last-child { margin-bottom: 0; }
+.resposta {
+  margin: 1rem 0 1.2rem;
+  border: 1px dashed var(--vinho);
+  border-radius: var(--raio);
+  padding: 0.55rem 1rem;
+}
+.resposta summary {
+  cursor: pointer;
+  font: 600 0.9rem var(--f-titulo);
+  color: var(--vinho);
+}
+.resposta[open] { background: var(--vinho-fundo); border-style: solid; }
+.resposta[open] summary { margin-bottom: 0.4rem; }
+.resposta .prosa p:last-child { margin-bottom: 0; }
+
+/* Exemplos com partitura */
+.exemplo {
+  margin: 1.4rem 0;
+  padding: 0.9rem 1rem 0.8rem;
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+}
+.exemplo-topo { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
+.exemplo-titulo { margin: 0; font-family: var(--f-titulo); font-weight: 600; min-width: 0; }
+.partitura { color: var(--tinta); min-height: 4rem; overflow-x: auto; }
+.partitura svg { display: block; max-width: 100%; }
+.partitura .tocando, .partitura .tocando path { fill: var(--latao); stroke: var(--latao); }
+.exemplo figcaption, figure figcaption { font-size: 0.95rem; color: var(--tinta-suave); }
+
+.tocar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font: 600 0.9rem var(--f-titulo);
+  color: var(--superficie);
+  background: var(--vinho);
+  border: 0;
+  border-radius: 999px;
+  padding: 0.4rem 0.95rem 0.4rem 0.75rem;
+  cursor: pointer;
+  flex: none;
+}
+.tocar.pequeno { font-size: 0.8rem; padding: 0.3rem 0.8rem 0.3rem 0.6rem; }
+.tocar .icone {
+  width: 0; height: 0;
+  border-left: 0.6em solid currentColor;
+  border-top: 0.38em solid transparent;
+  border-bottom: 0.38em solid transparent;
+}
+.tocar.ativo .icone { width: 0.6em; height: 0.6em; border: 0; background: currentColor; border-radius: 1px; }
+.tocar:hover { filter: brightness(1.08); }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid var(--latao); outline-offset: 2px; }
+
+/* Tabelas */
+.tabela { margin: 1.4rem 0; }
+.tabela-rolagem { overflow-x: auto; border: 1px solid var(--linha); border-radius: var(--raio); background: var(--superficie); }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 0.5rem 0.8rem; border-bottom: 1px solid var(--linha); vertical-align: top; }
+th { font-family: var(--f-titulo); font-weight: 600; font-size: 0.85rem; color: var(--tinta-suave); }
+tbody tr:last-child td { border-bottom: 0; }
+.tabela figcaption { margin-top: 0.4rem; }
+
+/* Teclado */
+.bloco-teclado { margin: 1.4rem 0; }
+.bloco-teclado figcaption { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1rem; margin-top: 0.5rem; }
+.teclado-rolagem { overflow-x: auto; padding-bottom: 0.25rem; }
+.teclado {
+  position: relative;
+  height: 9rem;
+  margin: 0 auto;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.tecla {
+  position: absolute;
+  top: 0;
+  border: 1px solid var(--linha);
+  border-radius: 0 0 6px 6px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font: 600 0.7rem var(--f-titulo);
+}
+.tecla.branca { background: var(--tecla-branca); color: #5a6070; height: 100%; z-index: 1; border-color: #c9cdd6; }
+.tecla.preta { background: var(--tecla-preta); color: #e7e9ee; height: 60%; z-index: 2; border-color: var(--tecla-preta); }
+.tecla .nome { padding-bottom: 0.35rem; pointer-events: none; }
+.tecla.preta .nome { font-size: 0.6rem; }
+.tecla.destaque.branca { background: color-mix(in srgb, var(--vinho) 22%, var(--tecla-branca)); }
+.tecla.destaque.preta { background: color-mix(in srgb, var(--vinho) 55%, var(--tecla-preta)); }
+.tecla.base.branca { background: color-mix(in srgb, var(--vinho) 22%, var(--tecla-branca)); }
+.tecla.base.preta { background: color-mix(in srgb, var(--vinho) 55%, var(--tecla-preta)); }
+.tecla.soando.branca { background: color-mix(in srgb, var(--latao) 45%, var(--tecla-branca)); }
+.tecla.soando.preta { background: color-mix(in srgb, var(--latao) 70%, var(--tecla-preta)); }
+.tecla.acertou.branca, .tecla.acertou.preta { background: var(--certo); color: #fff; }
+.tecla.errou.branca, .tecla.errou.preta { background: var(--errado); color: #fff; }
+
+/* Exercícios */
+.placar { font-family: var(--f-titulo); color: var(--tinta-suave); margin-top: -0.4rem; font-variant-numeric: tabular-nums; }
+.exercicio {
+  margin: 1.2rem 0;
+  padding: 1.1rem 1.1rem 1rem;
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+}
+.exercicio .exemplo { margin: 0.8rem 0; border-style: dashed; }
+.enunciado p { margin: 0 0 0.8rem; }
+.opcoes { list-style: none; margin: 0.8rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 0.5rem; }
+.opcao {
+  width: 100%;
+  text-align: left;
+  font: 1rem var(--f-texto);
+  color: var(--tinta);
+  background: var(--papel);
+  border: 1px solid var(--linha);
+  border-radius: 8px;
+  padding: 0.55rem 0.8rem;
+  cursor: pointer;
+}
+.opcao:hover:not(:disabled) { border-color: var(--vinho); }
+.opcao:disabled { cursor: default; }
+.opcao.certa { background: var(--certo-fundo); border-color: var(--certo); color: var(--tinta); }
+.opcao.errada { background: var(--errado-fundo); border-color: var(--errado); color: var(--tinta); }
+.acoes-teclado { margin-top: 0.6rem; }
+.retorno { margin-top: 0.9rem; padding-top: 0.8rem; border-top: 1px solid var(--linha); }
+.veredito { font-family: var(--f-titulo); font-weight: 700; margin: 0 0 0.3rem; }
+.veredito.certo { color: var(--certo); }
+.veredito.errado { color: var(--errado); }
+.explicacao p { margin: 0 0 0.6rem; }
+.explicacao p:last-child { margin-bottom: 0; }
+
+/* Resumo */
+.resumo { padding-left: 1.2rem; }
+.resumo li { margin: 0.3rem 0; }
+.para-o-chat {
+  margin-top: 1.5rem;
+  padding: 1rem 1.1rem;
+  border: 1.5px solid var(--vinho);
+  border-radius: var(--raio);
+}
+.para-o-chat .rotulo { color: var(--vinho); }
+#pergunta-chat { font-size: 1.1rem; margin: 0 0 0.7rem; }
+.secundario {
+  font: 600 0.85rem var(--f-titulo);
+  color: var(--vinho);
+  background: transparent;
+  border: 1px solid var(--vinho);
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  cursor: pointer;
+}
+.rodape {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 16px;
+  padding-block: 1.5rem 2.5rem;
+  border-top: 1px solid var(--linha);
+  font-family: var(--f-titulo);
+  font-size: 0.8rem;
+  color: var(--tinta-suave);
+}
+.aviso-som {
+  position: fixed;
+  left: 50%;
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  background: var(--tinta);
+  color: var(--papel);
+  font-family: var(--f-titulo);
+  font-size: 0.85rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  z-index: 20;
+  max-width: calc(100% - 32px);
+}
+
+@media (max-width: 520px) {
+  body { font-size: 1rem; }
+  .barra-aula { flex-basis: 100%; }
+  .andamento input { width: 5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; transition: none !important; }
+}
+
+/* Braço do violão (aparece no lugar do teclado quando o instrumento é o violão) */
+.braco {
+  display: grid;
+  grid-auto-rows: 32px;
+  width: max-content;
+  margin: 0 auto;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font: 600 0.7rem var(--f-titulo);
+}
+.corda-nome {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.2rem;
+  padding-right: 0.45rem;
+  color: var(--tinta-suave);
+  white-space: nowrap;
+}
+.corda-nome small { font-size: 0.6rem; opacity: 0.75; }
+.casa {
+  position: relative;
+  padding: 0;
+  border: 0;
+  border-right: 2px solid var(--traste);
+  background: var(--madeira);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  font: inherit;
+}
+.casa::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: -2px;
+  top: 50%;
+  height: var(--espessura, 1px);
+  transform: translateY(-50%);
+  background: var(--corda);
+}
+.casa.solta { background: transparent; border-right: 6px solid var(--pestana); }
+.casa.solta::before { right: -6px; }
+.casa .nome {
+  position: relative;
+  z-index: 1;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 5px;
+  border-radius: 999px;
+  font-size: 0.62rem;
+  line-height: 1;
+  pointer-events: none;
+}
+.casa:hover .nome { display: inline-flex; background: color-mix(in srgb, var(--tinta) 16%, transparent); }
+.casa:focus-visible { outline: 2px solid var(--vinho); outline-offset: -2px; }
+.casa.destaque .nome, .casa.base .nome { display: inline-flex; background: var(--vinho); color: var(--superficie); }
+.casa.soando .nome { display: inline-flex; background: var(--latao); color: var(--superficie); }
+.casa.acertou .nome { display: inline-flex; background: var(--certo); color: var(--superficie); }
+.casa.errou .nome { display: inline-flex; background: var(--errado); color: var(--superficie); }
+.numero-casa {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 4px;
+  color: var(--tinta-suave);
+  font-size: 0.62rem;
+  opacity: 0.6;
+  font-variant-numeric: tabular-nums;
+}
+.numero-casa.marcador { opacity: 1; color: var(--tinta); }
+
+/* Montar acorde */
+.acoes-instrumento { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.secundario[aria-pressed="true"] { background: var(--vinho-fundo); }
+.tecla.escolhida.branca { background: color-mix(in srgb, var(--latao) 30%, var(--tecla-branca)); box-shadow: inset 0 -4px 0 var(--latao); }
+.tecla.escolhida.preta { background: color-mix(in srgb, var(--latao) 60%, var(--tecla-preta)); }
+.casa.escolhida .nome { display: inline-flex; background: transparent; box-shadow: 0 0 0 3px var(--latao); }
+.casa.escolhida.destaque .nome { background: var(--vinho); }
+
+</style>
+</head>
+<body>
+<header class="barra">
+  <div class="barra-interna">
+    <p class="barra-aula"><span class="selo">A12</span> Ritmo avançado</p>
+    <div class="controles">
+      <div class="timbre" role="group" aria-label="Instrumento">
+        <button type="button" id="timbre-piano" data-timbre="piano" aria-pressed="true">Piano</button>
+        <button type="button" id="timbre-violao" data-timbre="violao" aria-pressed="false">Violão</button>
+      </div>
+      <label class="andamento" for="andamento">
+        <span>Andamento</span>
+        <input type="range" id="andamento" min="50" max="150" step="10" value="100">
+        <output id="andamento-valor" for="andamento">100%</output>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main class="aula">
+  <section class="abertura">
+    <p class="rotulo">Teoria musical · Avançado</p>
+    <h1>Ritmo avançado</h1>
+    <p class="chamada">Polirritmia, hemíola, métrica mista, modulação métrica e os ritmos do samba, do baião e da bossa.</p>
+    <div class="ficha">
+      <div>
+        <h2 class="rotulo">Você vai aprender</h2>
+        <ul>
+          <li>Ouvir e tocar o <strong>dois contra três</strong></li>
+          <li>Reconhecer a <strong>hemíola</strong></li>
+          <li>Ler a <strong>métrica mista</strong></li>
+          <li>Entender a <strong>modulação métrica</strong></li>
+          <li>Reconhecer as células do <strong>samba</strong>, do <strong>baião</strong> e da <strong>bossa nova</strong></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="rotulo">Antes, é bom saber</h2>
+        <ul>
+          <li>Compassos compostos e irregulares (M01)</li>
+          <li>Contraponto (A10)</li>
+        </ul>
+      </div>
+    </div>
+    <nav class="indice" aria-label="Seções da aula">
+      <ol>
+        <li><a href="#secao-1">Antes de começar</a></li>
+        <li><a href="#secao-2">Polirritmia: dois contra três</a></li>
+        <li><a href="#secao-3">Hemíola</a></li>
+        <li><a href="#secao-4">Métrica mista</a></li>
+        <li><a href="#secao-5">Modulação métrica</a></li>
+        <li><a href="#secao-6">Ritmos brasileiros</a></li>
+        <li><a href="#secao-7">Passo a passo: ler uma polirritmia</a></li>
+        <li><a href="#secao-8">Cuidado com este erro</a></li>
+        <li><a href="#exercicios">Exercícios</a></li>
+        <li><a href="#resumo">Resumo</a></li>
+      </ol>
+    </nav>
+  </section>
+
+  <section class="secao" id="secao-1">
+    <h2><span class="num">1</span>Antes de começar</h2>
+    <div class="prosa"><p>Responda de cabeça, sem consultar nada. Depois confira.</p>
+<ol>
+<li>Quantas colcheias há num compasso 7/8? Como elas costumam se agrupar?</li>
+<li>O que é uma tercina?</li>
+<li>Qual é a síncope característica da música brasileira?</li>
+</ol></div>
+    <details class="resposta"><summary>Conferir as respostas</summary><div class="prosa"><ol>
+<li>Sete, em grupos de 2 e de 3, como 2 + 2 + 3.</li>
+<li>Três notas no tempo de duas.</li>
+<li>Semicolcheia, colcheia, semicolcheia, num só tempo.</li>
+</ol></div></details>
+    <figure class="exemplo" data-exemplo="ex-abertura">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Duas camadas</p>
+        <button type="button" class="tocar" data-tocar="ex-abertura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-abertura"></div>
+      <figcaption>Ouça o grave e o agudo. Quantas notas cada um toca por compasso?</figcaption>
+    </figure>
+    <div class="prosa"><p>O grave toca <strong>três</strong> notas por compasso, e o agudo, <strong>duas</strong>. As duas camadas começam juntas e só voltam a coincidir no compasso seguinte: é a <strong>polirritmia</strong> dois contra três.</p>
+<p>Ao final, você vai ouvir polirritmias e hemíolas, ler métricas mistas, entender a modulação métrica e reconhecer as células do samba, do baião e da bossa nova.</p></div>
+  </section>
+  <section class="secao" id="secao-2">
+    <h2><span class="num">2</span>Polirritmia: dois contra três</h2>
+    <div class="prosa"><p>Na <strong>polirritmia</strong>, duas divisões diferentes do mesmo trecho soam ao mesmo tempo. A mais comum é o <strong>dois contra três</strong>: no compasso 3/4, uma camada toca três semínimas e a outra duas semínimas pontuadas. A segunda nota do agudo cai <strong>entre</strong> o 2º e o 3º tempos.</p>
+<p>Para tocar com as duas mãos, conte em colcheias, <strong>1 e 2 e 3 e</strong>: o grave toca no 1, no 2 e no 3; o agudo, no 1 e no "e" do 2.</p></div>
+    <figure class="exemplo" data-exemplo="ex-tres">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Só o três</p>
+        <button type="button" class="tocar" data-tocar="ex-tres"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-tres"></div>
+      <figcaption>Três semínimas por compasso.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-dois">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Só o dois</p>
+        <button type="button" class="tocar" data-tocar="ex-dois"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-dois"></div>
+      <figcaption>Duas semínimas pontuadas por compasso.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-dois-contra-tres">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Os dois juntos</p>
+        <button type="button" class="tocar" data-tocar="ex-dois-contra-tres"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-dois-contra-tres"></div>
+      <figcaption>Na partitura, a segunda nota do agudo aparece ligada: ela começa no meio do 2º tempo.</figcaption>
+    </figure>
+  </section>
+  <section class="secao" id="secao-3">
+    <h2><span class="num">3</span>Hemíola</h2>
+    <div class="prosa"><p>A <strong>hemíola</strong> é o dois contra três esticado: <strong>dois compassos de 3/4</strong> soam como <strong>um compasso de 3/2</strong>, com três apoios de dois tempos cada. Ela aparece muito nas cadências da música barroca e também em valsas, e dá a sensação de que o ritmo freia antes do fim.</p></div>
+    <figure class="exemplo" data-exemplo="ex-ternario">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Sem hemíola</p>
+        <button type="button" class="tocar" data-tocar="ex-ternario"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-ternario"></div>
+      <figcaption>Apoio no 1º tempo de cada compasso.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-hemiola">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Com hemíola</p>
+        <button type="button" class="tocar" data-tocar="ex-hemiola"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-hemiola"></div>
+      <figcaption>No 2º e 3º compassos, os apoios caem a cada dois tempos: Fá, Mi, Ré.</figcaption>
+    </figure>
+  </section>
+  <section class="secao" id="secao-4">
+    <h2><span class="num">4</span>Métrica mista</h2>
+    <div class="prosa"><p>Na <strong>métrica mista</strong>, os grupos de 2 e de 3 se combinam de jeitos diferentes. Isso acontece de duas maneiras:</p>
+<ul>
+<li>dentro de um compasso irregular, mudando o <strong>agrupamento</strong>: o 7/8 pode ser 2 + 2 + 3, 3 + 2 + 2 ou 2 + 3 + 2;</li>
+<li>trocando a <strong>fórmula de compasso</strong> de um compasso para o outro, como 3/4, 2/4, 3/4, 2/4.</li>
+</ul>
+<p>Para ler, conte sempre a menor unidade (aqui, a colcheia) e pense nos grupos.</p></div>
+    <figure class="exemplo" data-exemplo="ex-sete-223">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">7/8 como 2 + 2 + 3</p>
+        <button type="button" class="tocar" data-tocar="ex-sete-223"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-sete-223"></div>
+      <figcaption>Curto, curto, longo.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-sete-322">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">7/8 como 3 + 2 + 2</p>
+        <button type="button" class="tocar" data-tocar="ex-sete-322"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-sete-322"></div>
+      <figcaption>Longo, curto, curto: as mesmas sete colcheias, outro desenho.</figcaption>
+    </figure>
+  </section>
+  <section class="secao" id="secao-5">
+    <h2><span class="num">5</span>Modulação métrica</h2>
+    <div class="prosa"><p>Na <strong>modulação métrica</strong>, uma duração do trecho antigo passa a valer outra no trecho novo, e o <strong>andamento muda</strong> sem quebra. A partitura indica a troca com uma equação, como <strong>colcheia de tercina = colcheia</strong>.</p>
+<p>Nos exemplos abaixo, o primeiro trecho está a 80 por minuto e termina em tercinas: são 240 colcheias de tercina por minuto. No segundo, essa mesma velocidade vira a <strong>colcheia normal</strong>, e o andamento passa a 120 por minuto. Ouça um logo depois do outro: as notas rápidas mantêm a velocidade, mas o pulso acelera.</p></div>
+    <figure class="exemplo" data-exemplo="ex-antes">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Antes: 80 por minuto</p>
+        <button type="button" class="tocar" data-tocar="ex-antes"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-antes"></div>
+      <figcaption>Colcheias e depois tercinas.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-depois">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Depois: 120 por minuto</p>
+        <button type="button" class="tocar" data-tocar="ex-depois"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-depois"></div>
+      <figcaption>As colcheias têm a velocidade das tercinas de antes.</figcaption>
+    </figure>
+    <aside class="dica"><p class="rotulo">Dica</p><p>A conta: no trecho novo cabem 2 colcheias por tempo, onde antes cabiam 3 tercinas. Então o tempo novo é 3/2 do antigo: 80 × 3/2 = 120.</p></aside>
+  </section>
+  <section class="secao" id="secao-6">
+    <h2><span class="num">6</span>Ritmos brasileiros</h2>
+    <div class="prosa"><p><strong>Samba.</strong> Em 2/4, o tempo mais forte é o <strong>segundo</strong>: é nele que bate o surdo de primeira (ou de marcação). Por cima, a melodia vive de síncopes, como a síncope característica.</p></div>
+    <figure class="exemplo" data-exemplo="ex-surdo">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">O surdo</p>
+        <button type="button" class="tocar" data-tocar="ex-surdo"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-surdo"></div>
+      <figcaption>Grave no 1º tempo, mais forte e mais agudo no 2º.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-samba">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Samba</p>
+        <button type="button" class="tocar" data-tocar="ex-samba"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-samba"></div>
+      <figcaption>A síncope característica por cima do surdo.</figcaption>
+    </figure>
+    <div class="prosa"><p><strong>Baião.</strong> A célula do baião, na zabumba e no baixo, divide as oito semicolcheias do compasso 2/4 em <strong>3 + 3 + 2</strong>: colcheia pontuada, colcheia pontuada, colcheia. A melodia usa muito o <strong>modo mixolídio</strong> (A06), com a 7ª menor. <em>Baião</em>, de Luiz Gonzaga e Humberto Teixeira, apresentou o gênero ao país.</p></div>
+    <figure class="exemplo" data-exemplo="ex-baiao-baixo">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">A célula do baião</p>
+        <button type="button" class="tocar" data-tocar="ex-baiao-baixo"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-baiao-baixo"></div>
+      <figcaption>3 + 3 + 2 semicolcheias, duas vezes.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-baiao">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Baião</p>
+        <button type="button" class="tocar" data-tocar="ex-baiao"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-baiao"></div>
+      <figcaption>Melodia em Dó mixolídio, com Si♭, no mesmo ritmo da célula.</figcaption>
+    </figure>
+    <div class="prosa"><p><strong>Bossa nova.</strong> No violão da bossa, o polegar marca os tempos no baixo, e os outros dedos tocam o acorde num desenho que ocupa <strong>dois compassos</strong> de 2/4: 16 semicolcheias divididas em <strong>3 + 3 + 4 + 3 + 3</strong>. Muitos acordes caem antes do tempo, e é isso que dá o balanço.</p></div>
+    <figure class="exemplo" data-exemplo="ex-batida">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">O desenho da bossa</p>
+        <button type="button" class="tocar" data-tocar="ex-batida"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-batida"></div>
+      <figcaption>Cinco ataques em dois compassos: 3 + 3 + 4 + 3 + 3.</figcaption>
+    </figure>
+    <figure class="exemplo" data-exemplo="ex-bossa">
+      <div class="exemplo-topo">
+        <p class="exemplo-titulo">Bossa nova</p>
+        <button type="button" class="tocar" data-tocar="ex-bossa"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      </div>
+      <div class="partitura" data-partitura="ex-bossa"></div>
+      <figcaption>O C7M no desenho da bossa, com o baixo marcando os tempos.</figcaption>
+    </figure>
+  </section>
+  <section class="secao" id="secao-7">
+    <h2><span class="num">7</span>Passo a passo: ler uma polirritmia</h2>
+    <div class="prosa"><p>Veja o dois contra três, com o motivo de cada passo.</p>
+<ol>
+<li><strong>Ache a menor unidade comum</strong>: três semínimas e duas semínimas pontuadas cabem em <strong>seis colcheias</strong>.</li>
+<li><strong>Marque onde cada camada toca</strong>: o três toca nas colcheias 1, 3 e 5; o dois, nas colcheias 1 e 4.</li>
+<li><strong>Junte as duas camadas</strong>: colcheias 1 (as duas), 3 (grave), 4 (agudo) e 5 (grave).</li>
+</ol></div>
+    <div class="prosa"><p><strong>Pense antes de abrir a resposta:</strong> por que se usa o <strong>6</strong> como unidade comum?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Porque 6 é o menor número que se divide por 2 e por 3. Para três contra quatro, a unidade comum seria 12.</p></div></details>
+    <div class="prosa"><p>Agora os dois últimos passos são seus, no desenho da bossa: as 16 semicolcheias em 3 + 3 + 4 + 3 + 3. Em que semicolcheias caem os ataques? E quais caem num tempo?</p>
+<p>E agora todos os passos são seus: o baião em 3 + 3 + 2, num compasso 2/4. Em que semicolcheias cai cada ataque?</p></div>
+    <details class="resposta"><summary>Ver as respostas</summary><div class="prosa"><p>Bossa: semicolcheias 1, 4, 7, 11 e 14. Só a 1 cai num tempo (os tempos são 1, 5, 9 e 13): os outros quatro ataques caem fora do tempo.</p>
+<p>Baião: unidade, a semicolcheia (8 por compasso); ataques nas semicolcheias <strong>1, 4 e 7</strong>.</p></div></details>
+  </section>
+  <section class="secao" id="secao-8">
+    <h2><span class="num">8</span>Cuidado com este erro</h2>
+    <div class="prosa"><p>Um colega disse:</p>
+<p>&gt; "Na hemíola, o compasso muda de 3/4 para 2/4."</p>
+<p>O que está errado?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>A fórmula de compasso <strong>não muda</strong>: continua 3/4. O que muda é onde caem os <strong>apoios</strong>, a cada dois tempos, de modo que dois compassos de 3/4 soam como um de 3/2. É um efeito de acentuação, não uma troca de compasso.</p></div></details>
+  </section>
+
+  <section class="secao exercicios" id="exercicios">
+    <h2><span class="num">9</span>Exercícios</h2>
+    <p class="placar" id="placar" aria-live="polite">Responda para ver seus acertos.</p>
+    <article class="exercicio" data-exercicio="0" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 1 · Múltipla escolha</p>
+      <div class="enunciado"><p>No dois contra três em 3/4, onde cai a segunda nota da camada de dois?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">No "e" do 2º tempo</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">No 2º tempo</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">No 3º tempo</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">No "e" do 3º tempo</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Cada nota da camada de dois dura uma semínima e meia: a segunda começa no <strong>"e" do 2º tempo</strong>.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="1" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 2 · Múltipla escolha</p>
+      <div class="enunciado"><p>Qual é a menor unidade comum para tocar <strong>três contra quatro</strong>?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">12</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">7</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">6</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">4</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>12 é o menor número que se divide por 3 e por 4.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="2" data-tipo="percepcao">
+      <p class="rotulo">Exercício 3 · Percepção</p>
+      <div class="enunciado"><p>Ouça. Quantas notas o agudo toca por compasso?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-polirritmia"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-polirritmia" hidden>
+        <div class="partitura" data-partitura="exe-polirritmia"></div>
+        <figcaption>Duas semínimas pontuadas sobre três semínimas.</figcaption>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">Duas, contra três do grave</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Três, como o grave</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Quatro</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>O agudo toca <strong>duas</strong> notas por compasso contra <strong>três</strong> do grave: dois contra três.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="3" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 4 · Múltipla escolha</p>
+      <div class="enunciado"><p>Na <strong>hemíola</strong>, dois compassos de 3/4 soam como:</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">Um compasso de 3/2</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Três compassos de 2/4</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Um compasso de 6/8</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Um compasso de 4/4</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Seis tempos com apoio a cada dois: <strong>três mínimas</strong>, como um compasso de <strong>3/2</strong>.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="4" data-tipo="percepcao">
+      <p class="rotulo">Exercício 5 · Percepção</p>
+      <div class="enunciado"><p>Ouça. Em que compassos aparece a hemíola?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-hemiola"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-hemiola" hidden>
+        <div class="partitura" data-partitura="exe-hemiola"></div>
+        <figcaption>Hemíola no 2º e 3º compassos.</figcaption>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">No 2º e no 3º</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">No 1º e no 2º</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Só no último</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Em nenhum</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>No <strong>2º e 3º</strong> compassos, os apoios caem a cada dois tempos: Fá, Mi, Ré.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="5" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 6 · Múltipla escolha</p>
+      <div class="enunciado"><p>Um 7/8 escrito como semínima pontuada, semínima, semínima. Qual é o agrupamento?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">3 + 2 + 2</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">2 + 2 + 3</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">2 + 3 + 2</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">4 + 3</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Semínima pontuada vale 3 colcheias, e cada semínima, 2: <strong>3 + 2 + 2</strong>.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="6" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 7 · Múltipla escolha</p>
+      <div class="enunciado"><p>Um trecho a 60 por minuto termina em tercinas. Se a colcheia de tercina virar a nova colcheia, qual é o novo andamento?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">90</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">120</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">40</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">180</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>3 tercinas por tempo viram 2 colcheias por tempo: 60 × 3/2 = <strong>90</strong>.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="7" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 8 · Múltipla escolha</p>
+      <div class="enunciado"><p>Na modulação métrica, o que acontece com o andamento?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">Muda, a partir de uma duração que fica igual</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Fica sempre igual</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Para</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Muda ao acaso</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Uma duração do trecho antigo vira outra no novo, e o <strong>pulso muda</strong> sem quebra.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="8" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 9 · Múltipla escolha</p>
+      <div class="enunciado"><p>No samba em 2/4, qual é o tempo mais forte, marcado pelo surdo de primeira?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">O segundo</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">O primeiro</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">O "e" do primeiro</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Nenhum</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>No samba, o surdo de primeira bate no <strong>segundo tempo</strong>.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="9" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 10 · Múltipla escolha</p>
+      <div class="enunciado"><p>Como a célula do baião divide as oito semicolcheias do 2/4?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">3 + 3 + 2</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">2 + 2 + 2 + 2</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">4 + 4</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">3 + 2 + 3</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Colcheia pontuada, colcheia pontuada, colcheia: <strong>3 + 3 + 2</strong>.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="10" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 11 · Múltipla escolha</p>
+      <div class="enunciado"><p>O desenho da batida da bossa nova ocupa quantos compassos de 2/4?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">Dois</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Um</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Três</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Quatro</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>São 16 semicolcheias em 3 + 3 + 4 + 3 + 3: <strong>dois compassos</strong> de 2/4.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="11" data-tipo="percepcao">
+      <p class="rotulo">Exercício 12 · Percepção</p>
+      <div class="enunciado"><p>Ouça e diga qual é o ritmo.</p></div>
+      <button type="button" class="tocar" data-tocar="exe-ritmo"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-ritmo" hidden>
+        <div class="partitura" data-partitura="exe-ritmo"></div>
+        <figcaption>Baião: 3 + 3 + 2.</figcaption>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">Baião</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Bossa nova</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Samba</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>Dois ataques longos e um curto em cada compasso, <strong>3 + 3 + 2</strong>: a célula do <strong>baião</strong>.</p></div>
+      </div>
+    </article>
+  </section>
+
+  <section class="secao" id="resumo">
+    <h2><span class="num">10</span>Resumo</h2>
+    <ul class="resumo">
+      <li><strong>Polirritmia</strong>: divisões diferentes ao mesmo tempo. Dois contra três em 3/4: unidade comum de 6 colcheias.</li>
+      <li><strong>Hemíola</strong>: dois compassos de 3/4 que soam como um de 3/2.</li>
+      <li><strong>Métrica mista</strong>: agrupamentos diferentes (2 + 2 + 3, 3 + 2 + 2) ou fórmulas que se alternam.</li>
+      <li><strong>Modulação métrica</strong>: uma duração do trecho antigo vira outra no novo, e o andamento muda.</li>
+      <li>Samba: forte no <strong>2º tempo</strong>. Baião: <strong>3 + 3 + 2</strong>. Bossa: <strong>3 + 3 + 4 + 3 + 3</strong> em dois compassos.</li>
+    </ul>
+    <div class="para-o-chat">
+      <p class="rotulo">Leve para o chat do professor</p>
+      <p id="pergunta-chat">Me passe ritmos curtos por escrito, um de cada vez, com polirritmias, métricas mistas e células brasileiras, para eu contar as subdivisões e dizer onde cai cada ataque, e me corrija.</p>
+      <button type="button" id="copiar-pergunta" class="secundario">Copiar pergunta</button>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <p>Aula A12 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
+</footer>
+
+<script type="application/json" id="dados-aula">{"codigo": "A12", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura": {"id": "ex-abertura", "titulo": "Duas camadas", "legenda": "Ouça o grave e o agudo. Quantas notas cada um toca por compasso?", "abc": "X:1\nM:3/4\nL:1/4\nK:C\n[e-C] [eC-]/2[e-C]/2 [eC] | [e-C] [eC-]/2[e-C]/2 [eC] |]\n", "andamento": 72, "eventos": [{"midis": [60, 76], "duracao": 1.0, "ligar": [76]}, {"midis": [60, 76], "duracao": 0.5, "ligar": [60]}, {"midis": [60, 76], "duracao": 0.5, "ligar": [76]}, {"midis": [60, 76], "duracao": 1.0}, {"midis": [60, 76], "duracao": 1.0, "ligar": [76]}, {"midis": [60, 76], "duracao": 0.5, "ligar": [60]}, {"midis": [60, 76], "duracao": 0.5, "ligar": [76]}, {"midis": [60, 76], "duracao": 1.0}]}, "ex-tres": {"id": "ex-tres", "titulo": "Só o três", "legenda": "Três semínimas por compasso.", "abc": "X:1\nM:3/4\nL:1/4\nK:C\nC C C |]\n", "andamento": 72, "eventos": [{"midis": [60], "duracao": 1.0}, {"midis": [60], "duracao": 1.0}, {"midis": [60], "duracao": 1.0}]}, "ex-dois": {"id": "ex-dois", "titulo": "Só o dois", "legenda": "Duas semínimas pontuadas por compasso.", "abc": "X:1\nM:3/4\nL:1/4\nK:C\ne3/2 e3/2 |]\n", "andamento": 72, "eventos": [{"midis": [76], "duracao": 1.5}, {"midis": [76], "duracao": 1.5}]}, "ex-dois-contra-tres": {"id": "ex-dois-contra-tres", "titulo": "Os dois juntos", "legenda": "Na partitura, a segunda nota do agudo aparece ligada: ela começa no meio do 2º tempo.", "abc": "X:1\nM:3/4\nL:1/4\nK:C\n[e-C] [eC-]/2[e-C]/2 [eC] | [e-C] [eC-]/2[e-C]/2 [eC] |]\n", "andamento": 72, "eventos": [{"midis": [60, 76], "duracao": 1.0, "ligar": [76]}, {"midis": [60, 76], "duracao": 0.5, "ligar": [60]}, {"midis": [60, 76], "duracao": 0.5, "ligar": [76]}, {"midis": [60, 76], "duracao": 1.0}, {"midis": [60, 76], "duracao": 1.0, "ligar": [76]}, {"midis": [60, 76], "duracao": 0.5, "ligar": [60]}, {"midis": [60, 76], "duracao": 0.5, "ligar": [76]}, {"midis": [60, 76], "duracao": 1.0}]}, "ex-ternario": {"id": "ex-ternario", "titulo": "Sem hemíola", "legenda": "Apoio no 1º tempo de cada compasso.", "abc": "X:1\nM:3/4\nL:1/4\nK:C\n!>!c d e | !>!f e e | !>!d d d | !>!c3 |]\n", "andamento": 96, "eventos": [{"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [74], "duracao": 1.0, "intensidade": 0.66}, {"midis": [76], "duracao": 1.0, "intensidade": 0.66}, {"midis": [77], "duracao": 1.0, "intensidade": 0.91}, {"midis": [76], "duracao": 1.0, "intensidade": 0.66}, {"midis": [76], "duracao": 1.0, "intensidade": 0.66}, {"midis": [74], "duracao": 1.0, "intensidade": 0.91}, {"midis": [74], "duracao": 1.0, "intensidade": 0.66}, {"midis": [74], "duracao": 1.0, "intensidade": 0.66}, {"midis": [72], "duracao": 3.0, "intensidade": 0.91}]}, "ex-hemiola": {"id": "ex-hemiola", "titulo": "Com hemíola", "legenda": "No 2º e 3º compassos, os apoios caem a cada dois tempos: Fá, Mi, Ré.", "abc": "X:1\nM:3/4\nL:1/4\nK:C\n!>!c d e | !>!f2 !>!e- | e !>!d2 | !>!c3 |]\n", "andamento": 96, "eventos": [{"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [74], "duracao": 1.0, "intensidade": 0.66}, {"midis": [76], "duracao": 1.0, "intensidade": 0.66}, {"midis": [77], "duracao": 2.0, "intensidade": 0.91}, {"midis": [76], "duracao": 1.0, "ligada": true, "intensidade": 0.91}, {"midis": [76], "duracao": 1.0, "intensidade": 0.66}, {"midis": [74], "duracao": 2.0, "intensidade": 0.91}, {"midis": [72], "duracao": 3.0, "intensidade": 0.91}]}, "ex-sete-223": {"id": "ex-sete-223", "titulo": "7/8 como 2 + 2 + 3", "legenda": "Curto, curto, longo.", "abc": "X:1\nM:7/8\nL:1/4\nK:C\n!>!c !>!G !>!E3/2 | !>!c !>!G !>!E3/2 |]\n", "andamento": 150, "eventos": [{"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [67], "duracao": 1.0, "intensidade": 0.91}, {"midis": [64], "duracao": 1.5, "intensidade": 0.91}, {"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [67], "duracao": 1.0, "intensidade": 0.91}, {"midis": [64], "duracao": 1.5, "intensidade": 0.91}]}, "ex-sete-322": {"id": "ex-sete-322", "titulo": "7/8 como 3 + 2 + 2", "legenda": "Longo, curto, curto: as mesmas sete colcheias, outro desenho.", "abc": "X:1\nM:7/8\nL:1/4\nK:C\n!>!c3/2 !>!G !>!E | !>!c3/2 !>!G !>!E |]\n", "andamento": 150, "eventos": [{"midis": [72], "duracao": 1.5, "intensidade": 0.91}, {"midis": [67], "duracao": 1.0, "intensidade": 0.91}, {"midis": [64], "duracao": 1.0, "intensidade": 0.91}, {"midis": [72], "duracao": 1.5, "intensidade": 0.91}, {"midis": [67], "duracao": 1.0, "intensidade": 0.91}, {"midis": [64], "duracao": 1.0, "intensidade": 0.91}]}, "ex-antes": {"id": "ex-antes", "titulo": "Antes: 80 por minuto", "legenda": "Colcheias e depois tercinas.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nC/2D/2 E/2F/2 | (3:2:3G/2F/2E/2 (3:2:3F/2E/2D/2 | (3:2:3E/2D/2C/2 (3:2:3D/2C/2B,/2 |]\n", "andamento": 80, "eventos": [{"midis": [60], "duracao": 0.5}, {"midis": [62], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [67], "duracao": 0.3333333333333333}, {"midis": [65], "duracao": 0.3333333333333333}, {"midis": [64], "duracao": 0.3333333333333333}, {"midis": [65], "duracao": 0.3333333333333333}, {"midis": [64], "duracao": 0.3333333333333333}, {"midis": [62], "duracao": 0.3333333333333333}, {"midis": [64], "duracao": 0.3333333333333333}, {"midis": [62], "duracao": 0.3333333333333333}, {"midis": [60], "duracao": 0.3333333333333333}, {"midis": [62], "duracao": 0.3333333333333333}, {"midis": [60], "duracao": 0.3333333333333333}, {"midis": [59], "duracao": 0.3333333333333333}]}, "ex-depois": {"id": "ex-depois", "titulo": "Depois: 120 por minuto", "legenda": "As colcheias têm a velocidade das tercinas de antes.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nC/2E/2 G/2E/2 | F/2D/2 B,/2D/2 | C2 |]\n", "andamento": 120, "eventos": [{"midis": [60], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [67], "duracao": 0.5}, {"midis": [64], "duracao": 0.5}, {"midis": [65], "duracao": 0.5}, {"midis": [62], "duracao": 0.5}, {"midis": [59], "duracao": 0.5}, {"midis": [62], "duracao": 0.5}, {"midis": [60], "duracao": 2.0}]}, "ex-surdo": {"id": "ex-surdo", "titulo": "O surdo", "legenda": "Grave no 1º tempo, mais forte e mais agudo no 2º.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nG, !>!C | G, !>!C |]\n", "andamento": 96, "eventos": [{"midis": [55], "duracao": 1.0, "intensidade": 0.66}, {"midis": [60], "duracao": 1.0, "intensidade": 0.91}, {"midis": [55], "duracao": 1.0, "intensidade": 0.66}, {"midis": [60], "duracao": 1.0, "intensidade": 0.91}]}, "ex-samba": {"id": "ex-samba", "titulo": "Samba", "legenda": "A síncope característica por cima do surdo.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\n[GG,]/4A/2G/4 !>![E-C]/4E3/4 | [GG,]/4A/2G/4 !>![c-C]/4c3/4 |]\n", "andamento": 96, "eventos": [{"midis": [55, 67], "duracao": 0.25, "intensidade": 0.66}, {"midis": [69], "duracao": 0.5, "intensidade": 0.66}, {"midis": [67], "duracao": 0.25, "intensidade": 0.66}, {"midis": [60, 64], "duracao": 0.25, "ligar": [64], "intensidade": 0.91}, {"midis": [64], "duracao": 0.75, "intensidade": 0.66}, {"midis": [55, 67], "duracao": 0.25, "intensidade": 0.66}, {"midis": [69], "duracao": 0.5, "intensidade": 0.66}, {"midis": [67], "duracao": 0.25, "intensidade": 0.66}, {"midis": [60, 72], "duracao": 0.25, "ligar": [72], "intensidade": 0.91}, {"midis": [72], "duracao": 0.75, "intensidade": 0.66}]}, "ex-baiao-baixo": {"id": "ex-baiao-baixo", "titulo": "A célula do baião", "legenda": "3 + 3 + 2 semicolcheias, duas vezes.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nC3/4C3/4 G,/2 | C3/4C3/4 G,/2 |]\n", "andamento": 88, "eventos": [{"midis": [60], "duracao": 0.75}, {"midis": [60], "duracao": 0.75}, {"midis": [55], "duracao": 0.5}, {"midis": [60], "duracao": 0.75}, {"midis": [60], "duracao": 0.75}, {"midis": [55], "duracao": 0.5}]}, "ex-baiao": {"id": "ex-baiao", "titulo": "Baião", "legenda": "Melodia em Dó mixolídio, com Si♭, no mesmo ritmo da célula.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\n[cC]3/4[cC]3/4 [_BG,]/2 | [GC]3/4[GC]3/4 [EG,]/2 | [FC]3/4[GC]3/4 [_BG,]/2 | [cC]3/4[GC]3/4 [cG,]/2 |]\n", "andamento": 88, "eventos": [{"midis": [60, 72], "duracao": 0.75}, {"midis": [60, 72], "duracao": 0.75}, {"midis": [55, 70], "duracao": 0.5}, {"midis": [60, 67], "duracao": 0.75}, {"midis": [60, 67], "duracao": 0.75}, {"midis": [55, 64], "duracao": 0.5}, {"midis": [60, 65], "duracao": 0.75}, {"midis": [60, 67], "duracao": 0.75}, {"midis": [55, 70], "duracao": 0.5}, {"midis": [60, 72], "duracao": 0.75}, {"midis": [60, 67], "duracao": 0.75}, {"midis": [55, 72], "duracao": 0.5}]}, "ex-batida": {"id": "ex-batida", "titulo": "O desenho da bossa", "legenda": "Cinco ataques em dois compassos: 3 + 3 + 4 + 3 + 3.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nc3/4c/4- c/2c/2- | c/2c/2- c/4c3/4 |]\n", "andamento": 72, "eventos": [{"midis": [72], "duracao": 0.75}, {"midis": [72], "duracao": 0.25, "ligar": [72]}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5, "ligar": [72]}, {"midis": [72], "duracao": 0.5}, {"midis": [72], "duracao": 0.5, "ligar": [72]}, {"midis": [72], "duracao": 0.25}, {"midis": [72], "duracao": 0.75}]}, "ex-bossa": {"id": "ex-bossa", "titulo": "Bossa nova", "legenda": "O C7M no desenho da bossa, com o baixo marcando os tempos.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\n[EGBC-]3/4[E-G-B-C]/4 [EGBG,-]/2[E-G-B-G,]/2 | [EGBC-]/2[E-G-B-C]/2 [EGBG,-]/4[EGBG,]3/4 |]\n", "andamento": 72, "eventos": [{"midis": [60, 64, 67, 71], "duracao": 0.75, "ligar": [60]}, {"midis": [60, 64, 67, 71], "duracao": 0.25, "ligar": [64, 67, 71]}, {"midis": [55, 64, 67, 71], "duracao": 0.5, "ligar": [55]}, {"midis": [55, 64, 67, 71], "duracao": 0.5, "ligar": [64, 67, 71]}, {"midis": [60, 64, 67, 71], "duracao": 0.5, "ligar": [60]}, {"midis": [60, 64, 67, 71], "duracao": 0.5, "ligar": [64, 67, 71]}, {"midis": [55, 64, 67, 71], "duracao": 0.25, "ligar": [55]}, {"midis": [55, 64, 67, 71], "duracao": 0.75}]}, "exe-polirritmia": {"id": "exe-polirritmia", "titulo": "Duas camadas", "legenda": "Duas semínimas pontuadas sobre três semínimas.", "abc": "X:1\nM:3/4\nL:1/4\nK:C\n[e-C] [eC-]/2[e-C]/2 [eC] | [e-C] [eC-]/2[e-C]/2 [eC] |]\n", "andamento": 72, "eventos": [{"midis": [60, 76], "duracao": 1.0, "ligar": [76]}, {"midis": [60, 76], "duracao": 0.5, "ligar": [60]}, {"midis": [60, 76], "duracao": 0.5, "ligar": [76]}, {"midis": [60, 76], "duracao": 1.0}, {"midis": [60, 76], "duracao": 1.0, "ligar": [76]}, {"midis": [60, 76], "duracao": 0.5, "ligar": [60]}, {"midis": [60, 76], "duracao": 0.5, "ligar": [76]}, {"midis": [60, 76], "duracao": 1.0}]}, "exe-hemiola": {"id": "exe-hemiola", "titulo": "Frase em 3/4", "legenda": "Hemíola no 2º e 3º compassos.", "abc": "X:1\nM:3/4\nL:1/4\nK:C\n!>!c d e | !>!f2 !>!e- | e !>!d2 | !>!c3 |]\n", "andamento": 96, "eventos": [{"midis": [72], "duracao": 1.0, "intensidade": 0.91}, {"midis": [74], "duracao": 1.0, "intensidade": 0.66}, {"midis": [76], "duracao": 1.0, "intensidade": 0.66}, {"midis": [77], "duracao": 2.0, "intensidade": 0.91}, {"midis": [76], "duracao": 1.0, "ligada": true, "intensidade": 0.91}, {"midis": [76], "duracao": 1.0, "intensidade": 0.66}, {"midis": [74], "duracao": 2.0, "intensidade": 0.91}, {"midis": [72], "duracao": 3.0, "intensidade": 0.91}]}, "exe-ritmo": {"id": "exe-ritmo", "titulo": "Ritmo brasileiro", "legenda": "Baião: 3 + 3 + 2.", "abc": "X:1\nM:2/4\nL:1/4\nK:C\nC3/4C3/4 G,/2 | C3/4C3/4 G,/2 |]\n", "andamento": 88, "eventos": [{"midis": [60], "duracao": 0.75}, {"midis": [60], "duracao": 0.75}, {"midis": [55], "duracao": 0.5}, {"midis": [60], "duracao": 0.75}, {"midis": [60], "duracao": 0.75}, {"midis": [55], "duracao": 0.5}]}}, "teclados": {}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "polirritmia", "correta": 0}, {"indice": 1, "tipo": "multipla_escolha", "conceito": "polirritmia", "correta": 0}, {"indice": 2, "tipo": "percepcao", "conceito": "percepcao-ritmo-avancado", "exemplo": "exe-polirritmia", "correta": 0}, {"indice": 3, "tipo": "multipla_escolha", "conceito": "hemiola", "correta": 0}, {"indice": 4, "tipo": "percepcao", "conceito": "percepcao-ritmo-avancado", "exemplo": "exe-hemiola", "correta": 0}, {"indice": 5, "tipo": "multipla_escolha", "conceito": "metrica-mista", "correta": 0}, {"indice": 6, "tipo": "multipla_escolha", "conceito": "modulacao-metrica", "correta": 0}, {"indice": 7, "tipo": "multipla_escolha", "conceito": "modulacao-metrica", "correta": 0}, {"indice": 8, "tipo": "multipla_escolha", "conceito": "ritmos-brasileiros", "correta": 0}, {"indice": 9, "tipo": "multipla_escolha", "conceito": "ritmos-brasileiros", "correta": 0}, {"indice": 10, "tipo": "multipla_escolha", "conceito": "ritmos-brasileiros", "correta": 0}, {"indice": 11, "tipo": "percepcao", "conceito": "percepcao-ritmo-avancado", "exemplo": "exe-ritmo", "correta": 0}]}</script>
+<script src="https://cdn.jsdelivr.net/npm/abcjs@6.7.1/dist/abcjs-basic-min.js"></script>
+<script>
+/* Aula interativa: partitura (abcjs), som sintetizado no navegador (piano ou violão),
+   teclado clicável e exercícios com correção imediata. Sem dependências além do abcjs. */
+(function () {
+  "use strict";
+
+  var dados = JSON.parse(document.getElementById("dados-aula").textContent);
+
+  function guardar(chave, valor) { try { localStorage.setItem(chave, valor); } catch (e) { /* sem armazenamento */ } }
+  function ler(chave) { try { return localStorage.getItem(chave); } catch (e) { return null; } }
+
+  var estado = {
+    timbre: ler("music-tutor:timbre") || dados.preferencias.timbre || "piano",
+    fatorAndamento: 1
+  };
+
+  /* ------------------------------------------------------------ Som */
+  var Som = (function () {
+    var ctx = null, saidas = {}, cache = new Map(), ativos = new Set();
+
+    function contexto() {
+      if (!ctx) {
+        var AC = window.AudioContext || window.webkitAudioContext;
+        ctx = new AC();
+        var comp = ctx.createDynamicsCompressor();
+        comp.threshold.value = -14; comp.ratio.value = 3;
+        var mestre = ctx.createGain(); mestre.gain.value = 0.9;
+        mestre.connect(comp); comp.connect(ctx.destination);
+
+        var piano = ctx.createBiquadFilter(); piano.type = "lowpass"; piano.frequency.value = 9000;
+        piano.connect(mestre);
+
+        var corpo1 = ctx.createBiquadFilter(); corpo1.type = "peaking"; corpo1.frequency.value = 105; corpo1.Q.value = 1.4; corpo1.gain.value = 4;
+        var corpo2 = ctx.createBiquadFilter(); corpo2.type = "peaking"; corpo2.frequency.value = 230; corpo2.Q.value = 1.2; corpo2.gain.value = 2.5;
+        var brilho = ctx.createBiquadFilter(); brilho.type = "lowpass"; brilho.frequency.value = 4200;
+        corpo1.connect(corpo2); corpo2.connect(brilho); brilho.connect(mestre);
+        saidas = { piano: piano, violao: corpo1 };
+      }
+      if (ctx.state === "suspended") ctx.resume();
+      return ctx;
+    }
+
+    function freq(m) { return 440 * Math.pow(2, (m - 69) / 12); }
+
+    function normalizar(dados, alvo) {
+      var pico = 0;
+      for (var i = 0; i < dados.length; i++) { var a = Math.abs(dados[i]); if (a > pico) pico = a; }
+      if (pico > 0) { var k = alvo / pico; for (var j = 0; j < dados.length; j++) dados[j] *= k; }
+    }
+
+    // Piano: soma de parciais levemente inarmônicos, duas cordas desafinadas e batida do martelo.
+    function bufferPiano(m) {
+      var sr = ctx.sampleRate, f0 = freq(m);
+      var dur = Math.max(1.6, Math.min(4.5, 4.5 - (m - 48) * 0.06));
+      var n = Math.floor(sr * dur), dados = new Float32Array(n);
+      var B = 0.00012 * Math.pow(2, (m - 48) / 18);
+      var limite = Math.min(7000, sr / 2 - 500);
+      for (var h = 1; h <= 40; h++) {
+        var fh = h * f0 * Math.sqrt(1 + B * h * h);
+        if (fh > limite) break;
+        var amp = Math.pow(h, -1.15) * Math.abs(Math.sin(Math.PI * h * 0.12)) * (1 + 0.6 / h);
+        var d1 = (0.55 + 0.32 * h) * Math.pow(f0 / 261.6, 0.55);
+        var d2 = d1 * 0.16;
+        [0.9996, 1.0004].forEach(function (desv) {
+          var w = 2 * Math.PI * fh * desv / sr;
+          var c = Math.cos(w), s = Math.sin(w);
+          var fase = Math.random() * 2 * Math.PI;
+          var re = Math.cos(fase), im = Math.sin(fase);
+          var e1 = Math.exp(-d1 / sr), e2 = Math.exp(-d2 / sr), a1 = 0.72 * amp * 0.5, a2 = 0.28 * amp * 0.5;
+          for (var i = 0; i < n; i++) {
+            dados[i] += (a1 + a2) * im;
+            var nre = re * c - im * s; im = re * s + im * c; re = nre;
+            a1 *= e1; a2 *= e2;
+          }
+        });
+      }
+      var ataque = Math.floor(sr * 0.002), martelo = Math.floor(sr * 0.018), lp = 0;
+      for (var i = 0; i < n; i++) {
+        if (i < martelo) { lp += 0.25 * ((Math.random() * 2 - 1) - lp); dados[i] += lp * 0.05 * (1 - i / martelo); }
+        if (i < ataque) dados[i] *= i / ataque;
+      }
+      normalizar(dados, 0.42);
+      return dados;
+    }
+
+    // Violão: Karplus-Strong com atraso fracionário para manter a afinação nas notas agudas.
+    function bufferViolao(m) {
+      var sr = ctx.sampleRate, f0 = freq(m);
+      var dur = Math.max(1.4, Math.min(3.8, 3.8 - (m - 40) * 0.05));
+      var n = Math.floor(sr * dur), y = new Float32Array(n);
+      var P = sr / f0 - 0.5;
+      var L = Math.ceil(P) + 2, lp = 0;
+      for (var i = 0; i < L; i++) { lp += 0.55 * ((Math.random() * 2 - 1) - lp); y[i] = lp; }
+      var pos = Math.max(1, Math.round(P * 0.18));
+      for (var k = L - 1; k >= pos; k--) y[k] -= 0.6 * y[k - pos];
+      var t60 = Math.max(0.9, 3.2 - (m - 40) * 0.05);
+      var g = Math.pow(10, -3 / (t60 * f0));
+      for (var t = L; t < n; t++) {
+        var d = t - P, i0 = Math.floor(d), fr = d - i0;
+        var a = y[i0] * (1 - fr) + y[i0 + 1] * fr;
+        var b = y[i0 - 1] * (1 - fr) + y[i0] * fr;
+        y[t] = g * 0.5 * (a + b);
+      }
+      var ataque = Math.floor(sr * 0.003);
+      for (var j = 0; j < ataque; j++) y[j] *= j / ataque;
+      normalizar(y, 0.5);
+      return y;
+    }
+
+    function buffer(m, timbre) {
+      var chave = timbre + ":" + m;
+      if (!cache.has(chave)) {
+        var dadosSom = timbre === "violao" ? bufferViolao(m) : bufferPiano(m);
+        var b = ctx.createBuffer(1, dadosSom.length, ctx.sampleRate);
+        b.copyToChannel(dadosSom, 0);
+        cache.set(chave, b);
+      }
+      return cache.get(chave);
+    }
+
+    function nota(m, quando, duracao, timbre, intensidade) {
+      var fonte = ctx.createBufferSource();
+      fonte.buffer = buffer(m, timbre);
+      var ganho = ctx.createGain();
+      ganho.gain.setValueAtTime(intensidade, quando);
+      var fim = quando + duracao;
+      if (timbre === "violao") ganho.gain.setTargetAtTime(0, fim + 0.1, 0.22);
+      else ganho.gain.setTargetAtTime(0, fim, 0.09);
+      fonte.connect(ganho); ganho.connect(saidas[timbre]);
+      fonte.start(quando);
+      fonte.stop(Math.min(quando + fonte.buffer.duration, fim + 1.5));
+      var registro = { fonte: fonte, ganho: ganho };
+      ativos.add(registro);
+      fonte.onended = function () { ativos.delete(registro); };
+    }
+
+    function parar() {
+      if (!ctx) return;
+      ativos.forEach(function (r) {
+        try { r.ganho.gain.cancelScheduledValues(ctx.currentTime); r.ganho.gain.setTargetAtTime(0, ctx.currentTime, 0.03); r.fonte.stop(ctx.currentTime + 0.2); } catch (e) { /* já parou */ }
+      });
+      ativos.clear();
+    }
+
+    // eventos: [{midis: [..], duracao: tempos}]
+    // As notas chegam como estão escritas. O violão soa uma oitava abaixo da escrita.
+    function tocarEventos(eventos, andamento, aoPasso, aoFim) {
+      var c = contexto();
+      var timbre = estado.timbre, oitava = timbre === "violao" ? -12 : 0;
+      eventos.forEach(function (ev) { ev.midis.forEach(function (m) { buffer(m + oitava, timbre); }); });
+      var spb = 60 / (andamento * estado.fatorAndamento);
+      var inicio = c.currentTime + 0.08, t = inicio, timers = [];
+      eventos.forEach(function (ev, idx) {
+        var dur = ev.duracao * spb;
+        var intensidade = ev.intensidade != null ? ev.intensidade * (ev.midis.length > 1 ? 0.8 : 1) : (ev.midis.length > 1 ? 0.62 : 0.8);
+        // Nota ligada à anterior não é atacada de novo: a anterior já soa pelas duas durações.
+        // "ligada" prende o evento inteiro; "ligar", só algumas notas do acorde.
+        function presa(e, m) { return e.ligada || (e.ligar && e.ligar.indexOf(m) >= 0); }
+        ev.midis.forEach(function (m) {
+          if (idx > 0 && presa(eventos[idx - 1], m)) return;
+          var soa = dur;
+          for (var k = idx; presa(eventos[k], m) && k + 1 < eventos.length; k++) soa += eventos[k + 1].duracao * spb;
+          if (ev.staccato) soa = Math.min(soa, 0.4 * dur);
+          nota(m + oitava, t, soa * 0.95, timbre, intensidade);
+        });
+        var atraso = (t - c.currentTime) * 1000;
+        timers.push(setTimeout(function () { if (aoPasso) aoPasso(idx); }, Math.max(0, atraso)));
+        t += dur;
+      });
+      timers.push(setTimeout(function () { if (aoFim) aoFim(); }, (t - c.currentTime) * 1000 + 250));
+      return { cancelar: function () { timers.forEach(clearTimeout); parar(); if (aoFim) aoFim(); } };
+    }
+
+    // Acorde: no piano as notas saem juntas; no violão, um rasgueado rápido da grave para a aguda.
+    function tocarAcorde(midis, espaco) {
+      var c = contexto(), timbre = estado.timbre, oitava = timbre === "violao" ? -12 : 0;
+      var inicio = c.currentTime + 0.05, intensidade = Math.max(0.35, 0.8 - 0.07 * midis.length);
+      midis.forEach(function (m, i) { nota(m + oitava, inicio + i * espaco, 2.2, timbre, intensidade); });
+    }
+
+    return { contexto: contexto, tocarEventos: tocarEventos, tocarAcorde: tocarAcorde, parar: parar };
+  })();
+
+  /* ------------------------------------------------------------ Partituras */
+  var elementosPorExemplo = {};
+  var abcjsPronto = typeof window.ABCJS !== "undefined";
+
+  function desenharPartituras() {
+    document.querySelectorAll("[data-partitura]").forEach(function (alvo) {
+      var id = alvo.getAttribute("data-partitura");
+      var ex = dados.exemplos[id];
+      if (!ex) return;
+      if (!abcjsPronto) {
+        alvo.textContent = "A partitura não carregou (sem conexão). O áudio continua funcionando.";
+        alvo.classList.add("sem-partitura");
+        return;
+      }
+      ABCJS.renderAbc(alvo, ex.abc, {
+        responsive: "resize",
+        add_classes: true,
+        paddingtop: 6,
+        paddingbottom: 6,
+        paddingleft: 0,
+        paddingright: 0,
+        foregroundColor: "currentColor",
+        staffwidth: 520
+      });
+      elementosPorExemplo[id] = elementosPorExemplo[id] || [];
+      elementosPorExemplo[id].push(alvo);
+    });
+  }
+
+  function marcarNota(id, idx) {
+    (elementosPorExemplo[id] || []).forEach(function (alvo) {
+      var notas = alvo.querySelectorAll(".abcjs-note, .abcjs-rest");
+      notas.forEach(function (el, i) { el.classList.toggle("tocando", i === idx); });
+    });
+  }
+
+  /* ------------------------------------------------------------ Botões de tocar */
+  var tocandoAgora = null;
+
+  function aviso(texto) {
+    var el = document.createElement("div");
+    el.className = "aviso-som";
+    el.setAttribute("role", "status");
+    el.textContent = texto;
+    document.body.appendChild(el);
+    setTimeout(function () { el.remove(); }, 3500);
+  }
+
+  function tocarComBotao(botao, eventos, andamento, aoPasso) {
+    if (tocandoAgora && tocandoAgora.botao === botao) { tocandoAgora.controle.cancelar(); return; }
+    if (tocandoAgora) tocandoAgora.controle.cancelar();
+    var texto = botao.querySelector(".texto"), original = texto ? texto.textContent : "";
+    botao.classList.add("ativo");
+    if (texto) texto.textContent = "Parar";
+    var registro = { botao: botao };
+    try {
+      registro.controle = Som.tocarEventos(eventos, andamento, aoPasso, function () {
+        botao.classList.remove("ativo");
+        if (texto) texto.textContent = original;
+        if (aoPasso) aoPasso(-1);
+        if (tocandoAgora === registro) tocandoAgora = null;
+      });
+      tocandoAgora = registro;
+    } catch (e) {
+      botao.classList.remove("ativo");
+      if (texto) texto.textContent = original;
+      aviso("Este navegador não liberou o áudio. Toque de novo ou verifique o volume.");
+    }
+  }
+
+  document.addEventListener("click", function (evento) {
+    var botao = evento.target.closest("[data-tocar]");
+    if (botao) {
+      var id = botao.getAttribute("data-tocar");
+      var ex = dados.exemplos[id];
+      tocarComBotao(botao, ex.eventos, ex.andamento, function (idx) { marcarNota(id, idx); });
+      return;
+    }
+    var botaoTeclado = evento.target.closest("[data-tocar-teclado]");
+    if (botaoTeclado) {
+      var t = instrumentos[botaoTeclado.getAttribute("data-tocar-teclado")];
+      var midis = t.info.destaque.map(function (d) { return d.midi; }).sort(function (a, b) { return a - b; });
+      var eventos = midis.map(function (m) { return { midis: [m], duracao: 1 }; });
+      if (midis.length > 1) eventos.push({ midis: midis, duracao: 2 });
+      tocarComBotao(botaoTeclado, eventos, 80, function (idx) {
+        t.atual.marcarSoando(idx < 0 ? [] : eventos[idx].midis);
+      });
+    }
+  });
+
+  /* ------------------------------------------------------------ Instrumentos interativos
+     Cada teclado da aula vira um braço de violão quando o aluno escolhe "Violão" na barra.
+     Os dois expõem a mesma interface: elemento(midi), marcarSoando(midis). */
+  var BRANCAS = { 0: "Dó", 2: "Ré", 4: "Mi", 5: "Fá", 7: "Sol", 9: "Lá", 11: "Si" };
+  var instrumentos = {};
+
+  function tocarNota(midi, elemento) {
+    Som.tocarEventos([{ midis: [midi], duracao: 1 }], 90);
+    elemento.classList.add("soando");
+    setTimeout(function () { elemento.classList.remove("soando"); }, 350);
+  }
+
+  // A nota soa no instante em que o dedo ou o mouse encosta (pointerdown), então vários dedos tocam
+  // várias notas juntas. Enter e espaço no teclado do computador chegam como clique sem ponteiro.
+  function ouvirToques(el, seletor, aoClicar) {
+    function acionar(alvo) {
+      var midi = Number(alvo.dataset.midi);
+      if (aoClicar && aoClicar(midi, alvo) === false) return;
+      tocarNota(midi, alvo);
+    }
+    el.onpointerdown = function (evento) {
+      var alvo = evento.target.closest(seletor);
+      if (!alvo || evento.button > 0) return;
+      evento.preventDefault();
+      acionar(alvo);
+    };
+    el.onclick = function (evento) {
+      var alvo = evento.target.closest(seletor);
+      if (alvo && evento.detail === 0) acionar(alvo);
+    };
+  }
+
+  function criarTeclado(el, info, aoClicar) {
+    var larguraBranca = 34, larguraPreta = 22, x = 0, teclas = {};
+    for (var m = info.de; m <= info.ate; m++) {
+      var classe = m % 12, branca = classe in BRANCAS;
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "tecla " + (branca ? "branca" : "preta");
+      b.dataset.midi = m;
+      var rotulo = document.createElement("span");
+      rotulo.className = "nome";
+      if (branca) {
+        b.style.left = x + "px";
+        b.style.width = larguraBranca + "px";
+        if (classe === 0) rotulo.textContent = "Dó" + (Math.floor(m / 12) - 1);
+        x += larguraBranca;
+      } else {
+        b.style.left = (x - larguraPreta / 2) + "px";
+        b.style.width = larguraPreta + "px";
+      }
+      b.setAttribute("aria-label", branca ? BRANCAS[classe] + (Math.floor(m / 12) - 1) : "tecla preta");
+      b.appendChild(rotulo);
+      el.appendChild(b);
+      teclas[m] = b;
+    }
+    el.style.width = x + "px";
+    info.destaque.forEach(function (d) {
+      var tecla = teclas[d.midi];
+      if (!tecla) return;
+      tecla.classList.add("destaque");
+      tecla.querySelector(".nome").textContent = d.nome;
+      tecla.setAttribute("aria-label", d.nome + " (destacada)");
+    });
+    ouvirToques(el, ".tecla", aoClicar);
+    return {
+      elemento: function (m) { return teclas[m] || null; },
+      marcarSoando: function (midis) {
+        Object.keys(teclas).forEach(function (k) { teclas[k].classList.toggle("soando", midis.indexOf(Number(k)) >= 0); });
+      }
+    };
+  }
+
+  // Afinação padrão, da 1ª corda (Mi aguda) à 6ª (Mi grave), em altura real (MIDI).
+  var CORDAS = [
+    { som: 64, nome: "Mi" }, { som: 59, nome: "Si" }, { som: 55, nome: "Sol" },
+    { som: 50, nome: "Ré" }, { som: 45, nome: "Lá" }, { som: 40, nome: "Mi" }
+  ];
+  var CASAS = 12, MARCADORES = [3, 5, 7, 9, 12];
+
+  // A partitura de violão é escrita uma oitava acima do som real: Dó4 escrito é a 3ª casa da 5ª corda.
+  function posicoesDe(escrito) {
+    var real = escrito - 12, lista = [];
+    CORDAS.forEach(function (c, corda) {
+      var casa = real - c.som;
+      if (casa >= 0 && casa <= CASAS) lista.push({ corda: corda, casa: casa });
+    });
+    return lista;
+  }
+
+  // Escolhe uma posição por nota, o mais perto possível umas das outras e em cordas diferentes,
+  // como a mão faria. Com poucas notas a busca exaustiva é instantânea.
+  function digitar(midis, ancoras) {
+    ancoras = ancoras || [];
+    var opcoes = midis.map(posicoesDe), melhor = null, menor = Infinity;
+    function custo(escolha) {
+      var todas = ancoras.concat(escolha), casas = todas.map(function (p) { return p.casa; });
+      var abertura = Math.max.apply(null, casas) - Math.min.apply(null, casas);
+      var mesmaCorda = 0;
+      for (var a = 0; a < todas.length; a++) for (var b = a + 1; b < todas.length; b++) if (todas[a].corda === todas[b].corda) mesmaCorda++;
+      var altura = escolha.reduce(function (s, p) { return s + p.casa; }, 0);
+      return abertura * 3 + mesmaCorda * 6 + altura * 0.25;
+    }
+    (function buscar(i, escolha) {
+      if (i === opcoes.length) {
+        var c = custo(escolha);
+        if (c < menor) { menor = c; melhor = escolha.slice(); }
+        return;
+      }
+      if (!opcoes[i].length) { escolha.push(null); buscar(i + 1, escolha); escolha.pop(); return; }
+      opcoes[i].forEach(function (p) { escolha.push(p); buscar(i + 1, escolha); escolha.pop(); });
+    })(0, []);
+    return melhor || [];
+  }
+
+  function larguraCasa(n) { return n === 0 ? 40 : Math.max(38, Math.round(62 * Math.pow(2, -(n - 1) / 12))); }
+
+  function criarBraco(el, info, aoClicar) {
+    var celulas = {}, colunas = ["2.6rem"];
+    for (var n = 0; n <= CASAS; n++) colunas.push(larguraCasa(n) + "px");
+    el.style.gridTemplateColumns = colunas.join(" ");
+
+    CORDAS.forEach(function (c, corda) {
+      var rotulo = document.createElement("span");
+      rotulo.className = "corda-nome";
+      rotulo.innerHTML = "<small>" + (corda + 1) + "ª</small> " + c.nome;
+      el.appendChild(rotulo);
+      for (var casa = 0; casa <= CASAS; casa++) {
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "casa" + (casa === 0 ? " solta" : "");
+        b.style.setProperty("--espessura", (1 + corda * 0.45) + "px");
+        b.dataset.midi = c.som + casa + 12;
+        b.dataset.corda = corda;
+        b.setAttribute("aria-label", (corda + 1) + "ª corda, " + (casa === 0 ? "solta" : "casa " + casa));
+        var nome = document.createElement("span");
+        nome.className = "nome";
+        b.appendChild(nome);
+        el.appendChild(b);
+        celulas[corda + ":" + casa] = b;
+      }
+    });
+    el.appendChild(document.createElement("span"));
+    for (var k = 0; k <= CASAS; k++) {
+      var numero = document.createElement("span");
+      numero.className = "numero-casa" + (MARCADORES.indexOf(k) >= 0 ? " marcador" : "");
+      numero.textContent = k === 0 ? "" : k;
+      el.appendChild(numero);
+    }
+
+    // Posição fixa de cada nota destacada; outras notas (a resposta de um exercício) ficam perto delas.
+    var fixas = {}, ancoras = [];
+    var midisDestaque = info.destaque.map(function (d) { return d.midi; });
+    digitar(midisDestaque).forEach(function (p, i) {
+      if (!p) return;
+      var cel = celulas[p.corda + ":" + p.casa];
+      fixas[midisDestaque[i]] = cel;
+      ancoras.push(p);
+      cel.classList.add("destaque");
+      cel.querySelector(".nome").textContent = info.destaque[i].nome;
+      cel.setAttribute("aria-label", cel.getAttribute("aria-label") + ": " + info.destaque[i].nome + " (destacada)");
+    });
+
+    function elemento(m) {
+      if (!fixas[m]) {
+        var p = digitar([m], ancoras)[0];
+        fixas[m] = p ? celulas[p.corda + ":" + p.casa] : null;
+      }
+      return fixas[m];
+    }
+
+    ouvirToques(el, ".casa", aoClicar);
+    return {
+      elemento: elemento,
+      marcarSoando: function (midis) {
+        el.querySelectorAll(".casa.soando").forEach(function (c) { c.classList.remove("soando"); });
+        midis.forEach(function (m) { var c = elemento(m); if (c) c.classList.add("soando"); });
+      }
+    };
+  }
+
+  // Monta (ou remonta, ao trocar o instrumento) um teclado ou braço e reaplica o estado do exercício.
+  function montarInstrumento(registro) {
+    var el = registro.el, violao = estado.timbre === "violao";
+    registro.acorde = [];
+    el.innerHTML = "";
+    el.removeAttribute("style");
+    el.className = violao ? "braco" : "teclado";
+    registro.atual = (violao ? criarBraco : criarTeclado)(el, registro.info, registro.aoClicar);
+    if (registro.depois) registro.depois(registro.atual);
+  }
+
+  function registrarInstrumento(id, el, info, aoClicar, depois) {
+    var registro = { el: el, info: info, aoClicar: aoClicar, depois: depois, acorde: [], montando: false };
+    instrumentos[id] = registro;
+    montarInstrumento(registro);
+    return registro;
+  }
+
+  // Modo "montar acorde": cada toque marca ou desmarca a nota, e "Tocar juntas" soa tudo de uma vez.
+  // No violão vale uma nota por corda, como na mão: marcar outra casa na mesma corda troca a nota.
+  function alternarNoAcorde(registro, midi, elemento) {
+    var acorde = registro.acorde, i = acorde.indexOf(elemento);
+    if (i >= 0) { acorde.splice(i, 1); elemento.classList.remove("escolhida"); return false; }
+    if (elemento.dataset.corda !== undefined) {
+      acorde.slice().forEach(function (outro) {
+        if (outro.dataset.corda === elemento.dataset.corda) { acorde.splice(acorde.indexOf(outro), 1); outro.classList.remove("escolhida"); }
+      });
+    }
+    acorde.push(elemento);
+    elemento.classList.add("escolhida");
+    return true;
+  }
+
+  function tocarAcorde(registro) {
+    var midis = registro.acorde.map(function (e) { return Number(e.dataset.midi); }).sort(function (a, b) { return a - b; });
+    if (!midis.length) return;
+    Som.tocarAcorde(midis, estado.timbre === "violao" ? 0.035 : 0);
+    registro.acorde.forEach(function (e) { e.classList.add("soando"); setTimeout(function () { e.classList.remove("soando"); }, 600); });
+  }
+
+  function prepararMontagem(id) {
+    var registro = instrumentos[id];
+    var botao = document.querySelector('[data-montar-acorde="' + id + '"]');
+    var tocar = document.querySelector('[data-tocar-acorde="' + id + '"]');
+    if (!registro || !botao || !tocar) return;
+    var original = registro.aoClicar;
+    registro.aoClicar = function (midi, elemento) {
+      if (!registro.montando) return original ? original(midi, elemento) : true;
+      return alternarNoAcorde(registro, midi, elemento);
+    };
+    montarInstrumento(registro);
+    botao.addEventListener("click", function () {
+      registro.montando = !registro.montando;
+      botao.setAttribute("aria-pressed", String(registro.montando));
+      tocar.hidden = !registro.montando;
+      if (!registro.montando) {
+        registro.acorde.forEach(function (e) { e.classList.remove("escolhida"); });
+        registro.acorde = [];
+      }
+    });
+    tocar.addEventListener("click", function () { tocarAcorde(registro); });
+  }
+
+  /* ------------------------------------------------------------ Exercícios */
+  // Dentro do app a aula roda num iframe isolado: as respostas e a troca de instrumento vão para a
+  // página do app, que as registra no progresso do aluno. Aberta sozinha, a aula não envia nada.
+  function avisarApp(mensagem) {
+    if (window.parent === window) return;
+    mensagem.origem = "music-tutor-aula";
+    mensagem.codigo = dados.codigo;
+    window.parent.postMessage(mensagem, "*");
+  }
+
+  var placar = { respondidos: 0, acertos: 0, total: dados.exercicios.length };
+
+  function atualizarPlacar() {
+    var el = document.getElementById("placar");
+    if (!el) return;
+    el.textContent = placar.respondidos === 0
+      ? "Responda para ver seus acertos."
+      : "Acertos: " + placar.acertos + " de " + placar.respondidos + " respondidos (" + placar.total + " no total).";
+  }
+
+  function mostrarRetorno(artigo, certo, texto) {
+    var retorno = artigo.querySelector(".retorno");
+    var veredito = retorno.querySelector(".veredito");
+    veredito.textContent = texto;
+    veredito.className = "veredito " + (certo ? "certo" : "errado");
+    retorno.hidden = false;
+    var oculto = artigo.querySelector(".exemplo.oculto");
+    if (oculto) { oculto.hidden = false; }
+    placar.respondidos += 1;
+    if (certo) placar.acertos += 1;
+    atualizarPlacar();
+  }
+
+  function prepararOpcoes(artigo, exe) {
+    artigo.querySelectorAll(".opcao").forEach(function (botao) {
+      botao.addEventListener("click", function () {
+        var escolhida = Number(botao.dataset.opcao), certo = escolhida === exe.correta;
+        artigo.querySelectorAll(".opcao").forEach(function (b) {
+          b.disabled = true;
+          if (Number(b.dataset.opcao) === exe.correta) b.classList.add("certa");
+        });
+        if (!certo) botao.classList.add("errada");
+        avisarApp({ tipo: "resposta", indice: exe.indice, opcao: escolhida });
+        mostrarRetorno(artigo, certo, certo ? "Isso mesmo." : "Ainda não. A resposta certa está marcada em verde.");
+      });
+    });
+  }
+
+  function prepararTecladoExercicio(artigo, exe) {
+    var el = artigo.querySelector("[data-teclado-exercicio]");
+    var resposta = null;
+
+    // Pinta a resposta. No violão a mesma nota existe em várias casas: vale qualquer uma.
+    function pintar(instrumento, clicado) {
+      var base = instrumento.elemento(exe.base);
+      if (base) base.classList.add("base");
+      if (!resposta) return;
+      var alvo = instrumento.elemento(exe.alvo);
+      if (resposta.certo) {
+        var escolhida = clicado || alvo;
+        if (escolhida) { escolhida.classList.add("acertou"); escolhida.querySelector(".nome").textContent = exe.alvo_nome; }
+        return;
+      }
+      var errada = clicado || instrumento.elemento(resposta.midi);
+      if (errada) errada.classList.add("errou");
+      if (alvo) { alvo.classList.add("acertou"); alvo.querySelector(".nome").textContent = exe.alvo_nome; }
+    }
+
+    var registro = registrarInstrumento("exercicio-" + exe.indice, el, exe.teclado, function (midiTecla, elemento) {
+      if (resposta || midiTecla === exe.base) return true;
+      resposta = { midi: midiTecla, certo: midiTecla === exe.alvo };
+      avisarApp({ tipo: "resposta", indice: exe.indice, midi: midiTecla });
+      pintar(registro.atual, elemento);
+      Som.tocarEventos([{ midis: [exe.base], duracao: 1 }, { midis: [midiTecla], duracao: 1 }, { midis: [exe.base, midiTecla], duracao: 2 }], 90);
+      mostrarRetorno(artigo, resposta.certo, resposta.certo
+        ? "Isso mesmo: a nota é " + exe.alvo_nome + "."
+        : "Ainda não. A nota certa é " + exe.alvo_nome + ", marcada em verde.");
+      return false;
+    }, function (instrumento) { pintar(instrumento, null); });
+    artigo.querySelector("[data-tocar-base]").addEventListener("click", function () {
+      Som.tocarEventos([{ midis: [exe.base], duracao: 1.5 }], 80);
+    });
+  }
+
+  /* ------------------------------------------------------------ Controles */
+  // O instrumento escolhido define o som e o que aparece nos blocos interativos (teclado ou braço).
+  function aplicarTimbre(timbre) {
+    var mudou = estado.timbre !== timbre;
+    estado.timbre = timbre;
+    guardar("music-tutor:timbre", timbre);
+    document.querySelectorAll("[data-timbre]").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.dataset.timbre === timbre));
+    });
+    if (mudou) Object.keys(instrumentos).forEach(function (id) { montarInstrumento(instrumentos[id]); });
+  }
+
+  document.querySelectorAll("[data-timbre]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      aplicarTimbre(b.dataset.timbre);
+      avisarApp({ tipo: "timbre", timbre: b.dataset.timbre });
+      Som.tocarEventos([{ midis: [60, 64, 67], duracao: 1.5 }], 80);
+    });
+  });
+
+  var andamento = document.getElementById("andamento");
+  if (andamento) {
+    andamento.addEventListener("input", function () {
+      estado.fatorAndamento = Number(andamento.value) / 100;
+      document.getElementById("andamento-valor").textContent = andamento.value + "%";
+    });
+  }
+
+  var copiar = document.getElementById("copiar-pergunta");
+  if (copiar) {
+    copiar.addEventListener("click", function () {
+      var texto = document.getElementById("pergunta-chat").textContent;
+      function selecionar() {
+        var r = document.createRange(); r.selectNodeContents(document.getElementById("pergunta-chat"));
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        copiar.textContent = "Texto selecionado";
+      }
+      try {
+        navigator.clipboard.writeText(texto).then(function () { copiar.textContent = "Copiada"; }, selecionar);
+      } catch (e) { selecionar(); }
+    });
+  }
+
+  /* ------------------------------------------------------------ Início */
+  aplicarTimbre(estado.timbre);
+  desenharPartituras();
+  document.querySelectorAll("[data-teclado]").forEach(function (el) {
+    var id = el.getAttribute("data-teclado");
+    registrarInstrumento(id, el, dados.teclados[id]);
+    prepararMontagem(id);
+  });
+  dados.exercicios.forEach(function (exe) {
+    var artigo = document.querySelector('[data-exercicio="' + exe.indice + '"]');
+    if (!artigo) return;
+    if (exe.tipo === "teclado") prepararTecladoExercicio(artigo, exe);
+    else prepararOpcoes(artigo, exe);
+  });
+  atualizarPlacar();
+})();
+
+</script>
+</body>
+</html>

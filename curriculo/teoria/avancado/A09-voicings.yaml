@@ -1,0 +1,35 @@
+codigo: A09
+titulo: Voicings
+nivel: avancado
+assunto: teoria
+prerequisitos:
+  - M10  # Condução de vozes básica
+  - A01  # Tensões e extensões
+  - A02  # Acordes alterados
+objetivos:
+  - Diferenciar posição fechada e aberta de um mesmo acorde
+  - Montar voicings drop 2 e drop 3 a partir da posição fechada
+  - Usar as notas-guia (3ª e 7ª) e os voicings de três notas
+  - Montar voicings em quartas
+  - Montar upper structures, uma tríade sobre o acorde 7
+  - Usar clusters, notas vizinhas soando juntas
+conceitos:
+  - posicao-fechada-e-aberta
+  - drop-2-e-drop-3
+  - notas-guia
+  - voicing-em-quartas
+  - upper-structure
+  - cluster
+  - percepcao-voicings
+fora_do_escopo:
+  - Distribuição de vozes para orquestra e banda (módulo A16)
+  - Técnica de mão esquerda e acompanhamento no instrumento
+exemplos_semente:
+  - "C7M fechado e em drop 2"
+  - "Dm7, G7, C7M só com 3ª e 7ª"
+  - "Dm7(11) em quartas"
+  - "Tríade de Ré maior sobre C7"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

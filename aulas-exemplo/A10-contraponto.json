@@ -1,0 +1,1734 @@
+{
+  "codigo": "A10",
+  "titulo": "Contraponto",
+  "nivel": "avancado",
+  "resumo_curto": "Consonâncias, movimentos, as cinco espécies, imitação e cânone.",
+  "prerequisitos": [
+    "Intervalos aumentados e diminutos (M02)",
+    "Condução de vozes básica (M10)",
+    "Notas melódicas (M15)"
+  ],
+  "objetivos": [
+    "Classificar **consonâncias** e **dissonâncias**",
+    "Reconhecer os **movimentos** entre duas vozes",
+    "Escrever contraponto de **primeira espécie**",
+    "Entender as **espécies** seguintes e o **retardo**",
+    "Reconhecer **imitação** e **cânone**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quais intervalos são justos?\n2. Na condução de vozes (M10), que movimento entre duas vozes se evita?\n3. O que é uma nota de passagem?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Uníssono, 4ª, 5ª e 8ª.\n2. Quintas e oitavas paralelas.\n3. Uma nota de fora do acorde que liga duas notas por grau conjunto, no tempo fraco.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "Uma melodia",
+            "legenda": "Frère Jacques, a uma voz.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1.0
+              }
+            ],
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "A mesma melodia contra ela mesma",
+            "legenda": "Uma segunda voz entra dois compassos depois, uma oitava acima.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E4",
+                  "C5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "F4",
+                  "D5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "G4"
+                ]
+              },
+              {
+                "notas": [
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E4",
+                  "C5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "F4",
+                  "D5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "G4"
+                ]
+              },
+              {
+                "notas": [
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "E5"
+                ]
+              },
+              {
+                "notas": [
+                  "A4",
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4",
+                  "F5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "F5"
+                ]
+              },
+              {
+                "notas": [
+                  "F4",
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G5"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "G5"
+                ]
+              },
+              {
+                "notas": [
+                  "C4",
+                  "G5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "E5"
+                ]
+              },
+              {
+                "notas": [
+                  "A4",
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4",
+                  "F5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "F5"
+                ]
+              },
+              {
+                "notas": [
+                  "F4",
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G5"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "G5"
+                ]
+              },
+              {
+                "notas": [
+                  "C4",
+                  "G5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "C4",
+                  "A5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G3",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "G3"
+                ]
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E5"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "C4",
+                  "C5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "C4",
+                  "A5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G3",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "G3"
+                ]
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E5"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "C4",
+                  "C5"
+                ],
+                "duracao": 1.0
+              }
+            ],
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Na segunda versão, duas melodias independentes soam juntas e combinam. A arte de escrever melodias simultâneas que fazem sentido sozinhas e juntas é o **contraponto**. O caso da abertura, em que uma voz repete exatamente a outra, é o **cânone**.\n\nAo final, você vai escrever contraponto nota contra nota e reconhecer as espécies, a imitação e o cânone."
+        }
+      ]
+    },
+    {
+      "titulo": "Consonâncias e movimentos",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "No contraponto clássico, os intervalos entre as vozes se dividem em:\n\n- **consonâncias perfeitas**: uníssono, 5ª e 8ª;\n- **consonâncias imperfeitas**: 3ªs e 6ªs;\n- **dissonâncias**: 2ªs, 7ªs, o trítono e a 4ª (que, entre duas vozes, conta como dissonância).\n\nE as vozes podem se mover de quatro jeitos: **paralelo** (mesmo intervalo, mesma direção), **direto** (mesma direção, intervalos diferentes), **contrário** (direções opostas) e **oblíquo** (uma fica, a outra anda)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-paralelas",
+            "titulo": "Quintas paralelas",
+            "legenda": "Dó–Sol indo para Ré–Lá: as duas vozes se fundem e perdem a independência.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-contrario",
+            "titulo": "Movimento contrário",
+            "legenda": "Dó–Sol indo para Ré–Fá: uma sobe, a outra desce.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-obliquo",
+            "titulo": "Movimento oblíquo",
+            "legenda": "O Dó fica, o Mi sobe para Fá.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Primeira espécie: nota contra nota",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O exercício clássico parte de uma melodia dada, o **cantus firmus**, e escreve outra voz, nota contra nota. As regras principais:\n\n1. só **consonâncias**;\n2. começar e terminar numa consonância **perfeita** (8ª, 5ª ou uníssono);\n3. nada de **5ªs ou 8ªs paralelas**;\n4. preferir o **movimento contrário** e o grau conjunto;\n5. no fim, a voz de cima chega à tônica pela **sensível** (6ª → 8ª)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-primeira",
+            "titulo": "Cantus firmus (embaixo) e contraponto (em cima)",
+            "legenda": "Intervalos: 5ª, 3ª, 3ª, 3ª, 6ª, 8ª.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "G4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "D4",
+                  "B4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "C4",
+                  "C5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 88
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "As espécies seguintes",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "As outras espécies soltam o ritmo da voz de cima, uma de cada vez:"
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "As cinco espécies.",
+          "cabecalho": [
+            "Espécie",
+            "Contra cada nota do cantus",
+            "O que entra de novo"
+          ],
+          "linhas": [
+            [
+              "1ª",
+              "uma nota",
+              "só consonâncias"
+            ],
+            [
+              "2ª",
+              "duas notas",
+              "dissonância de passagem no tempo fraco"
+            ],
+            [
+              "3ª",
+              "quatro notas",
+              "passagens e bordaduras"
+            ],
+            [
+              "4ª",
+              "notas ligadas (síncope)",
+              "o retardo: dissonância no tempo forte, resolvendo para baixo"
+            ],
+            [
+              "5ª",
+              "ritmos misturados",
+              "contraponto florido, que combina as anteriores"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-segunda",
+            "titulo": "Segunda espécie",
+            "legenda": "Duas notas contra cada uma. O Sol do 2º compasso é dissonância de passagem (4ª sobre Ré).",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "G4"
+                ],
+                "duracao": 2.0,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 2.0,
+                "ligar": [
+                  "D4"
+                ]
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 2.0,
+                "ligar": [
+                  "F4"
+                ]
+              },
+              {
+                "notas": [
+                  "F4",
+                  "C5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2.0,
+                "ligar": [
+                  "E4"
+                ]
+              },
+              {
+                "notas": [
+                  "E4",
+                  "C5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4"
+                ],
+                "duracao": 2.0,
+                "ligar": [
+                  "D4"
+                ]
+              },
+              {
+                "notas": [
+                  "D4",
+                  "B4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4",
+                  "C5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-quarta",
+            "titulo": "Quarta espécie na cadência",
+            "legenda": "O Dó fica preso sobre o Ré (7ª), desce para Si (6ª) e chega ao Dó (8ª): a cadência 7–6–8.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2.0,
+                "ligar": [
+                  "E4"
+                ]
+              },
+              {
+                "notas": [
+                  "E4",
+                  "C5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "D4",
+                  "C5"
+                ],
+                "duracao": 2.0,
+                "ligar": [
+                  "D4"
+                ]
+              },
+              {
+                "notas": [
+                  "D4",
+                  "B4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4",
+                  "C5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 80
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Imitação e cânone",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na **imitação**, uma voz repete uma ideia que outra voz acabou de apresentar, na mesma altura ou em outra. Quando a segunda voz repete **toda** a melodia da primeira, do começo ao fim, é um **cânone**. Os cânones cantados em roda, como *Frère Jacques*, são o exemplo mais conhecido."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-canone",
+            "titulo": "Frère Jacques em cânone",
+            "legenda": "A segunda voz entra no 3º compasso, uma oitava acima, com a mesma melodia.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E4",
+                  "C5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "F4",
+                  "D5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "G4"
+                ]
+              },
+              {
+                "notas": [
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E4",
+                  "C5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "F4",
+                  "D5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "G4"
+                ]
+              },
+              {
+                "notas": [
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "E5"
+                ]
+              },
+              {
+                "notas": [
+                  "A4",
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4",
+                  "F5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "F5"
+                ]
+              },
+              {
+                "notas": [
+                  "F4",
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G5"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "G5"
+                ]
+              },
+              {
+                "notas": [
+                  "C4",
+                  "G5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "G4",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "E5"
+                ]
+              },
+              {
+                "notas": [
+                  "A4",
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4",
+                  "F5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "F5"
+                ]
+              },
+              {
+                "notas": [
+                  "F4",
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G5"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "G5"
+                ]
+              },
+              {
+                "notas": [
+                  "C4",
+                  "G5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "C4",
+                  "A5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G3",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "G3"
+                ]
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E5"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "C4",
+                  "C5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "C4",
+                  "A5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G3",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "G3"
+                ]
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E5"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "C4",
+                  "C5"
+                ],
+                "duracao": 1.0
+              }
+            ],
+            "andamento": 96
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: conferir um contraponto",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Confira o primeiro contraponto desta aula, com o motivo de cada passo.\n\n1. **Liste os intervalos**: 5ª, 3ª, 3ª, 3ª, 6ª, 8ª. Todos consonantes.\n2. **Confira o começo e o fim**: começa numa 5ª e termina numa 8ª, ambas perfeitas.\n3. **Procure paralelas perfeitas**: duas 5ªs ou 8ªs seguidas no mesmo sentido? Nenhuma: depois da 5ª vem uma 3ª, e a 8ª final vem de uma 6ª."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** três 3ªs seguidas em movimento paralelo são permitidas?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Sim: as consonâncias **imperfeitas** podem andar em paralelo. A orientação é não exagerar (três ou quatro seguidas no máximo), para as vozes não perderem a independência.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. Cantus **Ré, Mi, Ré** e contraponto **Lá, Si, Lá**: os intervalos são 5ª, 5ª, 5ª. Confira começo, fim e paralelas.\n\nE agora todos os passos são seus: cantus **Dó, Ré, Dó**, contraponto **Mi, Fá, Mi**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ré–Lá, Mi–Si, Ré–Lá: começo e fim perfeitos, mas três **5ªs paralelas**: proibido.\n\nDó–Mi (3ª), Ré–Fá (3ª), Dó–Mi (3ª): só consonâncias, sem paralelas perfeitas, mas **começa e termina numa 3ª**, imperfeita. Não vale como contraponto de primeira espécie completo.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"A 4ª justa é consonância, então posso usá-la à vontade no contraponto a duas vozes.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Entre **duas vozes**, a 4ª justa é tratada como **dissonância** no contraponto clássico: só aparece como nota de passagem ou como retardo. Ela soa estável apenas quando há uma voz mais grave por baixo, em três ou mais vozes.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais são as **consonâncias imperfeitas**?",
+      "opcoes": [
+        "3ªs e 6ªs",
+        "5ªs e 8ªs",
+        "2ªs e 7ªs",
+        "4ªs e trítonos"
+      ],
+      "correta": 0,
+      "explicacao": "**3ªs e 6ªs** são consonantes, mas podem andar em paralelo sem perder a independência.",
+      "conceito": "consonancias-e-dissonancias"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Entre duas vozes, a **4ª justa** é tratada como:",
+      "opcoes": [
+        "Dissonância",
+        "Consonância perfeita",
+        "Consonância imperfeita",
+        "Uníssono"
+      ],
+      "correta": 0,
+      "explicacao": "No contraponto a duas vozes, a 4ª é **dissonância**.",
+      "conceito": "consonancias-e-dissonancias"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma voz fica parada enquanto a outra sobe. Que movimento é esse?",
+      "opcoes": [
+        "Oblíquo",
+        "Contrário",
+        "Paralelo",
+        "Direto"
+      ],
+      "correta": 0,
+      "explicacao": "Uma voz parada e a outra andando: movimento **oblíquo**.",
+      "conceito": "movimento-das-vozes"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça os dois pares de notas. Em qual há quintas paralelas?",
+      "exemplo": {
+        "id": "exe-paralelas",
+        "titulo": "Dois pares",
+        "legenda": "Dó–Sol → Ré–Lá e depois Dó–Sol → Ré–Fá.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "G4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "D4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "G4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "D4",
+              "F4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "No primeiro",
+        "No segundo"
+      ],
+      "correta": 0,
+      "explicacao": "No primeiro, as vozes sobem juntas mantendo a **5ª**: Dó–Sol, Ré–Lá.",
+      "conceito": "percepcao-contraponto"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que se evitam **5ªs e 8ªs paralelas**?",
+      "opcoes": [
+        "As vozes se fundem e perdem a independência",
+        "Porque são dissonâncias",
+        "Porque soam desafinadas",
+        "Porque não existem na escala"
+      ],
+      "correta": 0,
+      "explicacao": "Intervalos perfeitos em paralelo fazem as duas vozes soarem como uma só: o contraponto perde a **independência**.",
+      "conceito": "primeira-especie"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na primeira espécie, como começa e termina o contraponto?",
+      "opcoes": [
+        "Em consonância perfeita",
+        "Em consonância imperfeita",
+        "Em dissonância",
+        "Tanto faz"
+      ],
+      "correta": 0,
+      "explicacao": "Começo e fim pedem estabilidade: **8ª, 5ª ou uníssono**.",
+      "conceito": "primeira-especie"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Cantus **Ré, Mi** com contraponto **Lá, Si**. Qual é o problema?",
+      "opcoes": [
+        "Duas 5ªs paralelas",
+        "Uma dissonância",
+        "Movimento contrário",
+        "Nenhum"
+      ],
+      "correta": 0,
+      "explicacao": "Ré–Lá e Mi–Si são **5ªs justas** subindo juntas: paralelas.",
+      "conceito": "primeira-especie"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na **segunda espécie**, onde pode aparecer uma dissonância?",
+      "opcoes": [
+        "No tempo fraco, como nota de passagem",
+        "No tempo forte, livremente",
+        "No começo",
+        "Em lugar nenhum"
+      ],
+      "correta": 0,
+      "explicacao": "Na segunda espécie, a dissonância só aparece no **tempo fraco**, como **passagem** entre duas consonâncias.",
+      "conceito": "especies-seguintes"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual espécie traz o **retardo**, com notas ligadas sobre a barra?",
+      "opcoes": [
+        "4ª",
+        "2ª",
+        "3ª",
+        "1ª"
+      ],
+      "correta": 0,
+      "explicacao": "A **quarta espécie** usa a síncope: a nota fica presa, vira dissonância no tempo forte e resolve para baixo.",
+      "conceito": "especies-seguintes"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a cadência. O que a nota de cima faz no segundo compasso?",
+      "exemplo": {
+        "id": "exe-retardo",
+        "titulo": "Cadência",
+        "legenda": "Dó preso sobre Ré, depois Si e Dó.",
+        "eventos": [
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 2.0,
+            "ligar": [
+              "E4"
+            ]
+          },
+          {
+            "notas": [
+              "E4",
+              "C5"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "D4",
+              "C5"
+            ],
+            "duracao": 2.0,
+            "ligar": [
+              "D4"
+            ]
+          },
+          {
+            "notas": [
+              "D4",
+              "B4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "C4",
+              "C5"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 80
+      },
+      "opcoes": [
+        "Fica presa e depois desce meio tom",
+        "Sobe por salto",
+        "Fica parada até o fim"
+      ],
+      "correta": 0,
+      "explicacao": "O **Dó** fica preso sobre o Ré (7ª), desce para **Si** (6ª) e chega ao Dó: retardo 7–6.",
+      "conceito": "percepcao-contraponto"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que diferencia o **cânone** de uma simples imitação?",
+      "opcoes": [
+        "No cânone, a segunda voz repete a melodia inteira",
+        "O cânone tem só uma voz",
+        "Na imitação, as vozes cantam juntas a mesma nota",
+        "Não há diferença"
+      ],
+      "correta": 0,
+      "explicacao": "Na imitação, uma ideia é repetida por outra voz; no **cânone**, a melodia **inteira**.",
+      "conceito": "imitacao-e-canone"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Quando a segunda voz entra?",
+      "exemplo": {
+        "id": "exe-canone",
+        "titulo": "Cânone",
+        "legenda": "A segunda voz entra no 3º compasso.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "E4",
+              "C5"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "F4",
+              "D5"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "G4",
+              "E5"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "G4"
+            ]
+          },
+          {
+            "notas": [
+              "G4",
+              "C5"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "E4",
+              "C5"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "F4",
+              "D5"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "G4",
+              "E5"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "G4"
+            ]
+          },
+          {
+            "notas": [
+              "G4",
+              "C5"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "G4",
+              "E5"
+            ],
+            "duracao": 0.5,
+            "ligar": [
+              "E5"
+            ]
+          },
+          {
+            "notas": [
+              "A4",
+              "E5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G4",
+              "F5"
+            ],
+            "duracao": 0.5,
+            "ligar": [
+              "F5"
+            ]
+          },
+          {
+            "notas": [
+              "F4",
+              "F5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "E4",
+              "G5"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "G5"
+            ]
+          },
+          {
+            "notas": [
+              "C4",
+              "G5"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "G4",
+              "E5"
+            ],
+            "duracao": 0.5,
+            "ligar": [
+              "E5"
+            ]
+          },
+          {
+            "notas": [
+              "A4",
+              "E5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G4",
+              "F5"
+            ],
+            "duracao": 0.5,
+            "ligar": [
+              "F5"
+            ]
+          },
+          {
+            "notas": [
+              "F4",
+              "F5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "E4",
+              "G5"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "G5"
+            ]
+          },
+          {
+            "notas": [
+              "C4",
+              "G5"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "C4",
+              "G5"
+            ],
+            "duracao": 0.5,
+            "ligar": [
+              "C4"
+            ]
+          },
+          {
+            "notas": [
+              "C4",
+              "A5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G3",
+              "G5"
+            ],
+            "duracao": 0.5,
+            "ligar": [
+              "G3"
+            ]
+          },
+          {
+            "notas": [
+              "G3",
+              "F5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C4",
+              "E5"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "C4"
+            ]
+          },
+          {
+            "notas": [
+              "C4",
+              "C5"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "C4",
+              "G5"
+            ],
+            "duracao": 0.5,
+            "ligar": [
+              "C4"
+            ]
+          },
+          {
+            "notas": [
+              "C4",
+              "A5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G3",
+              "G5"
+            ],
+            "duracao": 0.5,
+            "ligar": [
+              "G3"
+            ]
+          },
+          {
+            "notas": [
+              "G3",
+              "F5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C4",
+              "E5"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "C4"
+            ]
+          },
+          {
+            "notas": [
+              "C4",
+              "C5"
+            ],
+            "duracao": 1.0
+          }
+        ],
+        "andamento": 96
+      },
+      "opcoes": [
+        "No 3º compasso, com a mesma melodia",
+        "No começo, junto com a primeira",
+        "No último compasso"
+      ],
+      "correta": 0,
+      "explicacao": "A segunda voz começa no **3º compasso**, repetindo a melodia uma oitava acima: um **cânone**.",
+      "conceito": "imitacao-e-canone"
+    }
+  ],
+  "resumo": [
+    "Consonâncias **perfeitas**: uníssono, 5ª, 8ª. **Imperfeitas**: 3ª e 6ª. A 4ª, a duas vozes, é dissonância.",
+    "Movimentos: **paralelo**, **direto**, **contrário** e **oblíquo**.",
+    "Primeira espécie: só consonâncias, começo e fim perfeitos, sem 5ªs e 8ªs paralelas, cadência 6–8.",
+    "2ª espécie: passagem no tempo fraco. 3ª: quatro notas. 4ª: retardo. 5ª: florido.",
+    "**Cânone**: a segunda voz repete a melodia inteira, entrando depois."
+  ],
+  "pergunta_para_chat": "Me dê cantus firmi curtos, um de cada vez, para eu escrever um contraponto de primeira espécie por cima, e confira cada intervalo, as paralelas e a cadência."
+}

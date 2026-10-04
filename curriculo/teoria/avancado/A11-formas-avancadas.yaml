@@ -1,0 +1,34 @@
+codigo: A11
+titulo: Formas avançadas
+nivel: avancado
+assunto: teoria
+prerequisitos:
+  - M16  # Forma musical básica
+  - A05  # Modulação
+  - A10  # Contraponto
+objetivos:
+  - Reconhecer o rondó, em que o refrão A volta entre episódios diferentes (A B A C A)
+  - Reconhecer a forma do choro tradicional, um rondó em três partes (A A B B A C C A)
+  - Entender o tema com variações e as maneiras de variar melodia, ritmo, modo e harmonia
+  - Descrever a forma-sonata, com exposição, desenvolvimento e reexposição, e o plano de tonalidades
+  - Conhecer a fuga, com sujeito, resposta, contrassujeito, episódio e stretto
+  - Reconhecer a canção A A B A de 32 compassos e a função da ponte
+conceitos:
+  - rondo
+  - tema-e-variacoes
+  - forma-sonata
+  - fuga
+  - cancao-aaba
+  - percepcao-formas-avancadas
+fora_do_escopo:
+  - Análise completa de uma obra inteira (módulo A14)
+  - Desenvolvimento motívico na composição (módulo A15)
+exemplos_semente:
+  - "Rondó original A B A C A em Dó maior, com B em Sol maior e C em Lá menor"
+  - "Brilha, brilha com três variações, citando as 12 variações de Mozart sobre a mesma melodia (K. 265)"
+  - "Exposição em miniatura com tema 1 em Dó e tema 2 em Sol, e o tema 2 de volta em Dó na reexposição"
+  - "Exposição de fuga a duas vozes com sujeito, resposta na dominante e contrassujeito"
+  - "Canção A A B A com a ponte em Fá maior"
+exercicios:
+  - multipla_escolha
+  - percepcao

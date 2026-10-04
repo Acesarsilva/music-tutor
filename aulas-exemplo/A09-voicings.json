@@ -1,0 +1,594 @@
+{
+  "codigo": "A09",
+  "titulo": "Voicings",
+  "nivel": "avancado",
+  "resumo_curto": "Posição fechada e aberta, drop 2, drop 3, notas-guia, quartas, upper structures e clusters.",
+  "prerequisitos": [
+    "Condução de vozes básica (M10)",
+    "Tensões e extensões (A01)",
+    "Acordes alterados (A02)"
+  ],
+  "objetivos": [
+    "Diferenciar posição **fechada** e **aberta**",
+    "Montar **drop 2** e **drop 3**",
+    "Usar as **notas-guia**",
+    "Montar voicings em **quartas**",
+    "Montar **upper structures**",
+    "Usar **clusters**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quais são as notas do C7M?\n2. Quais tensões são disponíveis no C7?\n3. Na condução de vozes, por que se prefere mover cada voz pela menor distância?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Dó, Mi, Sol, Si.\n2. 9 e 13 naturais, e as alteradas (b9, ♯9, ♯11, b13).\n3. A progressão soa ligada e cada voz fica cantável.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "C7M fechado",
+            "legenda": "As quatro notas juntas, dentro de uma oitava.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "C7M aberto",
+            "legenda": "As mesmas quatro notas, distribuídas de outro jeito. Qual soa mais amplo?",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "C4",
+                  "E4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "As notas são as mesmas: Dó, Mi, Sol, Si. Muda a **distribuição**, e o acorde soa mais espaçoso. O jeito de distribuir as notas de um acorde é o **voicing**. Ele muda a cor sem mudar a cifra.\n\nAo final, você vai montar os voicings mais usados no piano e no violão."
+        }
+      ]
+    },
+    {
+      "titulo": "Fechado, aberto, drop 2 e drop 3",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na **posição fechada**, as notas ficam o mais juntas possível, dentro de uma oitava. Na **posição aberta**, elas se espalham por mais de uma oitava.\n\nDuas receitas para abrir um acorde de quatro notas fechado, contando as vozes **de cima para baixo**:\n\n- **drop 2**: a **2ª voz** desce uma oitava;\n- **drop 3**: a **3ª voz** desce uma oitava.\n\nNo C7M fechado (Dó, Mi, Sol, Si, de baixo para cima), a 2ª voz de cima é Sol e a 3ª é Mi."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "C7M fechado, drop 2 e drop 3.",
+          "cabecalho": [
+            "Voicing",
+            "De baixo para cima"
+          ],
+          "linhas": [
+            [
+              "Fechado",
+              "Dó, Mi, Sol, Si"
+            ],
+            [
+              "Drop 2",
+              "Sol, Dó, Mi, Si"
+            ],
+            [
+              "Drop 3",
+              "Mi, Dó, Sol, Si"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-drops",
+            "titulo": "Fechado, drop 2 e drop 3",
+            "legenda": "As mesmas notas, cada vez mais abertas.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "C4",
+                  "E4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E3",
+                  "C4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "No violão, drop 2 e drop 3 são as formas de tétrade mais tocadas: o drop 3 cabe com o baixo na 6ª ou na 5ª corda, e o drop 2, por exemplo, nas quatro cordas de cima."
+        }
+      ]
+    },
+    {
+      "titulo": "Notas-guia",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **3ª** e a **7ª** definem o tipo do acorde: são as **notas-guia**. Num II–V–I, elas andam muito pouco:\n\n- Dm7 → G7: o Fá fica, o Dó desce para Si;\n- G7 → C7M: o Fá desce para Mi, o Si fica.\n\nCom a fundamental no baixo e só as duas notas-guia em cima, já se tem um acompanhamento completo, o voicing de três notas (shell)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-guia",
+            "titulo": "Dm7, G7, C7M com fundamental e notas-guia",
+            "legenda": "Siga as duas notas de cima: quase não se mexem.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-guia-4",
+            "titulo": "O mesmo II–V–I com quatro vozes",
+            "legenda": "As vozes andam o mínimo.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Quartas e upper structures",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Em vez de empilhar 3ªs, pode-se empilhar **4ªs**. **Ré, Sol, Dó, Fá** soa como um **Dm7(11)** moderno e aberto, sem a cara de tríade. Voicings em quartas são típicos do jazz modal e da bossa nova mais harmonizada.\n\nOutra técnica: tocar as **tensões como uma tríade** em cima das notas-guia. Sobre o C7 (Dó, Mi, Si♭), a tríade de **Ré maior** (Ré, Fá♯, Lá) dá a 9, a ♯11 e a 13: o acorde soa **C7(9, ♯11, 13)**. É uma **upper structure** (estrutura superior)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-quartas",
+            "titulo": "Dm7 fechado e em quartas",
+            "legenda": "Ré, Fá, Lá, Dó e depois Ré, Sol, Dó, Fá.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-upper",
+            "titulo": "C7 e a tríade de Ré por cima",
+            "legenda": "Dó, Mi, Si♭ com Ré, Fá♯, Lá: C7(9, ♯11, 13).",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "Bb4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "Bb4",
+                  "D5",
+                  "F#5",
+                  "A5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Clusters",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um **cluster** junta notas vizinhas, a um tom ou meio tom. **Dó, Ré, Mi, Sol** é um C(add9) com o Ré colado no Dó e no Mi: o som fica denso, com um leve atrito. Espalhando as mesmas notas, o atrito some."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-cluster",
+            "titulo": "C6(9) em cluster e aberto",
+            "legenda": "Dó, Ré, Mi, Lá e depois Dó, Lá, Ré, Mi.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "D4",
+                  "E4",
+                  "A4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "A4",
+                  "D5",
+                  "E5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: montar um drop 2",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Monte o **F7M** em drop 2, com o motivo de cada passo.\n\n1. **Monte a posição fechada**: Fá, Lá, Dó, Mi.\n2. **Conte as vozes de cima para baixo**: Mi (1ª), Dó (2ª), Lá (3ª), Fá (4ª).\n3. **Desça a 2ª voz uma oitava**: o Dó vai para baixo. Drop 2: **Dó, Fá, Lá, Mi**."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** e o drop 3 do mesmo F7M?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Desça a **3ª voz** (Lá): **Lá, Fá, Dó, Mi**, de baixo para cima.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. **G7** fechado: Sol, Si, Ré, Fá. Conte as vozes e desça a 2ª.\n\nE agora todos os passos são seus: o **Am7** em drop 2."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "G7: de cima, Fá (1ª), Ré (2ª), Si (3ª), Sol (4ª). Drop 2: **Ré, Sol, Si, Fá**.\n\nAm7 fechado: Lá, Dó, Mi, Sol. A 2ª de cima é Mi. Drop 2: **Mi, Lá, Dó, Sol**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega quis o drop 2 do C7M e baixou o **Si**, a nota de cima:\n\n> \"Si, Dó, Mi, Sol.\"\n\nO que aconteceu?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ele baixou a **1ª voz**, não a 2ª. O resultado é o C7M com o Si colado ao Dó, meio tom abaixo, um som áspero e outra inversão. No drop 2, a nota que desce é a **2ª de cima** (Sol): **Sol, Dó, Mi, Si**.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que é um **voicing**?",
+      "opcoes": [
+        "O jeito de distribuir as notas de um acorde",
+        "A cifra do acorde",
+        "O ritmo do acompanhamento",
+        "A melodia sobre o acorde"
+      ],
+      "correta": 0,
+      "explicacao": "O **voicing** é a distribuição das notas: quais, em que ordem e em que oitava.",
+      "conceito": "posicao-fechada-e-aberta"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No **drop 2**, qual voz desce uma oitava?",
+      "opcoes": [
+        "A 2ª de cima para baixo",
+        "A 2ª de baixo para cima",
+        "A mais aguda",
+        "A mais grave"
+      ],
+      "correta": 0,
+      "explicacao": "Contando **de cima para baixo**, a 2ª voz desce uma oitava.",
+      "conceito": "drop-2-e-drop-3"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o drop 2 do **C7M** (fechado: Dó, Mi, Sol, Si)?",
+      "opcoes": [
+        "Sol, Dó, Mi, Si",
+        "Mi, Dó, Sol, Si",
+        "Si, Dó, Mi, Sol",
+        "Dó, Sol, Mi, Si"
+      ],
+      "correta": 0,
+      "explicacao": "A 2ª de cima é Sol; descendo uma oitava: **Sol, Dó, Mi, Si**. A segunda opção é o drop 3.",
+      "conceito": "drop-2-e-drop-3"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça os dois acordes. Qual está em posição aberta?",
+      "exemplo": {
+        "id": "exe-aberto",
+        "titulo": "Dois acordes",
+        "legenda": "C7M fechado e depois drop 2.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "G3",
+              "C4",
+              "E4",
+              "B4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "O segundo",
+        "O primeiro"
+      ],
+      "correta": 0,
+      "explicacao": "No segundo, o Sol desceu uma oitava: as notas se espalham e o acorde soa mais amplo.",
+      "conceito": "percepcao-voicings"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais são as **notas-guia** de um acorde?",
+      "opcoes": [
+        "3ª e 7ª",
+        "Fundamental e 5ª",
+        "9ª e 13ª",
+        "5ª e 7ª"
+      ],
+      "correta": 0,
+      "explicacao": "A **3ª** e a **7ª** definem se o acorde é maior, menor, dominante ou 7M.",
+      "conceito": "notas-guia"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Fá4 está marcado: é a 7ª do G7. No G7 → C7M, clique na nota para onde ele desce.",
+      "nota_base": "F4",
+      "intervalo": "2m",
+      "direcao": "abaixo",
+      "explicacao": "O Fá desce meio tom para **Mi**, a 3ª do C7M.",
+      "conceito": "notas-guia",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No II–V–I em Dó, o que acontece com o **Dó** do Dm7 quando chega o G7?",
+      "opcoes": [
+        "Desce meio tom para Si",
+        "Sobe para Ré",
+        "Fica parado",
+        "Salta para Sol"
+      ],
+      "correta": 0,
+      "explicacao": "A 7ª do Dm7 (Dó) desce meio tom e vira a 3ª do G7 (**Si**).",
+      "conceito": "notas-guia"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "**Ré, Sol, Dó, Fá** é um voicing:",
+      "opcoes": [
+        "Em quartas",
+        "Em terças",
+        "Em cluster",
+        "Drop 2"
+      ],
+      "correta": 0,
+      "explicacao": "Ré–Sol, Sol–Dó e Dó–Fá são todas **4ªs justas**.",
+      "conceito": "voicing-em-quartas"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma tríade de **Ré maior** sobre o **C7** acrescenta quais tensões?",
+      "opcoes": [
+        "9, ♯11 e 13",
+        "b9, 11 e b13",
+        "♯9 e b13",
+        "Só a 9"
+      ],
+      "correta": 0,
+      "explicacao": "Ré é a 9, Fá♯ é a ♯11 e Lá é a 13 de Dó: C7(9, ♯11, 13).",
+      "conceito": "upper-structure"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Que acorde está sendo tocado por cima do C7 na segunda vez?",
+      "exemplo": {
+        "id": "exe-upper",
+        "titulo": "C7 e upper structure",
+        "legenda": "C7 e depois C7 com a tríade de Ré por cima.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "Bb4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "Bb4",
+              "D5",
+              "F#5",
+              "A5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "Uma tríade maior, que acrescenta tensões",
+        "Uma oitava da fundamental",
+        "Nada: é o mesmo acorde"
+      ],
+      "correta": 0,
+      "explicacao": "A tríade de Ré maior soa por cima do C7, somando 9, ♯11 e 13.",
+      "conceito": "upper-structure"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que é um **cluster**?",
+      "opcoes": [
+        "Notas vizinhas, a tom ou semitom, soando juntas",
+        "Um acorde em quartas",
+        "Um arpejo rápido",
+        "Uma tríade sem a 5ª"
+      ],
+      "correta": 0,
+      "explicacao": "No **cluster** as notas ficam coladas, a um tom ou meio tom: som denso.",
+      "conceito": "cluster"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Dó4 está marcado: é a nota de baixo do C7M em posição fechada. No drop 3, a nota de baixo passa a ser outra. Clique nela, abaixo do Dó.",
+      "nota_base": "C4",
+      "intervalo": "6m",
+      "direcao": "abaixo",
+      "explicacao": "No drop 3 desce a 3ª voz de cima (**Mi**), uma oitava: Mi3, uma 6ª menor abaixo de Dó4.",
+      "conceito": "drop-2-e-drop-3",
+      "de": "E3",
+      "ate": "E5"
+    }
+  ],
+  "resumo": [
+    "O **voicing** é a distribuição das notas do acorde; a cifra não muda.",
+    "**Drop 2**: desce a 2ª voz de cima uma oitava. **Drop 3**: desce a 3ª.",
+    "**Notas-guia** (3ª e 7ª) definem o acorde e andam pouco no II–V–I.",
+    "**Quartas**: empilhar 4ªs dá um som aberto e moderno.",
+    "**Upper structure**: uma tríade sobre as notas-guia soma tensões (Ré maior sobre C7).",
+    "**Cluster**: notas vizinhas juntas, som denso."
+  ],
+  "pergunta_para_chat": "Me dê acordes cifrados, um de cada vez, para eu montar em drop 2, drop 3 ou com upper structure, nota por nota de baixo para cima, e corrija a ordem das vozes."
+}
