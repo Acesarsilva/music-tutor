@@ -1,0 +1,1415 @@
+{
+  "codigo": "A17",
+  "titulo": "Percepção III",
+  "nivel": "avancado",
+  "resumo_curto": "Tensões, acordes cromáticos e modos de ouvido, e ditado a duas vozes.",
+  "prerequisitos": [
+    "Percepção II (M18)",
+    "Tensões e extensões (A01)",
+    "Empréstimo modal (A03)",
+    "Substituição tritonal e rearmonização (A04)",
+    "Harmonia modal (A06)"
+  ],
+  "objetivos": [
+    "Reconhecer **tensões** no topo do acorde",
+    "Reconhecer **acordes cromáticos** pela nota que se move",
+    "Reconhecer os **modos** pela nota característica",
+    "Fazer **ditado a duas vozes**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quais tensões são disponíveis no C7M?\n2. Qual é a nota característica do modo lídio?\n3. No ditado harmônico (M18), que linha se ouve primeiro para achar os acordes?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. 9, ♯11 e 13.\n2. A 4ª aumentada.\n3. O baixo.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Duas vozes",
+            "legenda": "Ouça várias vezes. Tente cantar só a voz de baixo.",
+            "eventos": [
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "F5",
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "G5",
+                  "B3"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "A5",
+                  "A3"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "A3"
+                ]
+              },
+              {
+                "notas": [
+                  "G5",
+                  "A3"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "F5",
+                  "F3"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "F3"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "F3"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5",
+                  "G3"
+                ],
+                "duracao": 2.0,
+                "ligar": [
+                  "G3"
+                ]
+              },
+              {
+                "notas": [
+                  "G5",
+                  "G3"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "No M18 você escreveu melodias e funções. Agora o ouvido vai mais fundo: duas vozes ao mesmo tempo, tensões no topo dos acordes, acordes cromáticos e modos. O segredo continua o mesmo: **ouvir uma coisa de cada vez**.\n\nAo final, você vai reconhecer tensões, cromáticos e modos de ouvido e fazer um ditado a duas vozes."
+        }
+      ]
+    },
+    {
+      "titulo": "Tensões de ouvido",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A tensão mais fácil de ouvir é a que fica **no topo** do acorde. Cada uma tem um caráter:\n\n- **9**: brilho, abre o acorde sem tensão;\n- **♯11**: flutua, o som do lídio;\n- **13**: doce, perto da 5ª;\n- **b9**: escura e tensa, pede resolução (só no acorde 7).\n\nTruque: cante a fundamental e suba até a nota de cima. Se o caminho for de **um tom** (passando pela oitava), é 9; de **meio tom**, b9."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-c7m",
+            "titulo": "C7M, C7M(9), C7M(♯11)",
+            "legenda": "A nota de cima: Si, depois Ré, depois Fá♯.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "B4",
+                  "F#5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-g7-9",
+            "titulo": "G7(9) resolvendo",
+            "legenda": "Lá no topo: brilhante.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "A5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-g7-b9",
+            "titulo": "G7(b9) resolvendo",
+            "legenda": "Lá♭ no topo: escuro, puxa mais forte.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "Ab5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-g7-13",
+            "titulo": "G7(13) resolvendo",
+            "legenda": "Mi no topo: doce.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Cromáticos de ouvido",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Para ouvir um acorde cromático, procure **a nota que se move por semitom**:\n\n- **empréstimo IVm**: do F para o Fm, o **Lá desce para Lá♭**, e a harmonia escurece;\n- **dominante secundária**: aparece uma nota **subindo** por semitom, a sensível do acorde seguinte (no A7, o Dó♯ sobe para Ré);\n- **SubV7**: o **baixo desce** por semitons (Ré, Ré♭, Dó);\n- **bVII7**: o Si♭ no lugar do Si, e o acorde volta direto para o I, sem a sensível."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ivm",
+            "titulo": "C, F, Fm, C",
+            "legenda": "Ouça o Lá descer para Lá♭.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F4",
+                  "Ab4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sec",
+            "titulo": "C, A7, Dm",
+            "legenda": "O Dó♯ sobe para Ré.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C#4",
+                  "E4",
+                  "G4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-subv",
+            "titulo": "Dm7, Db7, C",
+            "legenda": "O baixo desce por semitons.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Db4",
+                  "F4",
+                  "Ab4",
+                  "Cb5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-bvii",
+            "titulo": "C, Bb7, C",
+            "legenda": "Sem Si natural: a volta para o C é mais suave.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "Ab4",
+                  "Bb4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Modos de ouvido",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Compare cada modo com a escala maior ou menor mais parecida e procure a **nota característica** (A06):\n\n- **dórico**: menor, mas com a **6ª maior**, mais clara;\n- **frígio**: menor, com a **2ª menor**, logo no começo, sombria;\n- **lídio**: maior, com a **4ª aumentada**, flutuante;\n- **mixolídio**: maior, com a **7ª menor**, o som do baião."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-dorico",
+            "titulo": "Dó dórico",
+            "legenda": "Ouça o Lá natural depois do Mi♭.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-frigio",
+            "titulo": "Dó frígio",
+            "legenda": "O Ré♭ logo depois do Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Db4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Ab4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-lidio",
+            "titulo": "Dó lídio",
+            "legenda": "O Fá♯.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-mixolidio",
+            "titulo": "Dó mixolídio",
+            "legenda": "O Si♭ no fim.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 96
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Ditado a duas vozes",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "No ditado a duas vozes, não tente ouvir tudo de uma vez:\n\n1. **o baixo**: cante só a voz de baixo e escreva-a, como num ditado melódico;\n2. **a voz de cima**: agora só ela;\n3. **os intervalos entre as vozes**: confira, nos tempos fortes, se a distância entre as duas faz sentido (3ªs, 6ªs, 8ªs, 10ªs são as mais comuns);\n4. **a harmonia**: as duas vozes sugerem os acordes."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-so-baixo",
+            "titulo": "Só o baixo da abertura",
+            "legenda": "Dó, Si, Lá, Fá, Sol, Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F3"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: um ditado a duas vozes",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja a abertura, com o motivo de cada passo.\n\n1. **Baixo**: Dó, Si, Lá, Fá, Sol, Dó, descendo por grau e terminando em V–I.\n2. **Voz de cima**: Mi, Fá, Sol, Lá, Sol, Fá, Mi, Ré, Sol, Mi.\n3. **Intervalos nos tempos fortes**: Dó–Mi (10ª), Si–Sol (13ª, uma 6ª), Lá–Lá e Fá–Fá (duas oitavas), Sol–Ré (12ª, uma 5ª), Dó–Mi (10ª)."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** que acordes as duas vozes sugerem?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Dó–Mi sugere **C**; Si–Sol, **G/B**; Lá–Lá, **Am** (ou F/A); Fá–Fá, **F**; Sol–Ré, **G**; Dó–Mi, **C**. Um baixo descendo até a cadência V–I.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sua-vez",
+            "titulo": "Sua vez",
+            "legenda": "Ouça e escreva as duas vozes.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4",
+                  "E4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "A4",
+                  "F4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "B4",
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C5",
+                  "A4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "D5",
+                  "F4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "B4",
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C5",
+                  "C4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus: o baixo deste exemplo é **Mi, Fá, Sol, Lá, Fá, Sol, Dó**. Escreva a voz de cima e confira os intervalos.\n\nE agora todos os passos são seus: diga que acordes as duas vozes sugerem."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Voz de cima: **Sol, Lá, Si, Dó, Ré, Si, Dó**. Intervalos: 3ª, 3ª, 3ª, 3ª, 6ª, 3ª e 8ª. As vozes andam juntas em 3ªs paralelas.\n\nAcordes: **C, F (ou Dm), G, Am, Dm (ou G7), G, C**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"Quando ouço o Fm em Dó maior, a música modulou para Dó menor.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "O Fm é **empréstimo modal**: o Lá♭ aparece por um acorde e a música volta ao C maior. Modulação pede que uma nova tônica se firme. De ouvido: se o C que vem depois soa como casa, não houve modulação.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Qual é a nota de cima do segundo acorde?",
+      "exemplo": {
+        "id": "exe-c7m9",
+        "titulo": "Dois acordes",
+        "legenda": "C7M e C7M(9).",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "B4",
+              "D5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "A 9ª (Ré)",
+        "A 7M (Si)",
+        "A ♯11 (Fá♯)"
+      ],
+      "correta": 0,
+      "explicacao": "No segundo acorde, o topo é **Ré**, a **9ª**: o acorde abre e brilha.",
+      "conceito": "tensoes-de-ouvido"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A tensão no topo do G7 é 9 ou b9?",
+      "exemplo": {
+        "id": "exe-b9",
+        "titulo": "G7 e C",
+        "legenda": "G7(b9).",
+        "eventos": [
+          {
+            "notas": [
+              "G3",
+              "F4",
+              "B4",
+              "Ab5"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "b9",
+        "9"
+      ],
+      "correta": 0,
+      "explicacao": "O Lá♭ no topo soa escuro e puxa forte para o C: **b9**.",
+      "conceito": "tensoes-de-ouvido"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual tensão dá o som **flutuante** do modo lídio?",
+      "opcoes": [
+        "♯11",
+        "b9",
+        "13",
+        "9"
+      ],
+      "correta": 0,
+      "explicacao": "A **♯11** é a 4ª aumentada do lídio.",
+      "conceito": "tensoes-de-ouvido"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Que nota se move do segundo para o terceiro acorde?",
+      "exemplo": {
+        "id": "exe-ivm",
+        "titulo": "Quatro acordes",
+        "legenda": "C, F, Fm, C.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "F4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "F4",
+              "Ab4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "O Lá desce para Lá♭",
+        "O Dó sobe para Dó♯",
+        "O baixo desce meio tom"
+      ],
+      "correta": 0,
+      "explicacao": "Do F para o **Fm**, o **Lá desce para Lá♭**: empréstimo modal.",
+      "conceito": "cromaticos-de-ouvido"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Que acorde cromático aparece?",
+      "exemplo": {
+        "id": "exe-sec",
+        "titulo": "Três acordes",
+        "legenda": "C, A7, Dm.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C#4",
+              "E4",
+              "G4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "D4",
+              "F4",
+              "A4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Dominante secundária",
+        "Empréstimo modal",
+        "SubV7"
+      ],
+      "correta": 0,
+      "explicacao": "O **Dó♯** sobe para Ré: o A7 é a dominante secundária do Dm.",
+      "conceito": "cromaticos-de-ouvido"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. O que faz o baixo?",
+      "exemplo": {
+        "id": "exe-subv",
+        "titulo": "Três acordes",
+        "legenda": "Dm7, Db7, C.",
+        "eventos": [
+          {
+            "notas": [
+              "D4",
+              "F4",
+              "A4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "Db4",
+              "F4",
+              "Ab4",
+              "Cb5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Desce por semitons",
+        "Sobe por tons",
+        "Fica parado"
+      ],
+      "correta": 0,
+      "explicacao": "Ré, Ré♭, Dó: o baixo desce por semitons, a marca do **SubV7**.",
+      "conceito": "cromaticos-de-ouvido"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a escala. Que modo é?",
+      "exemplo": {
+        "id": "exe-lidio",
+        "titulo": "Escala",
+        "legenda": "Dó lídio.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F#4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 96
+      },
+      "opcoes": [
+        "Lídio",
+        "Mixolídio",
+        "Dórico",
+        "Frígio"
+      ],
+      "correta": 0,
+      "explicacao": "Maior, com **Fá♯**: lídio.",
+      "conceito": "modos-de-ouvido"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a escala. Que modo é?",
+      "exemplo": {
+        "id": "exe-frigio",
+        "titulo": "Escala",
+        "legenda": "Dó frígio.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Db4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Eb4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Ab4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Bb4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 96
+      },
+      "opcoes": [
+        "Frígio",
+        "Dórico",
+        "Lídio",
+        "Mixolídio"
+      ],
+      "correta": 0,
+      "explicacao": "Menor, com o **Ré♭** logo depois do Dó: frígio.",
+      "conceito": "modos-de-ouvido"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a escala. Que modo é?",
+      "exemplo": {
+        "id": "exe-mixolidio",
+        "titulo": "Escala",
+        "legenda": "Dó mixolídio.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Bb4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 96
+      },
+      "opcoes": [
+        "Mixolídio",
+        "Lídio",
+        "Frígio",
+        "Dórico"
+      ],
+      "correta": 0,
+      "explicacao": "Maior, com **Si♭**: mixolídio.",
+      "conceito": "modos-de-ouvido"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No ditado a duas vozes, por onde começar?",
+      "opcoes": [
+        "Pelo baixo",
+        "Pelas duas ao mesmo tempo",
+        "Pelos acordes",
+        "Pelo ritmo da voz de cima"
+      ],
+      "correta": 0,
+      "explicacao": "Primeiro o **baixo**, como um ditado melódico; depois a voz de cima.",
+      "conceito": "ditado-a-duas-vozes"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Que intervalo as duas vozes fazem quase o tempo todo?",
+      "exemplo": {
+        "id": "exe-tercas",
+        "titulo": "Duas vozes",
+        "legenda": "Terças paralelas.",
+        "eventos": [
+          {
+            "notas": [
+              "G4",
+              "E4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "A4",
+              "F4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "B4",
+              "G4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "C5",
+              "A4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "D5",
+              "F4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "B4",
+              "G4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "C5",
+              "C4"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "3ªs",
+        "5ªs",
+        "Uníssonos",
+        "2ªs"
+      ],
+      "correta": 0,
+      "explicacao": "As vozes andam juntas em **3ªs** paralelas, como numa segunda voz cantada.",
+      "conceito": "ditado-a-duas-vozes"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça o baixo. Como ele termina?",
+      "exemplo": {
+        "id": "exe-baixo",
+        "titulo": "Baixo",
+        "legenda": "Dó, Si, Lá, Fá, Sol, Dó.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "B3"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "A3"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "F3"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "G3"
+            ],
+            "duracao": 4.0
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Sol, Dó: uma cadência V–I",
+        "Fá, Dó: plagal",
+        "Ré, Dó: por grau"
+      ],
+      "correta": 0,
+      "explicacao": "O baixo termina **Sol, Dó**: V–I.",
+      "conceito": "ditado-a-duas-vozes"
+    }
+  ],
+  "resumo": [
+    "Tensões no topo: **9** brilha, **♯11** flutua, **13** é doce, **b9** é escura e tensa.",
+    "Cromáticos: **IVm** (Lá desce para Lá♭), **V7/x** (sensível que sobe), **SubV7** (baixo cromático), **bVII7** (sem a sensível).",
+    "Modos: **dórico** (6ª maior), **frígio** (2ª menor), **lídio** (4ª aumentada), **mixolídio** (7ª menor).",
+    "Duas vozes: baixo primeiro, depois a voz de cima, depois os intervalos e a harmonia."
+  ],
+  "pergunta_para_chat": "Descreva para mim, um de cada vez, acordes com tensões, progressões com cromáticos e escalas modais, como eu ouviria cada um, e me pergunte o que é; depois me corrija e explique o que eu devia ter ouvido."
+}

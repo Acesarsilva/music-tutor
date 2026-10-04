@@ -1,0 +1,33 @@
+codigo: A13
+titulo: Harmonia do século XX
+nivel: avancado
+assunto: teoria
+prerequisitos:
+  - A07  # Escalas simétricas e exóticas
+  - A09  # Voicings
+  - M10  # Condução de vozes básica
+objetivos:
+  - Reconhecer o paralelismo, em que o mesmo acorde desliza inteiro sobre a melodia
+  - Usar a escala de tons inteiros e os acordes em quartas como harmonia, sem função tonal
+  - Montar poliacordes e entender a politonalidade, como o acorde de Petrushka
+  - Entender o pandiatonismo, que usa só as notas da escala sem as tendências da tonalidade
+  - Conhecer o atonalismo e a série dodecafônica com suas quatro formas
+conceitos:
+  - paralelismo
+  - escalas-e-quartas
+  - poliacordes-e-politonalidade
+  - pandiatonismo
+  - dodecafonismo
+  - percepcao-seculo-xx
+fora_do_escopo:
+  - Teoria dos conjuntos e análise pós-tonal em detalhe
+  - Música eletroacústica, aleatória e minimalismo
+exemplos_semente:
+  - "Melodia harmonizada com tríades maiores em paralelo"
+  - "Acordes em quartas deslizando em Ré dórico"
+  - "Acorde de Petrushka, Dó maior sobre Fá sustenido maior"
+  - "Série dodecafônica original, retrógrada e invertida"
+  - "Saudades do Brasil, de Milhaud, e o dodecafonismo de Koellreutter e do grupo Música Viva, citados pelo nome"
+exercicios:
+  - multipla_escolha
+  - percepcao

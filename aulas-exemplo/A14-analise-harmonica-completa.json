@@ -1,0 +1,1008 @@
+{
+  "codigo": "A14",
+  "titulo": "Análise harmônica completa",
+  "nivel": "avancado",
+  "resumo_curto": "Um método em seis passos para analisar uma peça do começo ao fim.",
+  "prerequisitos": [
+    "Dominantes secundárias (M14)",
+    "Empréstimo modal (A03)",
+    "Substituição tritonal e rearmonização (A04)",
+    "Formas avançadas (A11)"
+  ],
+  "objetivos": [
+    "Seguir um **método** de análise",
+    "Dar **grau e função** a cada acorde",
+    "Explicar os **cromáticos** de uma peça",
+    "Relacionar **melodia e harmonia**",
+    "Separar acorde cromático de **modulação**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Qual é a dominante secundária do Am7, em Dó maior?\n2. De onde vem o Fm6 quando se está em Dó maior?\n3. Qual acorde substitui o G7 pela substituição tritonal?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. E7 (V7/VI).\n2. Do campo harmônico de Dó menor: é empréstimo modal (IVm).\n3. Db7, o SubV7.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Uma peça inteira",
+            "legenda": "Nove compassos em Dó maior. Ouça a voz de cima no fim.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "E3",
+                  "D4",
+                  "G#4",
+                  "B4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "Bb4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "Bb4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F3",
+                  "E4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "F3",
+                  "D4",
+                  "Ab4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "E3",
+                  "D4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C#4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D3",
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Db3",
+                  "Cb4",
+                  "F4",
+                  "Ab4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C3",
+                  "B3",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Esta pequena peça junta quase tudo o que você estudou: dominante secundária, II–V para outro grau, empréstimo modal, substituição tritonal e tensões na melodia. Nesta aula, ela vai ser analisada **do começo ao fim**, como se analisa uma música de verdade.\n\nAo final, você vai seguir um método de análise e explicar cada acorde de uma peça."
+        }
+      ]
+    },
+    {
+      "titulo": "O método",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Uma análise completa segue uma ordem, do geral para o detalhe:\n\n1. **Tonalidade**: a armadura, o primeiro e o último acorde, as cadências.\n2. **Forma**: as frases e onde cada uma termina.\n3. **Graus**: um grau para cada acorde, em relação à tônica.\n4. **Cromáticos**: para cada acorde de fora do campo, a explicação (dominante secundária, empréstimo, SubV...).\n5. **Melodia**: o que a melodia é em cada acorde (nota do acorde, tensão, nota melódica).\n6. **Síntese**: em poucas frases, o que a peça faz e onde está o ponto alto."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Passos 1 e 2 nesta peça.** Começa e termina em C7M, sem armadura: **Dó maior**. São duas frases: a primeira (compassos 1 a 4) termina no C7, que puxa para o F7M, ou seja, **fica aberta**; a segunda (5 a 9) termina no C7M: **fecha** a peça."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-frase1",
+            "titulo": "Primeira frase",
+            "legenda": "C7M, E7, Am7, Gm7 e C7(9): termina pedindo o F7M.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "E3",
+                  "D4",
+                  "G#4",
+                  "B4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "Bb4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "Bb4",
+                  "D5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-frase2",
+            "titulo": "Segunda frase",
+            "legenda": "F7M, Fm6, Em7 e A7(b9), Dm7 e Db7, C7M.",
+            "eventos": [
+              {
+                "notas": [
+                  "F3",
+                  "E4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "F3",
+                  "D4",
+                  "Ab4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "E3",
+                  "D4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C#4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D3",
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Db3",
+                  "Cb4",
+                  "F4",
+                  "Ab4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C3",
+                  "B3",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Graus e cromáticos",
+      "blocos": [
+        {
+          "tipo": "tabela",
+          "legenda": "Passos 3 e 4: cada acorde com o seu grau e a sua explicação.",
+          "cabecalho": [
+            "Compasso",
+            "Cifra",
+            "Grau",
+            "Explicação"
+          ],
+          "linhas": [
+            [
+              "1",
+              "C7M",
+              "I7M",
+              "tônica"
+            ],
+            [
+              "2",
+              "E7",
+              "V7/VI",
+              "dominante secundária do Am7"
+            ],
+            [
+              "3",
+              "Am7",
+              "VIm7",
+              "tônica relativa; resolve o E7"
+            ],
+            [
+              "4",
+              "Gm7 e C7(9)",
+              "IIm7/IV e V7/IV",
+              "II–V secundário que leva ao F7M"
+            ],
+            [
+              "5",
+              "F7M",
+              "IV7M",
+              "subdominante"
+            ],
+            [
+              "6",
+              "Fm6",
+              "IVm6",
+              "empréstimo modal de Dó menor"
+            ],
+            [
+              "7",
+              "Em7 e A7(b9)",
+              "IIm7/II e V7/II",
+              "II–V secundário que leva ao Dm7"
+            ],
+            [
+              "8",
+              "Dm7 e Db7",
+              "IIm7 e SubV7",
+              "o Db7 substitui o G7"
+            ],
+            [
+              "9",
+              "C7M",
+              "I7M",
+              "cadência final"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-e7-am",
+            "titulo": "Compassos 1 a 3",
+            "legenda": "O Sol♯ do E7 é a sensível de Lá: o E7 puxa para o Am7.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "E3",
+                  "D4",
+                  "G#4",
+                  "B4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-iv-ivm",
+            "titulo": "Compassos 5 e 6 e a volta ao C",
+            "legenda": "Do F7M para o Fm6, só o Lá desce para Lá♭: o empréstimo escurece a harmonia por um momento.",
+            "eventos": [
+              {
+                "notas": [
+                  "F3",
+                  "E4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "F3",
+                  "D4",
+                  "Ab4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-g7",
+            "titulo": "Final com G7",
+            "legenda": "Dm7, G7, C7M.",
+            "eventos": [
+              {
+                "notas": [
+                  "D3",
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C3",
+                  "B3",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-subv",
+            "titulo": "Final com o SubV7",
+            "legenda": "Dm7, Db7, C7M: o baixo desce por semitons, Ré, Ré♭, Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "D3",
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Db3",
+                  "Cb4",
+                  "F4",
+                  "Ab4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C3",
+                  "B3",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "A melodia sobre a harmonia",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "**Passo 5.** A voz de cima dos acordes forma uma melodia. Veja o que ela é em cada acorde:\n\n- Si sobre C7M e sobre E7: 7M e depois 5ª;\n- Dó sobre Am7: 3ª; Ré sobre Gm7 e C7(9): 5ª e depois **9ª**;\n- Dó sobre F7M e sobre Fm6: 5ª nos dois. A melodia fica parada e quem muda é o Lá, por dentro;\n- no fim, a melodia desce por semitons, **Si, Si♭, Lá, Lá♭, Sol**: 5ª do Em7, **b9** do A7, 5ª do Dm7, fundamental do Db7 e 5ª do C7M."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-linha",
+            "titulo": "Só a voz de cima",
+            "legenda": "A melodia sozinha, com a linha cromática no fim.",
+            "eventos": [
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "Ab4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Passo 6, a síntese.** A peça fica em Dó maior do começo ao fim, sem modular: todos os acordes de fora do campo se explicam dentro do tom. A primeira frase visita o VI e prepara o IV; a segunda escurece o IV com o empréstimo e desce, numa linha cromática, até a cadência com o SubV7. O ponto alto é o Ré do compasso 4, a nota mais aguda, sobre o C7(9)."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: analisar outra progressão",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Agora a progressão **C7M, A7, Dm7, Bb7, C7M**, com o motivo de cada passo.\n\n1. **Tonalidade**: começa e termina em C7M: Dó maior.\n2. **Graus dos diatônicos**: C7M é I7M; Dm7 é IIm7.\n3. **O A7**: Lá é o VI, mas o acorde é maior com 7ª: dominante que puxa para o Dm7. É o **V7/II**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-exercicio",
+            "titulo": "C7M, A7, Dm7, Bb7, C7M",
+            "legenda": "Ouça o Bb7 antes do fim.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C#4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "D3",
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "Bb3",
+                  "D4",
+                  "Ab4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** o A7 leva o Lá para Dó♯. Isso significa que a peça modulou?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Não: o Dó♯ dura um acorde e logo resolve no Dm7, que é do campo de Dó maior. Sem uma nova tônica confirmada por cadência, não há modulação; o A7 é um acorde cromático dentro do tom.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus: explique o **Bb7** e escreva os graus da progressão inteira.\n\nE agora todos os passos são seus: analise **F7M, D7, Gm7, C7, F7M**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Bb7 é o **bVII7**, emprestado de Dó menor (A03), que vai direto para o I. Graus: **I7M, V7/II, IIm7, bVII7, I7M**.\n\nFá maior: **I7M, V7/II, IIm7, V7, I7M**. O D7 é dominante secundária do Gm7.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"No compasso 2 aparece o Sol♯, então a peça modulou para Lá menor.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "O Sol♯ vem do **E7**, dominante secundária do Am7. Ele aparece num acorde, resolve, e a música segue em Dó: não há cadência que confirme Lá menor como nova tônica. **Acorde cromático não é modulação.** A modulação pede que a nova tônica se firme, com cadência e algum tempo nela (A05).",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o **primeiro passo** de uma análise completa?",
+      "opcoes": [
+        "Achar a tonalidade",
+        "Analisar a melodia",
+        "Cifrar o último acorde",
+        "Procurar empréstimos"
+      ],
+      "correta": 0,
+      "explicacao": "Primeiro a **tonalidade**: sem ela, não dá para dar graus aos acordes.",
+      "conceito": "metodo-de-analise"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Dó maior, qual é o grau do **E7**?",
+      "opcoes": [
+        "V7/VI",
+        "III7",
+        "V7/II",
+        "SubV7"
+      ],
+      "correta": 0,
+      "explicacao": "O E7 é a dominante do Am7, o VI: **V7/VI**.",
+      "conceito": "graus-e-funcoes"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Dó maior, **Gm7 e C7** antes do F7M são:",
+      "opcoes": [
+        "IIm7/IV e V7/IV",
+        "Vm7 e I7",
+        "IIm7 e V7",
+        "Empréstimo modal"
+      ],
+      "correta": 0,
+      "explicacao": "Gm7–C7 é o II–V **do IV**: IIm7/IV e V7/IV.",
+      "conceito": "graus-e-funcoes"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O **Fm6** em Dó maior é:",
+      "opcoes": [
+        "IVm6, empréstimo de Dó menor",
+        "IV6, diatônico",
+        "V7/IV",
+        "SubV7"
+      ],
+      "correta": 0,
+      "explicacao": "O Lá♭ vem de Dó menor: **empréstimo modal**.",
+      "conceito": "acordes-cromaticos"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na peça, o **Db7** entre Dm7 e C7M substitui qual acorde?",
+      "opcoes": [
+        "G7",
+        "D7",
+        "A7",
+        "F7M"
+      ],
+      "correta": 0,
+      "explicacao": "Db7 e G7 têm o mesmo trítono (Fá e Si/Dó♭): o Db7 é o **SubV7**.",
+      "conceito": "acordes-cromaticos"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça os dois finais. Em qual o baixo desce por semitons?",
+      "exemplo": {
+        "id": "exe-subv",
+        "titulo": "Dois finais",
+        "legenda": "Dm7, G7, C7M e depois Dm7, Db7, C7M.",
+        "eventos": [
+          {
+            "notas": [
+              "D3",
+              "C4",
+              "F4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "F4",
+              "B4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C3",
+              "B3",
+              "E4",
+              "G4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "D3",
+              "C4",
+              "F4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "Db3",
+              "Cb4",
+              "F4",
+              "Ab4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C3",
+              "B3",
+              "E4",
+              "G4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "No segundo",
+        "No primeiro"
+      ],
+      "correta": 0,
+      "explicacao": "No segundo, o **SubV7** faz o baixo descer Ré, Ré♭, Dó.",
+      "conceito": "percepcao-analise"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Sobre o **A7**, a nota Si♭ da melodia é:",
+      "opcoes": [
+        "A b9",
+        "A 9",
+        "A 7ª",
+        "A 3ª"
+      ],
+      "correta": 0,
+      "explicacao": "Si♭ fica meio tom acima de Lá: **b9**.",
+      "conceito": "melodia-e-harmonia"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Sobre o **C7**, a nota Ré da melodia é:",
+      "opcoes": [
+        "A 9ª",
+        "A 7ª",
+        "A 5ª",
+        "A 11ª"
+      ],
+      "correta": 0,
+      "explicacao": "Ré fica um tom acima de Dó: **9ª**.",
+      "conceito": "melodia-e-harmonia"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a melodia. O que ela faz no fim?",
+      "exemplo": {
+        "id": "exe-linha",
+        "titulo": "Melodia",
+        "legenda": "Si, Si♭, Lá, Lá♭, Sol.",
+        "eventos": [
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 4.0
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 4.0
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 4.0
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 4.0
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 4.0
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 4.0
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "Bb4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "Ab4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Desce por semitons",
+        "Sobe por tons",
+        "Fica parada",
+        "Salta uma oitava"
+      ],
+      "correta": 0,
+      "explicacao": "Si, Si♭, Lá, Lá♭, Sol: uma **linha cromática** descendente.",
+      "conceito": "percepcao-analise"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na peça, onde termina a **primeira frase**, e como?",
+      "opcoes": [
+        "No compasso 4, aberta, no C7",
+        "No compasso 9, fechada",
+        "No compasso 2, no E7",
+        "No compasso 6, no Fm6"
+      ],
+      "correta": 0,
+      "explicacao": "A primeira frase termina no compasso 4, no **C7**, que pede o F7M: fica aberta.",
+      "conceito": "frases-e-cadencias"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual cadência fecha a peça?",
+      "opcoes": [
+        "IIm7, SubV7, I7M",
+        "IV, I",
+        "V7, VIm",
+        "IIm7, V7/II"
+      ],
+      "correta": 0,
+      "explicacao": "Dm7, Db7, C7M: II–V–I com o **SubV7** no lugar do V7.",
+      "conceito": "frases-e-cadencias"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Um acorde com nota de fora do tom aparece uma vez e resolve num acorde do campo. Isso é:",
+      "opcoes": [
+        "Um acorde cromático dentro do tom",
+        "Uma modulação",
+        "Um erro de escrita",
+        "Atonalismo"
+      ],
+      "correta": 0,
+      "explicacao": "Sem nova tônica confirmada por cadência, é **acorde cromático**, não modulação.",
+      "conceito": "metodo-de-analise"
+    }
+  ],
+  "resumo": [
+    "Método: **tonalidade**, **forma**, **graus**, **cromáticos**, **melodia**, **síntese**.",
+    "Cromáticos comuns: **V7/x**, **II–V secundário**, **empréstimo** (IVm6, bVII7) e **SubV7**.",
+    "Na melodia, nomeie o que cada nota é no acorde: nota do acorde, **tensão** ou nota melódica.",
+    "Acorde cromático que resolve dentro do tom **não é modulação**."
+  ],
+  "pergunta_para_chat": "Me passe progressões de 6 a 10 acordes, uma de cada vez, com cromáticos misturados, para eu analisar grau por grau e explicar cada acorde de fora do campo, e me corrija."
+}

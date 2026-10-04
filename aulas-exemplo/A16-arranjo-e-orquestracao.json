@@ -1,0 +1,1203 @@
+{
+  "codigo": "A16",
+  "titulo": "Arranjo e orquestração",
+  "nivel": "avancado",
+  "resumo_curto": "Camadas do arranjo, extensões, instrumentos transpositores, distribuição de vozes e formações.",
+  "prerequisitos": [
+    "Voicings (A09)",
+    "Contraponto (A10)",
+    "Técnicas de composição (A15)"
+  ],
+  "objetivos": [
+    "Separar um arranjo em **camadas**",
+    "Respeitar a **extensão** de cada instrumento",
+    "Transpor partes para instrumentos **em Si♭ e Mi♭**",
+    "**Distribuir** as vozes e harmonizar em **bloco**",
+    "Conhecer o **regional de choro** e a **orquestra**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. O que é um contraponto?\n2. Num voicing drop 2, que voz desce uma oitava?\n3. Quantos semitons tem uma 2ª maior? E uma 6ª maior?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Uma melodia que soa junto com outra e faz sentido sozinha.\n2. A segunda voz de cima para baixo.\n3. 2 e 9.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "Uma melodia",
+            "legenda": "Quatro compassos, sozinha.",
+            "eventos": [
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 84
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "A mesma melodia arranjada",
+            "legenda": "Com um baixo e uma segunda melodia por baixo.",
+            "eventos": [
+              {
+                "notas": [
+                  "E5",
+                  "E4",
+                  "C4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "E4",
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "D5",
+                  "E4",
+                  "C4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "E4",
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "C5",
+                  "E4",
+                  "C4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "E4",
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "E4",
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5",
+                  "G4",
+                  "B3"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "D5",
+                  "B3"
+                ]
+              },
+              {
+                "notas": [
+                  "D5",
+                  "A4",
+                  "B3"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "B3"
+                ]
+              },
+              {
+                "notas": [
+                  "G5",
+                  "B4",
+                  "B3"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "A5",
+                  "C5",
+                  "A3"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C5",
+                  "A3"
+                ]
+              },
+              {
+                "notas": [
+                  "G5",
+                  "C5",
+                  "A3"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "F5",
+                  "B4",
+                  "G3"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "B4",
+                  "G3"
+                ]
+              },
+              {
+                "notas": [
+                  "D5",
+                  "B4",
+                  "G3"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C5",
+                  "E4",
+                  "C4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 84
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A melodia é a mesma, mas o segundo exemplo soa mais completo: alguém escolheu que outras partes tocar, onde e com que instrumento. Isso é **arranjo**. Quando a escolha é sobre os instrumentos de uma orquestra, chama-se **orquestração**.\n\nAo final, você vai separar um arranjo em camadas, respeitar a extensão de cada instrumento, transpor partes e distribuir as vozes de um acorde."
+        }
+      ]
+    },
+    {
+      "titulo": "As camadas de um arranjo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Quase todo arranjo se organiza em camadas, cada uma com uma função:\n\n- **melodia**: o que se canta;\n- **contracanto**: uma segunda melodia, que se mexe quando a principal para;\n- **harmonia**: os acordes (violão, piano, cordas, metais);\n- **baixo**: as notas graves, que firmam o acorde;\n- **ritmo**: a percussão e a levada.\n\nO segredo é que cada camada tenha o **seu espaço**: no registro (grave, médio, agudo) e no tempo (uma se mexe enquanto a outra segura)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-baixo",
+            "titulo": "Melodia e baixo",
+            "legenda": "O baixo desce Dó, Si, Lá, Sol e volta ao Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "D5",
+                  "C4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "C5",
+                  "C4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5",
+                  "B3"
+                ],
+                "duracao": 2.0,
+                "ligar": [
+                  "B3"
+                ]
+              },
+              {
+                "notas": [
+                  "G5",
+                  "B3"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "A5",
+                  "A3"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "A3"
+                ]
+              },
+              {
+                "notas": [
+                  "G5",
+                  "A3"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "F5",
+                  "G3"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "G3"
+                ]
+              },
+              {
+                "notas": [
+                  "D5",
+                  "G3"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C5",
+                  "C4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 84
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-contracanto",
+            "titulo": "Só o contracanto",
+            "legenda": "Ele anda no 2º e no 3º compasso, quando a melodia segura o Ré e o Sol.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 84
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Num arranjo pequeno, evite duas camadas no mesmo registro fazendo coisas diferentes: elas se embolam e nenhuma se ouve bem."
+        }
+      ]
+    },
+    {
+      "titulo": "Extensão e registro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Cada instrumento tem uma **extensão** (da nota mais grave à mais aguda) e regiões com cores diferentes. Escrever no meio da extensão é seguro; os extremos são mais difíceis e mais expressivos.\n\nAlguns instrumentos são escritos uma **oitava acima** do som real, para a partitura caber na pauta: o **violão** e o **contrabaixo** (e o baixo elétrico)."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Algumas extensões aproximadas, em som real.",
+          "cabecalho": [
+            "Instrumento",
+            "Mais grave",
+            "Região confortável"
+          ],
+          "linhas": [
+            [
+              "Flauta",
+              "Dó4 (o Dó central)",
+              "do Sol4 ao Sol6"
+            ],
+            [
+              "Violino",
+              "Sol3",
+              "do Sol3 ao Mi6"
+            ],
+            [
+              "Violoncelo",
+              "Dó2",
+              "do Dó2 ao Lá4"
+            ],
+            [
+              "Violão",
+              "Mi2",
+              "do Mi2 ao Mi5"
+            ],
+            [
+              "Trompete em Si♭",
+              "Mi3 (Fá♯3 escrito)",
+              "do Si♭3 ao Fá5"
+            ],
+            [
+              "Voz de soprano",
+              "Dó4",
+              "do Ré4 ao Sol5"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Instrumentos transpositores",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Nos **instrumentos transpositores**, a nota escrita não é a nota que soa:\n\n- **em Si♭** (clarinete, trompete, sax tenor): soam uma **2ª maior abaixo** do escrito. Para soar Dó, escreve-se **Ré**: a parte vai uma 2ª maior acima;\n- **em Mi♭** (sax alto): soa uma **6ª maior abaixo**. Para soar Dó, escreve-se **Lá**: a parte vai uma 6ª maior acima (ou uma 3ª menor abaixo).\n\nA armadura também muda: uma melodia em Dó maior vira, na parte do clarinete, uma melodia em **Ré maior**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-som-real",
+            "titulo": "Som real",
+            "legenda": "A melodia em Dó maior, como soa.",
+            "eventos": [
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 84
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-parte-bb",
+            "titulo": "Parte do clarinete em Si♭",
+            "legenda": "Uma 2ª maior acima, em Ré maior. Tocada pelo clarinete, soa como o exemplo anterior.",
+            "eventos": [
+              {
+                "notas": [
+                  "F#5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "F#5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "B5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 84,
+            "armadura": "D"
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Distribuição de vozes",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A série harmônica ensina como espalhar as notas de um acorde: **intervalos abertos no grave**, **fechados no agudo**. No grave, terças juntas embolam; no agudo, soam claras."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-embolado",
+            "titulo": "Terças no grave",
+            "legenda": "Dó, Mi, Sol fechado numa região grave: o som fica embolado.",
+            "eventos": [
+              {
+                "notas": [
+                  "C2",
+                  "E2",
+                  "G2"
+                ],
+                "duracao": 4
+              }
+            ],
+            "clave": "fa",
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-aberto",
+            "titulo": "Quinta no grave, terça em cima",
+            "legenda": "Dó e Sol embaixo, Mi uma 6ª acima: o mesmo acorde, mais claro.",
+            "eventos": [
+              {
+                "notas": [
+                  "C2",
+                  "G2",
+                  "E3"
+                ],
+                "duracao": 4
+              }
+            ],
+            "clave": "fa",
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-fechado-agudo",
+            "titulo": "Fechado no médio",
+            "legenda": "No registro médio, as terças juntas soam bem.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Harmonização em bloco.** Muito usada para naipes de sopros, ela põe três vozes **logo abaixo** de cada nota da melodia, todas andando juntas. Nas notas do acorde, usam-se as notas do acorde (aqui o C6: Dó, Mi, Sol, Lá); nas notas de passagem, um **diminuto**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-bloco-melodia",
+            "titulo": "A melodia",
+            "legenda": "Mi, Ré, Dó, Mi, Ré, Sol, Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 84
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-bloco",
+            "titulo": "Em bloco a quatro vozes",
+            "legenda": "O Ré de passagem leva um diminuto (Fá, Sol♯, Si, Ré); no 2º compasso, o G7.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4",
+                  "G#4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4",
+                  "G4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "B4",
+                  "D5",
+                  "F5",
+                  "G5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 84
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Formações",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "**O regional de choro** é uma das formações mais brasileiras, e cada instrumento tem a sua camada:\n\n- **flauta**, **bandolim** ou **clarinete**: a melodia;\n- **cavaquinho**: o centro, a harmonia rítmica no agudo;\n- **violão de 6 cordas**: a harmonia;\n- **violão de 7 cordas**: as **baixarias**, os contracantos no grave;\n- **pandeiro**: o ritmo.\n\n**A orquestra** se divide em quatro famílias: **cordas** (violinos, violas, violoncelos, contrabaixos), **madeiras** (flauta, oboé, clarinete, fagote), **metais** (trompa, trompete, trombone, tuba) e **percussão**. As cordas costumam carregar a harmonia e a melodia; madeiras e metais dão cor e força."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: transpor para o sax alto",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O sax alto é em Mi♭. Veja como escrever a parte para soar **Dó, Ré, Mi**, com o motivo de cada passo.\n\n1. **Lembre o intervalo**: o sax alto soa uma 6ª maior abaixo; a parte vai uma 6ª maior acima.\n2. **Transponha a tonalidade**: Dó maior + 6ª maior = **Lá maior** (três sustenidos).\n3. **Transponha as notas**: Dó → **Lá**, Ré → **Si**, Mi → **Dó♯**."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** e se a parte ficar aguda demais para o sax?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Escreve-se uma oitava abaixo: uma **3ª menor abaixo** do som real, em vez de uma 6ª maior acima. A nota escrita é a mesma (Lá, Si, Dó♯), só que na oitava de baixo.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus: para o clarinete em Si♭ soar **Fá, Sol, Lá**, qual a tonalidade e quais as notas escritas?\n\nE agora todos os passos são seus: escreva a parte do trompete em Si♭ para soar **Sol, Lá, Si**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Fá maior + 2ª maior = **Sol maior**; notas **Sol, Lá, Si**.\n\nSol maior + 2ª maior = **Lá maior**; notas **Lá, Si, Dó♯**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"Para o arranjo ficar cheio, todo mundo toca o tempo todo.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Com todos tocando sempre, as camadas se embolam e o arranjo perde o contraste. Arranjar é também **tirar**: dar espaço para a melodia, fazer o contracanto entrar quando ela para, guardar instrumentos para o momento de crescer.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que faz um bom **contracanto**?",
+      "opcoes": [
+        "Se mexe quando a melodia principal segura ou para",
+        "Dobra a melodia na mesma altura",
+        "Toca só a nota mais grave",
+        "Toca sempre junto com a melodia"
+      ],
+      "correta": 0,
+      "explicacao": "O contracanto ocupa os **espaços** da melodia principal.",
+      "conceito": "camadas-do-arranjo"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Quantas camadas melódicas soam ao mesmo tempo?",
+      "exemplo": {
+        "id": "exe-camadas",
+        "titulo": "Arranjo",
+        "legenda": "Melodia, contracanto e baixo.",
+        "eventos": [
+          {
+            "notas": [
+              "E5",
+              "E4",
+              "C4"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "E4",
+              "C4"
+            ]
+          },
+          {
+            "notas": [
+              "D5",
+              "E4",
+              "C4"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "E4",
+              "C4"
+            ]
+          },
+          {
+            "notas": [
+              "C5",
+              "E4",
+              "C4"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "E4",
+              "C4"
+            ]
+          },
+          {
+            "notas": [
+              "E5",
+              "E4",
+              "C4"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "D5",
+              "G4",
+              "B3"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "D5",
+              "B3"
+            ]
+          },
+          {
+            "notas": [
+              "D5",
+              "A4",
+              "B3"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "B3"
+            ]
+          },
+          {
+            "notas": [
+              "G5",
+              "B4",
+              "B3"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "A5",
+              "C5",
+              "A3"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "C5",
+              "A3"
+            ]
+          },
+          {
+            "notas": [
+              "G5",
+              "C5",
+              "A3"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "F5",
+              "B4",
+              "G3"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "B4",
+              "G3"
+            ]
+          },
+          {
+            "notas": [
+              "D5",
+              "B4",
+              "G3"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "C5",
+              "E4",
+              "C4"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 84
+      },
+      "opcoes": [
+        "Três: melodia, contracanto e baixo",
+        "Uma",
+        "Duas"
+      ],
+      "correta": 0,
+      "explicacao": "Melodia em cima, **contracanto** no meio e **baixo** embaixo.",
+      "conceito": "percepcao-arranjo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O violão é escrito:",
+      "opcoes": [
+        "Uma oitava acima do som real",
+        "Como soa",
+        "Uma 2ª maior acima",
+        "Uma oitava abaixo do som real"
+      ],
+      "correta": 0,
+      "explicacao": "O violão (como o contrabaixo) é escrito **uma oitava acima** do som.",
+      "conceito": "extensao-e-registro"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Escrever no meio da extensão de um instrumento é:",
+      "opcoes": [
+        "Mais seguro",
+        "Proibido",
+        "Sempre mais expressivo",
+        "Igual aos extremos"
+      ],
+      "correta": 0,
+      "explicacao": "O meio é confortável; os **extremos** são mais difíceis e mais expressivos.",
+      "conceito": "extensao-e-registro"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O clarinete em Si♭ precisa soar **Dó**. Que nota se escreve?",
+      "opcoes": [
+        "Ré",
+        "Si♭",
+        "Lá",
+        "Dó"
+      ],
+      "correta": 0,
+      "explicacao": "Instrumento em Si♭: escreve-se uma **2ª maior acima**: Ré.",
+      "conceito": "instrumentos-transpositores"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O sax alto (em Mi♭) precisa soar **Dó**. Que nota se escreve?",
+      "opcoes": [
+        "Lá",
+        "Mi♭",
+        "Ré",
+        "Sol"
+      ],
+      "correta": 0,
+      "explicacao": "Instrumento em Mi♭: escreve-se uma **6ª maior acima**: Lá.",
+      "conceito": "instrumentos-transpositores"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma música em Fá maior. Em que tonalidade fica a parte do trompete em Si♭?",
+      "opcoes": [
+        "Sol maior",
+        "Mi♭ maior",
+        "Fá maior",
+        "Ré maior"
+      ],
+      "correta": 0,
+      "explicacao": "Fá + 2ª maior = **Sol maior**.",
+      "conceito": "instrumentos-transpositores"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Onde terças fechadas embolam o som?",
+      "opcoes": [
+        "No grave",
+        "No agudo",
+        "No médio",
+        "Em lugar nenhum"
+      ],
+      "correta": 0,
+      "explicacao": "No **grave**, intervalos pequenos embolam; ali se usam 5ªs e 8ªs.",
+      "conceito": "distribuicao-de-vozes"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça os dois acordes graves. Qual soa mais claro?",
+      "exemplo": {
+        "id": "exe-distribuicao",
+        "titulo": "Dois acordes",
+        "legenda": "Fechado e depois aberto.",
+        "eventos": [
+          {
+            "notas": [
+              "C2",
+              "E2",
+              "G2"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C2",
+              "G2",
+              "E3"
+            ],
+            "duracao": 4
+          }
+        ],
+        "clave": "fa",
+        "andamento": 60
+      },
+      "opcoes": [
+        "O segundo",
+        "O primeiro"
+      ],
+      "correta": 0,
+      "explicacao": "O segundo tem a **5ª no grave** e a terça em cima: mais claro.",
+      "conceito": "percepcao-arranjo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na harmonização em bloco, que acorde costuma ir na nota de passagem?",
+      "opcoes": [
+        "Um diminuto",
+        "O mesmo acorde da nota anterior",
+        "Um acorde em quartas",
+        "Um aumentado"
+      ],
+      "correta": 0,
+      "explicacao": "Na nota de passagem, o bloco usa um **diminuto**, que liga os acordes vizinhos.",
+      "conceito": "distribuicao-de-vozes"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No regional de choro, quem faz as **baixarias**?",
+      "opcoes": [
+        "O violão de 7 cordas",
+        "O cavaquinho",
+        "O pandeiro",
+        "A flauta"
+      ],
+      "correta": 0,
+      "explicacao": "As baixarias, contracantos no grave, são do **violão de 7 cordas**.",
+      "conceito": "formacoes"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A que família da orquestra pertence o **clarinete**?",
+      "opcoes": [
+        "Madeiras",
+        "Metais",
+        "Cordas",
+        "Percussão"
+      ],
+      "correta": 0,
+      "explicacao": "Flauta, oboé, clarinete e fagote são **madeiras**.",
+      "conceito": "formacoes"
+    }
+  ],
+  "resumo": [
+    "Camadas: **melodia**, **contracanto**, **harmonia**, **baixo**, **ritmo**, cada uma com seu espaço.",
+    "Violão e contrabaixo são escritos uma oitava acima do som.",
+    "Em **Si♭**: escreve-se uma 2ª maior acima. Em **Mi♭**: uma 6ª maior acima.",
+    "Intervalos **abertos no grave**, **fechados no agudo**. Bloco: três vozes logo abaixo da melodia.",
+    "Regional: melodia, cavaquinho, violão de 6, violão de 7 (baixarias) e pandeiro."
+  ],
+  "pergunta_para_chat": "Vou te mandar uma melodia e uma formação; me ajude a planejar o arranjo, camada por camada, e a transpor as partes dos instrumentos transpositores."
+}
