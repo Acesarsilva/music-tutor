@@ -1,0 +1,882 @@
+{
+  "codigo": "A04",
+  "titulo": "Substituição tritonal e rearmonização",
+  "nivel": "avancado",
+  "resumo_curto": "SubV7, II relacionado, diminutos de passagem, baixos cromáticos e rearmonização.",
+  "prerequisitos": [
+    "Acordes alterados (A02)",
+    "Empréstimo modal (A03)",
+    "Dominantes secundárias (M14)"
+  ],
+  "objetivos": [
+    "Entender a **substituição tritonal**",
+    "Usar o **SubV7** e o seu **II relacionado**",
+    "Usar **diminutos de passagem**",
+    "Criar **linhas de baixo cromáticas**",
+    "**Rearmonizar** uma melodia com segurança"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Qual é o trítono do G7, e como ele se resolve em C?\n2. Quantos semitons tem um trítono?\n3. Que alteração dá a cor da escala nordestina a um acorde 7?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Si e Fá: o Si sobe para Dó, o Fá desce para Mi.\n2. Seis: metade da oitava.\n3. A ♯11.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "Dm7, G7, C7M",
+            "legenda": "O II–V–I de sempre.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "Dm7, D♭7, C7M",
+            "legenda": "Troque o G7 por outro acorde. O baixo agora faz o quê?",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Db4",
+                  "F4",
+                  "Ab4",
+                  "Cb5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O baixo desce **Ré, Ré♭, Dó**, por semitons, e o acorde do meio ainda puxa para o C7M, como o G7. O D♭7 está no lugar do G7: é a **substituição tritonal**, um dos sons mais típicos da bossa nova e do jazz.\n\nAo final, você vai usar o SubV7, diminutos de passagem e baixos cromáticos para **rearmonizar**."
+        }
+      ]
+    },
+    {
+      "titulo": "O trítono comum",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O trítono divide a oitava ao meio. Por isso, as notas **Fá e Si** formam o trítono de **dois** acordes dominantes:\n\n- no **G7**, Si é a 3ª e Fá é a 7ª;\n- no **D♭7**, Fá é a 3ª e **Dó♭** (o mesmo som de Si) é a 7ª.\n\nAs fundamentais, Sol e Ré♭, também ficam a um trítono uma da outra. Trocando um acorde pelo outro, a tensão que resolve é a mesma. Na análise, o D♭7 se chama **SubV7** (ou bII7)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-g7-db7",
+            "titulo": "G7 e D♭7",
+            "legenda": "Fá e Si (Dó♭) nos dois acordes; só o resto muda.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "Db4",
+                  "F4",
+                  "Ab4",
+                  "Cb5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-subv",
+            "titulo": "D♭7 → C",
+            "legenda": "O baixo desce meio tom; o Fá desce para Mi; o Dó♭ (Si) sobe para Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "Db4",
+                  "F4",
+                  "Ab4",
+                  "Cb5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "O SubV7 de qualquer dominante fica **meio tom acima** do acorde de chegada: o SubV7 de C é D♭7; o de F é G♭7; o de Am é B♭7."
+        }
+      ]
+    },
+    {
+      "titulo": "O II relacionado do SubV",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Assim como o V7 tem o seu IIm7, o SubV7 também tem: o IIm7 que fica uma 5ª acima dele. Para o D♭7, é o **A♭m7**. A sequência **A♭m7–D♭7–C7M** é um II–V meio tom acima da tônica, que desce até ela.\n\nTambém é comum misturar: **Dm7–D♭7–C7M**, o II do tom com o SubV."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ii-subv",
+            "titulo": "A♭m7, D♭7, C7M",
+            "legenda": "O II–V meio tom acima, descendo para a tônica.",
+            "eventos": [
+              {
+                "notas": [
+                  "Ab3",
+                  "Cb4",
+                  "Eb4",
+                  "Gb4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Db4",
+                  "F4",
+                  "Ab4",
+                  "Cb5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Diminutos de passagem",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um acorde **diminuto** pode ligar dois acordes cuja fundamental está a um tom de distância, com o baixo subindo por semitons: **C7M–C♯°–Dm7**. O C♯° tem as mesmas notas do A7(b9) sem a fundamental: ele funciona como uma dominante do Dm7, com o baixo cromático."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-dim-1",
+            "titulo": "C7M, C♯°, Dm7",
+            "legenda": "O baixo sobe Dó, Dó♯, Ré.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C#4",
+                  "E4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-dim-2",
+            "titulo": "Dm7, D♯°, Em7",
+            "legenda": "O mesmo recurso um tom acima: Ré, Ré♯, Mi.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D#4",
+                  "F#4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Linhas de baixo cromáticas",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Mantendo os acordes parecidos e mudando só o **baixo**, por semitons, cria-se uma linha que puxa a música. As inversões ajudam: a cifra **C/B** quer dizer acorde de C com Si no baixo.\n\nUm caminho muito usado na MPB: **C, C7M/B, C7/B♭, F/A, Fm/A♭, C/G**. O baixo desce Dó, Si, Si♭, Lá, Lá♭, Sol, um semitom por vez, e passa até por um empréstimo modal (Fm)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-baixo",
+            "titulo": "C, C7M/B, C7/B♭, F/A, Fm/A♭, C/G, C",
+            "legenda": "Siga só a nota mais grave.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "B3",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Bb3",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Ab3",
+                  "C4",
+                  "F4",
+                  "Ab4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 66
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Rearmonizar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "**Rearmonizar** é trocar os acordes de uma melodia que já existe. A regra: cada nota da melodia precisa ser **nota do novo acorde** ou **tensão disponível** nele.\n\nVeja a melodia Mi, Fá, Mi. Sobre o G7, o Fá é a 7ª. Sobre o D♭7, o Fá é a **3ª**: a troca funciona."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-rearm-a",
+            "titulo": "Original: C, G7, C",
+            "legenda": "Melodia Mi, Fá, Mi.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "D4",
+                  "B4",
+                  "F5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-rearm-b",
+            "titulo": "Rearmonizado: C, D♭7, C",
+            "legenda": "A mesma melodia, com o SubV7.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Db4",
+                  "Ab4",
+                  "Cb5",
+                  "F5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: aplicar o SubV7",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Troque o V7 de **Em7–A7–Dm7** pelo SubV7, com o motivo de cada passo.\n\n1. **Ache o V7 e o acorde de chegada**: A7 resolve em Dm7.\n2. **Ache a fundamental a um trítono**: de Lá, um trítono é **Mi♭**.\n3. **Monte o acorde 7**: E♭7. A progressão fica **Em7–E♭7–Dm7**, com o baixo descendo Mi, Mi♭, Ré."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que o E♭7 ainda puxa para o Dm7?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "O A7 tem o trítono **Dó♯–Sol**. O E♭7 tem **Sol** (3ª) e **Ré♭** (7ª, o mesmo som de Dó♯): o mesmo trítono. Ele resolve igual, e o baixo ainda desce meio tom até Ré.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. Em **Gm7–C7–F7M**, o V7 é C7. Ache a fundamental a um trítono e monte o acorde.\n\nE agora todos os passos são seus: **Bm7(b5)–E7–Am7**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "De Dó, um trítono é **Sol♭**: **Gm7–G♭7–F7M**.\n\nO V7 é E7, que resolve em Am7; de Mi, um trítono é **Si♭**: **Bm7(b5)–B♭7–Am7**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega rearmonizou uma melodia que fica em **Sol** sobre o G7 e trocou o acorde por D♭7.\n\n> \"Funciona, porque D♭7 substitui G7.\"\n\nO que faltou conferir?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A **melodia**. Sobre o D♭7, Sol é a **♯11** (Sol = Ré♭ + trítono): soa como tensão alterada, não como nota do acorde. Pode até funcionar com essa cor, mas o efeito muda bastante. Rearmonizar é sempre conferir cada nota da melodia contra o acorde novo.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que notas o **G7** e o **D♭7** têm em comum?",
+      "opcoes": [
+        "Fá e Si (Dó♭)",
+        "Sol e Ré♭",
+        "Ré e Lá♭",
+        "Nenhuma"
+      ],
+      "correta": 0,
+      "explicacao": "As duas dominantes dividem o **trítono Fá–Si**: 3ª e 7ª de uma são 7ª e 3ª da outra.",
+      "conceito": "substituicao-tritonal"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o SubV7 que leva a **F7M**?",
+      "opcoes": [
+        "G♭7",
+        "C7",
+        "B7",
+        "D♭7"
+      ],
+      "correta": 0,
+      "explicacao": "O V7 de F é C7; um trítono de Dó é Sol♭: **G♭7**, meio tom acima do F.",
+      "conceito": "substituicao-tritonal"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Sol3 está marcado: é a fundamental do G7. Clique na fundamental do seu SubV7.",
+      "nota_base": "G3",
+      "intervalo": "4A",
+      "direcao": "acima",
+      "explicacao": "Um trítono acima de Sol é **Dó♯** (o mesmo som de Ré♭): a fundamental do D♭7.",
+      "conceito": "substituicao-tritonal",
+      "de": "E3",
+      "ate": "E5"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça as duas versões do II–V–I. Em qual o baixo desce por semitons?",
+      "exemplo": {
+        "id": "exe-subv",
+        "titulo": "Duas versões",
+        "legenda": "Dm7, G7, C7M e depois Dm7, D♭7, C7M.",
+        "eventos": [
+          {
+            "notas": [
+              "D4",
+              "F4",
+              "A4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "F4",
+              "B4",
+              "D5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "D4",
+              "F4",
+              "A4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "Db4",
+              "F4",
+              "Ab4",
+              "Cb5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "Na segunda",
+        "Na primeira"
+      ],
+      "correta": 0,
+      "explicacao": "Na segunda o baixo faz **Ré, Ré♭, Dó**: é o SubV7 no lugar do G7.",
+      "conceito": "percepcao-rearmonizacao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o **II relacionado** do D♭7?",
+      "opcoes": [
+        "A♭m7",
+        "Dm7",
+        "Gm7",
+        "E♭m7"
+      ],
+      "correta": 0,
+      "explicacao": "Uma 5ª acima de Ré♭ é Lá♭: o II relacionado é **A♭m7**.",
+      "conceito": "ii-relacionado-do-subv"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que acorde diminuto liga **C7M** a **Dm7** com o baixo cromático?",
+      "opcoes": [
+        "C♯°",
+        "D♯°",
+        "B°",
+        "F♯°"
+      ],
+      "correta": 0,
+      "explicacao": "O baixo sobe Dó, **Dó♯**, Ré: o diminuto é **C♯°**.",
+      "conceito": "diminuto-de-passagem"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O **C♯°** antes do Dm7 funciona como qual acorde sem a fundamental?",
+      "opcoes": [
+        "A7(b9)",
+        "G7",
+        "C7M",
+        "E7"
+      ],
+      "correta": 0,
+      "explicacao": "Dó♯, Mi, Sol, Si♭ são 3ª, 5ª, 7ª e b9 do A7: o **A7(b9)**, dominante do Dm7.",
+      "conceito": "diminuto-de-passagem"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. O que a nota mais grave faz?",
+      "exemplo": {
+        "id": "exe-baixo",
+        "titulo": "Progressão",
+        "legenda": "C, C7M/B, C7/B♭, F/A, Fm/A♭, C/G, C.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "B3",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "Bb3",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "A3",
+              "C4",
+              "F4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "Ab3",
+              "C4",
+              "F4",
+              "Ab4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 66
+      },
+      "opcoes": [
+        "Desce por semitons",
+        "Sobe por semitons",
+        "Fica parada",
+        "Salta de 5ª em 5ª"
+      ],
+      "correta": 0,
+      "explicacao": "O baixo desce **Dó, Si, Si♭, Lá, Lá♭, Sol**: uma linha cromática.",
+      "conceito": "baixo-cromatico"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que quer dizer a cifra **C/B**?",
+      "opcoes": [
+        "Acorde de C com Si no baixo",
+        "C ou B, à escolha",
+        "C com 9",
+        "Acorde de B sobre C"
+      ],
+      "correta": 0,
+      "explicacao": "A barra indica o **baixo**: o acorde é C, e a nota mais grave é **Si**.",
+      "conceito": "baixo-cromatico"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na rearmonização, cada nota da melodia precisa ser:",
+      "opcoes": [
+        "Nota do novo acorde ou tensão disponível",
+        "Sempre a fundamental do acorde",
+        "Uma nota de fora do acorde",
+        "A mesma do baixo"
+      ],
+      "correta": 0,
+      "explicacao": "Se a nota da melodia for nota a evitar no acorde novo, o choque aparece. Ela precisa ser **nota do acorde** ou **tensão disponível**.",
+      "conceito": "rearmonizacao"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A melodia Mi, Fá, Mi é a mesma nas duas. O que mudou?",
+      "exemplo": {
+        "id": "exe-rearm",
+        "titulo": "Duas harmonizações",
+        "legenda": "C, G7, C e depois C, D♭7, C.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G3",
+              "D4",
+              "B4",
+              "F5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "Db4",
+              "Ab4",
+              "Cb5",
+              "F5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "O acorde do meio, com o baixo meio tom acima do Dó",
+        "A melodia",
+        "O acorde final"
+      ],
+      "correta": 0,
+      "explicacao": "O G7 virou **D♭7**: o baixo fica meio tom acima do Dó e desce até ele.",
+      "conceito": "percepcao-rearmonizacao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na progressão **Em7–E♭7–Dm7**, o E♭7 substitui:",
+      "opcoes": [
+        "A7",
+        "B♭7",
+        "E7",
+        "D7"
+      ],
+      "correta": 0,
+      "explicacao": "E♭7 fica um trítono acima de Lá e resolve em Dm7: é o **SubV7 do A7**.",
+      "conceito": "substituicao-tritonal"
+    }
+  ],
+  "resumo": [
+    "Duas dominantes a um trítono de distância dividem o mesmo trítono: G7 e D♭7 têm Fá e Si.",
+    "O **SubV7** fica meio tom acima do acorde de chegada, e o baixo desce por semitom.",
+    "O **II relacionado** do SubV7 fica uma 5ª acima dele: A♭m7–D♭7–C7M.",
+    "O **diminuto de passagem** liga acordes a um tom de distância com o baixo cromático (C7M–C♯°–Dm7).",
+    "**Rearmonizar**: cada nota da melodia deve ser nota do acorde novo ou tensão disponível."
+  ],
+  "pergunta_para_chat": "Me dê progressões e pequenas melodias cifradas, uma de cada vez, para eu rearmonizar com SubV7, diminutos de passagem ou baixo cromático, e confira cada nota da melodia contra os acordes que eu escolher."
+}

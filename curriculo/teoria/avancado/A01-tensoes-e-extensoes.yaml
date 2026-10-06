@@ -1,0 +1,34 @@
+codigo: A01
+titulo: Tensões e extensões
+nivel: avancado
+assunto: teoria
+prerequisitos:
+  - M03  # Intervalos compostos
+  - M05  # Acordes de sétima
+  - M06  # Campo harmônico com tétrades
+  - M11  # Modos gregos
+objetivos:
+  - Formar as extensões 9, 11 e 13 continuando a pilha de 3ªs acima da 7ª
+  - Ler e escrever cifras com tensões, como C7M(9), Dm7(11) e G7(13)
+  - Diferenciar tensões disponíveis de notas a evitar pela regra da 9ª menor
+  - Saber as tensões disponíveis nos acordes 7M, m7, 7 e m7(b5) do campo maior
+  - Reconhecer de ouvido a cor que cada tensão acrescenta
+conceitos:
+  - extensoes
+  - cifra-de-tensoes
+  - tensoes-disponiveis
+  - notas-a-evitar
+  - tensoes-por-acorde
+  - percepcao-tensoes
+fora_do_escopo:
+  - Tensões alteradas, como 7(b9), 7(#9) e 7alt (módulo A02)
+  - Montagem de voicings, como drop 2 e quartas (módulo A09)
+exemplos_semente:
+  - "C7M e C7M(9): a 9ª acrescenta brilho"
+  - "G7(13) resolvendo em C7M(9)"
+  - "C7M com Fá: a 11 choca com a 3ª, a 9ª menor"
+  - "Dm7(11): a 11 soa aberta no acorde menor"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

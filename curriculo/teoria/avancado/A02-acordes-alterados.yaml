@@ -1,0 +1,32 @@
+codigo: A02
+titulo: Acordes alterados
+nivel: avancado
+assunto: teoria
+prerequisitos:
+  - A01  # Tensões e extensões
+  - M14  # Dominantes secundárias
+objetivos:
+  - Entender por que as tensões alteradas aparecem quase sempre no acorde dominante
+  - Formar e cifrar os acordes 7(b9), 7(#9), 7(#11) e 7(b13)
+  - Entender o acorde 7alt como a soma das alterações
+  - Ouvir a resolução por semitom das notas alteradas
+  - Formar os acordes sus4, sus2 e add9
+conceitos:
+  - alteracoes-da-dominante
+  - nona-menor-e-aumentada
+  - decima-primeira-aumentada-e-decima-terceira-menor
+  - acorde-alterado
+  - sus-e-add
+  - percepcao-alterados
+fora_do_escopo:
+  - A escala alterada e a menor melódica (módulo A07)
+  - Substituição tritonal (módulo A04)
+exemplos_semente:
+  - "G7(b9) resolvendo em Cm: o Lá bemol desce para Sol"
+  - "G7(#11): a cor da escala nordestina"
+  - "G7sus4 resolvendo em G7"
+  - "C(add9): a 9 sem a 7"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

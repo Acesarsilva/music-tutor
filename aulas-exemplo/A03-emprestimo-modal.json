@@ -1,0 +1,822 @@
+{
+  "codigo": "A03",
+  "titulo": "Empréstimo modal",
+  "nivel": "avancado",
+  "resumo_curto": "Acordes do tom menor paralelo no tom maior: IVm, bVI, bVII e a terça de picardia.",
+  "prerequisitos": [
+    "Campo harmônico com tétrades (M06)",
+    "Funções harmônicas (M07)",
+    "Modos gregos (M11)"
+  ],
+  "objetivos": [
+    "Entender o **tom paralelo**",
+    "Usar acordes **emprestados** do menor no maior",
+    "Reconhecer a **subdominante menor** (IVm, IIm7(b5))",
+    "Usar o **bVI** e o **bVII**",
+    "Reconhecer a **terça de picardia**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quais são os acordes de Dó maior (tríades)?\n2. Quantos bemóis tem a armadura de Dó menor? Quais?\n3. Qual é a função do F em Dó maior?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. C, Dm, Em, F, G, Am, B°.\n2. Três: Si♭, Mi♭, Lá♭.\n3. Subdominante.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "C, F, C",
+            "legenda": "Uma volta simples pela subdominante.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "C, F, Fm, C",
+            "legenda": "O que o terceiro acorde faz com o clima?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F4",
+                  "Ab4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O **Fm** tem **Lá♭**, nota de Dó **menor**. Por um instante, o tom maior pega emprestado um acorde do tom menor com a mesma tônica, e o clima fica mais escuro e saudoso. É o **empréstimo modal** (ou intercâmbio modal).\n\nAo final, você vai reconhecer e usar os acordes emprestados mais comuns."
+        }
+      ]
+    },
+    {
+      "titulo": "O tom paralelo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Dó maior e Dó menor são **tons paralelos**: mesma tônica, modos diferentes. (Não confunda com o relativo, Lá menor, que tem a mesma armadura.)\n\nNo empréstimo modal, a música continua em Dó maior, mas usa acordes do campo de **Dó menor**. As notas que fazem a diferença são **Mi♭**, **Lá♭** e **Si♭**."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Acordes de Dó menor que entram em Dó maior.",
+          "cabecalho": [
+            "Acorde",
+            "Grau em Dó maior",
+            "Nota emprestada"
+          ],
+          "linhas": [
+            [
+              "Fm, Fm7",
+              "IVm, IVm7",
+              "Lá♭"
+            ],
+            [
+              "Dm7(b5)",
+              "IIm7(b5)",
+              "Lá♭"
+            ],
+            [
+              "A♭, A♭7M",
+              "bVI, bVI7M",
+              "Lá♭ e Mi♭"
+            ],
+            [
+              "B♭, B♭7",
+              "bVII, bVII7",
+              "Si♭ e Lá♭"
+            ],
+            [
+              "E♭, E♭7M",
+              "bIII, bIII7M",
+              "Mi♭ e Si♭"
+            ]
+          ]
+        },
+        {
+          "tipo": "dica",
+          "markdown": "O **b** antes do grau diz que a fundamental está meio tom abaixo do grau de Dó maior: **bVI** é construído sobre Lá♭, não sobre Lá."
+        }
+      ]
+    },
+    {
+      "titulo": "A subdominante menor",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O empréstimo mais usado é o **IVm** (Fm em Dó). Ele mantém a função de **subdominante**, mas com o Lá♭, que desce meio tom até o Sol do acorde de tônica. Esse movimento Lá–Lá♭–Sol dá o tom melancólico característico da subdominante menor, muito usado na MPB e na bossa nova. O **IIm7(b5)** (Dm7(b5)) tem a mesma função e a mesma nota."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ivm",
+            "titulo": "C, F, Fm, C",
+            "legenda": "Siga a voz Lá, Lá♭, Sol.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F4",
+                  "Ab4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-iim7b5",
+            "titulo": "Dm7(b5), G7, C",
+            "legenda": "O II emprestado do menor, antes da dominante.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "Ab4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "bVI e bVII",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O **bVI** (A♭) e o **bVII** (B♭) são maiores, mas trazem o Lá♭ e o Si♭. Juntos formam a cadência **bVI–bVII–I**, que chega à tônica sem passar pela dominante: um final grandioso, comum no rock e nas trilhas de cinema.\n\nCom tétrades, **IVm7–bVII7–I7M** (Fm7, B♭7, C7M) é outra resolução sem o V7: o B♭7 funciona como uma dominante vinda \"pela porta dos fundos\"."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-bvi-bvii",
+            "titulo": "C, A♭, B♭, C",
+            "legenda": "bVI, bVII, I: a tônica chega por um tom inteiro.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "Ab4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "Bb4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-backdoor",
+            "titulo": "Fm7, B♭7, C7M",
+            "legenda": "IVm7, bVII7, I7M.",
+            "eventos": [
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "Eb4",
+                  "Ab4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Bb3",
+                  "D4",
+                  "F4",
+                  "Ab4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Terça de picardia",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O empréstimo também vai no sentido contrário. Uma música em tom **menor** pode terminar no acorde **maior** da tônica, emprestado do maior paralelo. É a **terça de picardia**, muito comum na música barroca: um final que se ilumina."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-picardia",
+            "titulo": "Am, Dm, E7, A",
+            "legenda": "Tudo em Lá menor, até o último acorde, que é maior.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "A4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "A3",
+                  "D4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G#3",
+                  "D4",
+                  "E4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C#4",
+                  "E4",
+                  "A4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: reconhecer um empréstimo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Analise **C, E♭, F, C** em Dó maior, com o motivo de cada passo.\n\n1. **Ache o acorde de fora do campo**: E♭ tem Mi♭ e Si♭, que não estão em Dó maior.\n2. **Veja se é dominante secundária**: não é do tipo 7 nem resolve uma 5ª abaixo.\n3. **Procure no tom paralelo**: em Dó menor, E♭ é o III. Em Dó maior, ele é o **bIII emprestado**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-biii",
+            "titulo": "C, E♭, F, C",
+            "legenda": "O E♭ escurece antes de voltar ao F.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "Eb4",
+                  "G4",
+                  "Bb4",
+                  "Eb5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** e se o acorde de fora fosse **E7**, seguido de Am?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "E7 → Am é uma **dominante secundária** (V7/VIm), não um empréstimo: tem Sol♯, que não está em Dó menor, e resolve uma 5ª abaixo. O passo 2 resolve essa dúvida.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. Em **C, B♭, C**, o B♭ não é do tipo 7 e não resolve uma 5ª abaixo. Procure no paralelo.\n\nE agora todos os passos são seus: **C, A♭7M, G7, C**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "B♭ é o VII de Dó menor: **bVII emprestado**.\n\nA♭7M tem Lá♭ e Mi♭, não é do tipo 7, e em Dó menor é o VI7M: **bVI7M emprestado**, que leva ao G7.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"Se a música usa Fm, ela modulou para Dó menor.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Um acorde emprestado é uma **cor passageira**: a tônica continua sendo Dó maior, que volta logo depois. Modulação é quando o novo tom se estabelece, com cadência própria. Isso é assunto da A05.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o tom **paralelo** de Dó maior?",
+      "opcoes": [
+        "Dó menor",
+        "Lá menor",
+        "Sol maior",
+        "Fá maior"
+      ],
+      "correta": 0,
+      "explicacao": "Paralelo: mesma tônica, outro modo: **Dó menor**. Lá menor é o relativo.",
+      "conceito": "modo-paralelo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Dó maior, o **IVm** é:",
+      "opcoes": [
+        "Fm",
+        "F",
+        "Dm",
+        "Gm"
+      ],
+      "correta": 0,
+      "explicacao": "O IV de Dó é Fá; emprestado do menor, fica **Fm**, com Lá♭.",
+      "conceito": "subdominante-menor"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Lá4 está marcado: é a 3ª do F. Clique na nota que transforma o F em **Fm**.",
+      "nota_base": "A4",
+      "intervalo": "1A",
+      "direcao": "abaixo",
+      "explicacao": "Meio tom abaixo, com o mesmo nome: **Lá♭**. É a nota emprestada de Dó menor.",
+      "conceito": "subdominante-menor",
+      "de": "C4",
+      "ate": "C6"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça as duas versões. Em qual há um acorde emprestado?",
+      "exemplo": {
+        "id": "exe-ivm",
+        "titulo": "Duas versões",
+        "legenda": "C, F, C e depois C, F, Fm, C.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "F4",
+              "A4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "F4",
+              "A4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "F4",
+              "Ab4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "Na segunda",
+        "Na primeira"
+      ],
+      "correta": 0,
+      "explicacao": "Na segunda, o **Fm** traz o Lá♭ e escurece o clima antes da volta ao C.",
+      "conceito": "percepcao-emprestimo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Dó maior, qual é o acorde **bVII**?",
+      "opcoes": [
+        "B♭",
+        "B°",
+        "Bm",
+        "A♭"
+      ],
+      "correta": 0,
+      "explicacao": "Sobre Si♭, maior: **B♭**, emprestado de Dó menor. O B° é o VII° do próprio tom.",
+      "conceito": "bvi-e-bvii"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais três notas de Dó menor fazem a diferença nos acordes emprestados para Dó maior?",
+      "opcoes": [
+        "Mi♭, Lá♭ e Si♭",
+        "Fá♯, Dó♯ e Sol♯",
+        "Ré♭, Sol♭ e Dó♭",
+        "Mi, Lá e Si"
+      ],
+      "correta": 0,
+      "explicacao": "Dó menor tem **Mi♭, Lá♭ e Si♭** onde Dó maior tem Mi, Lá e Si.",
+      "conceito": "emprestimo-modal"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Como a tônica chega no final?",
+      "exemplo": {
+        "id": "exe-bvi-bvii",
+        "titulo": "Progressão",
+        "legenda": "C, A♭, B♭, C.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "Eb4",
+              "Ab4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "D4",
+              "F4",
+              "Bb4",
+              "D5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "Por bVI e bVII, sem a dominante G",
+        "Pelo G7, a dominante",
+        "Pelo F, a subdominante"
+      ],
+      "correta": 0,
+      "explicacao": "A♭ e B♭ sobem até o C: **bVI–bVII–I**, sem o G.",
+      "conceito": "bvi-e-bvii"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma música em Lá menor termina no acorde **A** (Lá maior). Como se chama esse recurso?",
+      "opcoes": [
+        "Terça de picardia",
+        "Dominante secundária",
+        "Modulação",
+        "Cadência plagal"
+      ],
+      "correta": 0,
+      "explicacao": "O acorde maior da tônica, emprestado do paralelo maior no fim: **terça de picardia**.",
+      "conceito": "terca-de-picardia"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na progressão **C, Dm7(b5), G7, C**, o Dm7(b5) é:",
+      "opcoes": [
+        "IIm7(b5) emprestado de Dó menor",
+        "Dominante secundária",
+        "VII grau de Dó maior",
+        "Erro de cifra"
+      ],
+      "correta": 0,
+      "explicacao": "O Lá♭ vem de Dó menor, onde o II é m7(b5): **IIm7(b5) emprestado**, com função de subdominante.",
+      "conceito": "emprestimo-modal"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça o final. O último acorde é maior ou menor?",
+      "exemplo": {
+        "id": "exe-picardia",
+        "titulo": "Final",
+        "legenda": "Am, Dm, E7, A: termina em Lá maior.",
+        "eventos": [
+          {
+            "notas": [
+              "A3",
+              "C4",
+              "E4",
+              "A4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "A3",
+              "D4",
+              "F4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G#3",
+              "D4",
+              "E4",
+              "B4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "A3",
+              "C#4",
+              "E4",
+              "A4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "Maior: terça de picardia",
+        "Menor, como o começo"
+      ],
+      "correta": 0,
+      "explicacao": "O último acorde tem **Dó♯**: Lá **maior**, depois de uma progressão toda em Lá menor.",
+      "conceito": "terca-de-picardia"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na progressão **Fm7, B♭7, C7M**, qual acorde faz o papel de dominante?",
+      "opcoes": [
+        "B♭7",
+        "Fm7",
+        "C7M",
+        "Nenhum"
+      ],
+      "correta": 0,
+      "explicacao": "O **B♭7** (bVII7) resolve na tônica sem ser o V7: uma resolução pela \"porta dos fundos\".",
+      "conceito": "bvi-e-bvii"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que o E7 em **C, E7, Am** não é empréstimo modal?",
+      "opcoes": [
+        "É dominante secundária: tem Sol♯ e resolve uma 5ª abaixo",
+        "Porque é um acorde maior",
+        "Porque está em Dó menor",
+        "Porque não tem 7ª"
+      ],
+      "correta": 0,
+      "explicacao": "O Sol♯ não existe em Dó menor, e o E7 resolve no Am: é o **V7/VIm**.",
+      "conceito": "emprestimo-modal"
+    }
+  ],
+  "resumo": [
+    "Tons **paralelos** têm a mesma tônica e modos diferentes (Dó maior e Dó menor).",
+    "No **empréstimo modal**, o tom maior usa acordes do menor paralelo, com Mi♭, Lá♭ e Si♭ em Dó.",
+    "**IVm** e **IIm7(b5)**: a subdominante menor, com o Lá♭ descendo para Sol.",
+    "**bVI–bVII–I** e **IVm7–bVII7–I7M** chegam à tônica sem o V7.",
+    "**Terça de picardia**: o tom menor termina no acorde maior da tônica."
+  ],
+  "pergunta_para_chat": "Me dê progressões em tons maiores com um acorde de fora do campo, uma de cada vez, para eu dizer se é empréstimo modal ou dominante secundária e qual o grau, e corrija minha análise."
+}

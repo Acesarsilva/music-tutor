@@ -1,0 +1,673 @@
+{
+  "codigo": "A02",
+  "titulo": "Acordes alterados",
+  "nivel": "avancado",
+  "resumo_curto": "A dominante com b9, ♯9, ♯11, b13 e alt, e os acordes sus e add.",
+  "prerequisitos": [
+    "Tensões e extensões (A01)",
+    "Dominantes secundárias (M14)"
+  ],
+  "objetivos": [
+    "Entender por que as alterações ficam na **dominante**",
+    "Formar **7(b9)**, **7(♯9)**, **7(♯11)** e **7(b13)**",
+    "Entender o **7alt**",
+    "Ouvir a resolução por semitom das alterações",
+    "Formar **sus4**, **sus2** e **add9**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quais são as tensões disponíveis no G7?\n2. Por que a 11 natural é evitada no G7?\n3. Que nota da menor harmônica de Lá forma o E7?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. 9 (Lá) e 13 (Mi).\n2. O Dó fica uma 9ª menor acima do Si, a 3ª.\n3. O Sol♯, a sensível.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "G7(9) → C",
+            "legenda": "A 9 natural: Lá.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "G7(b9) → Cm",
+            "legenda": "A 9 abaixada: Lá♭. Como ela chega ao acorde seguinte?",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "Ab4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O **Lá♭** está meio tom acima do Sol do Cm e desce para ele. A tensão alterada aumenta o desejo de resolver. Um acorde dominante com 9, 11 ou 13 abaixadas ou elevadas é um **acorde alterado**.\n\nAo final, você vai formar e ouvir as alterações da dominante e os acordes sus e add."
+        }
+      ]
+    },
+    {
+      "titulo": "Por que só na dominante",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Num 7M ou num m7, uma tensão alterada choca com as notas do acorde e soa como erro. O acorde **7** já tem um trítono e já pede resolução: mais tensão só reforça o que ele faz. Por isso as alterações aparecem quase sempre na **dominante**.\n\nAs quatro alterações:\n\n- **b9** e **♯9**: a 9 meio tom abaixo ou acima;\n- **♯11**: a 11 meio tom acima;\n- **b13**: a 13 meio tom abaixo."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "As alterações do G7.",
+          "cabecalho": [
+            "Cifra",
+            "Nota acrescentada",
+            "Para onde tende"
+          ],
+          "linhas": [
+            [
+              "G7(b9)",
+              "Lá♭",
+              "desce para Sol"
+            ],
+            [
+              "G7(♯9)",
+              "Lá♯",
+              "sobe para Si ou desce para Lá♭"
+            ],
+            [
+              "G7(♯11)",
+              "Dó♯",
+              "sobe para Ré"
+            ],
+            [
+              "G7(b13)",
+              "Mi♭",
+              "desce para Ré, ou fica como 3ª do Cm"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "b9 e ♯9",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **b9** é a mais comum. Ela aparece naturalmente no tom menor: em Lá menor, o V da menor harmônica é o E7, e o Fá da escala é a sua b9. Por isso **E7(b9) → Am** soa tão característico."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-e7b9",
+            "titulo": "E7(b9) → Am",
+            "legenda": "O Fá desce para Mi; o Sol♯ sobe para Lá.",
+            "eventos": [
+              {
+                "notas": [
+                  "E3",
+                  "G#3",
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "A4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A **♯9** fica meio tom acima da 9. Escrita como Lá♯ no G7, soa como uma 3ª menor junto da 3ª maior: um som áspero, comum no blues e no jazz."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-g7s9",
+            "titulo": "G7(♯9)",
+            "legenda": "Si e Lá♯ ao mesmo tempo: maior e menor juntos.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "A#4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "♯11 e b13",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **♯11** dá à dominante a cor da escala mixolídia com a 4ª aumentada, a chamada **escala nordestina**, muito presente no baião. A **b13** escurece o acorde e combina com a resolução no tom menor."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-g7s11",
+            "titulo": "G7(♯11)",
+            "legenda": "O Dó♯ abre o acorde: cor nordestina.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "C#5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-g7b13",
+            "titulo": "G7(b13) → Cm",
+            "legenda": "O Mi♭ já é a 3ª do Cm.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "Eb5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "O acorde 7alt",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A cifra **7alt** (G7alt) diz: dominante com **todas as tensões alteradas** à escolha de quem toca, b9, ♯9, ♯11 e b13, sem 9, 11 e 13 naturais. É a dominante mais tensa possível. A escala que reúne essas notas, a **escala alterada**, é assunto da A07."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-alt",
+            "titulo": "G7alt → Cm",
+            "legenda": "Com ♯9 (Lá♯) e b13 (Mi♭).",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "F4",
+                  "A#4",
+                  "Eb5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Acordes sus e add",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Duas outras famílias mudam a tríade:\n\n- **sus4**: a 3ª sai e a 4ª entra no lugar (Dó, Fá, Sol). No **G7sus4** (Sol, Dó, Ré, Fá), a 11 deixa de chocar, porque a 3ª não está lá. Muitas vezes resolve no G7, com o Dó descendo para Si;\n- **sus2**: a 3ª sai e a 2ª entra (Dó, Ré, Sol);\n- **add9**: a tríade **mantém a 3ª** e ganha a 9, sem 7ª: **C(add9)** é Dó, Mi, Sol, Ré."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sus4",
+            "titulo": "G7sus4 → G7",
+            "legenda": "O Dó desce para Si: a 3ª chega.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "C4",
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "F4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sus-add",
+            "titulo": "Csus4, Csus2, C(add9), C",
+            "legenda": "Sem 3ª, sem 3ª, com 3ª e 9, e a tríade.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "F4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "D4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: montar um acorde alterado",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Monte o **D7(b9)**, com o motivo de cada passo.\n\n1. **Monte o acorde 7**: Ré, Fá♯, Lá, Dó.\n2. **Ache a 9 natural**: Mi.\n3. **Aplique a alteração**: b9 é meio tom abaixo, **Mi♭**. O acorde: Ré, Fá♯, Lá, Dó, Mi♭."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** para que acorde o D7(b9) mais naturalmente resolve?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Para o **Gm** (ou G): o Mi♭ desce meio tom até Ré, a 5ª do Sol, e o Fá♯ sobe até Sol. No tom menor, o Mi♭ ainda é nota da escala de Sol menor.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. **A7(♯11)**: o A7 é Lá, Dó♯, Mi, Sol, e a 11 natural é Ré. Aplique a alteração.\n\nE agora todos os passos são seus: **C7(b13)**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A7(♯11): Ré sobe meio tom, **Ré♯**. O acorde: Lá, Dó♯, Mi, Sol, Ré♯.\n\nC7(b13): C7 é Dó, Mi, Sol, Si♭; a 13 natural é Lá; abaixada, **Lá♭**. O acorde: Dó, Mi, Sol, Si♭, Lá♭.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega escreveu:\n\n> \"Csus4 e C(add11) são o mesmo acorde.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "No **sus4**, a 3ª **sai**: Dó, Fá, Sol. No **add11**, a 3ª **fica** e a 11 se soma: Dó, Mi, Sol, Fá, com o choque de 9ª menor entre Mi e Fá. São sons bem diferentes.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que as tensões alteradas aparecem quase sempre no acorde **7**?",
+      "opcoes": [
+        "Ele já tem um trítono e pede resolução; a alteração só reforça",
+        "Porque ele não tem 3ª",
+        "Porque é o único acorde com 9",
+        "Porque soa sempre como tônica"
+      ],
+      "correta": 0,
+      "explicacao": "A dominante já é tensa. A alteração aumenta a tensão e **resolve por semitom** no acorde seguinte.",
+      "conceito": "alteracoes-da-dominante"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Sol3 está marcado: é a fundamental do G7. Clique na **b9**.",
+      "nota_base": "G3",
+      "intervalo": "9m",
+      "direcao": "acima",
+      "explicacao": "Uma 9ª menor acima de Sol3 é **Lá♭4**, meio tom acima de Sol, uma oitava depois.",
+      "conceito": "nona-menor-e-aumentada",
+      "de": "E3",
+      "ate": "E5"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais são as notas do **G7(♯11)**?",
+      "opcoes": [
+        "Sol, Si, Ré, Fá, Dó♯",
+        "Sol, Si, Ré, Fá, Dó",
+        "Sol, Si, Ré, Fá, Lá♭",
+        "Sol, Si♭, Ré, Fá, Dó♯"
+      ],
+      "correta": 0,
+      "explicacao": "A 11 natural é Dó; elevada meio tom, **Dó♯**.",
+      "conceito": "decima-primeira-aumentada-e-decima-terceira-menor"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça as duas dominantes resolvendo. Qual tem a b9?",
+      "exemplo": {
+        "id": "exe-b9",
+        "titulo": "Duas dominantes",
+        "legenda": "G7(9) → C e G7(b9) → Cm.",
+        "eventos": [
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "F4",
+              "A4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "F4",
+              "Ab4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "Eb4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "A segunda",
+        "A primeira"
+      ],
+      "correta": 0,
+      "explicacao": "Na segunda, o **Lá♭** desce meio tom até o Sol: tensão mais escura, resolução no Cm.",
+      "conceito": "percepcao-alterados"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em **Lá menor**, o E7 da menor harmônica ganha naturalmente qual alteração?",
+      "opcoes": [
+        "b9 (Fá)",
+        "♯9 (Fá𝄪)",
+        "♯11 (Lá♯)",
+        "Nenhuma"
+      ],
+      "correta": 0,
+      "explicacao": "O Fá da escala de Lá menor fica meio tom acima do Mi: é a **b9** do E7.",
+      "conceito": "nona-menor-e-aumentada"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que significa a cifra **G7alt**?",
+      "opcoes": [
+        "G7 com tensões alteradas (b9, ♯9, ♯11, b13)",
+        "G7 sem a 3ª",
+        "G7 com 9, 11 e 13 naturais",
+        "Um acorde de Sol menor"
+      ],
+      "correta": 0,
+      "explicacao": "**alt** quer dizer só alterações: b9, ♯9, ♯11 e b13, à escolha de quem toca.",
+      "conceito": "acorde-alterado"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Sol3 está marcado. Clique na **b13** do G7.",
+      "nota_base": "G3",
+      "intervalo": "13m",
+      "direcao": "acima",
+      "explicacao": "A 13ª menor acima de Sol3 é **Mi♭5**.",
+      "conceito": "decima-primeira-aumentada-e-decima-terceira-menor",
+      "de": "E3",
+      "ate": "E5"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a diferença entre **Csus2** e **C(add9)**?",
+      "opcoes": [
+        "No sus2 a 3ª sai; no add9 a 3ª fica",
+        "No add9 a 3ª sai; no sus2 a 3ª fica",
+        "São o mesmo acorde",
+        "O add9 tem 7ª"
+      ],
+      "correta": 0,
+      "explicacao": "Csus2: Dó, Ré, Sol (sem Mi). C(add9): Dó, Mi, Sol, Ré (com Mi).",
+      "conceito": "sus-e-add"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A nota do meio desce no segundo acorde. O que aconteceu?",
+      "exemplo": {
+        "id": "exe-sus4",
+        "titulo": "Dois acordes",
+        "legenda": "G7sus4 → G7.",
+        "eventos": [
+          {
+            "notas": [
+              "G3",
+              "C4",
+              "D4",
+              "F4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "F4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "O sus4 resolveu: a 4ª desceu para a 3ª",
+        "Um acorde maior virou menor",
+        "Nada mudou"
+      ],
+      "correta": 0,
+      "explicacao": "No **G7sus4**, o Dó ocupa o lugar da 3ª; ele desce para **Si** e o G7 aparece.",
+      "conceito": "sus-e-add"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que a 11 natural soa bem no **G7sus4** e mal no G7?",
+      "opcoes": [
+        "No sus4 não há a 3ª (Si) para ela chocar",
+        "Porque no sus4 a 11 é alterada",
+        "Porque o sus4 não tem 7ª",
+        "Porque a 11 é sempre nota a evitar"
+      ],
+      "correta": 0,
+      "explicacao": "O choque do Dó era com o **Si**, a 3ª. No sus4 o Si sai, e o Dó vira nota do acorde.",
+      "conceito": "sus-e-add"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça os dois acordes. Qual tem a ♯9, com maior e menor ao mesmo tempo?",
+      "exemplo": {
+        "id": "exe-s9",
+        "titulo": "Dois acordes",
+        "legenda": "G7(♯11) e G7(♯9).",
+        "eventos": [
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "F4",
+              "C#5"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "F4",
+              "A#4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "O segundo",
+        "O primeiro"
+      ],
+      "correta": 0,
+      "explicacao": "O segundo junta **Si** e **Lá♯**: 3ª maior e, por enarmonia, 3ª menor. O primeiro é a ♯11, mais aberta.",
+      "conceito": "percepcao-alterados"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual tensão alterada dá a cor da **escala nordestina** ao acorde dominante?",
+      "opcoes": [
+        "♯11",
+        "b9",
+        "♯9",
+        "b13"
+      ],
+      "correta": 0,
+      "explicacao": "A escala nordestina é a mixolídia com a 4ª aumentada: no acorde, a **♯11**.",
+      "conceito": "decima-primeira-aumentada-e-decima-terceira-menor"
+    }
+  ],
+  "resumo": [
+    "As tensões alteradas reforçam a tensão do acorde **7** e resolvem por semitom.",
+    "**b9** e **♯9**: a 9 meio tom abaixo ou acima. **♯11**: a 11 acima. **b13**: a 13 abaixo.",
+    "Em tom menor, a b9 e a b13 aparecem naturalmente na dominante.",
+    "**7alt**: todas as tensões alteradas, sem as naturais.",
+    "**sus4** e **sus2** tiram a 3ª; **add9** mantém a 3ª e soma a 9 sem a 7ª."
+  ],
+  "pergunta_para_chat": "Me dê cifras de acordes alterados e sus, uma de cada vez, para eu dizer as notas e para onde cada alteração resolve, e corrija meus erros."
+}
