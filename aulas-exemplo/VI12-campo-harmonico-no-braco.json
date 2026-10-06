@@ -1,0 +1,1312 @@
+{
+  "codigo": "VI12",
+  "assunto": "violao",
+  "titulo": "Campo harmônico no braço",
+  "nivel": "iniciante",
+  "resumo_curto": "Os acordes de Dó, Sol e Ré maior no violão, a função de cada grau e como transpor uma progressão.",
+  "prerequisitos": [
+    "Pestana (VI11)",
+    "Campo harmônico maior (I14)"
+  ],
+  "objetivos": [
+    "Tocar o campo harmônico de **Dó, Sol e Ré** maior",
+    "Saber quais acordes de cada tom pedem **pestana**",
+    "Reconhecer **tônica, subdominante e dominante**",
+    "**Transpor** uma progressão por graus"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. No campo harmônico maior, quais graus são acordes menores?\n2. Com a forma do Am e a pestana na casa 2, que acorde soa?\n3. Em Dó maior, qual é o V?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. ii, iii e vi.\n2. Bm.\n3. G.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "A mesma progressão, dois tons",
+            "legenda": "Ouça as duas metades. Os acordes mudam, mas o caminho parece o mesmo?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 1,
+                "cifra": "F"
+              },
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Em"
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "D"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "As duas metades fazem **I, vi, IV, V**: a primeira em Dó maior, a segunda em Sol maior. Os acordes são outros, mas os **graus** são os mesmos, e por isso o caminho soa igual.\n\nAo final, você vai tocar o campo harmônico de três tons no violão, saber a função de cada acorde e levar uma progressão de um tom para outro."
+        }
+      ]
+    },
+    {
+      "titulo": "O campo harmônico no violão",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na I14 você montou as tríades sobre cada grau da escala maior: **I, ii, iii, IV, V, vi** e o vii°. Agora, os acordes de cada grau nos três tons mais confortáveis para o violão."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Campo harmônico de Dó, Sol e Ré maior",
+          "cabecalho": [
+            "Tom",
+            "I",
+            "ii",
+            "iii",
+            "IV",
+            "V",
+            "vi"
+          ],
+          "linhas": [
+            [
+              "Dó",
+              "C",
+              "Dm",
+              "Em",
+              "**F**",
+              "G",
+              "Am"
+            ],
+            [
+              "Sol",
+              "G",
+              "Am",
+              "**Bm**",
+              "C",
+              "D",
+              "Em"
+            ],
+            [
+              "Ré",
+              "D",
+              "Em",
+              "**F♯m**",
+              "G",
+              "A",
+              "**Bm**"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Em negrito, os acordes com **pestana**. Em cada tom, quase tudo é aberto: só um ou dois acordes pedem a pestana da VI11."
+        },
+        {
+          "tipo": "dica",
+          "markdown": "O vii° (Si° em Dó, Fá♯° em Sol, Dó♯° em Ré) aparece pouco no acompanhamento e fica para mais adiante."
+        }
+      ]
+    },
+    {
+      "titulo": "Sol maior",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Sol é um dos tons mais usados no violão: seis acordes, só o Bm com pestana."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sol",
+            "titulo": "G, Am, Bm, C, D, Em",
+            "legenda": "Os seis acordes de Sol maior, dois tempos cada.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3",
+                  "F#4",
+                  "B4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "Bm"
+              },
+              {
+                "notas": [
+                  "B3",
+                  "F#4",
+                  "B4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "D"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Em"
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Ré maior",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Em Ré maior, dois acordes pedem pestana: o **F♯m** (iii), com a forma do Em na casa 2, e o **Bm** (vi), com a forma do Am na casa 2. As duas pestanas ficam na **mesma casa**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-re",
+            "titulo": "D, Em, F#m, G, A, Bm",
+            "legenda": "Os seis acordes de Ré maior, dois tempos cada.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "D"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Em"
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#3",
+                  "C#4",
+                  "F#4",
+                  "A4",
+                  "C#5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "F#m"
+              },
+              {
+                "notas": [
+                  "F#3",
+                  "C#4",
+                  "F#4",
+                  "A4",
+                  "C#5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "A"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3",
+                  "F#4",
+                  "B4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "Bm"
+              },
+              {
+                "notas": [
+                  "B3",
+                  "F#4",
+                  "B4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Função de cada acorde",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Os graus se agrupam em três funções:\n\n- **tônica**: repouso, sensação de casa. É o **I**, e o **vi** pode substituí-lo;\n- **subdominante**: afasta da casa. É o **IV**, e o **ii** faz o mesmo papel;\n- **dominante**: tensão que pede a volta. É o **V**, ainda mais forte como **V7**."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Funções nos três tons",
+          "cabecalho": [
+            "Função",
+            "Dó",
+            "Sol",
+            "Ré"
+          ],
+          "linhas": [
+            [
+              "Tônica (I, vi)",
+              "C, Am",
+              "G, Em",
+              "D, Bm"
+            ],
+            [
+              "Subdominante (IV, ii)",
+              "F, Dm",
+              "C, Am",
+              "G, Em"
+            ],
+            [
+              "Dominante (V, V7)",
+              "G, G7",
+              "D, D7",
+              "A, A7"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-funcoes",
+            "titulo": "D, G, A7, D",
+            "legenda": "Tônica, subdominante, dominante, tônica em Ré maior.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "D"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "G4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "A7"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "G4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "G4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "G4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "D"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Transpor por graus",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Para levar uma progressão para outro tom, troque cada acorde pelo **grau**, e o grau pelo acorde do tom novo. A tabela do campo harmônico faz o trabalho: o grau é a coluna, o tom é a linha."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-re-transposto",
+            "titulo": "D, Bm, G, A",
+            "legenda": "I, vi, IV, V em Ré maior: o mesmo caminho da abertura, agora em Ré.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "D"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3",
+                  "F#4",
+                  "B4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "Bm"
+              },
+              {
+                "notas": [
+                  "B3",
+                  "F#4",
+                  "B4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "A"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "D"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Transpor serve para achar o tom que cabe na sua voz: se a música ficou aguda ou grave demais, experimente outro tom do campo."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: transpor uma progressão",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como levar **C, Am, Dm, G** de Dó maior para Sol maior, com o motivo de cada passo.\n\n1. **Ache os graus em Dó**: C = I, Am = vi, Dm = ii, G = V.\n2. **Escreva só os graus**: I, vi, ii, V.\n3. **Leia os graus em Sol**: I = G, vi = Em, ii = Am, V = D.\n4. **Confira o tipo**: maiores continuam maiores; menores, menores. G, Em, Am, D."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que o passo 4 sempre dá certo no campo maior?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque o tipo de cada grau é fixo no campo maior: **I, IV e V** são maiores; **ii, iii e vi**, menores. Mudando o tom, mudam as notas, não o tipo.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu: **G, C, D, G** está em Sol (I, IV, V, I). Em Ré, como fica?\n\nE agora todos os passos são seus: leve **D, Bm, Em, A** de Ré para Dó."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "G, C, D, G em Ré: **D, G, A, D**.\n\nD, Bm, Em, A em Ré são I, vi, ii, V. Em Dó: **C, Am, Dm, G**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"Para tocar em Ré maior, eu subo cada acorde de Dó um tom. O Em vira F♯, e o Am vira B.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Subir a fundamental um tom está certo (Mi vira Fá♯, Lá vira Si), mas o **tipo** do acorde não muda. Em é o iii de Dó, menor; o iii de Ré também é menor: **F♯m**. O Am (vi) vira **Bm**, não B.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Sol maior, qual é o vi?",
+      "opcoes": [
+        "Em",
+        "E",
+        "Am",
+        "Bm"
+      ],
+      "correta": 0,
+      "explicacao": "Em Sol maior: G, Am, Bm, C, D, **Em**. O vi é menor; se você marcou E, esqueceu o tipo do grau.",
+      "conceito": "campo-em-sol"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Ré maior, quais acordes pedem pestana?",
+      "opcoes": [
+        "F#m e Bm",
+        "Só o G",
+        "Em e A",
+        "Nenhum"
+      ],
+      "correta": 0,
+      "explicacao": "Em Ré maior, o iii (**F♯m**) e o vi (**Bm**) usam pestana, os dois na casa 2.",
+      "conceito": "campo-em-re"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Dó maior, qual acorde do campo pede pestana?",
+      "opcoes": [
+        "F",
+        "Dm",
+        "G",
+        "Am"
+      ],
+      "correta": 0,
+      "explicacao": "O IV de Dó é **F**: pestana na casa 1, ou o F em quatro cordas.",
+      "conceito": "campo-em-do"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Depois do I, a progressão vai para o IV ou para o vi?",
+      "exemplo": {
+        "id": "exe-iv-vi",
+        "titulo": "Dois acordes",
+        "legenda": "G e depois Em: o vi, menor.",
+        "eventos": [
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "G4",
+              "B4",
+              "G5"
+            ],
+            "duracao": 1,
+            "cifra": "G"
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "G4",
+              "B4",
+              "G5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "G4",
+              "B4",
+              "G5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "G4",
+              "B4",
+              "G5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1,
+            "cifra": "Em"
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Para o vi (menor)",
+        "Para o IV (maior)"
+      ],
+      "correta": 0,
+      "explicacao": "O segundo acorde é **menor**: Em, o vi de Sol. O IV, C, seria maior.",
+      "conceito": "percepcao-de-graus"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Leve **C, F, G, C** para Sol maior.",
+      "opcoes": [
+        "G, C, D, G",
+        "G, F, G, C",
+        "G, Am, Bm, G",
+        "D, G, A, D"
+      ],
+      "correta": 0,
+      "explicacao": "C, F, G, C são I, IV, V, I. Em Sol: **G, C, D, G**. D, G, A, D seria em Ré.",
+      "conceito": "transposicao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que função tem o vi?",
+      "opcoes": [
+        "Tônica, substituindo o I",
+        "Dominante",
+        "Subdominante",
+        "Nenhuma"
+      ],
+      "correta": 0,
+      "explicacao": "O vi tem duas notas em comum com o I e pode **substituí-lo** como tônica.",
+      "conceito": "funcao-dos-graus"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Ré maior, qual é o V7?",
+      "opcoes": [
+        "A7",
+        "D7",
+        "G7",
+        "E7"
+      ],
+      "correta": 0,
+      "explicacao": "O V de Ré é Lá; com sétima, **A7**.",
+      "conceito": "funcao-dos-graus"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Depois do I, a progressão vai para o IV ou para o vi?",
+      "exemplo": {
+        "id": "exe-iv",
+        "titulo": "Dois acordes",
+        "legenda": "D e depois G: o IV, maior.",
+        "eventos": [
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1,
+            "cifra": "D"
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "G4",
+              "B4",
+              "G5"
+            ],
+            "duracao": 1,
+            "cifra": "G"
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "G4",
+              "B4",
+              "G5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "G4",
+              "B4",
+              "G5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "G4",
+              "B4",
+              "G5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Para o IV (maior)",
+        "Para o vi (menor)"
+      ],
+      "correta": 0,
+      "explicacao": "O segundo acorde é **maior**: G, o IV de Ré.",
+      "conceito": "percepcao-de-graus"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Sol maior, qual é o ii?",
+      "opcoes": [
+        "Am",
+        "A",
+        "Bm",
+        "C"
+      ],
+      "correta": 0,
+      "explicacao": "G (I), **Am (ii)**, Bm (iii), C (IV)...",
+      "conceito": "campo-em-sol"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Recordando a VI11: com a forma do Em e a pestana na casa 2, que acorde soa?",
+      "opcoes": [
+        "F#m",
+        "Bm",
+        "F#",
+        "Gm"
+      ],
+      "correta": 0,
+      "explicacao": "6ª corda na casa 2 = Fá♯; forma menor: **F♯m**, o iii de Ré maior.",
+      "conceito": "campo-em-re"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Dó maior, quais acordes são subdominante?",
+      "opcoes": [
+        "F e Dm",
+        "G e G7",
+        "C e Am",
+        "Em e Am"
+      ],
+      "correta": 0,
+      "explicacao": "O IV (**F**) e o ii (**Dm**) afastam da tônica: são a subdominante.",
+      "conceito": "funcao-dos-graus"
+    }
+  ],
+  "resumo": [
+    "Dó: C, Dm, Em, F, G, Am. Sol: G, Am, Bm, C, D, Em. Ré: D, Em, F♯m, G, A, Bm.",
+    "Pestana: F em Dó; Bm em Sol; F♯m e Bm em Ré.",
+    "Tônica: I e vi. Subdominante: IV e ii. Dominante: V e V7.",
+    "Para transpor: acorde vira grau, grau vira acorde no tom novo; o tipo não muda.",
+    "I, IV e V são maiores; ii, iii e vi, menores."
+  ],
+  "pergunta_para_chat": "Me diga uma progressão e o tom em que quero tocar; eu transponho e você confere, depois me passa outra."
+}

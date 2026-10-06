@@ -1,0 +1,1189 @@
+{
+  "codigo": "VI11",
+  "assunto": "violao",
+  "titulo": "Pestana: F, Bm e as formas móveis",
+  "nivel": "iniciante",
+  "resumo_curto": "A pestana, o F em quatro e em seis cordas, o Bm e as formas que andam pelo braço.",
+  "prerequisitos": [
+    "Acordes com sétima (VI10)",
+    "Acordes menores abertos (VI06)"
+  ],
+  "objetivos": [
+    "Fazer a **pestana** com o dedo 1",
+    "Montar o **F** em quatro e em seis cordas",
+    "Montar o **Bm** com a forma do Am",
+    "Mover as formas pelo braço e achar a **casa da pestana**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quais são as notas do acorde de Fá maior?\n2. Quantas casas há entre Fá e Sol no braço?\n3. Com que dedos se monta o E?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Fá, Lá, Dó.\n2. Duas (Fá, Fá♯, Sol).\n3. Dedo 2 na 5ª corda, dedo 3 na 4ª (casa 2) e dedo 1 na 3ª (casa 1).",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "E e F",
+            "legenda": "Ouça os dois. O segundo soa como o primeiro, só que meio tom acima.",
+            "eventos": [
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "E"
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 1,
+                "cifra": "F"
+              },
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O **F** é o desenho do **E** empurrado uma casa para cima. O problema: as cordas soltas do E também precisam subir uma casa, e não há dedos para elas. Quem resolve é a **pestana**: o dedo 1 deitado, prendendo várias cordas de uma vez.\n\nAo final, você vai montar o F e o Bm, e usar as formas com pestana para tocar acordes em qualquer casa do braço."
+        }
+      ]
+    },
+    {
+      "titulo": "Primeiro passo: o F em quatro cordas",
+      "blocos": [
+        {
+          "tipo": "acorde",
+          "cifra": "F",
+          "casas": [
+            -1,
+            -1,
+            3,
+            2,
+            1,
+            1
+          ],
+          "legenda": "F em quatro cordas: o dedo 1 deitado prende a 2ª e a 1ª corda na casa 1; dedo 2 na 3ª (casa 2), dedo 3 na 4ª (casa 3).",
+          "dedos": [
+            0,
+            0,
+            3,
+            2,
+            0,
+            0
+          ],
+          "pestana": 1
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Notas, da 4ª corda à 1ª: **Fá, Lá, Dó, Fá**. É uma pestana pequena, só em duas cordas: o melhor jeito de começar.\n\nPara ela soar limpa:\n\n1. deite o dedo 1 usando a **lateral**, o lado que fica virado para o polegar, que é mais firme;\n2. coloque-o **colado no traste**;\n3. aperte puxando de leve o braço para trás, com o peso do braço, e não só com a força do polegar."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-f4-arpejo",
+            "titulo": "F em quatro cordas, corda por corda",
+            "legenda": "Da 4ª à 1ª: confira se a 2ª e a 1ª soam inteiras.",
+            "eventos": [
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 66,
+            "tablatura": true
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "O F com pestana completa",
+      "blocos": [
+        {
+          "tipo": "acorde",
+          "cifra": "F",
+          "casas": [
+            1,
+            3,
+            3,
+            2,
+            1,
+            1
+          ],
+          "legenda": "F com pestana na casa 1: dedo 1 nas seis cordas; dedo 2 na 3ª corda (casa 2), dedo 3 na 5ª e dedo 4 na 4ª (casa 3).",
+          "dedos": [
+            0,
+            3,
+            4,
+            2,
+            0,
+            0
+          ],
+          "pestana": 1
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Compare com o E: os dedos 3, 4 e 2 fazem o **mesmo desenho** do E, só que uma casa acima. O dedo 1 faz o papel do **traste**: tudo o que era corda solta no E agora é casa 1.\n\nNotas, da 6ª à 1ª: **Fá, Dó, Fá, Lá, Dó, Fá**."
+        },
+        {
+          "tipo": "dica",
+          "markdown": "No começo, a pestana completa cansa. Use o F em quatro cordas nas músicas e treine a completa alguns minutos por dia."
+        }
+      ]
+    },
+    {
+      "titulo": "Formas móveis",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O F com pestana é uma **forma móvel**: deslize o desenho inteiro pelo braço e ele continua sendo um acorde maior. O nome vem da nota da **6ª corda** na casa da pestana."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "A forma do E pelo braço",
+          "cabecalho": [
+            "Casa da pestana",
+            "Nota da 6ª corda",
+            "Acorde"
+          ],
+          "linhas": [
+            [
+              "1",
+              "Fá",
+              "F"
+            ],
+            [
+              "2",
+              "Fá♯",
+              "F#"
+            ],
+            [
+              "3",
+              "Sol",
+              "G"
+            ],
+            [
+              "5",
+              "Lá",
+              "A"
+            ],
+            [
+              "7",
+              "Si",
+              "B"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-f-g",
+            "titulo": "F e G com a mesma forma",
+            "legenda": "A mão desliza duas casas, da casa 1 para a casa 3.",
+            "eventos": [
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 1,
+                "cifra": "F"
+              },
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F3",
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "D5",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "D5",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "D5",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "D5",
+                  "G5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Para acordes menores, use a forma do **Em**: o mesmo desenho sem o dedo da 3ª corda, que fica presa pela pestana. Na casa 2, ela vira **F♯m**."
+        },
+        {
+          "tipo": "acorde",
+          "cifra": "F#m",
+          "casas": [
+            2,
+            4,
+            4,
+            2,
+            2,
+            2
+          ],
+          "legenda": "F♯m: forma do Em com pestana na casa 2; dedo 3 na 5ª corda e dedo 4 na 4ª (casa 4).",
+          "dedos": [
+            0,
+            3,
+            4,
+            0,
+            0,
+            0
+          ],
+          "pestana": 2
+        }
+      ]
+    },
+    {
+      "titulo": "Bm: a forma do Am na casa 2",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Há formas móveis com a fundamental na **5ª corda** também. A mais usada é a do **Am**: empurrada para a casa 2, com a pestana, vira **Bm**."
+        },
+        {
+          "tipo": "acorde",
+          "cifra": "Bm",
+          "casas": [
+            -1,
+            2,
+            4,
+            4,
+            3,
+            2
+          ],
+          "legenda": "Bm: pestana na casa 2 da 5ª à 1ª corda; dedo 3 na 4ª, dedo 4 na 3ª (casa 4), dedo 2 na 2ª (casa 3). A 6ª corda não toca.",
+          "dedos": [
+            0,
+            0,
+            3,
+            4,
+            2,
+            0
+          ],
+          "pestana": 2
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Notas, da 5ª corda à 1ª: **Si, Fá♯, Si, Ré, Fá♯**. O nome vem da nota da **5ª corda** na casa da pestana: Si, na casa 2."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-bm",
+            "titulo": "D, A, Bm, G",
+            "legenda": "I, V, vi, IV em Ré maior: o Bm entra no lugar do vi.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "D"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "A"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3",
+                  "F#4",
+                  "B4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "Bm"
+              },
+              {
+                "notas": [
+                  "B3",
+                  "F#4",
+                  "B4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3",
+                  "F#4",
+                  "B4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3",
+                  "F#4",
+                  "B4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Uma progressão com F",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A progressão **C, G, Am, F** (I, V, vi, IV em Dó maior) está em muitas canções. Agora você toca todos os acordes dela."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-progressao",
+            "titulo": "C, G, Am, F",
+            "legenda": "Use o F em quatro cordas no começo; troque pelo completo quando ficar fácil.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 1,
+                "cifra": "F"
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: achar a casa da pestana",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como montar o **G** com a forma do E, com o motivo de cada passo.\n\n1. **Escolha a forma**: G é maior, e a forma do E tem a fundamental na **6ª corda**.\n2. **Ache Sol na 6ª corda**: Mi (solta), Fá (1), Fá♯ (2), **Sol (3)**.\n3. **Ponha a pestana nessa casa**: casa 3.\n4. **Monte o desenho do E** duas casas acima da pestana: dedos 3 e 4 na casa 5, dedo 2 na casa 4."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que o passo 2 conta Fá♯ e não pula de Fá para Sol?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque cada casa é **um semitom**. Entre Fá e Sol há Fá♯; pular essa casa levaria a pestana para a casa 2, e o acorde seria F♯.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu: o **A** com a forma do E. Lá está na 6ª corda, casa 5. Onde vai a pestana?\n\nE agora todos os passos são seus: o **Cm** com a forma do Am."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A: pestana na **casa 5**, e o desenho do E nas casas 6 e 7.\n\nCm: a forma do Am tem a fundamental na **5ª corda**. Lá (solta), Lá♯ (1), Si (2), **Dó (3)**. Pestana na casa 3, e o desenho do Am nas casas 4 e 5.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"Para fazer G com a forma do E, pus a pestana na casa 2, porque Sol vem logo depois de Fá.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Entre Fá e Sol há **Fá♯**. Na 6ª corda: Fá na casa 1, Fá♯ na 2, Sol na **3**. Com a pestana na casa 2, o acorde é F♯. Conte casa por casa, com os sustenidos.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Com a forma do E e a pestana na casa 3, que acorde soa?",
+      "opcoes": [
+        "G",
+        "F#",
+        "F",
+        "A"
+      ],
+      "correta": 0,
+      "explicacao": "A 6ª corda na casa 3 é **Sol**: o acorde é G. Se você marcou F♯, pulou o Fá♯ na contagem.",
+      "conceito": "casa-da-fundamental"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No F em quatro cordas, o que o dedo 1 faz?",
+      "opcoes": [
+        "Prende a 2ª e a 1ª corda na casa 1",
+        "Prende as seis cordas na casa 1",
+        "Toca a 4ª corda na casa 3",
+        "Fica solto"
+      ],
+      "correta": 0,
+      "explicacao": "No F em quatro cordas, o dedo 1 faz uma **pestana pequena**, na 2ª e na 1ª corda, casa 1.",
+      "conceito": "acorde-f"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que parte do dedo 1 é melhor para a pestana?",
+      "opcoes": [
+        "A lateral, do lado do polegar",
+        "A ponta",
+        "A polpa, bem no meio",
+        "A unha"
+      ],
+      "correta": 0,
+      "explicacao": "A **lateral** do dedo é mais firme e mais reta. Perto do traste, ela prende com menos força.",
+      "conceito": "pestana"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. O segundo acorde é a mesma forma uma casa acima ou duas casas acima?",
+      "exemplo": {
+        "id": "exe-f-g",
+        "titulo": "Dois acordes",
+        "legenda": "F e depois G: duas casas acima.",
+        "eventos": [
+          {
+            "notas": [
+              "F3",
+              "C4",
+              "F4",
+              "A4",
+              "C5",
+              "F5"
+            ],
+            "duracao": 1,
+            "cifra": "F"
+          },
+          {
+            "notas": [
+              "F3",
+              "C4",
+              "F4",
+              "A4",
+              "C5",
+              "F5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F3",
+              "C4",
+              "F4",
+              "A4",
+              "C5",
+              "F5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F3",
+              "C4",
+              "F4",
+              "A4",
+              "C5",
+              "F5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G3",
+              "D4",
+              "G4",
+              "B4",
+              "D5",
+              "G5"
+            ],
+            "duracao": 1,
+            "cifra": "G"
+          },
+          {
+            "notas": [
+              "G3",
+              "D4",
+              "G4",
+              "B4",
+              "D5",
+              "G5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G3",
+              "D4",
+              "G4",
+              "B4",
+              "D5",
+              "G5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G3",
+              "D4",
+              "G4",
+              "B4",
+              "D5",
+              "G5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Duas casas acima",
+        "Uma casa acima"
+      ],
+      "correta": 0,
+      "explicacao": "De F para G são **duas casas**, um tom: a mão desliza da casa 1 para a casa 3.",
+      "conceito": "forma-movel"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que forma de acorde aberto gera o Bm?",
+      "opcoes": [
+        "A do Am, na casa 2",
+        "A do Em, na casa 2",
+        "A do E, na casa 7",
+        "A do D, na casa 2"
+      ],
+      "correta": 0,
+      "explicacao": "Bm é a forma do **Am** com pestana na casa 2: a fundamental Si fica na 5ª corda.",
+      "conceito": "acorde-bm"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No Bm, qual corda não toca?",
+      "opcoes": [
+        "A 6ª",
+        "A 5ª",
+        "A 1ª",
+        "Todas tocam"
+      ],
+      "correta": 0,
+      "explicacao": "A fundamental Si está na 5ª corda. A **6ª** fica fora, como no Am.",
+      "conceito": "acorde-bm"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Com a forma do Em e a pestana na casa 2, que acorde soa?",
+      "opcoes": [
+        "F#m",
+        "Fm",
+        "Gm",
+        "F#"
+      ],
+      "correta": 0,
+      "explicacao": "Casa 2 da 6ª corda é Fá♯; forma menor: **F♯m**. Se você marcou F♯, esqueceu que a forma é do Em.",
+      "conceito": "casa-da-fundamental"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na forma do E, o que faz o papel do traste das cordas soltas?",
+      "opcoes": [
+        "O dedo 1 deitado",
+        "O dedo 4",
+        "A mão direita",
+        "O polegar"
+      ],
+      "correta": 0,
+      "explicacao": "A **pestana** substitui as cordas soltas: o dedo 1 deitado é o novo traste.",
+      "conceito": "forma-movel"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça dois acordes. O segundo é maior ou menor?",
+      "exemplo": {
+        "id": "exe-bm",
+        "titulo": "Dois acordes",
+        "legenda": "D e depois Bm.",
+        "eventos": [
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1,
+            "cifra": "D"
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B3",
+              "F#4",
+              "B4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1,
+            "cifra": "Bm"
+          },
+          {
+            "notas": [
+              "B3",
+              "F#4",
+              "B4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B3",
+              "F#4",
+              "B4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B3",
+              "F#4",
+              "B4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Menor",
+        "Maior"
+      ],
+      "correta": 0,
+      "explicacao": "O segundo é o **Bm**, menor: o vi de Ré maior.",
+      "conceito": "acorde-bm"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Recordando a VI10: em que acorde o A7 resolve?",
+      "opcoes": [
+        "D",
+        "A",
+        "E",
+        "G"
+      ],
+      "correta": 0,
+      "explicacao": "A7 é o V7 de Ré maior: resolve em **D**.",
+      "conceito": "forma-movel"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Com a forma do Am e a pestana na casa 3, que acorde soa?",
+      "opcoes": [
+        "Cm",
+        "Bm",
+        "C",
+        "Dm"
+      ],
+      "correta": 0,
+      "explicacao": "Na 5ª corda, casa 3, está Dó; forma menor: **Cm**.",
+      "conceito": "casa-da-fundamental"
+    }
+  ],
+  "resumo": [
+    "Pestana: dedo 1 deitado, com a lateral, colado no traste.",
+    "Comece pelo **F em quatro cordas**; o F completo é a forma do E na casa 1.",
+    "**Bm** é a forma do Am na casa 2, sem a 6ª corda.",
+    "Formas do E e do Em: o nome vem da **6ª corda**; forma do Am: da **5ª corda**.",
+    "Conte casa por casa, com os sustenidos: Fá (1), Fá♯ (2), Sol (3)."
+  ],
+  "pergunta_para_chat": "Me diga um acorde maior ou menor qualquer e eu digo a forma e a casa da pestana; me corrija e me passe um treino de pestana."
+}

@@ -1,0 +1,1432 @@
+{
+  "codigo": "VI10",
+  "assunto": "violao",
+  "titulo": "Acordes com sétima no violão",
+  "nivel": "iniciante",
+  "resumo_curto": "A regra que transforma acordes abertos em acordes com sétima, o C7 e o B7, e o V7 que pede o I.",
+  "prerequisitos": [
+    "Acordes menores abertos (VI06)",
+    "Acordes de sétima (M05)"
+  ],
+  "objetivos": [
+    "Montar **E7, A7, D7, G7, C7, B7, Am7 e Em7**",
+    "Formar a sétima **abaixando duas casas** uma fundamental",
+    "Entender por que o **C7** é diferente",
+    "Usar o **V7** para voltar ao I"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quais são as notas do acorde de G7?\n2. Quantas casas tem um tom no braço do violão?\n3. Em Lá menor, qual acorde puxa de volta para o Am?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Sol, Si, Ré, Fá.\n2. Duas.\n3. O E, o V.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "E e E7",
+            "legenda": "Ouça os dois e depois o Am. Qual dos dois primeiros pede mais a chegada?",
+            "eventos": [
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "E"
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "D4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "E7"
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "D4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O segundo é o **E7** (Mi com sétima): uma nota a mais, **Ré**, e o acorde fica mais tenso, pedindo para resolver no Am. No violão, ele é ainda mais fácil que o E: tem **um dedo a menos**.\n\nAo final, você vai montar oito acordes com sétima, descobrir a regra que cria a maioria deles e usar o acorde com sétima para levar de volta ao I."
+        }
+      ]
+    },
+    {
+      "titulo": "E7: tirar um dedo",
+      "blocos": [
+        {
+          "tipo": "acorde",
+          "cifra": "E7",
+          "casas": [
+            0,
+            2,
+            0,
+            1,
+            0,
+            0
+          ],
+          "legenda": "E7: dedo 2 na 5ª corda (casa 2) e dedo 1 na 3ª (casa 1). A 4ª corda fica solta.",
+          "dedos": [
+            0,
+            2,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "No E, a 4ª corda, casa 2, é **Mi**, uma fundamental repetida. Tirando o dedo, ela soa **Ré**, solta. Mi, Sol♯, Si mais **Ré**: Mi com sétima.\n\nRé está **um tom abaixo** de Mi. Essa é a regra: a sétima do acorde com sétima fica um tom abaixo da fundamental."
+        }
+      ]
+    },
+    {
+      "titulo": "A regra: abaixar a fundamental duas casas",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Para transformar um acorde aberto em acorde com sétima:\n\n1. ache uma corda que toca a **fundamental**, mas que **não** seja o baixo;\n2. abaixe essa nota **duas casas** (um tom).\n\nO baixo fica onde está, porque é ele que dá firmeza ao acorde."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Quatro acordes com sétima pela regra",
+          "cabecalho": [
+            "Acorde",
+            "Corda da fundamental",
+            "Antes",
+            "Depois"
+          ],
+          "linhas": [
+            [
+              "E7",
+              "4ª",
+              "casa 2 (Mi)",
+              "solta (Ré)"
+            ],
+            [
+              "A7",
+              "3ª",
+              "casa 2 (Lá)",
+              "solta (Sol)"
+            ],
+            [
+              "G7",
+              "1ª",
+              "casa 3 (Sol)",
+              "casa 1 (Fá)"
+            ],
+            [
+              "D7",
+              "2ª",
+              "casa 3 (Ré)",
+              "casa 1 (Dó)"
+            ]
+          ]
+        },
+        {
+          "tipo": "acorde",
+          "cifra": "A7",
+          "casas": [
+            -1,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          "legenda": "A7: dedo 2 na 4ª corda e dedo 3 na 2ª, as duas na casa 2. A 3ª corda fica solta.",
+          "dedos": [
+            0,
+            0,
+            2,
+            0,
+            3,
+            0
+          ]
+        },
+        {
+          "tipo": "acorde",
+          "cifra": "G7",
+          "casas": [
+            3,
+            2,
+            0,
+            0,
+            0,
+            1
+          ],
+          "legenda": "G7: igual ao G, mas a 1ª corda vai para a casa 1, com o dedo 1.",
+          "dedos": [
+            3,
+            2,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "tipo": "acorde",
+          "cifra": "D7",
+          "casas": [
+            -1,
+            -1,
+            0,
+            2,
+            1,
+            2
+          ],
+          "legenda": "D7: dedo 2 na 3ª corda (casa 2), dedo 1 na 2ª (casa 1), dedo 3 na 1ª (casa 2).",
+          "dedos": [
+            0,
+            0,
+            0,
+            2,
+            1,
+            3
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-g-g7",
+            "titulo": "G e G7",
+            "legenda": "Só a nota mais aguda desce, de Sol para Fá.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "F5"
+                ],
+                "duracao": 1,
+                "cifra": "G7"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "F5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Menores com sétima",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A mesma regra vale para os acordes menores. No **Am7**, a 3ª corda passa de Lá (casa 2) para Sol (solta). No **Em7**, a 4ª corda passa de Mi (casa 2) para Ré (solta). Os dois ficam com **um dedo a menos** que o acorde sem sétima."
+        },
+        {
+          "tipo": "acorde",
+          "cifra": "Am7",
+          "casas": [
+            -1,
+            0,
+            2,
+            0,
+            1,
+            0
+          ],
+          "legenda": "Am7: dedo 2 na 4ª corda (casa 2) e dedo 1 na 2ª (casa 1).",
+          "dedos": [
+            0,
+            0,
+            2,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "tipo": "acorde",
+          "cifra": "Em7",
+          "casas": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "legenda": "Em7: só o dedo 2, na 5ª corda (casa 2).",
+          "dedos": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O som do menor com sétima é mais **suave**, sem a tensão do E7 ou do G7. Ele aparece muito na bossa nova e no samba."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-am-am7",
+            "titulo": "Am e Am7",
+            "legenda": "O Lá da 3ª corda vira Sol. O acorde fica mais macio, não mais tenso.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am7"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Dois que não seguem a regra: C7 e B7",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "No **C**, a fundamental Dó que não está no baixo fica na 2ª corda, casa 1. Abaixar duas casas daria a corda solta, **Si**, que fica só **meio tom** abaixo de Dó: não é a sétima do C7. Por isso o C7 **acrescenta** um dedo: o 4, na 3ª corda, casa 3, troca o Sol por **Si♭**."
+        },
+        {
+          "tipo": "acorde",
+          "cifra": "C7",
+          "casas": [
+            -1,
+            3,
+            2,
+            3,
+            1,
+            0
+          ],
+          "legenda": "C7: o desenho do C mais o dedo 4 na 3ª corda (casa 3).",
+          "dedos": [
+            0,
+            3,
+            2,
+            4,
+            1,
+            0
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O **B7** não vem de nenhum acorde aberto que você conhece: tem desenho próprio. Ele é o V de Mi menor e aparece em muitas músicas nesse tom."
+        },
+        {
+          "tipo": "acorde",
+          "cifra": "B7",
+          "casas": [
+            -1,
+            2,
+            1,
+            2,
+            0,
+            2
+          ],
+          "legenda": "B7: dedo 2 na 5ª corda (casa 2), dedo 1 na 4ª (casa 1), dedo 3 na 3ª (casa 2), dedo 4 na 1ª (casa 2). A 2ª corda fica solta.",
+          "dedos": [
+            0,
+            2,
+            1,
+            3,
+            0,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "O acorde com sétima como V",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Acordes como **G7, D7, A7, E7 e B7** fazem o papel de **V7**, o acorde de dominante. A sétima deixa o V ainda mais tenso, e o ouvido quer a resolução no I."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "V7 e o acorde em que ele resolve",
+          "cabecalho": [
+            "V7",
+            "Resolve em",
+            "Tom"
+          ],
+          "linhas": [
+            [
+              "G7",
+              "C",
+              "Dó maior"
+            ],
+            [
+              "D7",
+              "G",
+              "Sol maior"
+            ],
+            [
+              "A7",
+              "D",
+              "Ré maior"
+            ],
+            [
+              "E7",
+              "Am",
+              "Lá menor"
+            ],
+            [
+              "B7",
+              "Em",
+              "Mi menor"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-do",
+            "titulo": "C, Am, Dm, G7, C",
+            "legenda": "I, vi, ii, V7, I em Dó maior.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1,
+                "cifra": "Dm"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "F5"
+                ],
+                "duracao": 1,
+                "cifra": "G7"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-mi-menor",
+            "titulo": "Em, Am, B7, Em",
+            "legenda": "i, iv, V7, i em Mi menor.",
+            "eventos": [
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Em"
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3",
+                  "D#4",
+                  "A4",
+                  "B4",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "B7"
+              },
+              {
+                "notas": [
+                  "B3",
+                  "D#4",
+                  "A4",
+                  "B4",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3",
+                  "D#4",
+                  "A4",
+                  "B4",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3",
+                  "D#4",
+                  "A4",
+                  "B4",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Em"
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: formar um acorde com sétima",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como formar o **A7** a partir do A, com o motivo de cada passo.\n\n1. **Liste as notas do A**: Lá (5ª corda solta), Mi (4ª, casa 2), Lá (3ª, casa 2), Dó♯ (2ª, casa 2), Mi (1ª, solta).\n2. **Ache uma fundamental fora do baixo**: o Lá da 3ª corda, casa 2.\n3. **Abaixe duas casas**: casa 2 menos 2 = corda solta, **Sol**.\n4. **Confira**: Lá, Dó♯, Mi, Sol. É o A7."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que não abaixar o Lá da 5ª corda, que também é fundamental?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque ele é o **baixo**. Abaixado, o acorde perderia a fundamental embaixo, e a nota mais grave passaria a ser a sétima.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu: no **D**, a fundamental fora do baixo está na 2ª corda, casa 3. Abaixando duas casas, que nota sai?\n\nE agora todos os passos são seus: forme o **Em7** a partir do Em."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "D7: casa 3 menos 2 = **casa 1**, Dó. Ré, Fá♯, Lá, Dó.\n\nEm7: o Em tem Mi na 6ª corda (baixo), na 4ª (casa 2) e na 1ª (solta). A 4ª corda, casa 2, abaixa duas casas e vira **Ré**, solta. Mi, Sol, Si, Ré.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"Para fazer o C7, tirei o dedo 1 da 2ª corda. Assim o Dó abaixa e vira a sétima, como no E7.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A 2ª corda solta é **Si**, só uma casa (meio tom) abaixo do Dó. Dó, Mi, Sol, Si é o **C7M**, com sétima **maior**, outro som. A sétima do C7 é **Si♭**, e por isso ele acrescenta o dedo 4 na 3ª corda, casa 3.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Do E para o E7, o que muda?",
+      "opcoes": [
+        "A 4ª corda fica solta: Mi vira Ré",
+        "A 6ª corda para de tocar",
+        "A 3ª corda fica solta: Sol♯ vira Sol",
+        "Entra o dedo 4 na 1ª corda"
+      ],
+      "correta": 0,
+      "explicacao": "Tira-se o dedo da **4ª corda**: o Mi (fundamental) vira **Ré**, a sétima. Se você marcou a 3ª corda, mexeu na 3ª do acorde, e ele viraria menor.",
+      "conceito": "setima-no-braco"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça dois acordes. O segundo tem sétima?",
+      "exemplo": {
+        "id": "exe-a-a7",
+        "titulo": "Dois acordes",
+        "legenda": "A e depois A7.",
+        "eventos": [
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C#5",
+              "E5"
+            ],
+            "duracao": 1,
+            "cifra": "A"
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C#5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C#5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C#5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "G4",
+              "C#5",
+              "E5"
+            ],
+            "duracao": 1,
+            "cifra": "A7"
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "G4",
+              "C#5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "G4",
+              "C#5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "G4",
+              "C#5",
+              "E5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Sim",
+        "Não"
+      ],
+      "correta": 0,
+      "explicacao": "O segundo é o **A7**: o Lá da 3ª corda virou Sol, e o acorde ficou mais tenso.",
+      "conceito": "percepcao-setima"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas casas se abaixa a fundamental para formar a sétima?",
+      "opcoes": [
+        "Duas",
+        "Uma",
+        "Três",
+        "Quatro"
+      ],
+      "correta": 0,
+      "explicacao": "A sétima do acorde com sétima fica **um tom** abaixo da fundamental: **duas casas**.",
+      "conceito": "setima-no-braco"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No G7, onde fica o dedo 1?",
+      "opcoes": [
+        "1ª corda, casa 1",
+        "2ª corda, casa 1",
+        "1ª corda, casa 3",
+        "5ª corda, casa 2"
+      ],
+      "correta": 0,
+      "explicacao": "G7: a 1ª corda desce da casa 3 (Sol) para a **casa 1** (Fá).",
+      "conceito": "acordes-com-setima"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em que acorde o D7 resolve?",
+      "opcoes": [
+        "G",
+        "C",
+        "A",
+        "Dm"
+      ],
+      "correta": 0,
+      "explicacao": "D7 é o V7 de Sol maior: resolve em **G**.",
+      "conceito": "dominante-resolve"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que o C7 precisa de um dedo a mais?",
+      "opcoes": [
+        "Abaixar o Dó da 2ª corda daria Si, meio tom só",
+        "Porque o baixo é Dó",
+        "Porque o C é menor",
+        "Porque a 6ª corda precisa tocar"
+      ],
+      "correta": 0,
+      "explicacao": "A 2ª corda solta é **Si**, meio tom abaixo de Dó: seria C7M. O Si♭ vem com o dedo 4 na 3ª corda.",
+      "conceito": "acordes-com-setima"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. O último acorde soa como chegada ou como suspense?",
+      "exemplo": {
+        "id": "exe-g7",
+        "titulo": "Três acordes",
+        "legenda": "C, Dm e G7: termina no V7.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1,
+            "cifra": "C"
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F5"
+            ],
+            "duracao": 1,
+            "cifra": "Dm"
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "G4",
+              "B4",
+              "F5"
+            ],
+            "duracao": 1,
+            "cifra": "G7"
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "G4",
+              "B4",
+              "F5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "G4",
+              "B4",
+              "F5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "G4",
+              "B4",
+              "F5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Suspense",
+        "Chegada"
+      ],
+      "correta": 0,
+      "explicacao": "Termina no **G7**, o V7 de Dó maior, que pede a volta ao C.",
+      "conceito": "dominante-resolve"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No Am7, qual corda fica solta em relação ao Am?",
+      "opcoes": [
+        "A 3ª",
+        "A 2ª",
+        "A 4ª",
+        "A 1ª"
+      ],
+      "correta": 0,
+      "explicacao": "Am7: o Lá da **3ª corda** (casa 2) vira Sol, solta.",
+      "conceito": "menor-com-setima"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Recordando a VI06: qual é o relativo menor de C?",
+      "opcoes": [
+        "Am",
+        "Em",
+        "Dm",
+        "Cm"
+      ],
+      "correta": 0,
+      "explicacao": "**Am**: Lá, Dó, Mi tem duas notas em comum com Dó, Mi, Sol.",
+      "conceito": "menor-com-setima"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual acorde é o V7 de Mi menor?",
+      "opcoes": [
+        "B7",
+        "E7",
+        "A7",
+        "D7"
+      ],
+      "correta": 0,
+      "explicacao": "Em Mi menor, o V é Si; com sétima, **B7**.",
+      "conceito": "dominante-resolve"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Como soa o menor com sétima comparado ao E7?",
+      "opcoes": [
+        "Mais suave, sem pedir resolução",
+        "Mais tenso",
+        "Igual",
+        "Mais agudo"
+      ],
+      "correta": 0,
+      "explicacao": "O **menor com sétima** é macio e estável; a tensão que pede resolução é do V7.",
+      "conceito": "menor-com-setima"
+    }
+  ],
+  "resumo": [
+    "Sétima: abaixe **duas casas** uma fundamental que não esteja no baixo.",
+    "E7, A7, Am7 e Em7 têm um dedo a menos; G7 e D7 descem um dedo para a casa 1.",
+    "C7 acrescenta o dedo 4 (Si♭ na 3ª corda); B7 tem desenho próprio.",
+    "O V7 pede o I: G7→C, D7→G, A7→D, E7→Am, B7→Em.",
+    "Menor com sétima é suave; o V7 é tenso."
+  ],
+  "pergunta_para_chat": "Me diga um tom e eu monto o V7 e o I no violão; depois me passe uma progressão com sétimas para treinar."
+}
