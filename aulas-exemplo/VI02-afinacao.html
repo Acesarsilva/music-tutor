@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Campo harmônico maior (tríades)</title>
+<title>Afinação</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
@@ -533,11 +533,11 @@ tbody tr:last-child td { border-bottom: 0; }
 <body>
 <header class="barra">
   <div class="barra-interna">
-    <p class="barra-aula"><span class="selo">I14</span> Campo harmônico maior (tríades)</p>
+    <p class="barra-aula"><span class="selo">VI02</span> Afinação</p>
     <div class="controles">
       <div class="timbre" role="group" aria-label="Instrumento">
-        <button type="button" id="timbre-piano" data-timbre="piano" aria-pressed="true">Piano</button>
-        <button type="button" id="timbre-violao" data-timbre="violao" aria-pressed="false">Violão</button>
+        <button type="button" id="timbre-piano" data-timbre="piano" aria-pressed="false">Piano</button>
+        <button type="button" id="timbre-violao" data-timbre="violao" aria-pressed="true">Violão</button>
       </div>
       <label class="andamento" for="andamento">
         <span>Andamento</span>
@@ -550,35 +550,35 @@ tbody tr:last-child td { border-bottom: 0; }
 
 <main class="aula">
   <section class="abertura">
-    <p class="rotulo">Teoria musical · Iniciante</p>
-    <h1>Campo harmônico maior (tríades)</h1>
-    <p class="chamada">As sete tríades que nascem da escala maior, a numeração romana e os acordes principais I, IV e V.</p>
+    <p class="rotulo">Violão · Iniciante</p>
+    <h1>Afinação</h1>
+    <p class="chamada">A afinação padrão, o afinador e o método da 5ª casa.</p>
     <div class="ficha">
       <div>
         <h2 class="rotulo">Você vai aprender</h2>
         <ul>
-          <li>Montar a tríade de cada grau da escala maior</li>
-          <li>Reconhecer o padrão <strong>maior, menor, menor, maior, maior, menor, diminuto</strong></li>
-          <li>Usar a <strong>numeração romana</strong></li>
-          <li>Reconhecer <strong>I, IV e V</strong> e a progressão I–IV–V–I</li>
+          <li>Saber a <strong>afinação padrão</strong></li>
+          <li>Usar um <strong>afinador</strong></li>
+          <li>Afinar pelo método da <strong>5ª casa</strong></li>
+          <li>Ouvir se uma corda está <strong>alta</strong> ou <strong>baixa</strong></li>
         </ul>
       </div>
       <div>
         <h2 class="rotulo">Antes, é bom saber</h2>
         <ul>
-          <li>Escala maior (I07)</li>
-          <li>Tríades (I12)</li>
-          <li>Cifragem popular (I13)</li>
+          <li>Conhecendo o violão (VI01)</li>
+          <li>O som e suas propriedades (I01)</li>
         </ul>
       </div>
     </div>
     <nav class="indice" aria-label="Seções da aula">
       <ol>
         <li><a href="#secao-1">Antes de começar</a></li>
-        <li><a href="#secao-2">Uma tríade em cada grau</a></li>
-        <li><a href="#secao-3">Os acordes principais</a></li>
-        <li><a href="#secao-4">Em outras tonalidades</a></li>
-        <li><a href="#secao-5">Cuidado com este erro</a></li>
+        <li><a href="#secao-2">A afinação padrão</a></li>
+        <li><a href="#secao-3">O afinador</a></li>
+        <li><a href="#secao-4">O método da 5ª casa</a></li>
+        <li><a href="#secao-5">Passo a passo: por que a 4ª casa na 3ª corda</a></li>
+        <li><a href="#secao-6">Cuidado com este erro</a></li>
         <li><a href="#exercicios">Exercícios</a></li>
         <li><a href="#resumo">Resumo</a></li>
       </ol>
@@ -589,290 +589,293 @@ tbody tr:last-child td { border-bottom: 0; }
     <h2><span class="num">1</span>Antes de começar</h2>
     <div class="prosa"><p>Responda de cabeça, sem consultar nada. Depois confira.</p>
 <ol>
-<li>Quais são as notas de Dó maior?</li>
-<li>Como se forma uma tríade?</li>
-<li>Que cifra tem a tríade Ré, Fá, Lá?</li>
+<li>Quais são as notas das cordas soltas, da 6ª à 1ª?</li>
+<li>Quanto sobe a nota a cada casa?</li>
+<li>O que acontece com a altura quando a corda fica mais esticada?</li>
 </ol></div>
     <details class="resposta"><summary>Conferir as respostas</summary><div class="prosa"><ol>
-<li>Dó, Ré, Mi, Fá, Sol, Lá, Si.</li>
-<li>Empilhando duas 3ªs: fundamental, terça e quinta.</li>
-<li>Dm: Ré–Fá é 3ª menor, e Ré–Lá é 5ª justa.</li>
+<li>Mi, Lá, Ré, Sol, Si, Mi.</li>
+<li>Um semitom.</li>
+<li>Fica mais aguda.</li>
 </ol></div></details>
     <figure class="exemplo" data-exemplo="ex-abertura">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Ouça antes de qualquer nome</p>
+        <p class="exemplo-titulo">O violão afinado</p>
         <button type="button" class="tocar" data-tocar="ex-abertura"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
       <div class="partitura" data-partitura="ex-abertura"></div>
-      <figcaption>Quatro acordes. O último soa como chegada? Qual deles mais "pede" a volta?</figcaption>
+      <figcaption>As seis cordas soltas e depois todas juntas. É esse som que você vai procurar ao afinar.</figcaption>
     </figure>
-    <div class="prosa"><p>Os quatro acordes, <strong>C, F, G e C</strong>, usam só notas da escala de Dó maior. O G é o que mais pede a volta ao C. Os acordes que se formam com as notas de uma escala são o <strong>campo harmônico</strong> dela.</p>
-<p>Ao final, você vai montar o campo harmônico de qualquer tonalidade maior e numerar os acordes.</p></div>
+    <div class="prosa"><p>Afinar é ajustar a tensão de cada corda, pela tarraxa, até ela soar a nota certa. Um violão desafinado soa errado mesmo com os dedos no lugar certo, por isso se afina <strong>toda vez</strong> que se pega o instrumento.</p>
+<p>Ao final, você vai afinar com um afinador e também de ouvido, comparando as cordas entre si.</p></div>
   </section>
   <section class="secao" id="secao-2">
-    <h2><span class="num">2</span>Uma tríade em cada grau</h2>
-    <div class="prosa"><p>Sobre cada nota da escala, empilhe duas 3ªs usando <strong>só notas da escala</strong>. Em Dó maior, a partir de Ré sai Ré, Fá, Lá; a partir de Si sai Si, Ré, Fá. Cada grau ganha a sua tríade.</p></div>
-    <figure class="exemplo" data-exemplo="ex-campo-do">
+    <h2><span class="num">2</span>A afinação padrão</h2>
+    <div class="prosa"><p>A afinação padrão, da 6ª à 1ª corda, é <strong>Mi, Lá, Ré, Sol, Si, Mi</strong>. A referência mais usada é o <strong>Lá de 440 Hz</strong>: o Lá que fica na 5ª casa da 1ª corda.</p>
+<p>Girar a tarraxa num sentido <strong>estica</strong> a corda e a nota <strong>sobe</strong>; no outro, <strong>solta</strong> e a nota <strong>desce</strong>. Gire devagar, ouvindo, e prefira chegar à nota vindo de baixo.</p></div>
+    <figure class="exemplo" data-exemplo="ex-la-440">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">As tríades de Dó maior, grau por grau</p>
-        <button type="button" class="tocar" data-tocar="ex-campo-do"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">Lá de 440 Hz</p>
+        <button type="button" class="tocar" data-tocar="ex-la-440"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-campo-do"></div>
-      <figcaption>Ouça a qualidade mudar: maior, menor, menor, maior, maior, menor, diminuta, e o Dó de novo.</figcaption>
+      <div class="partitura" data-partitura="ex-la-440"></div>
+      <figcaption>A nota de referência, na 5ª casa da 1ª corda.</figcaption>
     </figure>
+  </section>
+  <section class="secao" id="secao-3">
+    <h2><span class="num">3</span>O afinador</h2>
+    <div class="prosa"><p>O jeito mais fácil é usar um <strong>afinador</strong>: de prender na cabeça do violão ou um aplicativo de celular. Toque uma corda solta de cada vez e veja:</p>
+<ul>
+<li>a <strong>nota</strong> que aparece (E, A, D, G, B, E: as cifras de Mi, Lá, Ré, Sol, Si, Mi);</li>
+<li>o <strong>ponteiro</strong>: à esquerda, a corda está <strong>baixa</strong> (aperte); à direita, <strong>alta</strong> (solte); no meio, afinada.</li>
+</ul></div>
+    <aside class="dica"><p class="rotulo">Dica</p><p>Se o afinador mostrar uma nota vizinha (F em vez de E, por exemplo), a corda está muito longe. Ajuste até aparecer a letra certa e só então olhe o ponteiro.</p></aside>
+  </section>
+  <section class="secao" id="secao-4">
+    <h2><span class="num">4</span>O método da 5ª casa</h2>
+    <div class="prosa"><p>Sem afinador, dá para afinar as cordas <strong>umas pelas outras</strong>. A ideia: a nota da <strong>5ª casa</strong> de uma corda é igual à da corda solta de baixo (a mais fina).</p>
+<ol>
+<li>Afine a 6ª corda (Mi) por uma referência.</li>
+<li>A 5ª casa da 6ª corda é <strong>Lá</strong>: afine a 5ª corda solta até soar igual.</li>
+<li>A 5ª casa da 5ª corda é <strong>Ré</strong>: afine a 4ª corda.</li>
+<li>A 5ª casa da 4ª corda é <strong>Sol</strong>: afine a 3ª corda.</li>
+<li><strong>Exceção</strong>: entre a 3ª e a 2ª corda a distância é menor. Use a <strong>4ª casa</strong> da 3ª corda, que é <strong>Si</strong>, para afinar a 2ª.</li>
+<li>A 5ª casa da 2ª corda é <strong>Mi</strong>: afine a 1ª corda.</li>
+</ol></div>
     <figure class="tabela">
       <div class="tabela-rolagem">
         <table>
-          <thead><tr><th scope="col">Grau</th><th scope="col">Notas</th><th scope="col">Tipo</th><th scope="col">Cifra</th></tr></thead>
+          <thead><tr><th scope="col">Aperte</th><th scope="col">Soa igual a</th></tr></thead>
           <tbody>
-            <tr><td>I</td><td>Dó, Mi, Sol</td><td>maior</td><td>C</td></tr>
-            <tr><td>ii</td><td>Ré, Fá, Lá</td><td>menor</td><td>Dm</td></tr>
-            <tr><td>iii</td><td>Mi, Sol, Si</td><td>menor</td><td>Em</td></tr>
-            <tr><td>IV</td><td>Fá, Lá, Dó</td><td>maior</td><td>F</td></tr>
-            <tr><td>V</td><td>Sol, Si, Ré</td><td>maior</td><td>G</td></tr>
-            <tr><td>vi</td><td>Lá, Dó, Mi</td><td>menor</td><td>Am</td></tr>
-            <tr><td>vii°</td><td>Si, Ré, Fá</td><td>diminuta</td><td>B°</td></tr>
+            <tr><td>6ª corda, casa 5 (Lá)</td><td>5ª corda solta</td></tr>
+            <tr><td>5ª corda, casa 5 (Ré)</td><td>4ª corda solta</td></tr>
+            <tr><td>4ª corda, casa 5 (Sol)</td><td>3ª corda solta</td></tr>
+            <tr><td>3ª corda, <strong>casa 4</strong> (Si)</td><td>2ª corda solta</td></tr>
+            <tr><td>2ª corda, casa 5 (Mi)</td><td>1ª corda solta</td></tr>
           </tbody>
         </table>
       </div>
-      <figcaption>O campo harmônico de Dó maior.</figcaption>
+      <figcaption>O caminho da afinação.</figcaption>
     </figure>
-    <div class="prosa"><p>O padrão é o mesmo em <strong>qualquer</strong> tonalidade maior: <strong>maior, menor, menor, maior, maior, menor, diminuto</strong>. Na <strong>numeração romana</strong>, os maiores ganham algarismos maiúsculos (I, IV, V), os menores, minúsculos (ii, iii, vi), e o diminuto leva ° (vii°).</p></div>
-  </section>
-  <section class="secao" id="secao-3">
-    <h2><span class="num">3</span>Os acordes principais</h2>
-    <div class="prosa"><p>Três graus carregam a maior parte das músicas simples:</p>
-<ul>
-<li><strong>I</strong>, a <strong>tônica</strong>: o acorde de repouso.</li>
-<li><strong>IV</strong>, a <strong>subdominante</strong>: afasta da tônica.</li>
-<li><strong>V</strong>, a <strong>dominante</strong>: cria tensão e pede a volta ao I.</li>
-</ul>
-<p>Com I, IV e V dá para acompanhar muitas cantigas e canções populares.</p></div>
-    <figure class="exemplo" data-exemplo="ex-i-iv-v-i">
+    <figure class="exemplo" data-exemplo="ex-unissono-5">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">I–IV–V–I em Dó maior</p>
-        <button type="button" class="tocar" data-tocar="ex-i-iv-v-i"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">6ª corda na casa 5 e 5ª corda solta</p>
+        <button type="button" class="tocar" data-tocar="ex-unissono-5"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-i-iv-v-i"></div>
-      <figcaption>C, F, G, C: saída, afastamento, tensão e chegada.</figcaption>
+      <div class="partitura" data-partitura="ex-unissono-5"></div>
+      <figcaption>Afinadas, as duas notas são o mesmo Lá.</figcaption>
     </figure>
-    <div class="prosa"><p>Para acompanhar uma melodia, escolhe-se o acorde que contém a nota que está soando. No começo de <em>Marcha soldado</em> em Dó maior, Sol, Mi e Dó são as três notas de <strong>C</strong>, o I grau.</p></div>
-  </section>
-  <section class="secao" id="secao-4">
-    <h2><span class="num">4</span>Em outras tonalidades</h2>
-    <div class="prosa"><p>Veja como montar o campo harmônico de <strong>Sol maior</strong>, com o motivo de cada passo.</p>
-<ol>
-<li><strong>Escala</strong>: Sol, Lá, Si, Dó, Ré, Mi, Fá♯.</li>
-<li><strong>Padrão</strong>: maior, menor, menor, maior, maior, menor, diminuto.</li>
-<li><strong>Cifras</strong>: G, Am, Bm, C, D, Em, F♯°.</li>
-<li><strong>Confira o vii°</strong>: Fá♯, Lá, Dó tem 3ª menor e 5ª diminuta. É diminuto mesmo.</li>
-</ol></div>
-    <figure class="exemplo" data-exemplo="ex-campo-sol">
+    <figure class="exemplo" data-exemplo="ex-unissono-4">
       <div class="exemplo-topo">
-        <p class="exemplo-titulo">Campo harmônico de Sol maior</p>
-        <button type="button" class="tocar" data-tocar="ex-campo-sol"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+        <p class="exemplo-titulo">3ª corda na casa 4 e 2ª corda solta</p>
+        <button type="button" class="tocar" data-tocar="ex-unissono-4"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
       </div>
-      <div class="partitura" data-partitura="ex-campo-sol"></div>
-      <figcaption>O mesmo padrão de qualidades, agora a partir de Sol.</figcaption>
+      <div class="partitura" data-partitura="ex-unissono-4"></div>
+      <figcaption>O mesmo Si nas duas.</figcaption>
     </figure>
-    <div class="prosa"><p><strong>Pense antes de abrir a resposta:</strong> por que o padrão de qualidades é igual em todas as tonalidades maiores?</p></div>
-    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Porque toda escala maior tem a mesma fórmula, T–T–S–T–T–T–S. As 3ªs empilhadas sobre cada grau medem sempre os mesmos semitons, então as qualidades se repetem.</p></div></details>
-    <div class="prosa"><p>Agora o último passo é seu. <strong>Fá maior</strong>: escala Fá, Sol, Lá, Si♭, Dó, Ré, Mi; padrão maior, menor, menor, maior, maior, menor, diminuto. Quais são as cifras?</p>
-<p>E agora dois passos são seus: o campo harmônico de <strong>Ré maior</strong>.</p></div>
-    <details class="resposta"><summary>Ver as respostas</summary><div class="prosa"><p>Fá maior: <strong>F, Gm, Am, B♭, C, Dm, E°</strong>.</p>
-<p>Ré maior: escala Ré, Mi, Fá♯, Sol, Lá, Si, Dó♯. Cifras: <strong>D, Em, F♯m, G, A, Bm, C♯°</strong>.</p></div></details>
+    <div class="prosa"><p>Quando duas cordas estão <strong>quase</strong> iguais, o som "ondula", como se tremesse. Essa ondulação se chama <strong>batimento</strong>. Quanto mais devagar ela fica, mais perto você está; quando some, as cordas estão afinadas.</p></div>
   </section>
   <section class="secao" id="secao-5">
-    <h2><span class="num">5</span>Cuidado com este erro</h2>
-    <div class="prosa"><p>Uma colega montou o campo de Ré maior assim:</p>
-<p>&gt; "D, Em, Fm, G, A, Bm, C°"</p>
-<p>Onde está o erro, por que está errado e qual é o certo?</p></div>
-    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Ela usou as notas naturais e esqueceu a <strong>armadura de Ré maior</strong> (Fá♯ e Dó♯). O iii grau é <strong>F♯m</strong> (Fá♯, Lá, Dó♯) e o vii° é <strong>C♯°</strong> (Dó♯, Mi, Sol). As tríades do campo usam só notas da escala.</p></div></details>
+    <h2><span class="num">5</span>Passo a passo: por que a 4ª casa na 3ª corda</h2>
+    <div class="prosa"><p>Confira a distância entre as cordas vizinhas, com o motivo de cada passo.</p>
+<ol>
+<li><strong>Conte os semitons</strong> de Mi a Lá (6ª para 5ª): Mi, Fá, Fá♯, Sol, Sol♯, Lá: 5 semitons, ou seja, 5 casas.</li>
+<li><strong>Faça o mesmo</strong> de Lá a Ré e de Ré a Sol: também 5 semitons.</li>
+<li><strong>Sol a Si</strong> (3ª para 2ª): Sol, Sol♯, Lá, Lá♯, Si: só <strong>4</strong> semitons. Por isso a 4ª casa.</li>
+</ol></div>
+    <div class="prosa"><p><strong>Pense antes de abrir a resposta:</strong> e de Si a Mi (2ª para 1ª)?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>Si, Dó, Dó♯, Ré, Ré♯, Mi: <strong>5</strong> semitons. Volta a ser a 5ª casa.</p></div></details>
+    <div class="prosa"><p>Agora os dois últimos passos são seus: que nota fica na <strong>5ª casa da 1ª corda</strong>? (Comece em Mi e suba 5 semitons.)</p>
+<p>E agora todos os passos são seus: em que casa da <strong>5ª corda</strong> (Lá) fica o <strong>Mi</strong>, a mesma nota da 4ª corda na casa 2?</p></div>
+    <details class="resposta"><summary>Ver as respostas</summary><div class="prosa"><p>Mi, Fá, Fá♯, Sol, Sol♯, <strong>Lá</strong>: é o Lá de 440 Hz, a referência.</p>
+<p>Lá, Lá♯, Si, Dó, Dó♯, Ré, Ré♯, Mi: 7 semitons, <strong>casa 7</strong>.</p></div></details>
+  </section>
+  <section class="secao" id="secao-6">
+    <h2><span class="num">6</span>Cuidado com este erro</h2>
+    <div class="prosa"><p>Um colega disse:</p>
+<p>&gt; "Afinei a 2ª corda pela 5ª casa da 3ª, como todas as outras."</p>
+<p>O que aconteceu?</p></div>
+    <details class="resposta"><summary>Ver resposta</summary><div class="prosa"><p>A 5ª casa da 3ª corda é <strong>Dó</strong>, e não Si. A 2ª corda ficou meio tom <strong>alta</strong>, e todos os acordes vão soar errados. Entre a 3ª e a 2ª corda, use a <strong>4ª casa</strong>.</p></div></details>
   </section>
 
   <section class="secao exercicios" id="exercicios">
-    <h2><span class="num">6</span>Exercícios</h2>
+    <h2><span class="num">7</span>Exercícios</h2>
     <p class="placar" id="placar" aria-live="polite">Responda para ver seus acertos.</p>
     <article class="exercicio" data-exercicio="0" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 1 · Múltipla escolha</p>
-      <div class="enunciado"><p>Qual é a tríade do <strong>vi grau</strong> de Dó maior?</p></div>
+      <div class="enunciado"><p>Qual é a afinação padrão, da 6ª à 1ª corda?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">Am</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">A</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">Em</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">G</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Mi, Lá, Ré, Sol, Si, Mi</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Mi, Si, Sol, Ré, Lá, Mi</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Dó, Ré, Mi, Fá, Sol, Lá</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Mi, Lá, Ré, Sol, Dó, Mi</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Dó, Ré, Mi, Fá, Sol, <strong>Lá</strong>: o 6º grau. Lá, Dó, Mi tem 3ª menor: <strong>Am</strong>. Quem marca A usou Dó♯, que não está em Dó maior.</p></div>
+        <div class="explicacao"><p>Da 6ª (grave) à 1ª (aguda): <strong>Mi, Lá, Ré, Sol, Si, Mi</strong>. A segunda opção é a mesma lista da 1ª para a 6ª.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="1" data-tipo="teclado">
-      <p class="rotulo">Exercício 2 · Toque a nota</p>
-      <div class="enunciado"><p>Em Ré maior, Ré4 está marcado. Clique na <strong>fundamental do IV grau</strong>.</p></div>
-      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="1"></div></div>
-      <div class="acoes-teclado">
-        <button type="button" class="tocar pequeno" data-tocar-base="1"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
-      </div>
-      <div class="retorno" hidden>
-        <p class="veredito"></p>
-        <div class="explicacao"><p>Ré, Mi, Fá♯, <strong>Sol</strong>: o 4º grau. O IV de Ré maior é <strong>G</strong>.</p></div>
-      </div>
-    </article>
-    <article class="exercicio" data-exercicio="2" data-tipo="percepcao">
-      <p class="rotulo">Exercício 3 · Percepção</p>
-      <div class="enunciado"><p>Ouça a tríade. Ela é maior ou menor?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-em"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-em" hidden>
-        <div class="partitura" data-partitura="exe-em"></div>
-        <figcaption>Em: Mi, Sol, Si, menor.</figcaption>
-      </figure>
+    <article class="exercicio" data-exercicio="1" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 2 · Múltipla escolha</p>
+      <div class="enunciado"><p>No afinador, a corda Mi aparece com que letra?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">3ª maior</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">3ª menor</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">E</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">M</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">A</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">C</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Mi–Sol tem 3 semitons: terça menor, acorde <strong>Em</strong>, o iii grau de Dó maior.</p></div>
+        <div class="explicacao"><p>No afinador, as notas aparecem em cifra: Mi é <strong>E</strong>.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="2" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 3 · Múltipla escolha</p>
+      <div class="enunciado"><p>O ponteiro do afinador está à esquerda do meio. O que fazer?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">Esticar a corda, que está baixa</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Soltar a corda, que está alta</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Trocar a corda</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Nada</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>À esquerda, a nota está <strong>abaixo</strong> da certa: estique a corda pela tarraxa, devagar.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="3" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 4 · Múltipla escolha</p>
-      <div class="enunciado"><p>Qual é o padrão de qualidades do campo harmônico maior?</p></div>
+      <div class="enunciado"><p>Para afinar a 5ª corda pela 6ª, que casa se aperta na 6ª corda?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">maior, menor, menor, maior, maior, menor, diminuto</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">maior, maior, menor, maior, menor, menor, diminuto</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">menor, maior, maior, menor, menor, maior, diminuto</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Casa 5</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Casa 4</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Casa 7</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Casa 3</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>I maior, ii e iii menores, IV e V maiores, vi menor, vii° diminuto. Vale para toda tonalidade maior.</p></div>
+        <div class="explicacao"><p>A <strong>5ª casa</strong> da 6ª corda é Lá, a nota da 5ª corda solta.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="4" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 5 · Múltipla escolha</p>
-      <div class="enunciado"><p>Em <strong>Sol maior</strong>, qual é o acorde de <strong>V grau</strong>?</p></div>
+      <div class="enunciado"><p>Que casa da <strong>3ª corda</strong> soa igual à 2ª corda solta?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">D</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">Dm</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">C</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">G</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Casa 4</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Casa 5</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Casa 3</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Casa 2</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Sol, Lá, Si, Dó, <strong>Ré</strong>: o 5º grau. O V é maior: <strong>D</strong> (Ré, Fá♯, Lá).</p></div>
+        <div class="explicacao"><p>Entre Sol e Si há só 4 semitons: <strong>casa 4</strong>. Se você marcou 5, aplicou a regra geral onde ela não vale.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="5" data-tipo="multipla_escolha">
       <p class="rotulo">Exercício 6 · Múltipla escolha</p>
-      <div class="enunciado"><p>Na numeração romana, o que indica <strong>ii</strong> em minúsculas?</p></div>
+      <div class="enunciado"><p>Que nota fica na <strong>5ª casa da 4ª corda</strong> (Ré)?</p></div>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">Que o acorde do 2º grau é menor</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">Que o acorde é pequeno, de duas notas</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">Que é o 2º acorde da música</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Sol</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Lá</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Fá</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Si</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Minúsculas indicam acorde <strong>menor</strong>; maiúsculas, maior. O ii de Dó maior é Dm.</p></div>
+        <div class="explicacao"><p>Ré, Ré♯, Mi, Fá, Fá♯, <strong>Sol</strong>: 5 semitons. É a nota da 3ª corda solta.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="6" data-tipo="teclado">
-      <p class="rotulo">Exercício 7 · Toque a nota</p>
-      <div class="enunciado"><p>Em Lá maior, Lá4 está marcado. Clique na <strong>fundamental do V grau</strong>.</p></div>
-      <div class="teclado-rolagem"><div class="teclado" data-teclado-exercicio="6"></div></div>
-      <div class="acoes-teclado">
-        <button type="button" class="tocar pequeno" data-tocar-base="6"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir a nota de partida</span></button>
-      </div>
+    <article class="exercicio" data-exercicio="6" data-tipo="multipla_escolha">
+      <p class="rotulo">Exercício 7 · Múltipla escolha</p>
+      <div class="enunciado"><p>Duas cordas quase afinadas fazem um som que ondula. Como se chama isso?</p></div>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">Batimento</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Vibrato</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Harmônico</button></li>
+        <li><button type="button" class="opcao" data-opcao="3">Eco</button></li>
+      </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Lá, Si, Dó♯, Ré, <strong>Mi</strong>: o 5º grau. O V de Lá maior é <strong>E</strong>.</p></div>
+        <div class="explicacao"><p>A ondulação é o <strong>batimento</strong>; ela some quando as duas notas ficam iguais.</p></div>
       </div>
     </article>
     <article class="exercicio" data-exercicio="7" data-tipo="percepcao">
       <p class="rotulo">Exercício 8 · Percepção</p>
-      <div class="enunciado"><p>Ouça os quatro acordes. Qual é o último?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-progressao"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-progressao" hidden>
-        <div class="partitura" data-partitura="exe-progressao"></div>
-        <figcaption>C, F, G e de novo C: o I volta no fim.</figcaption>
+      <div class="enunciado"><p>Ouça a corda de referência e depois a corda que você está afinando. A segunda está:</p></div>
+      <button type="button" class="tocar" data-tocar="exe-alta"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-alta" hidden>
+        <div class="partitura" data-partitura="exe-alta"></div>
+        <figcaption>Lá e depois Lá♯: a segunda está meio tom acima.</figcaption>
       </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">o I (volta ao repouso)</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">o V (fica em suspenso)</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Mais aguda: é preciso soltar</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Mais grave: é preciso esticar</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Igual</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>A progressão termina no <strong>I</strong>: soa como chegada. Se terminasse no V, ficaria pedindo continuação.</p></div>
+        <div class="explicacao"><p>A segunda nota está <strong>mais aguda</strong>: solte a corda até as duas ficarem iguais.</p></div>
       </div>
     </article>
-    <article class="exercicio" data-exercicio="8" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 9 · Múltipla escolha</p>
-      <div class="enunciado"><p>Quais são as tríades do campo harmônico de <strong>Fá maior</strong>?</p></div>
-      <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">F, Gm, Am, B♭, C, Dm, E°</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">F, Gm, Am, B, C, Dm, E°</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">F, G, Am, B♭, C, Dm, Em</button></li>
-      </ol>
-      <div class="retorno" hidden>
-        <p class="veredito"></p>
-        <div class="explicacao"><p>A escala de Fá maior tem Si♭, então o IV é <strong>B♭</strong>. O padrão maior, menor, menor, maior, maior, menor, diminuto dá F, Gm, Am, B♭, C, Dm, E°.</p></div>
-      </div>
-    </article>
-    <article class="exercicio" data-exercicio="9" data-tipo="multipla_escolha">
-      <p class="rotulo">Exercício 10 · Múltipla escolha</p>
-      <div class="enunciado"><p>Qual grau do campo harmônico maior é <strong>diminuto</strong>?</p></div>
-      <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">vii°</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">ii</button></li>
-        <li><button type="button" class="opcao" data-opcao="2">iii</button></li>
-        <li><button type="button" class="opcao" data-opcao="3">vi</button></li>
-      </ol>
-      <div class="retorno" hidden>
-        <p class="veredito"></p>
-        <div class="explicacao"><p>Só o <strong>vii°</strong>: em Dó maior, Si, Ré, Fá, com 3ª menor e 5ª diminuta. ii, iii e vi são menores.</p></div>
-      </div>
-    </article>
-    <article class="exercicio" data-exercicio="10" data-tipo="percepcao">
-      <p class="rotulo">Exercício 11 · Percepção</p>
-      <div class="enunciado"><p>Ouça a tríade. Ela é maior ou menor?</p></div>
-      <button type="button" class="tocar" data-tocar="exe-f"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
-      <figure class="exemplo oculto" data-exemplo="exe-f" hidden>
-        <div class="partitura" data-partitura="exe-f"></div>
-        <figcaption>F: Fá, Lá, Dó, maior.</figcaption>
+    <article class="exercicio" data-exercicio="8" data-tipo="percepcao">
+      <p class="rotulo">Exercício 9 · Percepção</p>
+      <div class="enunciado"><p>E agora?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-baixa"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-baixa" hidden>
+        <div class="partitura" data-partitura="exe-baixa"></div>
+        <figcaption>Si e depois Si♭: a segunda está meio tom abaixo.</figcaption>
       </figure>
       <ol class="opcoes" type="A">
-        <li><button type="button" class="opcao" data-opcao="0">3ª maior</button></li>
-        <li><button type="button" class="opcao" data-opcao="1">3ª menor</button></li>
+        <li><button type="button" class="opcao" data-opcao="0">Mais grave: é preciso esticar</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Mais aguda: é preciso soltar</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Igual</button></li>
       </ol>
       <div class="retorno" hidden>
         <p class="veredito"></p>
-        <div class="explicacao"><p>Fá–Lá tem 4 semitons: terça maior, acorde <strong>F</strong>, o IV grau de Dó maior.</p></div>
+        <div class="explicacao"><p>A segunda nota está <strong>mais grave</strong>: estique a corda.</p></div>
+      </div>
+    </article>
+    <article class="exercicio" data-exercicio="9" data-tipo="percepcao">
+      <p class="rotulo">Exercício 10 · Percepção</p>
+      <div class="enunciado"><p>E agora?</p></div>
+      <button type="button" class="tocar" data-tocar="exe-igual"><span class="icone" aria-hidden="true"></span><span class="texto">Ouvir</span></button>
+      <figure class="exemplo oculto" data-exemplo="exe-igual" hidden>
+        <div class="partitura" data-partitura="exe-igual"></div>
+        <figcaption>O mesmo Ré nas duas.</figcaption>
+      </figure>
+      <ol class="opcoes" type="A">
+        <li><button type="button" class="opcao" data-opcao="0">Igual: está afinada</button></li>
+        <li><button type="button" class="opcao" data-opcao="1">Mais aguda</button></li>
+        <li><button type="button" class="opcao" data-opcao="2">Mais grave</button></li>
+      </ol>
+      <div class="retorno" hidden>
+        <p class="veredito"></p>
+        <div class="explicacao"><p>As duas notas são o <strong>mesmo Ré</strong>: a corda está afinada.</p></div>
       </div>
     </article>
   </section>
 
   <section class="secao" id="resumo">
-    <h2><span class="num">7</span>Resumo</h2>
+    <h2><span class="num">8</span>Resumo</h2>
     <ul class="resumo">
-      <li>O <strong>campo harmônico</strong> são as tríades formadas só com notas da escala, uma em cada grau.</li>
-      <li>Padrão em toda tonalidade maior: <strong>I, ii, iii, IV, V, vi, vii°</strong>.</li>
-      <li>Em Dó maior: C, Dm, Em, F, G, Am, B°.</li>
-      <li><strong>I</strong> tônica (repouso), <strong>IV</strong> subdominante (afasta), <strong>V</strong> dominante (tensão que pede o I).</li>
-      <li>Use a armadura: em Ré maior o iii é F♯m e o vii° é C♯°.</li>
+      <li>Afinação padrão: <strong>Mi, Lá, Ré, Sol, Si, Mi</strong>. Referência: Lá de 440 Hz.</li>
+      <li>Afinador: ponteiro à esquerda, estique; à direita, solte.</li>
+      <li>Método: 5ª casa de uma corda = corda solta seguinte, menos entre a 3ª e a 2ª (<strong>4ª casa</strong>).</li>
+      <li>O <strong>batimento</strong> some quando as duas notas ficam iguais.</li>
     </ul>
     <div class="para-o-chat">
       <p class="rotulo">Leve para o chat do professor</p>
-      <p id="pergunta-chat">Me peça campos harmônicos de tonalidades maiores, um de cada vez, e me dê uma dica antes de mostrar a resposta.</p>
+      <p id="pergunta-chat">Me ajude a afinar o violão de ouvido: me diga, corda por corda, que casa apertar e com que corda comparar, e espere eu dizer se está alta ou baixa.</p>
       <button type="button" id="copiar-pergunta" class="secundario">Copiar pergunta</button>
     </div>
   </section>
 </main>
 
 <footer class="rodape">
-  <p>Aula I14 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
+  <p>Aula VI02 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
 </footer>
 
-<script type="application/json" id="dados-aula">{"codigo": "I14", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura": {"id": "ex-abertura", "titulo": "Ouça antes de qualquer nome", "legenda": "Quatro acordes. O último soa como chegada? Qual deles mais \"pede\" a volta?", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEG]2 [FAc]2 | [GBd]2 [CEG]2 |]\n", "andamento": 60, "eventos": [{"midis": [60, 64, 67], "duracao": 2.0}, {"midis": [65, 69, 72], "duracao": 2.0}, {"midis": [67, 71, 74], "duracao": 2.0}, {"midis": [60, 64, 67], "duracao": 2.0}], "tablatura": false}, "ex-campo-do": {"id": "ex-campo-do", "titulo": "As tríades de Dó maior, grau por grau", "legenda": "Ouça a qualidade mudar: maior, menor, menor, maior, maior, menor, diminuta, e o Dó de novo.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEG] [DFA] [EGB] [FAc] | [GBd] [Ace] [Bdf] [ceg] |]\n", "andamento": 60, "eventos": [{"midis": [60, 64, 67], "duracao": 1.0}, {"midis": [62, 65, 69], "duracao": 1.0}, {"midis": [64, 67, 71], "duracao": 1.0}, {"midis": [65, 69, 72], "duracao": 1.0}, {"midis": [67, 71, 74], "duracao": 1.0}, {"midis": [69, 72, 76], "duracao": 1.0}, {"midis": [71, 74, 77], "duracao": 1.0}, {"midis": [72, 76, 79], "duracao": 1.0}], "tablatura": false}, "ex-i-iv-v-i": {"id": "ex-i-iv-v-i", "titulo": "I–IV–V–I em Dó maior", "legenda": "C, F, G, C: saída, afastamento, tensão e chegada.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEG]2 [FAc]2 | [GBd]2 [CEG]2 |]\n", "andamento": 66, "eventos": [{"midis": [60, 64, 67], "duracao": 2.0}, {"midis": [65, 69, 72], "duracao": 2.0}, {"midis": [67, 71, 74], "duracao": 2.0}, {"midis": [60, 64, 67], "duracao": 2.0}], "tablatura": false}, "ex-campo-sol": {"id": "ex-campo-sol", "titulo": "Campo harmônico de Sol maior", "legenda": "O mesmo padrão de qualidades, agora a partir de Sol.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[GBd] [Ace] [Bd^f] [ceg] | [d^fa] [egb] [^fac'] [gbd'] |]\n", "andamento": 60, "eventos": [{"midis": [67, 71, 74], "duracao": 1.0}, {"midis": [69, 72, 76], "duracao": 1.0}, {"midis": [71, 74, 78], "duracao": 1.0}, {"midis": [72, 76, 79], "duracao": 1.0}, {"midis": [74, 78, 81], "duracao": 1.0}, {"midis": [76, 79, 83], "duracao": 1.0}, {"midis": [78, 81, 84], "duracao": 1.0}, {"midis": [79, 83, 86], "duracao": 1.0}], "tablatura": false}, "exe-em": {"id": "exe-em", "titulo": "Tríade", "legenda": "Em: Mi, Sol, Si, menor.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[EGB]4 |]\n", "andamento": 60, "eventos": [{"midis": [64, 67, 71], "duracao": 4.0}], "tablatura": false}, "exe-progressao": {"id": "exe-progressao", "titulo": "Progressão", "legenda": "C, F, G e de novo C: o I volta no fim.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEG]2 [FAc]2 | [GBd]2 [CEG]2 |]\n", "andamento": 66, "eventos": [{"midis": [60, 64, 67], "duracao": 2.0}, {"midis": [65, 69, 72], "duracao": 2.0}, {"midis": [67, 71, 74], "duracao": 2.0}, {"midis": [60, 64, 67], "duracao": 2.0}], "tablatura": false}, "exe-f": {"id": "exe-f", "titulo": "Tríade", "legenda": "F: Fá, Lá, Dó, maior.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[FAc]4 |]\n", "andamento": 60, "eventos": [{"midis": [65, 69, 72], "duracao": 4.0}], "tablatura": false}}, "teclados": {}, "acordes": {}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "triades-da-escala", "correta": 0}, {"indice": 1, "tipo": "teclado", "conceito": "acordes-principais", "base": 62, "alvo": 67, "alvo_nome": "Sol", "intervalo_nome": "4ª justa", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 62, "nome": "Ré"}]}}, {"indice": 2, "tipo": "percepcao", "conceito": "percepcao-maior-menor", "exemplo": "exe-em", "correta": 1}, {"indice": 3, "tipo": "multipla_escolha", "conceito": "padrao-do-campo", "correta": 0}, {"indice": 4, "tipo": "multipla_escolha", "conceito": "campo-em-outras-tonalidades", "correta": 0}, {"indice": 5, "tipo": "multipla_escolha", "conceito": "numeracao-romana", "correta": 0}, {"indice": 6, "tipo": "teclado", "conceito": "acordes-principais", "base": 69, "alvo": 76, "alvo_nome": "Mi", "intervalo_nome": "5ª justa", "teclado": {"de": 60, "ate": 84, "destaque": [{"midi": 69, "nome": "Lá"}]}}, {"indice": 7, "tipo": "percepcao", "conceito": "acordes-principais", "exemplo": "exe-progressao", "correta": 0}, {"indice": 8, "tipo": "multipla_escolha", "conceito": "campo-em-outras-tonalidades", "correta": 0}, {"indice": 9, "tipo": "multipla_escolha", "conceito": "padrao-do-campo", "correta": 0}, {"indice": 10, "tipo": "percepcao", "conceito": "percepcao-maior-menor", "exemplo": "exe-f", "correta": 0}]}</script>
+<script type="application/json" id="dados-aula">{"codigo": "VI02", "preferencias": {"timbre": "violao"}, "exemplos": {"ex-abertura": {"id": "ex-abertura", "titulo": "O violão afinado", "legenda": "As seis cordas soltas e depois todas juntas. É esse som que você vai procurar ao afinar.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nE, A, D G | B e [E,A,DGBe]2 |]\n", "andamento": 60, "eventos": [{"midis": [52], "duracao": 1.0}, {"midis": [57], "duracao": 1.0}, {"midis": [62], "duracao": 1.0}, {"midis": [67], "duracao": 1.0}, {"midis": [71], "duracao": 1.0}, {"midis": [76], "duracao": 1.0}, {"midis": [52, 57, 62, 67, 71, 76], "duracao": 2.0}], "tablatura": true}, "ex-la-440": {"id": "ex-la-440", "titulo": "Lá de 440 Hz", "legenda": "A nota de referência, na 5ª casa da 1ª corda.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\na4 |]\n", "andamento": 60, "eventos": [{"midis": [81], "duracao": 4.0}], "tablatura": true}, "ex-unissono-5": {"id": "ex-unissono-5", "titulo": "6ª corda na casa 5 e 5ª corda solta", "legenda": "Afinadas, as duas notas são o mesmo Lá.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nA,2 A,2 |]\n", "andamento": 60, "eventos": [{"midis": [57], "duracao": 2.0}, {"midis": [57], "duracao": 2.0}], "tablatura": false}, "ex-unissono-4": {"id": "ex-unissono-4", "titulo": "3ª corda na casa 4 e 2ª corda solta", "legenda": "O mesmo Si nas duas.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nB2 B2 |]\n", "andamento": 60, "eventos": [{"midis": [71], "duracao": 2.0}, {"midis": [71], "duracao": 2.0}], "tablatura": false}, "exe-alta": {"id": "exe-alta", "titulo": "Duas notas", "legenda": "Lá e depois Lá♯: a segunda está meio tom acima.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nA,2 ^A,2 |]\n", "andamento": 60, "eventos": [{"midis": [57], "duracao": 2.0}, {"midis": [58], "duracao": 2.0}], "tablatura": false}, "exe-baixa": {"id": "exe-baixa", "titulo": "Duas notas", "legenda": "Si e depois Si♭: a segunda está meio tom abaixo.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nB2 _B2 |]\n", "andamento": 60, "eventos": [{"midis": [71], "duracao": 2.0}, {"midis": [70], "duracao": 2.0}], "tablatura": false}, "exe-igual": {"id": "exe-igual", "titulo": "Duas notas", "legenda": "O mesmo Ré nas duas.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\nD2 D2 |]\n", "andamento": 60, "eventos": [{"midis": [62], "duracao": 2.0}, {"midis": [62], "duracao": 2.0}], "tablatura": false}}, "teclados": {}, "acordes": {}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "afinacao-padrao", "correta": 0}, {"indice": 1, "tipo": "multipla_escolha", "conceito": "afinador", "correta": 0}, {"indice": 2, "tipo": "multipla_escolha", "conceito": "afinador", "correta": 0}, {"indice": 3, "tipo": "multipla_escolha", "conceito": "metodo-da-quinta-casa", "correta": 0}, {"indice": 4, "tipo": "multipla_escolha", "conceito": "metodo-da-quinta-casa", "correta": 0}, {"indice": 5, "tipo": "multipla_escolha", "conceito": "metodo-da-quinta-casa", "correta": 0}, {"indice": 6, "tipo": "multipla_escolha", "conceito": "percepcao-afinacao", "correta": 0}, {"indice": 7, "tipo": "percepcao", "conceito": "percepcao-afinacao", "exemplo": "exe-alta", "correta": 0}, {"indice": 8, "tipo": "percepcao", "conceito": "percepcao-afinacao", "exemplo": "exe-baixa", "correta": 0}, {"indice": 9, "tipo": "percepcao", "conceito": "percepcao-afinacao", "exemplo": "exe-igual", "correta": 0}]}</script>
 <script src="https://cdn.jsdelivr.net/npm/abcjs@6.7.1/dist/abcjs-basic-min.js"></script>
 <script>
 /* Aula interativa: partitura (abcjs), som sintetizado no navegador (piano ou violão),

@@ -19,4 +19,5 @@ def test_site_tem_indice_e_todas_as_aulas(tmp_path):
 
 def test_aulas_seguem_a_ordem_do_curriculo():
     codigos = [a.codigo for a, _ in aulas_prontas()]
-    assert codigos == sorted(codigos, key=lambda c: ("IMA".index(c[0]), int(c[1:])))
+    prefixos = ["I", "M", "A", "VI", "VM", "VA"]
+    assert codigos == sorted(codigos, key=lambda c: (prefixos.index(c.rstrip("0123456789")), int(c[-2:])))

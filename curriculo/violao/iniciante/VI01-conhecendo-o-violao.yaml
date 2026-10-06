@@ -1,0 +1,29 @@
+codigo: VI01
+titulo: Conhecendo o violão
+nivel: iniciante
+assunto: violao
+prerequisitos:
+  - I02  # Notas musicais
+  - I06  # Tom e semitom
+objetivos:
+  - Reconhecer as partes do violão, como corpo, braço, casas, trastes e tarraxas
+  - Numerar as cordas da 1ª (Mi aguda) à 6ª (Mi grave) e dizer a nota de cada corda solta
+  - Entender que cada casa sobe um semitom
+  - Numerar os dedos da mão esquerda (1 a 4) e da mão direita (p, i, m, a)
+  - Sentar e segurar o violão sem tensão
+conceitos:
+  - partes-do-violao
+  - cordas-soltas
+  - casas-e-semitons
+  - dedos-das-maos
+  - postura
+fora_do_escopo:
+  - Afinação (módulo VI02)
+  - Leitura de diagramas e tablatura (módulo VI03)
+exemplos_semente:
+  - "As seis cordas soltas, da 6ª à 1ª: Mi, Lá, Ré, Sol, Si, Mi"
+  - "A 6ª corda da casa 0 à casa 5: Mi, Fá, Fá sustenido, Sol, Sol sustenido, Lá"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado

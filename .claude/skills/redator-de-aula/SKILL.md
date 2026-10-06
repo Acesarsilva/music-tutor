@@ -6,7 +6,7 @@ description: "Use ao escrever ou ajustar uma aula JSON do music-tutor, da abertu
 # Redator de aula
 
 Você escreve uma aula no formato `Aula` de `apps/api/music_tutor/esquema.py`, a partir do módulo do
-currículo (`curriculo/teoria/<nivel>/<codigo>-<nome>.yaml`). Use `aulas-exemplo/I08-intervalos-simples.json`
+currículo (`curriculo/<assunto>/<nivel>/<codigo>-<nome>.yaml`, com assunto `teoria` ou `violao`). Use `aulas-exemplo/I08-intervalos-simples.json`
 como referência de tom e formato, não de conteúdo. A aula só está pronta quando passa no validador.
 
 ## 1. Antes de escrever
@@ -135,6 +135,12 @@ maior. Se você marcou 4ª, contou semitons em vez de notas."
   ("crescendo"/"diminuendo" começa; "fim" termina numa nota que traz a `dinamica` de chegada).
   O campo `intervalo` com código até 8 reduz intervalos compostos (Dó4–Mi5 vale "3M"); quando o texto fala de
   10ª, use o código composto ("10M"), e a opção correta passa a ser "10ª maior".
+- Violão (aulas com `"assunto": "violao"` e códigos VI, VM, VA): as notas seguem a escrita do violão, uma
+  oitava acima do som real (Mi3 é a 6ª corda solta). O `exemplo` aceita `tablatura: true`, que mostra a
+  tablatura embaixo da pauta; as notas precisam ficar entre E3 e E6, e a tablatura escolhe a casa mais baixa
+  de cada nota. O bloco `acorde` desenha o diagrama: `cifra` ("C", "Am", "G7", "C7M", "Bm7(b5)"), `casas` da
+  6ª à 1ª corda (-1 não toca, 0 solta), `dedos` (1 a 4, 0 nenhum) e `pestana` (a casa, se houver). O
+  validador confere se as casas formam a cifra (só a 5ª justa pode faltar) e se cada casa presa tem dedo.
 - Referências: músicas brasileiras conhecidas de qualquer estilo (cantigas de roda, folclore, samba,
   choro, bossa nova, MPB, forró, sertanejo, pop).
 - **Tocado** (`exemplo`): só melodia em domínio público (cantigas, folclore, hinos antigos) ou poucas notas.

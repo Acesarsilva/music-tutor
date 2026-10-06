@@ -61,6 +61,11 @@ class Exemplo(BaseModel):
         "As notas dos eventos continuam com o acidente real (F#4 em Sol maior).",
     )
     intervalo: Optional[IntervaloAfirmado] = None
+    tablatura: bool = Field(
+        False,
+        description="Mostra a tablatura do violão embaixo da pauta. As notas seguem a escrita do violão "
+        "(uma oitava acima do som real) e precisam caber no braço, de E3 a E6.",
+    )
 
 
 class BlocoTexto(BaseModel):
@@ -101,8 +106,26 @@ class BlocoTeclado(BaseModel):
     ate: str = Field("C5", description="Última tecla mostrada.")
 
 
+class BlocoAcorde(BaseModel):
+    """Diagrama de acorde do violão, com botão para ouvir o acorde."""
+
+    tipo: Literal["acorde"]
+    cifra: str = Field(description='Cifra do acorde, ex.: "C", "Am", "G7", "F7M". O validador confere as notas.')
+    casas: list[int] = Field(
+        description="Casa de cada corda, da 6ª (Mi grave) à 1ª (Mi aguda): -1 não toca, 0 solta, 1 a 12 presa. "
+        "Ex.: C = [-1, 3, 2, 0, 1, 0]."
+    )
+    dedos: list[int] = Field(
+        default_factory=list,
+        description="Dedo da mão esquerda em cada corda, na mesma ordem (1 indicador a 4 mínimo, 0 nenhum). "
+        "Vazio para não mostrar.",
+    )
+    pestana: Optional[int] = Field(None, description="Casa em que o dedo 1 faz pestana, se houver.")
+    legenda: str
+
+
 Bloco = Annotated[
-    Union[BlocoTexto, BlocoDica, BlocoResposta, BlocoExemplo, BlocoTabela, BlocoTeclado],
+    Union[BlocoTexto, BlocoDica, BlocoResposta, BlocoExemplo, BlocoTabela, BlocoTeclado, BlocoAcorde],
     Field(discriminator="tipo"),
 ]
 
@@ -160,6 +183,7 @@ Exercicio = Annotated[
 
 class Aula(BaseModel):
     codigo: str = Field(description="Código do módulo, ex.: I08.")
+    assunto: Literal["teoria", "violao"] = Field("teoria", description="Trilha da aula: teoria ou violão.")
     titulo: str
     nivel: Literal["iniciante", "intermediario", "avancado"]
     resumo_curto: str = Field(description="Uma frase que aparece no topo da aula.")

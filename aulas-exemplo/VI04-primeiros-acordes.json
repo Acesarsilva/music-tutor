@@ -1,0 +1,948 @@
+{
+  "codigo": "VI04",
+  "assunto": "violao",
+  "titulo": "Primeiros acordes: Em, Am e E",
+  "nivel": "iniciante",
+  "resumo_curto": "Os três primeiros acordes, som limpo, a troca entre eles e quatro batidas no pulso.",
+  "prerequisitos": [
+    "Diagramas e tablatura (VI03)",
+    "Tríades (I12)"
+  ],
+  "objetivos": [
+    "Montar **Em**, **Am** e **E**",
+    "Fazer cada corda soar **limpa**",
+    "**Trocar** de acorde no pulso",
+    "Ouvir a diferença entre **maior** e **menor**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. No diagrama, o que quer dizer o ○ em cima de uma corda?\n2. Quais são as notas do acorde de Mi menor (Em)?\n3. Qual é a diferença entre uma tríade maior e uma menor?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. A corda toca solta.\n2. Mi, Sol, Si.\n3. A 3ª: maior na tríade maior, menor na tríade menor.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Dois acordes",
+            "legenda": "Ouça os dois. Qual soa mais triste? Só uma corda muda entre eles.",
+            "eventos": [
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O primeiro é o **Em** (Mi menor) e o segundo, o **E** (Mi maior). No violão, a diferença é **um dedo**: a 3ª corda passa de Sol para Sol♯, e o acorde passa de menor para maior.\n\nAo final, você vai montar o Em, o Am e o E, fazer cada corda soar limpa e trocar de acorde no pulso."
+        }
+      ]
+    },
+    {
+      "titulo": "Em: o primeiro acorde",
+      "blocos": [
+        {
+          "tipo": "acorde",
+          "cifra": "Em",
+          "casas": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "legenda": "Em: dedo 2 na 5ª corda e dedo 3 na 4ª, as duas na casa 2. Toque as seis cordas.",
+          "dedos": [
+            0,
+            2,
+            3,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O Em usa só dois dedos e todas as cordas. Notas, da 6ª à 1ª: **Mi, Si, Mi, Sol, Si, Mi**. São só três notas diferentes, Mi, Sol e Si, repetidas em várias alturas."
+        }
+      ]
+    },
+    {
+      "titulo": "Som limpo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Para cada corda soar sem chiado nem abafar:\n\n1. aperte com a **ponta** do dedo, com o dedo arqueado, para ele não encostar na corda vizinha;\n2. coloque o dedo **perto do traste** (logo atrás dele, não em cima nem no meio da casa);\n3. aperte só o suficiente: força demais cansa e desafina.\n\nPara testar, toque **corda por corda**, da mais grave para a mais aguda. A corda que não soar mostra qual dedo ajustar."
+        },
+        {
+          "tipo": "acorde",
+          "cifra": "Am",
+          "casas": [
+            -1,
+            0,
+            2,
+            2,
+            1,
+            0
+          ],
+          "legenda": "Am: dedo 1 na 2ª corda (casa 1), dedos 2 e 3 na 4ª e na 3ª (casa 2). A 6ª corda não toca.",
+          "dedos": [
+            0,
+            0,
+            2,
+            3,
+            1,
+            0
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-arpejo-am",
+            "titulo": "Am corda por corda",
+            "legenda": "Da 5ª corda à 1ª: cada nota deve soar inteira.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 72,
+            "tablatura": true
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Trocar de acorde",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Compare o Em e o Am: os **dedos 2 e 3** fazem o **mesmo desenho**, só que uma corda abaixo (da 5ª e 4ª para a 4ª e 3ª). No Am, entra ainda o dedo 1 na 2ª corda.\n\nPara trocar sem parar:\n\n1. leve os dedos 2 e 3 **juntos**, como um bloco;\n2. o dedo 1 chega logo depois;\n3. treine devagar, trocando a cada duas batidas, e só depois aumente."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-troca",
+            "titulo": "Em e Am, duas batidas cada",
+            "legenda": "Em, Am, Em, Am. Os dedos 2 e 3 descem e sobem de corda juntos.",
+            "eventos": [
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "E: o maior",
+      "blocos": [
+        {
+          "tipo": "acorde",
+          "cifra": "E",
+          "casas": [
+            0,
+            2,
+            2,
+            1,
+            0,
+            0
+          ],
+          "legenda": "E: igual ao Em, mais o dedo 1 na 3ª corda (casa 1). Sol vira Sol♯.",
+          "dedos": [
+            0,
+            2,
+            3,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "No **E**, a 3ª corda passa a soar **Sol♯** em vez de Sol. Mi, Sol♯, Si é a tríade maior; Mi, Sol, Si é a menor. É a mesma diferença que você estudou na I12, agora na mão."
+        }
+      ]
+    },
+    {
+      "titulo": "Quatro batidas por acorde",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Com o polegar ou o indicador da mão direita, toque **para baixo**, da corda mais grave para a mais aguda, uma vez em cada tempo. Conte em voz alta, **1, 2, 3, 4**, e troque de acorde no **1** do compasso seguinte.\n\nA sequência abaixo é **Em, Am, E, Em**: o primeiro exercício de verdade da trilha."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-progressao",
+            "titulo": "Em, Am, E, Em",
+            "legenda": "Quatro batidas em cada acorde, no pulso.",
+            "eventos": [
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Se a troca atrasar, toque só três batidas e use o quarto tempo para mudar os dedos. Aos poucos, volte para as quatro."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: montar um acorde novo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como montar o Am lendo o diagrama, com o motivo de cada passo.\n\n1. **Veja as cordas que não tocam**: a 6ª tem ×. A mão direita começa na 5ª corda.\n2. **Coloque o dedo mais grave primeiro**: dedo 2 na 4ª corda, casa 2.\n3. **Depois os outros**: dedo 3 na 3ª corda, casa 2; dedo 1 na 2ª corda, casa 1.\n4. **Teste corda por corda**, da 5ª à 1ª."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que começar pela corda mais grave?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque o dedo da corda mais grave serve de **âncora**: os outros se encaixam em relação a ele, e a mão encontra o formato mais rápido.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus: no E, os dedos 2 e 3 já estão na casa 2 da 5ª e da 4ª corda. Onde vai o dedo 1, e como você testa?\n\nE agora todos os passos são seus: monte o Em."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Dedo 1 na **3ª corda, casa 1**. Teste corda por corda, da 6ª à 1ª: todas tocam.\n\nEm: nenhuma corda com ×; dedo 2 na 5ª corda, casa 2; dedo 3 na 4ª corda, casa 2; teste da 6ª à 1ª.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"No Am eu toco as seis cordas, porque o acorde é Lá menor e a 6ª corda é Mi, que é do acorde.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "O Mi está mesmo no Am (Lá, Dó, Mi), mas tocar a 6ª corda põe o **Mi no baixo**, e o acorde fica invertido, com som menos firme. O diagrama marca × na 6ª corda para o **Lá** da 5ª corda ser a nota mais grave.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais dedos formam o Em?",
+      "opcoes": [
+        "2 e 3, na casa 2",
+        "1 e 2, na casa 1",
+        "1, 2 e 3",
+        "Só o 1"
+      ],
+      "correta": 0,
+      "explicacao": "Em: **dedo 2** na 5ª corda e **dedo 3** na 4ª, os dois na casa 2.",
+      "conceito": "acorde-em"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No Em, quantas cordas tocam?",
+      "opcoes": [
+        "As seis",
+        "Cinco",
+        "Quatro",
+        "Três"
+      ],
+      "correta": 0,
+      "explicacao": "No Em, **todas as seis** cordas tocam.",
+      "conceito": "acorde-em"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No Am, qual corda **não** toca?",
+      "opcoes": [
+        "A 6ª",
+        "A 1ª",
+        "A 5ª",
+        "Todas tocam"
+      ],
+      "correta": 0,
+      "explicacao": "A **6ª corda** tem × no Am: o baixo fica no Lá da 5ª corda.",
+      "conceito": "acorde-am"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No Am, onde fica o dedo 1?",
+      "opcoes": [
+        "2ª corda, casa 1",
+        "3ª corda, casa 1",
+        "4ª corda, casa 2",
+        "1ª corda, casa 1"
+      ],
+      "correta": 0,
+      "explicacao": "Am: dedo 1 na **2ª corda, casa 1**; dedos 2 e 3 na casa 2 da 4ª e da 3ª.",
+      "conceito": "acorde-am"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que dedo se acrescenta ao Em para virar **E**?",
+      "opcoes": [
+        "Dedo 1 na 3ª corda, casa 1",
+        "Dedo 4 na 1ª corda",
+        "Dedo 1 na 2ª corda, casa 1",
+        "Nenhum"
+      ],
+      "correta": 0,
+      "explicacao": "O **dedo 1 na 3ª corda, casa 1** troca o Sol por Sol♯: Em vira E.",
+      "conceito": "acorde-e"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. O segundo acorde é maior ou menor?",
+      "exemplo": {
+        "id": "exe-maior-menor",
+        "titulo": "Dois acordes",
+        "legenda": "Em e depois E.",
+        "eventos": [
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G#4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G#4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G#4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G#4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Maior (E)",
+        "Menor (Em)"
+      ],
+      "correta": 0,
+      "explicacao": "O segundo é o **E**, maior: mais claro, com Sol♯.",
+      "conceito": "percepcao-maior-menor"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "E agora, o segundo é maior ou menor?",
+      "exemplo": {
+        "id": "exe-menor",
+        "titulo": "Dois acordes",
+        "legenda": "E e depois Em.",
+        "eventos": [
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G#4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G#4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G#4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G#4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Menor (Em)",
+        "Maior (E)"
+      ],
+      "correta": 0,
+      "explicacao": "O segundo é o **Em**: o Sol♯ voltou para Sol e o acorde escureceu.",
+      "conceito": "percepcao-maior-menor"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Uma corda sai abafada no acorde. Qual é a causa mais provável?",
+      "opcoes": [
+        "Um dedo deitado encostando nela",
+        "A corda está afinada demais",
+        "A mão direita está muito perto da boca",
+        "O acorde é menor"
+      ],
+      "correta": 0,
+      "explicacao": "Dedo **deitado** encosta na corda vizinha. Arqueie o dedo e aperte com a **ponta**.",
+      "conceito": "som-limpo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Onde colocar o dedo dentro da casa?",
+      "opcoes": [
+        "Perto do traste, logo atrás dele",
+        "No meio da casa",
+        "Em cima do traste",
+        "Tanto faz"
+      ],
+      "correta": 0,
+      "explicacao": "**Perto do traste** a nota sai limpa com menos força.",
+      "conceito": "som-limpo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Do Em para o Am, o que fazem os dedos 2 e 3?",
+      "opcoes": [
+        "Descem uma corda juntos, mantendo o desenho",
+        "Trocam de lugar entre si",
+        "Sobem uma casa",
+        "Saem do braço"
+      ],
+      "correta": 0,
+      "explicacao": "O **desenho** dos dedos 2 e 3 é o mesmo; ele só **desce uma corda**.",
+      "conceito": "troca-de-acordes"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Contando 1, 2, 3, 4, em que tempo se troca de acorde?",
+      "opcoes": [
+        "No 1 do compasso seguinte",
+        "No 3",
+        "Quando der",
+        "No 2"
+      ],
+      "correta": 0,
+      "explicacao": "O acorde novo entra no **1** do compasso seguinte, sem parar o pulso.",
+      "conceito": "troca-de-acordes"
+    }
+  ],
+  "resumo": [
+    "**Em**: dedos 2 e 3 na casa 2 (5ª e 4ª cordas). **Am**: o mesmo desenho uma corda abaixo, mais o dedo 1 na 2ª corda. **E**: Em mais o dedo 1 na 3ª corda.",
+    "Som limpo: ponta do dedo, dedo arqueado, perto do traste.",
+    "Troca: leve os dedos como um bloco e mude no **1** do compasso."
+  ],
+  "pergunta_para_chat": "Vou tocar Em, Am e E e te contar o que acontece (corda abafada, troca atrasando); me ajude a achar a causa e me passe um treino para o dia."
+}

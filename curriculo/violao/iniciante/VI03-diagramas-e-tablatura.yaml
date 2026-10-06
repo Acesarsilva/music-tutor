@@ -1,0 +1,25 @@
+codigo: VI03
+titulo: Diagramas e tablatura
+nivel: iniciante
+assunto: violao
+prerequisitos:
+  - VI01  # Conhecendo o violão
+objetivos:
+  - Ler um diagrama de acorde, com cordas, casas, dedos, cordas soltas e cordas que não tocam
+  - Ler uma tablatura, em que cada linha é uma corda e cada número é uma casa
+  - Relacionar a tablatura com a partitura do violão
+  - Tocar uma melodia curta lendo a tablatura
+conceitos:
+  - diagrama-de-acorde
+  - tablatura
+  - tablatura-e-partitura
+  - percepcao-melodia-violao
+fora_do_escopo:
+  - Símbolos de técnica na tablatura, como ligado, slide e bend
+exemplos_semente:
+  - "Diagrama do Em, com os dedos 2 e 3"
+  - "Diagrama do C, com a 6ª corda sem tocar"
+  - "Começo de Brilha, brilha, estrelinha em tablatura"
+exercicios:
+  - multipla_escolha
+  - percepcao

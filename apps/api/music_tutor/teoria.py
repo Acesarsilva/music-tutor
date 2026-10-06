@@ -341,3 +341,60 @@ def alturas_do_abc(abc: str) -> list[list[int]]:
         else:
             resultado.append(sorted(int(p.midi) for p in el.pitches))
     return resultado
+
+
+# ---------------------------------------------------------------- Violão
+
+# Afinação padrão na escrita do violão (uma oitava acima do som real), da 6ª corda à 1ª.
+CORDAS_VIOLAO = ("E3", "A3", "D4", "G4", "B4", "E5")
+_NOMES_SUSTENIDO = ("C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B")
+_CIFRA_RE = re.compile(r"^([A-G])(#|b)?(.*)$")
+_SUFIXOS_CIFRA = {
+    "": "", "m": "m", "7": "7", "m7": "m7", "7M": "maj7", "m7M": "mM7", "6": "6", "m6": "m6",
+    "°": "dim", "°7": "dim7", "m7(b5)": "m7b5", "sus4": "sus4", "sus2": "sus2", "add9": "add9", "7sus4": "7sus4",
+    "aug": "aug", "+": "aug",
+}
+
+
+def notas_do_violao(casas: list[int]) -> list[str]:
+    """Notas escritas de um acorde no violão, da corda mais grave para a mais aguda (-1 = corda que não soa)."""
+    if len(casas) != 6:
+        raise ErroTeoria(f"o acorde precisa de 6 casas (uma por corda), recebeu {len(casas)}")
+    notas = []
+    for corda, casa in zip(CORDAS_VIOLAO, casas):
+        if casa == -1:
+            continue
+        if not 0 <= casa <= 12:
+            raise ErroTeoria(f"casa {casa} fora do braço (use -1, 0 ou 1 a 12)")
+        m = midi(corda) + casa
+        notas.append(f"{_NOMES_SUSTENIDO[m % 12]}{m // 12 - 1}")
+    return notas
+
+
+def classes_da_cifra(cifra: str) -> list[int]:
+    """Classes de altura (0 = Dó) da cifra, a fundamental primeiro. Aceita C, Am, G7, C7M, Bm7(b5), B°..."""
+    from music21 import harmony
+
+    achado = _CIFRA_RE.match(cifra.strip())
+    if not achado or achado.group(3) not in _SUFIXOS_CIFRA:
+        raise ErroTeoria(f"cifra não reconhecida: {cifra!r}")
+    raiz = achado.group(1) + {"#": "#", "b": "-", None: ""}[achado.group(2)]
+    simbolo = harmony.ChordSymbol(raiz + _SUFIXOS_CIFRA[achado.group(3)])
+    return [p.pitchClass for p in simbolo.pitches]
+
+
+def conferir_cifra(cifra: str, notas: list[str]) -> str | None:
+    """Erro em texto se as notas não formam a cifra; None se formam. Só a 5ª justa pode faltar."""
+    classes = classes_da_cifra(cifra)
+    tocadas = {midi(n) % 12 for n in notas}
+    sobram = tocadas - set(classes)
+    if sobram:
+        nomes = ", ".join(nome_nota_pt(_NOMES_SUSTENIDO[c] + "4") for c in sorted(sobram))
+        return f"{cifra} não tem {nomes}"
+    quinta_justa = (classes[0] + 7) % 12
+    obrigatorias = [c for c in classes if c != quinta_justa]
+    faltam = [c for c in obrigatorias if c not in tocadas]
+    if faltam:
+        nomes = ", ".join(nome_nota_pt(_NOMES_SUSTENIDO[c] + "4") for c in faltam)
+        return f"falta {nomes} no {cifra}"
+    return None

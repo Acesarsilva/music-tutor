@@ -303,6 +303,19 @@ th { font-family: var(--f-titulo); font-weight: 600; font-size: 0.85rem; color: 
 tbody tr:last-child td { border-bottom: 0; }
 .tabela figcaption { margin-top: 0.4rem; }
 
+/* Diagrama de acorde do violão */
+.bloco-acorde { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 0.4rem; margin: 1rem 1.5rem 1rem 0; vertical-align: top; }
+.bloco-acorde figcaption { display: flex; flex-direction: column; align-items: flex-start; gap: 0.4rem; max-width: 12rem; }
+.diagrama { color: var(--tinta); overflow: visible; }
+.diagrama-cifra { font: 700 15px var(--f-titulo); fill: currentColor; }
+.diagrama-corda, .diagrama-traste { stroke: var(--tinta-suave); stroke-width: 1; }
+.diagrama-pestana-fixa { stroke: currentColor; stroke-width: 4; }
+.diagrama-casa { font: 600 11px var(--f-titulo); fill: var(--tinta-suave); }
+.diagrama-marca { font: 600 13px var(--f-titulo); fill: var(--tinta-suave); }
+.diagrama-solta { fill: none; stroke: currentColor; stroke-width: 1.4; }
+.diagrama-dedo { fill: var(--vinho); }
+.diagrama-numero { font: 700 10px var(--f-titulo); fill: var(--superficie); }
+
 /* Teclado */
 .bloco-teclado { margin: 1.4rem 0; }
 .bloco-teclado figcaption { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1rem; margin-top: 0.5rem; }
@@ -926,7 +939,7 @@ tbody tr:last-child td { border-bottom: 0; }
   <p>Aula M07 · notas, intervalos e respostas conferidos com music21 · som gerado no navegador</p>
 </footer>
 
-<script type="application/json" id="dados-aula">{"codigo": "M07", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura": {"id": "ex-abertura", "titulo": "Uma pequena viagem", "legenda": "Ouça os quatro acordes. Em qual deles você está em casa? Em qual se afasta? Em qual fica com vontade de voltar?", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEGB]2 [F,A,CE]2 | [G,B,DF]2 [CEGB]2 |]\n", "andamento": 60, "eventos": [{"midis": [60, 64, 67, 71], "duracao": 2.0}, {"midis": [53, 57, 60, 64], "duracao": 2.0}, {"midis": [55, 59, 62, 65], "duracao": 2.0}, {"midis": [60, 64, 67, 71], "duracao": 2.0}]}, "ex-tritono": {"id": "ex-tritono", "titulo": "Si–Fá resolvendo em Dó–Mi", "legenda": "Só as duas notas do trítono, e a resolução: as duas andam meio tom, em direções opostas.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[FB]2 [Ec]2 |]\n", "andamento": 60, "eventos": [{"midis": [65, 71], "duracao": 2.0}, {"midis": [64, 72], "duracao": 2.0}]}, "ex-g7-c": {"id": "ex-g7-c", "titulo": "G7 indo para C", "legenda": "O acorde inteiro: a tensão do G7 se resolve no acorde de Dó.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[G,B,DF]2 [CEG]2 |]\n", "andamento": 60, "eventos": [{"midis": [55, 59, 62, 65], "duracao": 2.0}, {"midis": [60, 64, 67], "duracao": 2.0}]}, "ex-substitutos": {"id": "ex-substitutos", "titulo": "Am7, Dm7, G7, C7M", "legenda": "O mesmo caminho da abertura (T, SD, D, T), agora com dois substitutos no lugar do C7M e do F7M.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[A,CEG]2 [DFAc]2 | [G,B,DF]2 [CEGB]2 |]\n", "andamento": 60, "eventos": [{"midis": [57, 60, 64, 67], "duracao": 2.0}, {"midis": [62, 65, 69, 72], "duracao": 2.0}, {"midis": [55, 59, 62, 65], "duracao": 2.0}, {"midis": [60, 64, 67, 71], "duracao": 2.0}]}, "ex-resolvido": {"id": "ex-resolvido", "titulo": "Em7, F7M, G7, C7M", "legenda": "T, SD, D, T.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[EGBd]2 [F,A,CE]2 | [G,B,DF]2 [CEGB]2 |]\n", "andamento": 60, "eventos": [{"midis": [64, 67, 71, 74], "duracao": 2.0}, {"midis": [53, 57, 60, 64], "duracao": 2.0}, {"midis": [55, 59, 62, 65], "duracao": 2.0}, {"midis": [60, 64, 67, 71], "duracao": 2.0}]}, "ex-menor": {"id": "ex-menor", "titulo": "Am, Dm7, E7, Am", "legenda": "T, SD, D, T em Lá menor. O Sol♯ do E7 sobe para o Lá do Am.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[A,CEA]2 [DFAc]2 | [E^GBd]2 [A,CEA]2 |]\n", "andamento": 60, "eventos": [{"midis": [57, 60, 64, 69], "duracao": 2.0}, {"midis": [62, 65, 69, 72], "duracao": 2.0}, {"midis": [64, 68, 71, 74], "duracao": 2.0}, {"midis": [57, 60, 64, 69], "duracao": 2.0}]}, "exe-ciclo": {"id": "exe-ciclo", "titulo": "Quatro acordes", "legenda": "C7M (T), F7M (SD), G7 (D), C7M (T).", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEGB]2 [F,A,CE]2 | [G,B,DF]2 [CEGB]2 |]\n", "andamento": 60, "eventos": [{"midis": [60, 64, 67, 71], "duracao": 2.0}, {"midis": [53, 57, 60, 64], "duracao": 2.0}, {"midis": [55, 59, 62, 65], "duracao": 2.0}, {"midis": [60, 64, 67, 71], "duracao": 2.0}]}, "exe-suspense": {"id": "exe-suspense", "titulo": "Três acordes", "legenda": "C7M, F7M, G7: termina na dominante, em suspense.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEGB]2 [F,A,CE]2 | [G,B,DF]2 |]\n", "andamento": 60, "eventos": [{"midis": [60, 64, 67, 71], "duracao": 2.0}, {"midis": [53, 57, 60, 64], "duracao": 2.0}, {"midis": [55, 59, 62, 65], "duracao": 2.0}]}}, "teclados": {}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "funcao-dominante", "correta": 0}, {"indice": 1, "tipo": "multipla_escolha", "conceito": "funcao-tonica", "correta": 0}, {"indice": 2, "tipo": "percepcao", "conceito": "percepcao-funcao", "exemplo": "exe-ciclo", "correta": 0}, {"indice": 3, "tipo": "multipla_escolha", "conceito": "funcao-subdominante", "correta": 0}, {"indice": 4, "tipo": "multipla_escolha", "conceito": "funcao-dominante", "correta": 0}, {"indice": 5, "tipo": "multipla_escolha", "conceito": "acordes-substitutos", "correta": 0}, {"indice": 6, "tipo": "multipla_escolha", "conceito": "funcao-no-tom-menor", "correta": 0}, {"indice": 7, "tipo": "percepcao", "conceito": "percepcao-funcao", "exemplo": "exe-suspense", "correta": 0}, {"indice": 8, "tipo": "multipla_escolha", "conceito": "funcao-dominante", "correta": 0}, {"indice": 9, "tipo": "multipla_escolha", "conceito": "funcao-subdominante", "correta": 0}, {"indice": 10, "tipo": "multipla_escolha", "conceito": "acordes-substitutos", "correta": 0}, {"indice": 11, "tipo": "multipla_escolha", "conceito": "funcao-no-tom-menor", "correta": 0}, {"indice": 12, "tipo": "multipla_escolha", "conceito": "funcao-tonica", "correta": 0}]}</script>
+<script type="application/json" id="dados-aula">{"codigo": "M07", "preferencias": {"timbre": "piano"}, "exemplos": {"ex-abertura": {"id": "ex-abertura", "titulo": "Uma pequena viagem", "legenda": "Ouça os quatro acordes. Em qual deles você está em casa? Em qual se afasta? Em qual fica com vontade de voltar?", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEGB]2 [F,A,CE]2 | [G,B,DF]2 [CEGB]2 |]\n", "andamento": 60, "eventos": [{"midis": [60, 64, 67, 71], "duracao": 2.0}, {"midis": [53, 57, 60, 64], "duracao": 2.0}, {"midis": [55, 59, 62, 65], "duracao": 2.0}, {"midis": [60, 64, 67, 71], "duracao": 2.0}], "tablatura": false}, "ex-tritono": {"id": "ex-tritono", "titulo": "Si–Fá resolvendo em Dó–Mi", "legenda": "Só as duas notas do trítono, e a resolução: as duas andam meio tom, em direções opostas.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[FB]2 [Ec]2 |]\n", "andamento": 60, "eventos": [{"midis": [65, 71], "duracao": 2.0}, {"midis": [64, 72], "duracao": 2.0}], "tablatura": false}, "ex-g7-c": {"id": "ex-g7-c", "titulo": "G7 indo para C", "legenda": "O acorde inteiro: a tensão do G7 se resolve no acorde de Dó.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[G,B,DF]2 [CEG]2 |]\n", "andamento": 60, "eventos": [{"midis": [55, 59, 62, 65], "duracao": 2.0}, {"midis": [60, 64, 67], "duracao": 2.0}], "tablatura": false}, "ex-substitutos": {"id": "ex-substitutos", "titulo": "Am7, Dm7, G7, C7M", "legenda": "O mesmo caminho da abertura (T, SD, D, T), agora com dois substitutos no lugar do C7M e do F7M.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[A,CEG]2 [DFAc]2 | [G,B,DF]2 [CEGB]2 |]\n", "andamento": 60, "eventos": [{"midis": [57, 60, 64, 67], "duracao": 2.0}, {"midis": [62, 65, 69, 72], "duracao": 2.0}, {"midis": [55, 59, 62, 65], "duracao": 2.0}, {"midis": [60, 64, 67, 71], "duracao": 2.0}], "tablatura": false}, "ex-resolvido": {"id": "ex-resolvido", "titulo": "Em7, F7M, G7, C7M", "legenda": "T, SD, D, T.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[EGBd]2 [F,A,CE]2 | [G,B,DF]2 [CEGB]2 |]\n", "andamento": 60, "eventos": [{"midis": [64, 67, 71, 74], "duracao": 2.0}, {"midis": [53, 57, 60, 64], "duracao": 2.0}, {"midis": [55, 59, 62, 65], "duracao": 2.0}, {"midis": [60, 64, 67, 71], "duracao": 2.0}], "tablatura": false}, "ex-menor": {"id": "ex-menor", "titulo": "Am, Dm7, E7, Am", "legenda": "T, SD, D, T em Lá menor. O Sol♯ do E7 sobe para o Lá do Am.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[A,CEA]2 [DFAc]2 | [E^GBd]2 [A,CEA]2 |]\n", "andamento": 60, "eventos": [{"midis": [57, 60, 64, 69], "duracao": 2.0}, {"midis": [62, 65, 69, 72], "duracao": 2.0}, {"midis": [64, 68, 71, 74], "duracao": 2.0}, {"midis": [57, 60, 64, 69], "duracao": 2.0}], "tablatura": false}, "exe-ciclo": {"id": "exe-ciclo", "titulo": "Quatro acordes", "legenda": "C7M (T), F7M (SD), G7 (D), C7M (T).", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEGB]2 [F,A,CE]2 | [G,B,DF]2 [CEGB]2 |]\n", "andamento": 60, "eventos": [{"midis": [60, 64, 67, 71], "duracao": 2.0}, {"midis": [53, 57, 60, 64], "duracao": 2.0}, {"midis": [55, 59, 62, 65], "duracao": 2.0}, {"midis": [60, 64, 67, 71], "duracao": 2.0}], "tablatura": false}, "exe-suspense": {"id": "exe-suspense", "titulo": "Três acordes", "legenda": "C7M, F7M, G7: termina na dominante, em suspense.", "abc": "X:1\nM:4/4\nL:1/4\nK:C\n[CEGB]2 [F,A,CE]2 | [G,B,DF]2 |]\n", "andamento": 60, "eventos": [{"midis": [60, 64, 67, 71], "duracao": 2.0}, {"midis": [53, 57, 60, 64], "duracao": 2.0}, {"midis": [55, 59, 62, 65], "duracao": 2.0}], "tablatura": false}}, "teclados": {}, "acordes": {}, "exercicios": [{"indice": 0, "tipo": "multipla_escolha", "conceito": "funcao-dominante", "correta": 0}, {"indice": 1, "tipo": "multipla_escolha", "conceito": "funcao-tonica", "correta": 0}, {"indice": 2, "tipo": "percepcao", "conceito": "percepcao-funcao", "exemplo": "exe-ciclo", "correta": 0}, {"indice": 3, "tipo": "multipla_escolha", "conceito": "funcao-subdominante", "correta": 0}, {"indice": 4, "tipo": "multipla_escolha", "conceito": "funcao-dominante", "correta": 0}, {"indice": 5, "tipo": "multipla_escolha", "conceito": "acordes-substitutos", "correta": 0}, {"indice": 6, "tipo": "multipla_escolha", "conceito": "funcao-no-tom-menor", "correta": 0}, {"indice": 7, "tipo": "percepcao", "conceito": "percepcao-funcao", "exemplo": "exe-suspense", "correta": 0}, {"indice": 8, "tipo": "multipla_escolha", "conceito": "funcao-dominante", "correta": 0}, {"indice": 9, "tipo": "multipla_escolha", "conceito": "funcao-subdominante", "correta": 0}, {"indice": 10, "tipo": "multipla_escolha", "conceito": "acordes-substitutos", "correta": 0}, {"indice": 11, "tipo": "multipla_escolha", "conceito": "funcao-no-tom-menor", "correta": 0}, {"indice": 12, "tipo": "multipla_escolha", "conceito": "funcao-tonica", "correta": 0}]}</script>
 <script src="https://cdn.jsdelivr.net/npm/abcjs@6.7.1/dist/abcjs-basic-min.js"></script>
 <script>
 /* Aula interativa: partitura (abcjs), som sintetizado no navegador (piano ou violão),
@@ -1125,7 +1138,7 @@ tbody tr:last-child td { border-bottom: 0; }
         alvo.classList.add("sem-partitura");
         return;
       }
-      ABCJS.renderAbc(alvo, ex.abc, {
+      var opcoes = {
         responsive: "resize",
         add_classes: true,
         paddingtop: 6,
@@ -1134,7 +1147,13 @@ tbody tr:last-child td { border-bottom: 0; }
         paddingright: 0,
         foregroundColor: "currentColor",
         staffwidth: 520
-      });
+      };
+      // Tablatura do violão embaixo da pauta (afinação padrão; a escrita já está uma oitava acima do som).
+      if (ex.tablatura) {
+        opcoes.tablature = [{ instrument: "guitar", label: "" }];
+        opcoes.paddingbottom = 16;
+      }
+      ABCJS.renderAbc(alvo, ex.abc, opcoes);
       elementosPorExemplo[id] = elementosPorExemplo[id] || [];
       elementosPorExemplo[id].push(alvo);
     });
@@ -1187,6 +1206,11 @@ tbody tr:last-child td { border-bottom: 0; }
       var id = botao.getAttribute("data-tocar");
       var ex = dados.exemplos[id];
       tocarComBotao(botao, ex.eventos, ex.andamento, function (idx) { marcarNota(id, idx); });
+      return;
+    }
+    var botaoAcorde = evento.target.closest("[data-tocar-acorde]");
+    if (botaoAcorde) {
+      Som.tocarAcorde(dados.acordes[botaoAcorde.getAttribute("data-tocar-acorde")] || [], 0.035);
       return;
     }
     var botaoTeclado = evento.target.closest("[data-tocar-teclado]");
