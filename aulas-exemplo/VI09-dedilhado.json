@@ -1,0 +1,1169 @@
+{
+  "codigo": "VI09",
+  "assunto": "violao",
+  "titulo": "Dedilhado: p, i, m, a",
+  "nivel": "iniciante",
+  "resumo_curto": "Os dedos da mão direita, o arpejo p i m a m i, o baixo alternado e o pinçado.",
+  "prerequisitos": [
+    "Batidas para baixo e para cima (VI08)",
+    "Acordes maiores abertos (VI05)"
+  ],
+  "objetivos": [
+    "Dar nome aos dedos **p, i, m, a** e às suas cordas",
+    "Tocar o arpejo **p i m a m i**",
+    "Fazer o **baixo alternado** com o polegar",
+    "Tocar o **pinçado** e dedilhar uma progressão"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Em que corda começa a batida do C? E a do G?\n2. Quais são as notas do acorde de Dó maior?\n3. Na batida, em que contagem a mão vai para baixo?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. C: na 5ª corda. G: na 6ª.\n2. Dó, Mi, Sol.\n3. Nos números (1, 2, 3, 4).",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "O mesmo acorde, duas vezes",
+            "legenda": "Ouça os dois compassos. As notas são as mesmas. O que mudou no jeito de tocar?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "silaba": "p",
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "a"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "No primeiro compasso, as cordas soam **juntas**, batidas. No segundo, soam **uma de cada vez**, tocadas pelos dedos: é o **dedilhado**. O acorde é o mesmo C; muda a mão direita.\n\nAo final, você vai dar nome aos dedos da mão direita, saber que corda cada um toca e dedilhar acordes em três padrões."
+        }
+      ]
+    },
+    {
+      "titulo": "Os dedos da mão direita",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Nas partituras de violão, os dedos da mão direita têm letras: **p** (polegar), **i** (indicador), **m** (médio) e **a** (anelar). Cada um cuida de suas cordas:"
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Que cordas cada dedo toca",
+          "cabecalho": [
+            "Dedo",
+            "Letra",
+            "Cordas"
+          ],
+          "linhas": [
+            [
+              "Polegar",
+              "p",
+              "6ª, 5ª e 4ª: os baixos"
+            ],
+            [
+              "Indicador",
+              "i",
+              "3ª"
+            ],
+            [
+              "Médio",
+              "m",
+              "2ª"
+            ],
+            [
+              "Anelar",
+              "a",
+              "1ª"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O **polegar** muda de corda conforme o acorde: ele toca a **fundamental**, na mesma corda em que começa a batida. Os outros três ficam **sempre** nas mesmas cordas. Sob a partitura, a letra mostra qual dedo toca cada nota."
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Apoie a mão de leve: i, m e a já encostados nas suas cordas, prontos. Só o polegar viaja."
+        }
+      ]
+    },
+    {
+      "titulo": "O arpejo p i m a m i",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O padrão **p i m a m i** sobe do baixo até a 1ª corda e volta. São seis colcheias, que cabem num compasso de **3/4**, o compasso da valsa."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-pima",
+            "titulo": "C com p i m a m i",
+            "legenda": "Seis notas por compasso: o baixo Dó e depois as três cordas agudas, subindo e descendo.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "silaba": "p",
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "a"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "silaba": "p",
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "a"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              }
+            ],
+            "compasso": "3/4",
+            "andamento": 72,
+            "tablatura": true
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Deixe as notas **soarem juntas**: os dedos da mão esquerda continuam apertando o acorde inteiro, mesmo que cada corda seja tocada sozinha."
+        }
+      ]
+    },
+    {
+      "titulo": "Baixo alternado",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Em 4/4, um padrão comum é **p i m i**, duas vezes por compasso. Na segunda vez, o polegar toca **outra nota do acorde**, numa corda vizinha: é o **baixo alternado**. No G, ele alterna o Sol da 6ª corda com o Ré da 4ª."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-alternado",
+            "titulo": "G com baixo alternado",
+            "legenda": "O polegar toca Sol no tempo 1 e Ré no tempo 3.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 0.5,
+                "silaba": "p",
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5,
+                "silaba": "p"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 0.5,
+                "silaba": "p",
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5,
+                "silaba": "p"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              }
+            ],
+            "andamento": 72,
+            "tablatura": true
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Baixo alternado nos acordes que você conhece",
+          "cabecalho": [
+            "Acorde",
+            "Baixo (fundamental)",
+            "Baixo alternado"
+          ],
+          "linhas": [
+            [
+              "G",
+              "Sol (6ª corda, casa 3)",
+              "Ré (4ª, solta)"
+            ],
+            [
+              "Em",
+              "Mi (6ª, solta)",
+              "Si (5ª, casa 2)"
+            ],
+            [
+              "C",
+              "Dó (5ª, casa 3)",
+              "Mi (4ª, casa 2)"
+            ],
+            [
+              "Am",
+              "Lá (5ª, solta)",
+              "Mi (4ª, casa 2)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Pinçado: p e a juntos",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "No **pinçado**, o polegar e o anelar tocam **ao mesmo tempo**, como quem belisca o violão: o baixo e a nota mais aguda soam juntos. Depois vêm i e m. Sob a partitura, aparece \"p+a\"."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-pincado",
+            "titulo": "Am com pinçado",
+            "legenda": "No tempo 1 e no 3, o baixo Lá e o Mi agudo soam juntos.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "p+a",
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "p+a"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "p+a",
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "p+a"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              }
+            ],
+            "andamento": 72,
+            "tablatura": true
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Dedilhando uma progressão",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Agora troque de acorde sem parar o dedilhado. A progressão é **C, Am, Dm, G** (I, vi, ii, V em Dó maior), com p i m a m i em 3/4. No Dm, o polegar vai para a **4ª corda**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-progressao",
+            "titulo": "C, Am, Dm, G dedilhados",
+            "legenda": "Um acorde por compasso. Só o polegar muda de corda.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "silaba": "p",
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "a"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 0.5,
+                "silaba": "p",
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "a"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5,
+                "silaba": "p",
+                "cifra": "Dm"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 0.5,
+                "silaba": "a"
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 0.5,
+                "silaba": "p",
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "a"
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              }
+            ],
+            "compasso": "3/4",
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Troque o acorde durante o último i do compasso. O polegar chega primeiro, então a mão esquerda começa pelo dedo do baixo."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: dedilhar um acorde novo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como montar o p i m a m i no **Em**, com o motivo de cada passo.\n\n1. **Ache o baixo**: a fundamental Mi está na 6ª corda solta. O polegar vai para lá.\n2. **Ponha i, m e a nas cordas 3, 2 e 1**: no Em, elas soam Sol, Si e Mi.\n3. **Escreva a ordem**: p, i, m, a, m, i.\n4. **Toque devagar**, contando 1 e 2 e 3 e, com a mão esquerda apertando o acorde todo."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que o passo 2 é igual para quase todo acorde e o passo 1 não é?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque i, m e a ficam sempre nas **mesmas três cordas** agudas. O que muda de um acorde para outro é a corda da **fundamental**, que é a do polegar.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu: no **G**, o polegar está na 6ª corda (casa 3), e i, m e a nas cordas 3, 2 e 1. Como fica a ordem para p i m a m i?\n\nE agora todos os passos são seus: dedilhe o **D** com p i m a m i."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "G: polegar no Sol da 6ª corda, depois Sol (3ª), Si (2ª), Sol (1ª, casa 3), Si, Sol.\n\nD: a fundamental Ré está na **4ª corda solta**: o polegar vai para lá. i, m e a tocam Lá (3ª, casa 2), Ré (2ª, casa 3) e Fá♯ (1ª, casa 2). A ordem é Ré, Lá, Ré, Fá♯, Ré, Lá.",
+          "rotulo": "Ver as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-d",
+            "titulo": "D com p i m a m i",
+            "legenda": "Confira sua resposta: o baixo é o Ré da 4ª corda.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5,
+                "silaba": "p",
+                "cifra": "D"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "F#5"
+                ],
+                "duracao": 0.5,
+                "silaba": "a"
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5,
+                "silaba": "m"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "i"
+              }
+            ],
+            "compasso": "3/4",
+            "andamento": 72,
+            "tablatura": true
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"No dedilhado do D, pus o polegar na 6ª corda, porque o p sempre toca a corda mais grave.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "O polegar toca a **fundamental**, não a corda mais grave do violão. No D, a 6ª corda solta é **Mi**, que nem está no acorde (Ré, Fá♯, Lá). O polegar vai para a **4ª corda**, o Ré, a mesma corda em que começa a batida do D.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No dedilhado do C, qual corda o polegar toca?",
+      "opcoes": [
+        "A 5ª, o Dó",
+        "A 6ª, o Mi",
+        "A 3ª, o Sol",
+        "A 4ª, o Mi"
+      ],
+      "correta": 0,
+      "explicacao": "O polegar toca a **fundamental**: Dó, na 5ª corda, casa 3. Se você marcou a 6ª, escolheu a corda mais grave, não o baixo do acorde.",
+      "conceito": "polegar-no-baixo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que dedo toca a 2ª corda?",
+      "opcoes": [
+        "m (médio)",
+        "i (indicador)",
+        "a (anelar)",
+        "p (polegar)"
+      ],
+      "correta": 0,
+      "explicacao": "i toca a 3ª, **m a 2ª** e a a 1ª. O polegar fica nos baixos.",
+      "conceito": "dedos-da-mao-direita"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Que padrão foi tocado?",
+      "exemplo": {
+        "id": "exe-pima",
+        "titulo": "Um padrão",
+        "legenda": "p i m a m i: sobe até a 1ª corda e volta.",
+        "eventos": [
+          {
+            "notas": [
+              "E3"
+            ],
+            "duracao": 0.5,
+            "silaba": "p",
+            "cifra": "Em"
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5,
+            "silaba": "i"
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 0.5,
+            "silaba": "m"
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 0.5,
+            "silaba": "a"
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 0.5,
+            "silaba": "m"
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5,
+            "silaba": "i"
+          }
+        ],
+        "compasso": "3/4",
+        "andamento": 72
+      },
+      "opcoes": [
+        "p i m a m i",
+        "p i m i p i m i",
+        "p+a i m i"
+      ],
+      "correta": 0,
+      "explicacao": "Seis notas que **sobem e descem**: o baixo, depois 3ª, 2ª, 1ª, 2ª e 3ª cordas.",
+      "conceito": "percepcao-de-dedilhado"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No baixo alternado do G, que nota o polegar toca no tempo 3?",
+      "opcoes": [
+        "Ré, na 4ª corda",
+        "Sol, na 6ª corda",
+        "Si, na 5ª corda",
+        "Mi, na 1ª corda"
+      ],
+      "correta": 0,
+      "explicacao": "No G, o polegar alterna o **Sol** da 6ª corda com o **Ré** da 4ª, outra nota do acorde.",
+      "conceito": "baixo-alternado"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas colcheias tem o padrão p i m a m i?",
+      "opcoes": [
+        "Seis",
+        "Quatro",
+        "Oito",
+        "Três"
+      ],
+      "correta": 0,
+      "explicacao": "p, i, m, a, m, i: **seis** colcheias, que cabem num compasso de 3/4.",
+      "conceito": "arpejo-pima"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No pinçado, o que soa junto?",
+      "opcoes": [
+        "O polegar e o anelar",
+        "O indicador e o médio",
+        "Todas as cordas",
+        "O polegar e o indicador"
+      ],
+      "correta": 0,
+      "explicacao": "No pinçado, **p e a** tocam ao mesmo tempo: o baixo e a nota mais aguda.",
+      "conceito": "pincado"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Que padrão foi tocado?",
+      "exemplo": {
+        "id": "exe-pincado",
+        "titulo": "Um padrão",
+        "legenda": "Pinçado: baixo e 1ª corda juntos, depois i, m, i.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E5"
+            ],
+            "duracao": 0.5,
+            "silaba": "p+a",
+            "cifra": "C"
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5,
+            "silaba": "i"
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "silaba": "m"
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5,
+            "silaba": "i"
+          },
+          {
+            "notas": [
+              "C4",
+              "E5"
+            ],
+            "duracao": 0.5,
+            "silaba": "p+a"
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5,
+            "silaba": "i"
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "silaba": "m"
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5,
+            "silaba": "i"
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "p+a i m i",
+        "p i m a m i",
+        "p i m i p i m i"
+      ],
+      "correta": 0,
+      "explicacao": "No tempo 1 e no 3, **duas notas soam juntas**, a grave e a aguda: é o pinçado.",
+      "conceito": "percepcao-de-dedilhado"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Recordando a VI06: em que corda está a 3ª do acorde D?",
+      "opcoes": [
+        "Na 1ª",
+        "Na 2ª",
+        "Na 3ª",
+        "Na 4ª"
+      ],
+      "correta": 0,
+      "explicacao": "No D, a 3ª Fá♯ está na **1ª corda, casa 2**. No dedilhado, é a nota do anelar.",
+      "conceito": "dedos-da-mao-direita"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Ao trocar de acorde no dedilhado, qual dedo da mão direita costuma mudar de corda?",
+      "opcoes": [
+        "O polegar",
+        "O indicador",
+        "O médio",
+        "O anelar"
+      ],
+      "correta": 0,
+      "explicacao": "i, m e a ficam nas cordas 3, 2 e 1. Só o **polegar** vai para o baixo do novo acorde.",
+      "conceito": "polegar-no-baixo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No baixo alternado do Em, quais notas o polegar alterna?",
+      "opcoes": [
+        "Mi e Si",
+        "Mi e Sol",
+        "Si e Ré",
+        "Mi e Lá"
+      ],
+      "correta": 0,
+      "explicacao": "Mi na 6ª corda solta e **Si** na 5ª, casa 2: as duas são do Em (Mi, Sol, Si).",
+      "conceito": "baixo-alternado"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que deixar a mão esquerda apertando o acorde inteiro durante o arpejo?",
+      "opcoes": [
+        "Para as notas continuarem soando juntas",
+        "Para tocar mais rápido",
+        "Para mudar de acorde",
+        "Porque o polegar precisa"
+      ],
+      "correta": 0,
+      "explicacao": "Com o acorde todo apertado, cada nota **continua soando** enquanto as outras entram, e o arpejo soa como acorde.",
+      "conceito": "arpejo-pima"
+    }
+  ],
+  "resumo": [
+    "**p** polegar (baixos), **i** indicador (3ª), **m** médio (2ª), **a** anelar (1ª).",
+    "O polegar toca a **fundamental**, na corda em que começa a batida; i, m e a não saem das cordas 3, 2 e 1.",
+    "**p i m a m i**: seis colcheias, bom para 3/4.",
+    "Baixo alternado: o polegar alterna a fundamental com outra nota do acorde.",
+    "Pinçado: p e a juntos, depois i e m."
+  ],
+  "pergunta_para_chat": "Me passe um acorde por vez e eu digo onde vai o polegar e a ordem do dedilhado; depois me sugira uma cantiga em 3/4 para dedilhar."
+}

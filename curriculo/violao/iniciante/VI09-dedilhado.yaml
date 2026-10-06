@@ -1,0 +1,30 @@
+codigo: VI09
+titulo: "Dedilhado: p, i, m, a"
+nivel: iniciante
+assunto: violao
+prerequisitos:
+  - VI08  # Batidas para baixo e para cima
+  - VI05  # Acordes maiores abertos
+objetivos:
+  - Dar nome aos dedos da mão direita (p, i, m, a) e saber que cordas cada um toca
+  - Tocar o arpejo p i m a m i num acorde
+  - Fazer o baixo alternado com o polegar
+  - Tocar o polegar e o anelar juntos (pinçado)
+  - Dedilhar uma progressão trocando de acorde sem parar
+conceitos:
+  - dedos-da-mao-direita
+  - polegar-no-baixo
+  - arpejo-pima
+  - baixo-alternado
+  - pincado
+  - percepcao-de-dedilhado
+fora_do_escopo:
+  - Dedilhados de ritmos brasileiros (módulos VI13 a VI15)
+  - Melodia e acompanhamento ao mesmo tempo (módulo VI16)
+exemplos_semente:
+  - "C com p i m a m i em 3/4"
+  - "G com baixo alternado: Sol e Ré no polegar"
+  - "Am com p e a juntos, depois i e m"
+exercicios:
+  - multipla_escolha
+  - percepcao

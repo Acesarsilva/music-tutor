@@ -1,0 +1,30 @@
+codigo: VI12
+titulo: "Campo harmônico no braço"
+nivel: iniciante
+assunto: violao
+prerequisitos:
+  - VI11  # Pestana
+  - I14   # Campo harmônico maior
+objetivos:
+  - Tocar os seis primeiros acordes do campo harmônico de Dó, Sol e Ré maior
+  - Saber quais acordes do campo pedem pestana em cada tom
+  - Reconhecer as funções de tônica, subdominante e dominante nos acordes do violão
+  - Transpor uma progressão por graus para outro tom
+  - Ouvir se uma progressão vai para o IV ou para o vi
+conceitos:
+  - campo-em-do
+  - campo-em-sol
+  - campo-em-re
+  - funcao-dos-graus
+  - transposicao
+  - percepcao-de-graus
+fora_do_escopo:
+  - O acorde diminuto do vii grau (módulo VM)
+  - Capotraste (módulo VM)
+exemplos_semente:
+  - "Em Sol maior: G, Am, Bm, C, D, Em"
+  - "I, vi, IV, V em Dó, Sol e Ré"
+  - "Em Ré maior, o iii é F♯m, com pestana"
+exercicios:
+  - multipla_escolha
+  - percepcao

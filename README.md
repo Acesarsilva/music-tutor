@@ -23,7 +23,7 @@ apps/api/            backend Python: API do app (music_tutor/app), teoria, valid
 supabase/            migrações do banco (tabelas, RLS e funções de progresso)
 curriculo/           um YAML por módulo, em teoria/ e violao/
 templates-aula/      template HTML, CSS e JavaScript das aulas
-aulas-exemplo/       aulas I01 a I16, M01 a M18, A01 a A17 e VI01 a VI08 (I08 é a piloto) (JSON validado e HTML gerado)
+aulas-exemplo/       aulas I01 a I16, M01 a M18, A01 a A17 e VI01 a VI12 (I08 é a piloto) (JSON validado e HTML gerado)
 .claude/skills/      skills do Claude para escrever, revisar e dar aulas (CC BY-SA 4.0)
 ```
 

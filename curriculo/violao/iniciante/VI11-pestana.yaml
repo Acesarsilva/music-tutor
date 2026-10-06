@@ -1,0 +1,29 @@
+codigo: VI11
+titulo: "Pestana: F, Bm e as formas móveis"
+nivel: iniciante
+assunto: violao
+prerequisitos:
+  - VI10  # Acordes com sétima
+  - VI06  # Acordes menores abertos
+objetivos:
+  - Fazer a pestana com o dedo 1 prendendo várias cordas na mesma casa
+  - Montar o F em quatro cordas e depois o F com pestana completa
+  - Montar o Bm com a forma do Am na casa 2
+  - Mover as formas de E, Em e Am pelo braço para formar outros acordes
+  - Achar a casa da pestana pela fundamental na 6ª ou na 5ª corda
+conceitos:
+  - pestana
+  - acorde-f
+  - acorde-bm
+  - forma-movel
+  - casa-da-fundamental
+fora_do_escopo:
+  - Formas com pestana de acordes com sétima (módulo VM)
+  - Campo harmônico completo no braço (módulo VI12)
+exemplos_semente:
+  - "F em quatro cordas: o dedo 1 prende a 1ª e a 2ª corda na casa 1"
+  - "A forma do E maior na casa 1 vira F; na casa 3, G"
+  - "A forma do Am na casa 2 vira Bm"
+exercicios:
+  - multipla_escolha
+  - percepcao

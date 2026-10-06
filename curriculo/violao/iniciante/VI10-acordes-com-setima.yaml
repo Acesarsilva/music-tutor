@@ -1,0 +1,29 @@
+codigo: VI10
+titulo: "Acordes com sétima no violão"
+nivel: iniciante
+assunto: violao
+prerequisitos:
+  - VI06  # Acordes menores abertos
+  - M05   # Acordes de sétima
+objetivos:
+  - Montar E7, A7, D7, G7, C7, B7, Am7 e Em7
+  - Formar a sétima abaixando duas casas uma fundamental que não esteja no baixo
+  - Ver por que o C7 não segue essa regra e precisa de um dedo a mais
+  - Usar o acorde com sétima como V que pede a volta ao I
+  - Ouvir a diferença entre o acorde com e sem sétima
+conceitos:
+  - setima-no-braco
+  - acordes-com-setima
+  - menor-com-setima
+  - dominante-resolve
+  - percepcao-setima
+fora_do_escopo:
+  - Acordes com sétima maior, como C7M (módulo VM)
+  - Sétimas com pestana (módulo VI11)
+exemplos_semente:
+  - "E para E7: a 4ª corda passa de Mi para Ré solto"
+  - "G para G7: a 1ª corda desce da casa 3 para a casa 1"
+  - "E7 pedindo a volta ao Am"
+exercicios:
+  - multipla_escolha
+  - percepcao
