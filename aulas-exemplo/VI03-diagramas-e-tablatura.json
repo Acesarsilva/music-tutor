@@ -1,0 +1,634 @@
+{
+  "codigo": "VI03",
+  "assunto": "violao",
+  "titulo": "Diagramas e tablatura",
+  "nivel": "iniciante",
+  "resumo_curto": "Como ler um diagrama de acorde e uma tablatura, e tocar a primeira melodia.",
+  "prerequisitos": [
+    "Conhecendo o violão (VI01)"
+  ],
+  "objetivos": [
+    "Ler um **diagrama de acorde**",
+    "Ler uma **tablatura**",
+    "Relacionar a tablatura com a **partitura**",
+    "Tocar uma **melodia** lendo a tablatura"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Qual é a 1ª corda, a mais fina ou a mais grossa?\n2. Que número tem o dedo médio da mão esquerda?\n3. Em que casa da 5ª corda fica o Dó?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. A mais fina, Mi aguda.\n2. 2.\n3. Na casa 3.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Uma melodia conhecida",
+            "legenda": "Ouça e olhe os números embaixo da pauta. O que eles parecem indicar?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 88,
+            "tablatura": true
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Os números embaixo da pauta dizem **em que casa** tocar cada nota, e a linha em que estão diz **em que corda**. Isso é a **tablatura**. Junto com o **diagrama de acorde**, ela é o jeito mais comum de escrever música para violão.\n\nAo final, você vai ler diagramas e tablaturas e tocar esta melodia."
+        }
+      ]
+    },
+    {
+      "titulo": "O diagrama de acorde",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O diagrama é um desenho do braço **em pé**, como se o violão estivesse na parede à sua frente:\n\n- as **linhas verticais** são as cordas: a **6ª à esquerda**, a 1ª à direita;\n- as **linhas horizontais** são os trastes; a linha grossa no topo é o começo do braço;\n- as **bolinhas** mostram onde apertar, e o **número** dentro delas é o dedo;\n- **○** em cima de uma corda: ela toca **solta**; **×**: ela **não toca**."
+        },
+        {
+          "tipo": "acorde",
+          "cifra": "Em",
+          "casas": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0
+          ],
+          "legenda": "Em: dedo 2 na 5ª corda e dedo 3 na 4ª, as duas na casa 2. Todas as cordas tocam.",
+          "dedos": [
+            0,
+            2,
+            3,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "tipo": "acorde",
+          "cifra": "C",
+          "casas": [
+            -1,
+            3,
+            2,
+            0,
+            1,
+            0
+          ],
+          "legenda": "C: a 6ª corda não toca (×). Dedos 3, 2 e 1 em escada, descendo da casa 3 à casa 1.",
+          "dedos": [
+            0,
+            3,
+            2,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "tipo": "acorde",
+          "cifra": "D",
+          "casas": [
+            -1,
+            -1,
+            0,
+            2,
+            3,
+            2
+          ],
+          "legenda": "D: só as quatro cordas mais finas tocam. Os dedos formam um triângulo.",
+          "dedos": [
+            0,
+            0,
+            0,
+            1,
+            3,
+            2
+          ]
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Clique em **Ouvir** embaixo de cada diagrama para ouvir o acorde."
+        }
+      ]
+    },
+    {
+      "titulo": "A tablatura",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A tablatura tem **seis linhas**, uma por corda. A linha de **cima é a 1ª corda** (Mi aguda) e a de **baixo é a 6ª** (Mi grave), como você vê o braço olhando para baixo enquanto toca.\n\nO número em cima de uma linha é a **casa**: **0** é a corda solta, **3** é a casa 3.\n\nNeste exemplo, cada nota fica numa corda diferente, todas soltas: 1ª, 2ª, 3ª, 4ª."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-soltas",
+            "titulo": "Quatro cordas soltas",
+            "legenda": "Mi, Si, Sol, Ré: o 0 desce de linha em linha.",
+            "eventos": [
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72,
+            "tablatura": true
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A tablatura diz **onde** tocar, mas não diz bem **quanto tempo** cada nota dura. Por isso ela costuma vir junto da pauta, como aqui: o ritmo você lê nas figuras de cima."
+        }
+      ]
+    },
+    {
+      "titulo": "Tablatura e partitura juntas",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Leia a melodia da abertura nas duas linhas:\n\n- **Dó**: casa 3 da 5ª corda;\n- **Sol**: 3ª corda solta; **Lá**: casa 2 da 3ª corda;\n- **Fá**: casa 3 da 4ª corda; **Mi**: casa 2 da 4ª corda; **Ré**: 4ª corda solta."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-brilha",
+            "titulo": "Brilha, brilha, estrelinha",
+            "legenda": "A primeira frase, com a tablatura.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 80,
+            "tablatura": true
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Use um dedo para cada casa: casa 1, dedo 1; casa 2, dedo 2; casa 3, dedo 3. Assim a mão fica parada e só os dedos se movem."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: ler um trecho de tablatura",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como ler o fim da melodia, **Fá, Fá, Mi, Mi, Ré, Ré, Dó**, com o motivo de cada passo.\n\n1. **Ache a linha**: os primeiros números estão na 4ª linha de cima para baixo: 4ª corda (Ré).\n2. **Leia o número**: 3, 3, 2, 2, 0, 0. Casa 3, casa 2, solta.\n3. **Escolha os dedos**: casa 3 com o dedo 3, casa 2 com o dedo 2."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** o último Dó tem o número 3, mas em outra linha. Qual?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Na **5ª linha**: casa 3 da 5ª corda (Lá). Lá, Lá♯, Si, Dó.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus: no trecho **Sol, Sol, Lá, Lá, Sol**, os números estão na 3ª linha. Quais são eles?\n\nE agora todos os passos são seus: como fica a tablatura de **Mi** na 1ª corda solta, seguido de **Fá** na mesma corda?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "0, 0, 2, 2, 0: a 3ª corda solta é Sol, e o Lá está na casa 2.\n\nNa linha de cima (1ª corda): **0** e depois **1**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"Na tablatura, a linha de cima é a 6ª corda, porque no diagrama a 6ª fica à esquerda, no começo.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "São dois desenhos diferentes. No **diagrama**, o braço está em pé e a 6ª corda fica à **esquerda**. Na **tablatura**, a linha de **cima** é a **1ª corda** (Mi aguda) e a de baixo é a 6ª.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No diagrama de acorde, onde fica a **6ª corda**?",
+      "opcoes": [
+        "À esquerda",
+        "À direita",
+        "Em cima",
+        "Embaixo"
+      ],
+      "correta": 0,
+      "explicacao": "No diagrama, as cordas vão da **6ª à esquerda** à 1ª à direita.",
+      "conceito": "diagrama-de-acorde"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No diagrama, o que quer dizer um **×** em cima de uma corda?",
+      "opcoes": [
+        "A corda não toca",
+        "A corda toca solta",
+        "Use o dedo 1",
+        "Pestana"
+      ],
+      "correta": 0,
+      "explicacao": "**×**: a corda **não toca**. O **○** é que indica corda solta.",
+      "conceito": "diagrama-de-acorde"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No diagrama do C desta aula, que dedo fica na **2ª corda**?",
+      "opcoes": [
+        "1",
+        "2",
+        "3",
+        "Nenhum, ela é solta"
+      ],
+      "correta": 0,
+      "explicacao": "No C, o **dedo 1** fica na casa 1 da 2ª corda; o 2 na 4ª corda e o 3 na 5ª.",
+      "conceito": "diagrama-de-acorde"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais cordas tocam no D?",
+      "opcoes": [
+        "Só as quatro mais finas",
+        "Todas",
+        "Só as três mais graves",
+        "Da 5ª à 1ª"
+      ],
+      "correta": 0,
+      "explicacao": "No D, a 6ª e a 5ª têm **×**: tocam só as **quatro mais finas** (4ª à 1ª).",
+      "conceito": "diagrama-de-acorde"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na tablatura, qual corda é a **linha de cima**?",
+      "opcoes": [
+        "A 1ª, Mi aguda",
+        "A 6ª, Mi grave",
+        "A 3ª, Sol",
+        "Depende da música"
+      ],
+      "correta": 0,
+      "explicacao": "Na tablatura, a linha de **cima é a 1ª corda**. Se você marcou a 6ª, confundiu com o diagrama.",
+      "conceito": "tablatura"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na tablatura, o número **0** quer dizer:",
+      "opcoes": [
+        "Corda solta",
+        "Não tocar",
+        "Dedo 0",
+        "Pausa"
+      ],
+      "correta": 0,
+      "explicacao": "**0** é a corda **solta**, sem apertar nenhuma casa.",
+      "conceito": "tablatura"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Um **3** na 5ª linha (de cima para baixo) é que nota?",
+      "opcoes": [
+        "Dó",
+        "Ré",
+        "Si",
+        "Sol"
+      ],
+      "correta": 0,
+      "explicacao": "A 5ª linha é a 5ª corda (Lá). Lá, Lá♯, Si, **Dó**: casa 3.",
+      "conceito": "tablatura"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Um **2** na 4ª linha é que nota?",
+      "opcoes": [
+        "Mi",
+        "Fá",
+        "Ré",
+        "Lá"
+      ],
+      "correta": 0,
+      "explicacao": "A 4ª corda é Ré. Ré, Ré♯, **Mi**: casa 2.",
+      "conceito": "tablatura"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que a tablatura sozinha **não** mostra bem?",
+      "opcoes": [
+        "Quanto tempo cada nota dura",
+        "Em que corda tocar",
+        "Em que casa tocar",
+        "Qual nota é solta"
+      ],
+      "correta": 0,
+      "explicacao": "A tablatura mostra corda e casa; o **ritmo** vem das figuras da pauta.",
+      "conceito": "tablatura-e-partitura"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A melodia sobe ou desce?",
+      "exemplo": {
+        "id": "exe-desce",
+        "titulo": "Melodia",
+        "legenda": "Sol, Fá, Mi, Ré, Dó.",
+        "eventos": [
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 72,
+        "tablatura": true
+      },
+      "opcoes": [
+        "Desce",
+        "Sobe",
+        "Fica parada"
+      ],
+      "correta": 0,
+      "explicacao": "Sol, Fá, Mi, Ré, Dó: a melodia **desce**, da 3ª corda solta até a casa 3 da 5ª corda.",
+      "conceito": "percepcao-melodia-violao"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "E esta?",
+      "exemplo": {
+        "id": "exe-sobe",
+        "titulo": "Melodia",
+        "legenda": "Dó, Ré, Mi, Fá, Sol.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 72,
+        "tablatura": true
+      },
+      "opcoes": [
+        "Sobe",
+        "Desce",
+        "Fica parada"
+      ],
+      "correta": 0,
+      "explicacao": "Dó, Ré, Mi, Fá, Sol: **sobe**.",
+      "conceito": "percepcao-melodia-violao"
+    }
+  ],
+  "resumo": [
+    "Diagrama: braço em pé, **6ª corda à esquerda**; número na bolinha = dedo; ○ solta, × não toca.",
+    "Tablatura: **linha de cima = 1ª corda**; número = casa; 0 = solta.",
+    "O ritmo vem da pauta, por isso tablatura e partitura costumam vir juntas."
+  ],
+  "pergunta_para_chat": "Me mande trechos curtos de tablatura, um de cada vez, para eu dizer as notas, e me corrija."
+}

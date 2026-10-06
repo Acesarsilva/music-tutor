@@ -1,0 +1,505 @@
+{
+  "codigo": "VI01",
+  "assunto": "violao",
+  "titulo": "Conhecendo o violão",
+  "nivel": "iniciante",
+  "resumo_curto": "As partes do violão, as cordas soltas, as casas e os dedos das duas mãos.",
+  "prerequisitos": [
+    "Notas musicais (I02)",
+    "Tom e semitom (I06)"
+  ],
+  "objetivos": [
+    "Reconhecer as **partes** do violão",
+    "Dizer a nota de cada **corda solta**",
+    "Achar notas nas **casas**, de semitom em semitom",
+    "Numerar os **dedos** das duas mãos",
+    "Segurar o violão com uma boa **postura**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quais são as sete notas musicais?\n2. O que é um semitom?\n3. Entre quais notas naturais há só um semitom?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Dó, Ré, Mi, Fá, Sol, Lá, Si.\n2. A menor distância entre duas notas, como de Dó para Dó♯.\n3. Entre Mi e Fá e entre Si e Dó.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "As seis cordas soltas",
+            "legenda": "Uma corda de cada vez, da mais grossa à mais fina, e depois todas juntas. A primeira e a última soam parecidas?",
+            "eventos": [
+              {
+                "notas": [
+                  "E3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "A3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60,
+            "tablatura": true
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "As seis cordas soam seis notas, e a primeira e a última têm o mesmo nome: **Mi**, uma grave e outra aguda. Embaixo da partitura está a **tablatura**, que mostra em que corda e casa tocar cada nota; você vai aprender a lê-la na VI03.\n\nAo final, você vai saber as partes do violão, o nome de cada corda solta, achar notas nas casas e segurar o instrumento do jeito certo."
+        }
+      ]
+    },
+    {
+      "titulo": "As partes do violão",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "- **Corpo**: a caixa de madeira que faz o som crescer. A **boca** é o buraco redondo no meio dele.\n- **Cavalete**: a peça colada no corpo onde as cordas ficam presas.\n- **Braço**: a parte comprida por onde a mão esquerda anda.\n- **Trastes**: as barrinhas de metal atravessadas no braço.\n- **Casas**: os espaços entre um traste e outro, contados a partir da cabeça: casa 1, casa 2...\n- **Cabeça** e **tarraxas**: no fim do braço; as tarraxas esticam ou soltam cada corda e servem para afinar."
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Quem é canhoto pode inverter o violão e as cordas, ou aprender do jeito destro. As duas formas funcionam."
+        }
+      ]
+    },
+    {
+      "titulo": "As cordas e as notas soltas",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "As cordas são numeradas da **mais fina** para a **mais grossa**: a **1ª** é a Mi aguda, a **6ª** é a Mi grave. Tocada sem apertar nenhuma casa, a corda está **solta**."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "As cordas soltas.",
+          "cabecalho": [
+            "Corda",
+            "Nota solta"
+          ],
+          "linhas": [
+            [
+              "1ª (a mais fina)",
+              "Mi agudo"
+            ],
+            [
+              "2ª",
+              "Si"
+            ],
+            [
+              "3ª",
+              "Sol"
+            ],
+            [
+              "4ª",
+              "Ré"
+            ],
+            [
+              "5ª",
+              "Lá"
+            ],
+            [
+              "6ª (a mais grossa)",
+              "Mi grave"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Da 6ª para a 1ª: **Mi, Lá, Ré, Sol, Si, Mi**. As duas cordas Mi estão a **duas oitavas** uma da outra."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-mi-mi",
+            "titulo": "As duas cordas Mi",
+            "legenda": "A 6ª corda e depois a 1ª: a mesma nota, duas oitavas acima.",
+            "eventos": [
+              {
+                "notas": [
+                  "E3"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60,
+            "tablatura": true
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "A partitura do violão é escrita uma oitava acima do som real, para as notas caberem na clave de sol. Por isso a 6ª corda aparece como o Mi abaixo da pauta."
+        }
+      ]
+    },
+    {
+      "titulo": "Casas e semitons",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Apertar a corda numa casa encurta a parte que vibra, e a nota sobe. Cada casa sobe **um semitom**: na 6ª corda, a casa 1 é Fá, a casa 2 é Fá♯, a casa 3 é Sol, a casa 4 é Sol♯.\n\nRepare que de Mi para Fá a distância é de uma casa só: entre Mi e Fá não há outra nota."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sexta-corda",
+            "titulo": "A 6ª corda, casa por casa",
+            "legenda": "Mi solta, depois as casas 1, 2, 3 e 4.",
+            "eventos": [
+              {
+                "notas": [
+                  "E3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G#3"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 72,
+            "tablatura": true
+          }
+        },
+        {
+          "tipo": "teclado",
+          "legenda": "Escolha **Violão** na barra de cima para ver estas notas no braço.",
+          "destaque": [
+            "E3",
+            "F3",
+            "F#3",
+            "G3",
+            "G#3"
+          ],
+          "de": "E3",
+          "ate": "E4"
+        }
+      ]
+    },
+    {
+      "titulo": "Os dedos das duas mãos",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "**Mão esquerda** (a que aperta as casas): os dedos têm números.\n\n- **1** indicador, **2** médio, **3** anelar, **4** mínimo. O polegar fica atrás do braço, sem número.\n\n**Mão direita** (a que toca as cordas): os dedos têm letras, das palavras em espanhol.\n\n- **p** polegar, **i** indicador, **m** médio, **a** anelar.\n\nNos diagramas de acorde, o número dentro da bolinha é o dedo da mão esquerda."
+        }
+      ]
+    },
+    {
+      "titulo": "Postura",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "1. Sente na ponta da cadeira, com as costas retas e os ombros soltos.\n2. Apoie a curva do violão na perna (a direita é o mais comum para quem começa), com o braço do violão um pouco inclinado para cima.\n3. O braço direito descansa sobre o corpo do violão, e a mão direita fica sobre a boca.\n4. O polegar esquerdo fica atrás do braço do violão, mais ou menos atrás do dedo 2. O punho não dobra demais.\n5. As unhas da mão esquerda ficam curtas, para a ponta do dedo apertar a corda."
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Se a mão doer, pare e solte os ombros. Nos primeiros dias, as pontas dos dedos ficam sensíveis: toque pouco e todos os dias."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: achar uma nota",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Onde fica o **Sol** na 6ª corda? Siga os passos, com o motivo de cada um.\n\n1. **Comece pela corda solta**: a 6ª corda solta é Mi.\n2. **Suba de semitom em semitom**: Mi → Fá → Fá♯ → Sol.\n3. **Conte os passos**: foram 3 semitons, então o Sol está na **casa 3**."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** e o Lá, na mesma corda?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Mais dois semitons depois do Sol (Sol♯, Lá): **casa 5**. É a mesma nota da 5ª corda solta, e isso vai ser útil para afinar, na VI02.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. Na **5ª corda** (Lá solta), onde está o **Dó**? Suba de semitom em semitom e conte.\n\nE agora todos os passos são seus: onde está o **Fá** na **1ª corda**?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Lá → Lá♯ → Si → Dó: 3 semitons, **casa 3** da 5ª corda.\n\nA 1ª corda solta é Mi; de Mi para Fá é um semitom: **casa 1**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"A 1ª corda é a de cima, a mais grossa, porque é a primeira que eu vejo.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A numeração segue a **altura do som**, não a posição: a **1ª corda é a mais fina**, a Mi aguda, que fica embaixo quando você segura o violão. A mais grossa, de cima, é a **6ª**.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Como se chamam as barrinhas de metal atravessadas no braço?",
+      "opcoes": [
+        "Trastes",
+        "Casas",
+        "Tarraxas",
+        "Cavaletes"
+      ],
+      "correta": 0,
+      "explicacao": "As barrinhas são os **trastes**; o espaço entre dois trastes é a **casa**.",
+      "conceito": "partes-do-violao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a nota da **5ª corda solta**?",
+      "opcoes": [
+        "Lá",
+        "Mi",
+        "Ré",
+        "Si"
+      ],
+      "correta": 0,
+      "explicacao": "Da 6ª para a 1ª: Mi, **Lá**, Ré, Sol, Si, Mi. A 5ª é o Lá.",
+      "conceito": "cordas-soltas"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual corda é a **mais fina**?",
+      "opcoes": [
+        "A 1ª, Mi aguda",
+        "A 6ª, Mi grave",
+        "A 3ª, Sol",
+        "A 4ª, Ré"
+      ],
+      "correta": 0,
+      "explicacao": "A numeração começa pela mais fina: a **1ª corda**, Mi aguda. Se você marcou a 6ª, contou de cima para baixo pela posição.",
+      "conceito": "cordas-soltas"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais cordas soltas têm o mesmo nome?",
+      "opcoes": [
+        "A 1ª e a 6ª, as duas Mi",
+        "A 2ª e a 5ª",
+        "A 3ª e a 4ª",
+        "Nenhuma"
+      ],
+      "correta": 0,
+      "explicacao": "A 1ª e a 6ª são **Mi**, a duas oitavas de distância.",
+      "conceito": "cordas-soltas"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça duas cordas soltas. Qual soa mais aguda?",
+      "exemplo": {
+        "id": "exe-duas-cordas",
+        "titulo": "Duas cordas",
+        "legenda": "A 6ª corda (Mi) e depois a 2ª (Si).",
+        "eventos": [
+          {
+            "notas": [
+              "E3"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "A segunda",
+        "A primeira",
+        "As duas iguais"
+      ],
+      "correta": 0,
+      "explicacao": "A segunda nota é o **Si da 2ª corda**, bem mais aguda que o Mi da 6ª.",
+      "conceito": "cordas-soltas"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quanto sobe a nota quando você passa de uma casa para a seguinte?",
+      "opcoes": [
+        "Um semitom",
+        "Um tom",
+        "Uma oitava",
+        "Uma 3ª"
+      ],
+      "correta": 0,
+      "explicacao": "Cada casa sobe **um semitom**.",
+      "conceito": "casas-e-semitons"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na 6ª corda (Mi solta), qual nota fica na **casa 1**?",
+      "opcoes": [
+        "Fá",
+        "Fá♯",
+        "Ré",
+        "Sol"
+      ],
+      "correta": 0,
+      "explicacao": "Mi mais um semitom é **Fá**: entre Mi e Fá não há outra nota.",
+      "conceito": "casas-e-semitons"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Toque a nota que fica **um semitom acima** da 6ª corda solta (Mi).",
+      "nota_base": "E3",
+      "intervalo": "2m",
+      "direcao": "acima",
+      "explicacao": "Mi mais um semitom é **Fá**, a casa 1 da 6ª corda.",
+      "conceito": "casas-e-semitons",
+      "de": "E3",
+      "ate": "E4"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Toque a nota que fica **um tom acima** da 5ª corda solta (Lá).",
+      "nota_base": "A3",
+      "intervalo": "2M",
+      "direcao": "acima",
+      "explicacao": "Um tom são dois semitons: Lá → Lá♯ → **Si**, a casa 2 da 5ª corda.",
+      "conceito": "casas-e-semitons",
+      "de": "E3",
+      "ate": "E4"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na mão esquerda, que número tem o **anelar**?",
+      "opcoes": [
+        "3",
+        "1",
+        "2",
+        "4"
+      ],
+      "correta": 0,
+      "explicacao": "Indicador 1, médio 2, **anelar 3**, mínimo 4.",
+      "conceito": "dedos-das-maos"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na mão direita, o que quer dizer a letra **p**?",
+      "opcoes": [
+        "Polegar",
+        "Pestana",
+        "Palheta",
+        "Ponta"
+      ],
+      "correta": 0,
+      "explicacao": "Na mão direita: **p** polegar, **i** indicador, **m** médio, **a** anelar.",
+      "conceito": "dedos-das-maos"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Onde fica o polegar da mão esquerda?",
+      "opcoes": [
+        "Atrás do braço do violão",
+        "Sobre as cordas",
+        "Na boca do violão",
+        "Apertando a 6ª corda sempre"
+      ],
+      "correta": 0,
+      "explicacao": "O polegar fica **atrás do braço**, mais ou menos atrás do dedo 2, sem apertar demais.",
+      "conceito": "postura"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que as unhas da mão esquerda devem ficar curtas?",
+      "opcoes": [
+        "Para a ponta do dedo apertar a corda",
+        "Para o som ficar mais grave",
+        "Para não riscar o corpo",
+        "Não faz diferença"
+      ],
+      "correta": 0,
+      "explicacao": "Com unha comprida, o dedo não chega com a **ponta** na corda e a nota sai abafada.",
+      "conceito": "postura"
+    }
+  ],
+  "resumo": [
+    "Cordas da 6ª à 1ª: **Mi, Lá, Ré, Sol, Si, Mi**. A 1ª é a mais fina.",
+    "Cada **casa** sobe um semitom.",
+    "Mão esquerda: **1** indicador a **4** mínimo. Mão direita: **p, i, m, a**.",
+    "Costas retas, ombros soltos, polegar esquerdo atrás do braço."
+  ],
+  "pergunta_para_chat": "Me diga uma corda e uma nota, uma de cada vez, para eu dizer em que casa ela fica, e me corrija."
+}

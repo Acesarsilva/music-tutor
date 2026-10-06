@@ -12,6 +12,7 @@ from dataclasses import dataclass, field
 from . import teoria
 from .esquema import (
     Aula,
+    BlocoAcorde,
     BlocoExemplo,
     BlocoTabela,
     BlocoTeclado,
@@ -136,7 +137,35 @@ def _compilar_exemplo(ex: Exemplo, onde: str, r: Resultado) -> None:
         "abc": abc,
         "andamento": ex.andamento,
         "eventos": _eventos_para_audio(esperado, ex.eventos),
+        "tablatura": ex.tablatura,
     }
+    if ex.tablatura:
+        fora = _fora_do_braco([n for ev in ex.eventos for n in ev.notas])
+        if fora:
+            r.erros.append(f"{onde}: notas fora do braço do violão ({BRACO_DE} a {BRACO_ATE}) na tablatura: {fora}")
+
+
+def _checar_acorde(bloco: BlocoAcorde, onde: str, r: Resultado) -> None:
+    try:
+        notas = teoria.notas_do_violao(bloco.casas)
+        erro = teoria.conferir_cifra(bloco.cifra, notas)
+    except teoria.ErroTeoria as e:
+        r.erros.append(f"{onde}: {e}")
+        return
+    if erro:
+        r.erros.append(f"{onde}: as casas {bloco.casas} dão {[teoria.nome_nota_pt(n) for n in notas]}; {erro}")
+    if bloco.dedos:
+        if len(bloco.dedos) != 6 or any(not 0 <= d <= 4 for d in bloco.dedos):
+            r.erros.append(f"{onde}: dedos precisa de 6 valores de 0 a 4, um por corda")
+            return
+        for k, (casa, dedo) in enumerate(zip(bloco.casas, bloco.dedos)):
+            presa_pela_pestana = bloco.pestana is not None and casa == bloco.pestana
+            if casa > 0 and dedo == 0 and not presa_pela_pestana:
+                r.erros.append(f"{onde}: a {6 - k}ª corda está presa na casa {casa}, mas sem dedo")
+            if casa <= 0 and dedo:
+                r.erros.append(f"{onde}: a {6 - k}ª corda está solta ou abafada, mas tem o dedo {dedo}")
+    if bloco.pestana is not None and bloco.pestana not in bloco.casas:
+        r.erros.append(f"{onde}: pestana na casa {bloco.pestana}, mas nenhuma corda está nessa casa")
 
 
 # Volume relativo de cada dinâmica no áudio do navegador; o acento soma um pouco.
@@ -218,6 +247,8 @@ def validar_aula(aula: Aula) -> Resultado:
                 for k, linha in enumerate(bloco.linhas):
                     if len(linha) != len(bloco.cabecalho):
                         r.erros.append(f"{onde}.linhas[{k}]: {len(linha)} colunas, cabeçalho tem {len(bloco.cabecalho)}")
+            elif isinstance(bloco, BlocoAcorde):
+                _checar_acorde(bloco, onde, r)
             elif isinstance(bloco, BlocoTeclado):
                 if all(_checar_nota(n, onde, r) for n in [bloco.de, bloco.ate, *bloco.destaque]):
                     lo, hi = teoria.midi(bloco.de), teoria.midi(bloco.ate)

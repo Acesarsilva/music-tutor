@@ -194,7 +194,7 @@
         alvo.classList.add("sem-partitura");
         return;
       }
-      ABCJS.renderAbc(alvo, ex.abc, {
+      var opcoes = {
         responsive: "resize",
         add_classes: true,
         paddingtop: 6,
@@ -203,7 +203,13 @@
         paddingright: 0,
         foregroundColor: "currentColor",
         staffwidth: 520
-      });
+      };
+      // Tablatura do violão embaixo da pauta (afinação padrão; a escrita já está uma oitava acima do som).
+      if (ex.tablatura) {
+        opcoes.tablature = [{ instrument: "guitar", label: "" }];
+        opcoes.paddingbottom = 16;
+      }
+      ABCJS.renderAbc(alvo, ex.abc, opcoes);
       elementosPorExemplo[id] = elementosPorExemplo[id] || [];
       elementosPorExemplo[id].push(alvo);
     });
@@ -256,6 +262,11 @@
       var id = botao.getAttribute("data-tocar");
       var ex = dados.exemplos[id];
       tocarComBotao(botao, ex.eventos, ex.andamento, function (idx) { marcarNota(id, idx); });
+      return;
+    }
+    var botaoAcorde = evento.target.closest("[data-tocar-acorde]");
+    if (botaoAcorde) {
+      Som.tocarAcorde(dados.acordes[botaoAcorde.getAttribute("data-tocar-acorde")] || [], 0.035);
       return;
     }
     var botaoTeclado = evento.target.closest("[data-tocar-teclado]");

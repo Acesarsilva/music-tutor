@@ -7,6 +7,7 @@ Entra no site toda aula com JSON em aulas-exemplo/ cujo módulo existe em curric
 
 from __future__ import annotations
 
+import re
 import shutil
 from pathlib import Path
 
@@ -20,14 +21,17 @@ PASTA_AULAS = RAIZ_REPO / "aulas-exemplo"
 PASTA_CURRICULO = RAIZ_REPO / "curriculo"
 
 NIVEIS = {"iniciante": "Iniciante", "intermediario": "Intermediário", "avancado": "Avançado"}
-_BASE_ORDEM = {"I": 0, "M": 100, "A": 200}
+ASSUNTOS = {"teoria": "Teoria", "violao": "Violão"}
+# Teoria usa I, M e A; violão, VI, VM e VA.
+_BASE_ORDEM = {"I": 0, "M": 100, "A": 200, "VI": 1000, "VM": 1100, "VA": 1200}
+_CODIGO_RE = re.compile(r"^([A-Z]+)(\d+)$")
 
 
 def _ordem(codigo: str) -> int:
-    try:
-        return _BASE_ORDEM.get(codigo[0], 900) + int(codigo[1:])
-    except ValueError:
-        return 999
+    achado = _CODIGO_RE.match(codigo)
+    if not achado or achado.group(1) not in _BASE_ORDEM:
+        return 9999
+    return _BASE_ORDEM[achado.group(1)] + int(achado.group(2))
 
 
 def _modulos(pasta: Path) -> dict[str, dict]:
@@ -59,13 +63,14 @@ def gerar_site(saida: Path, pasta_aulas: Path = PASTA_AULAS, pasta_curriculo: Pa
         (saida / "aulas" / nome).write_text(renderizar(aula, voltar="../"), encoding="utf-8")
 
     niveis = []
-    for nivel, rotulo in NIVEIS.items():
-        do_nivel = [
-            {"codigo": a.codigo, "titulo": a.titulo, "resumo": a.resumo_curto, "href": f"aulas/{nome}"}
-            for a, nome in aulas if a.nivel == nivel
-        ]
-        if do_nivel:
-            niveis.append({"rotulo": rotulo, "aulas": do_nivel})
+    for assunto, nome_assunto in ASSUNTOS.items():
+        for nivel, rotulo in NIVEIS.items():
+            do_nivel = [
+                {"codigo": a.codigo, "titulo": a.titulo, "resumo": a.resumo_curto, "href": f"aulas/{nome}"}
+                for a, nome in aulas if a.assunto == assunto and a.nivel == nivel
+            ]
+            if do_nivel:
+                niveis.append({"rotulo": f"{nome_assunto} · {rotulo}", "aulas": do_nivel})
 
     env = Environment(loader=FileSystemLoader(PASTA_TEMPLATES), autoescape=select_autoescape(["html", "j2"]))
     env.filters["md_linha"] = _markdown_linha

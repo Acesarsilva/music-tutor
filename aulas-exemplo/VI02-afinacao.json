@@ -1,0 +1,462 @@
+{
+  "codigo": "VI02",
+  "assunto": "violao",
+  "titulo": "Afinação",
+  "nivel": "iniciante",
+  "resumo_curto": "A afinação padrão, o afinador e o método da 5ª casa.",
+  "prerequisitos": [
+    "Conhecendo o violão (VI01)",
+    "O som e suas propriedades (I01)"
+  ],
+  "objetivos": [
+    "Saber a **afinação padrão**",
+    "Usar um **afinador**",
+    "Afinar pelo método da **5ª casa**",
+    "Ouvir se uma corda está **alta** ou **baixa**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quais são as notas das cordas soltas, da 6ª à 1ª?\n2. Quanto sobe a nota a cada casa?\n3. O que acontece com a altura quando a corda fica mais esticada?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Mi, Lá, Ré, Sol, Si, Mi.\n2. Um semitom.\n3. Fica mais aguda.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "O violão afinado",
+            "legenda": "As seis cordas soltas e depois todas juntas. É esse som que você vai procurar ao afinar.",
+            "eventos": [
+              {
+                "notas": [
+                  "E3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "A3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60,
+            "tablatura": true
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Afinar é ajustar a tensão de cada corda, pela tarraxa, até ela soar a nota certa. Um violão desafinado soa errado mesmo com os dedos no lugar certo, por isso se afina **toda vez** que se pega o instrumento.\n\nAo final, você vai afinar com um afinador e também de ouvido, comparando as cordas entre si."
+        }
+      ]
+    },
+    {
+      "titulo": "A afinação padrão",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A afinação padrão, da 6ª à 1ª corda, é **Mi, Lá, Ré, Sol, Si, Mi**. A referência mais usada é o **Lá de 440 Hz**: o Lá que fica na 5ª casa da 1ª corda.\n\nGirar a tarraxa num sentido **estica** a corda e a nota **sobe**; no outro, **solta** e a nota **desce**. Gire devagar, ouvindo, e prefira chegar à nota vindo de baixo."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-la-440",
+            "titulo": "Lá de 440 Hz",
+            "legenda": "A nota de referência, na 5ª casa da 1ª corda.",
+            "eventos": [
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60,
+            "tablatura": true
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "O afinador",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O jeito mais fácil é usar um **afinador**: de prender na cabeça do violão ou um aplicativo de celular. Toque uma corda solta de cada vez e veja:\n\n- a **nota** que aparece (E, A, D, G, B, E: as cifras de Mi, Lá, Ré, Sol, Si, Mi);\n- o **ponteiro**: à esquerda, a corda está **baixa** (aperte); à direita, **alta** (solte); no meio, afinada."
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Se o afinador mostrar uma nota vizinha (F em vez de E, por exemplo), a corda está muito longe. Ajuste até aparecer a letra certa e só então olhe o ponteiro."
+        }
+      ]
+    },
+    {
+      "titulo": "O método da 5ª casa",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Sem afinador, dá para afinar as cordas **umas pelas outras**. A ideia: a nota da **5ª casa** de uma corda é igual à da corda solta de baixo (a mais fina).\n\n1. Afine a 6ª corda (Mi) por uma referência.\n2. A 5ª casa da 6ª corda é **Lá**: afine a 5ª corda solta até soar igual.\n3. A 5ª casa da 5ª corda é **Ré**: afine a 4ª corda.\n4. A 5ª casa da 4ª corda é **Sol**: afine a 3ª corda.\n5. **Exceção**: entre a 3ª e a 2ª corda a distância é menor. Use a **4ª casa** da 3ª corda, que é **Si**, para afinar a 2ª.\n6. A 5ª casa da 2ª corda é **Mi**: afine a 1ª corda."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "O caminho da afinação.",
+          "cabecalho": [
+            "Aperte",
+            "Soa igual a"
+          ],
+          "linhas": [
+            [
+              "6ª corda, casa 5 (Lá)",
+              "5ª corda solta"
+            ],
+            [
+              "5ª corda, casa 5 (Ré)",
+              "4ª corda solta"
+            ],
+            [
+              "4ª corda, casa 5 (Sol)",
+              "3ª corda solta"
+            ],
+            [
+              "3ª corda, **casa 4** (Si)",
+              "2ª corda solta"
+            ],
+            [
+              "2ª corda, casa 5 (Mi)",
+              "1ª corda solta"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-unissono-5",
+            "titulo": "6ª corda na casa 5 e 5ª corda solta",
+            "legenda": "Afinadas, as duas notas são o mesmo Lá.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-unissono-4",
+            "titulo": "3ª corda na casa 4 e 2ª corda solta",
+            "legenda": "O mesmo Si nas duas.",
+            "eventos": [
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Quando duas cordas estão **quase** iguais, o som \"ondula\", como se tremesse. Essa ondulação se chama **batimento**. Quanto mais devagar ela fica, mais perto você está; quando some, as cordas estão afinadas."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: por que a 4ª casa na 3ª corda",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Confira a distância entre as cordas vizinhas, com o motivo de cada passo.\n\n1. **Conte os semitons** de Mi a Lá (6ª para 5ª): Mi, Fá, Fá♯, Sol, Sol♯, Lá: 5 semitons, ou seja, 5 casas.\n2. **Faça o mesmo** de Lá a Ré e de Ré a Sol: também 5 semitons.\n3. **Sol a Si** (3ª para 2ª): Sol, Sol♯, Lá, Lá♯, Si: só **4** semitons. Por isso a 4ª casa."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** e de Si a Mi (2ª para 1ª)?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Si, Dó, Dó♯, Ré, Ré♯, Mi: **5** semitons. Volta a ser a 5ª casa.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus: que nota fica na **5ª casa da 1ª corda**? (Comece em Mi e suba 5 semitons.)\n\nE agora todos os passos são seus: em que casa da **5ª corda** (Lá) fica o **Mi**, a mesma nota da 4ª corda na casa 2?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Mi, Fá, Fá♯, Sol, Sol♯, **Lá**: é o Lá de 440 Hz, a referência.\n\nLá, Lá♯, Si, Dó, Dó♯, Ré, Ré♯, Mi: 7 semitons, **casa 7**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"Afinei a 2ª corda pela 5ª casa da 3ª, como todas as outras.\"\n\nO que aconteceu?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A 5ª casa da 3ª corda é **Dó**, e não Si. A 2ª corda ficou meio tom **alta**, e todos os acordes vão soar errados. Entre a 3ª e a 2ª corda, use a **4ª casa**.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a afinação padrão, da 6ª à 1ª corda?",
+      "opcoes": [
+        "Mi, Lá, Ré, Sol, Si, Mi",
+        "Mi, Si, Sol, Ré, Lá, Mi",
+        "Dó, Ré, Mi, Fá, Sol, Lá",
+        "Mi, Lá, Ré, Sol, Dó, Mi"
+      ],
+      "correta": 0,
+      "explicacao": "Da 6ª (grave) à 1ª (aguda): **Mi, Lá, Ré, Sol, Si, Mi**. A segunda opção é a mesma lista da 1ª para a 6ª.",
+      "conceito": "afinacao-padrao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No afinador, a corda Mi aparece com que letra?",
+      "opcoes": [
+        "E",
+        "M",
+        "A",
+        "C"
+      ],
+      "correta": 0,
+      "explicacao": "No afinador, as notas aparecem em cifra: Mi é **E**.",
+      "conceito": "afinador"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O ponteiro do afinador está à esquerda do meio. O que fazer?",
+      "opcoes": [
+        "Esticar a corda, que está baixa",
+        "Soltar a corda, que está alta",
+        "Trocar a corda",
+        "Nada"
+      ],
+      "correta": 0,
+      "explicacao": "À esquerda, a nota está **abaixo** da certa: estique a corda pela tarraxa, devagar.",
+      "conceito": "afinador"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Para afinar a 5ª corda pela 6ª, que casa se aperta na 6ª corda?",
+      "opcoes": [
+        "Casa 5",
+        "Casa 4",
+        "Casa 7",
+        "Casa 3"
+      ],
+      "correta": 0,
+      "explicacao": "A **5ª casa** da 6ª corda é Lá, a nota da 5ª corda solta.",
+      "conceito": "metodo-da-quinta-casa"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que casa da **3ª corda** soa igual à 2ª corda solta?",
+      "opcoes": [
+        "Casa 4",
+        "Casa 5",
+        "Casa 3",
+        "Casa 2"
+      ],
+      "correta": 0,
+      "explicacao": "Entre Sol e Si há só 4 semitons: **casa 4**. Se você marcou 5, aplicou a regra geral onde ela não vale.",
+      "conceito": "metodo-da-quinta-casa"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que nota fica na **5ª casa da 4ª corda** (Ré)?",
+      "opcoes": [
+        "Sol",
+        "Lá",
+        "Fá",
+        "Si"
+      ],
+      "correta": 0,
+      "explicacao": "Ré, Ré♯, Mi, Fá, Fá♯, **Sol**: 5 semitons. É a nota da 3ª corda solta.",
+      "conceito": "metodo-da-quinta-casa"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Duas cordas quase afinadas fazem um som que ondula. Como se chama isso?",
+      "opcoes": [
+        "Batimento",
+        "Vibrato",
+        "Harmônico",
+        "Eco"
+      ],
+      "correta": 0,
+      "explicacao": "A ondulação é o **batimento**; ela some quando as duas notas ficam iguais.",
+      "conceito": "percepcao-afinacao"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a corda de referência e depois a corda que você está afinando. A segunda está:",
+      "exemplo": {
+        "id": "exe-alta",
+        "titulo": "Duas notas",
+        "legenda": "Lá e depois Lá♯: a segunda está meio tom acima.",
+        "eventos": [
+          {
+            "notas": [
+              "A3"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "A#3"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "Mais aguda: é preciso soltar",
+        "Mais grave: é preciso esticar",
+        "Igual"
+      ],
+      "correta": 0,
+      "explicacao": "A segunda nota está **mais aguda**: solte a corda até as duas ficarem iguais.",
+      "conceito": "percepcao-afinacao"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "E agora?",
+      "exemplo": {
+        "id": "exe-baixa",
+        "titulo": "Duas notas",
+        "legenda": "Si e depois Si♭: a segunda está meio tom abaixo.",
+        "eventos": [
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "Bb4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "Mais grave: é preciso esticar",
+        "Mais aguda: é preciso soltar",
+        "Igual"
+      ],
+      "correta": 0,
+      "explicacao": "A segunda nota está **mais grave**: estique a corda.",
+      "conceito": "percepcao-afinacao"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "E agora?",
+      "exemplo": {
+        "id": "exe-igual",
+        "titulo": "Duas notas",
+        "legenda": "O mesmo Ré nas duas.",
+        "eventos": [
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "Igual: está afinada",
+        "Mais aguda",
+        "Mais grave"
+      ],
+      "correta": 0,
+      "explicacao": "As duas notas são o **mesmo Ré**: a corda está afinada.",
+      "conceito": "percepcao-afinacao"
+    }
+  ],
+  "resumo": [
+    "Afinação padrão: **Mi, Lá, Ré, Sol, Si, Mi**. Referência: Lá de 440 Hz.",
+    "Afinador: ponteiro à esquerda, estique; à direita, solte.",
+    "Método: 5ª casa de uma corda = corda solta seguinte, menos entre a 3ª e a 2ª (**4ª casa**).",
+    "O **batimento** some quando as duas notas ficam iguais."
+  ],
+  "pergunta_para_chat": "Me ajude a afinar o violão de ouvido: me diga, corda por corda, que casa apertar e com que corda comparar, e espere eu dizer se está alta ou baixa."
+}

@@ -33,7 +33,7 @@ def main(argv: list[str] | None = None) -> int:
     p_ren = sub.add_parser("renderizar", help="gera o HTML de uma aula em JSON")
     p_ren.add_argument("aula")
     p_ren.add_argument("-o", "--saida", required=True)
-    p_ren.add_argument("--timbre", choices=["piano", "violao"], default="piano")
+    p_ren.add_argument("--timbre", choices=["piano", "violao"], default=None)
     p_ren.add_argument("--fragmento", action="store_true", help="sem doctype/html/head/body")
 
     p_ger = sub.add_parser("gerar", help="gera uma aula com o Claude a partir do currículo")

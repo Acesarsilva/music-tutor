@@ -1,0 +1,26 @@
+codigo: VI02
+titulo: Afinação
+nivel: iniciante
+assunto: violao
+prerequisitos:
+  - VI01  # Conhecendo o violão
+  - I01   # O som e suas propriedades
+objetivos:
+  - Saber a afinação padrão, Mi, Lá, Ré, Sol, Si, Mi
+  - Usar um afinador e saber o que ele mostra
+  - Afinar pelo método da 5ª casa, com a exceção da 3ª corda (4ª casa)
+  - Ouvir se uma corda está mais aguda ou mais grave que a referência
+conceitos:
+  - afinacao-padrao
+  - afinador
+  - metodo-da-quinta-casa
+  - percepcao-afinacao
+fora_do_escopo:
+  - Afinações alternativas, como Ré na 6ª corda
+  - Afinação por harmônicos
+exemplos_semente:
+  - "Mi da 6ª corda na 5ª casa (Lá) e Lá da 5ª corda solta, em uníssono"
+  - "Sol da 3ª corda na 4ª casa (Si) e Si da 2ª corda solta"
+exercicios:
+  - multipla_escolha
+  - percepcao

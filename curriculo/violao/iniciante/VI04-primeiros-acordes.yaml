@@ -1,0 +1,30 @@
+codigo: VI04
+titulo: "Primeiros acordes: Em, Am e E"
+nivel: iniciante
+assunto: violao
+prerequisitos:
+  - VI03  # Diagramas e tablatura
+  - I12   # Tríades
+objetivos:
+  - Montar os acordes Em, Am e E com os dedos certos
+  - Fazer cada nota soar limpa, com a ponta do dedo perto do traste
+  - Trocar entre Em e Am aproveitando o mesmo desenho
+  - Ouvir a diferença entre o acorde maior (E) e o menor (Em), que muda só uma nota
+  - Tocar quatro batidas para baixo em cada acorde, no pulso
+conceitos:
+  - acorde-em
+  - acorde-am
+  - acorde-e
+  - som-limpo
+  - troca-de-acordes
+  - percepcao-maior-menor
+fora_do_escopo:
+  - Outros acordes abertos (módulos VI05 e VI06)
+  - Batidas com movimento para cima (módulo VI08)
+exemplos_semente:
+  - "Em e E: só o dedo 1 na 3ª corda muda o acorde de menor para maior"
+  - "Em para Am: o mesmo desenho dos dedos 2 e 3 desce uma corda"
+  - "Em, Am, Em, E, Em com quatro batidas em cada"
+exercicios:
+  - multipla_escolha
+  - percepcao

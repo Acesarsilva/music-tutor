@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import yaml
@@ -9,15 +10,16 @@ from psycopg import Connection
 
 from ..gerador import PASTA_CURRICULO
 
-_BASE_ORDEM = {"I": 0, "M": 100, "A": 200}
+_BASE_ORDEM = {"I": 0, "M": 100, "A": 200, "VI": 1000, "VM": 1100, "VA": 1200}
+_CODIGO_RE = re.compile(r"^([A-Z]+)(\d+)$")
 
 
 def ordem(codigo: str) -> int:
-    """I01..I16, M01..M18, A01..A17 em sequência: I08 -> 8, M02 -> 102."""
-    try:
-        return _BASE_ORDEM.get(codigo[0], 900) + int(codigo[1:])
-    except ValueError:
-        return 999
+    """Teoria (I, M, A) e depois violão (VI, VM, VA) em sequência: I08 -> 8, M02 -> 102, VI03 -> 1003."""
+    achado = _CODIGO_RE.match(codigo)
+    if not achado or achado.group(1) not in _BASE_ORDEM:
+        return 9999
+    return _BASE_ORDEM[achado.group(1)] + int(achado.group(2))
 
 
 def ler_modulos(pasta: Path = PASTA_CURRICULO) -> list[dict]:

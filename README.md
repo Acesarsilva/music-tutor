@@ -21,9 +21,9 @@ o progresso de cada aluno.
 apps/web/            site Next.js: login, convite, painel do aluno, aula, perfil e administração
 apps/api/            backend Python: API do app (music_tutor/app), teoria, validação, gerador e CLI
 supabase/            migrações do banco (tabelas, RLS e funções de progresso)
-curriculo/teoria/    um YAML por módulo do currículo
+curriculo/           um YAML por módulo, em teoria/ e violao/
 templates-aula/      template HTML, CSS e JavaScript das aulas
-aulas-exemplo/       aulas I01 a I16 e M01 a M18 e A01 a A17 (I08 é a piloto) (JSON validado e HTML gerado)
+aulas-exemplo/       aulas I01 a I16, M01 a M18, A01 a A17 e VI01 a VI04 (I08 é a piloto) (JSON validado e HTML gerado)
 .claude/skills/      skills do Claude para escrever, revisar e dar aulas (CC BY-SA 4.0)
 ```
 
