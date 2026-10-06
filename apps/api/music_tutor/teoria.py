@@ -10,7 +10,7 @@ from __future__ import annotations
 import re
 from fractions import Fraction
 
-from music21 import converter, interval, pitch
+from music21 import converter, harmony, interval, pitch
 
 _NOTA_RE = re.compile(r"^([A-G])(##|#|bb|b)?(-?\d)$")
 
@@ -254,6 +254,8 @@ def eventos_para_abc(
         fecha = ")" if ev.get("expressao") == "fim" else ""
         liga = "-" if notas and (ev.get("ligada") or (len(notas) == 1 and ev.get("ligar"))) else ""
         tercina = f"(3:2:{grupos_tercina[i]}" if grupos_tercina.get(i) else ""
+        if ev.get("cifra"):
+            tercina += '"' + ev["cifra"].replace('"', "") + '"'
         if not notas:
             token = tercina + decoracao + "z" + sufixo
         elif len(notas) == 1:
@@ -336,6 +338,8 @@ def alturas_do_abc(abc: str) -> list[list[int]]:
     s = converter.parse(abc.replace(" clef=bass", ""), format="abc")
     resultado = []
     for el in s.flatten().notesAndRests:
+        if isinstance(el, harmony.ChordSymbol):
+            continue
         if el.isRest:
             resultado.append([])
         else:
@@ -373,7 +377,6 @@ def notas_do_violao(casas: list[int]) -> list[str]:
 
 def classes_da_cifra(cifra: str) -> list[int]:
     """Classes de altura (0 = Dó) da cifra, a fundamental primeiro. Aceita C, Am, G7, C7M, Bm7(b5), B°..."""
-    from music21 import harmony
 
     achado = _CIFRA_RE.match(cifra.strip())
     if not achado or achado.group(3) not in _SUFIXOS_CIFRA:

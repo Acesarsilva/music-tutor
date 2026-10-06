@@ -1,0 +1,29 @@
+codigo: VI08
+titulo: "Batidas para baixo e para cima"
+nivel: iniciante
+assunto: violao
+prerequisitos:
+  - VI07  # Troca de acordes
+  - I04   # Figuras rítmicas
+objetivos:
+  - Tocar colcheias alternando batida para baixo e para cima
+  - Manter a mão em movimento constante, descendo nos tempos e subindo nos contratempos
+  - Fazer a batida para cima só nas cordas mais agudas
+  - Pular uma batida sem parar a mão, como na batida ↓ ↓↑ ↑↓↑
+  - Reconhecer de ouvido qual padrão de batida foi tocado
+conceitos:
+  - batida-para-cima
+  - mao-em-movimento
+  - batida-pulada
+  - acento-na-batida
+  - percepcao-de-batida
+fora_do_escopo:
+  - Batidas de ritmos brasileiros, como baião e samba (módulos VI13 e VI14)
+  - Dedilhado (módulo VI09)
+exemplos_semente:
+  - "Oito colcheias: ↓↑↓↑↓↑↓↑, a mão nunca para"
+  - "↓ ↓↑ ↑↓↑: a mão desce no 3 sem tocar"
+  - "Acento no tempo 1 e batidas leves no resto"
+exercicios:
+  - multipla_escolha
+  - percepcao

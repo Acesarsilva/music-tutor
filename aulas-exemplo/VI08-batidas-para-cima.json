@@ -1,0 +1,1614 @@
+{
+  "codigo": "VI08",
+  "assunto": "violao",
+  "titulo": "Batidas para baixo e para cima",
+  "nivel": "iniciante",
+  "resumo_curto": "A mão como pêndulo, a batida para cima nas cordas agudas, batidas puladas e o acento.",
+  "prerequisitos": [
+    "Troca de acordes (VI07)",
+    "Figuras rítmicas (I04)"
+  ],
+  "objetivos": [
+    "Tocar **colcheias** para baixo e para cima",
+    "Manter a mão em **movimento constante**",
+    "Pular batidas sem parar a mão, como em **↓ ↓↑ ↑↓↑**",
+    "Reconhecer de ouvido **três padrões** de batida"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quantas colcheias cabem em um tempo de semínima?\n2. Contando colcheias em 4/4, como se diz cada metade dos tempos?\n3. Até agora, para que lado a mão direita batia nas cordas?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Duas.\n2. \"1 e 2 e 3 e 4 e\": o número no começo do tempo, o \"e\" na metade.\n3. Só para baixo, uma vez por tempo.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Duas batidas",
+            "legenda": "Ouça as duas. A segunda tem o dobro de batidas. De onde vêm as que sobram?",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "silaba": "↓",
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Na primeira, a mão bate **para baixo** em cada tempo. Na segunda, ela também bate **na volta, para cima**, na metade de cada tempo. A mão faz o mesmo caminho; só passa a tocar na subida.\n\nAo final, você vai tocar colcheias para baixo e para cima, pular batidas sem parar a mão e reconhecer de ouvido três padrões de batida."
+        }
+      ]
+    },
+    {
+      "titulo": "A mão é um pêndulo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A mão direita sobe e desce **sem parar**, no ritmo das colcheias: **desce** em cada número (1, 2, 3, 4) e **sobe** em cada \"e\". Sob a partitura, a seta mostra a direção: ↓ para baixo, ↑ para cima."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-colcheias",
+            "titulo": "Colcheias no G",
+            "legenda": "Oito batidas por compasso: ↓ nos tempos, ↑ nas metades.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Mexa a mão a partir do pulso, solto, como quem sacode água dos dedos. O braço quase não se move."
+        }
+      ]
+    },
+    {
+      "titulo": "A batida para cima",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na subida, a mão pega só as **cordas mais agudas**, três ou quatro, e com menos força. Por isso a batida para cima soa mais leve e mais aguda que a para baixo. Não tente acertar as seis cordas subindo: o som fica pesado e a mão perde a velocidade."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Sem palheta, use o indicador: descendo, bate a **unha**; subindo, a **polpa** do dedo."
+        }
+      ]
+    },
+    {
+      "titulo": "Pular uma batida sem parar a mão",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Muitas batidas **pulam** algumas colcheias. O segredo é que a mão **continua** o movimento, só que passando por fora das cordas, sem tocar. Assim o pêndulo nunca para, e a próxima batida chega no lugar certo.\n\nA batida **↓ ↓↑ ↑↓↑** é uma das mais usadas no violão. Contando: **1**, **2 e**, (3) **e**, **4 e**. No tempo 3 a mão desce **sem tocar**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-pulada",
+            "titulo": "↓ ↓↑ ↑↓↑ no G",
+            "legenda": "No tempo 3 não há batida: o ↑ do \"2 e\" continua soando, e a mão desce em silêncio para subir no \"3 e\".",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "silaba": "↓",
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "silaba": "↓",
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Onde a mão toca e onde só passa",
+          "cabecalho": [
+            "Contagem",
+            "1",
+            "e",
+            "2",
+            "e",
+            "3",
+            "e",
+            "4",
+            "e"
+          ],
+          "linhas": [
+            [
+              "Mão",
+              "↓",
+              "↑",
+              "↓",
+              "↑",
+              "↓",
+              "↑",
+              "↓",
+              "↑"
+            ],
+            [
+              "Toca?",
+              "sim",
+              "não",
+              "sim",
+              "sim",
+              "não",
+              "sim",
+              "sim",
+              "sim"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "O acento",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Batida com todas as colcheias iguais soa mecânica. Dê um **acento** no tempo 1, batendo um pouco mais forte, e deixe as outras leves. O acento marca o começo do compasso para quem canta junto."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-acento",
+            "titulo": "Colcheias com acento no 1",
+            "legenda": "O sinal > marca a batida mais forte.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": true,
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": true,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓",
+                "acento": false
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              }
+            ],
+            "andamento": 66
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Com troca de acordes",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Agora junte tudo: a batida **↓ ↓↑ ↑↓↑** com a progressão **G, C, D, G**. Troque de acorde durante o último ↑ do compasso, que pega só as cordas agudas: é a troca antecipada da VI07, agora com a batida para cima."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-progressao",
+            "titulo": "G, C, D, G com ↓ ↓↑ ↑↓↑",
+            "legenda": "Uma batida por compasso, a mão sempre em movimento.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "silaba": "↓",
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "silaba": "↓",
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "silaba": "↓",
+                "cifra": "D"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "silaba": "↓",
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              }
+            ],
+            "andamento": 66
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: aprender uma batida nova",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como aprender a batida **↓ ↓↑ ↑↓↑**, com o motivo de cada passo.\n\n1. **Escreva a contagem**: 1 e 2 e 3 e 4 e.\n2. **Ponha a direção da mão**: ↓ em todos os números, ↑ em todos os \"e\". Isso nunca muda.\n3. **Marque onde a mão toca**: 1, 2, \"2 e\", \"3 e\", 4, \"4 e\". O \"1 e\" e o 3 ficam sem tocar.\n4. **Toque devagar**, com a mão sempre em movimento, contando em voz alta."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que o passo 2 vem antes do passo 3?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque a **direção** depende só da contagem: número é ↓, \"e\" é ↑. Primeiro a mão aprende o pêndulo; depois você escolhe em quais idas e voltas ela encosta nas cordas.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu: a batida **↓ ↓ ↓↑ ↓** toca no 1, no 2, no 3, no \"3 e\" e no 4. Onde a mão passa sem tocar?\n\nE agora todos os passos são seus: a batida **↓↑ ↓↑ ↓↑ ↓↑**. Onde a mão toca e onde só passa?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "↓ ↓ ↓↑ ↓: a mão passa sem tocar no \"1 e\", no \"2 e\" e no \"4 e\", sempre subindo.\n\n↓↑ ↓↑ ↓↑ ↓↑: a mão toca em **todas** as oito colcheias; não há batida pulada.",
+          "rotulo": "Ver as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-tres",
+            "titulo": "↓ ↓ ↓↑ ↓ no Am",
+            "legenda": "Confira sua resposta: só um ↑ no compasso, no \"3 e\".",
+            "eventos": [
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "silaba": "↓",
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "silaba": "↓",
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↓"
+              },
+              {
+                "notas": [
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 0.5,
+                "silaba": "↑"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "silaba": "↓"
+              }
+            ],
+            "andamento": 66
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"Na batida ↓ ↓↑ ↑↓↑, depois do ↑ do 2 e, eu deixo a mão parada lá em cima até a hora do outro ↑.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Com a mão parada em cima, o próximo movimento seria para **baixo**, mas a batida pede ↑. Para subir, a mão precisa **descer antes**, no tempo 3, sem tocar. Parada, ela perde o pêndulo, e o ↑ do \"3 e\" sai adiantado ou atrasado.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Contando 1 e 2 e 3 e 4 e, em quais contagens a mão vai **para cima**?",
+      "opcoes": [
+        "Em todos os \"e\"",
+        "Em todos os números",
+        "Só no 2 e no 4",
+        "Quando a batida pede"
+      ],
+      "correta": 0,
+      "explicacao": "A mão **sobe em todo \"e\"** e desce em todo número, toque ou não. Se você marcou \"quando a batida pede\", confundiu o movimento da mão com a batida que soa.",
+      "conceito": "mao-em-movimento"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Qual batida foi tocada?",
+      "exemplo": {
+        "id": "exe-colch",
+        "titulo": "Uma batida",
+        "legenda": "Colcheias: ↓↑ ↓↑ ↓↑ ↓↑.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 0.5,
+            "silaba": "↓",
+            "acento": false,
+            "cifra": "C"
+          },
+          {
+            "notas": [
+              "E4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 0.5,
+            "silaba": "↑"
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 0.5,
+            "silaba": "↓",
+            "acento": false
+          },
+          {
+            "notas": [
+              "E4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 0.5,
+            "silaba": "↑"
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 0.5,
+            "silaba": "↓",
+            "acento": false
+          },
+          {
+            "notas": [
+              "E4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 0.5,
+            "silaba": "↑"
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 0.5,
+            "silaba": "↓",
+            "acento": false
+          },
+          {
+            "notas": [
+              "E4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 0.5,
+            "silaba": "↑"
+          }
+        ],
+        "andamento": 66
+      },
+      "opcoes": [
+        "↓↑ ↓↑ ↓↑ ↓↑",
+        "↓ ↓ ↓ ↓",
+        "↓ ↓↑ ↑↓↑"
+      ],
+      "correta": 0,
+      "explicacao": "Oito batidas iguais, uma em cada colcheia: **↓↑ ↓↑ ↓↑ ↓↑**.",
+      "conceito": "percepcao-de-batida"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que a batida para cima pega só as cordas agudas?",
+      "opcoes": [
+        "Para soar leve e não frear a mão",
+        "Porque as graves não tocam no violão",
+        "Para trocar de acorde",
+        "Porque é mais forte"
+      ],
+      "correta": 0,
+      "explicacao": "Subindo, a mão pega **três ou quatro** cordas agudas: o som fica leve e o pêndulo não perde velocidade.",
+      "conceito": "batida-para-cima"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na batida ↓ ↓↑ ↑↓↑, o que a mão faz no tempo 3?",
+      "opcoes": [
+        "Desce sem tocar",
+        "Para no alto",
+        "Toca para cima",
+        "Toca para baixo"
+      ],
+      "correta": 0,
+      "explicacao": "No 3 a mão **desce sem tocar**, para poder subir no \"3 e\". Parar no alto quebra o pêndulo.",
+      "conceito": "batida-pulada"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Qual batida foi tocada?",
+      "exemplo": {
+        "id": "exe-pulada",
+        "titulo": "Uma batida",
+        "legenda": "↓ ↓↑ ↑↓↑: nada soa no tempo 3.",
+        "eventos": [
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1,
+            "silaba": "↓",
+            "cifra": "Am"
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 0.5,
+            "silaba": "↓"
+          },
+          {
+            "notas": [
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1,
+            "silaba": "↑"
+          },
+          {
+            "notas": [
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 0.5,
+            "silaba": "↑"
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 0.5,
+            "silaba": "↓"
+          },
+          {
+            "notas": [
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 0.5,
+            "silaba": "↑"
+          }
+        ],
+        "andamento": 66
+      },
+      "opcoes": [
+        "↓ ↓↑ ↑↓↑",
+        "↓↑ ↓↑ ↓↑ ↓↑",
+        "↓ ↓ ↓ ↓"
+      ],
+      "correta": 0,
+      "explicacao": "Há um buraco no tempo 3, enquanto o ↑ do \"2 e\" continua soando: **↓ ↓↑ ↑↓↑**.",
+      "conceito": "percepcao-de-batida"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Recordando a VI04: em 4/4, quantas batidas para baixo cabem num compasso de semínimas?",
+      "opcoes": [
+        "Quatro",
+        "Oito",
+        "Duas",
+        "Seis"
+      ],
+      "correta": 0,
+      "explicacao": "Uma por tempo: **quatro**. Com colcheias para baixo e para cima, são oito.",
+      "conceito": "mao-em-movimento"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Para que serve o acento no tempo 1?",
+      "opcoes": [
+        "Marcar o começo do compasso",
+        "Trocar de acorde",
+        "Deixar a batida para cima mais forte",
+        "Mudar o andamento"
+      ],
+      "correta": 0,
+      "explicacao": "O **acento** no 1 marca o começo de cada compasso; as outras batidas ficam leves.",
+      "conceito": "acento-na-batida"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Qual batida foi tocada?",
+      "exemplo": {
+        "id": "exe-semi",
+        "titulo": "Uma batida",
+        "legenda": "Semínimas, só para baixo: ↓ ↓ ↓ ↓.",
+        "eventos": [
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1,
+            "silaba": "↓",
+            "cifra": "D"
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1,
+            "silaba": "↓"
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1,
+            "silaba": "↓"
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1,
+            "silaba": "↓"
+          }
+        ],
+        "andamento": 66
+      },
+      "opcoes": [
+        "↓ ↓ ↓ ↓",
+        "↓↑ ↓↑ ↓↑ ↓↑",
+        "↓ ↓↑ ↑↓↑"
+      ],
+      "correta": 0,
+      "explicacao": "Quatro batidas, uma por tempo, todas para baixo: **↓ ↓ ↓ ↓**.",
+      "conceito": "percepcao-de-batida"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na batida ↓ ↓ ↓↑ ↓, quantas vezes a mão sobe sem tocar?",
+      "opcoes": [
+        "Três",
+        "Uma",
+        "Nenhuma",
+        "Quatro"
+      ],
+      "correta": 0,
+      "explicacao": "A mão sobe quatro vezes por compasso (em cada \"e\"), mas só toca no \"3 e\". Sobe sem tocar **três** vezes: no \"1 e\", no \"2 e\" e no \"4 e\".",
+      "conceito": "batida-pulada"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A batida para cima está saindo mais forte que a para baixo. O que ajustar?",
+      "opcoes": [
+        "Pegar menos cordas e bater mais leve na subida",
+        "Bater as seis cordas subindo",
+        "Parar a mão antes de subir",
+        "Subir só nos números"
+      ],
+      "correta": 0,
+      "explicacao": "A subida deve ser **leve**, nas cordas agudas. Subir só nos números inverteria o pêndulo.",
+      "conceito": "batida-para-cima"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O acento cai na primeira batida do compasso. Em que direção a mão vai nela?",
+      "opcoes": [
+        "Para baixo",
+        "Para cima",
+        "Depende do acorde",
+        "Não se move"
+      ],
+      "correta": 0,
+      "explicacao": "O tempo 1 é um número, então a mão vai **para baixo**, com mais força.",
+      "conceito": "acento-na-batida"
+    }
+  ],
+  "resumo": [
+    "A mão **desce** em cada número e **sobe** em cada \"e\", tocando ou não.",
+    "Para cima: só as cordas agudas, mais leve.",
+    "Batida pulada: a mão passa por fora das cordas, sem parar.",
+    "**↓ ↓↑ ↑↓↑**: toca no 1, 2, \"2 e\", \"3 e\", 4 e \"4 e\"; no 3 a mão desce em silêncio.",
+    "Acento no 1 para marcar o compasso."
+  ],
+  "pergunta_para_chat": "Me passe uma batida nova por vez, com setas, e eu digo onde a mão toca e onde só passa; depois me sugira uma cantiga para tocar com ela."
+}

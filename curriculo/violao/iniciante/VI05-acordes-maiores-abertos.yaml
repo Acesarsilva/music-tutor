@@ -1,0 +1,31 @@
+codigo: VI05
+titulo: "Acordes maiores abertos: C, G, D e A"
+nivel: iniciante
+assunto: violao
+prerequisitos:
+  - VI04  # Primeiros acordes
+  - I14   # Campo harmônico maior
+objetivos:
+  - Montar os acordes C, G, D e A com os dedos certos
+  - Saber em que corda começar a batida de cada acorde, com a fundamental no baixo
+  - Aproveitar o desenho comum entre G e C para trocar mais rápido
+  - Tocar as progressões G, C, D, G e D, G, A, D no pulso
+  - Reconhecer de ouvido quando a progressão termina em repouso ou em suspense
+conceitos:
+  - acorde-c
+  - acorde-g
+  - acorde-d
+  - acorde-a
+  - corda-do-baixo
+  - progressao-i-iv-v
+fora_do_escopo:
+  - Acordes menores novos (módulo VI06)
+  - Batidas com movimento para cima (módulo VI08)
+  - Acordes com pestana (módulo VI12)
+exemplos_semente:
+  - "C: a batida começa na 5ª corda, no Dó da casa 3"
+  - "G para C: os dedos 3 e 2 descem uma corda juntos"
+  - "G, C, D, G em Sol maior: I, IV, V, I"
+exercicios:
+  - multipla_escolha
+  - percepcao

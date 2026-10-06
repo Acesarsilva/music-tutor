@@ -942,7 +942,8 @@
   "resumo": [
     "**Em**: dedos 2 e 3 na casa 2 (5ª e 4ª cordas). **Am**: o mesmo desenho uma corda abaixo, mais o dedo 1 na 2ª corda. **E**: Em mais o dedo 1 na 3ª corda.",
     "Som limpo: ponta do dedo, dedo arqueado, perto do traste.",
-    "Troca: leve os dedos como um bloco e mude no **1** do compasso."
+    "Troca: leve os dedos como um bloco e mude no **1** do compasso.",
+    "De **Em** para **E** muda uma nota só: Sol vira Sol♯ na 3ª corda, e o acorde fica maior."
   ],
   "pergunta_para_chat": "Vou tocar Em, Am e E e te contar o que acontece (corda abafada, troca atrasando); me ajude a achar a causa e me passe um treino para o dia."
 }

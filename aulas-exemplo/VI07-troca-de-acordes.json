@@ -1,0 +1,1411 @@
+{
+  "codigo": "VI07",
+  "assunto": "violao",
+  "titulo": "Troca de acordes sem parar o pulso",
+  "nivel": "iniciante",
+  "resumo_curto": "Dedos que ficam, desenhos que se movem, a troca antecipada e a cifra sobre a melodia.",
+  "prerequisitos": [
+    "Acordes menores abertos (VI06)",
+    "Pulso e compasso (I05)"
+  ],
+  "objetivos": [
+    "Achar o **dedo que fica** entre dois acordes",
+    "Mover o **desenho** inteiro quando ele se repete em outra corda",
+    "Usar a **troca antecipada** para não parar o pulso",
+    "Ler a **cifra sobre a melodia** e acompanhar uma cantiga"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Do G para o C, o que fazem os dedos 3 e 2?\n2. No Am, onde ficam os dedos 1 e 2?\n3. Contando 1, 2, 3, 4, em que tempo entra o acorde novo?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Descem uma corda juntos.\n2. Dedo 1 na 2ª corda, casa 1; dedo 2 na 4ª corda, casa 2.\n3. No 1 do compasso seguinte.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Duas versões",
+            "legenda": "Ouça as duas. Numa delas a troca de acorde atrasa. Em qual?",
+            "eventos": [
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Em"
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Em"
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Na segunda vez, o **Am** chega um tempo atrasado: o pulso **parou** à espera da mão esquerda. É o problema mais comum de quem começa, e a solução está na mão, não na pressa.\n\nAo final, você vai planejar cada troca, aproveitar os dedos que não saem do lugar e trocar a cada dois tempos sem parar o pulso."
+        }
+      ]
+    },
+    {
+      "titulo": "O dedo que fica",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Antes de trocar, compare os dois diagramas e procure um dedo que esteja **no mesmo lugar** nos dois. Ele **não sai** da corda: serve de apoio, e os outros se movem em volta dele."
+        },
+        {
+          "tipo": "acorde",
+          "cifra": "C",
+          "casas": [
+            -1,
+            3,
+            2,
+            0,
+            1,
+            0
+          ],
+          "legenda": "C: dedos 3, 2 e 1.",
+          "dedos": [
+            0,
+            3,
+            2,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "tipo": "acorde",
+          "cifra": "Am",
+          "casas": [
+            -1,
+            0,
+            2,
+            2,
+            1,
+            0
+          ],
+          "legenda": "Am: os dedos 2 e 1 estão no mesmo lugar do C. Só o dedo 3 muda.",
+          "dedos": [
+            0,
+            0,
+            2,
+            3,
+            1,
+            0
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Do **C** para o **Am**, os dedos **2** (4ª corda, casa 2) e **1** (2ª corda, casa 1) ficam. Só o **dedo 3** sai da 5ª corda, casa 3, e vai para a 3ª corda, casa 2."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-c-am",
+            "titulo": "C e Am, duas batidas cada",
+            "legenda": "C, Am, C, Am. Só um dedo se move.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "O desenho que se move",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Às vezes nenhum dedo fica, mas o **desenho** é o mesmo em cordas vizinhas. Aí a mão leva os dedos **juntos**, como um bloco, sem desmontar o formato."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Desenhos que se movem",
+          "cabecalho": [
+            "Troca",
+            "O que acontece"
+          ],
+          "linhas": [
+            [
+              "E para Am",
+              "Os dedos 2, 3 e 1 descem uma corda juntos, sem mudar o formato"
+            ],
+            [
+              "G para C",
+              "Os dedos 3 e 2 descem uma corda; o dedo 4 sai e o dedo 1 entra"
+            ],
+            [
+              "Em para Am",
+              "Os dedos 2 e 3 descem uma corda; o dedo 1 entra"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-e-am",
+            "titulo": "E e Am",
+            "legenda": "E, Am, E, Am, duas batidas cada. O desenho inteiro desce e sobe uma corda.",
+            "eventos": [
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "E"
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "E"
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "A troca antecipada",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "No começo, a mão esquerda é mais lenta que o pulso. O truque é **começar a trocar antes**: na última metade do tempo 4, solte os dedos e já leve a mão para o acorde seguinte. A mão direita continua batendo, e essa última batida sai com as **cordas soltas**."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-antecipada",
+            "titulo": "Am, Dm, E, Am com troca antecipada",
+            "legenda": "Na última colcheia de cada compasso soam as cordas soltas, enquanto a mão esquerda viaja.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E3",
+                  "A3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1,
+                "cifra": "Dm"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E3",
+                  "A3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "E"
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E3",
+                  "A3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Ouvindo a música inteira, quase ninguém percebe as cordas soltas. Percebe, sim, um pulso que para. Com o tempo, a troca fica mais rápida e as cordas soltas somem sozinhas."
+        }
+      ]
+    },
+    {
+      "titulo": "Pulso primeiro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Para treinar, escolha um andamento em que a troca saia **sem parar**, mesmo que pareça lento demais. Toque quatro batidas por acorde, depois **duas**. Só aumente o andamento quando as trocas de duas batidas saírem limpas."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-duas",
+            "titulo": "G, C, D, G, duas batidas cada",
+            "legenda": "Oito trocas seguidas, sem parar o pulso.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "D"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "D"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Use o controle de andamento lá em cima: toque junto em 50% e suba de 10 em 10."
+        }
+      ]
+    },
+    {
+      "titulo": "Cifra sobre a melodia",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Nas músicas, a cifra vem **escrita acima da melodia**, no ponto em que o acorde entra. Ela vale até aparecer outra. Você canta a melodia e bate o acorde."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-marcha",
+            "titulo": "Marcha soldado",
+            "legenda": "A cifra C vale para o trecho inteiro: Sol, Mi e Dó são notas do C.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "Mar-",
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "cha"
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5,
+                "silaba": "sol-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "da-"
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "silaba": "do"
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ciranda",
+            "titulo": "Ciranda, cirandinha",
+            "legenda": "Aqui a cifra é G: a melodia usa só Ré, Sol e Si.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5,
+                "silaba": "Ci-",
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ran-"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "da,"
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ci-"
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5,
+                "silaba": "ran-"
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5,
+                "silaba": "di-"
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1,
+                "silaba": "nha"
+              },
+              {
+                "notas": [],
+                "duracao": 0.5
+              }
+            ],
+            "compasso": "2/4",
+            "anacruse": 0.5,
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Comece cantando e batendo **uma vez por compasso**, no tempo 1. Quando ficar fácil, bata nos dois tempos."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: planejar uma troca",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como planejar a troca do **C** para o **Am**, com o motivo de cada passo.\n\n1. **Compare os diagramas**: C tem dedos na 5ª, 4ª e 2ª cordas; Am, na 4ª, 3ª e 2ª.\n2. **Ache os dedos que ficam**: o 2 (4ª corda, casa 2) e o 1 (2ª corda, casa 1).\n3. **Ache o caminho de quem se move**: o 3 vai da 5ª corda, casa 3, para a 3ª corda, casa 2.\n4. **Treine só esse movimento**, devagar, com os outros dedos apertados."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que manter apertados os dedos que ficam, em vez de levantar a mão inteira?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque eles servem de **apoio**: a mão não perde a posição, e só um dedo precisa achar o lugar. Levantar tudo obriga a remontar o acorde inteiro a cada troca.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu: do **D** para o **Dm**, o dedo 3 fica na 2ª corda, casa 3, nos dois. O que fazem os dedos 1 e 2?\n\nE agora todos os passos são seus: planeje a troca do **G** para o **C**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "D para Dm: o dedo 1 sai da 3ª corda (casa 2) e vai para a 1ª (casa 1); o dedo 2 sai da 1ª (casa 2) e vai para a 3ª (casa 2). Os dois trocam de corda em volta do dedo 3.\n\nG para C: nenhum dedo fica, mas os dedos 3 e 2 têm o mesmo desenho uma corda abaixo. Leve os dois juntos da 6ª e 5ª para a 5ª e 4ª, solte o dedo 4 e ponha o dedo 1 na 2ª corda, casa 1.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"Para não errar, eu paro a batida, monto o acorde novo com calma e só depois volto a tocar.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "O acorde sai certo, mas o **pulso para**, e a música perde o chão. Quem ouve percebe a parada muito mais que uma batida com cordas soltas. Melhor baixar o andamento até a troca caber no pulso e usar a troca antecipada.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Do C para o Am, quais dedos ficam no lugar?",
+      "opcoes": [
+        "O 1 e o 2",
+        "O 2 e o 3",
+        "Só o 3",
+        "Nenhum"
+      ],
+      "correta": 0,
+      "explicacao": "Os dedos **1** (2ª corda, casa 1) e **2** (4ª corda, casa 2) estão nos dois acordes. Só o 3 se move.",
+      "conceito": "dedo-comum"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A troca de acorde ficou no pulso ou atrasou?",
+      "exemplo": {
+        "id": "exe-atraso",
+        "titulo": "Dois acordes",
+        "legenda": "Em e Am: o Am entrou um tempo atrasado.",
+        "eventos": [
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1,
+            "cifra": "Em"
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [],
+            "duracao": 1,
+            "cifra": "Am"
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Atrasou",
+        "Ficou no pulso"
+      ],
+      "correta": 0,
+      "explicacao": "O primeiro tempo do segundo compasso ficou **vazio**: o Am chegou atrasado e o pulso parou.",
+      "conceito": "pulso-constante"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Do E para o Am, o que acontece com o desenho dos dedos?",
+      "opcoes": [
+        "Desce uma corda inteiro",
+        "Sobe uma casa inteiro",
+        "Só o dedo 1 se move",
+        "Os dedos trocam de lugar"
+      ],
+      "correta": 0,
+      "explicacao": "E e Am têm o **mesmo desenho**: ele desce uma corda inteiro, como um bloco.",
+      "conceito": "desenho-que-se-move"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na troca antecipada, quando a mão esquerda começa a trocar?",
+      "opcoes": [
+        "Na última metade do tempo 4",
+        "No tempo 1 do compasso novo",
+        "No tempo 2",
+        "Depois que o pulso para"
+      ],
+      "correta": 0,
+      "explicacao": "Ela sai na **última colcheia** do compasso; essa batida soa com as cordas soltas, e o acorde novo chega no 1.",
+      "conceito": "troca-antecipada"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Do D para o Dm, qual dedo fica no lugar?",
+      "opcoes": [
+        "O 3",
+        "O 1",
+        "O 2",
+        "Nenhum"
+      ],
+      "correta": 0,
+      "explicacao": "O **dedo 3** fica na 2ª corda, casa 3, nos dois. Os dedos 1 e 2 trocam de corda em volta dele.",
+      "conceito": "dedo-comum"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na música, uma cifra **G** aparece sobre a primeira nota. Até quando ela vale?",
+      "opcoes": [
+        "Até aparecer outra cifra",
+        "Só naquela nota",
+        "Até o fim do compasso",
+        "Até o fim da música"
+      ],
+      "correta": 0,
+      "explicacao": "A cifra vale **até a próxima**. Se não aparece outra, o acorde continua.",
+      "conceito": "cifra-sobre-a-melodia"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A troca ficou no pulso ou atrasou?",
+      "exemplo": {
+        "id": "exe-pulso",
+        "titulo": "Dois acordes",
+        "legenda": "Em e Am, com o Am no tempo 1, no pulso.",
+        "eventos": [
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1,
+            "cifra": "Em"
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1,
+            "cifra": "Am"
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Ficou no pulso",
+        "Atrasou"
+      ],
+      "correta": 0,
+      "explicacao": "O Am entrou no **tempo 1**, sem buraco. O pulso não parou.",
+      "conceito": "pulso-constante"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Recordando a VI06: qual nota muda de D para Dm?",
+      "opcoes": [
+        "Fá♯ vira Fá",
+        "Ré vira Ré♭",
+        "Lá vira Lá♭",
+        "Nenhuma"
+      ],
+      "correta": 0,
+      "explicacao": "Só a 3ª: **Fá♯ vira Fá**, na 1ª corda.",
+      "conceito": "dedo-comum"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A troca de duas batidas ainda atrasa. O que fazer primeiro?",
+      "opcoes": [
+        "Baixar o andamento até ela caber no pulso",
+        "Parar a batida a cada troca",
+        "Tocar mais forte",
+        "Trocar só quando der"
+      ],
+      "correta": 0,
+      "explicacao": "**Andamento mais lento** com pulso firme vem antes da velocidade. Parar a batida treina justamente o problema.",
+      "conceito": "pulso-constante"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na Ciranda, cirandinha, a cifra é G. Por que o acorde combina com a melodia?",
+      "opcoes": [
+        "A melodia usa Ré, Sol e Si, notas do G",
+        "Porque toda cantiga usa G",
+        "Porque a melodia começa em Ré",
+        "Porque G é menor"
+      ],
+      "correta": 0,
+      "explicacao": "G = **Sol, Si, Ré**: são exatamente as notas desse trecho da melodia.",
+      "conceito": "cifra-sobre-a-melodia"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Do G para o C, qual dedo **entra**?",
+      "opcoes": [
+        "O 1",
+        "O 4",
+        "O 3",
+        "O 2"
+      ],
+      "correta": 0,
+      "explicacao": "Os dedos 3 e 2 descem uma corda, o 4 sai e o **1** entra na 2ª corda, casa 1.",
+      "conceito": "desenho-que-se-move"
+    }
+  ],
+  "resumo": [
+    "Compare os diagramas antes de trocar: dedo que fica não sai da corda.",
+    "C e Am: ficam o 1 e o 2. D e Dm: fica o 3.",
+    "E para Am e G para C: o desenho desce uma corda como um bloco.",
+    "Troca antecipada: a última colcheia soa solta enquanto a mão esquerda viaja.",
+    "A cifra sobre a melodia vale até aparecer outra."
+  ],
+  "pergunta_para_chat": "Me diga duas trocas que ainda travam para mim e eu te digo como estou fazendo; me ajude a planejar cada uma e a montar um treino com metrônomo."
+}
