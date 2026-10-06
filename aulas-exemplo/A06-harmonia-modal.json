@@ -1,0 +1,937 @@
+{
+  "codigo": "A06",
+  "titulo": "Harmonia modal",
+  "nivel": "avancado",
+  "resumo_curto": "Progressões e cadências que sustentam cada modo, sem o V7 tonal.",
+  "prerequisitos": [
+    "Modos gregos (M11)",
+    "Empréstimo modal (A03)"
+  ],
+  "objetivos": [
+    "Diferenciar a **harmonia modal** da tonal",
+    "Usar a **nota característica** de cada modo",
+    "Montar progressões para cada modo",
+    "Usar as **cadências modais**",
+    "Reconhecer o modo de ouvido"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Qual é a nota que diferencia o dórico do menor natural (eólio)?\n2. E a que diferencia o mixolídio do maior?\n3. Qual cadência leva a tônica sem passar pelo V7, vista na A03?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. A 6ª maior.\n2. A 7ª menor.\n3. bVI–bVII–I, entre outras.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "C, G7, C",
+            "legenda": "A tônica volta pela dominante, com a sensível Si.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G3",
+                  "F4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "C, B♭, C, B♭, C",
+            "legenda": "Agora sem o G7. Ainda soa como Dó maior?",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Bb3",
+                  "D4",
+                  "F4",
+                  "Bb4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Bb3",
+                  "D4",
+                  "F4",
+                  "Bb4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 66
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A segunda versão tem **Si♭** e nenhuma sensível: a tônica continua sendo Dó, mas o clima é de **Dó mixolídio**, não de Dó maior. Na **harmonia modal**, os acordes escolhidos mostram a cor do modo, em vez de girar em torno do V7.\n\nAo final, você vai montar progressões para cada modo e reconhecê-las de ouvido."
+        }
+      ]
+    },
+    {
+      "titulo": "A nota característica",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Cada modo tem uma **nota característica**, a que o diferencia do maior ou do menor mais próximo. Para o modo soar, a harmonia precisa de acordes que contenham essa nota, e a tônica precisa ficar firme, muitas vezes com o baixo parado nela (um **pedal**).\n\nE é preciso **evitar o V7 com sensível**: ele puxa a música de volta para o maior ou o menor tonal."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Notas características, com Dó como tônica.",
+          "cabecalho": [
+            "Modo",
+            "Compara com",
+            "Nota característica",
+            "Acorde típico"
+          ],
+          "linhas": [
+            [
+              "Dórico",
+              "menor",
+              "6ª maior (Lá)",
+              "IV maior: F"
+            ],
+            [
+              "Frígio",
+              "menor",
+              "2ª menor (Ré♭)",
+              "bII maior: D♭"
+            ],
+            [
+              "Lídio",
+              "maior",
+              "4ª aumentada (Fá♯)",
+              "II maior: D/C"
+            ],
+            [
+              "Mixolídio",
+              "maior",
+              "7ª menor (Si♭)",
+              "bVII maior: B♭"
+            ],
+            [
+              "Eólio",
+              "dórico",
+              "6ª menor (Lá♭)",
+              "bVI maior: A♭"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Modos menores: dórico, frígio, eólio",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Nos três a tônica é menor. Muda o acorde que traz a cor:\n\n- **dórico**: Cm7 e **F** (o Lá natural); som luminoso para um menor;\n- **frígio**: Cm e **D♭** (o Ré♭ meio tom acima da tônica); som tenso e escuro;\n- **eólio**: Cm, **A♭**, **B♭**: o menor natural, sem a sensível."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-dorico",
+            "titulo": "Dórico: Cm7, F",
+            "legenda": "O Lá natural do F é a cor dórica.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-frigio",
+            "titulo": "Frígio: Cm, D♭",
+            "legenda": "O Ré♭ meio tom acima da tônica.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Db4",
+                  "F4",
+                  "Ab4",
+                  "Db5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Db4",
+                  "F4",
+                  "Ab4",
+                  "Db5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-eolio",
+            "titulo": "Eólio: Cm, A♭, B♭, Cm",
+            "legenda": "bVI e bVII levam de volta à tônica menor.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "Ab4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "Bb4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Modos maiores: lídio e mixolídio",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Com tônica maior:\n\n- **lídio**: C e **D/C** (Ré maior com Dó no baixo); o Fá♯ dá um som suspenso, aberto;\n- **mixolídio**: C e **B♭**; o Si♭ tira a sensível. É a base de muita música nordestina, como o baião, que também usa a 4ª aumentada da escala nordestina."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-lidio",
+            "titulo": "Lídio: C, D/C",
+            "legenda": "O Fá♯ sobre o baixo parado em Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "D4",
+                  "F#4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "D4",
+                  "F#4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-mixo",
+            "titulo": "Mixolídio: C, B♭",
+            "legenda": "O Si♭ no lugar da sensível.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Bb3",
+                  "D4",
+                  "F4",
+                  "Bb4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "Bb3",
+                  "D4",
+                  "F4",
+                  "Bb4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Cadências modais",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Sem o V7, cada modo fecha a frase com o seu acorde característico indo para a tônica:\n\n- dórico: **IV–Im** (F → Cm);\n- frígio: **bII–Im** (D♭ → Cm);\n- lídio: **II–I** (D/C → C);\n- mixolídio: **bVII–I** (B♭ → C), ou o **Vm** (Gm → C);\n- eólio: **bVI–bVII–Im** (A♭, B♭, Cm)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-cad-frigio",
+            "titulo": "D♭ → Cm",
+            "legenda": "O baixo desce meio tom até a tônica.",
+            "eventos": [
+              {
+                "notas": [
+                  "Db4",
+                  "F4",
+                  "Ab4",
+                  "Db5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "Eb4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-cad-mixo",
+            "titulo": "Gm → C",
+            "legenda": "O Vm do mixolídio: dominante sem sensível.",
+            "eventos": [
+              {
+                "notas": [
+                  "Bb3",
+                  "D4",
+                  "G4",
+                  "Bb4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: harmonizar um modo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Monte uma progressão em **Ré dórico**, com o motivo de cada passo.\n\n1. **Escreva a escala**: Ré, Mi, Fá, Sol, Lá, Si, Dó (as notas brancas a partir de Ré).\n2. **Ache a nota característica**: a 6ª maior, **Si**.\n3. **Escolha um acorde que a tenha e alterne com a tônica**: **G** (Sol, Si, Ré). A progressão: Dm7, G, Dm7, G."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que não usar A7 nessa progressão?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "O **A7** tem **Dó♯**, a sensível de Ré, que não está no dórico. Com ele, a música vira **Ré menor tonal** (harmônico), e a cor dórica some.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. **Sol mixolídio** usa as notas brancas a partir de Sol; a nota característica é a 7ª menor, **Fá**. Escolha o acorde.\n\nE agora todos os passos são seus: **Fá lídio**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Sol mixolídio: **F** (Fá, Lá, Dó), o bVII. Progressão: G, F, G, F.\n\nFá lídio: as notas brancas a partir de Fá; a nota característica é a 4ª aumentada, **Si**. O acorde é **G** (Sol, Si, Ré), o II maior, de preferência sobre o baixo em Fá: F, G/F, F, G/F.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega quis uma música em **Dó mixolídio** e escreveu:\n\n> \"C, B♭, F, G7, C.\"\n\nO que vai acontecer com o modo?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "O **G7** traz o **Si natural**, a sensível, e resolve em C como dominante. No fim, o ouvido escuta **Dó maior** com um empréstimo (o B♭), não Dó mixolídio. Para manter o modo, troque o G7 por **Gm** ou feche com **B♭ → C**.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que a harmonia modal costuma **evitar**?",
+      "opcoes": [
+        "O V7 com sensível resolvendo na tônica",
+        "Acordes maiores",
+        "Acordes com 7ª",
+        "A tônica"
+      ],
+      "correta": 0,
+      "explicacao": "O **V7 com sensível** puxa a música para o maior ou menor tonal e apaga a cor do modo.",
+      "conceito": "harmonia-modal"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a nota característica do **dórico**?",
+      "opcoes": [
+        "6ª maior",
+        "2ª menor",
+        "4ª aumentada",
+        "7ª menor"
+      ],
+      "correta": 0,
+      "explicacao": "O dórico é um menor com **6ª maior**. Em Dó dórico, o Lá natural.",
+      "conceito": "nota-caracteristica"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Qual é o modo?",
+      "exemplo": {
+        "id": "exe-frigio",
+        "titulo": "Progressão",
+        "legenda": "Cm, D♭: frígio.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "Eb4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "Db4",
+              "F4",
+              "Ab4",
+              "Db5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "Eb4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "Db4",
+              "F4",
+              "Ab4",
+              "Db5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "Eb4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Frígio",
+        "Dórico",
+        "Lídio",
+        "Mixolídio"
+      ],
+      "correta": 0,
+      "explicacao": "Tônica menor e um acorde maior **meio tom acima** (D♭): a 2ª menor do **frígio**.",
+      "conceito": "percepcao-modal"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em **Dó mixolídio**, qual acorde mostra a cor do modo?",
+      "opcoes": [
+        "B♭",
+        "G7",
+        "D",
+        "F♯°"
+      ],
+      "correta": 0,
+      "explicacao": "O **B♭** (bVII) tem o Si♭, a 7ª menor do mixolídio. O G7 traria a sensível.",
+      "conceito": "progressoes-por-modo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual cadência é típica do **frígio**?",
+      "opcoes": [
+        "bII–Im",
+        "V7–I",
+        "IV–I",
+        "II–I"
+      ],
+      "correta": 0,
+      "explicacao": "O acorde maior meio tom acima da tônica desce até ela: **bII–Im** (D♭ → Cm).",
+      "conceito": "cadencias-modais"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Qual é o modo?",
+      "exemplo": {
+        "id": "exe-lidio",
+        "titulo": "Progressão",
+        "legenda": "C, D/C: lídio.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "D4",
+              "F#4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "D4",
+              "F#4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Lídio",
+        "Mixolídio",
+        "Dórico",
+        "Eólio"
+      ],
+      "correta": 0,
+      "explicacao": "Tônica maior com o **Fá♯** do D/C: a 4ª aumentada do **lídio**.",
+      "conceito": "percepcao-modal"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em **Mi dórico** (notas de Ré maior a partir de Mi), qual acorde traz a nota característica?",
+      "opcoes": [
+        "A",
+        "B7",
+        "C",
+        "F"
+      ],
+      "correta": 0,
+      "explicacao": "A 6ª maior de Mi é **Dó♯**; o acorde **A** (Lá, Dó♯, Mi) a contém, o IV maior.",
+      "conceito": "nota-caracteristica"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça as duas progressões. Qual está em modo dórico?",
+      "exemplo": {
+        "id": "exe-dorico",
+        "titulo": "Duas progressões",
+        "legenda": "Cm, A♭, B♭, Cm (eólio) e depois Cm7, F (dórico).",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "Eb4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "Eb4",
+              "Ab4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "D4",
+              "F4",
+              "Bb4",
+              "D5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "Eb4",
+              "G4",
+              "C5"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "Eb4",
+              "G4",
+              "Bb4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "F4",
+              "A4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "Eb4",
+              "G4",
+              "Bb4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "F4",
+              "A4",
+              "C5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "Eb4",
+              "G4",
+              "Bb4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "A segunda",
+        "A primeira"
+      ],
+      "correta": 0,
+      "explicacao": "A segunda tem o **F maior**, com Lá natural: a 6ª maior do dórico. A primeira tem Lá♭: eólio.",
+      "conceito": "percepcao-modal"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que o baião soa diferente de uma música em Dó maior tonal?",
+      "opcoes": [
+        "Usa o mixolídio, sem a sensível, muitas vezes com a 4ª aumentada",
+        "Porque é sempre em tom menor",
+        "Porque usa só o acorde V7",
+        "Porque não tem tônica"
+      ],
+      "correta": 0,
+      "explicacao": "O baião costuma usar o **mixolídio** (7ª menor) e a 4ª aumentada da escala nordestina.",
+      "conceito": "progressoes-por-modo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que é um **pedal** na harmonia modal?",
+      "opcoes": [
+        "Uma nota que fica parada, em geral no baixo",
+        "Um acorde de 7ª",
+        "Uma cadência V–I",
+        "A nota mais aguda da melodia"
+      ],
+      "correta": 0,
+      "explicacao": "O **pedal** mantém a tônica soando, normalmente no baixo, enquanto os acordes de cima mudam.",
+      "conceito": "harmonia-modal"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na progressão **C, B♭, F, G7, C**, o que acontece com o modo mixolídio?",
+      "opcoes": [
+        "O G7 traz a sensível e a música soa em Dó maior",
+        "Fica ainda mais mixolídio",
+        "Vira Dó lídio",
+        "Vira Dó frígio"
+      ],
+      "correta": 0,
+      "explicacao": "O **G7** com Si natural resolve como dominante e devolve a música ao **Dó maior** tonal.",
+      "conceito": "harmonia-modal"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual cadência modal fecha em **Dó mixolídio** sem usar a sensível?",
+      "opcoes": [
+        "Gm → C",
+        "G7 → C",
+        "B° → C",
+        "D♭ → C"
+      ],
+      "correta": 0,
+      "explicacao": "O **Vm** (Gm) tem Si♭: é uma dominante sem sensível, compatível com o mixolídio.",
+      "conceito": "cadencias-modais"
+    }
+  ],
+  "resumo": [
+    "Na **harmonia modal**, a tônica fica firme e os acordes mostram a cor do modo, sem o V7 com sensível.",
+    "Cada modo tem uma **nota característica**: dórico 6ª maior, frígio 2ª menor, lídio 4ª aumentada, mixolídio 7ª menor, eólio 6ª menor.",
+    "Use acordes que contenham essa nota, alternando com a tônica, muitas vezes sobre um **pedal**.",
+    "Cadências modais: IV–Im (dórico), bII–Im (frígio), II–I (lídio), bVII–I ou Vm–I (mixolídio), bVI–bVII–Im (eólio)."
+  ],
+  "pergunta_para_chat": "Me dê um modo e uma tônica, um de cada vez, para eu montar uma progressão modal com a nota característica e uma cadência, e me corrija se algum acorde puxar a música para o tonal."
+}

@@ -1,0 +1,664 @@
+{
+  "codigo": "A08",
+  "titulo": "Sexta aumentada e napolitano",
+  "nivel": "avancado",
+  "resumo_curto": "Acordes cromáticos de pré-dominante: N6, It+6, Fr+6 e Ger+6.",
+  "prerequisitos": [
+    "Condução de vozes básica (M10)",
+    "Substituição tritonal (A04)",
+    "Modulação (A05)"
+  ],
+  "objetivos": [
+    "Formar e usar o **napolitano** (N6)",
+    "Entender a **6ª aumentada** e a sua resolução",
+    "Formar as sextas **italiana**, **francesa** e **alemã**",
+    "Relacionar a sexta alemã com o **SubV7**",
+    "Reconhecer esses acordes de ouvido"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Em Lá menor, qual é a dominante (com a sensível)?\n2. Que acordes têm função de subdominante (pré-dominante) em Lá menor?\n3. Qual é o SubV7 do B7?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. E (ou E7), com Sol♯.\n2. Dm e Bm7(b5), entre outros.\n3. F7: Fá fica a um trítono de Si.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "Am, Dm, E7, Am",
+            "legenda": "Uma cadência comum em Lá menor.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "A4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "A3",
+                  "D4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "Am, B♭/D, E7, Am",
+            "legenda": "Troque o Dm por outro acorde. Que cor ele traz?",
+            "eventos": [
+              {
+                "notas": [
+                  "A3",
+                  "C4",
+                  "E4",
+                  "A4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "Bb4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O **B♭** tem Si♭, meio tom acima da tônica: um som dramático, muito usado na música clássica e romântica. Ele e as **sextas aumentadas** são acordes cromáticos com função de **pré-dominante**: preparam o V de um jeito mais intenso.\n\nAo final, você vai formar e reconhecer o napolitano e as três sextas aumentadas."
+        }
+      ]
+    },
+    {
+      "titulo": "O napolitano",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O **acorde napolitano** é o acorde **maior** sobre o **2º grau abaixado** (bII). Em Lá menor: **B♭** (Si♭, Ré, Fá). Quase sempre aparece na **primeira inversão**, com a 3ª no baixo, e por isso a cifra clássica é **N6** (ou bII6): B♭/D.\n\nEle ocupa o lugar do IVm ou do IIm7(b5), com quem divide o baixo Ré, e vai para o **V**. O Si♭ costuma descer para a sensível (Sol♯) ou passar pela tônica (Lá)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-n6",
+            "titulo": "B♭/D → E7 → Am",
+            "legenda": "O napolitano antes da dominante.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "Bb4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "A 6ª aumentada",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **6ª aumentada** é um intervalo um semitom maior que a 6ª maior. Em Lá menor, entre **Fá** (o 6º grau) e **Ré♯** (o 4º grau elevado). As duas notas se **abrem** por semitom até a oitava de **Mi**, a dominante: Fá desce, Ré♯ sobe."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sexta",
+            "titulo": "Fá e Ré♯ abrindo para Mi",
+            "legenda": "Os dois sons se afastam meio tom e chegam à oitava.",
+            "eventos": [
+              {
+                "notas": [
+                  "F3",
+                  "D#4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E3",
+                  "E4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "No teclado, Fá–Ré♯ parece uma 7ª menor (Fá–Mi♭). A escrita com **Ré♯** mostra para onde a nota vai: para cima, até Mi."
+        }
+      ]
+    },
+    {
+      "titulo": "Italiana, francesa e alemã",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Somando notas ao intervalo Fá–Ré♯, temos três acordes, com nomes de países por tradição:\n\n- **italiana (It+6)**: Fá, Lá, Ré♯;\n- **francesa (Fr+6)**: Fá, Lá, **Si**, Ré♯;\n- **alemã (Ger+6)**: Fá, Lá, **Dó**, Ré♯.\n\nTodas resolvem no **V** (E). A alemã costuma passar antes pelo **Am com Mi no baixo** (Am/E), para evitar quintas paralelas."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-it",
+            "titulo": "It+6 → E",
+            "legenda": "Fá, Lá, Ré♯.",
+            "eventos": [
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "D#4",
+                  "A4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "E3",
+                  "G#3",
+                  "E4",
+                  "B4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-fr",
+            "titulo": "Fr+6 → E",
+            "legenda": "Fá, Lá, Si, Ré♯: soa como uma escala de tons inteiros.",
+            "eventos": [
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "B3",
+                  "D#4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "E3",
+                  "G#3",
+                  "B3",
+                  "E4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ger",
+            "titulo": "Ger+6 → Am/E → E",
+            "legenda": "Fá, Lá, Dó, Ré♯.",
+            "eventos": [
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "C4",
+                  "D#4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E3",
+                  "A3",
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E3",
+                  "G#3",
+                  "B3",
+                  "E4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "A alemã e o SubV7",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Toque a sexta alemã sem pensar na escrita: **Fá, Lá, Dó, Ré♯** soa igual a **F7** (Fá, Lá, Dó, Mi♭). E o F7 indo para E é o **SubV7 do B7** (A04). A mesma sonoridade tem duas leituras:\n\n- na música clássica, uma **sexta aumentada** que abre para o V;\n- no jazz e na bossa nova, um **SubV7** que desce meio tom.\n\nEssa dupla leitura também permite **modulações enarmônicas**: escrito F7, o acorde pode resolver em B♭."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ger-f7",
+            "titulo": "Ger+6 e F7",
+            "legenda": "Mesmas teclas, duas escritas.",
+            "eventos": [
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "C4",
+                  "D#4"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "F3",
+                  "A3",
+                  "C4",
+                  "Eb4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: montar uma sexta aumentada",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Monte a **francesa em Dó menor**, com o motivo de cada passo.\n\n1. **Ache o 6º grau do tom menor**: Lá♭.\n2. **Ache o 4º grau elevado**: Fá♯. Lá♭–Fá♯ é a 6ª aumentada, que abre para Sol.\n3. **Some as notas da francesa**: Dó (a tônica) e **Ré** (o 2º grau). Fr+6: Lá♭, Dó, Ré, Fá♯."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** e a alemã em Dó menor? Com que acorde ela soa igual?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A alemã soma a tônica e o **3º grau** (Mi♭): Lá♭, Dó, Mi♭, Fá♯. Soa igual a **A♭7** (Lá♭, Dó, Mi♭, Sol♭), o SubV7 do D7.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. **Italiana em Ré menor**: o 6º grau é Si♭ e o 4º elevado é Sol♯. Some a nota que falta.\n\nE agora todos os passos são seus: o **napolitano em Mi menor**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "It+6 em Ré menor: Si♭, **Ré**, Sol♯ (a tônica entre as duas notas da 6ª aumentada).\n\nNapolitano em Mi menor: o 2º grau abaixado é **Fá**; o acorde maior é **F** (Fá, Lá, Dó), em primeira inversão: **F/A**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega escreveu a sexta italiana de Lá menor como:\n\n> \"Fá, Lá, Mi♭.\"\n\nOs sons estão certos. Por que a escrita está errada?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Com **Mi♭**, o intervalo vira uma 7ª menor, e a nota parece descer. A 6ª aumentada precisa do **Ré♯**, que sobe meio tom para o Mi. A escrita mostra a resolução.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Lá menor, qual é o acorde **napolitano**?",
+      "opcoes": [
+        "B♭",
+        "Bm",
+        "B°",
+        "E"
+      ],
+      "correta": 0,
+      "explicacao": "O bII maior: sobre Si♭, **B♭** (Si♭, Ré, Fá).",
+      "conceito": "napolitano"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em que inversão o napolitano costuma aparecer?",
+      "opcoes": [
+        "1ª inversão, com a 3ª no baixo",
+        "Estado fundamental",
+        "2ª inversão",
+        "3ª inversão"
+      ],
+      "correta": 0,
+      "explicacao": "Por isso a cifra **N6**: com a 3ª (Ré, em Lá menor) no baixo, como o IVm.",
+      "conceito": "napolitano"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça as duas cadências. Em qual aparece o napolitano?",
+      "exemplo": {
+        "id": "exe-n6",
+        "titulo": "Duas cadências",
+        "legenda": "Am, Dm, E7, Am e depois Am, B♭/D, E7, Am.",
+        "eventos": [
+          {
+            "notas": [
+              "A3",
+              "C4",
+              "E4",
+              "A4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "A3",
+              "D4",
+              "F4",
+              "A4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "E4",
+              "G#4",
+              "B4",
+              "D5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "A3",
+              "C4",
+              "E4",
+              "A4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "D4",
+              "F4",
+              "Bb4",
+              "D5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "E4",
+              "G#4",
+              "B4",
+              "D5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "Na segunda",
+        "Na primeira"
+      ],
+      "correta": 0,
+      "explicacao": "Na segunda, o **B♭** traz o Si♭, meio tom acima da tônica: o som dramático do napolitano.",
+      "conceito": "percepcao-cromaticos"
+    },
+    {
+      "tipo": "teclado",
+      "enunciado": "Fá3 está marcado: é o 6º grau de Lá menor. Clique na nota que forma com ele a **6ª aumentada**.",
+      "nota_base": "F3",
+      "intervalo": "6A",
+      "direcao": "acima",
+      "explicacao": "Uma 6ª aumentada acima de Fá é **Ré♯**, que sobe para Mi.",
+      "conceito": "sexta-aumentada",
+      "de": "E3",
+      "ate": "E5"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Como a 6ª aumentada resolve?",
+      "opcoes": [
+        "As duas notas se abrem por semitom até uma oitava",
+        "As duas notas descem um tom",
+        "Ela não resolve",
+        "As duas notas sobem uma 5ª"
+      ],
+      "correta": 0,
+      "explicacao": "Fá desce para Mi, Ré♯ sobe para Mi: as vozes se **abrem** até a oitava da dominante.",
+      "conceito": "sexta-aumentada"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais são as notas da **sexta italiana** em Lá menor?",
+      "opcoes": [
+        "Fá, Lá, Ré♯",
+        "Fá, Lá, Si, Ré♯",
+        "Fá, Lá, Dó, Ré♯",
+        "Fá, Lá, Mi♭"
+      ],
+      "correta": 0,
+      "explicacao": "A italiana tem só três notas: o 6º grau, a tônica e o 4º elevado: **Fá, Lá, Ré♯**.",
+      "conceito": "sexta-italiana"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que a **francesa** acrescenta à italiana?",
+      "opcoes": [
+        "O 2º grau (Si, em Lá menor)",
+        "O 3º grau (Dó)",
+        "A sensível (Sol♯)",
+        "Nada"
+      ],
+      "correta": 0,
+      "explicacao": "Fr+6 = italiana + o **2º grau**: Fá, Lá, **Si**, Ré♯.",
+      "conceito": "sexta-francesa"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A **sexta alemã** em Lá menor soa igual a qual acorde?",
+      "opcoes": [
+        "F7",
+        "Fm7",
+        "D7",
+        "B7"
+      ],
+      "correta": 0,
+      "explicacao": "Fá, Lá, Dó, Ré♯ tem os mesmos sons de Fá, Lá, Dó, Mi♭: **F7**.",
+      "conceito": "sexta-alema"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. As duas notas se movem em que direção?",
+      "exemplo": {
+        "id": "exe-sexta",
+        "titulo": "Intervalo",
+        "legenda": "Fá e Ré♯ indo para a oitava de Mi.",
+        "eventos": [
+          {
+            "notas": [
+              "F3",
+              "D#4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "E3",
+              "E4"
+            ],
+            "duracao": 2
+          }
+        ],
+        "andamento": 60
+      },
+      "opcoes": [
+        "Em direções contrárias, se abrindo",
+        "As duas para cima",
+        "As duas para baixo",
+        "Não se movem"
+      ],
+      "correta": 0,
+      "explicacao": "O Fá desce e o Ré♯ sobe: as vozes se **abrem** até a oitava.",
+      "conceito": "percepcao-cromaticos"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que a sexta alemã costuma passar pelo **Am/E** antes do E?",
+      "opcoes": [
+        "Para evitar quintas paralelas",
+        "Porque não pode ir direto ao V",
+        "Porque Am/E é o napolitano",
+        "Para mudar de tom"
+      ],
+      "correta": 0,
+      "explicacao": "Fá–Dó indo para Mi–Si formaria **quintas paralelas**; o Am/E segura o Dó e evita esse movimento.",
+      "conceito": "sexta-alema"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na linguagem do jazz, a sexta alemã resolvendo no V equivale a:",
+      "opcoes": [
+        "Um SubV7 do V",
+        "Um II cadencial",
+        "Um acorde sus4",
+        "Um empréstimo do maior"
+      ],
+      "correta": 0,
+      "explicacao": "F7 → E é o **SubV7** do B7: o baixo desce meio tom, como na A04.",
+      "conceito": "sexta-alema"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o napolitano em **Mi menor**, na inversão habitual?",
+      "opcoes": [
+        "F/A",
+        "F♯/A♯",
+        "F",
+        "Fm/A♭"
+      ],
+      "correta": 0,
+      "explicacao": "O bII de Mi é **F** (maior); na 1ª inversão, com Lá no baixo: **F/A**.",
+      "conceito": "napolitano"
+    }
+  ],
+  "resumo": [
+    "**Napolitano**: o bII maior, em 1ª inversão (N6), antes do V.",
+    "A **6ª aumentada** (6º grau e 4º elevado do tom menor) se abre por semitom até a oitava da dominante.",
+    "**It+6**: 6º, tônica, 4º elevado. **Fr+6**: soma o 2º grau. **Ger+6**: soma o 3º grau.",
+    "A sexta alemã soa como um acorde 7: é o **SubV7** do V, e permite modulações enarmônicas."
+  ],
+  "pergunta_para_chat": "Me dê tons menores, um de cada vez, para eu montar o napolitano e as três sextas aumentadas, com a escrita certa, e corrija minhas notas e resoluções."
+}

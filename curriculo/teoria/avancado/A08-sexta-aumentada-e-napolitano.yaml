@@ -1,0 +1,33 @@
+codigo: A08
+titulo: Sexta aumentada e napolitano
+nivel: avancado
+assunto: teoria
+prerequisitos:
+  - M10  # Condução de vozes básica
+  - A04  # Substituição tritonal e rearmonização
+  - A05  # Modulação
+objetivos:
+  - Formar o acorde napolitano (bII6) e usá-lo antes da dominante
+  - Entender o intervalo de 6ª aumentada e a sua resolução para a oitava
+  - Formar as sextas aumentadas italiana, francesa e alemã
+  - Relacionar a sexta alemã com o acorde 7 e com o SubV7
+  - Reconhecer de ouvido esses acordes cromáticos de pré-dominante
+conceitos:
+  - napolitano
+  - sexta-aumentada
+  - sexta-italiana
+  - sexta-francesa
+  - sexta-alema
+  - percepcao-cromaticos
+fora_do_escopo:
+  - Análise de obras completas do período romântico (módulo A14)
+  - Harmonia do século XX (módulo A13)
+exemplos_semente:
+  - "Bb/D, E7, Am: o napolitano em Lá menor"
+  - "Fá e Ré sustenido abrindo para Mi: a 6ª aumentada"
+  - "It+6, Fr+6 e Ger+6 resolvendo em E"
+  - "Ger+6 soa como F7, o SubV7 do B7"
+exercicios:
+  - multipla_escolha
+  - percepcao
+  - teclado
