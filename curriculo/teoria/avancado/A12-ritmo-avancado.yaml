@@ -1,0 +1,32 @@
+codigo: A12
+titulo: Ritmo avançado
+nivel: avancado
+assunto: teoria
+prerequisitos:
+  - M01  # Compassos compostos e irregulares
+  - A10  # Contraponto
+objetivos:
+  - Ouvir e tocar a polirritmia dois contra três
+  - Reconhecer a hemíola, em que dois compassos ternários soam como um binário
+  - Ler a métrica mista, com agrupamentos diferentes no mesmo compasso e fórmulas que se alternam
+  - Entender a modulação métrica, em que uma duração do trecho antigo vira o pulso do trecho novo
+  - Reconhecer as células do samba, do baião e da bossa nova
+conceitos:
+  - polirritmia
+  - hemiola
+  - metrica-mista
+  - modulacao-metrica
+  - ritmos-brasileiros
+  - percepcao-ritmo-avancado
+fora_do_escopo:
+  - Levadas completas de percussão para cada instrumento da bateria de escola de samba
+  - Ritmos de outras regiões, como maracatu, frevo e ijexá, em detalhe
+exemplos_semente:
+  - "Dois contra três em 3/4, com semínimas pontuadas sobre semínimas"
+  - "Hemíola na cadência em 3/4"
+  - "7/8 como 2 + 2 + 3 e como 3 + 2 + 2"
+  - "Tercinas a 80 que viram colcheias a 120"
+  - "Samba com o surdo no segundo tempo, baião em 3 + 3 + 2 e a batida da bossa nova"
+exercicios:
+  - multipla_escolha
+  - percepcao

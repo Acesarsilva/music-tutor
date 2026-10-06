@@ -1,0 +1,33 @@
+codigo: A10
+titulo: Contraponto
+nivel: avancado
+assunto: teoria
+prerequisitos:
+  - M02  # Intervalos aumentados, diminutos e inversão
+  - M10  # Condução de vozes básica
+  - M15  # Notas melódicas
+objetivos:
+  - Classificar os intervalos harmônicos em consonâncias perfeitas, imperfeitas e dissonâncias
+  - Reconhecer os movimentos direto, paralelo, contrário e oblíquo entre duas vozes
+  - Escrever contraponto de primeira espécie, nota contra nota, sem quintas e oitavas paralelas
+  - Entender as espécies seguintes, da segunda (duas notas contra uma) à quinta (florido)
+  - Usar o retardo da quarta espécie na cadência 7–6–8
+  - Reconhecer a imitação e o cânone
+conceitos:
+  - consonancias-e-dissonancias
+  - movimento-das-vozes
+  - primeira-especie
+  - especies-seguintes
+  - imitacao-e-canone
+  - percepcao-contraponto
+fora_do_escopo:
+  - Fuga em detalhe (módulo A11)
+  - Contraponto a três ou mais vozes
+exemplos_semente:
+  - "Cantus firmus Dó, Ré, Fá, Mi, Ré, Dó com contraponto de primeira espécie"
+  - "Quintas paralelas: Dó e Sol indo para Ré e Lá"
+  - "Retardo 7–6 resolvendo na oitava"
+  - "Frère Jacques em cânone a duas vozes"
+exercicios:
+  - multipla_escolha
+  - percepcao

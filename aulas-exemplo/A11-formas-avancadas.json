@@ -1,0 +1,3108 @@
+{
+  "codigo": "A11",
+  "titulo": "Formas avançadas",
+  "nivel": "avancado",
+  "resumo_curto": "Rondó, choro, tema com variações, forma-sonata, fuga e canção A A B A.",
+  "prerequisitos": [
+    "Forma musical básica (M16)",
+    "Modulação (A05)",
+    "Contraponto (A10)"
+  ],
+  "objetivos": [
+    "Reconhecer o **rondó** e a forma do **choro**",
+    "Entender o **tema com variações**",
+    "Descrever a **forma-sonata** e seu plano de tonalidades",
+    "Conhecer os elementos da **fuga**",
+    "Reconhecer a canção **A A B A** e a **ponte**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. O que quer dizer a forma **A B A**?\n2. O que é uma **sequência** de um motivo?\n3. Qual é o tom vizinho mais próximo de Dó maior, pela dominante?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Uma parte, uma parte nova e a primeira de volta.\n2. O mesmo desenho repetido começando noutra altura.\n3. Sol maior.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Uma peça inteira",
+            "legenda": "Ouça até o fim. Quantas vezes volta a primeira melodia?",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 120
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A primeira melodia volta **três vezes**, e entre as voltas aparecem duas melodias diferentes: a forma é **A B A C A**. É um **rondó**, uma das formas maiores que aumentam a ideia de A B A.\n\nAo final, você vai reconhecer o rondó, o tema com variações, a forma-sonata, a fuga e a canção A A B A, e o que cada uma faz com as tonalidades."
+        }
+      ]
+    },
+    {
+      "titulo": "Rondó",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "No **rondó**, uma parte principal, o **refrão A**, volta sempre na tonalidade principal, e entre as voltas aparecem **episódios** diferentes, muitas vezes noutras tonalidades: **A B A C A** (às vezes A B A C A B A).\n\nNo rondó da abertura, o B está em **Sol maior** (o Fá♯ mostra) e o C em **Lá menor** (o Sol♯ mostra). O A volta sempre em Dó."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-rondo-b",
+            "titulo": "O episódio B",
+            "legenda": "Em Sol maior. Termina no Lá, que puxa de volta para o A.",
+            "eventos": [
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 120
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-rondo-c",
+            "titulo": "O episódio C",
+            "legenda": "Em Lá menor, com o Sol♯. O Sol natural do fim prepara a volta para Dó.",
+            "eventos": [
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 120
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**O choro é um rondó.** O choro tradicional tem três partes, quase sempre tocadas na ordem **A A B B A C C A**: o A volta entre as outras duas, e o B e o C costumam ir para outras tonalidades. Repare nisso quando ouvir um choro antigo de três partes."
+        }
+      ]
+    },
+    {
+      "titulo": "Tema com variações",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "No **tema com variações**, uma melodia é apresentada de forma simples e depois volta várias vezes, cada vez transformada, mas reconhecível. Dá para variar:\n\n- a **melodia**, enfeitando-a com notas melódicas;\n- o **ritmo**, sem mudar as notas;\n- o **modo**, passando do maior para o menor;\n- a **harmonia**, com acordes novos por baixo.\n\nMozart escreveu 12 variações sobre a melodia de *Brilha, brilha, estrelinha* (K. 265). Aqui vão três variações simples sobre o começo dela."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-tema",
+            "titulo": "Tema",
+            "legenda": "A primeira frase de Brilha, brilha.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-var-melodia",
+            "titulo": "Variação 1: melodia enfeitada",
+            "legenda": "Colcheias em volta de cada nota do tema. As notas do tema continuam no começo de cada tempo.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-var-modo",
+            "titulo": "Variação 2: modo menor",
+            "legenda": "As mesmas notas em Dó menor, com Lá♭ e Mi♭.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Ab4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Ab4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Eb4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 84
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-var-ritmo",
+            "titulo": "Variação 3: ritmo pontuado",
+            "legenda": "As mesmas notas, agora em semínima pontuada e colcheia.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 96
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Forma-sonata",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **forma-sonata** é a forma do primeiro movimento de muitas sonatas, sinfonias e quartetos do período clássico. Ela é um grande A B A com um plano de tonalidades:\n\n1. **Exposição**: o **tema 1** na tônica; uma **transição** que modula; o **tema 2** noutra tonalidade (a **dominante**, se a peça é maior; o **relativo maior**, se é menor).\n2. **Desenvolvimento**: fragmentos dos temas passam por várias tonalidades, em sequências.\n3. **Reexposição**: os dois temas voltam, agora **os dois na tônica**.\n4. **Coda** (opcional): um final que confirma a tônica."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-exposicao",
+            "titulo": "Exposição em miniatura",
+            "legenda": "Tema 1 em Dó maior e tema 2, mais cantado, em Sol maior.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 104
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-desenvolvimento",
+            "titulo": "Desenvolvimento",
+            "legenda": "O arpejo do começo do tema 1 em Lá menor, Ré menor e Sol.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 104
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-reexposicao",
+            "titulo": "Reexposição",
+            "legenda": "Tema 1 e tema 2, agora os dois em Dó maior.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 104
+          }
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "O plano de tonalidades.",
+          "cabecalho": [
+            "Seção",
+            "Tema 1",
+            "Tema 2"
+          ],
+          "linhas": [
+            [
+              "Exposição",
+              "tônica",
+              "dominante (ou relativo maior)"
+            ],
+            [
+              "Desenvolvimento",
+              "fragmentos em vários tons",
+              "fragmentos em vários tons"
+            ],
+            [
+              "Reexposição",
+              "tônica",
+              "tônica"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Fuga",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **fuga** é a forma mais elaborada do contraponto imitativo. Bach escreveu 48 prelúdios e fugas em *O Cravo Bem Temperado*. Os elementos:\n\n- **sujeito**: o tema, apresentado sozinho por uma voz;\n- **resposta**: o sujeito em outra voz, na **dominante**;\n- **contrassujeito**: a melodia que a primeira voz faz enquanto a outra dá a resposta;\n- **exposição**: a entrada de todas as vozes com o sujeito ou a resposta;\n- **episódios**: trechos sem o sujeito completo, feitos com fragmentos dele, em sequência;\n- **stretto**: entradas que se sobrepõem, uma voz começando antes da outra terminar."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sujeito",
+            "titulo": "Sujeito",
+            "legenda": "Dó, Ré, Mi, Fá, depois colcheias que descem até o Si.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-exposicao-fuga",
+            "titulo": "Exposição a duas vozes",
+            "legenda": "O sujeito em cima; depois a resposta embaixo, em Sol maior (com Fá♯), enquanto a voz de cima faz o contrassujeito.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E5",
+                  "G3"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C5",
+                  "A3"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5",
+                  "B3"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5",
+                  "B3"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "D5"
+                ]
+              },
+              {
+                "notas": [
+                  "D5",
+                  "A3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5",
+                  "G3"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "C5"
+                ]
+              },
+              {
+                "notas": [
+                  "C5",
+                  "A3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4",
+                  "F#3"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "B4",
+                  "G3"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-episodio",
+            "titulo": "Episódio",
+            "legenda": "As quatro notas que sobem, do começo do sujeito, em sequência descendente.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5",
+                  "A3"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "A3"
+                ]
+              },
+              {
+                "notas": [
+                  "D5",
+                  "A3"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "A3"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "A3"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "A3"
+                ]
+              },
+              {
+                "notas": [
+                  "F5",
+                  "A3"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "B4",
+                  "G3"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "G3"
+                ]
+              },
+              {
+                "notas": [
+                  "C5",
+                  "G3"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "G3"
+                ]
+              },
+              {
+                "notas": [
+                  "D5",
+                  "G3"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "G3"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "G3"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "A4",
+                  "F3"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "F3"
+                ]
+              },
+              {
+                "notas": [
+                  "B4",
+                  "F3"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "F3"
+                ]
+              },
+              {
+                "notas": [
+                  "C5",
+                  "F3"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "F3"
+                ]
+              },
+              {
+                "notas": [
+                  "D5",
+                  "F3"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C5",
+                  "E3"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "B4",
+                  "G3"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C5",
+                  "C4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 80
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "A canção A A B A",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na música popular, a forma **A A B A** foi o padrão das canções de **32 compassos**: quatro seções de 8 compassos. O **B**, chamado **ponte**, contrasta com o A, muitas vezes indo para outra tonalidade, e termina preparando a volta do A. *Garota de Ipanema*, de Tom Jobim e Vinicius de Moraes, tem a forma A A B A, com uma ponte mais longa que as outras seções, que passa por tonalidades distantes.\n\nNo exemplo abaixo, menor, cada seção tem 4 compassos, e a ponte vai para **Fá maior** (com Si♭) e termina no Sol, a dominante de Dó."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-aaba",
+            "titulo": "A A B A em miniatura",
+            "legenda": "A, A, a ponte em Fá maior e o A de volta.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "Bb4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 4.0
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 4.0
+              }
+            ],
+            "andamento": 108
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: reconhecer a forma",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja com o rondó da abertura, com o motivo de cada passo.\n\n1. **Divida em seções** pelas cadências: são cinco trechos de quatro compassos.\n2. **Compare e dê letras**: o 1º, o 3º e o 5º são iguais (A); o 2º e o 4º são diferentes entre si (B e C).\n3. **Veja as tonalidades**: A sempre em Dó, B em Sol, C em Lá menor.\n4. **Dê o nome**: um refrão que volta entre episódios diferentes é um **rondó**."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** e se o terceiro trecho fosse o mesmo B do segundo, A B A B A?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Também há quem chame de rondó, mas sem um episódio **novo** a forma fica mais perto de uma canção com estrofe e refrão alternados. O rondó típico traz pelo menos um episódio diferente (o C).",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. Uma peça tem as seções Tema, Tema com colcheias, Tema em menor, Tema em ritmo pontuado. Veja as tonalidades e dê o nome.\n\nE agora todos os passos são seus: uma peça começa com um tema em Ré maior, depois um segundo tema em Lá maior; no meio, fragmentos dos dois em vários tons; no fim, os dois temas em Ré maior."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Tudo na mesma tônica, com o modo mudando numa delas: **tema com variações**.\n\nTema 1 na tônica e tema 2 na dominante (exposição), desenvolvimento, e os dois temas na tônica (reexposição): **forma-sonata**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"Na reexposição, o tema 2 volta na dominante, igualzinho à exposição.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Na reexposição, o tema 2 volta na **tônica**. Essa mudança é o que fecha a forma-sonata: o conflito de tonalidades da exposição (tônica contra dominante) se resolve com tudo na tônica.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a forma típica de um **rondó**?",
+      "opcoes": [
+        "A B A C A",
+        "A A B A",
+        "A B",
+        "A A' A'' A'''"
+      ],
+      "correta": 0,
+      "explicacao": "No rondó, o refrão **A** volta entre episódios diferentes: **A B A C A**.",
+      "conceito": "rondo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na ordem de partes do **choro tradicional**, A A B B A C C A, qual parte faz o papel de refrão?",
+      "opcoes": [
+        "A",
+        "B",
+        "C",
+        "Nenhuma"
+      ],
+      "correta": 0,
+      "explicacao": "O **A** volta entre o B e o C: o choro de três partes é um **rondó**.",
+      "conceito": "rondo"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a peça. Que forma ela tem?",
+      "exemplo": {
+        "id": "exe-rondo",
+        "titulo": "Peça",
+        "legenda": "A B A C A.",
+        "eventos": [
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F#4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 4.0
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G#4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G#4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 120
+      },
+      "opcoes": [
+        "A B A C A",
+        "A A B A",
+        "A B"
+      ],
+      "correta": 0,
+      "explicacao": "A primeira melodia volta três vezes, com duas melodias diferentes entre elas: **rondó**.",
+      "conceito": "percepcao-formas-avancadas"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Numa variação, as notas do tema ficam iguais, mas as durações viram semínima pontuada e colcheia. O que mudou?",
+      "opcoes": [
+        "O ritmo",
+        "O modo",
+        "A harmonia",
+        "A tonalidade"
+      ],
+      "correta": 0,
+      "explicacao": "Mesmas notas, durações novas: variação de **ritmo**.",
+      "conceito": "tema-e-variacoes"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça o tema e depois a variação. O que mudou?",
+      "exemplo": {
+        "id": "exe-variacao",
+        "titulo": "Tema e variação",
+        "legenda": "Tema em Dó maior e variação em Dó menor.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Ab4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Ab4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Eb4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "Eb4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 96
+      },
+      "opcoes": [
+        "O modo, de maior para menor",
+        "O ritmo",
+        "O andamento",
+        "Nada"
+      ],
+      "correta": 0,
+      "explicacao": "As mesmas notas e o mesmo ritmo, mas com Lá♭ e Mi♭: o **modo** passou para **menor**.",
+      "conceito": "percepcao-formas-avancadas"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Numa forma-sonata em Dó maior, em que tonalidade costuma vir o **tema 2 da exposição**?",
+      "opcoes": [
+        "Sol maior",
+        "Dó maior",
+        "Fá maior",
+        "Lá menor"
+      ],
+      "correta": 0,
+      "explicacao": "Numa peça maior, o tema 2 da exposição vai para a **dominante**: Sol maior.",
+      "conceito": "forma-sonata"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "E na **reexposição**, em que tonalidade vem o tema 2?",
+      "opcoes": [
+        "Dó maior, a tônica",
+        "Sol maior, a dominante",
+        "Lá menor",
+        "Ré menor"
+      ],
+      "correta": 0,
+      "explicacao": "Na reexposição, os dois temas voltam na **tônica**.",
+      "conceito": "forma-sonata"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Que seção da forma-sonata passa fragmentos dos temas por várias tonalidades?",
+      "opcoes": [
+        "Desenvolvimento",
+        "Exposição",
+        "Reexposição",
+        "Coda"
+      ],
+      "correta": 0,
+      "explicacao": "O **desenvolvimento** trabalha os temas em pedaços, modulando.",
+      "conceito": "forma-sonata"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na fuga, como se chama o sujeito apresentado por outra voz, na dominante?",
+      "opcoes": [
+        "Resposta",
+        "Contrassujeito",
+        "Episódio",
+        "Stretto"
+      ],
+      "correta": 0,
+      "explicacao": "O sujeito na dominante, noutra voz, é a **resposta**.",
+      "conceito": "fuga"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "E o **stretto**?",
+      "opcoes": [
+        "Entradas do sujeito que se sobrepõem",
+        "O tema principal da fuga",
+        "Um trecho sem o sujeito",
+        "A última nota da fuga"
+      ],
+      "correta": 0,
+      "explicacao": "No **stretto**, uma voz começa o sujeito antes da outra terminar.",
+      "conceito": "fuga"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a exposição. Onde a segunda voz entra com a resposta?",
+      "exemplo": {
+        "id": "exe-fuga",
+        "titulo": "Exposição",
+        "legenda": "A resposta entra embaixo no 3º compasso.",
+        "eventos": [
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "F5"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "E5",
+              "G3"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "C5",
+              "A3"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "D5",
+              "B3"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "E5",
+              "C4"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "D5",
+              "B3"
+            ],
+            "duracao": 0.5,
+            "ligar": [
+              "D5"
+            ]
+          },
+          {
+            "notas": [
+              "D5",
+              "A3"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C5",
+              "G3"
+            ],
+            "duracao": 0.5,
+            "ligar": [
+              "C5"
+            ]
+          },
+          {
+            "notas": [
+              "C5",
+              "A3"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "A4",
+              "F#3"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "B4",
+              "G3"
+            ],
+            "duracao": 4.0
+          }
+        ],
+        "andamento": 80
+      },
+      "opcoes": [
+        "Embaixo, no 3º compasso",
+        "Em cima, no 1º compasso",
+        "Não há segunda voz"
+      ],
+      "correta": 0,
+      "explicacao": "O sujeito soa sozinho nos dois primeiros compassos; a **resposta** entra **embaixo** no 3º, em Sol.",
+      "conceito": "fuga"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na canção A A B A, como se chama a seção B?",
+      "opcoes": [
+        "Ponte",
+        "Refrão",
+        "Coda",
+        "Introdução"
+      ],
+      "correta": 0,
+      "explicacao": "O B da canção A A B A é a **ponte**, que contrasta e prepara a volta do A.",
+      "conceito": "cancao-aaba"
+    }
+  ],
+  "resumo": [
+    "**Rondó**: A B A C A. O choro tradicional (A A B B A C C A) é um rondó.",
+    "**Tema com variações**: o tema volta transformado na melodia, no ritmo, no modo ou na harmonia.",
+    "**Forma-sonata**: exposição (tema 1 na tônica, tema 2 na dominante), desenvolvimento e reexposição (os dois na tônica).",
+    "**Fuga**: sujeito, resposta na dominante, contrassujeito, episódios e stretto.",
+    "**A A B A**: canção de 32 compassos; o B é a **ponte**."
+  ],
+  "pergunta_para_chat": "Me descreva peças curtas, uma de cada vez, pela ordem das partes e das tonalidades, para eu dizer a forma de cada uma, e me corrija."
+}

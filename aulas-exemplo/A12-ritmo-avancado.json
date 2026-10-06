@@ -1,0 +1,1586 @@
+{
+  "codigo": "A12",
+  "titulo": "Ritmo avançado",
+  "nivel": "avancado",
+  "resumo_curto": "Polirritmia, hemíola, métrica mista, modulação métrica e os ritmos do samba, do baião e da bossa.",
+  "prerequisitos": [
+    "Compassos compostos e irregulares (M01)",
+    "Contraponto (A10)"
+  ],
+  "objetivos": [
+    "Ouvir e tocar o **dois contra três**",
+    "Reconhecer a **hemíola**",
+    "Ler a **métrica mista**",
+    "Entender a **modulação métrica**",
+    "Reconhecer as células do **samba**, do **baião** e da **bossa nova**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quantas colcheias há num compasso 7/8? Como elas costumam se agrupar?\n2. O que é uma tercina?\n3. Qual é a síncope característica da música brasileira?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Sete, em grupos de 2 e de 3, como 2 + 2 + 3.\n2. Três notas no tempo de duas.\n3. Semicolcheia, colcheia, semicolcheia, num só tempo.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Duas camadas",
+            "legenda": "Ouça o grave e o agudo. Quantas notas cada um toca por compasso?",
+            "eventos": [
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "E5"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "E5"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "E5"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "E5"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 1.0
+              }
+            ],
+            "compasso": "3/4",
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O grave toca **três** notas por compasso, e o agudo, **duas**. As duas camadas começam juntas e só voltam a coincidir no compasso seguinte: é a **polirritmia** dois contra três.\n\nAo final, você vai ouvir polirritmias e hemíolas, ler métricas mistas, entender a modulação métrica e reconhecer as células do samba, do baião e da bossa nova."
+        }
+      ]
+    },
+    {
+      "titulo": "Polirritmia: dois contra três",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na **polirritmia**, duas divisões diferentes do mesmo trecho soam ao mesmo tempo. A mais comum é o **dois contra três**: no compasso 3/4, uma camada toca três semínimas e a outra duas semínimas pontuadas. A segunda nota do agudo cai **entre** o 2º e o 3º tempos.\n\nPara tocar com as duas mãos, conte em colcheias, **1 e 2 e 3 e**: o grave toca no 1, no 2 e no 3; o agudo, no 1 e no \"e\" do 2."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-tres",
+            "titulo": "Só o três",
+            "legenda": "Três semínimas por compasso.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1.0
+              }
+            ],
+            "compasso": "3/4",
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-dois",
+            "titulo": "Só o dois",
+            "legenda": "Duas semínimas pontuadas por compasso.",
+            "eventos": [
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1.5
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1.5
+              }
+            ],
+            "compasso": "3/4",
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-dois-contra-tres",
+            "titulo": "Os dois juntos",
+            "legenda": "Na partitura, a segunda nota do agudo aparece ligada: ela começa no meio do 2º tempo.",
+            "eventos": [
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "E5"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "E5"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "E5"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "E5"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4"
+                ],
+                "duracao": 1.0
+              }
+            ],
+            "compasso": "3/4",
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Hemíola",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **hemíola** é o dois contra três esticado: **dois compassos de 3/4** soam como **um compasso de 3/2**, com três apoios de dois tempos cada. Ela aparece muito nas cadências da música barroca e também em valsas, e dá a sensação de que o ritmo freia antes do fim."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-ternario",
+            "titulo": "Sem hemíola",
+            "legenda": "Apoio no 1º tempo de cada compasso.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 3,
+                "acento": true
+              }
+            ],
+            "compasso": "3/4",
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-hemiola",
+            "titulo": "Com hemíola",
+            "legenda": "No 2º e 3º compassos, os apoios caem a cada dois tempos: Fá, Mi, Ré.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 2,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1,
+                "acento": true,
+                "ligada": true
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 2,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 3,
+                "acento": true
+              }
+            ],
+            "compasso": "3/4",
+            "andamento": 96
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Métrica mista",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na **métrica mista**, os grupos de 2 e de 3 se combinam de jeitos diferentes. Isso acontece de duas maneiras:\n\n- dentro de um compasso irregular, mudando o **agrupamento**: o 7/8 pode ser 2 + 2 + 3, 3 + 2 + 2 ou 2 + 3 + 2;\n- trocando a **fórmula de compasso** de um compasso para o outro, como 3/4, 2/4, 3/4, 2/4.\n\nPara ler, conte sempre a menor unidade (aqui, a colcheia) e pense nos grupos."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sete-223",
+            "titulo": "7/8 como 2 + 2 + 3",
+            "legenda": "Curto, curto, longo.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1.5,
+                "acento": true
+              }
+            ],
+            "compasso": "7/8",
+            "andamento": 150
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sete-322",
+            "titulo": "7/8 como 3 + 2 + 2",
+            "legenda": "Longo, curto, curto: as mesmas sete colcheias, outro desenho.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1.5,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1,
+                "acento": true
+              }
+            ],
+            "compasso": "7/8",
+            "andamento": 150
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Modulação métrica",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na **modulação métrica**, uma duração do trecho antigo passa a valer outra no trecho novo, e o **andamento muda** sem quebra. A partitura indica a troca com uma equação, como **colcheia de tercina = colcheia**.\n\nNos exemplos abaixo, o primeiro trecho está a 80 por minuto e termina em tercinas: são 240 colcheias de tercina por minuto. No segundo, essa mesma velocidade vira a **colcheia normal**, e o andamento passa a 120 por minuto. Ouça um logo depois do outro: as notas rápidas mantêm a velocidade, mas o pulso acelera."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-antes",
+            "titulo": "Antes: 80 por minuto",
+            "legenda": "Colcheias e depois tercinas.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.3333333333333333
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.3333333333333333
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.3333333333333333
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.3333333333333333
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.3333333333333333
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.3333333333333333
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.3333333333333333
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.3333333333333333
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.3333333333333333
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.3333333333333333
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.3333333333333333
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 0.3333333333333333
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-depois",
+            "titulo": "Depois: 120 por minuto",
+            "legenda": "As colcheias têm a velocidade das tercinas de antes.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 120
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "A conta: no trecho novo cabem 2 colcheias por tempo, onde antes cabiam 3 tercinas. Então o tempo novo é 3/2 do antigo: 80 × 3/2 = 120."
+        }
+      ]
+    },
+    {
+      "titulo": "Ritmos brasileiros",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "**Samba.** Em 2/4, o tempo mais forte é o **segundo**: é nele que bate o surdo de primeira (ou de marcação). Por cima, a melodia vive de síncopes, como a síncope característica."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-surdo",
+            "titulo": "O surdo",
+            "legenda": "Grave no 1º tempo, mais forte e mais agudo no 2º.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "acento": true
+              },
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 1,
+                "acento": true
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-samba",
+            "titulo": "Samba",
+            "legenda": "A síncope característica por cima do surdo.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4",
+                  "G3"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "E4",
+                  "C4"
+                ],
+                "duracao": 0.25,
+                "ligar": [
+                  "E4"
+                ],
+                "acento": true
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.75
+              },
+              {
+                "notas": [
+                  "G4",
+                  "G3"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "C5",
+                  "C4"
+                ],
+                "duracao": 0.25,
+                "ligar": [
+                  "C5"
+                ],
+                "acento": true
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.75
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Baião.** A célula do baião, na zabumba e no baixo, divide as oito semicolcheias do compasso 2/4 em **3 + 3 + 2**: colcheia pontuada, colcheia pontuada, colcheia. A melodia usa muito o **modo mixolídio** (A06), com a 7ª menor. *Baião*, de Luiz Gonzaga e Humberto Teixeira, apresentou o gênero ao país."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-baiao-baixo",
+            "titulo": "A célula do baião",
+            "legenda": "3 + 3 + 2 semicolcheias, duas vezes.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.75
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.75
+              },
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.75
+              },
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.75
+              },
+              {
+                "notas": [
+                  "G3"
+                ],
+                "duracao": 0.5
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-baiao",
+            "titulo": "Baião",
+            "legenda": "Melodia em Dó mixolídio, com Si♭, no mesmo ritmo da célula.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5",
+                  "C4"
+                ],
+                "duracao": 0.75
+              },
+              {
+                "notas": [
+                  "C5",
+                  "C4"
+                ],
+                "duracao": 0.75
+              },
+              {
+                "notas": [
+                  "Bb4",
+                  "G3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4",
+                  "C4"
+                ],
+                "duracao": 0.75
+              },
+              {
+                "notas": [
+                  "G4",
+                  "C4"
+                ],
+                "duracao": 0.75
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4",
+                  "C4"
+                ],
+                "duracao": 0.75
+              },
+              {
+                "notas": [
+                  "G4",
+                  "C4"
+                ],
+                "duracao": 0.75
+              },
+              {
+                "notas": [
+                  "Bb4",
+                  "G3"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5",
+                  "C4"
+                ],
+                "duracao": 0.75
+              },
+              {
+                "notas": [
+                  "G4",
+                  "C4"
+                ],
+                "duracao": 0.75
+              },
+              {
+                "notas": [
+                  "C5",
+                  "G3"
+                ],
+                "duracao": 0.5
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Bossa nova.** No violão da bossa, o polegar marca os tempos no baixo, e os outros dedos tocam o acorde num desenho que ocupa **dois compassos** de 2/4: 16 semicolcheias divididas em **3 + 3 + 4 + 3 + 3**. Muitos acordes caem antes do tempo, e é isso que dá o balanço."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-batida",
+            "titulo": "O desenho da bossa",
+            "legenda": "Cinco ataques em dois compassos: 3 + 3 + 4 + 3 + 3.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.75
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.25,
+                "ligar": [
+                  "C5"
+                ]
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "C5"
+                ]
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "C5"
+                ]
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.75
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-bossa",
+            "titulo": "Bossa nova",
+            "legenda": "O C7M no desenho da bossa, com o baixo marcando os tempos.",
+            "eventos": [
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4",
+                  "C4"
+                ],
+                "duracao": 0.75,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4",
+                  "C4"
+                ],
+                "duracao": 0.25,
+                "ligar": [
+                  "E4",
+                  "G4",
+                  "B4"
+                ]
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4",
+                  "G3"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "G3"
+                ]
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4",
+                  "G3"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "E4",
+                  "G4",
+                  "B4"
+                ]
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4",
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "C4"
+                ]
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4",
+                  "C4"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "E4",
+                  "G4",
+                  "B4"
+                ]
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4",
+                  "G3"
+                ],
+                "duracao": 0.25,
+                "ligar": [
+                  "G3"
+                ]
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4",
+                  "G3"
+                ],
+                "duracao": 0.75
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: ler uma polirritmia",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja o dois contra três, com o motivo de cada passo.\n\n1. **Ache a menor unidade comum**: três semínimas e duas semínimas pontuadas cabem em **seis colcheias**.\n2. **Marque onde cada camada toca**: o três toca nas colcheias 1, 3 e 5; o dois, nas colcheias 1 e 4.\n3. **Junte as duas camadas**: colcheias 1 (as duas), 3 (grave), 4 (agudo) e 5 (grave)."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que se usa o **6** como unidade comum?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque 6 é o menor número que se divide por 2 e por 3. Para três contra quatro, a unidade comum seria 12.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus, no desenho da bossa: as 16 semicolcheias em 3 + 3 + 4 + 3 + 3. Em que semicolcheias caem os ataques? E quais caem num tempo?\n\nE agora todos os passos são seus: o baião em 3 + 3 + 2, num compasso 2/4. Em que semicolcheias cai cada ataque?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Bossa: semicolcheias 1, 4, 7, 11 e 14. Só a 1 cai num tempo (os tempos são 1, 5, 9 e 13): os outros quatro ataques caem fora do tempo.\n\nBaião: unidade, a semicolcheia (8 por compasso); ataques nas semicolcheias **1, 4 e 7**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"Na hemíola, o compasso muda de 3/4 para 2/4.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A fórmula de compasso **não muda**: continua 3/4. O que muda é onde caem os **apoios**, a cada dois tempos, de modo que dois compassos de 3/4 soam como um de 3/2. É um efeito de acentuação, não uma troca de compasso.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No dois contra três em 3/4, onde cai a segunda nota da camada de dois?",
+      "opcoes": [
+        "No \"e\" do 2º tempo",
+        "No 2º tempo",
+        "No 3º tempo",
+        "No \"e\" do 3º tempo"
+      ],
+      "correta": 0,
+      "explicacao": "Cada nota da camada de dois dura uma semínima e meia: a segunda começa no **\"e\" do 2º tempo**.",
+      "conceito": "polirritmia"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a menor unidade comum para tocar **três contra quatro**?",
+      "opcoes": [
+        "12",
+        "7",
+        "6",
+        "4"
+      ],
+      "correta": 0,
+      "explicacao": "12 é o menor número que se divide por 3 e por 4.",
+      "conceito": "polirritmia"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Quantas notas o agudo toca por compasso?",
+      "exemplo": {
+        "id": "exe-polirritmia",
+        "titulo": "Duas camadas",
+        "legenda": "Duas semínimas pontuadas sobre três semínimas.",
+        "eventos": [
+          {
+            "notas": [
+              "E5",
+              "C4"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "E5"
+            ]
+          },
+          {
+            "notas": [
+              "E5",
+              "C4"
+            ],
+            "duracao": 0.5,
+            "ligar": [
+              "C4"
+            ]
+          },
+          {
+            "notas": [
+              "E5",
+              "C4"
+            ],
+            "duracao": 0.5,
+            "ligar": [
+              "E5"
+            ]
+          },
+          {
+            "notas": [
+              "E5",
+              "C4"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "E5",
+              "C4"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "E5"
+            ]
+          },
+          {
+            "notas": [
+              "E5",
+              "C4"
+            ],
+            "duracao": 0.5,
+            "ligar": [
+              "C4"
+            ]
+          },
+          {
+            "notas": [
+              "E5",
+              "C4"
+            ],
+            "duracao": 0.5,
+            "ligar": [
+              "E5"
+            ]
+          },
+          {
+            "notas": [
+              "E5",
+              "C4"
+            ],
+            "duracao": 1.0
+          }
+        ],
+        "compasso": "3/4",
+        "andamento": 72
+      },
+      "opcoes": [
+        "Duas, contra três do grave",
+        "Três, como o grave",
+        "Quatro"
+      ],
+      "correta": 0,
+      "explicacao": "O agudo toca **duas** notas por compasso contra **três** do grave: dois contra três.",
+      "conceito": "percepcao-ritmo-avancado"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na **hemíola**, dois compassos de 3/4 soam como:",
+      "opcoes": [
+        "Um compasso de 3/2",
+        "Três compassos de 2/4",
+        "Um compasso de 6/8",
+        "Um compasso de 4/4"
+      ],
+      "correta": 0,
+      "explicacao": "Seis tempos com apoio a cada dois: **três mínimas**, como um compasso de **3/2**.",
+      "conceito": "hemiola"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Em que compassos aparece a hemíola?",
+      "exemplo": {
+        "id": "exe-hemiola",
+        "titulo": "Frase em 3/4",
+        "legenda": "Hemíola no 2º e 3º compassos.",
+        "eventos": [
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "acento": true
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F5"
+            ],
+            "duracao": 2,
+            "acento": true
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 1,
+            "acento": true,
+            "ligada": true
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 2,
+            "acento": true
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 3,
+            "acento": true
+          }
+        ],
+        "compasso": "3/4",
+        "andamento": 96
+      },
+      "opcoes": [
+        "No 2º e no 3º",
+        "No 1º e no 2º",
+        "Só no último",
+        "Em nenhum"
+      ],
+      "correta": 0,
+      "explicacao": "No **2º e 3º** compassos, os apoios caem a cada dois tempos: Fá, Mi, Ré.",
+      "conceito": "percepcao-ritmo-avancado"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Um 7/8 escrito como semínima pontuada, semínima, semínima. Qual é o agrupamento?",
+      "opcoes": [
+        "3 + 2 + 2",
+        "2 + 2 + 3",
+        "2 + 3 + 2",
+        "4 + 3"
+      ],
+      "correta": 0,
+      "explicacao": "Semínima pontuada vale 3 colcheias, e cada semínima, 2: **3 + 2 + 2**.",
+      "conceito": "metrica-mista"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Um trecho a 60 por minuto termina em tercinas. Se a colcheia de tercina virar a nova colcheia, qual é o novo andamento?",
+      "opcoes": [
+        "90",
+        "120",
+        "40",
+        "180"
+      ],
+      "correta": 0,
+      "explicacao": "3 tercinas por tempo viram 2 colcheias por tempo: 60 × 3/2 = **90**.",
+      "conceito": "modulacao-metrica"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na modulação métrica, o que acontece com o andamento?",
+      "opcoes": [
+        "Muda, a partir de uma duração que fica igual",
+        "Fica sempre igual",
+        "Para",
+        "Muda ao acaso"
+      ],
+      "correta": 0,
+      "explicacao": "Uma duração do trecho antigo vira outra no novo, e o **pulso muda** sem quebra.",
+      "conceito": "modulacao-metrica"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No samba em 2/4, qual é o tempo mais forte, marcado pelo surdo de primeira?",
+      "opcoes": [
+        "O segundo",
+        "O primeiro",
+        "O \"e\" do primeiro",
+        "Nenhum"
+      ],
+      "correta": 0,
+      "explicacao": "No samba, o surdo de primeira bate no **segundo tempo**.",
+      "conceito": "ritmos-brasileiros"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Como a célula do baião divide as oito semicolcheias do 2/4?",
+      "opcoes": [
+        "3 + 3 + 2",
+        "2 + 2 + 2 + 2",
+        "4 + 4",
+        "3 + 2 + 3"
+      ],
+      "correta": 0,
+      "explicacao": "Colcheia pontuada, colcheia pontuada, colcheia: **3 + 3 + 2**.",
+      "conceito": "ritmos-brasileiros"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O desenho da batida da bossa nova ocupa quantos compassos de 2/4?",
+      "opcoes": [
+        "Dois",
+        "Um",
+        "Três",
+        "Quatro"
+      ],
+      "correta": 0,
+      "explicacao": "São 16 semicolcheias em 3 + 3 + 4 + 3 + 3: **dois compassos** de 2/4.",
+      "conceito": "ritmos-brasileiros"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça e diga qual é o ritmo.",
+      "exemplo": {
+        "id": "exe-ritmo",
+        "titulo": "Ritmo brasileiro",
+        "legenda": "Baião: 3 + 3 + 2.",
+        "eventos": [
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 0.75
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 0.75
+          },
+          {
+            "notas": [
+              "G3"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 0.75
+          },
+          {
+            "notas": [
+              "C4"
+            ],
+            "duracao": 0.75
+          },
+          {
+            "notas": [
+              "G3"
+            ],
+            "duracao": 0.5
+          }
+        ],
+        "compasso": "2/4",
+        "andamento": 88
+      },
+      "opcoes": [
+        "Baião",
+        "Bossa nova",
+        "Samba"
+      ],
+      "correta": 0,
+      "explicacao": "Dois ataques longos e um curto em cada compasso, **3 + 3 + 2**: a célula do **baião**.",
+      "conceito": "percepcao-ritmo-avancado"
+    }
+  ],
+  "resumo": [
+    "**Polirritmia**: divisões diferentes ao mesmo tempo. Dois contra três em 3/4: unidade comum de 6 colcheias.",
+    "**Hemíola**: dois compassos de 3/4 que soam como um de 3/2.",
+    "**Métrica mista**: agrupamentos diferentes (2 + 2 + 3, 3 + 2 + 2) ou fórmulas que se alternam.",
+    "**Modulação métrica**: uma duração do trecho antigo vira outra no novo, e o andamento muda.",
+    "Samba: forte no **2º tempo**. Baião: **3 + 3 + 2**. Bossa: **3 + 3 + 4 + 3 + 3** em dois compassos."
+  ],
+  "pergunta_para_chat": "Me passe ritmos curtos por escrito, um de cada vez, com polirritmias, métricas mistas e células brasileiras, para eu contar as subdivisões e dizer onde cai cada ataque, e me corrija."
+}
