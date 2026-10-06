@@ -50,7 +50,9 @@ Formato:
   "ligar" (só algumas notas do acorde, como no retardo), "staccato", "expressao" e "forquilha" nos eventos quando ajudar.
 - Em aulas de violão ("assunto": "violao"), as notas seguem a escrita do violão (uma oitava acima do som);
   use "tablatura": true no exemplo para mostrar a tablatura, e o bloco "acorde" (cifra, casas da 6ª à 1ª
-  corda com -1 para não tocar e 0 para solta, dedos e pestana) para os diagramas.
+  corda com -1 para não tocar e 0 para solta, dedos e pestana) para os diagramas. O evento aceita "cifra"
+  ("G", "D7"), escrita acima da pauta; num acorde batido as notas precisam formar a cifra. Para a direção da
+  batida, use "silaba" com "↓" ou "↑".
 - Inclua de 8 a 14 exercícios misturando os tipos pedidos no módulo.
 - O aluno escolhe piano ou violão: os blocos e exercícios de teclado viram um braço de violão. Escreva os
   enunciados sem depender do instrumento ("clique na nota") e mantenha essas notas entre E3 e E6.

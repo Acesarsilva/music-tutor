@@ -628,7 +628,8 @@
   "resumo": [
     "Diagrama: braço em pé, **6ª corda à esquerda**; número na bolinha = dedo; ○ solta, × não toca.",
     "Tablatura: **linha de cima = 1ª corda**; número = casa; 0 = solta.",
-    "O ritmo vem da pauta, por isso tablatura e partitura costumam vir juntas."
+    "O ritmo vem da pauta, por isso tablatura e partitura costumam vir juntas.",
+    "Para ler os dois, ache primeiro a **corda** e depois a **casa**."
   ],
   "pergunta_para_chat": "Me mande trechos curtos de tablatura, um de cada vez, para eu dizer as notas, e me corrija."
 }

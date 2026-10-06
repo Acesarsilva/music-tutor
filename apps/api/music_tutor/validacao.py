@@ -106,6 +106,18 @@ def _compilar_exemplo(ex: Exemplo, onde: str, r: Resultado) -> None:
                 if teoria.midi(afirmado.de) not in presentes or teoria.midi(afirmado.para) not in presentes:
                     r.erros.append(f"{onde}.intervalo: as notas {afirmado.de} e {afirmado.para} não estão no exemplo")
 
+    for k, ev in enumerate(ex.eventos):
+        if ev.cifra is None:
+            continue
+        try:
+            # Acorde batido (três notas ou mais) precisa formar a cifra; numa melodia, a cifra só precisa existir.
+            teoria.classes_da_cifra(ev.cifra)
+            erro = teoria.conferir_cifra(ev.cifra, ev.notas) if len(ev.notas) >= 3 else None
+        except teoria.ErroTeoria as e:
+            erro = str(e)
+        if erro:
+            r.erros.append(f"{onde}.eventos[{k}].cifra: {erro}")
+
     aberta = False
     for k, ev in enumerate(ex.eventos):
         if ev.expressao == "inicio":

@@ -1,0 +1,1241 @@
+{
+  "codigo": "VI05",
+  "assunto": "violao",
+  "titulo": "Acordes maiores abertos: C, G, D e A",
+  "nivel": "iniciante",
+  "resumo_curto": "Quatro acordes maiores, a corda certa para começar cada batida e as progressões I, IV, V em Sol e em Ré.",
+  "prerequisitos": [
+    "Primeiros acordes (VI04)",
+    "Campo harmônico maior (I14)"
+  ],
+  "objetivos": [
+    "Montar **C**, **G**, **D** e **A**",
+    "Começar a batida na **corda do baixo** certa",
+    "Trocar de **G** para **C** aproveitando o desenho",
+    "Tocar **I, IV, V, I** em Sol e em Ré"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. No diagrama, o que quer dizer o × em cima de uma corda?\n2. Quais são as notas do acorde de Ré maior (D)?\n3. Em Sol maior, quais são os acordes I, IV e V?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. A corda não toca.\n2. Ré, Fá♯, Lá.\n3. G (I), C (IV) e D (V).",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Quatro acordes",
+            "legenda": "Ouça a sequência inteira. O último acorde soa como volta para casa?",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "D"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "São **G, C, D e G**: o I, o IV, o V e de novo o I de Sol maior, o campo harmônico da I14 na mão. Com eles e com o **A**, você toca centenas de músicas.\n\nAo final, você vai montar C, G, D e A, saber em que corda começa a batida de cada um e tocar progressões no pulso."
+        }
+      ]
+    },
+    {
+      "titulo": "C: Dó maior",
+      "blocos": [
+        {
+          "tipo": "acorde",
+          "cifra": "C",
+          "casas": [
+            -1,
+            3,
+            2,
+            0,
+            1,
+            0
+          ],
+          "legenda": "C: dedo 3 na 5ª corda (casa 3), dedo 2 na 4ª (casa 2), dedo 1 na 2ª (casa 1). A 6ª corda não toca.",
+          "dedos": [
+            0,
+            3,
+            2,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Os três dedos fazem uma **escadinha**: casa 3, casa 2, casa 1, descendo do grave para o agudo. Notas, da 5ª corda à 1ª: **Dó, Mi, Sol, Dó, Mi**.\n\nO mais difícil é a 3ª corda: ela fica **solta**, entre dois dedos presos. Arqueie bem o dedo 2 para não encostar nela."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-arpejo-c",
+            "titulo": "C corda por corda",
+            "legenda": "Da 5ª à 1ª: confira se a 3ª corda solta soa inteira.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 72,
+            "tablatura": true
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "G: Sol maior",
+      "blocos": [
+        {
+          "tipo": "acorde",
+          "cifra": "G",
+          "casas": [
+            3,
+            2,
+            0,
+            0,
+            0,
+            3
+          ],
+          "legenda": "G: dedo 3 na 6ª corda (casa 3), dedo 2 na 5ª (casa 2), dedo 4 na 1ª (casa 3). Toque as seis cordas.",
+          "dedos": [
+            3,
+            2,
+            0,
+            0,
+            0,
+            4
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O G usa as **seis cordas**, com três delas soltas no meio. Notas, da 6ª à 1ª: **Sol, Si, Ré, Sol, Si, Sol**.\n\nCompare com o C: no G, os dedos **3 e 2** fazem o mesmo desenho do C (casa 3 e casa 2 em cordas vizinhas), só que uma corda acima. Por isso, para ir do G ao C, os dois descem juntos uma corda, e o dedo 1 entra na 2ª corda."
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Muita gente faz o G com os dedos 2, 1 e 3. Funciona, mas com 3, 2 e 4 a troca para o C fica mais curta."
+        }
+      ]
+    },
+    {
+      "titulo": "D: Ré maior",
+      "blocos": [
+        {
+          "tipo": "acorde",
+          "cifra": "D",
+          "casas": [
+            -1,
+            -1,
+            0,
+            2,
+            3,
+            2
+          ],
+          "legenda": "D: dedo 1 na 3ª corda (casa 2), dedo 3 na 2ª (casa 3), dedo 2 na 1ª (casa 2). A 6ª e a 5ª cordas não tocam.",
+          "dedos": [
+            0,
+            0,
+            0,
+            1,
+            3,
+            2
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Os dedos formam um **triângulo** nas três cordas mais agudas. Notas, da 4ª corda à 1ª: **Ré, Lá, Ré, Fá♯**.\n\nO D tem só **quatro** cordas: a batida começa na **4ª**, que é o Ré solto."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-arpejo-d",
+            "titulo": "D corda por corda",
+            "legenda": "Da 4ª à 1ª: a nota mais grave é o Ré.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F#5"
+                ],
+                "duracao": 2.5
+              }
+            ],
+            "andamento": 72,
+            "tablatura": true
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "A: Lá maior",
+      "blocos": [
+        {
+          "tipo": "acorde",
+          "cifra": "A",
+          "casas": [
+            -1,
+            0,
+            2,
+            2,
+            2,
+            0
+          ],
+          "legenda": "A: dedos 1, 2 e 3 na casa 2, na 4ª, na 3ª e na 2ª corda. A 6ª corda não toca.",
+          "dedos": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            0
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Três dedos lado a lado na **mesma casa**, apertados. Notas, da 5ª corda à 1ª: **Lá, Mi, Lá, Dó♯, Mi**.\n\nSe a 1ª corda abafar, é o dedo 3 deitando sobre ela: aperte com a ponta, um pouco atrás dos outros dois."
+        }
+      ]
+    },
+    {
+      "titulo": "Em que corda começa a batida",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A nota mais grave de cada acorde deve ser a **fundamental**, a nota que dá nome a ele. Por isso cada acorde começa numa corda diferente."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Onde começa a batida",
+          "cabecalho": [
+            "Acorde",
+            "Notas",
+            "Primeira corda",
+            "Nota mais grave"
+          ],
+          "linhas": [
+            [
+              "C",
+              "Dó, Mi, Sol",
+              "5ª",
+              "Dó (casa 3)"
+            ],
+            [
+              "G",
+              "Sol, Si, Ré",
+              "6ª",
+              "Sol (casa 3)"
+            ],
+            [
+              "D",
+              "Ré, Fá♯, Lá",
+              "4ª",
+              "Ré (solta)"
+            ],
+            [
+              "A",
+              "Lá, Dó♯, Mi",
+              "5ª",
+              "Lá (solta)"
+            ]
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Comece a batida com a mão direita já na corda certa, sem passar pelas de cima."
+        }
+      ]
+    },
+    {
+      "titulo": "Duas progressões",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Toque quatro batidas para baixo em cada acorde e troque no **1** do compasso seguinte. A primeira progressão é em **Sol maior**; a segunda, em **Ré maior**, com o A no lugar do D."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sol",
+            "titulo": "G, C, D, G",
+            "legenda": "I, IV, V, I em Sol maior.",
+            "eventos": [
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "D"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-re",
+            "titulo": "D, G, A, D",
+            "legenda": "I, IV, V, I em Ré maior. O mesmo caminho, outros acordes.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "D"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "A"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "D"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "Comece com o andamento em 50% no controle lá em cima e toque junto. Aumente só quando as trocas saírem sem parar."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: achar a corda do baixo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como descobrir onde começa a batida do **C**, com o motivo de cada passo.\n\n1. **Ache a fundamental**: o acorde é C, então a fundamental é **Dó**.\n2. **Procure o Dó mais grave do desenho**: na 5ª corda, casa 3.\n3. **Confira as cordas mais graves que ele**: a 6ª corda solta é Mi; ela leva ×.\n4. **Comece a batida na 5ª corda.**"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** o Mi faz parte do C. Por que, então, a 6ª corda não toca?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque o Mi ficaria no **baixo**, abaixo do Dó. O acorde ainda seria C, mas invertido, com som menos firme. Com a fundamental embaixo, ele soa mais estável.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu: no **A**, a fundamental Lá está na 5ª corda solta e a 6ª é Mi. Onde começa a batida?\n\nE agora todos os passos são seus: no **D**, onde começa a batida?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A: na **5ª corda**; a 6ª leva ×.\n\nD: a fundamental é Ré, que está na **4ª corda solta**. A 5ª é Lá e a 6ª é Mi, as duas mais graves: ficam fora, e a batida começa na 4ª.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"No D eu bato as seis cordas, porque assim o acorde fica mais cheio.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "A 6ª corda solta é **Mi**, que **não** está no D (Ré, Fá♯, Lá): é uma nota estranha ao acorde, e no grave ela aparece muito. A 5ª solta é Lá, que é do acorde, mas tira o Ré do baixo. Por isso o D começa na **4ª corda**.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No C, qual corda fica **solta** entre dois dedos presos?",
+      "opcoes": [
+        "A 3ª",
+        "A 1ª",
+        "A 4ª",
+        "A 6ª"
+      ],
+      "correta": 0,
+      "explicacao": "C: dedos na 5ª, 4ª e 2ª cordas; a **3ª** fica solta no meio. Arqueie o dedo 2 para ela soar.",
+      "conceito": "acorde-c"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em que corda começa a batida do D?",
+      "opcoes": [
+        "Na 4ª",
+        "Na 6ª",
+        "Na 5ª",
+        "Na 3ª"
+      ],
+      "correta": 0,
+      "explicacao": "O D começa na **4ª corda**, o Ré solto. A 6ª é Mi, que não é do acorde; a 5ª tiraria o Ré do baixo.",
+      "conceito": "corda-do-baixo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas cordas tocam no G?",
+      "opcoes": [
+        "Seis",
+        "Cinco",
+        "Quatro",
+        "Três"
+      ],
+      "correta": 0,
+      "explicacao": "O G usa as **seis** cordas, com o Sol da casa 3 da 6ª corda no baixo.",
+      "conceito": "acorde-g"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. A sequência termina em repouso ou em suspense?",
+      "exemplo": {
+        "id": "exe-suspense",
+        "titulo": "Três acordes",
+        "legenda": "G, C e D: termina no V, pedindo a volta ao G.",
+        "eventos": [
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "G4",
+              "B4",
+              "G5"
+            ],
+            "duracao": 1,
+            "cifra": "G"
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "G4",
+              "B4",
+              "G5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "G4",
+              "B4",
+              "G5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G3",
+              "B3",
+              "D4",
+              "G4",
+              "B4",
+              "G5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1,
+            "cifra": "C"
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1,
+            "cifra": "D"
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Suspense: falta voltar",
+        "Repouso: está terminada"
+      ],
+      "correta": 0,
+      "explicacao": "Termina no **D**, o V de Sol maior, que pede a volta ao G. O repouso vem no I.",
+      "conceito": "progressao-i-iv-v"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No A, como ficam os dedos 1, 2 e 3?",
+      "opcoes": [
+        "Na casa 2, na 4ª, na 3ª e na 2ª corda",
+        "Em escadinha nas casas 3, 2 e 1",
+        "Em triângulo nas três cordas agudas",
+        "Na casa 2, na 6ª, na 5ª e na 4ª corda"
+      ],
+      "correta": 0,
+      "explicacao": "No A, os três dedos ficam lado a lado na **casa 2**. A escadinha é o C; o triângulo, o D.",
+      "conceito": "acorde-a"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Do G para o C, o que fazem os dedos 3 e 2?",
+      "opcoes": [
+        "Descem uma corda juntos",
+        "Trocam de lugar",
+        "Ficam parados",
+        "Sobem uma casa"
+      ],
+      "correta": 0,
+      "explicacao": "O desenho dos dedos 3 e 2 é o mesmo nos dois acordes; ele **desce uma corda**, e o dedo 1 entra.",
+      "conceito": "acorde-g"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Ré maior, qual acorde faz o papel de V?",
+      "opcoes": [
+        "A",
+        "G",
+        "D",
+        "E"
+      ],
+      "correta": 0,
+      "explicacao": "Em Ré maior, I = D, IV = G, **V = A**.",
+      "conceito": "progressao-i-iv-v"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça dois acordes. O segundo é maior ou menor?",
+      "exemplo": {
+        "id": "exe-am-a",
+        "titulo": "Dois acordes",
+        "legenda": "Am e depois A.",
+        "eventos": [
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1,
+            "cifra": "Am"
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C#5",
+              "E5"
+            ],
+            "duracao": 1,
+            "cifra": "A"
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C#5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C#5",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A3",
+              "E4",
+              "A4",
+              "C#5",
+              "E5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Maior",
+        "Menor"
+      ],
+      "correta": 0,
+      "explicacao": "O segundo é o **A**, maior: o Dó da 2ª corda subiu para Dó♯.",
+      "conceito": "acorde-a"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a nota mais grave do C, tocado do jeito certo?",
+      "opcoes": [
+        "Dó",
+        "Mi",
+        "Sol",
+        "Lá"
+      ],
+      "correta": 0,
+      "explicacao": "A batida começa na 5ª corda, casa 3: **Dó**, a fundamental. Se saiu Mi, a 6ª corda tocou.",
+      "conceito": "corda-do-baixo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No D, onde fica o dedo 3?",
+      "opcoes": [
+        "2ª corda, casa 3",
+        "1ª corda, casa 2",
+        "3ª corda, casa 2",
+        "5ª corda, casa 3"
+      ],
+      "correta": 0,
+      "explicacao": "D: dedo 1 na 3ª corda (casa 2), **dedo 3 na 2ª (casa 3)**, dedo 2 na 1ª (casa 2). A 5ª corda, casa 3, é do C.",
+      "conceito": "acorde-d"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Recordando a VI04: no Am, qual corda não toca?",
+      "opcoes": [
+        "A 6ª",
+        "A 5ª",
+        "A 1ª",
+        "Nenhuma"
+      ],
+      "correta": 0,
+      "explicacao": "No Am, a 6ª corda leva ×; a batida começa no Lá da 5ª corda solta.",
+      "conceito": "corda-do-baixo"
+    }
+  ],
+  "resumo": [
+    "**C**: escadinha nas casas 3, 2 e 1, sem a 6ª corda. **G**: dedos 3, 2 e 4, seis cordas.",
+    "**D**: triângulo nas três cordas agudas, a partir da 4ª. **A**: três dedos na casa 2, a partir da 5ª.",
+    "A batida começa na corda da **fundamental**: 6ª no G, 5ª no C e no A, 4ª no D.",
+    "G para C: os dedos 3 e 2 descem uma corda juntos.",
+    "Em Sol maior, G, C e D são I, IV e V; em Ré maior, D, G e A."
+  ],
+  "pergunta_para_chat": "Vou tocar G, C, D e A e te contar onde travo (corda abafada, troca lenta); me ajude a achar a causa e monte um treino de dez minutos."
+}

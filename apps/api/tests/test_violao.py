@@ -72,3 +72,23 @@ def test_aula_de_violao_abre_no_violao_com_diagrama():
     assert 'data-tocar-acorde="a-0-0"' in html
     assert 'id="timbre-violao" data-timbre="violao" aria-pressed="true"' in html
     assert "Violão · Iniciante" in html
+
+
+def test_cifra_sobre_a_pauta():
+    eventos = [{"notas": ["C4", "E4", "G4"], "duracao": 2, "cifra": "C"}, {"notas": ["B3"], "duracao": 2, "cifra": "G7"}]
+    abc = teoria.eventos_para_abc(eventos)
+    assert '"C"[CEG]2 "G7"B,2' in abc
+    assert teoria.alturas_do_abc(abc) == [[60, 64, 67], [59]]
+
+
+def test_cifra_do_acorde_batido_e_conferida():
+    def exemplo(cifra, notas):
+        return {"tipo": "exemplo", "exemplo": {"id": "ex", "titulo": "t", "legenda": "l",
+                                               "eventos": [{"notas": notas, "duracao": 4, "cifra": cifra}]}}
+
+    assert validar_aula(_aula([exemplo("C", ["C4", "E4", "G4"])])).ok
+    erros = validar_aula(_aula([exemplo("Am", ["C4", "E4", "G4"])])).erros
+    assert any("cifra" in e for e in erros)
+    # Numa melodia, a nota não precisa ser do acorde; a cifra só precisa ser reconhecida.
+    assert validar_aula(_aula([exemplo("G7", ["A4"])])).ok
+    assert not validar_aula(_aula([exemplo("Xyz", ["A4"])])).ok

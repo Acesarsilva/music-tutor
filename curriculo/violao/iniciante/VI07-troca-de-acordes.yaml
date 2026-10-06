@@ -1,0 +1,29 @@
+codigo: VI07
+titulo: "Troca de acordes sem parar o pulso"
+nivel: iniciante
+assunto: violao
+prerequisitos:
+  - VI06  # Acordes menores abertos
+  - I05   # Pulso e compasso
+objetivos:
+  - Achar o dedo que fica parado entre dois acordes e usá-lo como apoio
+  - Mover o desenho inteiro quando dois acordes têm o mesmo formato em cordas vizinhas
+  - Antecipar a troca soltando os dedos no último meio tempo do compasso
+  - Trocar de acorde a cada dois tempos sem perder o pulso
+  - Acompanhar uma cantiga lendo a cifra sobre a melodia
+conceitos:
+  - dedo-comum
+  - desenho-que-se-move
+  - troca-antecipada
+  - pulso-constante
+  - cifra-sobre-a-melodia
+fora_do_escopo:
+  - Batidas com movimento para cima (módulo VI08)
+  - Dedilhado (módulo VI09)
+exemplos_semente:
+  - "C e Am: os dedos 1 e 2 não saem do lugar"
+  - "E para Am: o mesmo desenho desce uma corda"
+  - "Última batida com as cordas soltas enquanto os dedos vão para o acorde seguinte"
+exercicios:
+  - multipla_escolha
+  - percepcao

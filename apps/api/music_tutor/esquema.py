@@ -36,6 +36,11 @@ class Evento(BaseModel):
         None,
         description='Forquilha de crescendo ou diminuendo que começa nesta nota; "fim" a encerra numa nota que traz a dinâmica de chegada.',
     )
+    cifra: Optional[str] = Field(
+        None,
+        description='Cifra escrita acima da pauta a partir desta nota ("C", "Am", "G7"). Num evento de três ou mais '
+        "notas, as notas precisam formar a cifra.",
+    )
 
 
 class IntervaloAfirmado(BaseModel):

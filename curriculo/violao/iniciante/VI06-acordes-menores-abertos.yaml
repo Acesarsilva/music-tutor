@@ -1,0 +1,30 @@
+codigo: VI06
+titulo: "Acordes menores abertos e o par maior e menor"
+nivel: iniciante
+assunto: violao
+prerequisitos:
+  - VI05  # Acordes maiores abertos
+  - I11   # Escalas menores e relativas
+objetivos:
+  - Montar o acorde Dm
+  - Ver que, de maior para menor, só a 3ª do acorde desce uma casa
+  - Encontrar no braço a corda que leva a 3ª de E, A e D
+  - Ligar cada acorde maior ao seu relativo menor (C e Am, G e Em)
+  - Tocar progressões em Lá menor e em Dó maior com acordes menores
+conceitos:
+  - acorde-dm
+  - terca-no-braco
+  - par-maior-menor
+  - relativo-menor
+  - progressao-com-menores
+  - percepcao-maior-menor
+fora_do_escopo:
+  - Acordes com sétima (módulo VI10)
+  - Acordes com pestana, como F e Bm (módulo VI12)
+exemplos_semente:
+  - "D para Dm: o Fá♯ da 1ª corda desce para Fá"
+  - "A e Am, E e Em: a mesma regra em outra corda"
+  - "Am, Dm, E, Am: i, iv, V, i em Lá menor"
+exercicios:
+  - multipla_escolha
+  - percepcao
