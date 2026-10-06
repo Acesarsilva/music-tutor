@@ -1,0 +1,32 @@
+codigo: A14
+titulo: Análise harmônica completa
+nivel: avancado
+assunto: teoria
+prerequisitos:
+  - M14  # Dominantes secundárias
+  - A03  # Empréstimo modal
+  - A04  # Substituição tritonal e rearmonização
+  - A11  # Formas avançadas
+objetivos:
+  - Seguir um método de análise em passos, da tonalidade e da forma até cada acorde
+  - Dar a cada acorde um grau e uma função, inclusive aos cromáticos
+  - Explicar dominantes secundárias, II–V secundários, empréstimo modal e SubV dentro de uma mesma peça
+  - Relacionar a melodia com a harmonia, nomeando as tensões e as linhas cromáticas
+  - Separar acordes cromáticos de uma modulação de verdade
+conceitos:
+  - metodo-de-analise
+  - graus-e-funcoes
+  - acordes-cromaticos
+  - melodia-e-harmonia
+  - frases-e-cadencias
+  - percepcao-analise
+fora_do_escopo:
+  - Análise schenkeriana e de redução
+  - Análise de peças atonais (módulo A13, só as noções)
+exemplos_semente:
+  - "Peça original de nove compassos em Dó maior com V7/VI, II–V para o IV, IVm6, V7/II e SubV7"
+  - "Linha cromática Si, Si bemol, Lá, Lá bemol, Sol na voz de cima"
+  - "Dm7, G7, C7M comparado com Dm7, Db7, C7M"
+exercicios:
+  - multipla_escolha
+  - percepcao

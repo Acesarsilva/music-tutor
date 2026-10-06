@@ -1,0 +1,1605 @@
+{
+  "codigo": "A15",
+  "titulo": "Técnicas de composição",
+  "nivel": "avancado",
+  "resumo_curto": "Desenvolvimento do motivo, construção e harmonização da melodia e prosódia.",
+  "prerequisitos": [
+    "Notas melódicas (M15)",
+    "Forma musical básica (M16)",
+    "Análise harmônica completa (A14)"
+  ],
+  "objetivos": [
+    "**Desenvolver** um motivo",
+    "Construir uma melodia com **ponto culminante**",
+    "Escrever um **período** a partir de um motivo",
+    "**Harmonizar** uma melodia",
+    "Acertar a **prosódia**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. O que é uma sequência de um motivo?\n2. Num período, como termina o antecedente? E o consequente?\n3. Numa série dodecafônica, o que é a forma retrógrada?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. O mesmo desenho começando noutra altura.\n2. O antecedente fica aberto, em geral no V; o consequente fecha no I.\n3. A série de trás para frente.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "Quatro notas",
+            "legenda": "Um motivo: Dó, Ré, Mi, Sol.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "Oito compassos",
+            "legenda": "Uma melodia inteira feita só com esse motivo e com o que se faz com ele.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 4
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C6"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E6"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D6"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "B5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C6"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A melodia inteira nasce das quatro notas do começo. Compor bem não depende de ter muitas ideias, mas de **trabalhar** poucas ideias até o fim.\n\nAo final, você vai desenvolver um motivo, construir e harmonizar uma melodia e acertar a prosódia com a letra."
+        }
+      ]
+    },
+    {
+      "titulo": "Desenvolvimento do motivo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "As técnicas mais usadas para transformar um motivo:\n\n- **sequência**: o mesmo desenho noutra altura;\n- **inversão**: os intervalos trocam de direção (o que subia, desce);\n- **retrogradação**: de trás para frente;\n- **aumentação** e **diminuição**: as mesmas notas com durações dobradas ou pela metade;\n- **fragmentação**: só um pedaço do motivo, trabalhado sozinho.\n\nAs técnicas de série que você viu no A13 vêm daqui: o motivo é uma pequena série."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-sequencia",
+            "titulo": "Sequência",
+            "legenda": "Um grau acima: Ré, Mi, Fá, Lá.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-inversao",
+            "titulo": "Inversão",
+            "legenda": "Dentro de Dó maior: Dó, Si, Lá, Fá.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-retrogrado",
+            "titulo": "Retrogradação",
+            "legenda": "Sol, Mi, Ré, Dó, com o ritmo também de trás para frente.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-aumentacao",
+            "titulo": "Aumentação",
+            "legenda": "As mesmas notas com o dobro da duração.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-diminuicao",
+            "titulo": "Diminuição",
+            "legenda": "Pela metade, duas vezes.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.25
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 96
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-fragmentacao",
+            "titulo": "Fragmentação",
+            "legenda": "Só o fim do motivo (um passo e um salto), em sequência subindo.",
+            "eventos": [
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "B5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C6"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 96
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Construir a melodia",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Uma melodia bem construída costuma ter:\n\n- **um ponto culminante**: a nota mais aguda aparece **uma vez**, perto do fim (em geral entre 2/3 e 3/4 da melodia);\n- **equilíbrio entre graus e saltos**: depois de um salto grande, a melodia volta por grau, no sentido contrário;\n- **forma**: frases com cadências, como o período (M16).\n\nNa melodia da abertura: compassos 1 e 2 são o motivo e a sequência; 3 é uma fragmentação; 4 para no Sol (meia cadência). O consequente volta ao motivo, sobe até o **Mi agudo do compasso 6**, o ponto culminante, e desce até o Dó."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-dois-culmes",
+            "titulo": "Um problema",
+            "legenda": "A mesma nota mais aguda três vezes: a melodia não tem para onde ir.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 96
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Harmonizar a melodia",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Para harmonizar, olhe as notas dos **tempos fortes**: o acorde deve contê-las. As notas dos tempos fracos podem ser notas melódicas (M15).\n\n1. Liste as notas fortes de cada meio compasso.\n2. Escolha um acorde do campo que tenha essas notas.\n3. Nas cadências, use o que a forma pede: V no fim do antecedente, V–I no fim do consequente.\n4. Prefira uma harmonia que **ande**, sem repetir o mesmo acorde por muito tempo."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "A harmonização da melodia da abertura.",
+          "cabecalho": [
+            "Compasso",
+            "Notas fortes",
+            "Acordes"
+          ],
+          "linhas": [
+            [
+              "1",
+              "Dó, Sol",
+              "C"
+            ],
+            [
+              "2",
+              "Ré, Lá",
+              "Dm"
+            ],
+            [
+              "3",
+              "Mi, Sol / Fá, Lá",
+              "C, F"
+            ],
+            [
+              "4",
+              "Sol",
+              "G"
+            ],
+            [
+              "5",
+              "Dó, Sol",
+              "C"
+            ],
+            [
+              "6",
+              "Lá, Mi",
+              "Am"
+            ],
+            [
+              "7",
+              "Ré / Si, Sol",
+              "Dm7, G7"
+            ],
+            [
+              "8",
+              "Dó",
+              "C"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-harmonizada",
+            "titulo": "A melodia harmonizada",
+            "legenda": "Os acordes da tabela, tocados no 1º e no 3º tempo de cada compasso.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G5",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "G5"
+                ]
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5",
+                  "D4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A5",
+                  "D4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "A5"
+                ]
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ]
+              },
+              {
+                "notas": [
+                  "F5",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "F5",
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "ligar": [
+                  "C4",
+                  "F4",
+                  "A4"
+                ]
+              },
+              {
+                "notas": [
+                  "G5",
+                  "C4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "G5",
+                  "B3",
+                  "D4",
+                  "G4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "G5"
+                ]
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "G5"
+                ]
+              },
+              {
+                "notas": [
+                  "G5",
+                  "B3",
+                  "D4",
+                  "G4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "G5"
+                ]
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C5",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "G5",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "G5"
+                ]
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "A5",
+                  "A3",
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "B5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "C6"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "E6",
+                  "A3",
+                  "C4",
+                  "E4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "E6"
+                ]
+              },
+              {
+                "notas": [
+                  "E6"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "D6",
+                  "D4",
+                  "F4",
+                  "C5"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "D6"
+                ]
+              },
+              {
+                "notas": [
+                  "D6"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "B5",
+                  "B3",
+                  "F4",
+                  "G4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C6",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C6"
+                ]
+              },
+              {
+                "notas": [
+                  "C6"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C6"
+                ]
+              },
+              {
+                "notas": [
+                  "C6",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C6"
+                ]
+              },
+              {
+                "notas": [
+                  "C6"
+                ],
+                "duracao": 1.0
+              }
+            ],
+            "andamento": 96
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Prosódia: letra e melodia",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na canção, a **prosódia** é o casamento da letra com a música. A regra principal: a **sílaba tônica** da palavra cai no **tempo forte** (ou numa nota mais longa ou mais aguda). Quando a tônica cai no tempo fraco, a palavra soa errada, como se fosse dita com o acento trocado.\n\nVeja com **sabiá cantou**: as tônicas são **á** (sa-bi-**á**) e **tou** (can-**tou**)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-prosodia-certa",
+            "titulo": "Prosódia certa",
+            "legenda": "\"sa-bi\" de anacruse; \"á\" e \"tou\" nos tempos fortes.",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 0.5,
+                "silaba": "sa"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "bi"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1,
+                "silaba": "á"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1,
+                "silaba": "can"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2,
+                "silaba": "tou"
+              }
+            ],
+            "compasso": "2/4",
+            "anacruse": 1,
+            "andamento": 80
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-prosodia-errada",
+            "titulo": "Prosódia errada",
+            "legenda": "\"sa\" e \"can\" nos tempos fortes: soa \"SÁ-bia, CAN-tou\".",
+            "eventos": [
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1,
+                "silaba": "sa"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5,
+                "silaba": "bi"
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 0.5,
+                "silaba": "á"
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 2,
+                "silaba": "can"
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 2,
+                "silaba": "tou"
+              }
+            ],
+            "compasso": "2/4",
+            "andamento": 80
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: compor um período",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como a melodia da abertura foi feita, com o motivo de cada passo.\n\n1. **Escolha um motivo** curto, com um ritmo marcante: Dó, Ré, Mi, Sol.\n2. **Antecedente**: motivo, sequência, fragmentação e uma nota longa no V.\n3. **Consequente**: o motivo de volta (o ouvinte reconhece), depois algo novo que sobe ao ponto culminante e desce para o I."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que o consequente começa igual ao antecedente?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque a volta do motivo cria a sensação de **pergunta e resposta**: o ouvinte reconhece o começo e espera o fim diferente. Sem essa volta, as duas frases soariam como ideias soltas.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. Com o motivo **Mi, Fá, Sol, Dó**, já com o antecedente pronto, planeje o consequente: como começa, onde fica o ponto culminante e em que nota termina?\n\nE agora todos os passos são seus: escolha um motivo seu e planeje um período inteiro."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Consequente: começa com **Mi, Fá, Sol, Dó** de novo; o ponto culminante vem no 6º ou no 7º compasso, acima de tudo o que veio antes; termina no **Dó**, sobre o acorde de C.\n\nPara o seu motivo, confira: a volta do motivo no consequente, **um** ponto culminante, o antecedente terminando no V e o consequente no I.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"Para a melodia ficar interessante, cada compasso precisa de uma ideia nova.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Ideias novas a cada compasso deixam a música **sem unidade**: o ouvinte não tem o que reconhecer. A melodia interessante equilibra **repetição** (unidade) e **variação** (novidade), trabalhando poucas ideias com sequência, inversão, fragmentação e as outras técnicas.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O motivo Dó, Ré, Mi, Sol reaparece como Ré, Mi, Fá, Lá. Que técnica é essa?",
+      "opcoes": [
+        "Sequência",
+        "Inversão",
+        "Retrogradação",
+        "Aumentação"
+      ],
+      "correta": 0,
+      "explicacao": "O mesmo desenho um grau acima: **sequência**.",
+      "conceito": "desenvolvimento-motivico"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "E como **Dó, Si, Lá, Fá**?",
+      "opcoes": [
+        "Inversão",
+        "Sequência",
+        "Retrogradação",
+        "Diminuição"
+      ],
+      "correta": 0,
+      "explicacao": "O que subia agora desce: **inversão**.",
+      "conceito": "desenvolvimento-motivico"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "As mesmas notas, com todas as durações dobradas, são:",
+      "opcoes": [
+        "Aumentação",
+        "Diminuição",
+        "Fragmentação",
+        "Sequência"
+      ],
+      "correta": 0,
+      "explicacao": "Durações dobradas: **aumentação**.",
+      "conceito": "desenvolvimento-motivico"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça o motivo e depois a transformação. Que técnica foi usada?",
+      "exemplo": {
+        "id": "exe-retrogrado",
+        "titulo": "Motivo e transformação",
+        "legenda": "Retrogradação.",
+        "eventos": [
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "G5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 0.5
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 96
+      },
+      "opcoes": [
+        "Retrogradação",
+        "Sequência",
+        "Aumentação"
+      ],
+      "correta": 0,
+      "explicacao": "A segunda metade toca o motivo **de trás para frente**: Sol, Mi, Ré, Dó.",
+      "conceito": "percepcao-composicao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Onde costuma ficar o **ponto culminante** de uma melodia?",
+      "opcoes": [
+        "Uma vez, perto do fim",
+        "Na primeira nota",
+        "Repetido várias vezes",
+        "Na última nota"
+      ],
+      "correta": 0,
+      "explicacao": "A nota mais aguda aparece **uma vez**, em geral entre 2/3 e 3/4 da melodia.",
+      "conceito": "construcao-de-melodia"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Depois de um salto grande para cima, o que a melodia costuma fazer?",
+      "opcoes": [
+        "Voltar por grau, descendo",
+        "Saltar de novo para cima",
+        "Parar",
+        "Repetir o salto"
+      ],
+      "correta": 0,
+      "explicacao": "O salto é compensado por **grau conjunto** no sentido contrário.",
+      "conceito": "construcao-de-melodia"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Qual é o problema desta melodia?",
+      "exemplo": {
+        "id": "exe-culminante",
+        "titulo": "Melodia",
+        "legenda": "O Lá agudo três vezes.",
+        "eventos": [
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A5"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G5"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 96
+      },
+      "opcoes": [
+        "A nota mais aguda se repete e perde a força",
+        "Ela não tem saltos",
+        "Ela termina fora do tom"
+      ],
+      "correta": 0,
+      "explicacao": "O **Lá** agudo aparece três vezes: não há um ponto culminante único.",
+      "conceito": "percepcao-composicao"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Ao harmonizar, quais notas o acorde precisa conter?",
+      "opcoes": [
+        "As dos tempos fortes",
+        "Todas as notas",
+        "Só a última",
+        "As dos tempos fracos"
+      ],
+      "correta": 0,
+      "explicacao": "As notas **fortes** pedem um acorde que as contenha; as fracas podem ser notas melódicas.",
+      "conceito": "harmonizar-melodia"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Os tempos fortes de um compasso têm Ré e Lá. Qual acorde de Dó maior serve?",
+      "opcoes": [
+        "Dm",
+        "C",
+        "G",
+        "Em"
+      ],
+      "correta": 0,
+      "explicacao": "Ré e Lá estão no **Dm** (Ré, Fá, Lá).",
+      "conceito": "harmonizar-melodia"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é a sílaba tônica de **sabiá**, que deve cair no tempo forte?",
+      "opcoes": [
+        "á",
+        "sa",
+        "bi"
+      ],
+      "correta": 0,
+      "explicacao": "sa-bi-**á**: a tônica é a última, **á**.",
+      "conceito": "prosodia"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça as duas versões de \"sabiá cantou\". Qual tem a prosódia certa?",
+      "exemplo": {
+        "id": "exe-prosodia",
+        "titulo": "Duas versões",
+        "legenda": "Certa e depois errada.",
+        "eventos": [
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 0.5,
+            "silaba": "sa"
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 0.5,
+            "silaba": "bi"
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1,
+            "silaba": "á"
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1,
+            "silaba": "can"
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2,
+            "silaba": "tou"
+          },
+          {
+            "notas": [],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1,
+            "silaba": "sa"
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 0.5,
+            "silaba": "bi"
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 0.5,
+            "silaba": "á"
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 2,
+            "silaba": "can"
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 2,
+            "silaba": "tou"
+          }
+        ],
+        "compasso": "2/4",
+        "anacruse": 1,
+        "andamento": 80
+      },
+      "opcoes": [
+        "A primeira",
+        "A segunda"
+      ],
+      "correta": 0,
+      "explicacao": "Na primeira, **á** e **tou** caem nos tempos fortes.",
+      "conceito": "prosodia"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No período, o que faz o consequente soar como resposta?",
+      "opcoes": [
+        "Começar com o mesmo motivo e terminar no I",
+        "Ter só notas novas",
+        "Terminar no V",
+        "Ser mais curto"
+      ],
+      "correta": 0,
+      "explicacao": "A volta do motivo e o fim no **I** fecham a pergunta do antecedente.",
+      "conceito": "construcao-de-melodia"
+    }
+  ],
+  "resumo": [
+    "Motivo: **sequência**, **inversão**, **retrogradação**, **aumentação**, **diminuição**, **fragmentação**.",
+    "Melodia: **um** ponto culminante perto do fim; salto compensado por grau.",
+    "Período: o consequente volta ao motivo e termina no I.",
+    "Harmonizar: acordes com as notas dos **tempos fortes**; cadências onde a forma pede.",
+    "**Prosódia**: sílaba tônica no tempo forte."
+  ],
+  "pergunta_para_chat": "Vou te mandar um motivo de 3 ou 4 notas e um período que compus com ele; me diga que técnicas usei, onde está o ponto culminante e como melhorar a harmonização e a prosódia."
+}

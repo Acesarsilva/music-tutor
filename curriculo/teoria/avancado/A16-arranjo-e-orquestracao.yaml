@@ -1,0 +1,35 @@
+codigo: A16
+titulo: Arranjo e orquestração
+nivel: avancado
+assunto: teoria
+prerequisitos:
+  - A09  # Voicings
+  - A10  # Contraponto
+  - A15  # Técnicas de composição
+objetivos:
+  - Separar um arranjo em camadas, como melodia, contracanto, harmonia, baixo e ritmo
+  - Escrever cada instrumento na sua extensão e na região em que soa melhor
+  - Transpor partes para instrumentos transpositores em Si bemol e Mi bemol
+  - Distribuir as vozes de um acorde, com intervalos abertos no grave e fechados no agudo
+  - Harmonizar uma melodia em bloco, a quatro vozes
+  - Conhecer as funções dos instrumentos no regional de choro e as famílias da orquestra
+conceitos:
+  - camadas-do-arranjo
+  - extensao-e-registro
+  - instrumentos-transpositores
+  - distribuicao-de-vozes
+  - formacoes
+  - percepcao-arranjo
+fora_do_escopo:
+  - Técnicas estendidas de cada instrumento
+  - Arranjo para big band e orquestra completa em detalhe
+  - Produção e mixagem
+exemplos_semente:
+  - "Melodia sozinha, com baixo, e com baixo e contracanto"
+  - "A mesma melodia em Dó para a flauta e em Ré para o clarinete em Si bemol"
+  - "Acorde com terça no grave (embolado) e com quinta no grave e terça em cima"
+  - "Bloco a quatro vozes com C6 e diminuto de passagem"
+  - "Regional de choro, com flauta ou bandolim, cavaquinho, violões de 6 e 7 cordas e pandeiro"
+exercicios:
+  - multipla_escolha
+  - percepcao

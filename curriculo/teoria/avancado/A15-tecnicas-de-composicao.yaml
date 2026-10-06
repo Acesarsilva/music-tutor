@@ -1,0 +1,31 @@
+codigo: A15
+titulo: Técnicas de composição
+nivel: avancado
+assunto: teoria
+prerequisitos:
+  - M15  # Notas melódicas
+  - M16  # Forma musical básica
+  - A14  # Análise harmônica completa
+objetivos:
+  - Desenvolver um motivo por sequência, inversão, retrogradação, aumentação, diminuição e fragmentação
+  - Construir uma melodia com contorno claro e um único ponto culminante
+  - Escrever um período a partir de um motivo
+  - Harmonizar uma melodia escolhendo acordes pelas notas dos tempos fortes
+  - Ajustar a melodia à letra, com a sílaba tônica no tempo forte (prosódia)
+conceitos:
+  - desenvolvimento-motivico
+  - construcao-de-melodia
+  - harmonizar-melodia
+  - prosodia
+  - percepcao-composicao
+fora_do_escopo:
+  - Arranjo para vários instrumentos (módulo A16)
+  - Produção, gravação e mixagem
+exemplos_semente:
+  - "Motivo Dó, Ré, Mi, Sol com sequência, inversão, retrógrado, aumentação e diminuição"
+  - "Período de oito compassos feito com o motivo, com ponto culminante no compasso 6"
+  - "A mesma melodia sozinha e harmonizada"
+  - "Sabiá cantou com a prosódia certa e errada"
+exercicios:
+  - multipla_escolha
+  - percepcao

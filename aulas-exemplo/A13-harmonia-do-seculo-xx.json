@@ -1,0 +1,1498 @@
+{
+  "codigo": "A13",
+  "titulo": "Harmonia do século XX",
+  "nivel": "avancado",
+  "resumo_curto": "Paralelismo, tons inteiros e quartas, poliacordes, pandiatonismo e série dodecafônica.",
+  "prerequisitos": [
+    "Escalas simétricas e exóticas (A07)",
+    "Voicings (A09)",
+    "Condução de vozes básica (M10)"
+  ],
+  "objetivos": [
+    "Reconhecer o **paralelismo**",
+    "Usar **tons inteiros** e **quartas** como harmonia",
+    "Montar **poliacordes** e entender a **politonalidade**",
+    "Entender o **pandiatonismo**",
+    "Conhecer a **série dodecafônica** e suas formas"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Quantos acordes aumentados diferentes cabem na escala de tons inteiros que começa em Dó?\n2. Num voicing em quartas, qual é o intervalo entre as notas vizinhas?\n3. Na condução de vozes, por que se evitam as quintas paralelas?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Dois: Dó, Mi, Sol♯ e Ré, Fá♯, Lá♯.\n2. A 4ª justa.\n3. As vozes se fundem e perdem a independência.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-a",
+            "titulo": "Acordes com função",
+            "legenda": "C, F, G7, C: cada acorde puxa para o próximo.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura-b",
+            "titulo": "O mesmo acorde deslizando",
+            "legenda": "C, D, E, D, C: só tríades maiores, todas em paralelo.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F#4",
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G#4",
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F#4",
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "No segundo exemplo, os acordes não puxam um para o outro: o mesmo formato desliza inteiro, e o que importa é a **cor**. Os compositores do século XX, de Debussy em diante, procuraram jeitos de organizar os sons fora da tonalidade funcional.\n\nAo final, você vai reconhecer o paralelismo, os acordes de tons inteiros e de quartas, os poliacordes, o pandiatonismo e a série dodecafônica."
+        }
+      ]
+    },
+    {
+      "titulo": "Paralelismo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "No **paralelismo** (ou *planing*), um acorde se move inteiro, todas as vozes no mesmo sentido, dobrando a melodia. As quintas paralelas, que a condução de vozes evita (M10), aqui são a intenção: o acorde funciona como um **timbre**.\n\n- **Paralelismo real**: o acorde mantém o mesmo tipo (todas tríades maiores), saindo da escala.\n- **Paralelismo diatônico**: o formato segue as notas da escala, e o tipo muda (C, Dm, Em, F)."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-diatonico",
+            "titulo": "Paralelismo diatônico",
+            "legenda": "Tríades de Dó maior subindo e descendo pela escala.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4",
+                  "A4",
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4",
+                  "G4",
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "F4",
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 80
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Tons inteiros e quartas",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "A **escala de tons inteiros** (A07) não tem semitons, portanto não tem sensível nem tônica clara. Usada como harmonia, ela dá acordes **aumentados** que flutuam sem resolver. Debussy usa essa escala no prelúdio *Voiles*."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-tons-inteiros",
+            "titulo": "Harmonia de tons inteiros",
+            "legenda": "C aumentado e D aumentado, com a melodia na mesma escala.",
+            "eventos": [
+              {
+                "notas": [
+                  "E5",
+                  "C4",
+                  "E4",
+                  "G#4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4",
+                  "E4",
+                  "G#4"
+                ]
+              },
+              {
+                "notas": [
+                  "D5",
+                  "C4",
+                  "E4",
+                  "G#4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "C5",
+                  "D4",
+                  "F#4",
+                  "A#4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "D4",
+                  "F#4",
+                  "A#4"
+                ]
+              },
+              {
+                "notas": [
+                  "A#4",
+                  "D4",
+                  "F#4",
+                  "A#4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "G#4",
+                  "C4",
+                  "E4",
+                  "G#4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4",
+                  "E4",
+                  "G#4"
+                ]
+              },
+              {
+                "notas": [
+                  "A#4",
+                  "C4",
+                  "E4",
+                  "G#4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4",
+                  "E4",
+                  "G#4"
+                ]
+              },
+              {
+                "notas": [
+                  "C5",
+                  "C4",
+                  "E4",
+                  "G#4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Os **acordes em quartas** (A09) também não têm uma terça que defina maior ou menor. Em paralelo dentro de um modo, dão o som do jazz modal e de muita música para cinema. *So What*, de Miles Davis, ficou famosa por esse som."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-quartas",
+            "titulo": "Quartas em Ré dórico",
+            "legenda": "Acordes de três quartas subindo e descendo pela escala.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4",
+                  "A4",
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4",
+                  "D5",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4",
+                  "C5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4",
+                  "A4",
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "G4",
+                  "C5"
+                ],
+                "duracao": 2
+              }
+            ],
+            "andamento": 80
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Poliacordes e politonalidade",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um **poliacorde** junta dois acordes completos, um em cima do outro. Escreve-se como fração: **D/C** quer dizer Ré maior **sobre** Dó maior (não confundir com a inversão, em que a parte de baixo é só uma nota).\n\nO mais famoso é o **acorde de Petrushka**, do balé de Stravinsky: Dó maior sobre Fá♯ maior, dois acordes a um trítono de distância."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-d-sobre-c",
+            "titulo": "D sobre C",
+            "legenda": "Primeiro C, depois D, depois os dois juntos.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D5",
+                  "F#5",
+                  "A5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "D5",
+                  "F#5",
+                  "A5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-petrushka",
+            "titulo": "Acorde de Petrushka",
+            "legenda": "Fá♯ maior embaixo, Dó maior em cima, e os dois juntos.",
+            "eventos": [
+              {
+                "notas": [
+                  "F#3",
+                  "A#3",
+                  "C#4"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C5",
+                  "E5",
+                  "G5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F#3",
+                  "A#3",
+                  "C#4",
+                  "C5",
+                  "E5",
+                  "G5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Quando duas camadas inteiras ficam em tonalidades diferentes por um trecho, temos a **politonalidade**. Darius Milhaud, que viveu no Rio de Janeiro, usou muito esse recurso em *Saudades do Brasil*."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-politonal",
+            "titulo": "Duas tonalidades",
+            "legenda": "Melodia em Ré maior, com Fá♯ e Dó♯, sobre um acorde de Dó maior.",
+            "eventos": [
+              {
+                "notas": [
+                  "F#5",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ]
+              },
+              {
+                "notas": [
+                  "D5",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ]
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1.0
+              },
+              {
+                "notas": [
+                  "F#5",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ]
+              },
+              {
+                "notas": [
+                  "A5",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ]
+              },
+              {
+                "notas": [
+                  "F#5",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2.0
+              },
+              {
+                "notas": [
+                  "E5",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ]
+              },
+              {
+                "notas": [
+                  "C#5",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 1.0,
+                "ligar": [
+                  "C4",
+                  "E4",
+                  "G4"
+                ]
+              },
+              {
+                "notas": [
+                  "D5",
+                  "C4",
+                  "E4",
+                  "G4"
+                ],
+                "duracao": 2.0
+              }
+            ],
+            "andamento": 84
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Pandiatonismo",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "No **pandiatonismo**, a música usa só as notas de uma escala, mas sem as tendências da tonalidade: não há dominante pedindo resolução, e qualquer combinação das sete notas pode ser um acorde. O som é claro e aberto, sem cromatismo e sem tensão de V–I."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-pandiatonico",
+            "titulo": "Acordes só de teclas brancas",
+            "legenda": "Combinações de notas de Dó maior, com 2ªs e 4ªs, sem nenhum acorde de dominante.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "G4",
+                  "D5",
+                  "E5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "E5",
+                  "G5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "F4",
+                  "C5",
+                  "D5",
+                  "G5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "B4",
+                  "D5"
+                ],
+                "duracao": 2
+              },
+              {
+                "notas": [
+                  "C4",
+                  "G4",
+                  "D5",
+                  "E5"
+                ],
+                "duracao": 4
+              }
+            ],
+            "andamento": 60
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Atonalismo e série dodecafônica",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "No **atonalismo**, nenhuma nota funciona como centro. Para organizar essa música, Schoenberg criou, por volta de 1920, o **dodecafonismo**: as **12 notas** da escala cromática são postas numa ordem fixa, a **série**, e nenhuma volta antes que todas tenham soado.\n\nA série aparece em quatro formas, cada uma podendo começar em qualquer nota:\n\n- **original**;\n- **retrógrada**: de trás para frente;\n- **invertida**: cada intervalo trocado de direção (o que subia, desce);\n- **retrógrada da inversão**.\n\nNo Brasil, o dodecafonismo chegou com Hans-Joachim Koellreutter e o grupo **Música Viva**, nos anos 1940, e foi usado por Cláudio Santoro e Guerra-Peixe."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-serie",
+            "titulo": "Série original",
+            "legenda": "As 12 notas, cada uma uma vez.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A#4"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-retrogrado",
+            "titulo": "Retrógrada",
+            "legenda": "A mesma série, de trás para frente.",
+            "eventos": [
+              {
+                "notas": [
+                  "A#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 88
+          }
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-inversao",
+            "titulo": "Invertida",
+            "legenda": "Começa no mesmo Dó. A original desce meio tom para Si; a invertida sobe meio tom para Dó♯.",
+            "eventos": [
+              {
+                "notas": [
+                  "C5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A#4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "B4"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 88
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: inverter uma série",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja o começo da série desta aula, com o motivo de cada passo.\n\n1. **Anote os intervalos da original**: Dó → Si desce 1 semitom; Si → Sol desce 4; Sol → Sol♯ sobe 1.\n2. **Troque a direção de cada um**: sobe 1, sobe 4, desce 1.\n3. **Aplique a partir da mesma nota**: Dó → Dó♯ → Fá → Mi."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** a invertida também tem as 12 notas, cada uma uma vez?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Sim. Inverter os intervalos a partir da mesma nota sempre dá as 12 notas diferentes, porque cada nota da original corresponde a uma única nota da invertida.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora os dois últimos passos são seus. Os próximos intervalos da original são: Sol♯ → Ré♯ desce 5; Ré♯ → Mi sobe 1. Troque a direção e continue a partir do Mi.\n\nE agora todos os passos são seus: inverta Dó → Ré → Mi♭ começando em Dó."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Sobe 5 e desce 1: Mi → **Lá** → **Sol♯**. Confira no exemplo da invertida.\n\nA original sobe 2 e sobe 1. Invertida: desce 2 e desce 1, Dó → **Si♭** → **Lá**.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"Música atonal é música sem regras: qualquer nota vale.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Atonal quer dizer **sem centro tonal**, não sem regras. O dodecafonismo, por exemplo, é bem rígido: a ordem da série decide cada nota, e nenhuma volta antes que todas as 12 tenham soado.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No **paralelismo real**, o que acontece com o tipo do acorde?",
+      "opcoes": [
+        "Fica sempre igual",
+        "Segue as notas da escala",
+        "Alterna entre maior e menor",
+        "Vira dominante"
+      ],
+      "correta": 0,
+      "explicacao": "No paralelismo real, o acorde desliza **sem mudar de tipo**, mesmo saindo da escala.",
+      "conceito": "paralelismo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que as quintas paralelas são aceitas no paralelismo?",
+      "opcoes": [
+        "O acorde funciona como um timbre, e as vozes não precisam ser independentes",
+        "Porque são dissonâncias",
+        "Porque a regra só vale para o baixo",
+        "Elas não aparecem no paralelismo"
+      ],
+      "correta": 0,
+      "explicacao": "No paralelismo, o acorde inteiro é uma **cor** que dobra a melodia: a independência das vozes não é o objetivo.",
+      "conceito": "paralelismo"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça os dois trechos. Qual usa paralelismo?",
+      "exemplo": {
+        "id": "exe-paralelismo",
+        "titulo": "Dois trechos",
+        "legenda": "C, F, G7, C e depois C, D, E, D, C em paralelo.",
+        "eventos": [
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4",
+              "A4",
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4",
+              "G4",
+              "B4"
+            ],
+            "duracao": 2
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 4
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4",
+              "F#4",
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4",
+              "G#4",
+              "B4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4",
+              "F#4",
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 4
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "O segundo",
+        "O primeiro"
+      ],
+      "correta": 0,
+      "explicacao": "No segundo, a mesma tríade maior desliza inteira: **paralelismo**.",
+      "conceito": "percepcao-seculo-xx"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Por que a escala de tons inteiros não tem uma tônica clara?",
+      "opcoes": [
+        "Não tem semitons, e portanto não tem sensível",
+        "Tem notas demais",
+        "Só tem acordes menores",
+        "Porque é pentatônica"
+      ],
+      "correta": 0,
+      "explicacao": "Sem semitons, não há **sensível** puxando para uma nota, e todas soam igualmente importantes.",
+      "conceito": "escalas-e-quartas"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o intervalo entre as notas vizinhas de um acorde em quartas como Ré, Sol, Dó?",
+      "opcoes": [
+        "4ª justa",
+        "3ª maior",
+        "5ª justa",
+        "2ª maior"
+      ],
+      "correta": 0,
+      "explicacao": "Ré → Sol e Sol → Dó são **4ªs justas**.",
+      "conceito": "escalas-e-quartas"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que quer dizer **D/C** quando é um poliacorde?",
+      "opcoes": [
+        "Ré maior inteiro sobre Dó maior inteiro",
+        "Ré maior com Dó no baixo",
+        "Dó maior com Ré no baixo",
+        "Ré menor"
+      ],
+      "correta": 0,
+      "explicacao": "No poliacorde, os **dois acordes** estão completos, um em cima do outro.",
+      "conceito": "poliacordes-e-politonalidade"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quais acordes formam o **acorde de Petrushka**?",
+      "opcoes": [
+        "Dó maior e Fá♯ maior",
+        "Dó maior e Sol maior",
+        "Dó menor e Mi♭ maior",
+        "Ré maior e Dó maior"
+      ],
+      "correta": 0,
+      "explicacao": "Dó maior e Fá♯ maior, a um **trítono** de distância.",
+      "conceito": "poliacordes-e-politonalidade"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. Quantas tonalidades soam ao mesmo tempo?",
+      "exemplo": {
+        "id": "exe-politonal",
+        "titulo": "Duas camadas",
+        "legenda": "Ré maior em cima, Dó maior embaixo.",
+        "eventos": [
+          {
+            "notas": [
+              "F#5",
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "C4",
+              "E4",
+              "G4"
+            ]
+          },
+          {
+            "notas": [
+              "E5",
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "C4",
+              "E4",
+              "G4"
+            ]
+          },
+          {
+            "notas": [
+              "D5",
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "C4",
+              "E4",
+              "G4"
+            ]
+          },
+          {
+            "notas": [
+              "E5",
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 1.0
+          },
+          {
+            "notas": [
+              "F#5",
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "C4",
+              "E4",
+              "G4"
+            ]
+          },
+          {
+            "notas": [
+              "A5",
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "C4",
+              "E4",
+              "G4"
+            ]
+          },
+          {
+            "notas": [
+              "F#5",
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 2.0
+          },
+          {
+            "notas": [
+              "E5",
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "C4",
+              "E4",
+              "G4"
+            ]
+          },
+          {
+            "notas": [
+              "C#5",
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 1.0,
+            "ligar": [
+              "C4",
+              "E4",
+              "G4"
+            ]
+          },
+          {
+            "notas": [
+              "D5",
+              "C4",
+              "E4",
+              "G4"
+            ],
+            "duracao": 2.0
+          }
+        ],
+        "andamento": 84
+      },
+      "opcoes": [
+        "Duas",
+        "Uma",
+        "Nenhuma"
+      ],
+      "correta": 0,
+      "explicacao": "A melodia está em **Ré maior** (Fá♯, Dó♯) e o acompanhamento em **Dó maior**: politonalidade.",
+      "conceito": "percepcao-seculo-xx"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "O que caracteriza o **pandiatonismo**?",
+      "opcoes": [
+        "Só notas da escala, sem tendências de resolução",
+        "Todas as 12 notas em ordem fixa",
+        "Acordes aumentados em paralelo",
+        "Dois acordes um sobre o outro"
+      ],
+      "correta": 0,
+      "explicacao": "No pandiatonismo, as notas são da escala, mas sem dominante pedindo resolução.",
+      "conceito": "pandiatonismo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na série dodecafônica, quantas notas diferentes soam antes de alguma se repetir?",
+      "opcoes": [
+        "12",
+        "7",
+        "5",
+        "8"
+      ],
+      "correta": 0,
+      "explicacao": "Todas as **12 notas** da escala cromática, cada uma uma vez.",
+      "conceito": "dodecafonismo"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "A original começa Dó → Ré (sobe 2 semitons). Como começa a **invertida** a partir de Dó?",
+      "opcoes": [
+        "Dó → Si♭",
+        "Dó → Ré",
+        "Dó → Dó♯",
+        "Ré → Dó"
+      ],
+      "correta": 0,
+      "explicacao": "Na inversão, o que subia desce: 2 semitons abaixo de Dó é **Si♭**.",
+      "conceito": "dodecafonismo"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça a série e depois outra forma dela. Que forma é a segunda?",
+      "exemplo": {
+        "id": "exe-retrogrado",
+        "titulo": "Duas formas",
+        "legenda": "Original e retrógrada.",
+        "eventos": [
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G#4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D#4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F#4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C#5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A#4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A#4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C#5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F#4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "F4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "A4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D#4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G#4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "G4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "B4"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "C5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 96
+      },
+      "opcoes": [
+        "Retrógrada",
+        "Invertida",
+        "A mesma original"
+      ],
+      "correta": 0,
+      "explicacao": "A segunda começa pela última nota da primeira e volta até o Dó: é a **retrógrada**.",
+      "conceito": "dodecafonismo"
+    }
+  ],
+  "resumo": [
+    "**Paralelismo**: o acorde desliza inteiro, como um timbre. Real (mesmo tipo) ou diatônico (segue a escala).",
+    "**Tons inteiros** e **quartas** dão harmonias sem sensível nem terça, que flutuam.",
+    "**Poliacorde**: dois acordes inteiros sobrepostos (Petrushka: C sobre F♯). **Politonalidade**: duas tonalidades ao mesmo tempo.",
+    "**Pandiatonismo**: só notas da escala, sem tendências de resolução.",
+    "**Dodecafonismo**: as 12 notas numa série fixa, em quatro formas: original, retrógrada, invertida e retrógrada da inversão."
+  ],
+  "pergunta_para_chat": "Me dê séries dodecafônicas curtas ou o começo delas, uma de cada vez, para eu escrever a retrógrada e a invertida, e confira nota por nota."
+}

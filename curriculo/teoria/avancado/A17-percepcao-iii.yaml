@@ -1,0 +1,32 @@
+codigo: A17
+titulo: Percepção III
+nivel: avancado
+assunto: teoria
+prerequisitos:
+  - M18  # Percepção II
+  - A01  # Tensões e extensões
+  - A03  # Empréstimo modal
+  - A04  # Substituição tritonal e rearmonização
+  - A06  # Harmonia modal
+objetivos:
+  - Reconhecer de ouvido as tensões 9, b9, ♯11 e 13 no topo do acorde
+  - Reconhecer de ouvido o empréstimo modal, a dominante secundária, o SubV7 e o bVII7 pela linha que se move
+  - Reconhecer de ouvido os modos dórico, frígio, lídio e mixolídio pela nota característica
+  - Fazer ditado a duas vozes, começando pelo baixo
+conceitos:
+  - tensoes-de-ouvido
+  - cromaticos-de-ouvido
+  - modos-de-ouvido
+  - ditado-a-duas-vozes
+fora_do_escopo:
+  - Ditado a três e quatro vozes
+  - Percepção de música atonal
+exemplos_semente:
+  - "C7M, C7M(9) e C7M(♯11) com a tensão no topo"
+  - "G7(9) e G7(b9) resolvendo em C"
+  - "C, F, Fm, C: o Lá que desce para Lá bemol"
+  - "Escalas de Dó dórico, frígio, lídio e mixolídio"
+  - "Ditado a duas vozes de quatro compassos"
+exercicios:
+  - multipla_escolha
+  - percepcao
