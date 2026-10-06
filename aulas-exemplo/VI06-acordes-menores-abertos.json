@@ -1,0 +1,1066 @@
+{
+  "codigo": "VI06",
+  "assunto": "violao",
+  "titulo": "Acordes menores abertos e o par maior e menor",
+  "nivel": "iniciante",
+  "resumo_curto": "O Dm, a regra que transforma maior em menor no braço e as primeiras progressões com acordes menores.",
+  "prerequisitos": [
+    "Acordes maiores abertos (VI05)",
+    "Escalas menores (I11)"
+  ],
+  "objetivos": [
+    "Montar o **Dm**",
+    "Transformar **maior em menor** descendo a 3ª uma casa",
+    "Ligar cada acorde maior ao seu **relativo** menor",
+    "Tocar progressões em **Lá menor** e em **Dó maior**"
+  ],
+  "secoes": [
+    {
+      "titulo": "Antes de começar",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Responda de cabeça, sem consultar nada. Depois confira.\n\n1. Em que corda começa a batida do D?\n2. Quantos semitons tem uma 3ª maior? E uma 3ª menor?\n3. Qual é a relativa menor de Dó maior?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "1. Na 4ª corda, o Ré solto.\n2. 3ª maior: 4 semitons. 3ª menor: 3.\n3. Lá menor.",
+          "rotulo": "Conferir as respostas"
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-abertura",
+            "titulo": "Dois acordes",
+            "legenda": "Ouça os dois. Só a nota mais aguda mudou. O que aconteceu com o clima?",
+            "eventos": [
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1,
+                "cifra": "D"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F#5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1,
+                "cifra": "Dm"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "O primeiro é o **D** e o segundo, o **Dm** (Ré menor). A nota mais aguda desceu uma casa, de Fá♯ para Fá, e o acorde escureceu.\n\nAo final, você vai montar o Dm, transformar qualquer acorde maior aberto que já conhece no menor e tocar progressões com acordes menores."
+        }
+      ]
+    },
+    {
+      "titulo": "Dm: Ré menor",
+      "blocos": [
+        {
+          "tipo": "acorde",
+          "cifra": "Dm",
+          "casas": [
+            -1,
+            -1,
+            0,
+            2,
+            3,
+            1
+          ],
+          "legenda": "Dm: dedo 2 na 3ª corda (casa 2), dedo 3 na 2ª (casa 3), dedo 1 na 1ª (casa 1). A batida começa na 4ª corda.",
+          "dedos": [
+            0,
+            0,
+            0,
+            2,
+            3,
+            1
+          ]
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Notas, da 4ª corda à 1ª: **Ré, Lá, Ré, Fá**. Comparado ao D, só a **1ª corda** mudou: casa 2 (Fá♯) virou casa 1 (Fá). Como a casa 1 fica atrás das outras, os dedos se reorganizam: o **dedo 1** vai para a 1ª corda, e o dedo 2 assume a 3ª."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-arpejo-dm",
+            "titulo": "Dm corda por corda",
+            "legenda": "Da 4ª à 1ª: a última nota é o Fá, a 3ª menor do acorde.",
+            "eventos": [
+              {
+                "notas": [
+                  "D4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "A4"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "D5"
+                ],
+                "duracao": 0.5
+              },
+              {
+                "notas": [
+                  "F5"
+                ],
+                "duracao": 2.5
+              }
+            ],
+            "andamento": 72,
+            "tablatura": true
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "A regra: a 3ª desce uma casa",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "O que muda de um acorde maior para o menor é só a **3ª**: ela desce um semitom. No braço, um semitom é **uma casa**. Nos acordes abertos, cada par tem a 3ª numa corda diferente."
+        },
+        {
+          "tipo": "tabela",
+          "legenda": "Maior e menor, lado a lado",
+          "cabecalho": [
+            "Par",
+            "Corda da 3ª",
+            "Maior",
+            "Menor"
+          ],
+          "linhas": [
+            [
+              "E e Em",
+              "3ª",
+              "casa 1 (Sol♯)",
+              "solta (Sol)"
+            ],
+            [
+              "A e Am",
+              "2ª",
+              "casa 2 (Dó♯)",
+              "casa 1 (Dó)"
+            ],
+            [
+              "D e Dm",
+              "1ª",
+              "casa 2 (Fá♯)",
+              "casa 1 (Fá)"
+            ]
+          ]
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-a-am",
+            "titulo": "A e Am",
+            "legenda": "A 2ª corda desce de Dó♯ para Dó. O resto não muda.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "A"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C#5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "texto",
+          "markdown": "A fundamental e a 5ª ficam onde estão. Por isso o baixo dos dois acordes de cada par é o mesmo, e a batida começa na mesma corda."
+        }
+      ]
+    },
+    {
+      "titulo": "Acordes relativos",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Na I11 você viu que **Dó maior** e **Lá menor** usam as mesmas notas. Com os acordes acontece algo parecido: **C** (Dó, Mi, Sol) e **Am** (Lá, Dó, Mi) têm **duas notas em comum**. O mesmo vale para **G** (Sol, Si, Ré) e **Em** (Mi, Sol, Si).\n\nPor isso o menor relativo combina tão bem com o maior: trocar um pelo outro muda o clima sem mudar muito o som."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-relativos",
+            "titulo": "C, Am, Dm, G",
+            "legenda": "I, vi, ii, V em Dó maior: dois acordes menores entre os maiores.",
+            "eventos": [
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "C"
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "C4",
+                  "E4",
+                  "G4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1,
+                "cifra": "Dm"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1,
+                "cifra": "G"
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "G3",
+                  "B3",
+                  "D4",
+                  "G4",
+                  "B4",
+                  "G5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        }
+      ]
+    },
+    {
+      "titulo": "Uma progressão em Lá menor",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Em **Lá menor**, os acordes mais usados são **Am** (i), **Dm** (iv) e **E** (V). O E é maior por causa do Sol♯ da escala menor harmônica, que você viu na I11; é ele que puxa de volta para o Am."
+        },
+        {
+          "tipo": "exemplo",
+          "exemplo": {
+            "id": "ex-la-menor",
+            "titulo": "Am, Dm, E, Am",
+            "legenda": "i, iv, V, i em Lá menor. Repare como o E pede a volta ao Am.",
+            "eventos": [
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1,
+                "cifra": "Dm"
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "D4",
+                  "A4",
+                  "D5",
+                  "F5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "E"
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "E3",
+                  "B3",
+                  "E4",
+                  "G#4",
+                  "B4",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1,
+                "cifra": "Am"
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              },
+              {
+                "notas": [
+                  "A3",
+                  "E4",
+                  "A4",
+                  "C5",
+                  "E5"
+                ],
+                "duracao": 1
+              }
+            ],
+            "andamento": 72
+          }
+        },
+        {
+          "tipo": "dica",
+          "markdown": "No Am e no Dm, a batida começa em cordas diferentes: 5ª no Am, 4ª no Dm."
+        }
+      ]
+    },
+    {
+      "titulo": "Passo a passo: do maior ao menor",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Veja como transformar o **A** em **Am**, com o motivo de cada passo.\n\n1. **Ache a 3ª do acorde**: A é Lá, Dó♯, Mi. A 3ª é **Dó♯**.\n2. **Ache a corda que toca a 3ª**: no A, o Dó♯ está na 2ª corda, casa 2.\n3. **Desça uma casa**: casa 1 da 2ª corda, Dó. O acorde vira Lá, Dó, Mi.\n4. **Reorganize os dedos**: o dedo 1 vai para a casa 1; os dedos 2 e 3 ficam na casa 2."
+        },
+        {
+          "tipo": "texto",
+          "markdown": "**Pense antes de abrir a resposta:** por que a fundamental Lá não desce também?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Porque o nome do acorde continua Lá. O que define **maior ou menor** é só a 3ª; se o Lá descesse, seria outro acorde.",
+          "rotulo": "Ver resposta"
+        },
+        {
+          "tipo": "texto",
+          "markdown": "Agora o último passo é seu: no **E**, a 3ª Sol♯ está na 3ª corda, casa 1. Descendo uma casa, como fica?\n\nE agora todos os passos são seus: transforme o **D** em **Dm**."
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "E para Em: a casa 1 desce para a **corda solta**. Basta tirar o dedo 1: Sol♯ vira Sol.\n\nD para Dm: D é Ré, Fá♯, Lá; a 3ª Fá♯ está na **1ª corda, casa 2**; desce para a casa 1 (Fá); o dedo 1 vai para essa casa, o dedo 2 para a 3ª corda e o dedo 3 fica na 2ª corda, casa 3.",
+          "rotulo": "Ver as respostas"
+        }
+      ]
+    },
+    {
+      "titulo": "Cuidado com este erro",
+      "blocos": [
+        {
+          "tipo": "texto",
+          "markdown": "Um colega disse:\n\n> \"Do E para o Em eu só tiro o dedo 1. Então, para o Dm, tirei o dedo da 1ª corda do D.\"\n\nO que está errado?"
+        },
+        {
+          "tipo": "resposta",
+          "markdown": "Sem dedo, a 1ª corda soa **Mi**, solta. O acorde fica Ré, Lá, Ré, Mi: **sem 3ª nenhuma**, nem maior nem menor. No E, tirar o dedo funciona porque a casa 1 desce para a corda solta. No D, a 3ª está na casa 2, então desce para a **casa 1**, não para a corda solta.",
+          "rotulo": "Ver resposta"
+        }
+      ]
+    }
+  ],
+  "exercicios": [
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "De **A** para **Am**, que nota muda?",
+      "opcoes": [
+        "Dó♯ vira Dó",
+        "Lá vira Lá♭",
+        "Mi vira Mi♭",
+        "Nenhuma, só a posição dos dedos"
+      ],
+      "correta": 0,
+      "explicacao": "Só a **3ª** muda: Dó♯ desce para Dó. Se você marcou Lá ou Mi, mexeu na fundamental ou na 5ª, que ficam iguais.",
+      "conceito": "par-maior-menor"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "No Dm, onde fica o dedo 1?",
+      "opcoes": [
+        "1ª corda, casa 1",
+        "2ª corda, casa 1",
+        "3ª corda, casa 2",
+        "1ª corda, casa 2"
+      ],
+      "correta": 0,
+      "explicacao": "Dm: **dedo 1 na 1ª corda, casa 1** (Fá). Na casa 2 seria o Fá♯ do D.",
+      "conceito": "acorde-dm"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça. O segundo acorde é maior ou menor?",
+      "exemplo": {
+        "id": "exe-d-dm",
+        "titulo": "Dois acordes",
+        "legenda": "D e depois Dm.",
+        "eventos": [
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1,
+            "cifra": "D"
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F#5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F5"
+            ],
+            "duracao": 1,
+            "cifra": "Dm"
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "D4",
+              "A4",
+              "D5",
+              "F5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Menor",
+        "Maior"
+      ],
+      "correta": 0,
+      "explicacao": "O segundo é o **Dm**: o Fá♯ desceu para Fá e o acorde escureceu.",
+      "conceito": "percepcao-maior-menor"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em que corda está a 3ª do acorde **E**?",
+      "opcoes": [
+        "3ª corda",
+        "1ª corda",
+        "2ª corda",
+        "6ª corda"
+      ],
+      "correta": 0,
+      "explicacao": "No E, a 3ª Sol♯ está na **3ª corda, casa 1**. A 6ª e a 1ª são o Mi, a fundamental.",
+      "conceito": "terca-no-braco"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Qual é o relativo menor de **G**?",
+      "opcoes": [
+        "Em",
+        "Am",
+        "Dm",
+        "Gm"
+      ],
+      "correta": 0,
+      "explicacao": "**Em** (Mi, Sol, Si) tem duas notas em comum com G (Sol, Si, Ré). Gm tem a mesma fundamental, mas não é o relativo.",
+      "conceito": "relativo-menor"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Recordando a VI05: em que corda começa a batida do Dm?",
+      "opcoes": [
+        "Na 4ª",
+        "Na 5ª",
+        "Na 6ª",
+        "Na 3ª"
+      ],
+      "correta": 0,
+      "explicacao": "Como o D, o Dm começa na **4ª corda**, o Ré solto. O par maior e menor tem o mesmo baixo.",
+      "conceito": "acorde-dm"
+    },
+    {
+      "tipo": "percepcao",
+      "enunciado": "Ouça dois acordes. O segundo é maior ou menor?",
+      "exemplo": {
+        "id": "exe-em-e",
+        "titulo": "Dois acordes",
+        "legenda": "Em e depois E.",
+        "eventos": [
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1,
+            "cifra": "Em"
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G#4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1,
+            "cifra": "E"
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G#4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G#4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          },
+          {
+            "notas": [
+              "E3",
+              "B3",
+              "E4",
+              "G#4",
+              "B4",
+              "E5"
+            ],
+            "duracao": 1
+          }
+        ],
+        "andamento": 72
+      },
+      "opcoes": [
+        "Maior",
+        "Menor"
+      ],
+      "correta": 0,
+      "explicacao": "O segundo é o **E**: o Sol subiu para Sol♯ e o acorde clareou.",
+      "conceito": "percepcao-maior-menor"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Em Lá menor, qual acorde faz o papel de V?",
+      "opcoes": [
+        "E",
+        "Em",
+        "G",
+        "Dm"
+      ],
+      "correta": 0,
+      "explicacao": "O V de Lá menor é **E**, maior por causa do Sol♯ da menor harmônica. É ele que puxa de volta ao Am.",
+      "conceito": "progressao-com-menores"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Quantas notas C e Am têm em comum?",
+      "opcoes": [
+        "Duas",
+        "Uma",
+        "Três",
+        "Nenhuma"
+      ],
+      "correta": 0,
+      "explicacao": "C = Dó, Mi, Sol; Am = Lá, Dó, Mi. **Dó e Mi**: duas notas em comum.",
+      "conceito": "relativo-menor"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Na progressão C, Am, Dm, G em Dó maior, que graus são Am e Dm?",
+      "opcoes": [
+        "vi e ii",
+        "ii e iii",
+        "iv e v",
+        "vi e iv"
+      ],
+      "correta": 0,
+      "explicacao": "Em Dó maior, Am é o **vi** e Dm é o **ii**: os graus 6 e 2, menores no campo harmônico maior.",
+      "conceito": "progressao-com-menores"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "enunciado": "Um semitom no braço do violão equivale a quantas casas?",
+      "opcoes": [
+        "Uma",
+        "Duas",
+        "Três",
+        "Quatro"
+      ],
+      "correta": 0,
+      "explicacao": "Cada casa é **um semitom**. Por isso a 3ª maior vira menor descendo uma casa.",
+      "conceito": "terca-no-braco"
+    }
+  ],
+  "resumo": [
+    "**Dm**: dedo 2 na 3ª corda (casa 2), dedo 3 na 2ª (casa 3), dedo 1 na 1ª (casa 1), a partir da 4ª corda.",
+    "De maior para menor, só a **3ª** desce uma casa: 3ª corda no E, 2ª no A, 1ª no D.",
+    "Fundamental e 5ª não mudam, então o baixo e a corda da batida também não.",
+    "Relativos: **C e Am**, **G e Em**, com duas notas em comum.",
+    "Em Lá menor: **Am, Dm, E** (i, iv, V)."
+  ],
+  "pergunta_para_chat": "Me diga um acorde maior aberto e eu digo onde está a 3ª e como fica o menor; depois me passe uma progressão com menores para treinar."
+}

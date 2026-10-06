@@ -141,6 +141,9 @@ maior. Se você marcou 4ª, contou semitons em vez de notas."
   de cada nota. O bloco `acorde` desenha o diagrama: `cifra` ("C", "Am", "G7", "C7M", "Bm7(b5)"), `casas` da
   6ª à 1ª corda (-1 não toca, 0 solta), `dedos` (1 a 4, 0 nenhum) e `pestana` (a casa, se houver). O
   validador confere se as casas formam a cifra (só a 5ª justa pode faltar) e se cada casa presa tem dedo.
+- Cifra sobre a pauta: o evento aceita `cifra` ("G", "D7"), escrita acima da nota a partir dela. Num acorde
+  batido (três notas ou mais), as notas precisam formar a cifra; numa melodia, a nota pode ser de passagem.
+  Para indicar batida para baixo ou para cima, use `silaba` com "↓" ou "↑" sob cada acorde.
 - Referências: músicas brasileiras conhecidas de qualquer estilo (cantigas de roda, folclore, samba,
   choro, bossa nova, MPB, forró, sertanejo, pop).
 - **Tocado** (`exemplo`): só melodia em domínio público (cantigas, folclore, hinos antigos) ou poucas notas.
